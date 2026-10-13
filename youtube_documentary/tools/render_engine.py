@@ -1,17 +1,19 @@
 #!/usr/bin/env python3
 """
 render_engine.py — renders tools/engines/board_engine.html with a JSON scene config.
-Usage: python3 tools/render_engine.py <scene.json> <outdir> [poster_t]
-Config paths for images are resolved relative to the workspace root (/home/user).
+Usage (from the youtube_documentary/ project root):
+  python3 tools/render_engine.py <scene.json> <outdir> [poster_t]
+Config paths for images are resolved relative to the project root
+(youtube_documentary/), not the caller's working directory.
 """
 import asyncio, sys, json, pathlib
 from playwright.async_api import async_playwright
 
-ROOT = pathlib.Path("/home/user")
+ROOT = pathlib.Path(__file__).resolve().parents[1]  # tools/ -> youtube_documentary/
 ENGINE = ROOT / "tools/engines/board_engine.html"
 
 def resolve(v):
-    """Resolve any config path to an absolute /home/user path."""
+    """Resolve any config path to an absolute path under the project root."""
     if v.startswith("file:"):
         return pathlib.Path(v[7:])
     p = pathlib.Path(v)
@@ -32,12 +34,18 @@ def absolutize(cfg):
     return cfg
 
 async def main(scene_json, outdir, poster_t=None):
-    cfg = json.loads(pathlib.Path(scene_json).read_text(encoding="utf-8"))
+    scene_path = pathlib.Path(scene_json)
+    if not scene_path.is_absolute() and not scene_path.exists():
+        candidate = ROOT / scene_path  # resolve relative to the project root
+        if candidate.exists(): scene_path = candidate
+    cfg = json.loads(scene_path.read_text(encoding="utf-8"))
     cfg = absolutize(cfg)
     fps = 30
     dur = float(cfg.get("timing", {}).get("dur", 10.0))
     n = int(fps * dur)
-    outdir = pathlib.Path(outdir); outdir.mkdir(parents=True, exist_ok=True)
+    outdir = pathlib.Path(outdir)
+    if not outdir.is_absolute(): outdir = ROOT / outdir
+    outdir.mkdir(parents=True, exist_ok=True)
     poster_t = float(poster_t) if poster_t else 1.4
     async with async_playwright() as p:
         b = await p.chromium.launch(args=["--force-color-profile=srgb"])

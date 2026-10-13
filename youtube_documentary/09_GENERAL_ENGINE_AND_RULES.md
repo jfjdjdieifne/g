@@ -46,7 +46,7 @@ config/sceneXX.json   →   tools/engines/board_engine.html   →   frames   →
 
 ```bash
 python3 tools/synth_sfx_cine.py mix.wav 10.0
-python3 tools/render_engine.py DEMO1_ESCOBAR/config/escobar_scene01.json frames
+python3 tools/render_engine.py config/escobar_scene01.json frames
 ffmpeg -framerate 30 -i frames/f%04d.png -i mix.wav -c:v libx264 -crf 16 \
        -pix_fmt yuv420p -c:a aac -shortest out.mp4
 ```

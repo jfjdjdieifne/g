@@ -1,0 +1,17 @@
+# Render outputs and frame caches (generated, never committed)
+.cache/
+renders/
+
+# QA / spot-check screenshots
+.cache/qa/
+
+# Python temporaries
+__pycache__/
+*.py[cod]
+*$py.class
+
+# OS / editor temporaries
+.DS_Store
+*.tmp
+*.bak
+*~

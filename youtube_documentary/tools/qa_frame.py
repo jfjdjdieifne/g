@@ -3,12 +3,17 @@
 qa_frame.py — engine QA: seek an engine to given times, screenshot, and report
 screen-space bounding boxes of chosen elements (flags anything out of frame).
 
+Run from the youtube_documentary/ project root:
+
   python3 tools/qa_frame.py <engine.html> <config.json> <t1,t2,...> [selector] [outdir]
+
+Engine, config, asset, and output paths are resolved relative to that root
+(not the caller's working directory).
 """
 import asyncio, json, pathlib, sys
 from playwright.async_api import async_playwright
 
-ROOT = pathlib.Path("/home/user")
+ROOT = pathlib.Path(__file__).resolve().parents[1]  # tools/ -> youtube_documentary/
 
 def resolve(v):
     if not v: return None
@@ -16,8 +21,16 @@ def resolve(v):
     if p.is_absolute(): return p
     return ROOT.joinpath(*[q for q in p.parts if q not in ("..", ".")]).resolve()
 
+def project_path(v):
+    """Resolve v relative to the project root, unless it already exists as given."""
+    p = pathlib.Path(v)
+    if p.is_absolute() or p.exists(): return p
+    candidate = ROOT / p
+    return candidate if candidate.exists() else p
+
 async def run(engine, cfg_path, times, sel, outdir):
-    cfg = json.loads(pathlib.Path(cfg_path).read_text(encoding="utf-8"))
+    engine_path = project_path(engine)
+    cfg = json.loads(project_path(cfg_path).read_text(encoding="utf-8"))
     for k in ("hero_img", "sil_img", "rim_img", "signature", "tex",
               "bg_a", "bg_b", "bg_c", "walker", "walker2"):
         if cfg.get(k):
@@ -27,7 +40,9 @@ async def run(engine, cfg_path, times, sel, outdir):
         for name, v in cfg["assets"].items():
             p = resolve(v)
             cfg["assets"][name] = p.as_uri() if p.exists() else v
-    out = pathlib.Path(outdir); out.mkdir(parents=True, exist_ok=True)
+    out = pathlib.Path(outdir)
+    if not out.is_absolute(): out = ROOT / out
+    out.mkdir(parents=True, exist_ok=True)
     async with async_playwright() as pw:
         b = await pw.chromium.launch(args=["--force-color-profile=srgb", "--allow-file-access-from-files"])
         pg = await b.new_page(viewport={"width": 1920, "height": 1080}, device_scale_factor=1)
@@ -35,7 +50,7 @@ async def run(engine, cfg_path, times, sel, outdir):
         pg.on("pageerror", lambda e: errs.append(str(e)))
         pg.on("console", lambda m: errs.append("console:" + m.text) if m.type == "error" else None)
         await pg.add_init_script(f"window.SCENE_CONFIG = {json.dumps(cfg)};")
-        await pg.goto(pathlib.Path(engine).resolve().as_uri())
+        await pg.goto(engine_path.resolve().as_uri())
         for _ in range(60):
             ok = await pg.evaluate("window.ready ? window.ready() : !!window.seek")
             if ok: break
@@ -45,7 +60,7 @@ async def run(engine, cfg_path, times, sel, outdir):
         for t in times:
             await pg.evaluate(f"window.seek({t})")
             await pg.wait_for_timeout(60)
-            shot = out / f"{pathlib.Path(engine).stem}_t{t:05.2f}.png"
+            shot = out / f"{engine_path.stem}_t{t:05.2f}.png"
             await stage.screenshot(path=str(shot))
             boxes = await pg.evaluate(
                 """(sel)=>{const st=document.getElementById('stage').getBoundingClientRect();

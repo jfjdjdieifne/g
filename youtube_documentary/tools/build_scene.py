@@ -4,14 +4,17 @@ build_scene.py — ONE COMMAND for a whole scene: config -> frames -> audio -> M
 
   python3 tools/build_scene.py config/geo_scene01.json
 
-Reads a scene JSON (engine: "board" | "geo"), renders every frame with headless
-Chromium, synthesises the SFX bed from the config's "audio" event list, and muxes
-the final MP4. All local, all free, no watermarks.
+Run from the youtube_documentary/ project root. Config, asset, and engine
+paths are resolved relative to that root (not the caller's working directory).
+
+Reads a scene JSON (engine: "board" | "geo" | "story"), renders every frame
+with headless Chromium, synthesises the SFX bed from the config's "audio"
+event list, and muxes the final MP4. All local, all free, no watermarks.
 """
 import asyncio, json, pathlib, subprocess, sys, tempfile, shutil
 import numpy as np
 
-ROOT = pathlib.Path("/home/user")
+ROOT = pathlib.Path(__file__).resolve().parents[1]  # tools/ -> youtube_documentary/
 sys.path.insert(0, str(ROOT / "tools"))
 from playwright.async_api import async_playwright
 from synth_sfx_cine import (SR, whoosh, impact, brush, swell, note, riser, step, fft_band,
@@ -121,10 +124,14 @@ async def render_frames(cfg, outdir):
 # ------------------------------------------------------------------ main
 def main(scene_json, out_name=None, poster_t=None):
     global CFG_REVERB
-    cfg = json.loads(pathlib.Path(scene_json).read_text(encoding="utf-8"))
+    scene_path = pathlib.Path(scene_json)
+    if not scene_path.is_absolute() and not scene_path.exists():
+        candidate = ROOT / scene_path  # resolve relative to the project root
+        if candidate.exists(): scene_path = candidate
+    cfg = json.loads(scene_path.read_text(encoding="utf-8"))
     CFG_REVERB = cfg.get("reverb", {}) or {}
     dur = float(cfg.get("timing", {}).get("dur", 10.0))
-    rid = cfg.get("id", pathlib.Path(scene_json).stem)
+    rid = cfg.get("id", scene_path.stem)
     print(f"[1/3] frames  ({cfg.get('engine','board')} engine, {dur}s)")
     n, fps = asyncio.run(render_frames(cfg, FRAME_DIR))
     tmp = ROOT / ".cache"
