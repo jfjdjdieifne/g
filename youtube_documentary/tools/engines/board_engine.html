@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>board_engine v6</title>
+<style>
+  @font-face { font-family:"Caveat"; src:url("../../DEMO1_ESCOBAR/assets/fonts/Caveat.ttf"); font-weight:400 700; }
+  @font-face { font-family:"Playfair"; src:url("../../DEMO1_ESCOBAR/assets/fonts/PlayfairDisplay.ttf"); font-weight:400 900; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { background:#000; }
+  #stage { position:relative; width:1920px; height:1080px; overflow:hidden; background:#0a0806; -webkit-font-smoothing:antialiased; }
+  #boardWrap { position:absolute; left:0; top:0; width:1920px; height:1080px; transform-origin:0 0; will-change:transform,filter; }
+  #board { position:absolute; background: radial-gradient(2400px 1600px at 30% 24%, #4a3a29 0%, #362a1e 44%, #261c13 74%, #1c140d 100%); }
+  #board::before { content:""; position:absolute; inset:0;
+    background: repeating-linear-gradient(96deg, rgba(255,235,200,.024) 0px, rgba(255,235,200,.024) 2px, rgba(0,0,0,0) 3px, rgba(0,0,0,0) 98px); }
+  /* ---- bare photo, no frame, no border ---- */
+  #heroStack { position:absolute; display:flex; flex-direction:column; align-items:center; }
+  #photoStack { position:relative; display:block; filter: drop-shadow(0 42px 60px rgba(0,0,0,.72)) drop-shadow(0 10px 22px rgba(0,0,0,.5)); }
+  #heroPhoto { display:block; border-radius:3px; }
+  #heroSil, #heroRim { position:absolute; inset:0; width:100%; height:100%; opacity:0; }
+  #heroRim { mix-blend-mode:screen; }
+  #sweep { position:absolute; inset:-8%; opacity:0; mix-blend-mode:screen; pointer-events:none; border-radius:6px;
+    background: linear-gradient(104deg, rgba(255,255,255,0) 42%, rgba(198,228,244,.5) 50%, rgba(255,255,255,0) 58%); }
+  .slotPhoto { position:absolute; border-radius:3px; filter: drop-shadow(0 30px 48px rgba(0,0,0,.66)); overflow:hidden; }
+  .slotPhoto .fill { position:absolute; inset:0; background:linear-gradient(135deg,#54452f,#33281c); }
+  .slotPhoto .fill::after { content:""; position:absolute; inset:0; background:repeating-linear-gradient(45deg, rgba(255,255,255,.02) 0 12px, rgba(0,0,0,0) 12px 24px); }
+  /* names — written on the board, in light ink */
+  #nameWrap { font-family:"Caveat",cursive; font-weight:700; color:#f3e3c4; text-shadow:0 3px 18px rgba(0,0,0,.85);
+    white-space:nowrap; display:inline-block; margin-top:18px; }
+  #sigWrap { margin-top:0; overflow:hidden; }
+  #sigImg { display:block; opacity:0; filter: invert(1) sepia(.55) saturate(1.6) hue-rotate(-8deg) brightness(1.05); }
+  #dateWrap { font-family:"DejaVu Sans Mono",monospace; letter-spacing:.32em; color:#a5947a; margin-top:8px;
+    text-shadow:0 2px 10px rgba(0,0,0,.9); }
+  .bcap { position:absolute; white-space:nowrap; }
+  #capTop { font-family:"Caveat",cursive; font-weight:600; color:#f6e7c8; text-shadow:0 6px 30px rgba(0,0,0,.8); }
+  #capLine { font-family:"Playfair",serif; font-weight:500; color:#efe3cd; letter-spacing:.06em; text-shadow:0 5px 26px rgba(0,0,0,.85); }
+  #capLine span, #whyWrap .w { display:inline-block; }
+  #whyWrap { position:absolute; font-family:"Playfair",serif; font-weight:800; color:#f8f1e2; letter-spacing:.04em;
+    white-space:nowrap; text-shadow:0 8px 40px rgba(0,0,0,.85); }
+  .ink { position:absolute; overflow:visible; }
+  #light { position:absolute; inset:0; pointer-events:none; mix-blend-mode:soft-light; }
+  #bloom { position:absolute; inset:-150px; pointer-events:none; mix-blend-mode:screen; filter:blur(50px); }
+  #fill { position:absolute; inset:0; pointer-events:none; mix-blend-mode:soft-light;
+    background: radial-gradient(1200px 900px at 82% 14%, rgba(120,152,190,.30) 0%, rgba(0,0,0,0) 60%); }
+  #grain { position:absolute; inset:-60px; pointer-events:none; opacity:.06; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='420' height='420' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  #vig { position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(ellipse 74% 68% at 50% 46%, rgba(0,0,0,0) 32%, rgba(0,0,0,.52) 74%, rgba(0,0,0,.88) 100%); }
+  #dip { position:absolute; inset:0; pointer-events:none; background:#000; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="boardWrap"><div id="board"></div></div>
+  <div id="light"></div><div id="bloom"></div><div id="fill"></div>
+  <div id="grain"></div><div id="vig"></div><div id="dip"></div>
+</div>
+<script>
+/* =========================================================================
+   board_engine v6 — GENERAL, FRAME-SAFE.
+   · STAGE-FIT: photo + name + signature + date (+ caption line) are measured
+     and AUTO-SCALED so the whole block always fits inside the frame for the
+     entire camera move. Nothing is ever cut — top, bottom or sides.
+   · Caption line is centred under the block, clamped inside frame.
+   · Warm question mark sits UNDER "BUT WHY".
+   · Every floating text is clamped/shrunk to stay inside the frame.
+   · No frames on photos (v5 rule). Config-driven.
+   ========================================================================= */
+const CFG = Object.assign({
+  board:{ w:6400, h:2800 },
+  hero:{ x:2000, y:1250, maxPhotoH:760, rot:-0.7 },
+  slots:[], text:{ top:"", name:"", line:"", why:["",""], date:"" },
+  fit:{ safeV:34, safeH:64, gapLine:30 },
+  timing:{ in:0.45, top:[0.50,0.92], name:[0.95,1.75], sig:[1.85,2.60], date:[1.35,2.35],
+           transform:[2.05,3.15], line:[[2.20,2.46],[2.44,2.80],[2.76,3.04]], q:[2.95,3.50],
+           beat:[3.50,3.95], pan:[3.95,5.00], why:[[4.70,5.05],[4.98,5.40]], whyq:[5.70,6.60],
+           dur:10.0 }
+}, window.SCENE_CONFIG||{});
+const T=CFG.timing, FIT=CFG.fit||{};
+const SAFE_V=FIT.safeV!=null?FIT.safeV:34, SAFE_H=FIT.safeH!=null?FIT.safeH:64, GAP_LINE=FIT.gapLine!=null?FIT.gapLine:40;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const lerp=(a,b,p)=>a+(b-a)*p;
+const eOutCubic=p=>1-Math.pow(1-p,3);
+const eOutQuint=p=>1-Math.pow(1-p,5);
+const eInOutCubic=p=>p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
+const eInOutSine=p=>-(Math.cos(Math.PI*p)-1)/2;
+const seg=(t,a,b)=>clamp((t-a)/(b-a),0,1);
+function pw(pieces,t){ if(t<=pieces[0][0])return pieces[0][1];
+  for(let i=0;i<pieces.length-1;i++){const [t0,v0]=pieces[i],[t1,v1]=pieces[i+1];
+    if(t>=t0&&t<=t1) return lerp(v0,v1,(t-t0)/(t1-t0));} return pieces[pieces.length-1][1]; }
+const D=document, NS="http://www.w3.org/2000/svg";
+const board=D.getElementById("board");
+function el(tag,cls,html){const e=D.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e;}
+board.style.width=CFG.board.w+"px"; board.style.height=CFG.board.h+"px";
+const H=CFG.hero;
+const hasLine=!!(CFG.text.line&&CFG.text.line.trim());
+const hasWhy=!!(CFG.text.why&&CFG.text.why.some(w=>w&&w.trim()));
+
+/* ---------- slots: far away, bare, label-free ---------- */
+CFG.slots.forEach(s=>{
+  const c=el("div","slotPhoto");
+  c.style.cssText=`left:${s.x-s.w/2}px;top:${s.y-s.h/2}px;width:${s.w}px;height:${s.h}px;transform:rotate(${s.rot||0}deg)`;
+  c.innerHTML='<div class="fill"></div>';
+  board.appendChild(c);
+});
+
+/* ---------- hero: bare photo + writing under it ---------- */
+const stack=el("div"); stack.id="heroStack"; board.appendChild(stack);
+const photoStack=el("div"); photoStack.id="photoStack"; stack.appendChild(photoStack);
+const heroPhoto=el("img"); heroPhoto.id="heroPhoto"; heroPhoto.src=CFG.hero_img||"";
+photoStack.appendChild(heroPhoto);
+if(CFG.sil_img){ const s=el("img"); s.id="heroSil"; s.src=CFG.sil_img; photoStack.appendChild(s); }
+if(CFG.rim_img){ const r=el("img"); r.id="heroRim"; r.src=CFG.rim_img; photoStack.appendChild(r); }
+photoStack.appendChild(el("div",null,"")).id="sweep";
+const nameWrap=el("div",null,CFG.text.name); nameWrap.id="nameWrap"; stack.appendChild(nameWrap);
+let sigImg=null;
+if(CFG.signature){ const sw=el("div"); sw.id="sigWrap";
+  sw.innerHTML=`<img id="sigImg" src="${CFG.signature}">`; stack.appendChild(sw); sigImg=D.getElementById("sigImg"); }
+const dateWrap=el("div",null,CFG.text.date||""); dateWrap.id="dateWrap"; stack.appendChild(dateWrap);
+let capLine=null;
+if(hasLine){
+  capLine=el("div","bcap",CFG.text.line.split(" ").map((w,i)=>`<span id="lw${i}">${w}</span>`).join("&nbsp;"));
+  capLine.id="capLine"; board.appendChild(capLine);
+}
+const capTop=el("div","bcap",CFG.text.top); capTop.id="capTop"; board.appendChild(capTop);
+let whyWrap=null;
+if(hasWhy){
+  whyWrap=el("div",null,CFG.text.why.map((w,i)=>`<span class="w" id="ww${i}">${w}</span>`).join("&nbsp;"));
+  whyWrap.id="whyWrap"; board.appendChild(whyWrap);
+}
+
+/* ---------- drawn ink ---------- */
+const QVB="0 0 220 300";
+const QPATH="M52,58 C 40,4 100,-16 138,8 C 172,30 168,84 130,102 C 106,114 96,124 94,158";
+function mkSvg(id,x,y,w,h,items,stroke,sw){
+  const s=D.createElementNS(NS,"svg"); s.setAttribute("id",id); s.setAttribute("class","ink");
+  s.setAttribute("width",w); s.setAttribute("height",h); s.setAttribute("viewBox",QVB);
+  s.style.cssText=`left:${x}px;top:${y}px;`;
+  items.forEach(it=>{ const pe=D.createElementNS(NS,it.t);
+    Object.entries(it.a).forEach(([k,v])=>pe.setAttribute(k,v));
+    if(it.t==="path"){ pe.setAttribute("fill","none"); pe.setAttribute("stroke",it.c||stroke);
+      pe.setAttribute("stroke-width",it.w||sw); pe.setAttribute("stroke-linecap","round"); pe.setAttribute("stroke-linejoin","round"); }
+    s.appendChild(pe); it.ref=pe; });
+  board.appendChild(s); return {svg:s,items,w0:w,h0:h};
+}
+const qCool=mkSvg("qCool", 0,0, 240,324,
+  [{t:"path",a:{d:QPATH}},{t:"circle",a:{cx:94,cy:206,r:14,fill:"#a9dcec"}}],"#a9dcec",11);
+const qWarm=mkSvg("qWarm", 0,0, 260,351,
+  [{t:"path",a:{d:QPATH}},{t:"circle",a:{cx:94,cy:206,r:14,fill:"#e2582f"}}],"#e2582f",12);
+[qCool,qWarm].forEach(o=>{ const p=o.items[0].ref,L=p.getTotalLength();
+  p.setAttribute("stroke-dasharray",L); p.setAttribute("stroke-dashoffset",L); o.len=L;
+  o.items[1].ref.style.transformOrigin="94px 206px"; });
+function drawInk(o,t0,t1,t){ const p=seg(t,t0,t1), e=eInOutSine(p);
+  o.items[0].ref.setAttribute("stroke-dashoffset",(1-e)*o.len); return e; }
+function dotInk(o,t0,t,t1){ const p=seg(t,t0,t1||t0+0.16), s=p>0?(0.15+0.85*eOutCubic(p)):0;
+  o.items[1].ref.style.transform=`scale(${s})`; o.items[1].ref.style.opacity=p>0?1:0; }
+
+/* ---------- camera ---------- */
+let CAM=[], LX=[], LY=[], LR=[], PANX=0, HG={cx:H.x, cy:H.y, pw:520, ph:650, top:0, capTopY:0, lineY:0, whyY:0};
+function buildCam(){
+  PANX=Math.round(HG.pw*0.52);
+  CAM=[
+    {t0:0.00,t1:T.in, a:{x:HG.cx+200,y:HG.cy-220,z:0.58}, b:{x:HG.cx+2,y:HG.cy+2,z:1.10}, e:eOutQuint},
+    {t0:T.in,t1:T.in+0.17, a:{x:HG.cx+2,y:HG.cy+2,z:1.10}, b:{x:HG.cx,y:HG.cy-4,z:1.045}, e:eOutCubic},
+    {t0:T.in+0.17,t1:T.transform[1], a:{x:HG.cx,y:HG.cy-4,z:1.045}, b:{x:HG.cx+14,y:HG.cy-6,z:1.055}, e:eInOutSine},
+    {t0:T.transform[1],t1:T.transform[1]+0.42, a:{x:HG.cx+14,y:HG.cy-6,z:1.055}, b:{x:HG.cx+15,y:HG.cy-4,z:1.06}, e:eInOutSine},
+    {t0:T.transform[1]+0.42,t1:T.pan[1], a:{x:HG.cx+15,y:HG.cy-4,z:1.06}, b:{x:HG.cx+PANX,y:HG.cy-14,z:0.93}, e:eInOutCubic},
+    {t0:T.pan[1],t1:T.dur, a:{x:HG.cx+PANX,y:HG.cy-14,z:0.93}, b:{x:HG.cx+PANX+40,y:HG.cy-12,z:0.95}, e:eInOutSine}
+  ];
+}
+function camAt(t){ if(t<=CAM[0].t0)return CAM[0].a;
+  for(const s of CAM){ if(t>=s.t0&&t<=s.t1){ const p=s.e((t-s.t0)/(s.t1-s.t0));
+    return {x:lerp(s.a.x,s.b.x,p),y:lerp(s.a.y,s.b.y,p),z:lerp(s.a.z,s.b.z,p)}; } }
+  return CAM[CAM.length-1].b; }
+function buildLight(){
+  LX=[[0,HG.cx+210],[T.transform[1],HG.cx+40],[T.pan[1],HG.cx+HG.pw*0.9+260],[T.dur,HG.cx+HG.pw*0.9+320]];
+  LY=[[0,HG.cy-20],[T.transform[1],HG.cy+10],[T.pan[1],HG.cy-30],[T.dur,HG.cy-20]];
+  LR=[[0,520],[T.transform[1],540],[T.pan[1],760],[T.dur,840]];
+}
+const BLUR=[[0,40],[0.135,18],[0.3375,4],[0.45,0],[T.dur,0]];
+
+/* ---------- STAGE FIT: nothing is ever cut ---------- */
+function safeBand(){
+  /* the camera always aims at H.y (see buildCam); the usable vertical half-window
+     is the tightest moment of the whole film (steady part). Symmetric → no drift. */
+  const tA=T.in+0.25, tB=T.dur;
+  let half=1e9;
+  for(let i=0;i<=64;i++){
+    const t=lerp(tA,tB,i/64);
+    let z, oy;
+    if(t<=CAM[0].t0){ z=CAM[0].a.z; oy=CAM[0].a.y-H.y; }
+    else{ let f=false;
+      for(const s of CAM){ if(t>=s.t0&&t<=s.t1){ const p=s.e((t-s.t0)/(s.t1-s.t0));
+        z=lerp(s.a.z,s.b.z,p); oy=lerp(s.a.y,s.b.y,p)-H.y; f=true; break; } }
+      if(!f){ const b=CAM[CAM.length-1].b; z=b.z; oy=b.y-H.y; } }
+    half=Math.min(half, 540/z - Math.abs(oy));
+  }
+  return {top:H.y-half+SAFE_V, bottom:H.y+half-SAFE_V, half};
+}
+function applyMetrics(ph){
+  const nat=heroPhoto.naturalWidth, natH=heroPhoto.naturalHeight;
+  const aspect=(nat&&natH)?nat/natH:0.8;
+  HG.ph=ph; HG.pw=Math.round(ph*aspect*10)/10;
+  heroPhoto.style.width=HG.pw+"px"; heroPhoto.style.height=HG.ph+"px";
+  photoStack.style.transform=`rotate(${H.rot||0}deg)`;
+  nameWrap.style.whiteSpace="nowrap";
+  let fs=Math.round(HG.pw*0.15), guard=0;
+  nameWrap.style.fontSize=fs+"px";
+  while(nameWrap.scrollWidth>HG.pw*1.18 && fs>24 && guard++<90){
+    fs-=2; nameWrap.style.fontSize=fs+"px";
+  }
+  HG.nameFs=fs;
+  if(sigImg){ const sw=nameWrap.scrollWidth;
+    let w=Math.min(HG.pw*0.62, Math.max(200, sw*0.82));
+    const natW=sigImg.naturalWidth||1, natH=sigImg.naturalHeight||1;
+    const maxH=HG.ph*0.22;
+    if(w*natH/natW > maxH) w=Math.round(maxH*natW/natH);
+    sigImg.style.width=w+"px"; }
+  capTop.style.fontSize=Math.round(HG.pw*0.115)+"px";
+  if(capLine) capLine.style.fontSize=Math.round(HG.pw*0.064)+"px";
+  if(whyWrap) whyWrap.style.fontSize=Math.round(HG.pw*0.135)+"px";
+  qCool.svg.setAttribute("width",Math.round(HG.pw*0.44));
+  qCool.svg.setAttribute("height",Math.round(HG.pw*0.44*324/240));
+  qWarm.svg.setAttribute("width",Math.round(HG.pw*0.48));
+  qWarm.svg.setAttribute("height",Math.round(HG.pw*0.48*351/260));
+}
+function layout(){
+  HG.cx=H.x; HG.cy=H.y;
+  buildCam();                       /* placeholder pan for the band (vertical only) */
+  const band=safeBand();
+  const avail=band.bottom-band.top;
+  let ph=(H.maxPhotoH||760);
+  for(let it=0; it<9; it++){
+    applyMetrics(ph);
+    const stackH=stack.offsetHeight;
+    const lineH=(hasLine&&capLine)?(GAP_LINE+capLine.offsetHeight):0;
+    const total=stackH+lineH;
+    if(total<=avail || ph<=300) break;
+    ph=Math.max(300, Math.floor(ph*Math.sqrt(avail/total)*0.997));
+  }
+  applyMetrics(ph);
+  buildCam(); buildLight();
+  const stackH=stack.offsetHeight;
+  const lineH=(hasLine&&capLine)?capLine.offsetHeight:0;
+  const total=stackH+((hasLine&&capLine)?(GAP_LINE+lineH):0);
+  HG.top=band.top+(avail-total)/2;
+  HG.cy=HG.top+stackH/2;
+  stack.style.left=HG.cx+"px"; stack.style.top=HG.cy+"px";
+  stack.style.transform="translate(-50%,-50%)";
+  HG.capTopY=HG.top+HG.ph*0.16;
+  capTop.style.left=HG.cx+"px"; capTop.style.top=HG.capTopY+"px";
+  if(capLine){ HG.lineY=HG.top+stackH+GAP_LINE; capLine.style.left=HG.cx+"px"; capLine.style.top=HG.lineY+"px"; }
+  /* floating ink — everything relative to the fitted block */
+  HG.whyY=HG.top+HG.ph*0.52;
+  if(whyWrap){ whyWrap.style.left=(HG.cx+HG.pw*0.60)+"px"; whyWrap.style.top=HG.whyY+"px"; }
+  qCool.svg.style.left=(HG.cx+HG.pw*0.60)+"px";
+  qCool.svg.style.top=(HG.top+HG.ph*0.17)+"px";
+  if(whyWrap){
+    const wl=HG.cx+HG.pw*0.60, ww=whyWrap.offsetWidth, qw=parseFloat(qWarm.svg.getAttribute("width"));
+    qWarm.svg.style.left=(wl+ww/2-qw/2)+"px";
+    qWarm.svg.style.top=(HG.whyY+whyWrap.offsetHeight+Math.round(HG.pw*0.05))+"px";
+  }
+  clampAll();
+}
+/* ---------- clamp every floating text/ink inside the frame ---------- */
+function winRange(t0,t1){
+  let lo=-1e9, hi=1e9, zmax=1;
+  for(let i=0;i<=40;i++){
+    const t=lerp(t0,t1,i/40), c=camAt(t);
+    const sx=960-c.x*c.z;                      /* screenX = sx + worldX*c.z */
+    lo=Math.max(lo,(SAFE_H-sx)/c.z);           /* worldX >= this */
+    hi=Math.min(hi,(1920-SAFE_H-sx)/c.z);      /* worldX + w <= this */
+    zmax=Math.max(zmax,c.z);
+  }
+  return {lo,hi,zmax};
+}
+function clampX(ele,t0,t1,centered,setLeft,measureW,shrink){
+  for(let it=0; it<30; it++){
+    const w=measureW();
+    const r=winRange(t0,t1);
+    const adv=centered? w/2 : 0;
+    const lo=r.lo+adv, hi=r.hi-w+adv;
+    if(lo<=hi){
+      const cur=parseFloat(ele.style.left)||0;
+      const nx=clamp(cur,lo,hi);
+      if(Math.abs(nx-cur)>0.5) setLeft(nx);
+      return;
+    }
+    if(!shrink) return;
+    const usable=(1920-2*SAFE_H)/r.zmax;
+    const f=Math.max(0.55, usable/w);
+    if(f>=0.999) return;
+    shrink(f);
+  }
+}
+function clampAll(){
+  clampX(capTop,-1,1e9,true,v=>capTop.style.left=v+"px",()=>capTop.offsetWidth,s=>{
+    const fs=parseFloat(capTop.style.fontSize)*s; capTop.style.fontSize=fs+"px"; });
+  if(capLine) clampX(capLine,T.line[0][0],T.pan[0]+0.25,true,v=>capLine.style.left=v+"px",
+    ()=>capLine.offsetWidth,s=>{ const fs=parseFloat(capLine.style.fontSize)*s; capLine.style.fontSize=fs+"px"; });
+  if(whyWrap) clampX(whyWrap,T.why[0][0],T.dur,false,v=>whyWrap.style.left=v+"px",
+    ()=>whyWrap.offsetWidth,s=>{ const fs=parseFloat(whyWrap.style.fontSize)*s; whyWrap.style.fontSize=fs+"px"; });
+  const svgClamp=(o,t0,t1)=>clampX(o.svg,t0,t1,false,v=>o.svg.style.left=v+"px",
+    ()=>parseFloat(o.svg.getAttribute("width")),s=>{
+      o.svg.setAttribute("width",Math.round(parseFloat(o.svg.getAttribute("width"))*s));
+      o.svg.setAttribute("height",Math.round(parseFloat(o.svg.getAttribute("height"))*s)); });
+  svgClamp(qCool,T.q[0],T.pan[0]+0.35);
+  if(hasWhy) svgClamp(qWarm,T.whyq[0],T.dur);
+}
+
+const boardWrap=D.getElementById("boardWrap"),light=D.getElementById("light"),bloom=D.getElementById("bloom"),
+      grain=D.getElementById("grain"),dip=D.getElementById("dip"),
+      heroSil=D.getElementById("heroSil"),heroRim=D.getElementById("heroRim"),sweep=D.getElementById("sweep");
+
+function revTxt(ele,t,t0,t1,rise,lsFrom,lsTo){
+  const p=seg(t,t0,t1), e=eOutCubic(p);
+  ele.style.clipPath=`inset(0 ${(1-e)*100}% 0 0)`;
+  ele.style.transform=`translateX(-50%) translateY(${(1-e)*(rise||26)}px)`;
+  if(lsFrom!=null) ele.style.letterSpacing=lerp(lsFrom,lsTo,e)+"em";
+  ele.style.opacity=p>0?1:0;
+}
+function revSpan(ele,t,t0,t1,rise,lsFrom,lsTo){
+  const p=seg(t,t0,t1), e=eOutCubic(p);
+  ele.style.clipPath=`inset(0 ${(1-e)*100}% 0 0)`;
+  ele.style.transform=`translateY(${(1-e)*(rise||20)}px)`;
+  if(lsFrom!=null) ele.style.letterSpacing=lerp(lsFrom,lsTo,e)+"em";
+  ele.style.opacity=p>0?1:0;
+}
+window.seek=function(t){
+  const c=camAt(t);
+  let px=960-c.x*c.z, py=540-c.y*c.z;
+  if(t>T.in&&t<T.in+0.55){ const d=t-T.in, a=5.6*Math.exp(-d/0.12);
+    px+=a*Math.sin(2*Math.PI*10.5*d); py+=a*.68*Math.cos(2*Math.PI*9*d); }
+  px+=Math.sin(t*0.65)*1.2; py+=Math.cos(t*0.5)*1.0;
+  boardWrap.style.transform=`translate(${px}px, ${py}px) scale(${c.z})`;
+  const bl=pw(BLUR,t);
+  boardWrap.style.filter=(bl>0.05?`blur(${bl.toFixed(2)}px) `:"")+`saturate(1.05) contrast(1.04)`;
+
+  const ax=pw(LX,t), ay=pw(LY,t), ar=pw(LR,t);
+  const sx=960+(ax-c.x)*c.z, sy=540+(ay-c.y)*c.z, sr=ar*c.z;
+  const warm=0.52-0.16*seg(t,T.transform[0],T.transform[0]+0.8);
+  light.style.background=`radial-gradient(${sr}px ${sr*0.76}px at ${sx}px ${sy}px, rgba(255,214,160,${warm.toFixed(2)}) 0%, rgba(255,190,120,${(warm*.3).toFixed(2)}) 46%, rgba(0,0,0,0) 74%)`;
+  bloom.style.background=`radial-gradient(${sr*.85}px ${sr*.62}px at ${sx}px ${sy}px, rgba(255,198,136,.45) 0%, rgba(0,0,0,0) 70%)`;
+  bloom.style.opacity=(0.28-0.10*seg(t,T.transform[0],T.transform[0]+0.8)).toFixed(2);
+  grain.style.backgroundPosition=`${Math.round(t*92)%420}px ${Math.round(t*39)%420}px`;
+  grain.style.opacity=(0.056+0.013*Math.sin(t*11.3)).toFixed(3);
+
+  let d0=1-seg(t,0.02,0.15);
+  if(t>T.dur-0.65) d0=eInOutSine(seg(t,T.dur-0.65,T.dur-0.15));
+  dip.style.opacity=d0.toFixed(3);
+
+  revTxt(capTop,t,T.top[0],T.top[1],30,0.10,0.02);
+  capTop.style.opacity=(seg(t,T.top[0],T.top[0]+0.08)*(1-seg(t,T.name[0],T.name[0]+0.25))).toFixed(3);
+
+  /* NAME: written under the photo, on the surface */
+  const np=seg(t,T.name[0],T.name[1]), ne=eOutCubic(np);
+  nameWrap.style.opacity=np>0?1:0;
+  nameWrap.style.clipPath=`inset(0 ${((1-ne)*100).toFixed(1)}% 0 0)`;
+  nameWrap.style.transform=`translateX(${(-4*(1-ne)).toFixed(2)}px)`;
+  let sigSe=0;
+  if(sigImg){ const sp=seg(t,T.sig[0],T.sig[1]); sigSe=eInOutSine(sp);
+    sigImg.style.clipPath=`inset(0 ${(1-sigSe)*100}% 0 0)`; sigImg.style.opacity=(sp*0.92).toFixed(2); }
+  const dp=seg(t,T.date[0],T.date[1]);
+  dateWrap.style.opacity=((dp>0?1:0)*(1-seg(t,T.transform[1]-0.2,T.transform[1]+0.2))*0.95).toFixed(2);
+  if(CFG.text.date){ const full=CFG.text.date; dateWrap.textContent=full.slice(0,Math.round(full.length*dp)); }
+
+  /* transformation → silhouette + light trace */
+  const tr=eInOutSine(seg(t,T.transform[0],T.transform[1]));
+  heroPhoto.style.filter=`sepia(${(0.42*(1-tr)).toFixed(2)}) saturate(${(0.92*(1-tr)+0.15*tr).toFixed(2)}) contrast(${(1.02+0.16*tr).toFixed(2)}) brightness(${(1.01-0.34*tr).toFixed(2)})`;
+  if(heroSil){ heroSil.style.opacity=(tr*0.98).toFixed(3); heroSil.style.transform=`scale(${(1+0.03*tr).toFixed(4)})`; }
+  if(heroRim){ heroRim.style.opacity=(Math.max(0,(tr-0.25)/0.75)*0.95).toFixed(3); }
+  sweep.style.opacity=(seg(t,T.transform[0]+0.15,T.transform[0]+0.85)*(1-seg(t,T.transform[1],T.transform[1]+0.4))).toFixed(3);
+  sweep.style.transform=`translateX(${(-90+lerp(0,180,eInOutSine(seg(t,T.transform[0]+0.15,T.transform[1]+0.3))))}%)`;
+
+  drawInk(qCool,T.q[0],T.q[1],t); dotInk(qCool,T.q[1]-0.05,t,T.q[1]+0.12);
+  qCool.svg.style.opacity=(seg(t,T.q[0]-0.05,T.q[0]+0.1)*(1-seg(t,T.pan[0],T.pan[0]+0.35))).toFixed(3);
+  const br=1+0.03*Math.sin((t-T.q[1])*1.8)*seg(t,T.q[1],T.q[1]+0.3)*(1-seg(t,T.pan[0],T.pan[0]+0.4));
+  qCool.svg.style.transform=`scale(${br.toFixed(3)})`; qCool.svg.style.transformOrigin="50% 50%";
+
+  if(capLine){
+    CFG.text.line.split(" ").forEach((w,i)=>{
+      const wEl=D.getElementById("lw"+i); if(!wEl) return;
+      revSpan(wEl,t,T.line[i][0],T.line[i][1],18, i===1?0.24:null, i===1?0.10:null);
+    });
+    capLine.style.opacity=(1-seg(t,T.pan[0],T.pan[0]+0.25)).toFixed(3);
+  }
+
+  if(whyWrap){
+    CFG.text.why.forEach((w,i)=>{
+      const wEl=D.getElementById("ww"+i); if(!wEl) return;
+      revSpan(wEl,t,T.why[i][0],T.why[i][1],30, i===1?0.26:null, i===1?0.04:null);
+    });
+    const pop=0.055*Math.sin(Math.PI*seg(t,T.why[1][1]+0.2,T.why[1][1]+0.5));
+    whyWrap.style.transform=`translateY(${-pop*300}px) scale(${(1+pop).toFixed(3)})`;
+    whyWrap.style.transformOrigin="0 60%";
+    whyWrap.style.opacity=(1-seg(t,T.dur-0.7,T.dur-0.2)).toFixed(3);
+    drawInk(qWarm,T.whyq[0],T.whyq[1],t); dotInk(qWarm,T.whyq[1]-0.05,t,T.whyq[1]+0.15);
+    qWarm.svg.style.opacity=(seg(t,T.whyq[0]-0.05,T.whyq[0]+0.12)*(1-seg(t,T.dur-0.8,T.dur-0.3))).toFixed(3);
+    const br2=1+0.026*Math.sin((t-T.whyq[1])*1.5)*seg(t,T.whyq[1],T.whyq[1]+0.4)*(1-seg(t,T.dur-1.4,T.dur-0.8));
+    qWarm.svg.style.transform=`scale(${br2.toFixed(3)})`; qWarm.svg.style.transformOrigin="50% 60%";
+  }
+};
+
+/* ---------- boot: layout after photo + fonts + signature ---------- */
+layout();
+if(heroPhoto.complete) layout(); else heroPhoto.addEventListener("load",layout);
+if(sigImg){ if(sigImg.complete) layout(); else sigImg.addEventListener("load",layout); }
+if(D.fonts && D.fonts.ready) D.fonts.ready.then(()=>layout());
+window.ready=()=>true;
+window.seek(0);
+</script>
+</body>
+</html>
