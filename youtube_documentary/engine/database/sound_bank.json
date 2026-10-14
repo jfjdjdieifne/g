@@ -1,0 +1,53 @@
+{
+ "meta": {
+  "schema": "sound-bank/1",
+  "updated": "2026-10-14",
+  "note": "بنك الصوت: المزاج → الموسيقى (بد)، والحدث → SFX. كل الباراتمترات قابلة للتنفيذ (speed/آلات/شدة/لتر) وكلها بتتولّد عندنا (numpy/synth) — بلا حقوق.",
+  "laws": [
+   "SFX تحت الجو دايمًا: ذروة الـSFX ≤ ذروة الموسيقى − 5dB (المعيار عندنا −7dB).",
+   "قبل بطاقة الفصل: أسود 2–2.5ث + صمت (بلا بد ولا SFX).",
+   "ما في SFX عند كل قطع — بس عند التحوّلات المهمة.",
+   "البد ما بينقطع فجأة: crossfade 0.6–1.2ث عند حدود البلوكات/الفصول.",
+   "بلا موسيقى لحظات الشهادات/الاقتباسات الشخصية (نفسّر بالصورة والنص)."
+  ]
+ },
+ "moods": {
+  "cold_open":   {"bpm": [82, 92],  "key": "D minor",   "instruments": ["low strings tremolo", "sub drone", "soft pulse"], "intensity": 0.45, "lowpass_hz": 4200, "notes": "فضول + تهديد هادئ"},
+  "dread":       {"bpm": [76, 86],  "key": "C minor",   "instruments": ["cello ostinato", "metal hits", "sub drone"],  "intensity": 0.55, "lowpass_hz": 3800, "notes": "خوف ثابت — الطبقة الأساسية للمواضيع الخطرة"},
+  "tension_rise":{"bpm": [92, 104], "key": "E minor",   "instruments": ["pizzicato", "rising pad", "ticking perc"], "intensity": 0.62, "lowpass_hz": 5200, "notes": "تصاعد — بيتقصّ عند الذروة"},
+  "peak_impact": {"bpm": [104, 116],"key": "F minor",   "instruments": ["braams", "taiko", "sub boom"],             "intensity": 0.85, "lowpass_hz": 12000,"notes": "الذروة — قليل جدًا، بس لما الضربة تستاهل"},
+  "grief":       {"bpm": [60, 68],  "key": "A minor",   "instruments": ["solo cello", "piano single notes", "air"],  "intensity": 0.30, "lowpass_hz": 3200, "notes": "خسارة/موت — بلا إيقاع"},
+  "resolve":     {"bpm": [84, 96],  "key": "G minor",   "instruments": ["piano arpeggio", "strings swell"],          "intensity": 0.50, "lowpass_hz": 5600, "notes": "عزم وقرار"},
+  "scale_awe":   {"bpm": [70, 80],  "key": "D minor",   "instruments": ["wide pad", "choir pad", "sub"],             "intensity": 0.58, "lowpass_hz": 6000, "notes": "أرقام/إمبراطورية/حجم"},
+  "greed_glow":  {"bpm": [90, 100], "key": "B minor",   "instruments": ["analog bass", "electric piano", "shaker"],  "intensity": 0.52, "lowpass_hz": 7000, "notes": "فلوس وحركة — مغناطيسي مو احتفالي"},
+  "pulse_drive": {"bpm": [100, 112],"key": "A minor",   "instruments": ["16th perc", "string stabs", "bass pulse"],  "intensity": 0.68, "lowpass_hz": 8000, "notes": "مونتاج سريع/إجراءات"},
+  "aftermath":   {"bpm": [64, 72],  "key": "C minor",   "instruments": ["drone fade", "distant piano", "reverb tail"],"intensity": 0.26, "lowpass_hz": 3000, "notes": "بعد السقوط — مساحة للتفكير"}
+ },
+ "sfx": {
+  "whoosh_smoke_wipe": {"dur_s": [0.45, 0.9], "params": ["fft_band", "glide"], "gain_db_rel_bed": -7, "use": ["مسحة دخان", "انتقال بين مشهدين"], "anti": ["ما تتكرر مرتين ورا بعض"]},
+  "swoosh_air":        {"dur_s": [0.35, 0.6], "params": ["swoosh(lo=180,hi=2400)"], "gain_db_rel_bed": -8, "use": ["دخول نص", "تبديل كادر"]},
+  "landing_thud":      {"dur_s": [0.3, 0.55], "params": ["felt_thud(f0=64,f1=44)"], "gain_db_rel_bed": -6, "use": ["هبوط عدّاد", "تثبيت رقم"]},
+  "paper_breath":      {"dur_s": [0.25, 0.4], "params": ["paper_breath"], "gain_db_rel_bed": -10, "use": ["وثيقة/صفحة", "إثبات"]},
+  "pen_stroke":        {"dur_s": [0.3, 0.4],  "params": ["pen_stroke"], "gain_db_rel_bed": -11, "use": ["كتابة توقيع/اسم"]},
+  "type_key_single":   {"dur_s": [0.06, 0.1], "params": ["type_key"], "gain_db_rel_bed": -12, "use": ["كلمة تتطبع", "عدّاد"], "anti": ["بلا رشّة مفاتيح كاملة — كلمة وحدة"]},
+  "riser_tension":     {"dur_s": [1.2, 2.4],  "params": ["fft_band", "glide up"], "gain_db_rel_bed": -9, "use": ["قبل الذروة/الفصل"], "anti": ["ما تنتهي بلا ضربة"]},
+  "sub_boom":          {"dur_s": [0.5, 1.0],  "params": ["glide(exp,f0=90,f1=38)"], "gain_db_rel_bed": -6, "use": ["ضربة الفصل", "صدمة"], "anti": ["مرة وحدة بالمشهد"]},
+  "shimmer_soft":      {"dur_s": [1.2, 2.0],  "params": ["shimmer"], "gain_db_rel_bed": -12, "use": ["كشف جميل/سؤال"], "anti": ["بلا shimmer بمشاهد الخطر"]},
+  "clock_tick":        {"dur_s": [0.05, 0.08], "params": ["type_key(pitch=0.7)"], "gain_db_rel_bed": -10, "use": ["عدّاد زمن", "سباق"], "anti": ["بلا تيك مسرود أكثر من 3ث"]},
+  "felt_hit_soft":     {"dur_s": [0.15, 0.25], "params": ["felt_thud(gain=0.18)"], "gain_db_rel_bed": -8, "use": ["نقرة مونتاج هادية"]}
+ },
+ "events_to_sfx": {
+  "cut_transition": ["whoosh_smoke_wipe", "swoosh_air"],
+  "chapter_black": [],
+  "counter_land": ["landing_thud"],
+  "document_proof": ["paper_breath"],
+  "character_card": ["pen_stroke"],
+  "text_appear": ["type_key_single"],
+  "danger_icon": ["sub_boom"],
+  "map_travel": ["swoosh_air"],
+  "peak_impact": ["sub_boom"],
+  "reveal_soft": ["shimmer_soft"],
+  "time_pressure": ["clock_tick"],
+  "quick_montage": ["felt_hit_soft"]
+ }
+}
