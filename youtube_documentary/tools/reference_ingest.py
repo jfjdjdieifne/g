@@ -16,14 +16,17 @@ Requires ffmpeg (any recent build) and Python3. No network needed.
 import argparse, csv, json, os, shutil, subprocess, sys
 
 def ffprobe_bin():
-    for c in ('ffprobe', shutil.which('ffprobe')):
-        if c and os.path.exists(c): return c
-    return None
+    c = shutil.which('ffprobe')
+    return c
 
 def ffmpeg_bin():
-    for c in ('ffmpeg', shutil.which('ffmpeg')):
-        if c and os.path.exists(c): return c
-    return None
+    c = shutil.which('ffmpeg')
+    if c: return c
+    try:
+        import imageio_ffmpeg
+        return imageio_ffmpeg.get_ffmpeg_exe()
+    except ImportError:
+        return None
 
 def main():
     ap = argparse.ArgumentParser()
@@ -36,7 +39,7 @@ def main():
     ap.add_argument('--clips', action='store_true', help='extract 2s clips around each cut')
     a = ap.parse_args()
     ff, fp = ffmpeg_bin(), ffprobe_bin()
-    if not ff or not fp: sys.exit('ffmpeg/ffprobe required')
+    if not ff: sys.exit('ffmpeg required')
     os.makedirs(a.outdir, exist_ok=True)
     try:
         from PIL import Image, ImageDraw
@@ -44,18 +47,24 @@ def main():
         sys.exit('Pillow required for contact sheets')
     for inp in a.inputs:
         name = os.path.splitext(os.path.basename(inp))[0]
-        meta = json.loads(subprocess.check_output(
-            [fp, '-v', 'error', '-print_format', 'json', '-show_format', '-show_streams', inp]).decode())
-        v = next(s for s in meta['streams'] if s['codec_type'] == 'video')
-        dur, fps = float(meta['format']['duration']), eval(v['r_frame_rate'])
+        pr = subprocess.run([ff, '-i', inp], capture_output=True)
+        info = pr.stderr.decode('utf8', 'ignore')
+        import re as _re
+        m = _re.search(r'Duration: (\d+):(\d+):(\d+\.\d+)', info)
+        dur = int(m.group(1)) * 3600 + int(m.group(2)) * 60 + float(m.group(3)) if m else 0.0
+        fm = _re.search(r'(\d+(?:\.\d+)?) fps', info)
+        fps = float(fm.group(1)) if fm else 30.0
+        wm = _re.search(r'(\d{3,5})x(\d{3,5})', info)
         json.dump({'file': inp, 'duration': dur, 'fps': fps,
-                   'width': v['width'], 'height': v['height']},
+                   'width': int(wm.group(1)) if wm else None, 'height': int(wm.group(2)) if wm else None,
+                   'probe': 'ffmpeg -i fallback' if not fp else 'ffprobe'},
                   open(os.path.join(a.outdir, f'{name}_meta.json'), 'w'), indent=2)
         # scene cuts
-        cuts = subprocess.check_output(
-            [ff, '-v', 'error', '-i', inp, '-an', '-vf',
+        pr2 = subprocess.run(
+            [ff, '-i', inp, '-an', '-vf',
              f'select=gt(scene\\,{a.scene}),showinfo', '-f', 'null', '-'],
-            stderr=subprocess.STDOUT).decode()
+            capture_output=True)
+        cuts = pr2.stderr.decode('utf8', 'ignore')
         times = []
         for line in cuts.splitlines():
             if 'pts_time:' in line:

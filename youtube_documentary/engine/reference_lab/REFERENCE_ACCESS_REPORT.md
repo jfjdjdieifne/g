@@ -50,12 +50,24 @@ self-declarations, quoted, not guesses.
 - Official thumbnail URLs for manual opening (blocked from sandbox):
   `i.ytimg.com/vi/<ID>/maxresdefault.jpg` for the 9 IDs above.
 
-## 4. Two concrete paths to full frame-level analysis (your call)
-1. **Upload path (works today):** drop any reference video file (or 30–60s clips of
-   the sequences you care most about) into the Drive folder. I run
-   `tools/reference_ingest.py` on them locally: automatic shot-boundary detection,
-   contact sheets, shot-length CSVs — then do the real Phase 2 frame-by-frame
-   breakdown on actual pixels and upgrade every `INFERRED` label.
-2. **Your-machine path:** run `tools/reference_ingest.py` where downloads are allowed
-   on files you legally obtain, and upload its outputs (contact sheets + cuts.csv) —
-   I analyze from those.
+## 4. VALIDATED PATH (tested end-to-end today): Drive → sandbox → analysis
+YouTube's own video servers are blocked from this sandbox (verified above), but the
+Google Drive round-trip is NOT, and it is now proven with real files:
+
+- `reference_ingest_selftest.mp4` (uploaded to the delivery folder, downloaded back,
+  md5-identical) → ingest detected both planted cuts at 2.0s and 4.0s exactly.
+- `escobar_full_v1.mp4` (22 MB, from Drive) → downloaded and fully ingested in 27s:
+  34 thumbnails, contact sheets, shot-length CSV.
+- Analysis outputs land in `engine/reference_lab/<video>/` and are committed.
+
+Practical limits (measured + documented): connector transfers verified at 22 MB;
+platform docs indicate ~100 MB per upload. So: **upload each reference video in
+≤100 MB pieces** (720p is plenty for composition analysis), or trim to the key
+30–120s sequences. Everything downstream is automatic.
+
+## 5. Self-diagnosis datapoint (Phase 10 evidence, measured today)
+Ingesting our own rejected film (`escobar_full_v1.mp4`, 336s) measured a **median
+shot length of 25.7s** (5 cuts total). The reference channels' grammar operates in
+roughly 2–6s idea-beats. That single number is the quantitative definition of the
+"slideshow" rejection — and the baseline the rebuilt engine must beat by an order
+of magnitude.
