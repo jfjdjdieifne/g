@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-14",
- "head_commit": "b5a995a",
+ "head_commit": "5b6db16",
  "studies": [
   {
    "ref": "vaping",
@@ -27,9 +27,12 @@
   {
    "ref": "ww2p2",
    "name_ar": "WW2 — OverSimplified (Part 2)",
-   "status": "in_progress",
-   "progress": "0:00–3:00 (صفحات 1–6 من 32) — المختبر أعيد تشغيله بعد الريسِت",
-   "deliverables": []
+   "status": "complete",
+   "progress": "15:34 كامل — 32/32 صفحة، 29 قاعدة (47–75)، audit PASS (221 صف · 761 حدث · 0 فراغ)",
+   "deliverables": [
+    "engine/reference_lab/BREAKDOWN_WW2P2.md",
+    "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md"
+   ]
   }
  ],
  "artifacts": [
@@ -95,15 +98,26 @@
    "name": "PayPal (فيديو — 722MB، أكبر من حد التنزيل)",
    "drive_id": "1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt",
    "kind": "file"
+  },
+  {
+   "name": "BREAKDOWN_WW2P2",
+   "path": "engine/reference_lab/BREAKDOWN_WW2P2.md",
+   "kind": "file"
+  },
+  {
+   "name": "TRANSITION_ATLAS",
+   "path": "engine/reference_lab/TRANSITION_ATLAS.md",
+   "kind": "file"
   }
  ],
  "engine_state": {
-  "technique_bank": "engine/database/technique_db.json (61 كرت: 43 ww2p1 + 18 vaping — كل كرت why + qc + مصدر فريمي)",
+  "technique_bank": "engine/database/technique_db.json (94 كرت: 43 ww2p1 + 33 ww2p2 + 18 vaping — كل كرت why + qc + مصدر فريمي)",
   "director": "tools/director.py (سكربت→PLAN.md+plan.json+engine_tasks.json، فحص --validate، طبقة فهم إلزامية)",
   "transition_atlas": "tools/transition_atlas.py → engine/reference_lab/TRANSITION_ATLAS.md (قياس الانتقالات والترابط)",
   "sound_bank": "engine/database/sound_bank.json (10 مزاج + 11 SFX + قوانين)",
   "continuity": "engine/CONTINUITY_MODEL.md (4 خيوط + لقطة وحدة + in-shot vs cut)",
-  "montage_theory": "engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار)"
+  "montage_theory": "engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار)",
+  "rulebook": "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md (29 قسم — آخرها إضافات P2)"
  },
  "environment": {
   "note": "السانسبوكس بينصفّر بين الجولات: /home/user/build وpip لا يبقون. المستودع (GitHub) + الدرايف هم الحفظ الحقيقي.",
@@ -114,11 +128,10 @@
   ]
  },
  "next_steps": [
-  "WW2 P2: كمّل الصفحات 7–32 (3:00–15:34) دفعات 6 صفحات، وتنزيل كل دفعة على ملف BREAKDOWN_WW2P2.md + رفعها",
-  "بعد إكمال P2: study_audit --verify PASS + كروت بنك جديدة + تحديث TRANSITION_ATLAS وHANDOFF",
-  "PayPal: بدو ≤100MiB (filmstrip مضغوط أو أجزاء) — أو جلسة سكانر",
-  "اختبار الإخراج: ديمو 15–30 ث بنمط WW2 من الـrulebook v1.2",
-  "بعدها: مراجع الباقية (Crypto / Apple / AI / Saudi / Dubai) واحد واحد"
+  "PayPal (57:36، 721MB > سقف التنزيل 100MiB): جلسة تقطيع part_study + تنزيل أجزاء (أو سكانر)",
+  "اختبار الإخراج: ديمو 15–30 ث بنمط WW2 من الـrulebook v1.3 (P1+P2)",
+  "بعدها: مراجع الباقية (Crypto / Apple / AI / Saudi / Dubai) واحد واحد — لا دفعات",
+  "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
  ],
  "open_questions": [
   "هل نعمل جلسة سكانر (بظرف عادي) لنزّل المراجع الكبيرة (PayPal) وإلا نضل بحد الـ100MiB؟"
