@@ -1,0 +1,118 @@
+{
+ "title": "إسكوبار — نهاية 1993 (سكربت تجريبي للمخرج الآلي)",
+ "style_profile": {
+  "palette": "INK & ARCHIVE",
+  "pacing_mode": "magnates",
+  "voice": "none (بلا تعليق صوتي في هالاختبار)"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "mood": "cold_open",
+   "one_shot": true,
+   "sentences": [
+    {
+     "text": "في 1993، كان واحد من أخطر رجال العالم مختبئ في بيت صغير بكولومبيا.",
+     "intent": [
+      "hook",
+      "date"
+     ],
+     "one_shot": true
+    },
+    {
+     "text": "اسمه بابلو إسكوبار، ورقمه كان على كل طاولة في واشنطن.",
+     "intent": [
+      "character"
+     ],
+     "one_shot": true
+    },
+    {
+     "text": "خريطة ميديين كانت تعرف أكثر مما تعرف الصحافة.",
+     "intent": [
+      "map"
+     ],
+     "one_shot": true
+    }
+   ]
+  },
+  {
+   "id": "s02",
+   "mood": "greed_glow",
+   "sentences": [
+    {
+     "text": "في الذروة، كان يدخل أمريكا أربعون طن كوكايين كل شهر.",
+     "intent": [
+      "numbers",
+      "product"
+     ]
+    },
+    {
+     "text": "الفلوس كانت تُدفن بالحقول لأنها ما عادت تسع البيوت.",
+     "intent": [
+      "numbers"
+     ]
+    },
+    {
+     "text": "وتقرير خزانة أمريكا وثّق الرقم، مو الشائعات.",
+     "intent": [
+      "proof"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "s03",
+   "mood": "dread",
+   "sentences": [
+    {
+     "text": "لكن أحد الخيوط كان بيتفلّت: شريط تسجيل واحد من غرفة صغيرة.",
+     "intent": [
+      "proof",
+      "transition"
+     ]
+    },
+    {
+     "text": "قال الضابط: «كنا نعرف مكانه، بس ما كنا نعرف مين يحمي مين».",
+     "intent": [
+      "quote"
+     ]
+    },
+    {
+     "text": "بعدها صار القرار: لا محاكمة، لا زنزانة.",
+     "intent": [
+      "danger",
+      "transition"
+     ]
+    }
+   ],
+   "one_shot": true
+  },
+  {
+   "id": "s03b",
+   "mood": "dread",
+   "one_shot": true,
+   "sentences": [
+    {
+     "text": "وفي غرفة التحكم، نفس الملف كان عم يتنقّل بين إيدين مرتجفتين.",
+     "intent": [
+      "quote"
+     ],
+     "one_shot": true
+    }
+   ]
+  },
+  {
+   "id": "s04",
+   "mood": "aftermath",
+   "sentences": [
+    {
+     "text": "وفي 2 كانون الأول، انتهت القصة على سطح بيت في ميديين.",
+     "intent": [
+      "closer",
+      "date"
+     ]
+    }
+   ]
+  }
+ ]
+}

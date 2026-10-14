@@ -1,0 +1,5 @@
+google_drive/
+node_modules/
+__pycache__/
+*.pyc
+build_scratch/

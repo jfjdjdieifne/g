@@ -21,6 +21,7 @@ its internal structure.
 
 ## Layout
 
+- `00_PROJECT_UNDERSTANDING.md` — consolidated brief (Arabic): what the project is, the montage rules learned from the reference studies, current state, environment constraints, and next steps. Read this first.
 - `config/` — scene configs (`escobar_scene01.json`, `geo_scene01.json`, `bank_scene01.json`). Asset paths inside them are relative to this folder.
 - `tools/` — `build_scene.py` (config -> frames -> SFX -> MP4), `qa_frame.py` (frame QA), render helpers, `synth_sfx*.py`, `prep_hero_asset.py`, `setup_env.sh`.
 - `assets_global/` — shared assets: `bank/` (facade, hall, walk cycles), `earth/` (earth_2048.jpg, earth_4096.jpg).
