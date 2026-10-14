@@ -200,7 +200,7 @@ def scan_pages(study: Path):
 # ---------------------------------------------------------------------------
 
 def audit(study: Path, duration: float, args) -> dict:
-    report = {"study": str(study), "duration": duration, "problems": [], "checks": {}}
+    report = {"study": str(study), "duration": duration, "problems": [], "warnings": [], "checks": {}}
     pages_dir, pages = scan_pages(study)
     tiles = args.tiles_per_page
     page_span = tiles / args.base_fps
@@ -236,7 +236,12 @@ def audit(study: Path, duration: float, args) -> dict:
                                   "by_type": {k: sum(1 for e in events if e["type"] == k)
                                               for k in sorted({e["type"] for e in events})}}
     if not events:
-        report["problems"].append("ما لقيت أي أحداث (لا dossier.json ولا metrics.json) — الأحداث هي أساس ضمان عدم التخطي.")
+        msg = ("ما لقيت أي أحداث (لا dossier.json ولا metrics.json) — الأحداث هي أساس ضمان عدم التخطي."
+               " شغّل مختبر الحركة: tools/reference_motion.py VIDEO --video-id ID --out analysis/ID")
+        if args.allow_missing_events:
+            report["warnings"].append(msg + " [تحذير فقط: --allow-missing-events شغّال، التغطية الزمنية تتكلم]")
+        else:
+            report["problems"].append(msg)
 
     bd = Path(args.breakdown) if args.breakdown else (study / "BREAKDOWN_AR.md")
     rows = []
@@ -302,6 +307,11 @@ def write_ledger(report: dict, study: Path, args) -> Path:
     L.append(f"- صفوف التفكيك: **{c['breakdown']['rows']}** · مغطّى **{cov.get('covered_s', 0)} ث** · "
              f"فراغات: **{cov.get('gap_count', 0)}** (مجموع {cov.get('gap_total_s', 0)} ث)")
     L.append(f"- **الحكم: {report['verdict']}**")
+    if report.get("warnings"):
+        L.append("")
+        L.append("## ⚠️ تحذيرات (ما بتوقف الحكم)")
+        for w in report["warnings"]:
+            L.append(f"- {w}")
     L.append("")
     if report["problems"]:
         L.append("## ❌ مشاكل لازم تنحل")
@@ -366,7 +376,7 @@ def write_ledger(report: dict, study: Path, args) -> Path:
 # ---------------------------------------------------------------------------
 
 def _mk_fake_study(root: Path, duration=120.0, break_rows=None, pages=4, tiny_page=False,
-                   event_at=90.0, break_end=None):
+                   event_at=90.0, break_end=None, no_events=False):
     if root.exists():
         shutil.rmtree(root)
     (root / "filmstrip2fps").mkdir(parents=True)
@@ -380,7 +390,10 @@ def _mk_fake_study(root: Path, duration=120.0, break_rows=None, pages=4, tiny_pa
     dossier = {"probe": {"duration": duration}, "cuts": cuts,
                "blacks": [{"t0": 40.0, "t1": 41.0}], "freezes": [], "silences": [{"t0": 60.0, "t1": 61.0}],
                "events": []}
-    (root / "motion" / "dossier.json").write_text(json.dumps(dossier), encoding="utf-8")
+    if no_events:
+        (root / "motion" / "dossier.json").unlink(missing_ok=True)
+    else:
+        (root / "motion" / "dossier.json").write_text(json.dumps(dossier), encoding="utf-8")
     rows = break_rows if break_rows is not None else [("00:00.000", "01:00.000"), ("01:00.000", "02:00.000")]
     if break_end is not None:
         rows = [("00:00.000", break_end)]
@@ -430,10 +443,22 @@ def selftest(args) -> int:
     print("[selftest 5] دفتر التغطية ينكتب بدون أخطاء")
     s = root / "good"
     ns = argparse.Namespace(base_fps=2.0, tiles_per_page=60, breakdown=None,
-                            tolerance=0.75, max_gap=1.0, min_page_bytes=20480, verify=True)
+                            tolerance=0.75, max_gap=1.0, min_page_bytes=20480, verify=True,
+                            allow_missing_events=False)
     led = write_ledger(audit(s, 120.0, ns), s, ns)
     print("   ledger:", led, "exists:", led.exists(), "size:", led.stat().st_size)
     ok &= led.exists() and led.stat().st_size > 500
+
+    print("[selftest 6] تغطية 100% بلا ملف أحداث (مختبر الحركة ما اشتغل)")
+    s = _mk_fake_study(root / "noevents", duration=120.0, no_events=True)
+    ns_strict = argparse.Namespace(base_fps=2.0, tiles_per_page=60, breakdown=None, tolerance=0.75,
+                                   max_gap=1.0, min_page_bytes=20480, verify=True, allow_missing_events=False)
+    ns_soft = argparse.Namespace(base_fps=2.0, tiles_per_page=60, breakdown=None, tolerance=0.75,
+                                 max_gap=1.0, min_page_bytes=20480, verify=True, allow_missing_events=True)
+    r_strict, r_soft = audit(s, 120.0, ns_strict), audit(s, 120.0, ns_soft)
+    print("   strict:", r_strict["verdict"], "| soft:", r_soft["verdict"],
+          "| warnings:", len(r_soft.get("warnings", [])))
+    ok &= bool(r_strict["verdict"] == "FAIL" and r_soft["verdict"] == "PASS" and r_soft["warnings"])
 
     print("\n[selftest]", "PASS" if ok else "FAIL")
     return 0 if ok else 1
@@ -450,6 +475,9 @@ def main():
     ap.add_argument("--max-gap", type=float, default=1.0, help="أقصى فراغ زمني مسموح بين الصفوف (ث)")
     ap.add_argument("--min-page-bytes", type=int, default=20480)
     ap.add_argument("--verify", action="store_true", help="يفشل (exit 1) إذا في مشاكل")
+    ap.add_argument("--allow-missing-events", action="store_true",
+                    help="إذا الأحداث (dossier/metrics) غير متوفرة (مختبر الحركة ما اشتغل بعد) — تحذير بدل FAIL. "
+                         "لا تستعمله إلا إذا ملف التفكيك مغطي 100% من الزمن.")
     ap.add_argument("--emit-ledger", action="store_true", help="يكتب COVERAGE.md")
     ap.add_argument("--selftest", action="store_true")
     args = ap.parse_args()
@@ -487,6 +515,8 @@ def main():
     print(f"[i] صفحات: {c['pages']['found']}/{c['pages']['expected']} · أحداث: {c['events']['count']} · "
           f"صفوف التفكيك: {c['breakdown']['rows']} · فراغات: {c['coverage']['gap_count']} "
           f"({c['coverage']['gap_total_s']} ث)")
+    for w in report.get("warnings", []):
+        print("   ⚠️", w)
     for p in report["problems"]:
         print("   ❌", p)
     print(f"[{'✓' if report['verdict']=='PASS' else 'x'}] {report['verdict']}")
