@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `5f25832` · **HEAD الحالي:** `5f25832`
+> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `6b38050` · **HEAD الحالي:** `6b38050`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -34,20 +34,22 @@
 | الشي | المسار/الرابط |
 |---|---|
 | AI Director Kit (فولدر) |  [فولدر درايف](https://drive.google.com/drive/folders/14HxMPs32AKd7V72wMOw2g9M60mvYdTl7) |
-| Ref Studies (فولدر) |  [فولدر درايف](https://drive.google.com/drive/folders/1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC) |
-| technique_db (94 كرت) | `engine/database/technique_db.json` [درايف](https://drive.google.com/file/d/1Z3LtcQqmrQndLX5YXr6_ADKUSyTo54Ig/view) |
-| BREAKDOWN_WW2P1 (كامل) | `engine/reference_lab/BREAKDOWN_WW2P1.md` [درايف](https://drive.google.com/file/d/1uhTrBNUzL2piNL5wqHk9P_KgkF2I9hpH/view) |
 | BREAKDOWN_AR (فحص آلي) |  [درايف](https://drive.google.com/file/d/1Im39FaJKTWHblPecNtNhEJDZy-xULiB6/view) |
+| BREAKDOWN_WW2P1 (كامل) | `engine/reference_lab/BREAKDOWN_WW2P1.md` [درايف](https://drive.google.com/file/d/1uhTrBNUzL2piNL5wqHk9P_KgkF2I9hpH/view) |
+| BREAKDOWN_WW2P2 (كامل) | `engine/reference_lab/BREAKDOWN_WW2P2.md` [درايف](https://drive.google.com/file/d/1JjuXamqgqJpT5SFxEnV3HVmEghSQ_IIl/view) |
 | DIRECTING_RULEBOOK_v1.2 | `engine/reference_lab/DIRECTING_RULEBOOK_v1.2.md` [درايف](https://drive.google.com/file/d/1Q5vN_-e-4ONq2u3fgZ6E5y5JP-9yCiIi/view) |
-| dossier_WW2P1 (قياسات) |  [درايف](https://drive.google.com/file/d/1-op46-a3uDSfIDQS7AoE9d6REyremzxv/view) |
-| فيلمستريب WW2 P1 (28 صفحة) |  [درايف](https://drive.google.com/file/d/1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS/view) |
+| DIRECTING_RULEBOOK_v1.3 | `engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md` [درايف](https://drive.google.com/file/d/1qrDQhrjNE4t89VfJcT7yUnAo9VU8OXqK/view) |
+| PayPal (فيديو — 722MB، أكبر من حد التنزيل) |  [درايف](https://drive.google.com/file/d/1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt/view) |
+| Ref Studies (فولدر) |  [فولدر درايف](https://drive.google.com/drive/folders/1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC) |
+| TRANSITION_ATLAS (P1+P2) | `engine/reference_lab/TRANSITION_ATLAS.md` [درايف](https://drive.google.com/file/d/1Be1oLFDpVLQMbOtKQkBxblEjLAivZtUj/view) |
+| Vaping (فيديو) |  [درايف](https://drive.google.com/file/d/117J6M88EstNWF6NOcHRm1fmfLmu5C0vh/view) |
 | WW2 P1 (فيديو) |  [درايف](https://drive.google.com/file/d/10ZD7FJwSS9J5JSkbB2SQeDs_LwJ-FyCs/view) |
 | WW2 P2 (فيديو) |  [درايف](https://drive.google.com/file/d/1NPzS-IOkUlEFHrWd392WY7KLQtvSFylj/view) |
-| Vaping (فيديو) |  [درايف](https://drive.google.com/file/d/117J6M88EstNWF6NOcHRm1fmfLmu5C0vh/view) |
-| PayPal (فيديو — 722MB، أكبر من حد التنزيل) |  [درايف](https://drive.google.com/file/d/1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt/view) |
-| BREAKDOWN_WW2P2 (كامل) | `engine/reference_lab/BREAKDOWN_WW2P2.md` [درايف](https://drive.google.com/file/d/1JjuXamqgqJpT5SFxEnV3HVmEghSQ_IIl/view) |
-| TRANSITION_ATLAS (P1+P2) | `engine/reference_lab/TRANSITION_ATLAS.md` [درايف](https://drive.google.com/file/d/1Be1oLFDpVLQMbOtKQkBxblEjLAivZtUj/view) |
-| DIRECTING_RULEBOOK_v1.3 | `engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md` [درايف](https://drive.google.com/file/d/1qrDQhrjNE4t89VfJcT7yUnAo9VU8OXqK/view) |
+| dossier_WW2P1 (قياسات) |  [درايف](https://drive.google.com/file/d/1-op46-a3uDSfIDQS7AoE9d6REyremzxv/view) |
+| dossier_WW2P2 (قياسات) |  [درايف](https://drive.google.com/file/d/1SyF_0aG2Hh3axcti4e0ad6WPAt9s4aCa/view) |
+| technique_db (94 كرت) | `engine/database/technique_db.json` [درايف](https://drive.google.com/file/d/1Z3LtcQqmrQndLX5YXr6_ADKUSyTo54Ig/view) |
+| فيلمستريب WW2 P1 (28 صفحة) |  [درايف](https://drive.google.com/file/d/1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS/view) |
+| فيلمستريب WW2 P2 (32 صفحة) |  [درايف](https://drive.google.com/file/d/1UVPNR0fA54c_zwkPlwzttIFPoWW-CJzc/view) |
 
 ## 5) الخطوات الجاية (بالترتيب)
 

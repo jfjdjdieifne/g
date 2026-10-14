@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-14",
- "head_commit": "5f25832",
+ "head_commit": "6b38050",
  "studies": [
   {
    "ref": "vaping",
@@ -42,14 +42,8 @@
    "kind": "folder"
   },
   {
-   "name": "Ref Studies (فولدر)",
-   "drive_id": "1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC",
-   "kind": "folder"
-  },
-  {
-   "name": "technique_db (94 كرت)",
-   "drive_id": "1Z3LtcQqmrQndLX5YXr6_ADKUSyTo54Ig",
-   "path": "engine/database/technique_db.json",
+   "name": "BREAKDOWN_AR (فحص آلي)",
+   "drive_id": "1Im39FaJKTWHblPecNtNhEJDZy-xULiB6",
    "kind": "file"
   },
   {
@@ -59,9 +53,10 @@
    "kind": "file"
   },
   {
-   "name": "BREAKDOWN_AR (فحص آلي)",
-   "drive_id": "1Im39FaJKTWHblPecNtNhEJDZy-xULiB6",
-   "kind": "file"
+   "name": "BREAKDOWN_WW2P2 (كامل)",
+   "path": "engine/reference_lab/BREAKDOWN_WW2P2.md",
+   "kind": "file",
+   "drive_id": "1JjuXamqgqJpT5SFxEnV3HVmEghSQ_IIl"
   },
   {
    "name": "DIRECTING_RULEBOOK_v1.2",
@@ -70,13 +65,30 @@
    "kind": "file"
   },
   {
-   "name": "dossier_WW2P1 (قياسات)",
-   "drive_id": "1-op46-a3uDSfIDQS7AoE9d6REyremzxv",
+   "name": "DIRECTING_RULEBOOK_v1.3",
+   "drive_id": "1qrDQhrjNE4t89VfJcT7yUnAo9VU8OXqK",
+   "path": "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md",
    "kind": "file"
   },
   {
-   "name": "فيلمستريب WW2 P1 (28 صفحة)",
-   "drive_id": "1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS",
+   "name": "PayPal (فيديو — 722MB، أكبر من حد التنزيل)",
+   "drive_id": "1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt",
+   "kind": "file"
+  },
+  {
+   "name": "Ref Studies (فولدر)",
+   "drive_id": "1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC",
+   "kind": "folder"
+  },
+  {
+   "name": "TRANSITION_ATLAS (P1+P2)",
+   "path": "engine/reference_lab/TRANSITION_ATLAS.md",
+   "kind": "file",
+   "drive_id": "1Be1oLFDpVLQMbOtKQkBxblEjLAivZtUj"
+  },
+  {
+   "name": "Vaping (فيديو)",
+   "drive_id": "117J6M88EstNWF6NOcHRm1fmfLmu5C0vh",
    "kind": "file"
   },
   {
@@ -90,31 +102,29 @@
    "kind": "file"
   },
   {
-   "name": "Vaping (فيديو)",
-   "drive_id": "117J6M88EstNWF6NOcHRm1fmfLmu5C0vh",
+   "name": "dossier_WW2P1 (قياسات)",
+   "drive_id": "1-op46-a3uDSfIDQS7AoE9d6REyremzxv",
    "kind": "file"
   },
   {
-   "name": "PayPal (فيديو — 722MB، أكبر من حد التنزيل)",
-   "drive_id": "1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt",
+   "name": "dossier_WW2P2 (قياسات)",
+   "drive_id": "1SyF_0aG2Hh3axcti4e0ad6WPAt9s4aCa",
    "kind": "file"
   },
   {
-   "name": "BREAKDOWN_WW2P2 (كامل)",
-   "path": "engine/reference_lab/BREAKDOWN_WW2P2.md",
-   "kind": "file",
-   "drive_id": "1JjuXamqgqJpT5SFxEnV3HVmEghSQ_IIl"
+   "name": "technique_db (94 كرت)",
+   "drive_id": "1Z3LtcQqmrQndLX5YXr6_ADKUSyTo54Ig",
+   "path": "engine/database/technique_db.json",
+   "kind": "file"
   },
   {
-   "name": "TRANSITION_ATLAS (P1+P2)",
-   "path": "engine/reference_lab/TRANSITION_ATLAS.md",
-   "kind": "file",
-   "drive_id": "1Be1oLFDpVLQMbOtKQkBxblEjLAivZtUj"
+   "name": "فيلمستريب WW2 P1 (28 صفحة)",
+   "drive_id": "1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS",
+   "kind": "file"
   },
   {
-   "name": "DIRECTING_RULEBOOK_v1.3",
-   "drive_id": "1qrDQhrjNE4t89VfJcT7yUnAo9VU8OXqK",
-   "path": "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md",
+   "name": "فيلمستريب WW2 P2 (32 صفحة)",
+   "drive_id": "1UVPNR0fA54c_zwkPlwzttIFPoWW-CJzc",
    "kind": "file"
   }
  ],
