@@ -1,0 +1,357 @@
+{
+ "recipe": "إسكوبار — ديمو اختبار Rulebook v1.3 (23 ث، بلا VO · كوكتيل 3 مراجع)",
+ "db": "/home/user/g/youtube_documentary/engine/database/technique_db.json",
+ "rows": [
+  {
+   "n": 1,
+   "t": "0:00",
+   "role": "chapter",
+   "note": "أسود + عنوان الجزء: كولومبيا، 1993",
+   "card": "chapter_black_silence",
+   "name_ar": "بطاقة الفصل بعد أسود وصمت",
+   "cat": "structure",
+   "src": "vaping",
+   "src_at": "rulebook 0:28-0:36, 11:59",
+   "why": "نية مشتركة: chapter/structure · مصدر مختلف عن اللي قبل",
+   "params": {
+    "black_s": [
+     2.0,
+     2.5
+    ],
+    "silence": true
+   },
+   "anti": [
+    "ما تستعملها كل دقيقة — بتفقد قيمتها"
+   ],
+   "engine": "concept",
+   "alts": [
+    "chapter_question_card",
+    "date_card_number",
+    "empty_stage_intro"
+   ]
+  },
+  {
+   "n": 2,
+   "t": "0:01.6",
+   "role": "map",
+   "note": "الخريطة تدخل + تسمية ميديين جوّاها",
+   "card": "map_inline_label",
+   "name_ar": "التسمية جوّا الخريطة",
+   "cat": "map",
+   "src": "ww2p1",
+   "src_at": "1:17.5",
+   "why": "نية مشتركة: context/label/map · مصدر مختلف عن اللي قبل",
+   "params": {
+    "anchor": "on_region",
+    "fade_in_s": [
+     0.3,
+     0.8
+    ]
+   },
+   "anti": [
+    "لازم تضل عالبَرّ وضمن المنطقة (زي قانون النقاط)"
+   ],
+   "engine": "ready",
+   "alts": [
+    "army_name_blocks",
+    "city_labels_slide",
+    "country_dialogue_labels"
+   ]
+  },
+  {
+   "n": 3,
+   "t": "0:03.4",
+   "role": "map",
+   "note": "خط الإمداد ميديين → ميامي بينرسم",
+   "card": "supply_line_draw",
+   "name_ar": "خط الإمداد بينرسم",
+   "cat": "map",
+   "src": "ww2p2",
+   "src_at": "2:08.5",
+   "why": "نية مشتركة: emphasis/link/map/supply · مصدر مختلف عن اللي قبل",
+   "params": {
+    "draw_s": [
+     2,
+     5
+    ],
+    "color": "yellow",
+    "width_px": [
+     4,
+     8
+    ],
+    "curve": "slight"
+   },
+   "anti": [
+    "ما تستعمله أكثر من مرتين بنفس الفصل",
+    "ما تخليه يقطع التسميات",
+    "ما تستعمل لون مشغول بالخلفية"
+   ],
+   "engine": "concept",
+   "alts": [
+    "overlay_link_persist",
+    "army_name_blocks",
+    "drawn_arrow_telegraph"
+   ]
+  },
+  {
+   "n": 4,
+   "t": "0:06.0",
+   "role": "map",
+   "note": "فيضان أحمر على منطقة العمليات",
+   "card": "spreading_map_dots",
+   "name_ar": "خريطة النقاط المنتشرة",
+   "cat": "map",
+   "src": "vaping",
+   "src_at": "0:20-0:23, 0:24-0:28",
+   "why": "نية مشتركة: map · مصدر مختلف عن اللي قبل",
+   "params": {
+    "dot_pop_s": [
+     0.15,
+     0.3
+    ],
+    "on_land": true
+   },
+   "anti": [
+    "النقاط لازم تضل عالبَرّ (land mask)",
+    "بلا نقاط بالسالب — خطأ بصري"
+   ],
+   "engine": "ready",
+   "alts": [
+    "unit_block_crawl",
+    "city_labels_slide",
+    "country_dialogue_labels"
+   ]
+  },
+  {
+   "n": 5,
+   "t": "0:08.4",
+   "role": "numbers",
+   "note": "العدّاد: 525 طن",
+   "card": "counter_escalate_black",
+   "name_ar": "العدّاد التصاعدي على أسود",
+   "cat": "emphasis",
+   "src": "ww2p1",
+   "src_at": "3:32.0, 3:32.5, 3:33.0, 3:44.0",
+   "why": "نية مشتركة: growth/numbers/scale · مصدر مختلف عن اللي قبل",
+   "params": {
+    "values": 3,
+    "hold_s": [
+     0.7,
+     1.2
+    ],
+    "font": "display_sans",
+    "bg": "black"
+   },
+   "anti": [
+    "ما تزيدش عن 3 قيم متتالية",
+    "ما تحطش شرح مع الرقم"
+   ],
+   "engine": "concept",
+   "alts": [
+    "crowd_rows_counter",
+    "disposable_crowd",
+    "encirclement_boxes"
+   ]
+  },
+  {
+   "n": 6,
+   "t": "0:11.0",
+   "role": "emphasis",
+   "note": "العدّاد على أسود (الرقم الأصعب)",
+   "card": "drawn_arrow_telegraph",
+   "name_ar": "السهم المرسوم يعلن",
+   "cat": "map",
+   "src": "ww2p2",
+   "src_at": "3:23, 7:41, 10:26",
+   "why": "نية مشتركة: emphasis · مصدر مختلف عن اللي قبل",
+   "params": {
+    "colors": {
+     "white": "mobilise",
+     "blue": "allied_attack",
+     "red": "axis_threat"
+    },
+    "grow_s": [
+     2,
+     6
+    ],
+    "width_px": [
+     10,
+     26
+    ]
+   },
+   "anti": [
+    "ما تخلي السهم يطلع من اليابسة أو يقطع البحر بزاوية غلط",
+    "ما تستعمل أكثر من سهمين بنفس اللقطة"
+   ],
+   "engine": "concept",
+   "alts": [
+    "stamp_impact_card",
+    "word_quote_accumulate",
+    "red_danger_icon"
+   ]
+  },
+  {
+   "n": 7,
+   "t": "0:13.0",
+   "role": "archive",
+   "note": "صورة أرشيف حقيقية بتلوين الفيلم",
+   "card": "tinted_archive",
+   "name_ar": "الأرشيف الملوّن بستايل الفيلم",
+   "cat": "archive",
+   "src": "vaping",
+   "src_at": "2:49-2:56, 7:44-7:45.5",
+   "why": "نية مشتركة: archive/texture · مصدر مختلف عن اللي قبل",
+   "params": {
+    "tint": "teal|red",
+    "motion": "slow_push"
+   },
+   "anti": [
+    "بلا اهتزاز مبالغ — الأرشيف مسند لا بطل"
+   ],
+   "engine": "ready",
+   "alts": [
+    "archive_block_caption",
+    "archive_with_cartoon_overlay",
+    "event_scene_minimal"
+   ]
+  },
+  {
+   "n": 8,
+   "t": "0:15.6",
+   "role": "map",
+   "note": "وحدات + أعلام سيطرة: الطرق قفلت",
+   "card": "flag_stamp_advance",
+   "name_ar": "أعلام كأختام تقدّم",
+   "cat": "map",
+   "src": "ww2p2",
+   "src_at": "11:11, 5:41",
+   "why": "نية مشتركة: control/flag/map/war · مصدر مختلف عن اللي قبل",
+   "params": {
+    "stamps": [
+     2,
+     4
+    ],
+    "enter_s": [
+     0.2,
+     0.5
+    ],
+    "scale": "big",
+    "opacity": [
+     0.8,
+     1.0
+    ]
+   },
+   "anti": [
+    "ما تستعمل أعلام كتير (زحمة)",
+    "ما تخلي العلم يغطي التسميات",
+    "ما تخلطه بأراوندل الوحدات الصغيرة"
+   ],
+   "engine": "concept",
+   "alts": [
+    "army_name_blocks",
+    "city_labels_slide",
+    "comparison_result_card"
+   ]
+  },
+  {
+   "n": 9,
+   "t": "0:17.6",
+   "role": "emphasis",
+   "note": "الختم: 1993",
+   "card": "stamp_impact_card",
+   "name_ar": "الختم الناسف (stamp)",
+   "cat": "typography",
+   "src": "ww2p2",
+   "src_at": "6:09, 8:51.5, 9:29",
+   "why": "نية مشتركة: comedy/stamp/verdict",
+   "params": {
+    "words_max": 3,
+    "impact_s": [
+     0.2,
+     0.5
+    ],
+    "rotate_deg": [
+     -8,
+     8
+    ],
+    "sfx": "stamp"
+   },
+   "anti": [
+    "ما تستعمله لكل جملة",
+    "ما تحط نص طويل عليه",
+    "ما تخليه يغطي وجه/معلومة مهمّة"
+   ],
+   "engine": "concept",
+   "alts": [
+    "country_dialogue_labels",
+    "empty_bubble_silence",
+    "gag_beat_pause"
+   ]
+  },
+  {
+   "n": 10,
+   "t": "0:19.2",
+   "role": "map",
+   "note": "المقياس العالمي: كولومبيا ضمن أميركا",
+   "card": "counter_on_object",
+   "name_ar": "العدّاد على الغرض",
+   "cat": "emphasis",
+   "src": "vaping",
+   "src_at": "4:14-4:17, 21:03",
+   "why": "نية مشتركة: scale · مصدر مختلف عن اللي قبل",
+   "params": {
+    "ramp": "escalating",
+    "digits_pad": true,
+    "bg": "object"
+   },
+   "anti": [
+    "بلا أرقام مبهمة — كل رقم بيعني شي"
+   ],
+   "engine": "ready",
+   "alts": [
+    "empire_paint_wave",
+    "big_product_crosses",
+    "color_language"
+   ]
+  },
+  {
+   "n": 11,
+   "t": "0:21.4",
+   "role": "closer",
+   "note": "كارت التكلفة/الخاتمة + سكون",
+   "card": "end_card_static",
+   "name_ar": "كارت النهاية الثابت",
+   "cat": "structure",
+   "src": "ww2p1",
+   "src_at": "13:32.5, 13:44.5",
+   "why": "نية مشتركة: close/ending · مصدر مختلف عن اللي قبل",
+   "params": {
+    "hold_s": [
+     8,
+     15
+    ],
+    "motion": "none",
+    "music": "none",
+    "last_silence_s": [
+     0.6,
+     1.0
+    ]
+   },
+   "anti": [
+    "ما تحط موسيقى أو حركة بالكارت",
+    "ما تطول أكتر من 15 ث"
+   ],
+   "engine": "concept",
+   "alts": [
+    "color_drain_aftermath",
+    "cost_number_card",
+    "meta_self_reference"
+   ]
+  }
+ ],
+ "source_distribution": {
+  "vaping": 4,
+  "ww2p1": 3,
+  "ww2p2": 4
+ }
+}

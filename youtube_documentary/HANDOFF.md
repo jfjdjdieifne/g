@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `6b38050` · **HEAD الحالي:** `6b38050`
+> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `686164e` · **HEAD الحالي:** `686164e`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -48,19 +48,21 @@
 | dossier_WW2P1 (قياسات) |  [درايف](https://drive.google.com/file/d/1-op46-a3uDSfIDQS7AoE9d6REyremzxv/view) |
 | dossier_WW2P2 (قياسات) |  [درايف](https://drive.google.com/file/d/1SyF_0aG2Hh3axcti4e0ad6WPAt9s4aCa/view) |
 | technique_db (94 كرت) | `engine/database/technique_db.json` [درايف](https://drive.google.com/file/d/1Z3LtcQqmrQndLX5YXr6_ADKUSyTo54Ig/view) |
+| ديمو WW2-drive v1 (PLAN كوكتيل) | `engine/projects/ww2_demo/cocktail/PLAN.md` [درايف](https://drive.google.com/file/d/1dNWbTLO0FEAgzRw1heYcAwFevuSJWBpe/view) |
+| ديمو WW2-drive v1 (فيديو) |  [درايف](https://drive.google.com/file/d/11Rn4XAqx0fAExu0X0c_6s3yIs3TFqJ0g/view) |
 | فيلمستريب WW2 P1 (28 صفحة) |  [درايف](https://drive.google.com/file/d/1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS/view) |
 | فيلمستريب WW2 P2 (32 صفحة) |  [درايف](https://drive.google.com/file/d/1UVPNR0fA54c_zwkPlwzttIFPoWW-CJzc/view) |
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. PayPal (57:36، 721MB > سقف التنزيل 100MiB): جلسة تقطيع part_study + تنزيل أجزاء (أو سكانر)
-2. اختبار الإخراج: ديمو 15–30 ث بنمط WW2 من الـrulebook v1.3 (P1+P2)
-3. بعدها: مراجع الباقية (Crypto / Apple / AI / Saudi / Dubai) واحد واحد — لا دفعات
+1. مراجعة المستخدم للديمو v1 (ملاحظات: موشن/إيقاع/نص/صوت) → v2
+2. PayPal: بدو ≤100MiB (المستخدم يقسّم الفيديو لجزئين) أو جلسة سكانر — بعدها تفكيك part_study + كروت
+3. بعد PayPal: باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
 4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
 
 ## 6) أسئلة معلّقة (بتنتظر قرار)
 
-- هل نعمل جلسة سكانر (بظرف عادي) لنزّل المراجع الكبيرة (PayPal) وإلا نضل بحد الـ100MiB؟
+- مراجعة الديمو v1: شو بدنا نضبط قبل v2؟ (موشن/إيقاع/نص/صوت/محتوى)
 
 ## 7) قوانين ثابتة (ما تتغيّر بين الجولات)
 

@@ -1,0 +1,49 @@
+{
+ "title": "إسكوبار — ديمو اختبار Rulebook v1.3 (نمط WW2 P1+P2، بلا تعليق صوتي)",
+ "style_profile": {
+  "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام",
+  "pacing_mode": "oversimplified",
+  "voice": "none (بلا تعليق صوتي)"
+ },
+ "scenes": [
+  {
+   "id": "s01",
+   "mood": "cold_open",
+   "sentences": [
+    { "text": "كولومبيا، 1993.", "intent": ["chapter"] },
+    { "text": "ميديين كانت تحت الحصار.", "intent": ["map"] }
+   ]
+  },
+  {
+   "id": "s02",
+   "mood": "dread",
+   "sentences": [
+    { "text": "الحملة صبغت المنطقة بالأحمر.", "intent": ["map", "danger"] },
+    { "text": "وخط الإمداد كان يمرّ من ميديين لميامي.", "intent": ["map", "product"] }
+   ]
+  },
+  {
+   "id": "s03",
+   "mood": "scale_awe",
+   "sentences": [
+    { "text": "٥٢٥ طنًّا في السنة واحدة — ٢٥ منها اخترقت الحدود.", "intent": ["numbers"] },
+    { "text": "الرقم كان على كل طاولة في واشنطن.", "intent": ["numbers", "proof"] }
+   ]
+  },
+  {
+   "id": "s04",
+   "mood": "grief",
+   "sentences": [
+    { "text": "وهو كان يختبئ في بيت صغير.", "intent": ["archive", "character"] }
+   ]
+  },
+  {
+   "id": "s05",
+   "mood": "resolve",
+   "sentences": [
+    { "text": "الوحدات قفلت الطرق، والمنطقة الآمنة ضاقت.", "intent": ["map", "crowd"] },
+    { "text": "وبحلول ١٩٩٣، ضاقت لحدّها الأخير.", "intent": ["date", "emphasis"] }
+   ]
+  }
+ ]
+}

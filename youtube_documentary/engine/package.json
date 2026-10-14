@@ -5,8 +5,10 @@
   "type": "module",
   "description": "Reusable premium documentary motion-design engine (Chromium + Three.js).",
   "dependencies": {
-    "three": "^0.186.0",
+    "@sparticuz/chromium": "^141.0.0",
     "puppeteer-core": "^23.0.0",
-    "@sparticuz/chromium": "^141.0.0"
+    "three": "^0.186.0",
+    "topojson-client": "^3.1.0",
+    "world-atlas": "^2.0.2"
   }
 }

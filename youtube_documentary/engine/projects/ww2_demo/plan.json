@@ -1,0 +1,643 @@
+{
+ "title": "إسكوبار — ديمو اختبار Rulebook v1.3 (نمط WW2 P1+P2، بلا تعليق صوتي)",
+ "style_profile": {
+  "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام",
+  "pacing_mode": "oversimplified",
+  "voice": "none (بلا تعليق صوتي)"
+ },
+ "pacing_mode": "oversimplified",
+ "blocks": 5,
+ "beats": 9,
+ "rows": [
+  {
+   "n": 1,
+   "t": 0.6,
+   "scene": "s01",
+   "block": "one_take_01",
+   "text": "كولومبيا، 1993.",
+   "intents": [
+    "chapter",
+    "date",
+    "map"
+   ],
+   "mood": "cold_open",
+   "dur": 1.2,
+   "technique": {
+    "card": "chapter_black_silence",
+    "source": "vaping",
+    "at": "rulebook 0:28-0:36, 11:59"
+   },
+   "motion": {
+    "name": "locked_off_tension",
+    "params": {
+     "dur_s": [
+      2.0,
+      3.0
+     ],
+     "then": "word_reveal_sync"
+    },
+    "in_vocab": true
+   },
+   "sound": {
+    "bed": "cold_open",
+    "bpm": [
+     82,
+     92
+    ],
+    "key": "D minor",
+    "intensity": 0.45,
+    "sfx": [],
+    "sfx_gain_db_rel_bed": null
+   },
+   "understanding": {
+    "meaning": "الجملة بتفتح فصل جديد — قسم بالحكاية — المفروض يحس المشاهد: استعداد إعادة تركيز. (L1: فكرة وحدة بالنبضة)",
+    "role": "فتحة — هون منبني الوعد وبنشد الانتباه",
+    "why_visual": "الفصل الجديد لازم يبدأ والمشاهد 'مصفّي ذهنو'. الأسود + الصمت بيعملوا فراغ ما بتعملو أي موسيقى؛ بلا هالفراغ الكارت بيبان حشو وما بياخد ثقل.",
+    "why_motion": "الكادر الثابت بيقول «وقف فكر» — بترفع قيمة الكلام، وبأي حركة بعدها بتصير فرق واضح",
+    "why_sound": "المزاج cold_open: فضول + تهديد هادئ",
+    "link_reason": "طلعنا بـ chapter_black_silence: أسود ٢–٢.٥ ث + صمت = فراغ قبل الكارت، وبلا هالفراغ الكارت بيبان حشو (L3/L5) — نفس اللقطة `one_take_01` بلا قطع: كاميرا bridge · موتيف map · لوحة INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base"
+   },
+   "continuity": {
+    "in": null,
+    "out": "chapter_black_silence",
+    "threads": {
+     "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base",
+     "camera": "bridge",
+     "motif": "ink"
+    }
+   },
+   "engine": {
+    "target": "docengine",
+    "status": "partial"
+   },
+   "novelty": {
+    "is_new": false,
+    "what": [],
+    "basis": []
+   }
+  },
+  {
+   "n": 2,
+   "t": 2.0,
+   "scene": "s01",
+   "block": "one_take_01",
+   "text": "ميديين كانت تحت الحصار.",
+   "intents": [
+    "map"
+   ],
+   "mood": "cold_open",
+   "dur": 1.7,
+   "technique": {
+    "card": "spreading_map_dots",
+    "source": "vaping",
+    "at": "0:20-0:23, 0:24-0:28"
+   },
+   "motion": {
+    "name": "map_descent",
+    "params": {
+     "dur_s": [
+      1.6,
+      3.0
+     ]
+    },
+    "in_vocab": true
+   },
+   "sound": {
+    "bed": "cold_open",
+    "bpm": [
+     82,
+     92
+    ],
+    "key": "D minor",
+    "intensity": 0.45,
+    "sfx": [
+     "swoosh_air"
+    ],
+    "sfx_gain_db_rel_bed": -7
+   },
+   "understanding": {
+    "meaning": "الجملة بتنقل المشاهد لمكان — العنوان الجغرافي للقصة — المفروض يحس المشاهد: توجّه وفضول. (L1: فكرة وحدة بالنبضة)",
+    "role": "فتحة — هون منبني الوعد وبنشد الانتباه",
+    "why_visual": "التوسّع عالخريطة بيترجم كلمة 'انتشار' لمعنى بصري: كل نقطة جديدة = خطوة نمو. هاد أقوى من جملة 'انتشر بكل مكان' لأنو بيورّي الزمن والمسافة بدل ما يحكي عنهم.",
+    "why_motion": "الهبوط من الكلي للجزئي (عالم → بلد → مدينة) بيتم ترتيب الجغرافيا بنفس ترتيب السؤال الطبيعي: وين؟ وين بالضبط؟",
+    "why_sound": "المزاج cold_open: فضول + تهديد هادئ · المؤثر swoosh_air: الهوا بيرسم المسافة — يحس أننا انتقلنا/قطعنا خط (تحت الجو −7dB، L3)",
+    "link_reason": "طلعنا بـ smoke_wipe: الدخان بيغطي ١٠٠% فبتنحذف اللحظة، والمشاهد الجديد بيبدأ نظيف — كمان بينفّذ تبديل مزاج/لون بدل القطع المباشر (L4) — قطع مبرَّر بين لقطتين: المزاج من cold_open لـ dread (كروس فيد) · كاميرا bridge · لوحة INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base"
+   },
+   "continuity": {
+    "in": "chapter_black_silence",
+    "out": "smoke_wipe",
+    "threads": {
+     "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base",
+     "camera": "bridge",
+     "motif": "map"
+    }
+   },
+   "engine": {
+    "target": "geo",
+    "status": "ready"
+   },
+   "novelty": {
+    "is_new": false,
+    "what": [],
+    "basis": []
+   }
+  },
+  {
+   "n": 3,
+   "t": 3.7,
+   "scene": "s02",
+   "block": "one_take_02",
+   "text": "الحملة صبغت المنطقة بالأحمر.",
+   "intents": [
+    "map",
+    "danger"
+   ],
+   "mood": "dread",
+   "dur": 1.7,
+   "technique": {
+    "card": "map_inline_label",
+    "source": "ww2p1",
+    "at": "1:17.5"
+   },
+   "motion": {
+    "name": "map_descent_hold",
+    "params": {
+     "dur_s": [
+      1.6,
+      3.0
+     ]
+    },
+    "in_vocab": true
+   },
+   "sound": {
+    "bed": "dread",
+    "bpm": [
+     76,
+     86
+    ],
+    "key": "C minor",
+    "intensity": 0.55,
+    "sfx": [
+     "swoosh_air"
+    ],
+    "sfx_gain_db_rel_bed": -7
+   },
+   "understanding": {
+    "meaning": "الجملة بتنقل المشاهد لمكان — العنوان الجغرافي للقصة — المفروض يحس المشاهد: توجّه وفضول. (L1: فكرة وحدة بالنبضة)",
+    "role": "تطوير — هون منكبّر الفكرة ونضيّق الحلقة",
+    "why_visual": "التسمية جوّا الخريطة بتمنع اللخبطة: العين بتقرا النص مع المكان بنفس الحركة، عكس ليجند خارجي بيفرض قفزة نظر خارج المكان — وهاد بيعمل خمول بالانتباه.",
+    "why_motion": "الهبوط من الكلي للجزئي (عالم → بلد → مدينة) بيتم ترتيب الجغرافيا بنفس ترتيب السؤال الطبيعي: وين؟ وين بالضبط؟ · (_hold: تخفيف لكرمة التكرار — نفس الحركة بتفقد أثرها بالتكرار، فالـ_hold بيمنع الإحساس بالاستنساخ)",
+    "why_sound": "المزاج dread: خوف ثابت — الطبقة الأساسية للمواضيع الخطرة · المؤثر swoosh_air: الهوا بيرسم المسافة — يحس أننا انتقلنا/قطعنا خط (تحت الجو −7dB، L3)",
+    "link_reason": "طلعنا بـ match_cut_shape: شكل من اللقطة الأولى = شكل بالثانية، فالعين بتكمل تتبعو وما بتحس بمفصل (L4) — نفس اللقطة `one_take_02` بلا قطع: كاميرا bridge · موتيف map · لوحة INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base"
+   },
+   "continuity": {
+    "in": "smoke_wipe",
+    "out": "match_cut_shape",
+    "threads": {
+     "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base",
+     "camera": "bridge",
+     "motif": "map"
+    }
+   },
+   "engine": {
+    "target": "geo",
+    "status": "ready"
+   },
+   "novelty": {
+    "is_new": false,
+    "what": [],
+    "basis": []
+   }
+  },
+  {
+   "n": 4,
+   "t": 6.1,
+   "scene": "s02",
+   "block": "one_take_02",
+   "text": "وخط الإمداد كان يمرّ من ميديين لميامي.",
+   "intents": [
+    "map",
+    "product"
+   ],
+   "mood": "dread",
+   "dur": 2.9,
+   "technique": {
+    "card": "red_flood_expansion",
+    "source": "ww2p1",
+    "at": "3:20.8, 4:25.5, 5:50.5"
+   },
+   "motion": {
+    "name": "map_descent",
+    "params": {
+     "dur_s": [
+      1.6,
+      3.0
+     ]
+    },
+    "in_vocab": true
+   },
+   "sound": {
+    "bed": "dread",
+    "bpm": [
+     76,
+     86
+    ],
+    "key": "C minor",
+    "intensity": 0.55,
+    "sfx": [
+     "swoosh_air"
+    ],
+    "sfx_gain_db_rel_bed": -7
+   },
+   "understanding": {
+    "meaning": "الجملة بتنقل المشاهد لمكان — العنوان الجغرافي للقصة — المفروض يحس المشاهد: توجّه وفضول. (L1: فكرة وحدة بالنبضة)",
+    "role": "تطوير — هون منكبّر الفكرة ونضيّق الحلقة",
+    "why_visual": "اللون الفايض بيتقري كسيطرة لأن العين بتفسر الامتداد الملوّن كامتداد سلطة. الفراغات البيضا ضرورية: بدونها الفيض بيصير «صورة»؛ ومعها بيتقري «تقدّم عبر الزمن».",
+    "why_motion": "الهبوط من الكلي للجزئي (عالم → بلد → مدينة) بيتم ترتيب الجغرافيا بنفس ترتيب السؤال الطبيعي: وين؟ وين بالضبط؟",
+    "why_sound": "المزاج dread: خوف ثابت — الطبقة الأساسية للمواضيع الخطرة · المؤثر swoosh_air: الهوا بيرسم المسافة — يحس أننا انتقلنا/قطعنا خط (تحت الجو −7dB، L3)",
+    "link_reason": "طلعنا بـ tool_cut_archive: أداة فيزيائية بتقطع المادة بعين المشاهد: تعليق بصري + نكتة + توقيع قناة (L6) — قطع مبرَّر بين لقطتين: المزاج من dread لـ scale_awe (كروس فيد) · كاميرا bridge · لوحة INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base"
+   },
+   "continuity": {
+    "in": "match_cut_shape",
+    "out": "tool_cut_archive",
+    "threads": {
+     "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base",
+     "camera": "bridge",
+     "motif": "map"
+    }
+   },
+   "engine": {
+    "target": "geo",
+    "status": "live"
+   },
+   "novelty": {
+    "is_new": false,
+    "what": [],
+    "basis": []
+   }
+  },
+  {
+   "n": 5,
+   "t": 9.6,
+   "scene": "s03",
+   "block": "one_take_03",
+   "text": "٥٢٥ طنًّا في السنة واحدة — ٢٥ منها اخترقت الحدود.",
+   "intents": [
+    "numbers",
+    "date",
+    "map"
+   ],
+   "mood": "scale_awe",
+   "dur": 4.2,
+   "technique": {
+    "card": "counter_on_object",
+    "source": "vaping",
+    "at": "4:14-4:17, 21:03"
+   },
+   "motion": {
+    "name": "counter_countup",
+    "params": {
+     "ramp": "escalating",
+     "dur_s": [
+      1.2,
+      2.0
+     ]
+    },
+    "in_vocab": true
+   },
+   "sound": {
+    "bed": "scale_awe",
+    "bpm": [
+     70,
+     80
+    ],
+    "key": "D minor",
+    "intensity": 0.58,
+    "sfx": [
+     "landing_thud"
+    ],
+    "sfx_gain_db_rel_bed": -7
+   },
+   "understanding": {
+    "meaning": "الجملة بتعطي حجم/رقم — قياس لما صار — المفروض يحس المشاهد: صدمة محسوبة. (L1: فكرة وحدة بالنبضة)",
+    "role": "تطوير — هون منكبّر الفكرة ونضيّق الحلقة",
+    "why_visual": "الرقم ملزوق عالغرض (مو بزاوية الشاشة) فالمعنى مقفول: 'هالقطعة = هالرقم'. والعدّاد الصاعد بيعمل توتر رياضي — المشاهد مستني الرقم يوصل لآخره.",
+    "why_motion": "العدّاد الصاعد بيسرّع مع الرقم فبيتحنّ الرقم لتجربة (إحساس نموّ/مرور وقت) — العين مستنية لحظة الاستقرار",
+    "why_sound": "المزاج scale_awe: أرقام/إمبراطورية/حجم · المؤثر landing_thud: ضربة ناعمة عند هبوط الرقم بتقفلو بإحساس فيزيائي — الرقم بيتذكّر (تحت الجو −7dB، L3)",
+    "link_reason": "طلعنا بـ zoom_through: منفوت بعنصر (صفحة/ثقب) ومنطلع بمكان جديد — بيغيّر المقاس والمستوى بنفس الحركة (L4) — نفس اللقطة `one_take_03` بلا قطع: كاميرا bridge · موتيف counter · لوحة INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base"
+   },
+   "continuity": {
+    "in": "tool_cut_archive",
+    "out": "zoom_through",
+    "threads": {
+     "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base",
+     "camera": "bridge",
+     "motif": "counter"
+    }
+   },
+   "engine": {
+    "target": "story",
+    "status": "ready"
+   },
+   "novelty": {
+    "is_new": false,
+    "what": [],
+    "basis": []
+   }
+  },
+  {
+   "n": 6,
+   "t": 13.2,
+   "scene": "s03",
+   "block": "one_take_03",
+   "text": "الرقم كان على كل طاولة في واشنطن.",
+   "intents": [
+    "numbers",
+    "proof"
+   ],
+   "mood": "scale_awe",
+   "dur": 2.9,
+   "technique": {
+    "card": "counter_escalate_black",
+    "source": "ww2p1",
+    "at": "3:32.0, 3:32.5, 3:33.0, 3:44.0"
+   },
+   "motion": {
+    "name": "counter_countup_hold",
+    "params": {
+     "ramp": "escalating",
+     "dur_s": [
+      1.2,
+      2.0
+     ]
+    },
+    "in_vocab": true
+   },
+   "sound": {
+    "bed": "scale_awe",
+    "bpm": [
+     70,
+     80
+    ],
+    "key": "D minor",
+    "intensity": 0.58,
+    "sfx": [
+     "landing_thud"
+    ],
+    "sfx_gain_db_rel_bed": -7
+   },
+   "understanding": {
+    "meaning": "الجملة بتعطي حجم/رقم — قياس لما صار — المفروض يحس المشاهد: صدمة محسوبة. (L1: فكرة وحدة بالنبضة)",
+    "role": "تطوير — هون منكبّر الفكرة ونضيّق الحلقة",
+    "why_visual": "العدّاد بيخلق توقّع: العين بتمشي مع الرقم وبس بتوصل للقيمة الأخيرة بتقرر «فهمت». القيم القليلة الكبيرة أقوى من جدول أرقام؛ والخلفية السودا بتمحي كل مشتّت.",
+    "why_motion": "العدّاد الصاعد بيسرّع مع الرقم فبيتحنّ الرقم لتجربة (إحساس نموّ/مرور وقت) — العين مستنية لحظة الاستقرار · (_hold: تخفيف لكرمة التكرار — نفس الحركة بتفقد أثرها بالتكرار، فالـ_hold بيمنع الإحساس بالاستنساخ)",
+    "why_sound": "المزاج scale_awe: أرقام/إمبراطورية/حجم · المؤثر landing_thud: ضربة ناعمة عند هبوط الرقم بتقفلو بإحساس فيزيائي — الرقم بيتذكّر (تحت الجو −7dB، L3)",
+    "link_reason": "طلعنا بـ black_beat_inscene: الأسود جوّا المشهد = نهاية جملة ونَفَس — بيفصل فكرتين بلا تغيير مكان (L5/L2) — قطع مبرَّر بين لقطتين: المزاج من scale_awe لـ grief (كروس فيد) · كاميرا bridge · لوحة INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base"
+   },
+   "continuity": {
+    "in": "zoom_through",
+    "out": "black_beat_inscene",
+    "threads": {
+     "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base",
+     "camera": "bridge",
+     "motif": "counter"
+    }
+   },
+   "engine": {
+    "target": "story",
+    "status": "live"
+   },
+   "novelty": {
+    "is_new": false,
+    "what": [],
+    "basis": []
+   }
+  },
+  {
+   "n": 7,
+   "t": 15.8,
+   "scene": "s04",
+   "block": "shot_04",
+   "text": "وهو كان يختبئ في بيت صغير.",
+   "intents": [
+    "archive",
+    "character"
+   ],
+   "mood": "grief",
+   "dur": 2.5,
+   "technique": {
+    "card": "tinted_archive",
+    "source": "vaping",
+    "at": "2:49-2:56, 7:44-7:45.5"
+   },
+   "motion": {
+    "name": "parallax_depth",
+    "params": {
+     "layers": [
+      2,
+      4
+     ],
+     "amp_px": [
+      6,
+      18
+     ]
+    },
+    "in_vocab": true
+   },
+   "sound": {
+    "bed": "grief",
+    "bpm": [
+     60,
+     68
+    ],
+    "key": "A minor",
+    "intensity": 0.3,
+    "sfx": [
+     "paper_breath"
+    ],
+    "sfx_gain_db_rel_bed": -7
+   },
+   "understanding": {
+    "meaning": "الجملة بترجع بالزمن — مادة قديمة/أرشيف — المفروض يحس المشاهد: حنين أو رهبة تاريخية. (L1: فكرة وحدة بالنبضة)",
+    "role": "تطوير — هون منكبّر الفكرة ونضيّق الحلقة",
+    "why_visual": "الأرشيف أبيض/أسود بيقرا 'ماضي بعيد'. لما تلوّنو بلون الفيلم (تيل، أحمر) بيصير من نفس العالم تبع الفيديو بدل ما يبان ملحق — اللون هو يلي بيعمل نفس بين الحاضر والماضي.",
+    "why_motion": "الطبقات بمشي بسرعات مختلفة فبتخلق إحساس عمق 3D — بتحوّل أرشيف مسطّح لمساحة حيّة",
+    "why_sound": "المزاج grief: خسارة/موت — بلا إيقاع · المؤثر paper_breath: نفس الورقة بيجيب إحساس ملمس الوثيقة — بترفع المصداقية بلا كلام (تحت الجو −7dB، L3)",
+    "link_reason": "طلعنا بـ white_space_pause: الفراغ (بلا صوت) بيعطي راحة للعين فبتقبل المشهد الجاي — الراحة جزء من الإيقاع مو ضياع وقت (L5/L3) — قطع مبرَّر بين لقطتين: المزاج من grief لـ resolve (كروس فيد) · كاميرا bridge · لوحة INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base"
+   },
+   "continuity": {
+    "in": "black_beat_inscene",
+    "out": "white_space_pause",
+    "threads": {
+     "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base",
+     "camera": "bridge",
+     "motif": "tinted_archive"
+    }
+   },
+   "engine": {
+    "target": "docengine",
+    "status": "ready"
+   },
+   "novelty": {
+    "is_new": false,
+    "what": [],
+    "basis": []
+   }
+  },
+  {
+   "n": 8,
+   "t": 18.4,
+   "scene": "s05",
+   "block": "one_take_05",
+   "text": "الوحدات قفلت الطرق، والمنطقة الآمنة ضاقت.",
+   "intents": [
+    "map",
+    "crowd"
+   ],
+   "mood": "resolve",
+   "dur": 2.5,
+   "technique": {
+    "card": "world_scale_hold",
+    "source": "ww2p1",
+    "at": "5:30.5, 5:35.0, 5:39.5"
+   },
+   "motion": {
+    "name": "map_descent",
+    "params": {
+     "dur_s": [
+      1.6,
+      3.0
+     ]
+    },
+    "in_vocab": true
+   },
+   "sound": {
+    "bed": "resolve",
+    "bpm": [
+     84,
+     96
+    ],
+    "key": "G minor",
+    "intensity": 0.5,
+    "sfx": [
+     "swoosh_air"
+    ],
+    "sfx_gain_db_rel_bed": -7
+   },
+   "understanding": {
+    "meaning": "الجملة بتنقل المشاهد لمكان — العنوان الجغرافي للقصة — المفروض يحس المشاهد: توجّه وفضول. (L1: فكرة وحدة بالنبضة)",
+    "role": "خاتمة/حكم — هون منوفّي الوعد وبنقفل اللغة نفسها",
+    "why_visual": "القفزة للمقياس العالمي بتعيد ترتيب الأهمية بمخ المشاهد (حكايتنا وحدة من عالم كبير)، وطول اللقطة بيعمل ترييح إيقاعي: بعد سريع طويل بتصير هاللقطة «نفس» — والهدوء هوّي اللي بيخلي السرعة الجاية تنحسّ.",
+    "why_motion": "الهبوط من الكلي للجزئي (عالم → بلد → مدينة) بيتم ترتيب الجغرافيا بنفس ترتيب السؤال الطبيعي: وين؟ وين بالضبط؟",
+    "why_sound": "المزاج resolve: عزم وقرار · المؤثر swoosh_air: الهوا بيرسم المسافة — يحس أننا انتقلنا/قطعنا خط (تحت الجو −7dB، L3)",
+    "link_reason": "طلعنا بـ morph_match: نفس المادة بتتحوّل (ورقة → خريطة/وجه → منشور): المعنى تغيّر والمادة وحدة، فبيحسها المشاهد تطور مو تبديل (L4) — نفس اللقطة `one_take_05` بلا قطع: كاميرا bridge · موتيف ink · لوحة INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base"
+   },
+   "continuity": {
+    "in": "white_space_pause",
+    "out": "morph_match",
+    "threads": {
+     "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base",
+     "camera": "bridge",
+     "motif": "map"
+    }
+   },
+   "engine": {
+    "target": "geo",
+    "status": "live"
+   },
+   "novelty": {
+    "is_new": false,
+    "what": [],
+    "basis": []
+   }
+  },
+  {
+   "n": 9,
+   "t": 20.6,
+   "scene": "s05",
+   "block": "one_take_05",
+   "text": "وبحلول ١٩٩٣، ضاقت لحدّها الأخير.",
+   "intents": [
+    "date",
+    "emphasis"
+   ],
+   "mood": "resolve",
+   "dur": 2.1,
+   "technique": {
+    "card": "date_card_number",
+    "source": "ww2p1",
+    "at": "1:15.5"
+   },
+   "motion": {
+    "name": "photo_fit_reveal",
+    "params": {
+     "dur_s": [
+      0.6,
+      1.0
+     ]
+    },
+    "in_vocab": true
+   },
+   "sound": {
+    "bed": "resolve",
+    "bpm": [
+     84,
+     96
+    ],
+    "key": "G minor",
+    "intensity": 0.5,
+    "sfx": [
+     "type_key_single"
+    ],
+    "sfx_gain_db_rel_bed": -7
+   },
+   "understanding": {
+    "meaning": "الجملة بتثبّت الزمن — متى صار كل شي — المفروض يحس المشاهد: ترتيب بالرأس. (L1: فكرة وحدة بالنبضة)",
+    "role": "خاتمة/حكم — هون منوفّي الوعد وبنقفل اللغة نفسها",
+    "why_visual": "بطاقة التاريخ (كلمة + رقم) بتعمل 'مسمار بالزمن': العين بتحفظ الرقم لما يكون هو العنصر الوحيد بالكادر. والتواريخ بتصير مفصل يربط الفصول، فيصير الفيلم متسلسل زمنيًا بلا شرح.",
+    "why_motion": "الكشف بهدوء (تصغير + تثبيت) بيعمل الصورة «بطاقة» — يعني الشي الحقيقي يبان بينحترم، مو معروض عرض عادي",
+    "why_sound": "المزاج resolve: عزم وقرار · المؤثر type_key_single: طقّة واحدة تكتب التاريخ بمكانه — الزمن تثبّت بحركة (تحت الجو −7dB، L3)",
+    "link_reason": "دخلنا بـ morph_match: نفس المادة بتتحوّل (ورقة → خريطة/وجه → منشور): المعنى تغيّر والمادة وحدة، فبيحسها المشاهد تطور مو تبديل (L4) — نفس اللقطة `one_take_05` بلا قطع: كاميرا bridge · موتيف ink · لوحة INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base"
+   },
+   "continuity": {
+    "in": "morph_match",
+    "out": null,
+    "threads": {
+     "palette": "INK & ARCHIVE — أحمر=عمليات · أخضر=منطقة آمنة · أصفر=خط/حركة · سواد=أرقام / base",
+     "camera": "bridge",
+     "motif": "ink"
+    }
+   },
+   "engine": {
+    "target": "board",
+    "status": "live"
+   },
+   "novelty": {
+    "is_new": false,
+    "what": [],
+    "basis": []
+   }
+  }
+ ],
+ "summary": {
+  "total_s": 21.7,
+  "blocks": 5,
+  "avg_shot_s": 4.3,
+  "pacing_target": [
+   2.0,
+   4.5
+  ],
+  "one_take_blocks": 4,
+  "multi_scene_one_shot": 0,
+  "novelty_beats": 0,
+  "novelty_pct": 0.0,
+  "explained": "9/9",
+  "hard_cuts": 4,
+  "in_shot_transitions": 4
+ },
+ "validation": {
+  "problems": [],
+  "warnings": [],
+  "verdict": "PASS"
+ }
+}

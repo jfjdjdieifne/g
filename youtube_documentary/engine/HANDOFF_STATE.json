@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-14",
- "head_commit": "6b38050",
+ "head_commit": "686164e",
  "studies": [
   {
    "ref": "vaping",
@@ -118,6 +118,17 @@
    "kind": "file"
   },
   {
+   "name": "ديمو WW2-drive v1 (PLAN كوكتيل)",
+   "drive_id": "1dNWbTLO0FEAgzRw1heYcAwFevuSJWBpe",
+   "path": "engine/projects/ww2_demo/cocktail/PLAN.md",
+   "kind": "file"
+  },
+  {
+   "name": "ديمو WW2-drive v1 (فيديو)",
+   "drive_id": "11Rn4XAqx0fAExu0X0c_6s3yIs3TFqJ0g",
+   "kind": "file"
+  },
+  {
    "name": "فيلمستريب WW2 P1 (28 صفحة)",
    "drive_id": "1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS",
    "kind": "file"
@@ -146,13 +157,13 @@
   ]
  },
  "next_steps": [
-  "PayPal (57:36، 721MB > سقف التنزيل 100MiB): جلسة تقطيع part_study + تنزيل أجزاء (أو سكانر)",
-  "اختبار الإخراج: ديمو 15–30 ث بنمط WW2 من الـrulebook v1.3 (P1+P2)",
-  "بعدها: مراجع الباقية (Crypto / Apple / AI / Saudi / Dubai) واحد واحد — لا دفعات",
+  "مراجعة المستخدم للديمو v1 (ملاحظات: موشن/إيقاع/نص/صوت) → v2",
+  "PayPal: بدو ≤100MiB (المستخدم يقسّم الفيديو لجزئين) أو جلسة سكانر — بعدها تفكيك part_study + كروت",
+  "بعد PayPal: باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
   "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
  ],
  "open_questions": [
-  "هل نعمل جلسة سكانر (بظرف عادي) لنزّل المراجع الكبيرة (PayPal) وإلا نضل بحد الـ100MiB؟"
+  "مراجعة الديمو v1: شو بدنا نضبط قبل v2؟ (موشن/إيقاع/نص/صوت/محتوى)"
  ],
  "laws": [
   "صفر سكيب: كل ثانية وكل لقطة تُقرأ وتُفهم قبل التقدّم",
@@ -163,5 +174,38 @@
   "الخريطة: النقاط عالبَر + دقة جغرافية",
   "إخراج بالعربي الشامي، رسائل قصيرة (المستخدم على iPhone)",
   "بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه"
+ ],
+ "demos": [
+  {
+   "id": "ww2drive_v1",
+   "name_ar": "ديمو اختبار Rulebook v1.3 — إسكوبار (23 ث، بلا VO)",
+   "status": "v1 — جاهز للمراجعة",
+   "chain": "سكربت (engine/database/scripts/escobar_ww2drive_demo.json) → plan (director) → كوكتيل 3 مصادر (cocktail) → رندر (tools/ww2demo.py)",
+   "cards_used": [
+    "chapter_black_silence",
+    "map_inline_label",
+    "supply_line_draw",
+    "spreading_map_dots",
+    "counter_escalate_black",
+    "drawn_arrow_telegraph",
+    "tinted_archive",
+    "flag_stamp_advance",
+    "stamp_impact_card",
+    "counter_on_object",
+    "end_card_static"
+   ],
+   "sources": {
+    "vaping": 4,
+    "ww2p1": 3,
+    "ww2p2": 4
+   },
+   "spec": "1920×1080 · 24fps · 23.0 ث · H.264 + AAC · صوت: bed + SFX تحت الجو",
+   "geo_check": "10m مضلعات حقيقية + ray-casting: كل نقطة/تسمية على البَر (لزق: ميديين 0.000° · ميامي 0.020°)",
+   "files": [
+    "/home/user/build/ww2_demo/escobar_ww2drive_demo_v1.mp4",
+    "tools/ww2demo.py",
+    "engine/projects/ww2_demo/cocktail/PLAN.md"
+   ]
+  }
  ]
 }

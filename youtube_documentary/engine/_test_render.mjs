@@ -1,0 +1,10 @@
+import puppeteer from 'puppeteer-core';
+import chromium from '@sparticuz/chromium';
+const exe = await chromium.executablePath();
+const browser = await puppeteer.launch({ executablePath: exe, args: chromium.args, headless: 'shell' });
+const page = await browser.newPage();
+await page.setViewport({ width: 640, height: 360, deviceScaleFactor: 1 });
+await page.setContent('<body style="margin:0;background:#0b1020"><canvas id=c width=640 height=360></canvas><script>const x=document.getElementById("c").getContext("2d");x.fillStyle="#e33";x.beginPath();x.arc(320,180,90,0,7);x.fill();</script></body>', { waitUntil: 'load' });
+await page.screenshot({ path: '/home/user/build/scratch/test_frame.png' });
+await browser.close();
+console.log('OK render test');

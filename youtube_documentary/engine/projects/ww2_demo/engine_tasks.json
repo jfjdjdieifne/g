@@ -1,0 +1,83 @@
+[
+ {
+  "target": "geo",
+  "motion": "map_descent",
+  "technique": "spreading_map_dots",
+  "status": "ready",
+  "beats": [
+   2
+  ]
+ },
+ {
+  "target": "geo",
+  "motion": "map_descent",
+  "technique": "map_inline_label",
+  "status": "ready",
+  "beats": [
+   3
+  ]
+ },
+ {
+  "target": "story",
+  "motion": "counter_countup",
+  "technique": "counter_on_object",
+  "status": "ready",
+  "beats": [
+   5
+  ]
+ },
+ {
+  "target": "docengine",
+  "motion": "parallax_depth",
+  "technique": "tinted_archive",
+  "status": "ready",
+  "beats": [
+   7
+  ]
+ },
+ {
+  "target": "geo",
+  "motion": "map_descent",
+  "technique": "red_flood_expansion",
+  "status": "live",
+  "beats": [
+   4
+  ]
+ },
+ {
+  "target": "story",
+  "motion": "counter_countup",
+  "technique": "counter_escalate_black",
+  "status": "live",
+  "beats": [
+   6
+  ]
+ },
+ {
+  "target": "geo",
+  "motion": "map_descent",
+  "technique": "world_scale_hold",
+  "status": "live",
+  "beats": [
+   8
+  ]
+ },
+ {
+  "target": "board",
+  "motion": "photo_fit_reveal",
+  "technique": "date_card_number",
+  "status": "live",
+  "beats": [
+   9
+  ]
+ },
+ {
+  "target": "docengine",
+  "motion": "locked_off_tension",
+  "technique": "chapter_black_silence",
+  "status": "partial",
+  "beats": [
+   1
+  ]
+ }
+]
