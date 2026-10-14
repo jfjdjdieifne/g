@@ -50,8 +50,21 @@ def bank_stats():
 def check_state(state, stats):
     head = sh("git", "rev-parse", "--short", "HEAD")
     problems, warns = [], []
-    if state.get("head_commit") and head and state["head_commit"] != head:
-        warns.append(f"head_commit بالحالة ({state['head_commit']}) مختلف عن HEAD الحالي ({head}) — حدّث الحالة إذا الشغل الجديد انحفظ.")
+    hc = state.get("head_commit")
+    if hc and head and hc != head:
+        anc = subprocess.run(["git", "-C", str(ROOT.parent), "merge-base", "--is-ancestor", hc, head],
+                             capture_output=True).returncode == 0
+        if anc:
+            warns.append(f"head_commit بالحالة ({hc}) أقدم من HEAD ({head}) — طبيعي: الحالة انكتبت قبل آخر كوميت، وبتصير مطابقة بالجولة الجاية.")
+        else:
+            warns.append(f"head_commit بالحالة ({hc}) مو بالسجل الحالي ({head}) — راجع الحالة.")
+    dirty = subprocess.run(["git", "-C", str(ROOT.parent), "status", "--porcelain"],
+                           capture_output=True, text=True).stdout.strip()
+    if dirty:
+        files = [l[3:].strip() for l in dirty.splitlines()]
+        non_handoff = [f for f in files if not f.endswith("HANDOFF.md")]
+        if non_handoff:
+            warns.append("في تغييرات غير محفوظة بالمستودع — اكومِت قبل ما تعتمد الهاند-أوف: " + ", ".join(non_handoff[:4]))
     for st in state.get("studies", []):
         for f in st.get("deliverables", []):
             if not (ROOT / f).exists():
@@ -104,10 +117,13 @@ def render(state, stats, head):
     L.append("| الشي | المسار/الرابط |")
     L.append("|---|---|")
     for a in state.get("artifacts", []):
-        if a.get("kind") == "folder":
-            link = f"[فولدر درايف](https://drive.google.com/drive/folders/{a['drive_id']})"
+        did = a.get("drive_id")
+        if not did:
+            link = "_(محلي — ما بعدُ رُفع)_"
+        elif a.get("kind") == "folder":
+            link = f"[فولدر درايف](https://drive.google.com/drive/folders/{did})"
         else:
-            link = f"[درايف](https://drive.google.com/file/d/{a['drive_id']}/view)"
+            link = f"[درايف](https://drive.google.com/file/d/{did}/view)"
         path = f"`{a['path']}`" if a.get("path") else ""
         L.append(f"| {a.get('name')} | {path} {link} |")
     L.append("")
@@ -160,6 +176,9 @@ def main():
         print(f"[{'✓' if not warns and not problems else 'i'}] فحص الهاند-أوف: "
               f"{len(state.get('studies', []))} مراجع · {stats.get('total', '?')} كرت · HEAD {head}")
         return 0
+    if head:
+        state["head_commit"] = head
+        STATE.write_text(json.dumps(state, ensure_ascii=False, indent=1), encoding="utf-8")
     md = render(state, stats, head)
     OUT.write_text(md, encoding="utf-8")
     print(f"[✓] كُتب {OUT.relative_to(ROOT)} — {len(md.splitlines())} سطر · "

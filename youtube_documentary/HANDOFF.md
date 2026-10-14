@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `b5a995a` · **HEAD الحالي:** `b5a995a`
+> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `7c7df13` · **HEAD الحالي:** `7c7df13`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -8,12 +8,13 @@
 
 | الملف/المجلد | شو فيه |
 |---|---|
-| `technique_bank` | engine/database/technique_db.json (61 كرت: 43 ww2p1 + 18 vaping — كل كرت why+qc+mصدر فريمي) |
+| `technique_bank` | engine/database/technique_db.json (94 كرت: 43 ww2p1 + 33 ww2p2 + 18 vaping — كل كرت why + qc + مصدر فريمي) |
 | `director` | tools/director.py (سكربت→PLAN.md+plan.json+engine_tasks.json، فحص --validate، طبقة فهم إلزامية) |
 | `transition_atlas` | tools/transition_atlas.py → engine/reference_lab/TRANSITION_ATLAS.md (قياس الانتقالات والترابط) |
 | `sound_bank` | engine/database/sound_bank.json (10 مزاج + 11 SFX + قوانين) |
 | `continuity` | engine/CONTINUITY_MODEL.md (4 خيوط + لقطة وحدة + in-shot vs cut) |
 | `montage_theory` | engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار) |
+| `rulebook` | engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md (29 قسم — آخرها إضافات P2) |
 
 ## 2) حالة المراجع (الدراسة فريم-فريم)
 
@@ -21,12 +22,12 @@
 |---|---|---|---|
 | **vaping** — Juul: A Villain Origin Story (MagnatesMedia) | ✅ كامل | 27:27 كامل — 356 صف، تغطية 55/55 صفحة، audit PASS | `Vaping_BREAKDOWN_2fps_full_v2.md` · `Vaping_COVERAGE.md` · `Vaping_GAPFILL_2026-10-14.md` |
 | **ww2p1** — WW2 — OverSimplified (Part 1) | ✅ كامل | 13:45 كامل — 28/28 صفحة، 46 قاعدة، audit PASS (228 صف · 0 فراغ) | `BREAKDOWN_WW2P1.md` · `DIRECTING_RULEBOOK_v1.2.md` |
-| **ww2p2** — WW2 — OverSimplified (Part 2) | 🟡 شغّال | 0:00–3:00 (صفحات 1–6 من 32) — المختبر أعيد تشغيله بعد الريسِت | — |
+| **ww2p2** — WW2 — OverSimplified (Part 2) | ✅ كامل | 15:34 كامل — 32/32 صفحة، 29 قاعدة (47–75)، audit PASS (221 صف · 761 حدث · 0 فراغ) | `BREAKDOWN_WW2P2.md` · `DIRECTING_RULEBOOK_v1.3.md` |
 
 ## 3) بنك الأفكار (مفحوص آليًا من الملف)
 
-- **61 كرت** — التوزيع: ww2p1: 43 · vaping: 18
-- جاهز للتنفيذ فورًا: **7** · كل كرت فيه شرح «ليش»: **61/61** · فيه فحوص QC: **61/61**
+- **94 كرت** — التوزيع: ww2p1: 43 · ww2p2: 33 · vaping: 18
+- جاهز للتنفيذ فورًا: **7** · كل كرت فيه شرح «ليش»: **94/94** · فيه فحوص QC: **94/94**
 
 ## 4) الملفات والروابط
 
@@ -44,14 +45,15 @@
 | WW2 P2 (فيديو) |  [درايف](https://drive.google.com/file/d/1NPzS-IOkUlEFHrWd392WY7KLQtvSFylj/view) |
 | Vaping (فيديو) |  [درايف](https://drive.google.com/file/d/117J6M88EstNWF6NOcHRm1fmfLmu5C0vh/view) |
 | PayPal (فيديو — 722MB، أكبر من حد التنزيل) |  [درايف](https://drive.google.com/file/d/1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt/view) |
+| BREAKDOWN_WW2P2 | `engine/reference_lab/BREAKDOWN_WW2P2.md` _(محلي — ما بعدُ رُفع)_ |
+| TRANSITION_ATLAS | `engine/reference_lab/TRANSITION_ATLAS.md` _(محلي — ما بعدُ رُفع)_ |
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. WW2 P2: كمّل الصفحات 7–32 (3:00–15:34) دفعات 6 صفحات، وتنزيل كل دفعة على ملف BREAKDOWN_WW2P2.md + رفعها
-2. بعد إكمال P2: study_audit --verify PASS + كروت بنك جديدة + تحديث TRANSITION_ATLAS وHANDOFF
-3. PayPal: بدو ≤100MiB (filmstrip مضغوط أو أجزاء) — أو جلسة سكانر
-4. اختبار الإخراج: ديمو 15–30 ث بنمط WW2 من الـrulebook v1.2
-5. بعدها: مراجع الباقية (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
+1. PayPal (57:36، 721MB > سقف التنزيل 100MiB): جلسة تقطيع part_study + تنزيل أجزاء (أو سكانر)
+2. اختبار الإخراج: ديمو 15–30 ث بنمط WW2 من الـrulebook v1.3 (P1+P2)
+3. بعدها: مراجع الباقية (Crypto / Apple / AI / Saudi / Dubai) واحد واحد — لا دفعات
+4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
 
 ## 6) أسئلة معلّقة (بتنتظر قرار)
 
