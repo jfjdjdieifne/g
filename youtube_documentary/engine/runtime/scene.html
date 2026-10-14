@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+  @font-face { font-family:'Archivo'; src:url('file:///home/user/g/youtube_documentary/assets_global/fonts/ArchivoBlack-Regular.ttf'); }
+  @font-face { font-family:'InterVar'; src:url('file:///home/user/g/youtube_documentary/assets_global/fonts/Inter-Variable.ttf'); }
+  @font-face { font-family:'Bebas'; src:url('file:///home/user/g/youtube_documentary/assets_global/fonts/BebasNeue-Regular.ttf'); }
+  html,body { margin:0; width:1920px; height:1080px; overflow:hidden; background:#070605; }
+  .photo { position:absolute; inset:0; width:1920px; height:1080px; z-index:0; }
+  .scrim { position:absolute; inset:0; pointer-events:none; z-index:1; }
+  #scrimA { background:linear-gradient(100deg, rgba(5,4,3,.88) 0%, rgba(5,4,3,.45) 46%, rgba(5,4,3,0) 74%); }
+  #scrimB { background:linear-gradient(to top, rgba(4,3,2,.93) 0%, rgba(4,3,2,0) 42%); }
+  #vig { position:absolute; inset:0; pointer-events:none; z-index:3; background:radial-gradient(ellipse at 50% 44%, rgba(0,0,0,0) 52%, rgba(0,0,0,.52) 100%); }
+  .tblock { position:absolute; pointer-events:none; z-index:4; }
+  .line { display:block; white-space:nowrap; }
+  .mask { display:inline-block; overflow:hidden; vertical-align:top; padding-bottom:.12em; margin-bottom:-.12em; margin-right:.28em; }
+  .w { display:inline-block; opacity:0; will-change:transform,opacity; }
+  .kicker { font-family:'InterVar', sans-serif; font-weight:600; letter-spacing:5px; font-size:31px; color:#cfc7b2; }
+  .date { font-family:'Bebas', sans-serif; font-size:185px; line-height:.95; color:#e8dfc9; letter-spacing:3px; }
+  .p1s { font-family:'InterVar', sans-serif; font-weight:500; font-size:41px; color:#d9d2bf; }
+  .p1b { font-family:'Archivo', sans-serif; font-size:104px; line-height:1.04; color:#f4efe0; }
+  .w.gold { color:#dfa83e; }
+  .p2 { font-family:'Archivo', sans-serif; font-size:53px; line-height:1.22; color:#f0ead8; }
+</style>
+<script type="importmap">{"imports":{"three":"file:///tmp/probe3/node_modules/three/build/three.module.js"}}</script>
+</head><body>
+<div class="scrim" id="scrimA"></div><div class="scrim" id="scrimB"></div><div id="vig"></div><div id="fade" style="position:absolute;inset:0;background:#000;z-index:9;pointer-events:none;"></div>
+<script type="module">
+import * as THREE from 'three';
+import { cameraPose, trackValue, clamp01 } from '../src/camera.mjs';
+
+const smooth = x => { x = clamp01(x); return x * x * (3 - 2 * x); };
+window.__engine = { ready: false };
+
+function featherTexture(img, fxFrac, fyFrac) {
+  const c = document.createElement('canvas'); c.width = img.naturalWidth; c.height = img.naturalHeight;
+  const x = c.getContext('2d');
+  x.filter = 'brightness(.78) contrast(1.07) sepia(.14)';
+  x.drawImage(img, 0, 0);
+  x.filter = 'none';
+  x.globalCompositeOperation = 'source-atop';
+  x.fillStyle = 'rgba(38,27,16,.22)'; x.fillRect(0, 0, c.width, c.height);
+  x.globalCompositeOperation = 'destination-out';
+  const W = c.width, H = c.height, fx = W * fxFrac, fy = H * fyFrac;
+  x.globalCompositeOperation = 'destination-out';
+  let g = x.createLinearGradient(0, 0, fx, 0); g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+  x.fillStyle = g; x.fillRect(0, 0, fx, H);
+  g = x.createLinearGradient(W, 0, W - fx, 0); g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+  x.fillStyle = g; x.fillRect(W - fx, 0, fx, H);
+  g = x.createLinearGradient(0, 0, 0, fy); g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+  x.fillStyle = g; x.fillRect(0, 0, W, fy);
+  g = x.createLinearGradient(0, H, 0, H - fy * 1.5); g.addColorStop(0, 'rgba(0,0,0,1)'); g.addColorStop(1, 'rgba(0,0,0,0)');
+  x.fillStyle = g; x.fillRect(0, H - fy * 1.5, W, fy * 1.5);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+function loadImg(url) { return new Promise((res, rej) => { const i = new Image(); i.onload = () => res(i); i.onerror = rej; i.src = url; }); }
+
+window.__boot = async (S) => {
+  const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true, alpha: true });
+  renderer.setPixelRatio(1); renderer.setSize(1920, 1080); renderer.setClearColor(0x000000, 0);
+  const glc = renderer.domElement;
+  glc.style.cssText = 'position:absolute;inset:0;pointer-events:none;z-index:2;';
+  document.body.appendChild(glc);
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(40, 1920 / 1080, 0.1, 100);
+
+  // photo layers (full-frame photographic regions)
+  const photoEls = {};
+  for (const L of S.layers.filter(l => l.kind === 'photo')) {
+    const img = document.createElement('img'); img.className = 'photo'; img.id = 'ph_' + L.id;
+    img.src = L.fileUrl; img.style.filter = L.filter || ''; img.style.opacity = 0;
+    document.body.appendChild(img);
+    photoEls[L.id] = img;
+  }
+  // portrait/plane regions (feathered photographic planes in 3D space)
+  const planes = {};
+  for (const L of S.layers.filter(l => l.kind === 'plane')) {
+    const img = await loadImg(L.fileUrl);
+    const tex = featherTexture(img, L.feather?.[0] ?? 0.2, L.feather?.[1] ?? 0.14);
+    const m = new THREE.Mesh(new THREE.PlaneGeometry(L.size[0], L.size[1]),
+      new THREE.MeshBasicMaterial({ map: tex, transparent: true, depthWrite: false }));
+    m.position.set(...L.position); scene.add(m); planes[L.id] = m;
+  }
+  // dust (shared spatial atmosphere; can be disabled per scene)
+  let dust = null, seed = [];
+  if (S.atmosphere?.dust) {
+    const N = 200, pos = new Float32Array(N * 3);
+    for (let i = 0; i < N; i++) { pos[i*3] = (Math.random()-0.5)*12; pos[i*3+1] = (Math.random()-0.5)*7; pos[i*3+2] = 0.8 + Math.random()*1.6; seed.push(Math.random()*6.28); }
+    const dg = new THREE.BufferGeometry(); dg.setAttribute('position', new THREE.BufferAttribute(pos, 3));
+    dust = new THREE.Points(dg, new THREE.PointsMaterial({ color: 0xd8c08a, size: 0.03, transparent: true, opacity: 0.42, depthWrite: false }));
+    scene.add(dust);
+  }
+  // typography: build masked word spans from resolved schedule
+  const sched = Object.fromEntries(S.schedule.map(s => [s.index, s]));
+  const spans = [];
+  for (const P of S.phrases) {
+    const block = document.createElement('div'); block.className = 'tblock';
+    if (P.anchor.left !== undefined) block.style.left = P.anchor.left + 'px';
+    if (P.anchor.top !== undefined) block.style.top = P.anchor.top + 'px';
+    if (P.anchor.bottom !== undefined) block.style.bottom = P.anchor.bottom + 'px';
+    document.body.appendChild(block);
+    for (const lineSpec of P.lines) {
+      const line = document.createElement('div'); line.className = 'line'; block.appendChild(line);
+      for (const ix of lineSpec.words) {
+        const w = S.words[ix];
+        const m = document.createElement('span'); m.className = 'mask ' + (lineSpec.style || 'p2');
+        const el = document.createElement('span');
+        el.className = 'w' + ((P.emphasis || []).includes(ix) && lineSpec.goldEmphasis ? ' gold' : '');
+        el.textContent = w.text; el.dataset.word = w.text;
+        m.appendChild(el); line.appendChild(m);
+        spans.push({ el, phrase: P, ...sched[ix] });
+      }
+    }
+  }
+  window.__setTime = (t) => {
+    const pose = cameraPose(S.camera.keys, t);
+    camera.position.set(...pose.pos); camera.fov = pose.fov; camera.updateProjectionMatrix();
+    camera.lookAt(...pose.look);
+    for (const L of S.layers.filter(l => l.kind === 'photo')) {
+      const el = photoEls[L.id];
+      el.style.opacity = trackValue(L.opacity, t).toFixed(3);
+      const drift = trackValue(L.drift || [[0, 0], [S.duration, 0]], t);
+      el.style.transform = `scale(${(1.045 + 0.05 * smooth(t / S.duration)).toFixed(4)}) translateX(${drift.toFixed(1)}px)`;
+    }
+    for (const L of S.layers.filter(l => l.kind === 'plane')) {
+      planes[L.id].material.opacity = trackValue(L.opacity, t);
+    }
+    if (dust) {
+      const pa = dust.geometry.attributes.position;
+      for (let k = 0; k < pa.count; k++) { pa.array[k*3+1] += Math.sin(t * 0.5 + seed[k]) * 0.0006 + 0.0011; if (pa.array[k*3+1] > 3.9) pa.array[k*3+1] = -3.9; }
+      pa.needsUpdate = true;
+    }
+    for (const s of spans) {
+      const e = smooth((t - s.animStart) / s.duration);
+      let out = 1;
+      if (s.phrase.exit) out = 1 - clamp01((t - s.phrase.exit.at) / s.phrase.exit.dur);
+      s.el.style.opacity = (e * out).toFixed(3);
+      s.el.style.transform = `translateY(${((1 - e) * 112).toFixed(1)}%)`;
+    }
+    if (S.fadeIn) document.getElementById('fade').style.opacity = (1 - smooth(t / S.fadeIn.dur)).toFixed(3);
+    renderer.render(scene, camera);
+  };
+  window.__measure = () => {
+    const textRects = spans.filter(s => parseFloat(s.el.style.opacity || 0) > 0.5).map(s => {
+      const r = s.el.getBoundingClientRect();
+      return { text: s.text, x: r.x, y: r.y, w: r.width, h: r.height };
+    });
+    const subjectRects = [];
+    for (const L of S.layers.filter(l => l.kind === 'plane')) {
+      const m = planes[L.id];
+      if (m.material.opacity < 0.3) continue;
+      const v = new THREE.Vector3(); const pts = [];
+      for (const [cx, cy] of [[-0.5, -0.5], [0.5, -0.5], [-0.5, 0.5], [0.5, 0.5]]) {
+        v.set(m.position.x + cx * L.size[0], m.position.y + cy * L.size[1], m.position.z).project(camera);
+        pts.push([(v.x * 0.5 + 0.5) * 1920, (-v.y * 0.5 + 0.5) * 1080]);
+      }
+      const xs = pts.map(p => p[0]), ys = pts.map(p => p[1]);
+      subjectRects.push({ id: L.id, x: Math.min(...xs), y: Math.min(...ys), w: Math.max(...xs) - Math.min(...xs), h: Math.max(...ys) - Math.min(...ys) });
+    }
+    return { textRects, subjectRects };
+  };
+  await document.fonts.ready;
+  window.__setTime(0);
+  window.__engine.ready = true;
+};
+</script></body></html>

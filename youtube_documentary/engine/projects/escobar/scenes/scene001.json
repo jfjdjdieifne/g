@@ -1,0 +1,265 @@
+{
+  "id": "escobar_s001",
+  "strategy": "spatial-canvas",
+  "sentence": 1,
+  "sentenceText": "In 1993, one of the richest criminals in the world was hiding inside a house in Colombia.",
+  "duration": 7.0,
+  "storyboardTimes": [
+    0.27,
+    2.37,
+    6.7
+  ],
+  "layers": [
+    {
+      "id": "medellin",
+      "kind": "photo",
+      "asset": "medellin_hillside_manrique",
+      "file": "../../../../../image-search/medellin-colombia-hillside-houses-citysc-2.jpg",
+      "displayWidthPx": 1920,
+      "filter": "brightness(.85) contrast(1.07) saturate(.92)",
+      "opacity": [
+        [
+          0,
+          1
+        ],
+        [
+          7,
+          1
+        ]
+      ],
+      "drift": [
+        [
+          0,
+          0
+        ],
+        [
+          7,
+          -10
+        ]
+      ]
+    },
+    {
+      "id": "bars",
+      "kind": "photo",
+      "asset": "escobar_bars_lacatedral",
+      "file": "../../../../assets_scenes/escobar_bars.jpg",
+      "displayWidthPx": 1920,
+      "filter": "brightness(.93) contrast(1.05)",
+      "opacity": [
+        [
+          0,
+          0
+        ],
+        [
+          3.7,
+          0
+        ],
+        [
+          5.2,
+          0.97
+        ],
+        [
+          7,
+          0.97
+        ]
+      ]
+    },
+    {
+      "id": "mugshot",
+      "kind": "plane",
+      "asset": "escobar_mugshot_1976",
+      "file": "../../../../DEMO1_ESCOBAR/assets/escobar_mug_1976_pd.jpg",
+      "position": [
+        3.55,
+        0.05,
+        -0.55
+      ],
+      "size": [
+        3.3,
+        3.43
+      ],
+      "feather": [
+        0.24,
+        0.16
+      ],
+      "opacity": [
+        [
+          0,
+          0
+        ],
+        [
+          1.15,
+          0
+        ],
+        [
+          2.25,
+          1
+        ],
+        [
+          3.9,
+          1
+        ],
+        [
+          4.8,
+          0
+        ],
+        [
+          7,
+          0
+        ]
+      ]
+    }
+  ],
+  "camera": {
+    "keys": [
+      {
+        "t": 0.0,
+        "pos": [
+          -0.45,
+          0.14,
+          8.7
+        ],
+        "look": [
+          0.3,
+          -0.02,
+          0
+        ],
+        "fov": 40
+      },
+      {
+        "t": 3.5,
+        "pos": [
+          0.05,
+          0.1,
+          7.9
+        ],
+        "look": [
+          0.3,
+          -0.02,
+          0
+        ],
+        "fov": 40
+      },
+      {
+        "t": 7.0,
+        "pos": [
+          0.4,
+          0.06,
+          7.45
+        ],
+        "look": [
+          0.3,
+          -0.02,
+          0
+        ],
+        "fov": 40
+      }
+    ]
+  },
+  "atmosphere": {
+    "dust": true
+  },
+  "phrases": [
+    {
+      "id": "p0_date",
+      "anchor": {
+        "left": 120,
+        "top": 390
+      },
+      "lines": [
+        {
+          "words": [
+            0
+          ],
+          "style": "kicker"
+        },
+        {
+          "words": [
+            1
+          ],
+          "style": "date"
+        }
+      ],
+      "emphasis": [
+        1
+      ],
+      "exit": {
+        "at": 1.08,
+        "dur": 0.5
+      }
+    },
+    {
+      "id": "p1_wealth",
+      "anchor": {
+        "left": 120,
+        "top": 265
+      },
+      "lines": [
+        {
+          "words": [
+            2,
+            3,
+            4
+          ],
+          "style": "p1s"
+        },
+        {
+          "words": [
+            5
+          ],
+          "style": "p1b",
+          "goldEmphasis": true
+        },
+        {
+          "words": [
+            6
+          ],
+          "style": "p1b"
+        }
+      ],
+      "emphasis": [
+        5,
+        6
+      ],
+      "exit": {
+        "at": 4.18,
+        "dur": 0.55
+      }
+    },
+    {
+      "id": "p2_hiding",
+      "anchor": {
+        "left": 120,
+        "bottom": 110
+      },
+      "lines": [
+        {
+          "words": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "style": "p2"
+        },
+        {
+          "words": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "style": "p2"
+        }
+      ],
+      "emphasis": [
+        16
+      ]
+    }
+  ],
+  "fadeIn": {
+    "dur": 0.45
+  }
+}

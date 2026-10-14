@@ -1,0 +1,48 @@
+{
+  "assets": [
+    {
+      "id": "escobar_mugshot_1976",
+      "file": "../../../DEMO1_ESCOBAR/assets/escobar_mug_1976_pd.jpg",
+      "subject": "Pablo Escobar, 1976 Colombian police mugshot",
+      "type": "archival_photograph",
+      "width": 1280, "height": 1331,
+      "provenance": "Colombian National Police photograph (1976), via Wikimedia Commons",
+      "license": "public_domain",
+      "status": "approved",
+      "notes": "Authenticated archival portrait. Use full image; feathered-edge compositing allowed, no crop of subject."
+    },
+    {
+      "id": "escobar_bars_lacatedral",
+      "file": "../../../assets_scenes/escobar_bars.jpg",
+      "subject": "Pablo Escobar holding bars at La Catedral prison",
+      "type": "archival_photograph",
+      "width": 980, "height": 551,
+      "provenance": "Period press photograph (La Catedral, 1991-92); collected in project asset pool",
+      "license": "press_photo_rights_to_confirm_before_publication",
+      "status": "approved_storyboard",
+      "notes": "Upscale factor at full frame ~1.96x. Rights confirmation required before final publication."
+    },
+    {
+      "id": "medellin_hillside_manrique",
+      "file": "../../../../image-search/medellin-colombia-hillside-houses-citysc-2.jpg",
+      "subject": "Medellin hillside residential comunas (Manrique area) with Aburra valley",
+      "type": "contextual_photograph",
+      "width": 612, "height": 400,
+      "provenance": "Press/stock thumbnail via Brave image search (Getty Images Colombia collection)",
+      "license": "storyboard_only_replace_with_licensed_original",
+      "status": "storyboard_only",
+      "notes": "612px source upscaled ~3.1x at 1920w. QC flags upscale>2.5. Must be replaced by licensed full-resolution original before production."
+    },
+    {
+      "id": "hero_solo_cc0",
+      "file": "../../../DEMO1_ESCOBAR/assets/hero_solo_cc0.jpg",
+      "subject": "Pablo Escobar portrait (color)",
+      "type": "archival_photograph",
+      "width": 640, "height": 800,
+      "provenance": "CC0 release via project asset pool",
+      "license": "cc0",
+      "status": "approved",
+      "notes": "Low resolution; suitable for partial-frame regions only."
+    }
+  ]
+}

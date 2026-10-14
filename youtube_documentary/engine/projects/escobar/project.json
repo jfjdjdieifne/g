@@ -1,0 +1,15 @@
+{
+  "project_id": "escobar_001",
+  "title": "Pablo Escobar",
+  "script_file": "../../tools/script_full.py",
+  "voiceover_file": "../../renders/vo_full/final_audio.wav",
+  "timeline_file": "../../renders/vo_full/timeline.json",
+  "visual_style": "premium_investigative_documentary",
+  "aspect_ratio": "16:9",
+  "resolution": "1920x1080",
+  "fps": 30,
+  "music_enabled": false,
+  "exact_script_typography": true,
+  "allow_ai_generated_assets": true,
+  "historical_accuracy_required": true
+}
