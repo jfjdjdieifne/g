@@ -7,7 +7,8 @@
       "PIPELINE",
       "STILL",
       "INFERRED"
-    ]
+    ],
+    "pacing_mode_note": "Pacing is a PER-FILM parameter, decided at planning: hard-cut dominant (OverSimplified measured median 3.07s) vs soft-transition dominant (MagnatesMedia: smoke wipes, sparse hard cuts ~4/min outside openings; openings accelerate to ~24/min). Choose per film; never mix accidentally."
   },
   "techniques": [
     {
