@@ -4,250 +4,1162 @@
   "updated": "2026-10-14",
   "note": "بنك الأفكار (المكوّنات). كل كرت = فكرة واحدة قابلة للخلط: من وين أخدناها (فيديو@توقيت)، شو بتعمل، إيمتى تستعمل، بارامترات، ممنوعات، حالة التنفيذ بالمحرك. هاد الفهرس يلي بيخلي الأيجنت يلاقي «المكوّن» المناسب بأجزاء الثانية.",
   "law": "ما بينضاف كرت إلا إذا شفنا الفكرة بعيننا بالفريمات (أو مقاسة بالمختبر). ما في اختراع.",
-  "recipe_rule": "الخَلطة (خروج نهائي) = نبضات (beats) → لكل نبضة منختار كرت من **مصدر مختلف** عن يلي قبلها قدر الإمكان (كوكتيل، مو قالب فيديو واحد)."
+  "recipe_rule": "الخَلطة (خروج نهائي) = نبضات (beats) → لكل نبضة منختار كرت من **مصدر مختلف** عن يلي قبلها قدر الإمكان (كوكتيل، مو قالب فيديو واحد).",
+  "why_note": "حقل why = تفسير مبدأ (لماذا يشتغل) مبني على استخدامات التقنية المشاهدة بالمراجع + مبادئ المونتاج المعروفة — مو اقتباس نصي من الفيديو. الدليل الفريمي يبقى بسورس كل كرت (ref@at)."
  },
  "sources": {
-  "vaping": {"title": "Juul: A Villain Origin Story — MagnatesMedia", "video_id": "xkfctt5038w", "dur": "27:27", "pacing": "4 cuts/min", "palette": "teal=ambition · red=danger · green=money · gold=success · bw=past"},
-  "ww2p1": {"title": "WW2 Part 1 — OverSimplified", "video_id": "_uk_6vfqwTA", "dur": "13:45", "pacing": "15 cuts/min", "palette": "flat cartoon + B&W archive inserts"},
-  "paypal": {"title": "The Dark Truth About PayPal — MagnatesMedia", "video_id": "DwTK_VT54OY", "dur": "57:36", "pacing": "قيد الدراسة", "palette": "قيد الدراسة"}
+  "vaping": {
+   "title": "Juul: A Villain Origin Story — MagnatesMedia",
+   "video_id": "xkfctt5038w",
+   "dur": "27:27",
+   "pacing": "4 cuts/min",
+   "palette": "teal=ambition · red=danger · green=money · gold=success · bw=past"
+  },
+  "ww2p1": {
+   "title": "WW2 Part 1 — OverSimplified",
+   "video_id": "_uk_6vfqwTA",
+   "dur": "13:45",
+   "pacing": "15 cuts/min",
+   "palette": "flat cartoon + B&W archive inserts"
+  },
+  "paypal": {
+   "title": "The Dark Truth About PayPal — MagnatesMedia",
+   "video_id": "DwTK_VT54OY",
+   "dur": "57:36",
+   "pacing": "قيد الدراسة",
+   "palette": "قيد الدراسة"
+  }
  },
  "cards": [
-  {"id": "smoke_wipe", "name_ar": "مسحة الدخان", "cat": "transition",
-   "intents": ["scene_change", "mood_shift", "cover_edit", "after_reveal"],
-   "source": [{"ref": "vaping", "at": "2:48"}, {"ref": "vaping", "at": "3:32"}, {"ref": "vaping", "at": "5:39.5"}, {"ref": "vaping", "at": "5:50"}],
+  {
+   "id": "smoke_wipe",
+   "name_ar": "مسحة الدخان",
+   "cat": "transition",
+   "intents": [
+    "scene_change",
+    "mood_shift",
+    "cover_edit",
+    "after_reveal"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "2:48"
+    },
+    {
+     "ref": "vaping",
+     "at": "3:32"
+    },
+    {
+     "ref": "vaping",
+     "at": "5:39.5"
+    },
+    {
+     "ref": "vaping",
+     "at": "5:50"
+    }
+   ],
    "how": "دخان أبيض كثيف بيغطي الشاشة كاملة ~0.5-1 ث، بنقطة التغطية القصوى بينبدّل المشهد، والدخان بينكشف من جديد",
    "when": "بين مشهدين مختلفين باللون/المزاج، أو لتغطية تبديل مكان/زمان",
-   "params": {"cover_s": [0.4, 1.0], "coverage_pct": 100, "color": "white", "sound": "whoosh_soft"},
-   "anti": ["ما تتكرر مرتين ورا بعض", "بلا صوت قوي — تحت الجو"],
-   "engine": {"status": "concept", "unit": null, "qc": ["العتمة/التغطية 100% قبل التبديل", "ما في قطع صوتي"]}},
-  {"id": "black_beat_inscene", "name_ar": "ضربة الأسود جوّا المشهد", "cat": "rhythm",
-   "intents": ["pause", "breath", "impact", "reset"],
-   "source": [{"ref": "vaping", "at": "3:58"}, {"ref": "vaping", "at": "11:13"}, {"ref": "vaping", "at": "2:36"}],
+   "params": {
+    "cover_s": [
+     0.4,
+     1.0
+    ],
+    "coverage_pct": 100,
+    "color": "white",
+    "sound": "whoosh_soft"
+   },
+   "anti": [
+    "ما تتكرر مرتين ورا بعض",
+    "بلا صوت قوي — تحت الجو"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "العتمة/التغطية 100% قبل التبديل",
+     "ما في قطع صوتي"
+    ]
+   },
+   "why": "العين بتتبع الدخان (حركة غالبة) فلما توصل التغطية 100% تكون لحظة التبديل مخفية — القطع صار ما بينشاف. غير هيك الدخان بيمحي 'الذاكرة البصرية' فالمشهد الجديد بيبدأ نظيف."
+  },
+  {
+   "id": "black_beat_inscene",
+   "name_ar": "ضربة الأسود جوّا المشهد",
+   "cat": "rhythm",
+   "intents": [
+    "pause",
+    "breath",
+    "impact",
+    "reset"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "3:58"
+    },
+    {
+     "ref": "vaping",
+     "at": "11:13"
+    },
+    {
+     "ref": "vaping",
+     "at": "2:36"
+    }
+   ],
    "how": "أسود قصير (1-2.5 ث) بيجي **جوّا** المشهد مو بس بين الفصول — بيمحي الصورة قبل التسليم للقطة الجاية",
    "when": "قبل جملة مهمة، أو قبل تحوّل كبير، أو كضربة إيقاع بعد ضجيج",
-   "params": {"dur_s": [1.0, 2.5], "with_silence": true},
-   "anti": ["بلا أسود طويل رتيب — بيقتل الإيقاع لو زاد عن 3 ث"],
-   "engine": {"status": "ready", "unit": "T11", "qc": ["blackdetect موجود", "مدة ضمن المدى"]},
-   "links": ["T11"]},
-  {"id": "chapter_black_silence", "name_ar": "بطاقة الفصل بعد أسود وصمت", "cat": "structure",
-   "intents": ["chapter", "reset", "structure"],
-   "source": [{"ref": "vaping", "at": "rulebook 0:28-0:36"}, {"ref": "vaping", "at": "11:59"}],
-   "how": "أسود 2-2.5 ث + صمت → بعدها بطاقة الفصل (نص يزحف أو ثابت)", "when": "كل ما نغيّر فصل/فكرة كبيرة",
-   "params": {"black_s": [2.0, 2.5], "silence": true},
-   "anti": ["ما تستعملها كل دقيقة — بتفقد قيمتها"],
-   "engine": {"status": "concept", "unit": null, "qc": ["أسود + صمت موجودين قبلها"]}},
-  {"id": "headline_cold_open", "name_ar": "فَتحة عناوين الأخبار", "cat": "opening",
-   "intents": ["cold_open", "evidence", "attention", "hook"],
-   "source": [{"ref": "vaping", "at": "0:00-0:07"}, {"ref": "vaping", "at": "0:07-0:13"}],
+   "params": {
+    "dur_s": [
+     1.0,
+     2.5
+    ],
+    "with_silence": true
+   },
+   "anti": [
+    "بلا أسود طويل رتيب — بيقتل الإيقاع لو زاد عن 3 ث"
+   ],
+   "engine": {
+    "status": "ready",
+    "unit": "T11",
+    "qc": [
+     "blackdetect موجود",
+     "مدة ضمن المدى"
+    ]
+   },
+   "links": [
+    "T11"
+   ],
+   "why": "الأسود بيسكّر الإحساس بالزمن؛ الدماغ بيعتبره نهاية جملة، فبيصحّي الانتباه للي بعده. وهي أرخص طريقة نعطي 'نفس' بين فكرتين داخل نفس المشهد بلا ما نغيّر مكان."
+  },
+  {
+   "id": "chapter_black_silence",
+   "name_ar": "بطاقة الفصل بعد أسود وصمت",
+   "cat": "structure",
+   "intents": [
+    "chapter",
+    "reset",
+    "structure"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "rulebook 0:28-0:36"
+    },
+    {
+     "ref": "vaping",
+     "at": "11:59"
+    }
+   ],
+   "how": "أسود 2-2.5 ث + صمت → بعدها بطاقة الفصل (نص يزحف أو ثابت)",
+   "when": "كل ما نغيّر فصل/فكرة كبيرة",
+   "params": {
+    "black_s": [
+     2.0,
+     2.5
+    ],
+    "silence": true
+   },
+   "anti": [
+    "ما تستعملها كل دقيقة — بتفقد قيمتها"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "أسود + صمت موجودين قبلها"
+    ]
+   },
+   "why": "الفصل الجديد لازم يبدأ والمشاهد 'مصفّي ذهنو'. الأسود + الصمت بيعملوا فراغ ما بتعملو أي موسيقى؛ بلا هالفراغ الكارت بيبان حشو وما بياخد ثقل."
+  },
+  {
+   "id": "headline_cold_open",
+   "name_ar": "فَتحة عناوين الأخبار",
+   "cat": "opening",
+   "intents": [
+    "cold_open",
+    "evidence",
+    "attention",
+    "hook"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "0:00-0:07"
+    },
+    {
+     "ref": "vaping",
+     "at": "0:07-0:13"
+    }
+   ],
    "how": "قصاصات عناوين صحف بعمق دقيق (crop) → عنوان أبيض ع أسود → مذيع أخبار — 3 كتل ب 7 ث",
    "when": "أول 10 ثواني: إثبات إنّو القصة حقيقية ومهمة",
-   "params": {"shot_len_s": [1.0, 2.5], "blocks": 3},
-   "anti": ["بلا شرح — الصور تحكي"],
-   "engine": {"status": "concept", "unit": null, "qc": ["العناوين مقروءة بالكادر"]}},
-  {"id": "word_quote_accumulate", "name_ar": "الاقتباس المتراكم", "cat": "typography",
-   "intents": ["quote", "text", "emphasis"],
-   "source": [{"ref": "vaping", "at": "0:10-0:13"}],
+   "params": {
+    "shot_len_s": [
+     1.0,
+     2.5
+    ],
+    "blocks": 3
+   },
+   "anti": [
+    "بلا شرح — الصور تحكي"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "العناوين مقروءة بالكادر"
+    ]
+   },
+   "why": "البداية بدها أرض مألوفة: شكل نشرة الأخبار معروف من كل المشاهدين، فبياخد ثقة وانتباه فوري بلا تعب شرح — منبدأ من مكانة الخبر مو من التعريف عنا."
+  },
+  {
+   "id": "word_quote_accumulate",
+   "name_ar": "الاقتباس المتراكم",
+   "cat": "typography",
+   "intents": [
+    "quote",
+    "text",
+    "emphasis"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "0:10-0:13"
+    }
+   ],
    "how": "النص بيتبدّل **كتلة كتلة** بنفس اللقطة («IT'S NOT» ← «FORMER SMOKERS») — القراءة بسرعة الكلام",
    "when": "اقتباس طويل أو جملة متصاعدة",
-   "params": {"chunk_words": [2, 4], "hold_s": [0.4, 0.9], "align": "center"},
-   "anti": ["بلا زووم عدواني عالنص (≤10%)", "ما تتجاوز 4-6 كلمات بكل كتلة"],
-   "engine": {"status": "ready", "unit": "T13", "qc": ["النص مقروء", "الزووم ≤10%"]},
-   "links": ["T13"]},
-  {"id": "spreading_map_dots", "name_ar": "خريطة النقاط المنتشرة", "cat": "map",
-   "intents": ["map", "spread", "scale", "growth"],
-   "source": [{"ref": "vaping", "at": "0:20-0:23"}, {"ref": "vaping", "at": "0:24-0:28"}],
+   "params": {
+    "chunk_words": [
+     2,
+     4
+    ],
+    "hold_s": [
+     0.4,
+     0.9
+    ],
+    "align": "center"
+   },
+   "anti": [
+    "بلا زووم عدواني عالنص (≤10%)",
+    "ما تتجاوز 4-6 كلمات بكل كتلة"
+   ],
+   "engine": {
+    "status": "ready",
+    "unit": "T13",
+    "qc": [
+     "النص مقروء",
+     "الزووم ≤10%"
+    ]
+   },
+   "links": [
+    "T13"
+   ],
+   "why": "لما الجملة تظهر كلمة-كلمة، المشاهد بيقرا بنفس إيقاع الإلقاء فالكلام يدخل عقله كأنه هو يحكيها — هيك الاقتباس يصير حدث، مو نص مزخرف عالشاشة."
+  },
+  {
+   "id": "spreading_map_dots",
+   "name_ar": "خريطة النقاط المنتشرة",
+   "cat": "map",
+   "intents": [
+    "map",
+    "spread",
+    "scale",
+    "growth"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "0:20-0:23"
+    },
+    {
+     "ref": "vaping",
+     "at": "0:24-0:28"
+    }
+   ],
    "how": "خريطة → نقاط حمرا بتظهر وتتكاثر → تتحول لمشهد عدوى (مستشفى/رئة)",
    "when": "انتشار فكرة/ظاهرة/منتج جغرافيًا",
-   "params": {"dot_pop_s": [0.15, 0.3], "on_land": true},
-   "anti": ["النقاط لازم تضل عالبَرّ (land mask)", "بلا نقاط بالسالب — خطأ بصري"],
-   "engine": {"status": "ready", "unit": "T06", "qc": ["on_land() لكل نقطة"]},
-   "links": ["T06", "T07"]},
-  {"id": "counter_on_object", "name_ar": "العدّاد على الغرض", "cat": "emphasis",
-   "intents": ["scale", "growth", "numbers"],
-   "source": [{"ref": "vaping", "at": "4:14-4:17"}, {"ref": "vaping", "at": "21:03"}],
+   "params": {
+    "dot_pop_s": [
+     0.15,
+     0.3
+    ],
+    "on_land": true
+   },
+   "anti": [
+    "النقاط لازم تضل عالبَرّ (land mask)",
+    "بلا نقاط بالسالب — خطأ بصري"
+   ],
+   "engine": {
+    "status": "ready",
+    "unit": "T06",
+    "qc": [
+     "on_land() لكل نقطة"
+    ]
+   },
+   "links": [
+    "T06",
+    "T07"
+   ],
+   "why": "التوسّع عالخريطة بيترجم كلمة 'انتشار' لمعنى بصري: كل نقطة جديدة = خطوة نمو. هاد أقوى من جملة 'انتشر بكل مكان' لأنو بيورّي الزمن والمسافة بدل ما يحكي عنهم."
+  },
+  {
+   "id": "counter_on_object",
+   "name_ar": "العدّاد على الغرض",
+   "cat": "emphasis",
+   "intents": [
+    "scale",
+    "growth",
+    "numbers"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "4:14-4:17"
+    },
+    {
+     "ref": "vaping",
+     "at": "21:03"
+    }
+   ],
    "how": "$18,812 ← $117,813 ← $396,111 ← $400,000 على خلفية الغرض نفسه؛ والعدّاد الكبير 1,600,000+ فوق الشعار",
    "when": "نمو بالأرقام: مبيعات/أرباح/عدد",
-   "params": {"ramp": "escalating", "digits_pad": true, "bg": "object"},
-   "anti": ["بلا أرقام مبهمة — كل رقم بيعني شي"],
-   "engine": {"status": "ready", "unit": "T05", "qc": ["الأرقام مطابقة للسكربت"]},
-   "links": ["T05"]},
-  {"id": "big_product_crosses", "name_ar": "الغرض العملاق بيعبر الكادر", "cat": "motion",
-   "intents": ["scale", "product", "impact"],
-   "source": [{"ref": "vaping", "at": "10:52"}, {"ref": "vaping", "at": "2:55"}, {"ref": "vaping", "at": "7:39"}],
-   "how": "سيجارة/جهاز بحجم عملاق بيمرق قدام الكاميرا أو بيكبر ليملأ الإطار", "when": "تثبيت حضور المنتج/السلاح اللي بتحكي عنه",
-   "params": {"pass_s": [0.8, 1.6], "motion": "foreground_pass"},
-   "anti": ["بلا تكرار كل دقيقة"],
-   "engine": {"status": "concept", "unit": null, "qc": ["الحركة سلسة 30fps", "بلا تعارض مع النص"]}},
-  {"id": "character_card_hold", "name_ar": "بطاقة الشخصية بثبات", "cat": "character",
-   "intents": ["character", "identity", "introduce"],
-   "source": [{"ref": "vaping", "at": "9:04-9:10.5"}],
-   "how": "اسم كبير أبيض («RICHARD MUMBY») فوق بورتريه غامق، ثبات 6+ ثواني", "when": "أول ظهور لشخصية مهمة",
-   "params": {"hold_s": [5.0, 8.0], "name_case": "upper", "bg": "portrait_dark"},
-   "anti": ["بلا حركة كتير — الاسم بيستاهل صبر"],
-   "engine": {"status": "concept", "unit": null, "qc": ["الثبات ≥5 ث", "النص مقروء"]}},
-  {"id": "visual_equation", "name_ar": "المعادلة البصرية", "cat": "emphasis",
-   "intents": ["metaphor", "equation", "contrast", "explain"],
-   "source": [{"ref": "vaping", "at": "14:01"}, {"ref": "vaping", "at": "14:02"}],
+   "params": {
+    "ramp": "escalating",
+    "digits_pad": true,
+    "bg": "object"
+   },
+   "anti": [
+    "بلا أرقام مبهمة — كل رقم بيعني شي"
+   ],
+   "engine": {
+    "status": "ready",
+    "unit": "T05",
+    "qc": [
+     "الأرقام مطابقة للسكربت"
+    ]
+   },
+   "links": [
+    "T05"
+   ],
+   "why": "الرقم ملزوق عالغرض (مو بزاوية الشاشة) فالمعنى مقفول: 'هالقطعة = هالرقم'. والعدّاد الصاعد بيعمل توتر رياضي — المشاهد مستني الرقم يوصل لآخره."
+  },
+  {
+   "id": "big_product_crosses",
+   "name_ar": "الغرض العملاق بيعبر الكادر",
+   "cat": "motion",
+   "intents": [
+    "scale",
+    "product",
+    "impact"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "10:52"
+    },
+    {
+     "ref": "vaping",
+     "at": "2:55"
+    },
+    {
+     "ref": "vaping",
+     "at": "7:39"
+    }
+   ],
+   "how": "سيجارة/جهاز بحجم عملاق بيمرق قدام الكاميرا أو بيكبر ليملأ الإطار",
+   "when": "تثبيت حضور المنتج/السلاح اللي بتحكي عنه",
+   "params": {
+    "pass_s": [
+     0.8,
+     1.6
+    ],
+    "motion": "foreground_pass"
+   },
+   "anti": [
+    "بلا تكرار كل دقيقة"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "الحركة سلسة 30fps",
+     "بلا تعارض مع النص"
+    ]
+   },
+   "why": "الغرض العملاق بيعبر الكادر من قريب جدًا: الحجم بينحس لأنو بيغطي الشاشة، والمرور السريع بيثبّت الغرض بالذاكرة أقوى من لقطة ثابتة لأن العين ما بتلحق تملّ."
+  },
+  {
+   "id": "character_card_hold",
+   "name_ar": "بطاقة الشخصية بثبات",
+   "cat": "character",
+   "intents": [
+    "character",
+    "identity",
+    "introduce"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "9:04-9:10.5"
+    }
+   ],
+   "how": "اسم كبير أبيض («RICHARD MUMBY») فوق بورتريه غامق، ثبات 6+ ثواني",
+   "when": "أول ظهور لشخصية مهمة",
+   "params": {
+    "hold_s": [
+     5.0,
+     8.0
+    ],
+    "name_case": "upper",
+    "bg": "portrait_dark"
+   },
+   "anti": [
+    "بلا حركة كتير — الاسم بيستاهل صبر"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "الثبات ≥5 ث",
+     "النص مقروء"
+    ]
+   },
+   "why": "البطاقة الثابتة بتعطي الشخص وزن: البطاقة المتحركة بتبان زقاق عابر، والثبات بيقول للعين 'رتّبي هالوجه بالذاكرة'. نفس شكل البطاقة بكل مرة = لغة تعريف ثابتة للفيلم."
+  },
+  {
+   "id": "visual_equation",
+   "name_ar": "المعادلة البصرية",
+   "cat": "emphasis",
+   "intents": [
+    "metaphor",
+    "equation",
+    "contrast",
+    "explain"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "14:01"
+    },
+    {
+     "ref": "vaping",
+     "at": "14:02"
+    }
+   ],
    "how": "«ناس = عبّوة JUUL»: رموز + علامة يساوي — المعنى بيتفهم بلا كلمة",
    "when": "فكرة معقدة بدك تقربها بصريًا",
-   "params": {"layout": "A = B", "symbols": true},
-   "anti": ["أيقونتين بكل صف كحد أقصى"],
-   "engine": {"status": "concept", "unit": null, "qc": ["مفهومة بلا تعليق"]}},
-  {"id": "tinted_archive", "name_ar": "الأرشيف الملوّن بستايل الفيلم", "cat": "archive",
-   "intents": ["archive", "past", "texture"],
-   "source": [{"ref": "vaping", "at": "2:49-2:56"}, {"ref": "vaping", "at": "7:44-7:45.5"}],
+   "params": {
+    "layout": "A = B",
+    "symbols": true
+   },
+   "anti": [
+    "أيقونتين بكل صف كحد أقصى"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "مفهومة بلا تعليق"
+    ]
+   },
+   "why": "المعادلة البصرية (أ + ب = ج) بتحوّل فكرة معقدة لقانون بصري؛ العين بتحل الصورة متل مسألة وبتحس إنها فهمت — والفهم الذاتي بيخلي المعلومة تصمد بالذاكرة."
+  },
+  {
+   "id": "tinted_archive",
+   "name_ar": "الأرشيف الملوّن بستايل الفيلم",
+   "cat": "archive",
+   "intents": [
+    "archive",
+    "past",
+    "texture"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "2:49-2:56"
+    },
+    {
+     "ref": "vaping",
+     "at": "7:44-7:45.5"
+    }
+   ],
    "how": "أرشيف أبيض-أسود بيتنغّم بلون مشهد الفيلم (تركواز للماضي، أحمر للخطر) — مو رمادي جاف",
    "when": "مشاهد تاريخية/أرشيفية",
-   "params": {"tint": "teal|red", "motion": "slow_push"},
-   "anti": ["بلا اهتزاز مبالغ — الأرشيف مسند لا بطل"],
-   "engine": {"status": "ready", "unit": "T12", "qc": ["التينت مطابق للوحة الفيلم"]},
-   "links": ["T12"]},
-  {"id": "document_proof_zoom", "name_ar": "إثبات الوثيقة بالزووم", "cat": "proof",
-   "intents": ["proof", "document", "credibility"],
-   "source": [{"ref": "vaping", "at": "25:09"}, {"ref": "vaping", "at": "11:24"}],
+   "params": {
+    "tint": "teal|red",
+    "motion": "slow_push"
+   },
+   "anti": [
+    "بلا اهتزاز مبالغ — الأرشيف مسند لا بطل"
+   ],
+   "engine": {
+    "status": "ready",
+    "unit": "T12",
+    "qc": [
+     "التينت مطابق للوحة الفيلم"
+    ]
+   },
+   "links": [
+    "T12"
+   ],
+   "why": "الأرشيف أبيض/أسود بيقرا 'ماضي بعيد'. لما تلوّنو بلون الفيلم (تيل، أحمر) بيصير من نفس العالم تبع الفيديو بدل ما يبان ملحق — اللون هو يلي بيعمل نفس بين الحاضر والماضي."
+  },
+  {
+   "id": "document_proof_zoom",
+   "name_ar": "إثبات الوثيقة بالزووم",
+   "cat": "proof",
+   "intents": [
+    "proof",
+    "document",
+    "credibility"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "25:09"
+    },
+    {
+     "ref": "vaping",
+     "at": "11:24"
+    }
+   ],
    "how": "سكرين شوت مقال/قائمة → زوم داخلها عالنقطة المهمة (Business Insider، قائمة مرقّمة)",
    "when": "بعد ادعاء قوي — إثبات فوري",
-   "params": {"zoom_pct": [8, 18], "dur_s": [1.5, 3.0]},
-   "anti": ["ما تزوّم ع برّا النص المقروء"],
-   "engine": {"status": "ready", "unit": "T08", "qc": ["النقطة المقصودة واضحة"]},
-   "links": ["T08"]},
-  {"id": "red_danger_icon", "name_ar": "أيقونة المنع الحمرا", "cat": "color",
-   "intents": ["danger", "icon", "emphasis", "threat"],
-   "source": [{"ref": "vaping", "at": "5:18-5:23"}, {"ref": "vaping", "at": "24:29.5"}],
+   "params": {
+    "zoom_pct": [
+     8,
+     18
+    ],
+    "dur_s": [
+     1.5,
+     3.0
+    ]
+   },
+   "anti": [
+    "ما تزوّم ع برّا النص المقروء"
+   ],
+   "engine": {
+    "status": "ready",
+    "unit": "T08",
+    "qc": [
+     "النقطة المقصودة واضحة"
+    ]
+   },
+   "links": [
+    "T08"
+   ],
+   "why": "الزووم عالوثيقة بيقلّد حركة التحقيق: كأننا عم نقرا معه سطر-سطر. والثقة بتيجي من التفاصيل (ختم، توقيع، رقم) — لهيك لازم الزووم يوصل لدرجة ينقروا، وما يوقف عند 'صورة وثيقة' عامة."
+  },
+  {
+   "id": "red_danger_icon",
+   "name_ar": "أيقونة المنع الحمرا",
+   "cat": "color",
+   "intents": [
+    "danger",
+    "icon",
+    "emphasis",
+    "threat"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "5:18-5:23"
+    },
+    {
+     "ref": "vaping",
+     "at": "24:29.5"
+    }
+   ],
    "how": "❌ / علامة منع حمرا كبرى فوق الغرض أو الوجه — نفس الأيقونة بكل الفيديو",
    "when": "لحطة «مرفوض/خطر/منع»",
-   "params": {"color": "#e02020", "scale": "large", "pos": "over_subject"},
-   "anti": ["ما تستعملها لحطتين مختلفتين بنفس المعنى"],
-   "engine": {"status": "concept", "unit": null, "qc": ["التباين كافٍ"]}},
-  {"id": "ending_formula", "name_ar": "صيغة الخاتمة", "cat": "ending",
-   "intents": ["ending", "close", "fade"],
-   "source": [{"ref": "vaping", "at": "24:30-27:27"}],
+   "params": {
+    "color": "#e02020",
+    "scale": "large",
+    "pos": "over_subject"
+   },
+   "anti": [
+    "ما تستعملها لحطتين مختلفتين بنفس المعنى"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "التباين كافٍ"
+    ]
+   },
+   "why": "الأحمر إشارة خطر متعلّمة قبل الفيديو. أيقونة حمرا (ممنوع/موت/تهديد) بتنقرا بأجزاء الثانية بلا شرح — السرعة هي القيمة، لأن الشرح بيدفع تأخير."
+  },
+  {
+   "id": "ending_formula",
+   "name_ar": "صيغة الخاتمة",
+   "cat": "ending",
+   "intents": [
+    "ending",
+    "close",
+    "fade"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "24:30-27:27"
+    }
+   ],
    "how": "تلخيص أحمر → استعارة حرفية → سؤال أحمر ع الشاشة → فلاش أحمر → THANK YOU → أسود",
    "when": "آخر 60-90 ث من أي فيديو",
-   "params": {"steps": 6},
-   "anti": ["ما تطول — كل خطوة 3-8 ث"],
-   "engine": {"status": "concept", "unit": null, "qc": ["النهاية بأسود تام"]}},
-  {"id": "solid_bed_sfx", "name_ar": "المؤثرات تحت الجو", "cat": "sound",
-   "intents": ["sound", "mixing", "polish"],
-   "source": [{"ref": "vaping", "at": "mixing-rule (ملاحظة المالك)"}],
+   "params": {
+    "steps": 6
+   },
+   "anti": [
+    "ما تطول — كل خطوة 3-8 ث"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "النهاية بأسود تام"
+    ]
+   },
+   "why": "نفس ترتيب الخاتمة بكل مرة بيعطي إحساس 'دارت القصة كاملة': خلاصة ملوّنة → استعارة → سؤال بلون الخطر → فلاش → شكرًا → فيد. التكرار عبر الفيديوهات هو يلي بيبني إحساس القناة (توقيع)."
+  },
+  {
+   "id": "solid_bed_sfx",
+   "name_ar": "المؤثرات تحت الجو",
+   "cat": "sound",
+   "intents": [
+    "sound",
+    "mixing",
+    "polish"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "mixing-rule (ملاحظة المالك)"
+    }
+   ],
    "how": "كل whoosh/pop بينمزج **تحت** موسيقى الخلفية (≈−7dB مقابل النسخة القديمة) — بتسمعها وتحسّها، ما بتحكك",
    "when": "بكل انتقال/ضربة نص",
-   "params": {"gain_db": -7, "duck_ms": 80},
-   "anti": ["بلا SFX طالع فوق الموسيقى", "بلا صوت عند كل قطع"],
-   "engine": {"status": "concept", "unit": null, "qc": ["ذروة SFX ≤ ذروة الموسيقى −5dB"]}},
-  {"id": "color_language", "name_ar": "لغة الألوان الثابتة", "cat": "color",
-   "intents": ["palette", "color", "mood"],
-   "source": [{"ref": "vaping", "at": "rulebook"}],
+   "params": {
+    "gain_db": -7,
+    "duck_ms": 80
+   },
+   "anti": [
+    "بلا SFX طالع فوق الموسيقى",
+    "بلا صوت عند كل قطع"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "ذروة SFX ≤ ذروة الموسيقى −5dB"
+    ]
+   },
+   "why": "الموسيقى بتحدد الانفعال والمؤثرات بتحكي 'شو صار'. لما المؤثر ينزل تحت الجو، المشاهد بيسمعه لا واعيًا (إحساس بالحدث) بلا ما يزاحم الموسيقى على الأذن — وهاد يلي مريّح المشاهد."
+  },
+  {
+   "id": "color_language",
+   "name_ar": "لغة الألوان الثابتة",
+   "cat": "color",
+   "intents": [
+    "palette",
+    "color",
+    "mood"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "rulebook"
+    }
+   ],
    "how": "تركواز = طموح · أحمر = خطر · أخضر = فلوس · ذهبي = نجاح · أبيض-أسود = ماضي — نفس الدلالة بكل الفيديو",
    "when": "أي مشهد — اللون بيحمل معنى مو زينة",
-   "params": {"teal": "#1f6f7a", "red": "#c62828", "green": "#2e7d32", "gold": "#c9a227"},
-   "anti": ["ما تخلط دلالتين لنفس اللون بمشروع واحد"],
-   "engine": {"status": "concept", "unit": null, "qc": ["اللوحة مطابقة للملف الشخصي للفيلم"]}},
-  {"id": "text_short_brackets", "name_ar": "نص قصير بأقواس حمرا", "cat": "typography",
-   "intents": ["text", "emphasis", "label"],
-   "source": [{"ref": "vaping", "at": "rulebook + frames"}],
+   "params": {
+    "teal": "#1f6f7a",
+    "red": "#c62828",
+    "green": "#2e7d32",
+    "gold": "#c9a227"
+   },
+   "anti": [
+    "ما تخلط دلالتين لنفس اللون بمشروع واحد"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "اللوحة مطابقة للملف الشخصي للفيلم"
+    ]
+   },
+   "why": "لما نفس اللون يعود دائمًا بنفس المعنى (تيل=طمع، أحمر=خطر، ذهبي=نجاح)، بيتشكل قاموس عند المشاهد بلا شرح؛ وكل إعادة استعمال بتزيد سرعة القراءة وقوتها."
+  },
+  {
+   "id": "text_short_brackets",
+   "name_ar": "نص قصير بأقواس حمرا",
+   "cat": "typography",
+   "intents": [
+    "text",
+    "emphasis",
+    "label"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "rulebook + frames"
+    }
+   ],
    "how": "≤4-6 كلمات، الكلمة المفتاحية بين قوسين أحمر [هيك]، بلا زووم عدواني (≤10%)",
    "when": "أي معلومة عالشاشة",
-   "params": {"max_words": 6, "zoom_max_pct": 10},
-   "anti": ["1.55→1.85 zoom مرفوض (تعارض مع المالك)", "بلا جمل كاملة"],
-   "engine": {"status": "concept", "unit": null, "qc": ["الزووم ≤10%", "عدد الكلمات ≤6"]}},
-  {"id": "pace_drought_burst", "name_ar": "هدوء ثم انفجار إيقاعي", "cat": "rhythm",
-   "intents": ["pacing", "acceleration", "burst"],
-   "source": [{"ref": "vaping", "at": "no hard cuts 0:34-4:06 → then fast (rulebook/metrics)"}],
+   "params": {
+    "max_words": 6,
+    "zoom_max_pct": 10
+   },
+   "anti": [
+    "1.55→1.85 zoom مرفوض (تعارض مع المالك)",
+    "بلا جمل كاملة"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "الزووم ≤10%",
+     "عدد الكلمات ≤6"
+    ]
+   },
+   "why": "ذاكرة القراءة قصيرة: ٢–٤ كلمات بغرفة حمرا بتنقرا بجزء ثانية. كل كلمة زيادة بتقتل اللقطة — المشاهد بيقرا بدل ما يحس، ولما يقرا ما بيشوف الحركة."
+  },
+  {
+   "id": "pace_drought_burst",
+   "name_ar": "هدوء ثم انفجار إيقاعي",
+   "cat": "rhythm",
+   "intents": [
+    "pacing",
+    "acceleration",
+    "burst"
+   ],
+   "source": [
+    {
+     "ref": "vaping",
+     "at": "no hard cuts 0:34-4:06 → then fast (rulebook/metrics)"
+    }
+   ],
    "how": "مقطع طويل بلا قطع حادة (دفشات هادية بس) → وبعدها انفجار لقطات سريعة",
    "when": "قبل لحظة الذروة — التباين هوي البطل",
-   "params": {"drought_s": [60, 200], "burst_shot_s": [0.6, 1.2]},
-   "anti": ["البطء بدون دفشة داخلية = سلايدشو (ممنوع)"],
-   "engine": {"status": "concept", "unit": null, "qc": ["كل لقطة بالسكون فيها دفشة داخلية"]}},
-
-  {"id": "white_space_pause", "name_ar": "الفراغ الأبيض كفاصل", "cat": "structure",
-   "intents": ["pause", "breath", "reset", "chapter"],
-   "source": [{"ref": "ww2p1", "at": "1:11-1:15"}],
+   "params": {
+    "drought_s": [
+     60,
+     200
+    ],
+    "burst_shot_s": [
+     0.6,
+     1.2
+    ]
+   },
+   "anti": [
+    "البطء بدون دفشة داخلية = سلايدشو (ممنوع)"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "كل لقطة بالسكون فيها دفشة داخلية"
+    ]
+   },
+   "why": "الإيقاع ما بينحس بالسرعة، بينحس بالتبدل: هدوء طويل (لقطات طويلة) عم بستنزف صبر المشاهد، والانفجار بعدو بيرجعه. الانفجار بلا هدوء قبله بيبان ضجيج بلا معنى، والهدوء بلا انفجار بيبان ملل."
+  },
+  {
+   "id": "white_space_pause",
+   "name_ar": "الفراغ الأبيض كفاصل",
+   "cat": "structure",
+   "intents": [
+    "pause",
+    "breath",
+    "reset",
+    "chapter"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "1:11-1:15"
+    }
+   ],
    "how": "فراغ أبيض تام 3-4 ث بنص الأنيميشن — نفس وظيفة الأسود عند غيرهم",
    "when": "قبل/بعد كتلة كبيرة، أو للفت النظر للنص الجاي",
-   "params": {"dur_s": [2.5, 4.0], "color": "white"},
-   "anti": ["بلا شي ماشي بالخلفية — الفراغ هو الضربة"],
-   "engine": {"status": "concept", "unit": null, "qc": ["فراغ نظيف 100%"]}},
-  {"id": "accumulate_sentence_static", "name_ar": "الجملة تتراكم على لقطة ثابتة", "cat": "typography",
-   "intents": ["quote", "speech", "text", "escalation"],
-   "source": [{"ref": "ww2p1", "at": "2:10-2:27"}],
+   "params": {
+    "dur_s": [
+     2.5,
+     4.0
+    ],
+    "color": "white"
+   },
+   "anti": [
+    "بلا شي ماشي بالخلفية — الفراغ هو الضربة"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "فراغ نظيف 100%"
+    ]
+   },
+   "why": "الفراغ (أبيض/أسود بلا صوت) معناه 'خلصنا فصل'. الفراغ بيريّح العين فبتقبل يلي بعده بلا مقاومة — بدونه المشاهد ما بيعرف وين وصل وبتلخبط الانتقالات."
+  },
+  {
+   "id": "accumulate_sentence_static",
+   "name_ar": "الجملة تتراكم على لقطة ثابتة",
+   "cat": "typography",
+   "intents": [
+    "quote",
+    "speech",
+    "text",
+    "escalation"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "2:10-2:27"
+    }
+   ],
    "how": "الخطاب كامل بينبنى **كلمة/كلمتين** بمكانه على نفس الكادر الثابت، وبتتبدّل بسرعة الكلام",
    "when": "خطاب/اقتباس طويل — بدل ما تنسخه كامل",
-   "params": {"chunk": [1, 3], "same_shot": true},
-   "anti": ["بلا لقطة جديدة مع كل كلمة — الثبات هوي السر"],
-   "engine": {"status": "concept", "unit": null, "qc": ["النص الكامل ضمن حقوق الاستخدام", "قراءة ممكنة"]}},
-  {"id": "tool_cut_archive", "name_ar": "أداة فيزيائية تقصّ الأرشيف", "cat": "transition",
-   "intents": ["scene_change", "archive", "inside_joke", "cover_edit"],
-   "source": [{"ref": "ww2p1", "at": "2:34-2:40"}],
+   "params": {
+    "chunk": [
+     1,
+     3
+    ],
+    "same_shot": true
+   },
+   "anti": [
+    "بلا لقطة جديدة مع كل كلمة — الثبات هوي السر"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "النص الكامل ضمن حقوق الاستخدام",
+     "قراءة ممكنة"
+    ]
+   },
+   "why": "لقطة ثابتة والجملة تتراكم: كل كلمة تنضاف تزيد ضغط الانتظار، والثبات معنى 'ركّز عالكلام'. وأي حركة تجي بعدين بتصير أقوى لأن الجمهور كان مسمّر بالثبات."
+  },
+  {
+   "id": "tool_cut_archive",
+   "name_ar": "أداة فيزيائية تقصّ الأرشيف",
+   "cat": "transition",
+   "intents": [
+    "scene_change",
+    "archive",
+    "inside_joke",
+    "cover_edit"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "2:34-2:40"
+    }
+   ],
    "how": "مقصات/مشرط معدني بتطيخ ع الصور الأرشيفية وبتقصّها → بداية عنوان جديد",
    "when": "للخروج من مشهد كوميدي إلى أرشيف جدّي (أو العكس)",
-   "params": {"tool": "scissors", "speed": "fast"},
-   "anti": ["الأداة لازم تكون من عالم الفيديو نفسه (مثل ما قصّو الورق)"],
-   "engine": {"status": "concept", "unit": null, "qc": ["الحركة مفهومة بلا شرح"]}},
-  {"id": "thought_bubble_dashed", "name_ar": "فقاعة الخيال المنقّطة", "cat": "typography",
-   "intents": ["metaphor", "inner_state", "explain"],
-   "source": [{"ref": "ww2p1", "at": "2:00-2:04"}],
+   "params": {
+    "tool": "scissors",
+    "speed": "fast"
+   },
+   "anti": [
+    "الأداة لازم تكون من عالم الفيديو نفسه (مثل ما قصّو الورق)"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "الحركة مفهومة بلا شرح"
+    ]
+   },
+   "why": "قطع مادة الأرشيف بأداة فيزيائية (مقص، سكين) هو تعليق بصري: بيقول 'هالقاعدة بتنسخ' بلا كلام. وهيك معلومة + نكتة بنفس الجزء الثانية، ومع الوقت بيعمل عنصر توقيع."
+  },
+  {
+   "id": "thought_bubble_dashed",
+   "name_ar": "فقاعة الخيال المنقّطة",
+   "cat": "typography",
+   "intents": [
+    "metaphor",
+    "inner_state",
+    "explain"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "2:00-2:04"
+    }
+   ],
    "how": "فقاعة بخط **متقطّع** = شي بالدماغ/خيال، مقابل الخط المتصل للواقع",
    "when": "لما الشخصية بتتخيّل نتيجة قبل ما تصير",
-   "params": {"outline": "dashed", "fill": "none"},
-   "anti": ["ما تستعمل المنقّط لشي حقيقي"],
-   "engine": {"status": "concept", "unit": null, "qc": ["التمييز واضح"]}},
-  {"id": "one_delta_compare", "name_ar": "قارن بتغيير واحد", "cat": "emphasis",
-   "intents": ["compare", "contrast", "explain"],
-   "source": [{"ref": "ww2p1", "at": "2:47-2:54.5"}],
+   "params": {
+    "outline": "dashed",
+    "fill": "none"
+   },
+   "anti": [
+    "ما تستعمل المنقّط لشي حقيقي"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "التمييز واضح"
+    ]
+   },
+   "why": "الخطوط المنقطة بتقرا 'خيال/داخل الرأس' بمختلف الثقافات بلا ما نكتب 'كان يفكر'. استعمال اصطلاح متعارف عليه بيخفض حمولة الشرح للنصف."
+  },
+  {
+   "id": "one_delta_compare",
+   "name_ar": "قارن بتغيير واحد",
+   "cat": "emphasis",
+   "intents": [
+    "compare",
+    "contrast",
+    "explain"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "2:47-2:54.5"
+    }
+   ],
    "how": "EXPECTATIONS / REALITY — نفس الخريطة بالاتنين، الفرق بس بالأحمر (معلومة وحدة)",
    "when": "لما بدك تقول «الشي ما مشي مثل ما توقّعوا»",
-   "params": {"panels": 2, "single_change": true},
-   "anti": ["بلا تغييرين بورد واحد — بتلخبط"],
-   "engine": {"status": "concept", "unit": null, "qc": ["الفرق واضح بنظرة"]}},
-  {"id": "logo_sting_build", "name_ar": "استينغ الشعار المتجمّع", "cat": "opening",
-   "intents": ["brand", "transition", "title"],
-   "source": [{"ref": "ww2p1", "at": "2:40.5-2:44.5"}],
+   "params": {
+    "panels": 2,
+    "single_change": true
+   },
+   "anti": [
+    "بلا تغييرين بورد واحد — بتلخبط"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "الفرق واضح بنظرة"
+    ]
+   },
+   "why": "المقارنة بتشتغل لما يتبدل شي واحد بس (توقعات مقابل واقع). العين بتحس الفرق فورًا، وكل تغيير إضافي بيخلق فوضى — لهيك 'تغيير واحد' هو الوصفة، والتنين يلي بيتشابه بلقطتين هو الجسر."
+  },
+  {
+   "id": "logo_sting_build",
+   "name_ar": "استينغ الشعار المتجمّع",
+   "cat": "opening",
+   "intents": [
+    "brand",
+    "transition",
+    "title"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "2:40.5-2:44.5"
+    }
+   ],
    "how": "حروف الشعار بتتجمع تدريجيًا (overSimplified ← W ← WW ← WW2) بـ4 ثواني",
    "when": "بين المقدمة والمحتوى، أو لتوقيع القناة",
-   "params": {"dur_s": [3.5, 4.5], "build": "letters"},
-   "anti": ["بلا موسيقى قوية تحتها — الاستينغ بتحكي لحالها"],
-   "engine": {"status": "concept", "unit": null, "qc": ["البناء مقروء حرف حرف"]}},
-  {"id": "disposable_crowd", "name_ar": "الحشد بلا تفاصيل", "cat": "character",
-   "intents": ["crowd", "public", "scale"],
-   "source": [{"ref": "ww2p1", "at": "1:47-1:50"}],
+   "params": {
+    "dur_s": [
+     3.5,
+     4.5
+    ],
+    "build": "letters"
+   },
+   "anti": [
+    "بلا موسيقى قوية تحتها — الاستينغ بتحكي لحالها"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "البناء مقروء حرف حرف"
+    ]
+   },
+   "why": "استينغ قصير: تجميع → ضربة → ثبات. التجميع بيعطي العلامة 'حدث'، فبصير بطاقة الانتقال بين فواصل الفيلم والجمهور بيعرف 'رجعنا' قبل ما يقرا."
+  },
+  {
+   "id": "disposable_crowd",
+   "name_ar": "الحشد بلا تفاصيل",
+   "cat": "character",
+   "intents": [
+    "crowd",
+    "public",
+    "scale"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "1:47-1:50"
+    }
+   ],
    "how": "شخصيات بيضا بلا ملامح بتتحرك ككتل — المجهود كله عالبطل",
    "when": "جمهور/مظاهرة/حشد — بيسند بلا ما يشتّت",
-   "params": {"detail": "none", "count": [8, 30]},
-   "anti": ["بلا تفاصيل بالحشد — بتسرق التركيز"],
-   "engine": {"status": "concept", "unit": null, "qc": ["ما في تفاصيل منافسة"]}},
-  {"id": "costume_change_state", "name_ar": "تغيير اللبس = تغيير الحالة", "cat": "character",
-   "intents": ["character", "transformation", "state"],
-   "source": [{"ref": "ww2p1", "at": "0:29.5"}],
+   "params": {
+    "detail": "none",
+    "count": [
+     8,
+     30
+    ]
+   },
+   "anti": [
+    "بلا تفاصيل بالحشد — بتسرق التركيز"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "ما في تفاصيل منافسة"
+    ]
+   },
+   "why": "الحشد بلا تفاصيل بيمثّل 'العام/الناس' وطبيعي نمرم عليه؛ والتفاصيل بتنتقل للشخصيات. الفرق بين مصير الحشد ومصير الشخص بيصير واضح لما الحشد بلا وجوه."
+  },
+  {
+   "id": "costume_change_state",
+   "name_ar": "تغيير اللبس = تغيير الحالة",
+   "cat": "character",
+   "intents": [
+    "character",
+    "transformation",
+    "state"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "0:29.5"
+    }
+   ],
    "how": "الدبّ بيوقف عن الشغل ويلبس ربطة عنق حمرا = «صار جدّي» — بلا حوار",
    "when": "لحظة تحوّل بالشخصية",
-   "params": {"prop": "one_item", "beat_s": [0.5, 1.0]},
-   "anti": ["بلا تغيير كامل للزي — غرض واحد بيكفي"],
-   "engine": {"status": "concept", "unit": null, "qc": ["التغيير ملحوظ بلا شرح"]}},
-  {"id": "date_card_number", "name_ar": "بطاقة التاريخ برقم", "cat": "structure",
-   "intents": ["date", "context", "chapter"],
-   "source": [{"ref": "ww2p1", "at": "1:15.5"}],
+   "params": {
+    "prop": "one_item",
+    "beat_s": [
+     0.5,
+     1.0
+    ]
+   },
+   "anti": [
+    "بلا تغيير كامل للزي — غرض واحد بيكفي"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "التغيير ملحوظ بلا شرح"
+    ]
+   },
+   "why": "اللبس مرجع بصري لحالة الشخص: نفس الرجل بكزم قميص = فقر، بالبدلة = سلطة. تغيير بصري واحد بيعبّر عن تحوّل اجتماعي كامل بأجزاء الثانية."
+  },
+  {
+   "id": "date_card_number",
+   "name_ar": "بطاقة التاريخ برقم",
+   "cat": "structure",
+   "intents": [
+    "date",
+    "context",
+    "chapter"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "1:15.5"
+    }
+   ],
    "how": "«IT'S 1902» رقم كبير أبيض ع أسود، دخول واقف ~1 ث ثم بيدخل المشهد",
    "when": "أي بداية فصل زمني",
-   "params": {"hold_s": [0.8, 1.5], "bg": "black", "size": "huge"},
-   "anti": ["بما إنّها بداية فيديو: استعملها مرة وحدة بكل فصل"],
-   "engine": {"status": "concept", "unit": null, "qc": ["النص مقروء من 4-5 م"]}},
-  {"id": "map_inline_label", "name_ar": "التسمية جوّا الخريطة", "cat": "map",
-   "intents": ["map", "label", "context"],
-   "source": [{"ref": "ww2p1", "at": "1:17.5"}],
+   "params": {
+    "hold_s": [
+     0.8,
+     1.5
+    ],
+    "bg": "black",
+    "size": "huge"
+   },
+   "anti": [
+    "بما إنّها بداية فيديو: استعملها مرة وحدة بكل فصل"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "النص مقروء من 4-5 م"
+    ]
+   },
+   "why": "بطاقة التاريخ (كلمة + رقم) بتعمل 'مسمار بالزمن': العين بتحفظ الرقم لما يكون هو العنصر الوحيد بالكادر. والتواريخ بتصير مفصل يربط الفصول، فيصير الفيلم متسلسل زمنيًا بلا شرح."
+  },
+  {
+   "id": "map_inline_label",
+   "name_ar": "التسمية جوّا الخريطة",
+   "cat": "map",
+   "intents": [
+    "map",
+    "label",
+    "context"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "1:17.5"
+    }
+   ],
    "how": "«Benito Mussolini» بيتكتب مباشرة عالخريطة فوق المنطقة — مو كارت منفصل",
    "when": "تعريف مكان/شخص + علاقته بالمكان بلقطة وحدة",
-   "params": {"anchor": "on_region", "fade_in_s": [0.3, 0.8]},
-   "anti": ["لازم تضل عالبَرّ وضمن المنطقة (زي قانون النقاط)"],
-   "engine": {"status": "ready", "unit": "T09", "qc": ["on_land() + انتماء للمنطقة"]},
-   "links": ["T09"]},
-  {"id": "gag_beat_pause", "name_ar": "وقفة النكتة", "cat": "comedy",
-   "intents": ["comedy", "beat", "breather"],
-   "source": [{"ref": "ww2p1", "at": "0:08-0:10"}],
+   "params": {
+    "anchor": "on_region",
+    "fade_in_s": [
+     0.3,
+     0.8
+    ]
+   },
+   "anti": [
+    "لازم تضل عالبَرّ وضمن المنطقة (زي قانون النقاط)"
+   ],
+   "engine": {
+    "status": "ready",
+    "unit": "T09",
+    "qc": [
+     "on_land() + انتماء للمنطقة"
+    ]
+   },
+   "links": [
+    "T09"
+   ],
+   "why": "التسمية جوّا الخريطة بتمنع اللخبطة: العين بتقرا النص مع المكان بنفس الحركة، عكس ليجند خارجي بيفرض قفزة نظر خارج المكان — وهاد بيعمل خمول بالانتباه."
+  },
+  {
+   "id": "gag_beat_pause",
+   "name_ar": "وقفة النكتة",
+   "cat": "comedy",
+   "intents": [
+    "comedy",
+    "beat",
+    "breather"
+   ],
+   "source": [
+    {
+     "ref": "ww2p1",
+     "at": "0:08-0:10"
+    }
+   ],
    "how": "قبل المزحة ثانية تفكير ساكنة — الوقفة هي يلي بتخلي النكتة تنزل",
    "when": "كل ما في نكتة/لحظة خفيفة",
-   "params": {"beat_s": [0.6, 1.2]},
-   "anti": ["بلا وقف طويل — بتصير ثقيلة"],
-   "engine": {"status": "concept", "unit": null, "qc": ["الإيقاع محسوس"]}}
+   "params": {
+    "beat_s": [
+     0.6,
+     1.2
+    ]
+   },
+   "anti": [
+    "بلا وقف طويل — بتصير ثقيلة"
+   ],
+   "engine": {
+    "status": "concept",
+    "unit": null,
+    "qc": [
+     "الإيقاع محسوس"
+    ]
+   },
+   "why": "الوقفة الصغيرة بعد النكتة هي يلي بتخلي الضحك يصير: الفراغ بيعطي مجال معالجة، وبدونها النكتة بتضيع بسرعة الإيقاع. جرعة مقننة (مرة كل فيلم) بتكسر الرهبة بلا ما تكسر الجدية."
+  }
  ]
 }

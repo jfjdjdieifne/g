@@ -114,6 +114,141 @@ SFX_BY_INTENT = {"numbers": ["landing_thud"], "proof": ["paper_breath"], "charac
                  "hook": ["riser_tension"], "product": ["swoosh_air"], "date": ["type_key_single"],
                  "crowd": ["felt_hit_soft"], "compare": ["felt_hit_soft"]}
 
+# ================================================== طبقة الفهم (ليش — مو حفظ)
+# مرجع كل سبب: قوانين MONTAGE_THEORY.md (L1..L10). ما في قرار بلا سبب مكتوب.
+
+UNDERSTANDING_KEYS = ["meaning", "role", "why_visual", "why_motion", "why_sound", "link_reason"]
+
+# شو بتعطي الجملة (معلومة) و شو المفروض يحس المشاهد
+READ_BY_INTENT = {
+    "hook":      ("بتفتح الملف وتشد الانتباه — إعلان إنه في شي مهم جاي", "توجّه وانتظار"),
+    "date":      ("بتثبّت الزمن — متى صار كل شي", "ترتيب بالرأس"),
+    "map":       ("بتنقل المشاهد لمكان — العنوان الجغرافي للقصة", "توجّه وفضول"),
+    "character": ("بتعرّف شخص — مين رح تتابع رحلته", "ألفة ومسؤولية"),
+    "numbers":   ("بتعطي حجم/رقم — قياس لما صار", "صدمة محسوبة"),
+    "product":   ("بتورّي الشي الأساسي بالقصة (المادة/الشحنة)", "خطورة مغرية"),
+    "danger":    ("بتقول إنه في شي مهدّد/ممنوع/قاتل", "خوف مباشر"),
+    "proof":     ("بتحضر دليل موثّق — على شو مبني الحكي", "ثقة واقتناع"),
+    "quote":     ("بتحكي كلام حد — بصوتو (أو بالكتابة)", "قرب من الشخص"),
+    "compare":   ("بتقارن حالتين — قبل/بعد، توقع/واقع", "مفارقة"),
+    "emphasis":  ("بتشد على فكرة وتقف عليها", "اتنبه — هاد المهم"),
+    "transition":("بتنقل المشاهد لمكان/زمان جديد", "استعداد للتغيير"),
+    "archive":   ("بترجع بالزمن — مادة قديمة/أرشيف", "حنين أو رهبة تاريخية"),
+    "crowd":     ("بتحكي عن الناس/العام", "وزن اجتماعي"),
+    "comedy":    ("بترخي التوتر بنكتة أو مفارقة", "ارتخاء"),
+    "closer":    ("بتقفل الفكرة (خاتمة/حكم)", "إحساس النهاية"),
+    "chapter":   ("بتفتح فصل جديد — قسم بالحكاية", "استعداد إعادة تركيز"),
+    "text":      ("بتوضّح كلمة/مصطلح/عنوان", "فهم فوري"),
+    "color":     ("بتبدّل المزاج البصري", "تغيّر إحساس"),
+}
+
+# ليش هالحركة (منطق الحركة نفسها)
+MOTION_WHY = {
+    "push_in_reveal":   "الدفع من واسع لقريب بيخلي المشاهد يحس إنه هو اللي عم يكتشف — فيخلق رغبة «شوف أكتر» بلا كلام",
+    "pull_back_context":"السحب لبرّا بيفتح الكادر على الصورة الكاملة، فبيقرا كحكم/قفلة — هاد مو حركة عادية، الحركة هي الإقفال",
+    "map_descent":      "الهبوط من الكلي للجزئي (عالم → بلد → مدينة) بيتم ترتيب الجغرافيا بنفس ترتيب السؤال الطبيعي: وين؟ وين بالضبط؟",
+    "counter_countup":  "العدّاد الصاعد بيسرّع مع الرقم فبيتحنّ الرقم لتجربة (إحساس نموّ/مرور وقت) — العين مستنية لحظة الاستقرار",
+    "zoom_snap":        "الزوم المفاجئ حركة حاسمة بتخلي الدرس تنبّه — تناسب التحذير القصير، وبتاكل التفاصيل، فما تنفع لقطة غنية",
+    "photo_fit_reveal": "الكشف بهدوء (تصغير + تثبيت) بيعمل الصورة «بطاقة» — يعني الشي الحقيقي يبان بينحترم، مو معروض عرض عادي",
+    "signature_trace":  "خط القلم على الاسم هو توقيع الشخص بمعناها الحرفي: بتصير العين معه بيده على الورقة، فيصير التعريف ذكرى",
+    "callout_trace":    "التتبّع بقلم/إطار بمشي على الوثيقة بنفس ترتيب قراءتنا، فبيصير عنا دور «محقق حي» بدل صورة جامدة",
+    "word_reveal_sync": "ظهور الكلمات مع الإلقاء بيخلي سرعة القراءة = سرعة السماع، فالكلام يدخل الدماغ كأنه مسموع — وهاد يمنع «صفحة نصية»",
+    "match_cut_shape":  "الشكل نفسه هو الجسر: العين بتكمل تتبع الشكل ما بين لقطتين، فما تحس إنه في قطع — المعنى بينتقل سلس",
+    "staggered_build":  "الدخول بالتسلسل (عنصر بعد عنصر) بيبني الانتباه بالتدريج — بدل ما تعطي الشاشة كاملة مرة وحدة وتغرق",
+    "whip_pan_bridge":  "الحركة السريعة عم بتتخطى المسافة، والعين بتقبلها كإشارة انتقال — أسرع طريقة للقطع مع بقاء الإحساس «سلسة»",
+    "parallax_depth":   "الطبقات بمشي بسرعات مختلفة فبتخلق إحساس عمق 3D — بتحوّل أرشيف مسطّح لمساحة حيّة",
+    "locked_off_tension":"الكادر الثابت بيقول «وقف فكر» — بترفع قيمة الكلام، وبأي حركة بعدها بتصير فرق واضح",
+    "anticipation_release":"التمهيد ثم الإطلاق بيحكم التوتر: الجزء الأول بيبني التوقع والجزء الثاني بيفرجو — اليبتسم بدون مقدمة ما بحرّك حدا",
+    "light_sweep_reveal":"الضو يالي بيمرق بيكشف العناصر بالتسلسل — تبديل حالة/مزاج بنفس المكان بلا ما نحس إننا غيّرنا مشهد",
+    "mask_wipe":        "الستارة/المسك بتنقل المساحة قبل ما ينتبه المشاهد — بديل ناعم للقطع لما ما بدنا نحس بلحظة الخروج",
+}
+
+# ليش هالانتقال (بين العناصر جوّا اللقطة، أو قطع)
+TRANSITION_WHY = {
+    "match_cut_shape": "شكل من اللقطة الأولى = شكل بالثانية، فالعين بتكمل تتبعو وما بتحس بمفصل (L4)",
+    "zoom_through":    "منفوت بعنصر (صفحة/ثقب) ومنطلع بمكان جديد — بيغيّر المقاس والمستوى بنفس الحركة (L4)",
+    "morph_match":     "نفس المادة بتتحوّل (ورقة → خريطة/وجه → منشور): المعنى تغيّر والمادة وحدة، فبيحسها المشاهد تطور مو تبديل (L4)",
+    "occlusion_reveal":"عنصر بيغطي الكادر وبنبدّل ورّا التغطية — أسرع تغيير مساحة بلا قطع مرئي (L4)",
+    "parallax_depth":  "طبقات بتتحرك بسرعات مختلفة = إحساس عمق، فالعين بتصدّق إنه في مساحة 3D أصلًا (L4)",
+    "whip_pan_bridge": "حركة سريعة بتعمل تصوير ضبابي؛ العين بتقبله كإشارة قطع مع إحساس سلس (L4/L5)",
+    "light_sweep_reveal":"الضو بيكشف المساحة من جديد — بنفس المكان، حالة جديدة (L4)",
+    "smoke_wipe":      "الدخان بيغطي ١٠٠% فبتنحذف اللحظة، والمشاهد الجديد بيبدأ نظيف — كمان بينفّذ تبديل مزاج/لون بدل القطع المباشر (L4)",
+    "tool_cut_archive":"أداة فيزيائية بتقطع المادة بعين المشاهد: تعليق بصري + نكتة + توقيع قناة (L6)",
+    "black_beat_inscene":"الأسود جوّا المشهد = نهاية جملة ونَفَس — بيفصل فكرتين بلا تغيير مكان (L5/L2)",
+    "white_space_pause":"الفراغ (بلا صوت) بيعطي راحة للعين فبتقبل المشهد الجاي — الراحة جزء من الإيقاع مو ضياع وقت (L5/L3)",
+    "chapter_black_silence":"أسود ٢–٢.٥ ث + صمت = فراغ قبل الكارت، وبلا هالفراغ الكارت بيبان حشو (L3/L5)",
+}
+
+# ليش هالمزاج (الانفعال يلي بدنا ياه هلق)
+MOOD_WHY = {
+    "cold_open":   "جو بارد بلا إيقاع واضح = ما في انفعال محدد بعد، فكل المزاجات الجاية بتبان تصعيد",
+    "dread":       "خوف ثابت بينزل بشوي بشوي — الطبقة الافتراضية للمواضيع الخطرة (الخطر بيقعد بالخلفية)",
+    "tension_rise":"التوتر بيصعد بدرجة معقولة — بتحضّر الانفجار بلا ما تحرقه",
+    "peak_impact": "هون الانفجار: الشدة عالية والأوركسترا عاليا — لحظة ما بينفع تخافلها أرضية أهدى",
+    "grief":       "الحزن بيوقف الجو: المشاهد بيرتاح يحسّ إنسانيًا — قيمة القصة البشرية",
+    "resolve":     "الاستقرار بيقلب الدور: صرنا نحن نفهم أكتر من الشخص — إحساس الحسم",
+    "scale_awe":   "الرهبة تنبني بالتدرج (وصول بطيء + تفاصيل آلات) — الأرقام بتحسّ حجم",
+    "greed_glow":  "دفء باللون والموسيقى بيلفّ الغلطة بشي مغري — لهيك التحذير بيجي أقوى لما ينكشف",
+    "pulse_drive": "الدفع بالنبض بيرفع السرعة مع الحركة — للمونتاج السريع بلا ما يضيع الانفعال",
+    "aftermath":   "جو ما بعد الحدث: هدوء متعب محلول — بيعطي مكان للحكي والتفكير",
+}
+
+# ليش هالمؤثر (SFX) — دائمًا تحت الجو
+SFX_WHY = {
+    "whoosh_smoke_wipe":"ال swoosh بيوافق المسحة فبيخلي التبديل يتجسّد بالسمع مو بس بالصورة",
+    "swoosh_air":      "الهوا بيرسم المسافة — يحس أننا انتقلنا/قطعنا خط",
+    "landing_thud":    "ضربة ناعمة عند هبوط الرقم بتقفلو بإحساس فيزيائي — الرقم بيتذكّر",
+    "paper_breath":    "نفس الورقة بيجيب إحساس ملمس الوثيقة — بترفع المصداقية بلا كلام",
+    "pen_stroke":      "صوت القلم/الخط بيربطنا بيد الشخص — لحظة شخصية",
+    "type_key_single": "طقّة واحدة تكتب التاريخ بمكانه — الزمن تثبّت بحركة",
+    "riser_tension":   "الصاعدة بتنبّه: شي جاي — بتجهّز المشاهد للانفجار",
+    "sub_boom":        "الضربة العميقة بتحسّها بالجسم مو بالأذن — وزن الحدث",
+    "shimmer_soft":    "لمعة خفيفة بالإقفال بتعطي إحساس خلاص ناعم — ما بتزنّ",
+    "clock_tick":      "دقّة ساعة بتقيس الوقت المحرّج — بتزيد الانتظار",
+    "felt_hit_soft":   "ضربة مخملية بتميّز اللحظة بلا ما تنبّه إلى نفسها — المؤثر بتحسّه ولا تسمعه",
+}
+
+
+def story_role(frac: float) -> str:
+    if frac < 0.25:
+        return "فتحة — هون منبني الوعد وبنشد الانتباه"
+    if frac >= 0.80:
+        return "خاتمة/حكم — هون منوفّي الوعد وبنقفل اللغة نفسها"
+    return "تطوير — هون منكبّر الفكرة ونضيّق الحلقة"
+
+
+def understanding(intent, card, motion, mood, sfx, role, bed):
+    info, feel = READ_BY_INTENT.get(intent, READ_BY_INTENT["text"])
+    m = motion.replace("_hold", "")
+    why_motion = MOTION_WHY.get(m, "حركة من المعجم — متبرّرة من نية الجملة (راجع 11_MOTION_VOCABULARY)")
+    if motion.endswith("_hold"):
+        why_motion += " · (_hold: تخفيف لكرمة التكرار — نفس الحركة بتفقد أثرها بالتكرار، فالـ_hold بيمنع الإحساس بالاستنساخ)"
+    notes = (bed or {}).get("notes") or ""
+    why_sound = f"المزاج {mood}: {notes}" if notes else f"المزاج {mood} حسب النية"
+    if sfx and sfx[0] in SFX_WHY:
+        why_sound += f" · المؤثر {sfx[0]}: {SFX_WHY[sfx[0]]} (تحت الجو −7dB، L3)"
+    return {
+        "meaning": f"الجملة {info} — المفروض يحس المشاهد: {feel}. (L1: فكرة وحدة بالنبضة)",
+        "role": role,
+        "why_visual": (card.get("why") if card else "") or f"بلا كرت بالبنك — محرك أصلي ({intent}): السبب مسجّل كابتكار مع أساسه (L9)",
+        "why_motion": why_motion,
+        "why_sound": why_sound,
+        "link_reason": None,
+    }
+
+
+def link_reason(t, a, b):
+    base = TRANSITION_WHY.get(t, f"انتقال {t}")
+    th = b["continuity"]["threads"]
+    if a["block"] == b["block"]:
+        wire = f"نفس اللقطة `{a['block']}` بلا قطع: كاميرا {th['camera']} · موتيف {th['motif']} · لوحة {th['palette']}"
+    else:
+        mood_note = "المزاج متابع" if a["mood"] == b["mood"] else f"المزاج من {a['mood']} لـ {b['mood']} (كروس فيد)"
+        wire = f"قطع مبرَّر بين لقطتين: {mood_note} · كاميرا {th['camera']} · لوحة {th['palette']}"
+    return (f"طلعنا بـ {t}: {base} — {wire}",
+            f"دخلنا بـ {t}: {base} — {wire}")
+
+
 
 def load_json(p: Path):
     return json.loads(p.read_text(encoding="utf-8"))
@@ -243,6 +378,8 @@ def plan(script, tech, sound, voc, max_beats=4, max_dur=18.0):
                 bed = dict(bed); bed["transition_in"] = "crossfade 0.6-1.2s"
             prev_bed = b["mood"]
             sfx = SFX_BY_INTENT.get(intent, [])
+            pos_frac = (len(rows) + 0.5) / max(1, len(beats))
+            und = understanding(intent, card, mname, b["mood"], sfx, story_role(pos_frac), bed)
             # الانتقالات تُحسب لاحقًا زوج-زوج (انتقال واحد بين كل جملتين)
             threads = {"palette": f"{palette} / {'red_lock' if intent in ('danger',) else 'base'}",
                        "camera": ("push_chain" if mname.startswith("push") else
@@ -258,6 +395,7 @@ def plan(script, tech, sound, voc, max_beats=4, max_dur=18.0):
                 "sound": {"bed": b["mood"], "bpm": bed.get("bpm"), "key": bed.get("key"),
                           "intensity": bed.get("intensity"), "sfx": sfx,
                           "sfx_gain_db_rel_bed": -7 if sfx else None},
+                "understanding": und,
                 "continuity": {"in": None, "out": None, "threads": threads},
                 "engine": {"target": engine_hint, "status": engine_status(engine_hint, card)},
                 "novelty": {"is_new": bool(novelty), "what": novelty, "basis": basis},
@@ -274,6 +412,9 @@ def plan(script, tech, sound, voc, max_beats=4, max_dur=18.0):
             t = CUT_TRANSITIONS[ci % len(CUT_TRANSITIONS)]; ci += 1
         a["continuity"]["out"] = t
         bnext["continuity"]["in"] = t
+        a["understanding"]["link_reason"], bnext["understanding"]["link_reason"] = link_reason(t, a, bnext)
+    explained = sum(1 for r in rows if r["understanding"]
+                    and all(r["understanding"].get(k) for k in UNDERSTANDING_KEYS))
     total = sum(r["dur"] for r in rows) or 1
     n_new = sum(1 for r in rows if r["novelty"]["is_new"])
     shots = len(blocks)
@@ -288,6 +429,7 @@ def plan(script, tech, sound, voc, max_beats=4, max_dur=18.0):
             "one_take_blocks": sum(1 for bs in blocks if len(bs) > 1),
             "multi_scene_one_shot": sum(1 for bs in blocks if len({b['scene'] for b in bs}) > 1),
             "novelty_beats": n_new, "novelty_pct": round(100 * n_new / max(1, len(rows)), 1),
+            "explained": f"{explained}/{len(rows)}",
             "hard_cuts": shots - 1, "in_shot_transitions": sum(len(bs) - 1 for bs in blocks if len(bs) > 1),
         },
     }
@@ -322,6 +464,16 @@ def validate(report, novelty_budget=0.25):
             problems.append(f"[{r['n']}] ابتكار بلا أساس (basis مفقود)")
         if not r["motion"]["in_vocab"] and "motion" not in r["novelty"]["what"]:
             problems.append(f"[{r['n']}] موشن مو بالمعجم وما مو مسجّل كابتكار (in_vocab=False)")
+    # عقد الفهم: ما في قرار بلا سبب مكتوب
+    missing_all = [r["n"] for r in rows if not r.get("understanding")]
+    if missing_all and len(missing_all) == len(rows):
+        warns.append("الخطة بلا طبقة فهم (نسخة قديمة) — أعد التوليد لتطلع أسباب كل قرار")
+    else:
+        for r in rows:
+            u = r.get("understanding") or {}
+            for k in UNDERSTANDING_KEYS:
+                if not u.get(k):
+                    problems.append(f"[{r['n']}] قرار بلا فهم — السبب '{k}' مفقود")
     # نفس الانتقال belوك مرات كثير
     outs = [r["continuity"]["out"] for r in rows if r["continuity"]["out"]]
     for i in range(2, len(outs) + 1):
@@ -365,7 +517,8 @@ def write_outputs(report, outdir: Path, novelty_budget=0.25):
          f"- متوسط اللقطة: **{S['avg_shot_s']}ث** (هدف {S['pacing_target'][0]}–{S['pacing_target'][1]}ث)",
          f"- بلوكات «لقطة وحدة»: **{S['one_take_blocks']}** (منها **{S['multi_scene_one_shot']}** بمشاهد متعددة داخل لقطة واحدة)",
          f"- انتقالات داخلية (بلا قطع): **{S['in_shot_transitions']}** · قطع: **{S['hard_cuts']}**",
-         f"- ابتكار: **{S['novelty_beats']} نبضة ({S['novelty_pct']}%)** — كلها بأساس موجود", "",
+         f"- ابتكار: **{S['novelty_beats']} نبضة ({S['novelty_pct']}%)** — كلها بأساس موجود",
+         f"- فهم: **{S.get('explained', '-')}** نبضة مشروحة (معنى + سبب التقنية + سبب الحركة + سبب الصوت + سبب الوصل)", "",
          f"**الحكم: {'PASS ✅' if report['validation']['verdict']=='PASS' else 'FAIL ❌'}**"]
     for w in warns:
         L.append(f"- ⚠️ {w}")
@@ -384,6 +537,17 @@ def write_outputs(report, outdir: Path, novelty_budget=0.25):
           "| المحرك | الموشن | التقنية | الحالة | نبضات |", "|---|---|---|---|---|"]
     for d in tl:
         L.append(f"| {d['target']} | `{d['motion']}` | {d['technique']} | {d['status']} | {len(d['beats'])} |")
+    L += ["", "> ready/live = ينفّذ فورًا · partial = ناقصه أجزاء · concept = تصميم لازم يتحوّل كود أولًا.", "",
+          "## 🧠 ليش هالقرار؟ — فهم كل نبضة (مو حفظ)", ""]
+    for r in report["rows"]:
+        u = r["understanding"]
+        L += [f"### نبضة {r['n']} — «{r['text'][:90]}»",
+              f"- **فهم الجملة:** {u['meaning']}",
+              f"- **الدور بالفيلم:** {u['role']}",
+              f"- **ليش هي التقنية:** {u['why_visual']}",
+              f"- **ليش هي الحركة:** {u['why_motion']}",
+              f"- **ليش هي الموسيقى/SFX:** {u['why_sound']}",
+              f"- **سبب الوصل:** {u['link_reason']}", ""]
     L += ["", "> ready/live = ينفّذ فورًا · partial = ناقصه أجزاء · concept = تصميم لازم يتحوّل كود أولًا.", ""]
     (outdir / "PLAN.md").write_text("\n".join(L), encoding="utf-8")
     return problems, warns
@@ -422,6 +586,7 @@ def main():
     S = report["summary"]
     print(f"[i] {report['title']}: {report['beats']} نبضة · {report['blocks']} لقطة · متوسط {S['avg_shot_s']}ث · "
           f"لقطة وحدة {S['one_take_blocks']} (متعددة المشاهد {S['multi_scene_one_shot']}) · ابتكار {S['novelty_pct']}%")
+    print(f"[i] فهم: {S.get('explained', '-')} نبضة مشروحة — ما في قرار بلا سبب")
     for w in warns:
         print("   ⚠️", w)
     for p in problems:
