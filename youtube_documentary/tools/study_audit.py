@@ -103,9 +103,9 @@ def merge_intervals(rows, min_gap=0.0):
     return out
 
 
-def find_gaps(intervals, duration, min_gap=1.0):
+def find_gaps(intervals, duration, min_gap=1.0, origin=0.0):
     gaps = []
-    cur = 0.0
+    cur = origin
     for iv in intervals:
         if iv["t0"] - cur > min_gap:
             gaps.append((cur, iv["t0"]))
@@ -127,7 +127,9 @@ def fmt(t: float) -> str:
 
 def load_events(study: Path):
     """Returns (events, source) where events = [{'t','t1','type','label'}]."""
-    dossier = study / "motion" / "dossier.json"
+    dossier = study / "dossier.json"
+    if not dossier.exists():
+        dossier = study / "motion" / "dossier.json"
     if dossier.exists():
         d = json.loads(dossier.read_text(encoding="utf-8"))
         evs = []
@@ -252,8 +254,12 @@ def audit(study: Path, duration: float, args) -> dict:
         report["problems"].append(f"ملف التفكيك غير موجود: {bd}")
 
     if rows:
-        intervals = merge_intervals([{"t0": r["t0"], "t1": max(r["t1"], r["t0"])} for r in rows], min_gap=0.0)
-        gaps = find_gaps(intervals, duration, min_gap=args.max_gap)
+        rng = getattr(args, "range", None)
+        d0, d1 = (rng[0], rng[1]) if rng else (0.0, duration)
+        cov_rows = [r for r in rows if r["t1"] >= d0 and r["t0"] <= d1]
+        intervals = merge_intervals([{"t0": max(r["t0"], d0), "t1": min(max(r["t1"], r["t0"]), d1)}
+                                     for r in cov_rows], min_gap=0.0)
+        gaps = find_gaps(intervals, d1, min_gap=args.max_gap, origin=d0)
         report["checks"]["coverage"] = {
             "intervals": len(intervals),
             "covered_s": round(sum(min(i["t1"], duration) - i["t0"] for i in intervals), 1),
@@ -269,7 +275,9 @@ def audit(study: Path, duration: float, args) -> dict:
                 (" ..." if len(gaps) > 6 else ""))
         # events outside every written row
         uncovered = []
-        for e in events:
+        rng2 = getattr(args, "range", None)
+        ev_scope = [e for e in events if (not rng2 or (rng2[0] <= e["t"] <= rng2[1]))]
+        for e in ev_scope:
             if not any(r["t0"] - args.tolerance <= e["t"] <= r["t1"] + args.tolerance for r in rows):
                 uncovered.append(e)
         report["checks"]["events_uncovered"] = {"count": len(uncovered),
@@ -474,6 +482,8 @@ def main():
     ap.add_argument("--tolerance", type=float, default=0.75, help="سماحية مطابقة الحدث مع الصف (ث)")
     ap.add_argument("--max-gap", type=float, default=1.0, help="أقصى فراغ زمني مسموح بين الصفوف (ث)")
     ap.add_argument("--min-page-bytes", type=int, default=20480)
+    ap.add_argument("--range", nargs=2, type=float, default=None, metavar=("A", "B"),
+                    help="افحص التغطية ضمن مجال زمني فقط (لتأكيد جزء من الدراسة)")
     ap.add_argument("--verify", action="store_true", help="يفشل (exit 1) إذا في مشاكل")
     ap.add_argument("--allow-missing-events", action="store_true",
                     help="إذا الأحداث (dossier/metrics) غير متوفرة (مختبر الحركة ما اشتغل بعد) — تحذير بدل FAIL. "

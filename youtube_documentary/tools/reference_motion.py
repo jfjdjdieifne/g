@@ -657,7 +657,9 @@ def analyze(video: Path, outdir: Path, video_id: str, args) -> dict:
           f"{info['fps']:.3f}fps audio={info['has_audio']}", flush=True)
 
     t_from, t_to = args.start, args.end
-    if t_from > 0:
+    # FIXED 2026-10-14: كنا نقطّع بس إذا البداية > 0؛ هيك جزء يبلش من 0 مع --end
+    # كان يحلّل الفيديو كامل (350+ ث بدل ~20 ث). هلأ منقطّع إذا في بداية > 0 أو نهاية < المدة.
+    if t_from > 0 or (t_to is not None and t_to < info["duration"] - 0.5):
         # analyze a slice: cut a working copy (stream copy, no re-encode)
         sliced = work / f"slice_{int(t_from)}_{int(t_to or info['duration'])}.mp4"
         if not sliced.exists():
