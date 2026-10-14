@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-14",
- "head_commit": "7c7df13",
+ "head_commit": "7e1d8cf",
  "studies": [
   {
    "ref": "vaping",
@@ -47,8 +47,8 @@
    "kind": "folder"
   },
   {
-   "name": "technique_db (61 كرت)",
-   "drive_id": "1SB6_H_6n9TCDVqmoSHAAq1bh6TXDmcU1",
+   "name": "technique_db (94 كرت)",
+   "drive_id": "1Z3LtcQqmrQndLX5YXr6_ADKUSyTo54Ig",
    "path": "engine/database/technique_db.json",
    "kind": "file"
   },
@@ -100,13 +100,21 @@
    "kind": "file"
   },
   {
-   "name": "BREAKDOWN_WW2P2",
+   "name": "BREAKDOWN_WW2P2 (كامل)",
    "path": "engine/reference_lab/BREAKDOWN_WW2P2.md",
-   "kind": "file"
+   "kind": "file",
+   "drive_id": "1JjuXamqgqJpT5SFxEnV3HVmEghSQ_IIl"
   },
   {
-   "name": "TRANSITION_ATLAS",
+   "name": "TRANSITION_ATLAS (P1+P2)",
    "path": "engine/reference_lab/TRANSITION_ATLAS.md",
+   "kind": "file",
+   "drive_id": "1Be1oLFDpVLQMbOtKQkBxblEjLAivZtUj"
+  },
+  {
+   "name": "DIRECTING_RULEBOOK_v1.3",
+   "drive_id": "1qrDQhrjNE4t89VfJcT7yUnAo9VU8OXqK",
+   "path": "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md",
    "kind": "file"
   }
  ],

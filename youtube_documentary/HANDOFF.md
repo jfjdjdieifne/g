@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `7c7df13` · **HEAD الحالي:** `7c7df13`
+> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `7e1d8cf` · **HEAD الحالي:** `7e1d8cf`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -35,7 +35,7 @@
 |---|---|
 | AI Director Kit (فولدر) |  [فولدر درايف](https://drive.google.com/drive/folders/14HxMPs32AKd7V72wMOw2g9M60mvYdTl7) |
 | Ref Studies (فولدر) |  [فولدر درايف](https://drive.google.com/drive/folders/1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC) |
-| technique_db (61 كرت) | `engine/database/technique_db.json` [درايف](https://drive.google.com/file/d/1SB6_H_6n9TCDVqmoSHAAq1bh6TXDmcU1/view) |
+| technique_db (94 كرت) | `engine/database/technique_db.json` [درايف](https://drive.google.com/file/d/1Z3LtcQqmrQndLX5YXr6_ADKUSyTo54Ig/view) |
 | BREAKDOWN_WW2P1 (كامل) | `engine/reference_lab/BREAKDOWN_WW2P1.md` [درايف](https://drive.google.com/file/d/1uhTrBNUzL2piNL5wqHk9P_KgkF2I9hpH/view) |
 | BREAKDOWN_AR (فحص آلي) |  [درايف](https://drive.google.com/file/d/1Im39FaJKTWHblPecNtNhEJDZy-xULiB6/view) |
 | DIRECTING_RULEBOOK_v1.2 | `engine/reference_lab/DIRECTING_RULEBOOK_v1.2.md` [درايف](https://drive.google.com/file/d/1Q5vN_-e-4ONq2u3fgZ6E5y5JP-9yCiIi/view) |
@@ -45,8 +45,9 @@
 | WW2 P2 (فيديو) |  [درايف](https://drive.google.com/file/d/1NPzS-IOkUlEFHrWd392WY7KLQtvSFylj/view) |
 | Vaping (فيديو) |  [درايف](https://drive.google.com/file/d/117J6M88EstNWF6NOcHRm1fmfLmu5C0vh/view) |
 | PayPal (فيديو — 722MB، أكبر من حد التنزيل) |  [درايف](https://drive.google.com/file/d/1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt/view) |
-| BREAKDOWN_WW2P2 | `engine/reference_lab/BREAKDOWN_WW2P2.md` _(محلي — ما بعدُ رُفع)_ |
-| TRANSITION_ATLAS | `engine/reference_lab/TRANSITION_ATLAS.md` _(محلي — ما بعدُ رُفع)_ |
+| BREAKDOWN_WW2P2 (كامل) | `engine/reference_lab/BREAKDOWN_WW2P2.md` [درايف](https://drive.google.com/file/d/1JjuXamqgqJpT5SFxEnV3HVmEghSQ_IIl/view) |
+| TRANSITION_ATLAS (P1+P2) | `engine/reference_lab/TRANSITION_ATLAS.md` [درايف](https://drive.google.com/file/d/1Be1oLFDpVLQMbOtKQkBxblEjLAivZtUj/view) |
+| DIRECTING_RULEBOOK_v1.3 | `engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md` [درايف](https://drive.google.com/file/d/1qrDQhrjNE4t89VfJcT7yUnAo9VU8OXqK/view) |
 
 ## 5) الخطوات الجاية (بالترتيب)
 
