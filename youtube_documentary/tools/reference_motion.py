@@ -555,7 +555,7 @@ def base_filmstrips(path: Path, fps: float, outdir: Path, tile_w=260, cols=10, r
         if idx >= cols * rows:
             page.save(outdir / f"p{page_no:02d}_of_{pages:02d}.jpg", quality=82)
             made += 1
-            page, page_no = None, page_no + 1
+            page, page_no, idx = None, page_no + 1, 0   # BUGFIX: idx لازم ينصفّر مع كل صفحة وإلا كل فريم بيصير صفحة لحاله
     if page is not None and idx > 0:
         page.save(outdir / f"p{page_no:02d}_of_{pages:02d}.jpg", quality=82)
         made += 1
