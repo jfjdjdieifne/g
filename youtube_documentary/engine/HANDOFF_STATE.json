@@ -1,0 +1,136 @@
+{
+ "schema": "handoff-state/1",
+ "updated": "2026-10-14",
+ "head_commit": "b5a995a",
+ "studies": [
+  {
+   "ref": "vaping",
+   "name_ar": "Juul: A Villain Origin Story (MagnatesMedia)",
+   "status": "complete",
+   "progress": "27:27 كامل — 356 صف، تغطية 55/55 صفحة، audit PASS",
+   "deliverables": [
+    "engine/reference_lab/Vaping_BREAKDOWN_2fps_full_v2.md",
+    "engine/reference_lab/Vaping_COVERAGE.md",
+    "engine/reference_lab/Vaping_GAPFILL_2026-10-14.md"
+   ]
+  },
+  {
+   "ref": "ww2p1",
+   "name_ar": "WW2 — OverSimplified (Part 1)",
+   "status": "complete",
+   "progress": "13:45 كامل — 28/28 صفحة، 46 قاعدة، audit PASS (228 صف · 0 فراغ)",
+   "deliverables": [
+    "engine/reference_lab/BREAKDOWN_WW2P1.md",
+    "engine/reference_lab/DIRECTING_RULEBOOK_v1.2.md"
+   ]
+  },
+  {
+   "ref": "ww2p2",
+   "name_ar": "WW2 — OverSimplified (Part 2)",
+   "status": "in_progress",
+   "progress": "0:00–3:00 (صفحات 1–6 من 32) — المختبر أعيد تشغيله بعد الريسِت",
+   "deliverables": []
+  }
+ ],
+ "artifacts": [
+  {
+   "name": "AI Director Kit (فولدر)",
+   "drive_id": "14HxMPs32AKd7V72wMOw2g9M60mvYdTl7",
+   "kind": "folder"
+  },
+  {
+   "name": "Ref Studies (فولدر)",
+   "drive_id": "1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC",
+   "kind": "folder"
+  },
+  {
+   "name": "technique_db (61 كرت)",
+   "drive_id": "1SB6_H_6n9TCDVqmoSHAAq1bh6TXDmcU1",
+   "path": "engine/database/technique_db.json",
+   "kind": "file"
+  },
+  {
+   "name": "BREAKDOWN_WW2P1 (كامل)",
+   "drive_id": "1uhTrBNUzL2piNL5wqHk9P_KgkF2I9hpH",
+   "path": "engine/reference_lab/BREAKDOWN_WW2P1.md",
+   "kind": "file"
+  },
+  {
+   "name": "BREAKDOWN_AR (فحص آلي)",
+   "drive_id": "1Im39FaJKTWHblPecNtNhEJDZy-xULiB6",
+   "kind": "file"
+  },
+  {
+   "name": "DIRECTING_RULEBOOK_v1.2",
+   "drive_id": "1Q5vN_-e-4ONq2u3fgZ6E5y5JP-9yCiIi",
+   "path": "engine/reference_lab/DIRECTING_RULEBOOK_v1.2.md",
+   "kind": "file"
+  },
+  {
+   "name": "dossier_WW2P1 (قياسات)",
+   "drive_id": "1-op46-a3uDSfIDQS7AoE9d6REyremzxv",
+   "kind": "file"
+  },
+  {
+   "name": "فيلمستريب WW2 P1 (28 صفحة)",
+   "drive_id": "1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS",
+   "kind": "file"
+  },
+  {
+   "name": "WW2 P1 (فيديو)",
+   "drive_id": "10ZD7FJwSS9J5JSkbB2SQeDs_LwJ-FyCs",
+   "kind": "file"
+  },
+  {
+   "name": "WW2 P2 (فيديو)",
+   "drive_id": "1NPzS-IOkUlEFHrWd392WY7KLQtvSFylj",
+   "kind": "file"
+  },
+  {
+   "name": "Vaping (فيديو)",
+   "drive_id": "117J6M88EstNWF6NOcHRm1fmfLmu5C0vh",
+   "kind": "file"
+  },
+  {
+   "name": "PayPal (فيديو — 722MB، أكبر من حد التنزيل)",
+   "drive_id": "1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt",
+   "kind": "file"
+  }
+ ],
+ "engine_state": {
+  "technique_bank": "engine/database/technique_db.json (61 كرت: 43 ww2p1 + 18 vaping — كل كرت why + qc + مصدر فريمي)",
+  "director": "tools/director.py (سكربت→PLAN.md+plan.json+engine_tasks.json، فحص --validate، طبقة فهم إلزامية)",
+  "transition_atlas": "tools/transition_atlas.py → engine/reference_lab/TRANSITION_ATLAS.md (قياس الانتقالات والترابط)",
+  "sound_bank": "engine/database/sound_bank.json (10 مزاج + 11 SFX + قوانين)",
+  "continuity": "engine/CONTINUITY_MODEL.md (4 خيوط + لقطة وحدة + in-shot vs cut)",
+  "montage_theory": "engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار)"
+ },
+ "environment": {
+  "note": "السانسبوكس بينصفّر بين الجولات: /home/user/build وpip لا يبقون. المستودع (GitHub) + الدرايف هم الحفظ الحقيقي.",
+  "rebuild_cmds": [
+   "pip install -q --break-system-packages numpy pillow imageio-ffmpeg",
+   "نزّل الفيديو من الدرايف → build/videos/",
+   "python3 tools/reference_motion.py build/videos/X.mp4 --video-id ID --out build/analysis/ID"
+  ]
+ },
+ "next_steps": [
+  "WW2 P2: كمّل الصفحات 7–32 (3:00–15:34) دفعات 6 صفحات، وتنزيل كل دفعة على ملف BREAKDOWN_WW2P2.md + رفعها",
+  "بعد إكمال P2: study_audit --verify PASS + كروت بنك جديدة + تحديث TRANSITION_ATLAS وHANDOFF",
+  "PayPal: بدو ≤100MiB (filmstrip مضغوط أو أجزاء) — أو جلسة سكانر",
+  "اختبار الإخراج: ديمو 15–30 ث بنمط WW2 من الـrulebook v1.2",
+  "بعدها: مراجع الباقية (Crypto / Apple / AI / Saudi / Dubai) واحد واحد"
+ ],
+ "open_questions": [
+  "هل نعمل جلسة سكانر (بظرف عادي) لنزّل المراجع الكبيرة (PayPal) وإلا نضل بحد الـ100MiB؟"
+ ],
+ "laws": [
+  "صفر سكيب: كل ثانية وكل لقطة تُقرأ وتُفهم قبل التقدّم",
+  "ما في صف يتكتب بلا فريم مشفوف (ref@timestamp) — ولا اختراع تحليل",
+  "المشاهد مو منفصلة: 4 خيوط + in-shot transitions قبل أي قطع (مفحوص out==in)",
+  "SFX تحت الجو (−7dB قياسيًا) · لا SFX على كل قطعة",
+  "النص ≤6 كلمات، بلا زووم عدواني على نص >4 كلمات (≤10%)",
+  "الخريطة: النقاط عالبَر + دقة جغرافية",
+  "إخراج بالعربي الشامي، رسائل قصيرة (المستخدم على iPhone)",
+  "بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه"
+ ]
+}

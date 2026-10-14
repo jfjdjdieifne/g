@@ -1,0 +1,83 @@
+# HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
+
+> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `b5a995a` · **HEAD الحالي:** `b5a995a`
+> هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
+> **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
+
+## 1) خريطة سريعة (فين شو)
+
+| الملف/المجلد | شو فيه |
+|---|---|
+| `technique_bank` | engine/database/technique_db.json (61 كرت: 43 ww2p1 + 18 vaping — كل كرت why+qc+mصدر فريمي) |
+| `director` | tools/director.py (سكربت→PLAN.md+plan.json+engine_tasks.json، فحص --validate، طبقة فهم إلزامية) |
+| `transition_atlas` | tools/transition_atlas.py → engine/reference_lab/TRANSITION_ATLAS.md (قياس الانتقالات والترابط) |
+| `sound_bank` | engine/database/sound_bank.json (10 مزاج + 11 SFX + قوانين) |
+| `continuity` | engine/CONTINUITY_MODEL.md (4 خيوط + لقطة وحدة + in-shot vs cut) |
+| `montage_theory` | engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار) |
+
+## 2) حالة المراجع (الدراسة فريم-فريم)
+
+| المرجع | الحالة | التقدّم | ملفات |
+|---|---|---|---|
+| **vaping** — Juul: A Villain Origin Story (MagnatesMedia) | ✅ كامل | 27:27 كامل — 356 صف، تغطية 55/55 صفحة، audit PASS | `Vaping_BREAKDOWN_2fps_full_v2.md` · `Vaping_COVERAGE.md` · `Vaping_GAPFILL_2026-10-14.md` |
+| **ww2p1** — WW2 — OverSimplified (Part 1) | ✅ كامل | 13:45 كامل — 28/28 صفحة، 46 قاعدة، audit PASS (228 صف · 0 فراغ) | `BREAKDOWN_WW2P1.md` · `DIRECTING_RULEBOOK_v1.2.md` |
+| **ww2p2** — WW2 — OverSimplified (Part 2) | 🟡 شغّال | 0:00–3:00 (صفحات 1–6 من 32) — المختبر أعيد تشغيله بعد الريسِت | — |
+
+## 3) بنك الأفكار (مفحوص آليًا من الملف)
+
+- **61 كرت** — التوزيع: ww2p1: 43 · vaping: 18
+- جاهز للتنفيذ فورًا: **7** · كل كرت فيه شرح «ليش»: **61/61** · فيه فحوص QC: **61/61**
+
+## 4) الملفات والروابط
+
+| الشي | المسار/الرابط |
+|---|---|
+| AI Director Kit (فولدر) |  [فولدر درايف](https://drive.google.com/drive/folders/14HxMPs32AKd7V72wMOw2g9M60mvYdTl7) |
+| Ref Studies (فولدر) |  [فولدر درايف](https://drive.google.com/drive/folders/1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC) |
+| technique_db (61 كرت) | `engine/database/technique_db.json` [درايف](https://drive.google.com/file/d/1SB6_H_6n9TCDVqmoSHAAq1bh6TXDmcU1/view) |
+| BREAKDOWN_WW2P1 (كامل) | `engine/reference_lab/BREAKDOWN_WW2P1.md` [درايف](https://drive.google.com/file/d/1uhTrBNUzL2piNL5wqHk9P_KgkF2I9hpH/view) |
+| BREAKDOWN_AR (فحص آلي) |  [درايف](https://drive.google.com/file/d/1Im39FaJKTWHblPecNtNhEJDZy-xULiB6/view) |
+| DIRECTING_RULEBOOK_v1.2 | `engine/reference_lab/DIRECTING_RULEBOOK_v1.2.md` [درايف](https://drive.google.com/file/d/1Q5vN_-e-4ONq2u3fgZ6E5y5JP-9yCiIi/view) |
+| dossier_WW2P1 (قياسات) |  [درايف](https://drive.google.com/file/d/1-op46-a3uDSfIDQS7AoE9d6REyremzxv/view) |
+| فيلمستريب WW2 P1 (28 صفحة) |  [درايف](https://drive.google.com/file/d/1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS/view) |
+| WW2 P1 (فيديو) |  [درايف](https://drive.google.com/file/d/10ZD7FJwSS9J5JSkbB2SQeDs_LwJ-FyCs/view) |
+| WW2 P2 (فيديو) |  [درايف](https://drive.google.com/file/d/1NPzS-IOkUlEFHrWd392WY7KLQtvSFylj/view) |
+| Vaping (فيديو) |  [درايف](https://drive.google.com/file/d/117J6M88EstNWF6NOcHRm1fmfLmu5C0vh/view) |
+| PayPal (فيديو — 722MB، أكبر من حد التنزيل) |  [درايف](https://drive.google.com/file/d/1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt/view) |
+
+## 5) الخطوات الجاية (بالترتيب)
+
+1. WW2 P2: كمّل الصفحات 7–32 (3:00–15:34) دفعات 6 صفحات، وتنزيل كل دفعة على ملف BREAKDOWN_WW2P2.md + رفعها
+2. بعد إكمال P2: study_audit --verify PASS + كروت بنك جديدة + تحديث TRANSITION_ATLAS وHANDOFF
+3. PayPal: بدو ≤100MiB (filmstrip مضغوط أو أجزاء) — أو جلسة سكانر
+4. اختبار الإخراج: ديمو 15–30 ث بنمط WW2 من الـrulebook v1.2
+5. بعدها: مراجع الباقية (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
+
+## 6) أسئلة معلّقة (بتنتظر قرار)
+
+- هل نعمل جلسة سكانر (بظرف عادي) لنزّل المراجع الكبيرة (PayPal) وإلا نضل بحد الـ100MiB؟
+
+## 7) قوانين ثابتة (ما تتغيّر بين الجولات)
+
+- صفر سكيب: كل ثانية وكل لقطة تُقرأ وتُفهم قبل التقدّم
+- ما في صف يتكتب بلا فريم مشفوف (ref@timestamp) — ولا اختراع تحليل
+- المشاهد مو منفصلة: 4 خيوط + in-shot transitions قبل أي قطع (مفحوص out==in)
+- SFX تحت الجو (−7dB قياسيًا) · لا SFX على كل قطعة
+- النص ≤6 كلمات، بلا زووم عدواني على نص >4 كلمات (≤10%)
+- الخريطة: النقاط عالبَر + دقة جغرافية
+- إخراج بالعربي الشامي، رسائل قصيرة (المستخدم على iPhone)
+- بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه
+
+## 8) البيئة (بعد أي ريست)
+
+- السانسبوكس بينصفّر بين الجولات: /home/user/build وpip لا يبقون. المستودع (GitHub) + الدرايف هم الحفظ الحقيقي.
+- `pip install -q --break-system-packages numpy pillow imageio-ffmpeg`
+- `نزّل الفيديو من الدرايف → build/videos/`
+- `python3 tools/reference_motion.py build/videos/X.mp4 --video-id ID --out build/analysis/ID`
+
+## 9) كيف تكمّل من هون (لأي أيجنت جديد)
+
+1. اقرأ `engine/AGENT_BRIEF.md` (دليل التشغيل) + هالملف.
+2. راجع `engine/reference_lab/` (التفكيكات + Rulebook v1.2 + TRANSITION_ATLAS).
+3. شغّل `python3 tools/handoff.py --check` للتأكد إنه ما في شي مفقود.
+4. كمّل من أول بند بالقسم 5، وبعد أي خطوة: حدّث `HANDOFF_STATE.json` وأعد التوليد.
