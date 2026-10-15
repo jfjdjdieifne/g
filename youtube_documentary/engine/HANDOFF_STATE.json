@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "f000d5a",
+ "head_commit": "b1d7308",
  "studies": [
   {
    "ref": "vaping",
@@ -259,6 +259,22 @@
    "name": "Latest HANDOFF — Revision4delivery; self-link recorded after upload",
    "drive_id": "1VA3MOpBKhzsa1OPVzeW0USWm4Bvx3d7I",
    "kind": "file"
+  },
+  {
+   "name": "Escobar Revision5 — new opening33.125s, awaiting review",
+   "drive_id": "1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI",
+   "kind": "file"
+  },
+  {
+   "name": "Escobar Revision5 — sources and encoded review packet",
+   "drive_id": "1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0",
+   "kind": "file"
+  },
+  {
+   "name": "Escobar Revision5 — actual QC and limitations",
+   "drive_id": "1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ",
+   "kind": "file",
+   "path": "engine/projects/escobar_intro5/QC.md"
   }
  ],
  "engine_state": {
@@ -295,9 +311,9 @@
  "laws": [
   "صفر سكيب: كل ثانية وكل لقطة تُقرأ وتُفهم قبل التقدّم",
   "ما في صف يتكتب بلا فريم مشفوف (ref@timestamp) — ولا اختراع تحليل",
-  "المشاهد مو منفصلة: 4 خيوط + in-shot transitions قبل أي قطع (مفحوص out==in)",
+  "اربط معنى المشاهد وحركتها؛ 4خيوط وin-shotتقنيات حسب الحاجة، مو قالب إلزامي لكل قطعة؛ القطع السريع المبرر مسموح.",
   "SFX تحت الجو (−7dB قياسيًا) · لا SFX على كل قطعة",
-  "النص ≤6 كلمات، بلا زووم عدواني على نص >4 كلمات (≤10%)",
+  "العناوين التحريرية قصيرة (6كلمات هدف للقراءة؛ نسبةالمصدرضروريةحسبالحاجة)، بلا زووم عدواني على نص >4كلمات (≤10%).",
   "الخريطة: النقاط عالبَر + دقة جغرافية",
   "إخراج بالعربي الشامي، رسائل قصيرة (المستخدم على iPhone)",
   "بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه",
@@ -418,7 +434,9 @@
   "design": "17مقطعًابصريًامؤلَّفًا؛4صور/وثيقةكلواحدةمرة، أغلبالافتتاحيةأرشيفمتحرك. حركةالاسم/الماركرالقديمةملغاة؛ عنواننهائيواحد.",
   "review": "شوهدت67عينة0.5ث+49حدود+107حركةمنالترميزالنهائيب16لوحة؛795فريمdecode،41اختبارميكانيكيPASS. لاادعاءسماعولااستحقاقفنيآلي.",
   "rights": "مصادرحقيقيةلكنحقوقالنشرغيرمُخلّصة؛ مراجعةداخليةفقط.",
-  "next": "انتظررأيالمستخدمعلىالنسخةالجديدةخصوصًاالإحساسبالإيقاعوالأداء؛ لاتبدأباقيالفيلمتلقائيًا."
+  "next": "انتظررأيالمستخدمعلىالنسخةالجديدةخصوصًاالإحساسبالإيقاعوالأداء؛ لاتبدأباقيالفيلمتلقائيًا.",
+  "source_packet_drive": "1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0",
+  "qc_notes_drive": "1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ"
  },
  "active_intro3": {
   "project": "engine/projects/escobar_intro3",
@@ -530,6 +548,15 @@
    "regression": 29,
    "total_passed": 41,
    "aesthetic_approval_implied": false
+  },
+  "source_packet_id": "1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0",
+  "qc_notes_id": "1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ",
+  "source_packet": {
+   "name": "Escobar_Intro5_Sources_and_Review.zip",
+   "bytes": 38755990,
+   "sha256": "cccc2788ece60e92d31d9abf5b3d17eb7458fd1a2ea4c3d1edb7a5e87d541bb7",
+   "md5": "12db82ecf6994de7783362c0ce1e0a4b",
+   "files": 294
   }
  }
 }

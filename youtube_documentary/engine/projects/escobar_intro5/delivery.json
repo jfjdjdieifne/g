@@ -37,5 +37,15 @@
     "regression": 29,
     "total_passed": 41,
     "aesthetic_approval_implied": false
-  }
+  },
+  "source_packet_id": "1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0",
+  "qc_notes_id": "1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ",
+  "source_packet": {
+    "name": "Escobar_Intro5_Sources_and_Review.zip",
+    "bytes": 38755990,
+    "sha256": "cccc2788ece60e92d31d9abf5b3d17eb7458fd1a2ea4c3d1edb7a5e87d541bb7",
+    "md5": "12db82ecf6994de7783362c0ce1e0a4b",
+    "files": 294
+  },
+  "handoff_id": "1mMAbgrtSNPm9OVbNhEJN7YjaUeClUy-n"
 }

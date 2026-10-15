@@ -1,7 +1,7 @@
 """Profile-driven AV sequence renderer. Timing/content live in film profiles.
 Video stays at native speed and in its full frame; source logos are never replaced.
 """
-import json,math,subprocess
+import json,math,subprocess,hashlib,shutil
 from pathlib import Path
 import numpy as np,cv2
 from PIL import Image,ImageDraw
@@ -58,6 +58,11 @@ class SequenceFilm:
         else:raise ValueError(s['kind'])
         return self.text(out,s,local)
     def render(self,destination):
+        destination=Path(destination)
+        if destination.exists() and destination.stat().st_size:
+            versions=self.p.BUILD/'versions';versions.mkdir(exist_ok=True)
+            previous=versions/(destination.stem+'__'+hashlib.sha256(destination.read_bytes()).hexdigest()[:12]+destination.suffix)
+            if not previous.exists():shutil.copy2(destination,previous)
         self.prepare_video();command=[FF,'-v','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s',f'{self.W}x{self.H}','-r',str(self.fps),'-i','-','-i',str(self.p.BUILD/'mix.wav'),'-map','0:v','-map','1:a','-c:v','libx264','-threads','4','-preset','fast','-crf','19','-pix_fmt','yuv420p','-c:a','aac','-b:a','192k','-movflags','+faststart','-t',str(self.plan['frames']/self.fps),str(destination)]
         p=subprocess.Popen(command,stdin=subprocess.PIPE)
         try:

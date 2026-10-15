@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `f000d5a` · **HEAD الحالي:** `f000d5a`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `b1d7308` · **HEAD الحالي:** `b1d7308`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -76,6 +76,9 @@
 | Escobar Intro4 — actual QC and source-use notes | `engine/projects/escobar_intro4/QC.md` [درايف](https://drive.google.com/file/d/1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0/view) |
 | Escobar Intro4 — source/engine/voice/stems/encoded review packet; no rights clearance |  [درايف](https://drive.google.com/file/d/1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W/view) |
 | Latest HANDOFF — Revision4delivery; self-link recorded after upload |  [درايف](https://drive.google.com/file/d/1VA3MOpBKhzsa1OPVzeW0USWm4Bvx3d7I/view) |
+| Escobar Revision5 — new opening33.125s, awaiting review |  [درايف](https://drive.google.com/file/d/1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI/view) |
+| Escobar Revision5 — sources and encoded review packet |  [درايف](https://drive.google.com/file/d/1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0/view) |
+| Escobar Revision5 — actual QC and limitations | `engine/projects/escobar_intro5/QC.md` [درايف](https://drive.google.com/file/d/1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ/view) |
 
 ## المشروع النشط — الهوك الحالي
 
@@ -89,6 +92,8 @@
 - **review:** شوهدت67عينة0.5ث+49حدود+107حركةمنالترميزالنهائيب16لوحة؛795فريمdecode،41اختبارميكانيكيPASS. لاادعاءسماعولااستحقاقفنيآلي.
 - **rights:** مصادرحقيقيةلكنحقوقالنشرغيرمُخلّصة؛ مراجعةداخليةفقط.
 - **next:** انتظررأيالمستخدمعلىالنسخةالجديدةخصوصًاالإحساسبالإيقاعوالأداء؛ لاتبدأباقيالفيلمتلقائيًا.
+- **source_packet_drive:** [درايف](https://drive.google.com/file/d/1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0/view)
+- **qc_notes_drive:** [درايف](https://drive.google.com/file/d/1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ/view)
 
 ## 5) الخطوات الجاية (بالترتيب)
 
@@ -106,9 +111,9 @@
 
 - صفر سكيب: كل ثانية وكل لقطة تُقرأ وتُفهم قبل التقدّم
 - ما في صف يتكتب بلا فريم مشفوف (ref@timestamp) — ولا اختراع تحليل
-- المشاهد مو منفصلة: 4 خيوط + in-shot transitions قبل أي قطع (مفحوص out==in)
+- اربط معنى المشاهد وحركتها؛ 4خيوط وin-shotتقنيات حسب الحاجة، مو قالب إلزامي لكل قطعة؛ القطع السريع المبرر مسموح.
 - SFX تحت الجو (−7dB قياسيًا) · لا SFX على كل قطعة
-- النص ≤6 كلمات، بلا زووم عدواني على نص >4 كلمات (≤10%)
+- العناوين التحريرية قصيرة (6كلمات هدف للقراءة؛ نسبةالمصدرضروريةحسبالحاجة)، بلا زووم عدواني على نص >4كلمات (≤10%).
 - الخريطة: النقاط عالبَر + دقة جغرافية
 - إخراج بالعربي الشامي، رسائل قصيرة (المستخدم على iPhone)
 - بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه

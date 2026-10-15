@@ -24,6 +24,7 @@ def prepare():
         wav(BUILD/'clips'/f'{key}.wav',y);audit[key]=edits;narr[key]=len(y)/48000
         for f in [src,asr]:
             dest=PROJECT/'voice'/f.name
+            if dest.exists() and hashlib.sha256(dest.read_bytes()).digest()!=hashlib.sha256(f.read_bytes()).digest():raise ValueError('A preserved raw take changed; use a new take filename')
             if not dest.exists():shutil.copy2(f,dest)
     audio=[];at=0
     for key,kind,dur,source,source_in in [
