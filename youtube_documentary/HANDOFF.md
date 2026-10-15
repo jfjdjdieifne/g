@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `686164e` · **HEAD الحالي:** `686164e`
+> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `a1553e5` · **HEAD الحالي:** `a1553e5`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -49,15 +49,16 @@
 | dossier_WW2P2 (قياسات) |  [درايف](https://drive.google.com/file/d/1SyF_0aG2Hh3axcti4e0ad6WPAt9s4aCa/view) |
 | technique_db (94 كرت) | `engine/database/technique_db.json` [درايف](https://drive.google.com/file/d/1Z3LtcQqmrQndLX5YXr6_ADKUSyTo54Ig/view) |
 | ديمو WW2-drive v1 (PLAN كوكتيل) | `engine/projects/ww2_demo/cocktail/PLAN.md` [درايف](https://drive.google.com/file/d/1dNWbTLO0FEAgzRw1heYcAwFevuSJWBpe/view) |
-| ديمو WW2-drive v1 (فيديو) |  [درايف](https://drive.google.com/file/d/11Rn4XAqx0fAExu0X0c_6s3yIs3TFqJ0g/view) |
+| ديمو WW2-drive v1 (فيديو — نسخة أولى) |  [درايف](https://drive.google.com/file/d/11Rn4XAqx0fAExu0X0c_6s3yIs3TFqJ0g/view) |
+| ديمو WW2-drive v2 (فيديو) |  [درايف](https://drive.google.com/file/d/1K3eH_RDNoueB7T31CFBAFrRUEAEAIXPg/view) |
 | فيلمستريب WW2 P1 (28 صفحة) |  [درايف](https://drive.google.com/file/d/1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS/view) |
 | فيلمستريب WW2 P2 (32 صفحة) |  [درايف](https://drive.google.com/file/d/1UVPNR0fA54c_zwkPlwzttIFPoWW-CJzc/view) |
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. مراجعة المستخدم للديمو v1 (ملاحظات: موشن/إيقاع/نص/صوت) → v2
-2. PayPal: بدو ≤100MiB (المستخدم يقسّم الفيديو لجزئين) أو جلسة سكانر — بعدها تفكيك part_study + كروت
-3. بعد PayPal: باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
+1. مراجعة المستخدم للديمو v2 → v3 (أو الموافقة والانتقال)
+2. PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت
+3. باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
 4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
 
 ## 6) أسئلة معلّقة (بتنتظر قرار)

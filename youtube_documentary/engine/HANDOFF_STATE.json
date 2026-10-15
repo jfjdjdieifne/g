@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-14",
- "head_commit": "686164e",
+ "head_commit": "a1553e5",
  "studies": [
   {
    "ref": "vaping",
@@ -124,8 +124,13 @@
    "kind": "file"
   },
   {
-   "name": "ديمو WW2-drive v1 (فيديو)",
+   "name": "ديمو WW2-drive v1 (فيديو — نسخة أولى)",
    "drive_id": "11Rn4XAqx0fAExu0X0c_6s3yIs3TFqJ0g",
+   "kind": "file"
+  },
+  {
+   "name": "ديمو WW2-drive v2 (فيديو)",
+   "drive_id": "1K3eH_RDNoueB7T31CFBAFrRUEAEAIXPg",
    "kind": "file"
   },
   {
@@ -157,9 +162,9 @@
   ]
  },
  "next_steps": [
-  "مراجعة المستخدم للديمو v1 (ملاحظات: موشن/إيقاع/نص/صوت) → v2",
-  "PayPal: بدو ≤100MiB (المستخدم يقسّم الفيديو لجزئين) أو جلسة سكانر — بعدها تفكيك part_study + كروت",
-  "بعد PayPal: باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
+  "مراجعة المستخدم للديمو v2 → v3 (أو الموافقة والانتقال)",
+  "PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت",
+  "باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
   "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
  ],
  "open_questions": [
@@ -205,6 +210,27 @@
     "/home/user/build/ww2_demo/escobar_ww2drive_demo_v1.mp4",
     "tools/ww2demo.py",
     "engine/projects/ww2_demo/cocktail/PLAN.md"
+   ]
+  },
+  {
+   "id": "ww2drive_v2",
+   "name_ar": "ديمو اختبار Rulebook v1.3 — إسكوبار (23 ث، بلا VO) — v2 بعد ملاحظات المستخدم",
+   "status": "v2 — جاهز للمراجعة",
+   "fixes_vs_v1": [
+    "ما في مربعات فاضية: محرّك خطوط هجين (Noto Naskh + DejaVu) لأي رمز ناقص بالخط العربي",
+    "التسميات: شارات (chips) بزوايا مدوّرة + شريط تعريفي + خيط دلالة + دائرة هدف (بدل النص العائم)",
+    "السهم: منحنى متقطّع متحرك + رأس chevron مُصمَّم (بدل الخط المستقيم والمثلث)",
+    "الختم: ختم حبر بحواف خشنة + ظل + ارتداد ورجّة (بدل المستطيل البرتقالي)",
+    "الخرائط: بحر متدرّج + حدود ملساء (رندر 2× ثم تصغير) + تمييز البلد + تعتيم مركّز",
+    "الوحدات: بلوكات براية، والمنطقة الآمنة صارت حلقة متقطعة خضرا (مو بلوب)"
+   ],
+   "spec": "1920×1080 · 24fps · 23.0 ث · H.264 + AAC",
+   "geo_check": "كل النقاط على البَر (لزق ميديين 0.000° · ميامي 0.020°)",
+   "drive": "1K3eH_RDNoueB7T31CFBAFrRUEAEAIXPg",
+   "files": [
+    "tools/ww2demo.py",
+    "assets_global/geo/latam_10m.json",
+    "engine/projects/ww2_demo/cocktail/plan.json"
    ]
   }
  ]
