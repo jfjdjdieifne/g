@@ -31,6 +31,8 @@ import re
 import sys
 from pathlib import Path
 
+from production_policy import display_errors, design_errors
+
 ROOT = Path(__file__).resolve().parents[1]
 TECH_DB = ROOT / "engine" / "database" / "technique_db.json"
 SOUND_DB = ROOT / "engine" / "database" / "sound_bank.json"
@@ -433,6 +435,14 @@ def plan(script, tech, sound, voc, max_beats=4, max_dur=18.0):
             "hard_cuts": shots - 1, "in_shot_transitions": sum(len(bs) - 1 for bs in blocks if len(bs) > 1),
         },
     }
+    policy = load_json(ROOT / "engine/PRODUCTION_POLICY.json")
+    report["production_policy"] = policy
+    report["display_manifest"] = script.get("display_manifest")
+    report["render_ready"] = (bool(report["display_manifest"])
+                              and not display_errors(report["display_manifest"])
+                              and not design_errors(report["display_manifest"].get("design", {"unit_of_design":"scene"})))
+    # Narrative text may stay Arabic internally. It is never a fallback caption.
+    report["display_note"] = "Use the English display manifest; never render rows[].text as an implicit caption."
     return report
 
 
@@ -445,6 +455,12 @@ def engine_status(hint, card):
 def validate(report, novelty_budget=0.25):
     problems, warns = [], []
     rows = report["rows"]
+    if report.get("display_manifest") is not None:
+        problems.extend(display_errors(report["display_manifest"]))
+        if "design" in report["display_manifest"]:
+            problems.extend(design_errors(report["display_manifest"]["design"]))
+    else:
+        warns.append("English display manifest missing: planning only, NOT render-ready; do not use narrative text as captions.")
     seen_cut_repeat = []
     for r in rows[:-1]:
         if not r["continuity"]["out"]:

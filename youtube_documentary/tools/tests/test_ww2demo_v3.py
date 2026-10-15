@@ -21,8 +21,8 @@ class DesignGates(unittest.TestCase):
         for x,y in positions:
             self.assertTrue(60<x<v.W-60)
             self.assertTrue(100<y<v.H-100)
-    def test_arabic_layer_not_empty(self):
-        for s in ['ميديين','ميامي','من ميديين، امتدت الشبكة','١٩٩٣ · كولومبيا']:
+    def test_english_layer_not_empty(self):
+        for s in ['MEDELLÍN','MIAMI','FROM MEDELLÍN, THE NETWORK EXPANDED','1993 / COLOMBIA']:
             im=v.text_layer(s,48)
             box=im.getchannel('A').getbbox()
             self.assertIsNotNone(box)

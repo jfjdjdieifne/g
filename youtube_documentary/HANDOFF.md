@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `74e0cef` · **HEAD الحالي:** `74e0cef`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `2c14831` · **HEAD الحالي:** `2c14831`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -55,10 +55,13 @@
 | فيلمستريب WW2 P2 (32 صفحة) |  [درايف](https://drive.google.com/file/d/1UVPNR0fA54c_zwkPlwzttIFPoWW-CJzc/view) |
 | ديمو WW2-drive v3 (اختبار خرائط غير معتمد) |  [درايف](https://drive.google.com/file/d/1NqNEXeZeNEZToXPue6BbZPecLguo9Dl9/view) |
 | خطة اختبار تصميم v3 |  [درايف](https://drive.google.com/file/d/1_1Xlh8vRWggFuTUa9mDKNT26NOCRRAki/view) |
+| ديمو WW2-drive v4 (عمق وإنكليزي) |  [درايف](https://drive.google.com/file/d/1xzUM0fyO2T7cyCBUeDlOkbVa4yALg6wq/view) |
+| خطة اختبار عمق v4 |  [درايف](https://drive.google.com/file/d/1fSd6WDq6XpvEFzNITt3KAW4oKIxTp8g2/view) |
+| سياسة الإنتاج العامة — English / Scene-first |  [درايف](https://drive.google.com/file/d/1eflzeVEYkokGL0dV3BYJMV-Dxr84XLg_/view) |
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. مراجعة المستخدم لاختبار خرائط v3 — تحسين التصميم والمشاهد المطلوبة؛ لا اعتماد تلقائي ولا انتقال للمرجع التالي.
+1. مراجعة المستخدم لنسخة v4 الإنكليزية ذات العمق؛ الحفاظ على اتجاه المشهد المتصل، بلا انتقال تلقائي للمرجع التالي.
 2. PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت
 3. باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
 4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
@@ -77,7 +80,9 @@
 - الخريطة: النقاط عالبَر + دقة جغرافية
 - إخراج بالعربي الشامي، رسائل قصيرة (المستخدم على iPhone)
 - بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه
-- إصلاح الغليف أو إضافة texture لا يعني احتراف. v2 مرفوض بصرياً. لا يُسمّى اختبار v3 بمستوى المرجع ولا يُعتمد كمحرك جاهز دون مراجعة.
+- كل محتوى الفيديو إنكليزي فقط (نصوص + VO)؛ الشامي للتواصل والملاحظات الداخلية. هذا يلغي تعليمات العرض العربي السابقة.
+- المشهد وحدة التصميم؛ لا انبثاق وصندوق افتراضي لكل جملة. لا تكفي texture/shadow/bounce لإثبات الاحتراف. اتجاه v3 معتمد ويعمم كسياسة لا قالب.
+- قبل أي رندر جديد: engine/PRODUCTION_POLICY.json + tools/production_policy.py؛ المحركات القديمة ليست كلها مربوطة تلقائياً فلا تشغّلها دون البوابة.
 
 ## 8) البيئة (بعد أي ريست)
 

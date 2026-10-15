@@ -1,0 +1,33 @@
+{
+  "language": "en",
+  "texts": {
+    "medellin": "MEDELLÍN",
+    "miami": "MIAMI",
+    "country": "COLOMBIA",
+    "eyebrow": "COLOMBIA / 1993",
+    "intro": "THE LAST STRONGHOLD",
+    "name": "PABLO ESCOBAR",
+    "network": "FROM MEDELLÍN, THE NETWORK EXPANDED",
+    "hunt": "THEN THE HUNT CLOSED IN",
+    "ending": "THE END OF THE HUNT",
+    "date": "MEDELLÍN / 1993"
+  },
+  "notes": "Historical connections and convergence routes are symbolic visual-study elements, not documented 1993 routes.",
+  "design": {
+    "unit_of_design": "scene",
+    "generic_popups": [],
+    "claims_3d": true,
+    "depth_features": [
+      "perspective_camera",
+      "world_space_xyz",
+      "height_dependent_projection",
+      "occlusion_or_depth_ordering"
+    ],
+    "anchors": [
+      "Medellin on raised Colombia surface",
+      "Miami on base map plane",
+      "route endpoints coincide with city XYZ"
+    ],
+    "review_note": "Declared features are tested mathematically, not a machine certification of professional art direction."
+  }
+}

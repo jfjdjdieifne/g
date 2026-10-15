@@ -83,7 +83,8 @@ def textured(size, color, seed, strength=17):
     return Image.fromarray(out)
 
 
-def country_mask(code, size=(AW,AH)):
+def country_mask(code, size=None):
+    size = size or (AW, AH)
     mask = Image.new('L',size)
     d = ImageDraw.Draw(mask)
     for poly in polygons(code):
@@ -142,7 +143,9 @@ def font(path,size):
     return FONT_CACHE[key]
 
 
-def text_layer(text,size,color=WHITE,arabic=True):
+def text_layer(text,size,color=WHITE,arabic=False):
+    from production_policy import enforce_display
+    enforce_display({"language":"en","texts":{"rendered_text":text}})
     s=get_display(arabic_reshaper.reshape(text)) if arabic else text
     # Group same-font characters: Arabic connections are never letter-spaced/jittered.
     groups=[]
@@ -165,7 +168,7 @@ def text_layer(text,size,color=WHITE,arabic=True):
 
 
 TEXT_CACHE={}
-def title(img,xy,text,size,color=WHITE,alpha=1,anchor='mm',arabic=True):
+def title(img,xy,text,size,color=WHITE,alpha=1,anchor='mm',arabic=False):
     if alpha<=0:return
     key=(text,size,color,arabic)
     if key not in TEXT_CACHE:TEXT_CACHE[key]=text_layer(text,size,color,arabic)
@@ -204,7 +207,7 @@ def city(img,point,name,t,cam,opacity=1,offset=(48,30)):
     r=7
     d.ellipse((x-r-2,y-r-2,x+r+2,y+r+2),fill=(12,18,42))
     d.ellipse((x-r,y-r,x+r,y+r),fill=WHITE)
-    title(img,(x+offset[0],y+offset[1]),name,48,alpha=opacity,anchor='lm')
+    title(img,(x+offset[0],y+offset[1]),name,30,alpha=opacity,anchor='lm')
 
 
 def bezier(start,end,control,n=180):
@@ -272,28 +275,28 @@ class Demo:
                 d=ImageDraw.Draw(img)
                 d.rounded_rectangle((x-14,y-7,x+14,y+7),radius=4,fill=WHITE,outline=(12,16,30),width=2)
                 d.rectangle((x-5,y-5,x+5,y+5),fill=(29,40,70))
-        city(img,MED,'ميديين',t,cam,offset=(0,0),opacity=0)
+        city(img,MED,'MEDELLÍN',t,cam,offset=(0,0),opacity=0)
         mx,my=point_at(*MED,cam)
         # One label continuously follows the camera, away from caption and routes.
         d=ImageDraw.Draw(img)
         d.ellipse((mx-8,my-8,mx+8,my+8),fill=WHITE,outline=(12,18,42),width=2)
-        title(img,(mx-145+290*wide,my-67),'ميديين',48)
-        city(img,MIA,'ميامي',t,cam,opacity=interval(t,5.1,5.8),offset=(48,18))
+        title(img,(mx-145+290*wide,my-67),'MEDELLÍN',30)
+        city(img,MIA,'MIAMI',t,cam,opacity=interval(t,5.1,5.8),offset=(48,18))
         # Geographical country name, not a selection badge.
         cp=point_at(-72.9,3.2,cam)
-        title(img,cp,'كولومبيا',62,alpha=(1-wide)*.68*(1-interval(t,2.2,2.8)))
-        title(img,(W-84,92),'كولومبيا · ١٩٩٣',32,alpha=.65,anchor='rm')
+        title(img,cp,'COLOMBIA',42,alpha=(1-wide)*.68*(1-interval(t,2.2,2.8)))
+        title(img,(W-84,92),'COLOMBIA / 1993',23,alpha=.65,anchor='rm')
         intro=interval(t,.25,.9)*(1-interval(t,2.3,2.85))
-        title(img,(1480,240),'آخر معقل',90,alpha=intro)
-        title(img,(1480,328),'بابلو إسكوبار',40,alpha=intro*.80)
-        caption=(('من ميديين، امتدت الشبكة',interval(t,3.,3.5)*(1-interval(t,8.7,9.2))),
-                 ('ثم ضاقت دائرة المطاردة',interval(t,11.5,12.1)*(1-interval(t,14.2,14.7))))
-        for txt,alpha in caption:title(img,(W/2,H-105),txt,50,alpha=alpha)
+        title(img,(1480,240),'THE LAST STRONGHOLD',39,alpha=intro)
+        title(img,(1480,328),'PABLO ESCOBAR',24,alpha=intro*.80)
+        caption=(('FROM MEDELLÍN, THE NETWORK EXPANDED',interval(t,3.,3.5)*(1-interval(t,8.7,9.2))),
+                 ('THEN THE HUNT CLOSED IN',interval(t,11.5,12.1)*(1-interval(t,14.2,14.7))))
+        for txt,alpha in caption:title(img,(W/2,H-105),txt,29,alpha=alpha)
         ending=interval(t,14.2,14.85)
         if ending:
             img=Image.blend(img,Image.new('RGB',(W,H),NAVY),ending*.76)
-            title(img,(W/2,H/2-25),'نهاية المطاردة',92,alpha=ending)
-            title(img,(W/2,H/2+94),'ميديين · ١٩٩٣',40,color=GOLD,alpha=ending)
+            title(img,(W/2,H/2-25),'THE END OF THE HUNT',55,alpha=ending)
+            title(img,(W/2,H/2+94),'MEDELLÍN / 1993',26,color=GOLD,alpha=ending)
         arr=np.asarray(img,dtype=np.float32)
         arr*=self.vig[:,:,None]
         introfade=interval(t,0,.5)
@@ -306,6 +309,8 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--preview',action='store_true')
     args=parser.parse_args()
+    from production_policy import enforce_display
+    enforce_display(json.loads((ROOT/'engine/projects/ww2_demo/v4_depth/display.json').read_text()))
     demo=Demo()
     picks=[1.8,7.8,13.8]
     for t in picks:

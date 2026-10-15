@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "74e0cef",
+ "head_commit": "2c14831",
  "studies": [
   {
    "ref": "vaping",
@@ -152,6 +152,21 @@
    "name": "خطة اختبار تصميم v3",
    "drive_id": "1_1Xlh8vRWggFuTUa9mDKNT26NOCRRAki",
    "kind": "file"
+  },
+  {
+   "name": "ديمو WW2-drive v4 (عمق وإنكليزي)",
+   "drive_id": "1xzUM0fyO2T7cyCBUeDlOkbVa4yALg6wq",
+   "kind": "file"
+  },
+  {
+   "name": "خطة اختبار عمق v4",
+   "drive_id": "1fSd6WDq6XpvEFzNITt3KAW4oKIxTp8g2",
+   "kind": "file"
+  },
+  {
+   "name": "سياسة الإنتاج العامة — English / Scene-first",
+   "drive_id": "1eflzeVEYkokGL0dV3BYJMV-Dxr84XLg_",
+   "kind": "file"
   }
  ],
  "engine_state": {
@@ -172,7 +187,7 @@
   ]
  },
  "next_steps": [
-  "مراجعة المستخدم لاختبار خرائط v3 — تحسين التصميم والمشاهد المطلوبة؛ لا اعتماد تلقائي ولا انتقال للمرجع التالي.",
+  "مراجعة المستخدم لنسخة v4 الإنكليزية ذات العمق؛ الحفاظ على اتجاه المشهد المتصل، بلا انتقال تلقائي للمرجع التالي.",
   "PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت",
   "باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
   "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
@@ -189,7 +204,9 @@
   "الخريطة: النقاط عالبَر + دقة جغرافية",
   "إخراج بالعربي الشامي، رسائل قصيرة (المستخدم على iPhone)",
   "بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه",
-  "إصلاح الغليف أو إضافة texture لا يعني احتراف. v2 مرفوض بصرياً. لا يُسمّى اختبار v3 بمستوى المرجع ولا يُعتمد كمحرك جاهز دون مراجعة."
+  "كل محتوى الفيديو إنكليزي فقط (نصوص + VO)؛ الشامي للتواصل والملاحظات الداخلية. هذا يلغي تعليمات العرض العربي السابقة.",
+  "المشهد وحدة التصميم؛ لا انبثاق وصندوق افتراضي لكل جملة. لا تكفي texture/shadow/bounce لإثبات الاحتراف. اتجاه v3 معتمد ويعمم كسياسة لا قالب.",
+  "قبل أي رندر جديد: engine/PRODUCTION_POLICY.json + tools/production_policy.py؛ المحركات القديمة ليست كلها مربوطة تلقائياً فلا تشغّلها دون البوابة."
  ],
  "demos": [
   {
@@ -248,7 +265,7 @@
   {
    "id": "ww2drive_v3_design",
    "name_ar": "v3 — اختبار تصميم خرائط متصلة، غير معتمد",
-   "status": "جاهز لمراجعة المستخدم؛ لا ادعاء أنه بمستوى المرجع",
+   "status": "المستخدم وافق على اتجاه التصميم: أرجل بكتير؛ طلب تعميمه، وتصحيح اللغة إلى English-only وإضافة عمق.",
    "spec": "1920×1080 · 24fps · 16.0 ث · H.264/AAC · 7,806,545 bytes",
    "drive": "1NqNEXeZeNEZToXPue6BbZPecLguo9Dl9",
    "plan_drive": "1_1Xlh8vRWggFuTUa9mDKNT26NOCRRAki",
@@ -258,7 +275,32 @@
     "engine/projects/ww2_demo/v3_design/PLAN.md"
    ],
    "scope": "اختبار خرائط فقط، وليس الديمو السابق بـ11 كرت؛ أزيلت الانبثاقات والختم والعدادات. المسارات رمزية وليست موثقة تاريخياً.",
-   "qc": "32/32 عينة 2fps من الملف النهائي شوهدت، 4/4 اختبارات آلية PASS، كامل 384 فريم فك ترميز بلا خطأ؛ لا ادعاء مراجعة حركة كل فريم بصرياً. صوت RMS -19.6 dBFS وذروة -10.9 dBFS."
+   "qc": "32/32 عينة 2fps من الملف النهائي شوهدت، 4/4 اختبارات آلية PASS، كامل 384 فريم فك ترميز بلا خطأ؛ لا ادعاء مراجعة حركة كل فريم بصرياً. صوت RMS -19.6 dBFS وذروة -10.9 dBFS.",
+   "user_verdict": "اعتماد الاتجاه، لا شهادة اكتمال كل المحركات. النسخة العربية MP4 تاريخية؛ المصدر الحالي يولد إنكليزي."
+  },
+  {
+   "id": "ww2drive_v4_depth_en",
+   "name_ar": "v4 — عمق خرائطي منظور، المحتوى إنكليزي بالكامل",
+   "status": "جاهز لمراجعة المستخدم — امتداد لاتجاه v3 المعتمد",
+   "spec": "1920×1080 · 24fps · 16.00 ث · H264/AAC · 10,880,450 bytes",
+   "drive": "1xzUM0fyO2T7cyCBUeDlOkbVa4yALg6wq",
+   "plan_drive": "1fSd6WDq6XpvEFzNITt3KAW4oKIxTp8g2",
+   "files": [
+    "tools/ww2demo_v4_depth.py",
+    "engine/projects/ww2_demo/v4_depth/display.json",
+    "engine/projects/ww2_demo/v4_depth/PLAN.md",
+    "engine/projects/ww2_demo/v4_depth/QC.md"
+   ],
+   "qc": "11/11 اختبارات PASS؛ كامل 384 فريم فك ترميز بلا خطأ؛ 32/32 عينة 2fps نهائية شوهدت. لا ادعاء تشغيل/مراجعة سمعية بصرية كاملة.",
+   "scope": "منظور XYZ، بلد مرتفع بجوانب هندسية، قوس بارتفاع ومتصل بنقاط المدن، تسميات upright؛ ليس terrain أو globe عاماً."
   }
- ]
+ ],
+ "production_policy": {
+  "path": "engine/PRODUCTION_POLICY.json",
+  "gate": "tools/production_policy.py",
+  "on_screen": "en",
+  "voiceover": "en",
+  "conversation": "ar-SY",
+  "legacy_note": "المخرج يرفق السياسة بالخطة؛ v3/v4 يفرضان اللغة. بقية المحركات القديمة تحتاج استدعاء البوابة/adapter قبل الإنتاج الجديد."
+ }
 }

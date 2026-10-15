@@ -1,0 +1,26 @@
+{
+  "schema": "production-policy/1",
+  "updated": "2026-10-15",
+  "language": {
+    "conversation": "ar-SY",
+    "on_screen": "en",
+    "voiceover": "en",
+    "allow_non_latin_on_screen": false,
+    "note": "English-only video content. Arabic is allowed in internal notes and conversation, never automatically promoted into captions. This overrides prior Arabic-primary demo instructions."
+  },
+  "art_direction": {
+    "unit_of_design": "scene",
+    "default_annotation": "direct_spatial_label",
+    "generic_popup_boxes": "disallowed_by_default",
+    "exception_requires": ["narrative_reason", "reference_evidence"],
+    "continuity": "Persistent world-space anchors across camera/scene beats; avoid reset at every sentence.",
+    "quality": "A technical pass, texture, grain, drop shadow or spring animation is not evidence of professional art direction.",
+    "reference": "WW2 P2 @2:04–2:15; v3 user-approved design direction, not blanket certification of all engines."
+  },
+  "depth": {
+    "mode": "narrative_choice",
+    "required_when_claiming_3d": ["perspective_camera", "world_space_xyz", "height_dependent_projection", "occlusion_or_depth_ordering"],
+    "anti": ["Do not call a flat image with a shadow 3D.", "Do not tilt labels into unreadability.", "Do not add depth unrelated to the narrative."]
+  },
+  "gates": ["English-only display manifest", "spatial anchor invariance", "no text collisions", "no offshore city/convoy markers", "reference evidence", "visual review separate from technical QA"]
+}
