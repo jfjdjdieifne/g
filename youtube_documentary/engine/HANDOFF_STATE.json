@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "aca91e1",
+ "head_commit": "49f61e4",
  "studies": [
   {
    "ref": "vaping",
@@ -185,6 +185,18 @@
    "drive_id": "1Wd71BUBgJlAdhXZtcg3f8oI6XbP6uthD",
    "kind": "file",
    "path": "engine/projects/escobar_hook30/revision2/delivery.json"
+  },
+  {
+   "name": "Escobar Revision2 actual QC + source/use notes",
+   "drive_id": "1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG",
+   "kind": "file",
+   "path": "engine/projects/escobar_hook30/revision2/QC.md"
+  },
+  {
+   "name": "Current HANDOFF — Revision2 actual film delivered",
+   "drive_id": "1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco",
+   "kind": "file",
+   "path": "HANDOFF.md"
   }
  ],
  "engine_state": {
@@ -347,6 +359,8 @@
   "archive_research": "engine/projects/escobar_hook30/archive_research/SOURCE_REVIEW_2026-10-15.md",
   "archive_candidate_handoff": "...a prison of his own making. → This is Pablo Escobar's prison. He helped design it... لا ترتيب أخبار شكلي ولا سلايدات مكان الكلام.",
   "revision_qc": "المراجعة المشفّرة الفعلية مكتملة بعد إصلاح المجسّم وإعادة لقطة المكتب. SHAfdee46267fa2e8aeebd6b6988ab6bd86230c41c75955806d348fdf3dd83c3a14؛ انتظار حكم المستخدم فقط، لا إعادة رندر تلقائية.",
-  "legacy_rejection": "v1 فقط: engine/projects/escobar_hook30/editorial_review.json؛ production_blocked=true"
+  "legacy_rejection": "v1 فقط: engine/projects/escobar_hook30/editorial_review.json؛ production_blocked=true",
+  "handoff_drive": "1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco",
+  "review_notes_drive": "1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG"
  }
 }

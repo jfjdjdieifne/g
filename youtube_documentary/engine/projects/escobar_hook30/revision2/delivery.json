@@ -36,5 +36,13 @@
   "manual_listening_claimed": false,
   "review_record": "evidence/encoded_review.json",
   "source_and_rights": "SOURCES_AND_RIGHTS.md",
-  "legacy_v1_still_rejected_and_blocked": true
+  "legacy_v1_still_rejected_and_blocked": true,
+  "review_notes_drive_id": "1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG",
+  "handoff_drive_id": "1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco",
+  "implementation_commit": "49f61e4",
+  "final_regression": {
+    "passed": 26,
+    "duration_seconds": 5.56,
+    "art_approval": false
+  }
 }

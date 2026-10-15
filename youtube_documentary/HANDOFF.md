@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `aca91e1` · **HEAD الحالي:** `aca91e1`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `49f61e4` · **HEAD الحالي:** `49f61e4`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -62,6 +62,8 @@
 | Escobar Hook30 v1 REJECTED / voice-02 only approved | `engine/projects/escobar_hook30/delivery.json` [درايف](https://drive.google.com/file/d/1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW/view) |
 | Previous HANDOFF — archive acquisition only, historical | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1ZqoJ_Ecquvg8agmi9HssjndMm801t4K7/view) |
 | Escobar First30 English Revision2 — review cut, not user-approved | `engine/projects/escobar_hook30/revision2/delivery.json` [درايف](https://drive.google.com/file/d/1Wd71BUBgJlAdhXZtcg3f8oI6XbP6uthD/view) |
+| Escobar Revision2 actual QC + source/use notes | `engine/projects/escobar_hook30/revision2/QC.md` [درايف](https://drive.google.com/file/d/1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG/view) |
+| Current HANDOFF — Revision2 actual film delivered | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco/view) |
 
 ## المشروع النشط — الهوك الحالي
 
@@ -88,6 +90,8 @@
 - **archive_candidate_handoff:** ...a prison of his own making. → This is Pablo Escobar's prison. He helped design it... لا ترتيب أخبار شكلي ولا سلايدات مكان الكلام.
 - **revision_qc:** المراجعة المشفّرة الفعلية مكتملة بعد إصلاح المجسّم وإعادة لقطة المكتب. SHAfdee46267fa2e8aeebd6b6988ab6bd86230c41c75955806d348fdf3dd83c3a14؛ انتظار حكم المستخدم فقط، لا إعادة رندر تلقائية.
 - **legacy_rejection:** v1 فقط: engine/projects/escobar_hook30/editorial_review.json؛ production_blocked=true
+- **handoff_drive:** [درايف](https://drive.google.com/file/d/1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco/view)
+- **review_notes_drive:** [درايف](https://drive.google.com/file/d/1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG/view)
 
 ## 5) الخطوات الجاية (بالترتيب)
 
