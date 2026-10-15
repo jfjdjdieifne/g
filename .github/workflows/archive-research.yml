@@ -14,20 +14,23 @@ jobs:
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Inspect remaining material for a genuinely usable source
+      - name: Inspect the original broadcaster's matching interview
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p /tmp/archive-research
           cd /tmp/archive-research
           trap 'echo "::error::Research command failed at line $LINENO"' ERR
-          curl --fail --location --retry 1 --connect-timeout 15 --max-time 180 'https://archive.org/download/youtube-jR7_c8KeGZI/jR7_c8KeGZI.mkv' -o source.mkv
           command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y ffmpeg)
-          ffprobe -v error -show_format -show_streams -of json source.mkv > probe.json
-          sha256sum source.mkv > source.sha256
-          ffmpeg -y -v error -ss 1660 -i source.mkv -t 180 -vf "scale='min(854,iw)':-2" -c:v libx264 -preset fast -crf 26 -maxrate 700k -bufsize 1400k -c:a aac -b:a 96k middle_1660.mp4
-          printf '%s\n' 'RESEARCH ONLY. Source 2625.328s. Interview-opening excerpt offset 1660s. Original program/date/rights unverified. No watermark removal. Not a delivery.' > NOTICE.txt
-          tar -czf research.tar.gz middle_1660.mp4 probe.json source.sha256 NOTICE.txt
+          python3 -m pip -q install yt-dlp
+          yt-dlp --no-playlist --socket-timeout 20 --retries 1 --download-sections '*0-120' --force-keyframes-at-cuts -f 'best[height<=720]/best' --write-info-json -o 'official.%(ext)s' 'https://charlierose.com/videos/15564'
+          input=$(find . -maxdepth 1 -type f \( -name 'official.mp4' -o -name 'official.webm' -o -name 'official.mkv' \) | head -1)
+          test -n "$input"
+          ffprobe -v error -show_format -show_streams -of json "$input" > probe.json
+          sha256sum "$input" > source.sha256
+          ffmpeg -y -v error -i "$input" -t 120 -vf "scale='min(854,iw)':-2" -c:v libx264 -preset fast -crf 24 -maxrate 900k -bufsize 1800k -c:a aac -b:a 128k original_opening.mp4
+          printf '%s\n' 'RESEARCH ONLY. Official program page https://charlierose.com/videos/15564. Program catalog date November 12, 1992 independently matches Reelin ID58597. Public playback does not grant a publication license. No watermark removal. Not a delivery.' > NOTICE.txt
+          tar -czf research.tar.gz original_opening.mp4 official.info.json probe.json source.sha256 NOTICE.txt
       - name: Unreferenced research retrieval (no media commit or release)
         id: stash
         env:
