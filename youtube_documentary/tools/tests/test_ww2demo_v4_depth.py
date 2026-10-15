@@ -64,6 +64,7 @@ class DepthGates(unittest.TestCase):
         self.assertFalse(report['render_ready'])
         script['display_manifest']=v.DISPLAY
         report=director.plan(script,director.load_json(director.TECH_DB)['cards'],director.load_json(director.SOUND_DB),director.vocab_names())
-        self.assertTrue(report['render_ready'])
+        self.assertFalse(report['render_ready'])  # Display alone no longer supplies documentary materials.
+        self.assertTrue(report['material_errors'])
 
 if __name__=='__main__':unittest.main()

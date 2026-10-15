@@ -64,3 +64,7 @@ See `SOURCES_AND_RIGHTS.md`. This short, acknowledged quotation is used in an ed
 ## Current delivery
 
 [Open the revised30-second film](https://drive.google.com/file/d/1Wd71BUBgJlAdhXZtcg3f8oI6XbP6uthD/view). Sampled encoded review complete; user visual approval and publication rights remain open. See `QC.md` and `delivery.json`. Office macro uses a corrected drawer-detail LOD of the same staged furniture. Initial encoded artifact was withheld and replaced, not delivered.
+
+## User feedback after viewing,15October2026
+
+User strongly liked the progress,3D and shots, but wants stronger premise/script, real prison photographs/footage and richer meaningful material variety. Not approval of the whole script or schematic-dominated opening. Exact recording/delivered MP4 untouched. See `USER_FEEDBACK_2026-10-15.json` and `../next_intro/DIRECTION.md`; the latter is new direction/research, not an approved script or rendered third cut.

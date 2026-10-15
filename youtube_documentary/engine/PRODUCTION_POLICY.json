@@ -53,7 +53,9 @@
     "visual review separate from technical QA",
     "No default decorative word captions",
     "Archive-dependent edit blocked until original clips are acquired, viewed and heard",
-    "No narrator-free slide filler disguised as archive-led storytelling"
+    "No narrator-free slide filler disguised as archive-led storytelling",
+    "Source/idea material plan for each documentary beat before new director render readiness",
+    "Generated/reference-derived imagery never masquerades as authentic archive"
   ],
   "narration": {
     "language": "en",
@@ -84,5 +86,16 @@
     "before_build": "Understand the narrative function and verify exact source relevance before choosing assets or motion. Anticipate why this specific scene might fail.",
     "before_delivery": "Inspect actual encoded scenes and transitions, source-audio meaning, image selection, staging, rhythm and small-screen readability. Fix foundational errors before user review.",
     "not_a_certificate": "Tests, 3D and checkboxes do not certify professional editing. Record actual observations and uncertainties; do not claim viewing/listening that did not occur."
+  },
+  "documentary_materials": {
+    "protocol": "engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md",
+    "applies_to": "Every film and subject, not just Escobar or an opening.",
+    "selection_order": "Narrative premise and real source discovery inform each other before final script/timing; never fill a locked script with whichever model is easiest to render.",
+    "real_first": "Prefer exact-place/person/event photographs and footage where they can show the subject. Use models for mechanisms, spatial explanations and meaningful transitions, not to replace obtainable documentary material wholesale.",
+    "derived_imagery": "If a required view is unavailable, inspect a real visual reference first; preserve evidenced features, log invented/unknown areas, disclose generation/reconstruction, and choose layered2.5D/projection or true3D as justified. Never fabricate historical scans, quotes or evidence. Never erase watermarks or replace marked footage by generative watermark removal.",
+    "quantity": "No arbitrary creative asset-count ceiling:100 or1000 generated assets are acceptable if necessary. Not a quota or authorization to generate blindly; review every asset/shot and keep large media out of Git.",
+    "variety": "Mix actual reports, press, interviews, real-site visuals, narrator reactions, motivated typography and explanatory depth according to meaning. No obligatory media count, order or one-template montage.",
+    "press_word_match": "A user-suggested option, not a newly studied reference card or mandatory ending: align an actually present name/word across genuine inspected scans; preserve original text/context, provenance and readability; connect to the next spoken idea.",
+    "duration": "Develop the premise and source exchange before fixing opening length.30seconds is no longer an artistic ceiling for planning, but no new runtime, new VO performance or full documentary is automatically approved."
   }
 }

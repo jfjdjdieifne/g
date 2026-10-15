@@ -32,6 +32,7 @@ import sys
 from pathlib import Path
 
 from production_policy import display_errors, design_errors
+from documentary_materials import material_errors
 
 ROOT = Path(__file__).resolve().parents[1]
 TECH_DB = ROOT / "engine" / "database" / "technique_db.json"
@@ -441,6 +442,10 @@ def plan(script, tech, sound, voc, max_beats=4, max_dur=18.0):
     report["render_ready"] = (bool(report["display_manifest"])
                               and not display_errors(report["display_manifest"])
                               and not design_errors(report["display_manifest"].get("design", {"unit_of_design":"scene"})))
+    report["documentary_material_plan"] = script.get("documentary_material_plan")
+    report["material_errors"] = material_errors(report["documentary_material_plan"], [r["n"] for r in rows])
+    report["render_ready"] = report["render_ready"] and not report["material_errors"]
+    report["readiness_scope"] = "Declared display/design/material prerequisites only; not actual viewing, rights clearance, user approval or art quality."
     # Narrative text may stay Arabic internally. It is never a fallback caption.
     report["display_note"] = "Use the English display manifest; never render rows[].text as an implicit caption."
     return report
@@ -461,6 +466,11 @@ def validate(report, novelty_budget=0.25):
             problems.extend(design_errors(report["display_manifest"]["design"]))
     else:
         warns.append("English display manifest missing: planning only, NOT render-ready; do not use narrative text as captions.")
+    materials = report.get("documentary_material_plan")
+    if materials is None:
+        warns.append("Source/idea material plan missing: planning only, NOT render-ready. Graphics capability is not documentary substance.")
+    else:
+        problems.extend(material_errors(materials, [r["n"] for r in rows]))
     seen_cut_repeat = []
     for r in rows[:-1]:
         if not r["continuity"]["out"]:
@@ -529,6 +539,7 @@ def write_outputs(report, outdir: Path, novelty_budget=0.25):
          f"> مولّدة بالمخرج الآلي (`tools/director.py`) — **بلا عشوائية**: كل قرار بقاعدة وبدليل.",
          f"> النمط: **{report['pacing_mode']}** · اللوحة: **{report['style_profile'].get('palette','-')}**", "",
          "## ملخص", "",
+         f"- جاهزية المصدر/التصميم المصرّحة: {report.get('render_ready', False)} — ليست مشاهدة أو ترخيصاً أو شهادة فنية.",
          f"- المدة التقديرية: **{S['total_s']}ث** · اللقطات (بلوكات): **{report['blocks']}** · النبضات: **{report['beats']}**",
          f"- متوسط اللقطة: **{S['avg_shot_s']}ث** (هدف {S['pacing_target'][0]}–{S['pacing_target'][1]}ث)",
          f"- بلوكات «لقطة وحدة»: **{S['one_take_blocks']}** (منها **{S['multi_scene_one_shot']}** بمشاهد متعددة داخل لقطة واحدة)",

@@ -1,6 +1,6 @@
 {
   "version": "revision2",
-  "status": "editorial_review_cut_delivered_not_user_approved",
+  "status": "delivered_positive_3d_feedback_script_and_material_revision_requested",
   "date": "2026-10-15",
   "scope_seconds": 30,
   "filename": "Escobar_First30_English_Revision2.mp4",
@@ -44,5 +44,6 @@
     "passed": 26,
     "duration_seconds": 5.56,
     "art_approval": false
-  }
+  },
+  "user_feedback": "USER_FEEDBACK_2026-10-15.json"
 }

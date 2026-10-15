@@ -31,3 +31,7 @@ Record a short concrete answer to each question:
 ## Records
 
 Keep per-scene source/timecode decisions and actual visual-review findings in the film profile. The common production policy links to this document. No new full documentary or reference study is authorised by improving this workflow.
+
+## Material/idea review added after revision2 feedback
+
+Follow `DOCUMENTARY_MATERIALS_AND_IDEAS.md` for every film. Ask whether attractive generated/model shots have displaced available real subject material. Review the premise and editorial variety before polishing cameras; an excellent model does not repair a weak script. Check provenance, temporal context, authentic spoken handoffs and genuinely present press words. Photo-derived generation needs inspected references, preserved-feature/unknown-area records and disclosure; it is not archive or a watermark-removal workaround. No fixed asset quota or fixed intro length replaces judgement.

@@ -96,7 +96,7 @@
       "failure_to_avoid": "Title card, blank-slide hold, implying the question has already been answered"
     }
   ],
-  "remaining_delivery_gate": "Actual sampled encoded visual review complete. User judgment of this new cut and separate publication-rights assessment remain; no full documentary authorization.",
+  "remaining_delivery_gate": "Revision2 delivered and judged: positive3D/shot feedback with stronger script/ideas/real-material revision requested. See next_intro/DIRECTION.md; do not rerender the same monologue. Publication rights still open.",
   "initial_encoded_review": {
     "sha256": "172a48b9190d859433855777d6de3bf43950dd6fce896b6a92180adfcebb77a5",
     "all_120_chronological_samples_viewed": true,
@@ -104,5 +104,7 @@
     "finding": "Office tabletop seam required correction; initial encoding not delivered."
   },
   "final_encoded_sha256": "fdee46267fa2e8aeebd6b6988ab6bd86230c41c75955806d348fdf3dd83c3a14",
-  "final_review_evidence": "evidence/encoded_review.json"
+  "final_review_evidence": "evidence/encoded_review.json",
+  "user_feedback": "USER_FEEDBACK_2026-10-15.json",
+  "scoped_visual_feedback": "User strongly liked3D, shots and progress. This does not approve the opening script, material variety or a schematic-first treatment."
 }
