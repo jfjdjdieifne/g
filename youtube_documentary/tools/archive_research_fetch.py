@@ -14,11 +14,12 @@ import time
 import urllib.request
 from pathlib import Path
 
-p=argparse.ArgumentParser();p.add_argument('--run',type=int,required=True);p.add_argument('--prefix',default='Research object ');p.add_argument('--out',type=Path,required=True);args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--run',type=int,required=True);p.add_argument('--prefix',default='Research object ');p.add_argument('--job',help='Exact matrix job name, when a run has several research objects');p.add_argument('--out',type=Path,required=True);args=p.parse_args()
 base='https://api.github.com/repos/jfjdjdieifne/g'
 for attempt in range(28):
     with urllib.request.urlopen(base+f'/actions/runs/{args.run}/jobs',timeout=20) as r:data=json.load(r)
     jobs=data.get('jobs',[])
+    if args.job:jobs=[j for j in jobs if j['name']==args.job]
     for job in jobs:
         for step in job.get('steps',[]):
             if not step['name'].startswith(args.prefix):continue

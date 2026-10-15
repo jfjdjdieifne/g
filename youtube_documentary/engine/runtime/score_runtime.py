@@ -5,6 +5,9 @@ import numpy as np
 from film_runtime import decode,rms,wav
 
 def mix(plan,build,bpm=144):
+    if plan.get('score_sections'):
+        from long_score import mix_sections
+        return mix_sections(plan,build)
     sr=48000;D=plan['frames']/plan['fps'];n=round(D*sr);t=np.arange(n)/sr;rng=np.random.default_rng(506)
     dialog=np.zeros(n);music=np.zeros(n);fx=np.zeros(n);audit=[]
     for c in plan['audio']:

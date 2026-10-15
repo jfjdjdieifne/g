@@ -1,0 +1,64 @@
+{
+  "date_local": "2026-10-15",
+  "status": "delivered_full_film_review_cut_pending_user_feedback",
+  "folder_id": "1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC",
+  "film": {
+    "name": "Escobar_Full_Film_Review.mp4",
+    "drive_id": "1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw",
+    "bytes": 96129645,
+    "sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14",
+    "md5": "7ef7af1ca8d833c938265ee75c797468",
+    "drive_md5_verified": true,
+    "seconds": 410.4166666666667,
+    "frames": 9850,
+    "fps": 24,
+    "size": [
+      1920,
+      1080
+    ]
+  },
+  "packages": [
+    {
+      "name": "Escobar_Full_Film_Project_Recovery.zip",
+      "bytes": 23250535,
+      "sha256": "6e86ef02e3b7891d54d09267ff6b20aa848b90d7c217fe513123d3fc388d57a6",
+      "md5": "76f7c65277d3cf2c6d6fb791f393083b",
+      "entries": 143,
+      "purpose": "Profile, processed narration, raw-take timing/ASR, common runtime/tools/tests, stills, fonts/license, geo data and QC metadata. Not a self-contained archive of research videos/raw WAVs; recovery links and extraction paths are in the project README. Upload receipt delivery.json is intentionally external to avoid a self-referential archive hash.",
+      "drive_id": "1UQiCf8rn5pXUhHXhwp7TdT_usLAz5D2H",
+      "drive_md5_verified": true
+    },
+    {
+      "name": "Escobar_Final_Encoded_Review_Evidence.zip",
+      "bytes": 59179843,
+      "sha256": "41ff1f233f2374b9b665353cec431694c68f9d505589c072d78acc68157bbad3",
+      "md5": "99e74bb906a8f086a4a4938c99695810",
+      "entries": 1658,
+      "purpose": "Actual final encoded sample grids and sheets, final audit, exact-prefix proof, audio identity, fallible ASR and tests. Review completion covers the documented samples, not every24fps frame, manual listening, user approval or rights. Earlier corrected_half_sheet files retained in encoded_review refer to the predecessor encode; final_changed files refer to the final encode.",
+      "drive_id": "1FwiyXZgRFJJ36Jii7B3K1UetXiO2Eb4s",
+      "drive_md5_verified": true
+    },
+    {
+      "name": "Escobar_Review_Provenance.zip",
+      "bytes": 86471377,
+      "sha256": "37d271efe1b59daf8ca3ee37340f7941b37e3e28fdaa1c57bf683d360f5fd0f0",
+      "md5": "2cb58f2991066e6ec421c88266b5d2c5",
+      "entries": 1691,
+      "purpose": "Predecessor evidence used in exact-index image-hash reuse. ACTUALLY INSPECTED: all initial26 half sheets; then all7 corrected half sheets,15pre-final join sheets and9pre-final motion sheets; source-native quote-tail sheet. Other initially generated join/motion sheets were NOT inspected and are not counted as review. Final changed27half/19join samples are in the final evidence package.",
+      "drive_id": "1s3igyX80z99SyoBGns2FTkveOsWj6oon",
+      "drive_md5_verified": true
+    }
+  ],
+  "original_sources": "source_retrieval.json: three previously uploaded ZIPs, not uploaded again",
+  "raw_narration_drive_zip": "1NxeTyKABBS35oTOBq__oOyfCjy4wWL5J",
+  "sharing_changes_performed": false,
+  "manual_listening_claimed": false,
+  "full_body_user_approved": false,
+  "publication_rights_cleared": false,
+  "handoff": {
+    "drive_id": "1j9dmLjqJ7g-Df_vsqsArA3WfDnv6uL4_",
+    "bytes": 19341,
+    "md5": "98fa9ed6f4f7789590c09b2e3e23ff9e",
+    "drive_md5_verified": true
+  }
+}

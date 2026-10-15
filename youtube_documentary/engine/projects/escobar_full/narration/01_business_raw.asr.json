@@ -1,0 +1,895 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/escobar_film/voice/01_business_raw.wav",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 0.57,
+          "start": 0.12,
+          "word": "start"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.81,
+          "start": 0.6,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.93,
+          "start": 0.81,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.68,
+          "start": 0.93,
+          "word": "business"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.58,
+          "start": 2.22,
+          "word": "because"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.67,
+          "start": 2.58,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.09,
+          "start": 2.67,
+          "word": "private"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.72,
+          "start": 3.09,
+          "word": "zoo"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.99,
+          "start": 3.87,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.08,
+          "start": 3.99,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.5,
+          "start": 4.08,
+          "word": "piles"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.65,
+          "start": 4.5,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.28,
+          "start": 4.65,
+          "word": "cash"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.82,
+          "start": 5.52,
+          "word": "came"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.3,
+          "start": 5.82,
+          "word": "later"
+        }
+      ],
+      "text": "start with the business because the private zoo and the piles of cash came later"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 7.32,
+          "start": 7.17,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.38,
+          "start": 7.32,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.74,
+          "start": 7.38,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.58,
+          "start": 7.74,
+          "word": "seventies"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.42,
+          "start": 8.97,
+          "word": "demand"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.57,
+          "start": 9.42,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.35,
+          "start": 9.57,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.89,
+          "start": 10.65,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.49,
+          "start": 10.89,
+          "word": "growing"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.76,
+          "start": 11.61,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.82,
+          "start": 11.76,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.18,
+          "start": 11.82,
+          "word": "united"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.81,
+          "start": 12.18,
+          "word": "states"
+        }
+      ],
+      "text": "in the nineteen seventies demand for cocaine was growing in the united states"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 14.37,
+          "start": 13.62,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.0,
+          "start": 14.55,
+          "word": "didn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.75,
+          "start": 15.12,
+          "word": "invent"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.17,
+          "start": 15.9,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.71,
+          "start": 16.17,
+          "word": "demand"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.31,
+          "start": 17.16,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.585288,
+          "start": 17.31,
+          "word": "helped"
+        },
+        {
+          "conf": 0.62538,
+          "end": 17.67,
+          "start": 17.585288,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.94,
+          "start": 17.67,
+          "word": "build"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.0,
+          "start": 17.94,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.6,
+          "start": 18.0,
+          "word": "system"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.17,
+          "start": 19.02,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.35,
+          "start": 19.17,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.65,
+          "start": 19.35,
+          "word": "feed"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.92,
+          "start": 19.65,
+          "word": "it"
+        },
+        {
+          "conf": 0.501747,
+          "end": 20.58,
+          "start": 20.22,
+          "word": "coca"
+        },
+        {
+          "conf": 0.57577,
+          "end": 21.06,
+          "start": 20.58,
+          "word": "paste"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.42,
+          "start": 21.12,
+          "word": "came"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.66,
+          "start": 21.42,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.08,
+          "start": 21.66,
+          "word": "ending"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.68,
+          "start": 22.08,
+          "word": "countries"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.19,
+          "start": 22.92,
+          "word": "such"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.31,
+          "start": 23.19,
+          "word": "as"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.94,
+          "start": 23.31,
+          "word": "peru"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.27,
+          "start": 24.09,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.84,
+          "start": 24.27,
+          "word": "bolivia"
+        }
+      ],
+      "text": "escobar didn't invent that demand he helped to build a system that could feed it coca paste came from ending countries such as peru and bolivia"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 26.37,
+          "start": 25.68,
+          "word": "laboratories"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.46,
+          "start": 26.37,
+          "word": "in"
+        },
+        {
+          "conf": 0.567058,
+          "end": 26.94,
+          "start": 26.46,
+          "word": "colombia"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.54,
+          "start": 26.94,
+          "word": "processed"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.75,
+          "start": 27.54,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.04,
+          "start": 28.32,
+          "word": "pilots"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.22,
+          "start": 29.07,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.0,
+          "start": 29.22,
+          "word": "smugglers"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.75,
+          "start": 30.27,
+          "word": "moved"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.9,
+          "start": 30.78,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.32,
+          "start": 30.9,
+          "word": "finished"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.71,
+          "start": 31.35,
+          "word": "drug"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.19,
+          "start": 31.71,
+          "word": "north"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.0,
+          "start": 32.85,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.18,
+          "start": 33.0,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.45,
+          "start": 33.18,
+          "word": "wasn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.78,
+          "start": 33.491711,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.08,
+          "start": 33.78,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.38,
+          "start": 34.08,
+          "word": "doing"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.98,
+          "start": 34.38,
+          "word": "everything"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.55,
+          "start": 35.28,
+          "word": "other"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.42,
+          "start": 35.55,
+          "word": "traffickers"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.17,
+          "start": 36.69,
+          "word": "including"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.306956,
+          "start": 37.17,
+          "word": "the"
+        },
+        {
+          "conf": 0.702033,
+          "end": 37.73269,
+          "start": 37.41,
+          "word": "show"
+        },
+        {
+          "conf": 0.454536,
+          "end": 38.01,
+          "start": 37.74,
+          "word": "us"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.16,
+          "start": 38.01,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.64,
+          "start": 38.16,
+          "word": "carlos"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.18,
+          "start": 38.64,
+          "word": "later"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.87,
+          "start": 39.54,
+          "word": "brought"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.08,
+          "start": 39.87,
+          "word": "their"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.35,
+          "start": 40.08,
+          "word": "own"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.98,
+          "start": 40.35,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.91,
+          "start": 41.34,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.45,
+          "start": 42.24,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.11,
+          "start": 42.45,
+          "word": "routes"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.01,
+          "start": 43.56,
+          "word": "later"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.28,
+          "start": 44.01,
+          "word": "help"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.76,
+          "start": 44.28,
+          "word": "develop"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.85,
+          "start": 44.76,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.33,
+          "start": 44.85,
+          "word": "bahamas"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.84,
+          "start": 45.33,
+          "word": "connection"
+        }
+      ],
+      "text": "laboratories in colombia processed it pilots and smugglers moved the finished drug north and this wasn't one man doing everything other traffickers including the show us and carlos later brought their own people money and routes later help develop the bahamas connection"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 45.93,
+          "start": 45.84,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.04,
+          "start": 46.53,
+          "word": "larger"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.64,
+          "start": 47.04,
+          "word": "shipments"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.82,
+          "start": 47.64,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.21,
+          "start": 47.82,
+          "word": "arrive"
+        },
+        {
+          "conf": 0.755975,
+          "end": 48.54,
+          "start": 48.21,
+          "word": "there"
+        },
+        {
+          "conf": 0.780798,
+          "end": 49.29,
+          "start": 49.02,
+          "word": "then"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.56,
+          "start": 49.29,
+          "word": "move"
+        },
+        {
+          "conf": 0.526607,
+          "end": 50.19,
+          "start": 49.59,
+          "word": "onward"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.43,
+          "start": 50.25,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.88,
+          "start": 50.43,
+          "word": "smaller"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.45,
+          "start": 50.88,
+          "word": "loads"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.41,
+          "start": 52.11,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.01,
+          "start": 52.41,
+          "word": "changes"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.13,
+          "start": 53.01,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.58,
+          "start": 53.13,
+          "word": "scale"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.73,
+          "start": 53.58,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.82,
+          "start": 53.73,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.42,
+          "start": 53.82,
+          "word": "story"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.9,
+          "start": 54.72,
+          "word": "you're"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.11,
+          "start": 54.9,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.59,
+          "start": 55.11,
+          "word": "following"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.65,
+          "start": 55.59,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.01,
+          "start": 55.65,
+          "word": "street"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.37,
+          "start": 56.01,
+          "word": "dealer"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.52,
+          "start": 56.37,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.58,
+          "start": 56.52,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.91,
+          "start": 56.58,
+          "word": "lucky"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.42,
+          "start": 56.91,
+          "word": "break"
+        },
+        {
+          "conf": 0.750116,
+          "end": 58.05,
+          "start": 57.87,
+          "word": "you're"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.47,
+          "start": 58.05,
+          "word": "looking"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.65,
+          "start": 58.47,
+          "word": "at"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.68,
+          "start": 58.65,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.16,
+          "start": 58.68,
+          "word": "supply"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.58,
+          "start": 59.16,
+          "word": "chain"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.45,
+          "start": 60.27,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.84,
+          "start": 60.45,
+          "word": "every"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.41,
+          "start": 60.84,
+          "word": "successful"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.98,
+          "start": 61.41,
+          "word": "shipment"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.61,
+          "start": 62.28,
+          "word": "gave"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.82,
+          "start": 62.61,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.36,
+          "start": 62.82,
+          "word": "network"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.63,
+          "start": 63.39,
+          "word": "more"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.05,
+          "start": 63.63,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.23,
+          "start": 64.08,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.5,
+          "start": 64.23,
+          "word": "keep"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.92,
+          "start": 64.5,
+          "word": "itself"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.34,
+          "start": 64.92,
+          "word": "running"
+        }
+      ],
+      "text": "a larger shipments could arrive there then move onward in smaller loads that changes the scale of the story you're not following a street dealer with a lucky break you're looking at a supply chain and every successful shipment gave that network more money to keep itself running"
+    }
+  ]
+}

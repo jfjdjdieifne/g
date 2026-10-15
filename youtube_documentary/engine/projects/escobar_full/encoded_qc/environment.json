@@ -1,0 +1,14 @@
+{
+  "python": "3.11.2",
+  "platform": "Linux-6.1.158+-x86_64-with-glibc2.36",
+  "numpy": "2.4.6",
+  "opencv": "5.0.0",
+  "Pillow": "12.3.0",
+  "imageio_ffmpeg": "0.6.0",
+  "ffmpeg_version": "ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers",
+  "fonts": {
+    "DejaVuSans.ttf": "abdc775b21b1bc470d50c97e790d276f2054b7504e56e5bd3e64f48d68582322",
+    "DejaVuSans-Bold.ttf": "0d977336a6d5fba34eab8e3199eb218327161b5143749f802982c2bc34df0c96"
+  },
+  "font_note": "Same system DejaVu files resolved by Pillow during production, now vendored unchanged with their license for recovery."
+}

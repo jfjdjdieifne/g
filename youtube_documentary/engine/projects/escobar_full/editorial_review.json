@@ -1,0 +1,42 @@
+{
+  "production_blocked": false,
+  "status": "full_film_review_cut_ready_not_user_approved",
+  "approved_opening_locked": true,
+  "pace_user_authorized": "V3 slightly slower; proceed",
+  "video_sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14",
+  "bytes": 96129645,
+  "seconds": 410.4166666666667,
+  "body_shots": 97,
+  "source_visual_review": "Selected actual source images, contextual fine windows and encoded samples inspected; no claim to have watched whole source programmes.",
+  "manual_visual_review_complete": true,
+  "visual_review_scope": "All half-second samples, encoded join samples, and authored movement at12fps. Exact-hash reuse of previously actually viewed samples plus actual inspection of every changed/new sample; not a claim to have viewed all24fps or listened.",
+  "final_evidence_counts": {
+    "half": 821,
+    "join": 481,
+    "motion": 271
+  },
+  "manual_listening_claimed": false,
+  "full_body_user_approved": false,
+  "publication_rights_cleared": false,
+  "observations": [
+    "Half-second grid covered through exact-image provenance: initial821 viewed,194 corrected samples viewed, then27 further changed samples viewed; final794 half-samples exactly match the preceding inspected encode.",
+    "All15 previous join sheets inspected.19 changed/new join samples actually inspected after the last correction;462 final join images match the preceding inspected encode.",
+    "All9 motion sheets/271samples actually inspected: full map routes, depth photograph, locked opening seam, speaker reveals and final fade. All271 final motion images hash-identical to those viewed.",
+    "Corrected source-native leaks: aftermath begins at3949.5, targeted-property clip at4369.3. Actual final joins now show rubble and property, not the preceding plane/interview.",
+    "Murphy picture exits before the native party-photo cut. Unchanged quote tail continues over the genuine La Catedral office; no frozen talking face or retimed witness.",
+    "Final ending shows the dated later city context and fade, not a museum interview. No unrelated-speaker leak observed in the inspected final samples.",
+    "Young Escobar portrait at source610 supported by source600\u2013625 context ASR explicitly discussing conversations with Pablo and early criminal activity; ASR is corroborating context, not listening or biometric proof."
+  ],
+  "audio_review": "Fallible Vosk transcript read and loudness measured. ASR ran on previous picture encode ba39427...ec823; decoded stereo PCM is exactly identical to final encode, hash and both video SHAs in encoded_qc/final_audio_identity.json. No manual listening.",
+  "targeted_tests": {
+    "passed": 31,
+    "modules": [
+      "test_escobar_full_profile",
+      "test_speech_pacing",
+      "test_sequence_intro5",
+      "test_documentary_materials"
+    ],
+    "all_repository_tests_claimed": false
+  },
+  "review_is_not_artistic_or_user_approval": true
+}

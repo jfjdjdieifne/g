@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `e051ce4` · **HEAD الحالي:** `e051ce4`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `04d9048` · **HEAD الحالي:** `04d9048`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -17,6 +17,7 @@
 | `rulebook` | engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md (29 قسم — آخرها إضافات P2) |
 | `engine/runtime/xyz_scene.py + blender_xyz.py` | Runtime XYZ مشترك + backend Cycles جزئي؛ ملف إسكوبار profile إخراج، مو engine مستقل لكل فيلم. |
 | `engine/runtime/photo_depth.py` | كاميرا XYZ مشتركة + صفحات وثائق وparallax للصور الأصلية؛2.5Dمصرّح عنه، مو غرفة سجن ولا إعادة بناء تاريخية مساحية. |
+| `engine/runtime/sequence_segments.py + geo_route.py + long_score.py + speech_pacing.py` | رندرومكسوخرائطوتشكيلإيقاعمُشترك؛ profileإسكوبارمنفصل. الأرشيفوالشهودبسرعتهمالأصلية. أدواتreview/joinتدعمالفيلمالكاملوتثبتالافتتاحيةستيريو. |
 
 ## 2) حالة المراجع (الدراسة فريم-فريم)
 
@@ -79,34 +80,40 @@
 | Escobar Revision5 — new opening33.125s, awaiting review |  [درايف](https://drive.google.com/file/d/1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI/view) |
 | Escobar Revision5 — sources and encoded review packet |  [درايف](https://drive.google.com/file/d/1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0/view) |
 | Escobar Revision5 — actual QC and limitations | `engine/projects/escobar_intro5/QC.md` [درايف](https://drive.google.com/file/d/1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ/view) |
+| Escobar — الفيلم الكامل6:50 | `engine/projects/escobar_full/README.md` [درايف](https://drive.google.com/file/d/1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw/view) |
+| Escobar — المشروع وملفات الاستعادة | `engine/projects/escobar_full/delivery.json` [درايف](https://drive.google.com/file/d/1UQiCf8rn5pXUhHXhwp7TdT_usLAz5D2H/view) |
+| Escobar — فحص الترميز النهائي | `engine/projects/escobar_full/FINAL_QC.md` [درايف](https://drive.google.com/file/d/1FwiyXZgRFJJ36Jii7B3K1UetXiO2Eb4s/view) |
+| Escobar — سلسلة أدلة المراجعة |  [درايف](https://drive.google.com/file/d/1s3igyX80z99SyoBGns2FTkveOsWj6oon/view) |
 
 ## المشروع النشط — الهوك الحالي
 
 - **project:** engine/projects/escobar_intro5
-- **status:** المستخدم اعتمد Revision5؛ الافتتاحيةمحفوظة. باقيالفيلممأذون4–9دقائقلكنإيقاعالجسمموقوفللتصحيح.
-- **scope:** افتتاحيةفقط33.125ث، مو سقف30ث ولا تفويض لباقي الوثائقي؛ بلا حرق مصير/هروب/نهايات.
+- **status:** Revision5معتمدةومحفوظةكماهي. الفيلمالكامل6:50أُنجزوسُلّمللمراجعة؛ بانتظاررأيالمستخدمبالفيلمالكامل.
+- **scope:** الافتتاحيةالمعتمدة33.125ثوبلاحرقللمصير. التفويضاللاحقيشملالفيلمالكامل4–9دقائقوسمحوصولالقصةللسجنوالهروبوالنهاية.
 - **video_drive:** [درايف](https://drive.google.com/file/d/1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI/view)
 - **voice:** هويةvoice-02المعتمدة،3تسجيلاتجديدةمأذونةومحفوظة؛ لاatempoولاspeedupعام. أداءالتسجيلاتالجديدةللمراجعة.
 - **source_truth:** شهادتانمنسياقيْمقابلةمختلفينبنفسFRONTLINE1995، مو قنواتمختلفة. BBC2013/AJ2018صورمتَحركةمؤرخة؛ لااختلاقمتحدثينولاlip-sync.
 - **design:** 17مقطعًابصريًامؤلَّفًا؛4صور/وثيقةكلواحدةمرة، أغلبالافتتاحيةأرشيفمتحرك. حركةالاسم/الماركرالقديمةملغاة؛ عنواننهائيواحد.
 - **review:** شوهدت67عينة0.5ث+49حدود+107حركةمنالترميزالنهائيب16لوحة؛795فريمdecode،41اختبارميكانيكيPASS. لاادعاءسماعولااستحقاقفنيآلي.
 - **rights:** مصادرحقيقيةلكنحقوقالنشرغيرمُخلّصة؛ مراجعةداخليةفقط.
-- **next:** انتظررأيهباختبارV3المعالج15.855ث؛ كلهبالهويةنفسها، التبطئةلـanAmericanprisonفقط. لا تعممسرعةغيرمعتمدة.
+- **next:** Full review film delivered. Await actual user feedback; do not rerender or ask the old pace question. Read engine/projects/escobar_full/README.md and delivery.json for recovery.
 - **source_packet_drive:** [درايف](https://drive.google.com/file/d/1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0/view)
 - **qc_notes_drive:** [درايف](https://drive.google.com/file/d/1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ/view)
 - **pace_demo_drive:** [درايف](https://drive.google.com/file/d/1da--B-ytj1ErASq9SUb-zFS6XCnNnk2O/view)
+- **full_film_status:** delivered_review_cut_pending_user_feedback
+- **full_film_video_drive:** [درايف](https://drive.google.com/file/d/1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw/view)
+- **full_film_project_drive:** [درايف](https://drive.google.com/file/d/1UQiCf8rn5pXUhHXhwp7TdT_usLAz5D2H/view)
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. انتظررأيالمستخدمعلىاختبارالصوتالمسرّع15.855ث. لا تولّدباقيالفويساتبالإيقاعالمرفوض. الافتتاحيةمعتمدةومحفوظةSHAمطابق؛ بقيةالفيلم4–9دقائق مأذونة.
-2. PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت
-3. باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
-4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
+1. الفيلمالكامل6:50جاهزومرفوع؛ انتظررأيالمستخدمالفعلي، لاموافقةمفترضةولاسؤالسرعةمكرر.
+2. عندطلبتعديل: اقرأengine/projects/escobar_full/README.mdوdelivery.json؛ حافظعلىافتتاحيةRevision5وعلىهويةvoice-02والتسجيلاتالخام.
+3. المراجعةالبصريةالموثّقةمكتملةلشبكاتالعينات؛ السماعالبشريوحقوقالنشرغيرمُدّعيين، وإعادةالرندرتستلزممراجعةالترميزالجديد.
 
 ## 6) أسئلة معلّقة (بتنتظر قرار)
 
-- Revision4ليست معتمدة بعد. Revision3نالتثناءكبيرًا مع طلب تعديلالريثم. هويةvoice-02معتمدة؛ الأداءمعاد استخدامهمن3وبلا توليدجديد. الفحصالصوتيASRوقياسات، لاسمـاعيدوي مُدّعى.
-- تراخيص نشر الأرشيف/صور الطرف الثالث غير محسومة. حركة العمق2.5Dوفجوات الخلفية إعادة بناء، وليست حركة كاميرا تاريخية. صورة ميديين حديثة ومصرّح بذلك.
+- بانتظاررأيالمستخدمبالنسخةالكاملة، وليسسؤالسرعةإضافيًا. الافتتاحيةوالاتجاهالإيقاعيمازالمعتمدين؛ اعتمادالفيلمالكامللميحصلبعد.
+- تراخيصنشرالأرشيفوصورالطرفالثالثغيرمحسومة. لاادعاءسماعأذنيدوي؛ ASRوقياساتصوتيةفقط.
 
 ## 7) قوانين ثابتة (ما تتغيّر بين الجولات)
 
@@ -122,7 +129,7 @@
 - المشهد وحدة التصميم؛ لا انبثاق وصندوق افتراضي لكل جملة. لا تكفي texture/shadow/bounce لإثبات الاحتراف. اتجاه v3 معتمد ويعمم كسياسة لا قالب.
 - قبل أي رندر جديد: engine/PRODUCTION_POLICY.json + tools/production_policy.py؛ المحركات القديمة ليست كلها مربوطة تلقائياً فلا تشغّلها دون البوابة.
 - كل أطوال الفيديو: راوي إنكليزي بأسلوب يوتيوبر طبيعي، حكي وتفسير وأخذ وعطا، لا إنشاء وخطب محفوظة أو أسئلة درامية متكررة.
-- تصحيح المستخدم الأخير: الافتتاحية عن إسكوبار بشكل أوسع، والسجن مو فرضيتها الأساسية؛ بلا حرق للهروب أو المصير أو نقاط الذروة. طولها مو محدود30ث، لكن مو تفويض لباقي الوثائقي.
+- تعليماتمنعالحرقخاصةبالافتتاحيةالمعتمدة؛ التفويضاللاحقللفيلمالكامل4–9دقائقيسمحبالسجنوالهروبوالنهاية.
 - آخر تصحيح للمستخدم: افتتاحية سريعة ومتنوعة ومشوقة؛ مطابقة الصورة للمعنى، وقد تخدم جملة واحدة عدة لقطات ذات معنى. لا تدوير صور قليلة بقصات مختلفة.
 - حركة الاسم/الشتر/الماركر السابقة ملغاة؛ ليست مطالبة بقالب جاهز.
 - طلب المستخدم أداءً جديدًا أسرع وأحماسيًا بهويةvoice-02نفسها، مع تفاوت طبيعي بين الاندفاع والكلام العادي؛ التوليد/قياسWPM لا يعنيان موافقة.

@@ -1,0 +1,923 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/escobar_film/voice/07_legacy_raw.wav",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 0.39,
+          "start": 0.12,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.75,
+          "start": 0.39,
+          "word": "death"
+        },
+        {
+          "conf": 0.70473,
+          "end": 0.955946,
+          "start": 0.75,
+          "word": "did"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.2,
+          "start": 0.955946,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.44,
+          "start": 1.2,
+          "word": "leave"
+        },
+        {
+          "conf": 0.690004,
+          "end": 1.71,
+          "start": 1.44,
+          "word": "every"
+        },
+        {
+          "conf": 0.690004,
+          "end": 1.95,
+          "start": 1.71,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.07,
+          "start": 1.95,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.13,
+          "start": 2.07,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.46,
+          "start": 2.13,
+          "word": "same"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.97,
+          "start": 2.46,
+          "word": "memory"
+        }
+      ],
+      "text": "his death did not leave every one with the same memory"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 4.17,
+          "start": 3.87,
+          "word": "some"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.65,
+          "start": 4.17,
+          "word": "residents"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.22,
+          "start": 4.65,
+          "word": "continue"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.37,
+          "start": 5.22,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.91,
+          "start": 5.37,
+          "word": "remember"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.03,
+          "start": 5.91,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.72,
+          "start": 6.03,
+          "word": "housing"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.11,
+          "start": 6.96,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.17,
+          "start": 7.11,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.59,
+          "start": 7.17,
+          "word": "help"
+        }
+      ],
+      "text": "some residents continue to remember the housing and the help"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 8.7,
+          "start": 8.43,
+          "word": "other"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.33,
+          "start": 8.7,
+          "word": "colombians"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.02,
+          "start": 9.33,
+          "word": "remembered"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.89,
+          "start": 10.35,
+          "word": "murdered"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.67,
+          "start": 10.89,
+          "word": "relatives"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.84,
+          "start": 12.09,
+          "word": "bombings"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.53,
+          "start": 13.32,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.98,
+          "start": 13.53,
+          "word": "years"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.1,
+          "start": 13.98,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.58,
+          "start": 14.1,
+          "word": "fear"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.36,
+          "start": 15.0,
+          "word": "those"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.08,
+          "start": 15.36,
+          "word": "memories"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.95,
+          "start": 16.5,
+          "word": "don't"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.58,
+          "start": 17.04,
+          "word": "cancel"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.79,
+          "start": 17.58,
+          "word": "each"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.06,
+          "start": 17.79,
+          "word": "other"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.42,
+          "start": 18.06,
+          "word": "out"
+        },
+        {
+          "conf": 0.77361,
+          "end": 18.75,
+          "start": 18.66,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.26,
+          "start": 18.756791,
+          "word": "family"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.89,
+          "start": 19.26,
+          "word": "receiving"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.95,
+          "start": 19.89,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.25,
+          "start": 19.95,
+          "word": "real"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.7,
+          "start": 20.25,
+          "word": "home"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.27,
+          "start": 21.06,
+          "word": "does"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.54,
+          "start": 21.27,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.75,
+          "start": 21.54,
+          "word": "make"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.87,
+          "start": 21.75,
+          "word": "the"
+        },
+        {
+          "conf": 0.690977,
+          "end": 22.44,
+          "start": 21.87,
+          "word": "victims"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.68,
+          "start": 22.44,
+          "word": "any"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.98,
+          "start": 22.68,
+          "word": "less"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.49,
+          "start": 22.98,
+          "word": "real"
+        }
+      ],
+      "text": "other colombians remembered murdered relatives bombings and years of fear those memories don't cancel each other out a family receiving a real home does not make the victims any less real"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 24.39,
+          "start": 24.24,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.96,
+          "start": 24.39,
+          "word": "condemning"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.05,
+          "start": 24.96,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.8,
+          "start": 25.05,
+          "word": "violence"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.22,
+          "start": 26.01,
+          "word": "does"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.46,
+          "start": 26.22,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.94,
+          "start": 26.46,
+          "word": "require"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.63,
+          "start": 26.94,
+          "word": "pretending"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.78,
+          "start": 27.63,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.47,
+          "start": 27.78,
+          "word": "poverty"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.4,
+          "start": 28.74,
+          "word": "neglect"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.79,
+          "start": 29.61,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.48,
+          "start": 29.79,
+          "word": "gratitude"
+        },
+        {
+          "conf": 0.586191,
+          "end": 30.72,
+          "start": 30.51,
+          "word": "were"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.59,
+          "start": 30.72,
+          "word": "imaginary"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.34,
+          "start": 32.04,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.46,
+          "start": 32.34,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.61,
+          "start": 32.46,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.24,
+          "start": 32.61,
+          "word": "answer"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.54,
+          "start": 33.42,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.63,
+          "start": 33.54,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.53,
+          "start": 33.63,
+          "word": "contradiction"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.86,
+          "start": 34.71,
+          "word": "we"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.28,
+          "start": 34.86,
+          "word": "started"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.64,
+          "start": 35.28,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.51,
+          "start": 35.97,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.75,
+          "start": 36.51,
+          "word": "build"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.29,
+          "start": 36.75,
+          "word": "power"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.53,
+          "start": 37.29,
+          "word": "through"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.59,
+          "start": 37.53,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.22,
+          "start": 37.59,
+          "word": "profitable"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.61,
+          "start": 38.22,
+          "word": "criminal"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.24,
+          "start": 38.61,
+          "word": "network"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.44,
+          "start": 39.63,
+          "word": "corruption"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.37,
+          "start": 40.47,
+          "word": "coercion"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.55,
+          "start": 41.4,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.94,
+          "start": 41.55,
+          "word": "public"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.51,
+          "start": 41.94,
+          "word": "support"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.56,
+          "start": 43.2,
+          "word": "different"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.98,
+          "start": 43.59,
+          "word": "people"
+        },
+        {
+          "conf": 0.304535,
+          "end": 44.4,
+          "start": 43.98,
+          "word": "experie"
+        }
+      ],
+      "text": "and condemning the violence does not require pretending that poverty neglect and gratitude were imaginary that is the answer to the contradiction we started with escobar build power through a profitable criminal network corruption coercion and public support different people experie"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.446744,
+          "end": 44.67,
+          "start": 44.4,
+          "word": "science"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.0,
+          "start": 44.67,
+          "word": "different"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.36,
+          "start": 45.0,
+          "word": "parts"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.48,
+          "start": 45.36,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.72,
+          "start": 45.48,
+          "word": "it"
+        }
+      ],
+      "text": "science different parts of it"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 46.92,
+          "start": 46.35,
+          "word": "removing"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.25,
+          "start": 46.92,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.61,
+          "start": 47.28,
+          "word": "broke"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.79,
+          "start": 47.61,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.33,
+          "start": 47.79,
+          "word": "personal"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.99,
+          "start": 48.33,
+          "word": "empire"
+        },
+        {
+          "conf": 0.651829,
+          "end": 49.41,
+          "start": 49.32,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.56,
+          "start": 49.420444,
+          "word": "did"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.86,
+          "start": 49.56,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.31,
+          "start": 49.86,
+          "word": "remove"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.43,
+          "start": 50.31,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.88,
+          "start": 50.43,
+          "word": "demand"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.03,
+          "start": 50.88,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.72,
+          "start": 51.03,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.2,
+          "start": 52.05,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.29,
+          "start": 52.2,
+          "word": "the"
+        },
+        {
+          "conf": 0.841339,
+          "end": 52.8,
+          "start": 52.29,
+          "word": "profits"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.37,
+          "start": 52.8,
+          "word": "available"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.55,
+          "start": 53.37,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.79,
+          "start": 53.55,
+          "word": "other"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.63,
+          "start": 53.79,
+          "word": "traffickers"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.59,
+          "start": 55.35,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.34,
+          "start": 55.59,
+          "word": "empire"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.09,
+          "start": 56.58,
+          "word": "ended"
+        }
+      ],
+      "text": "removing him broke his personal empire he did not remove the demand for cocaine or the profits available to other traffickers his empire ended"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 58.17,
+          "start": 57.99,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.8,
+          "start": 58.17,
+          "word": "incentives"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.22,
+          "start": 58.8,
+          "word": "behind"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.31,
+          "start": 59.22,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.94,
+          "start": 59.31,
+          "word": "business"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.99,
+          "start": 60.18,
+          "word": "survived"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.59,
+          "start": 61.44,
+          "word": "and"
+        },
+        {
+          "conf": 0.80362,
+          "end": 61.83,
+          "start": 61.59,
+          "word": "that's"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.95,
+          "start": 61.835889,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.330259,
+          "start": 61.95,
+          "word": "party"
+        },
+        {
+          "conf": 0.829995,
+          "end": 62.82,
+          "start": 62.34,
+          "word": "miss"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.03,
+          "start": 62.85,
+          "word": "when"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.24,
+          "start": 63.03,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.72,
+          "start": 63.24,
+          "word": "becomes"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.02,
+          "start": 63.72,
+          "word": "just"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.05,
+          "start": 64.02,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.53,
+          "start": 64.05,
+          "word": "story"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.8,
+          "start": 64.53,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.04,
+          "start": 64.8,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.34,
+          "start": 65.04,
+          "word": "rich"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.73,
+          "start": 65.34,
+          "word": "guy"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.15,
+          "start": 65.94,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.21,
+          "start": 66.15,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.66,
+          "start": 66.21,
+          "word": "private"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.14,
+          "start": 66.66,
+          "word": "zoo"
+        }
+      ],
+      "text": "the incentives behind the business survived and that's the party miss when this becomes just a story about one rich guy with a private zoo"
+    }
+  ]
+}

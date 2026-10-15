@@ -55,6 +55,11 @@ class SequenceFilm:
         elif s['kind']=='image':
             im=self.visuals.image(s['asset']);c=np.array(s['center']);move=np.array(s.get('travel',[0,0]));k=smooth(u)
             out=view(im,c+move*k,s['span']*(1-s.get('push',.035)*k),self.p.SIZE,yaw=s.get('yaw',0)*math.sin(math.pi*u))
+        elif s['kind']=='route':
+            if not hasattr(self,'geo_route'):
+                from geo_route import GeoRoute
+                self.geo_route=GeoRoute(self.p.ROOT/'assets_global/geo',self.p.FONT_DIR,self.p.SIZE)
+            out=self.geo_route.render(s,u)
         else:raise ValueError(s['kind'])
         return self.text(out,s,local)
     def render(self,destination):
@@ -63,6 +68,9 @@ class SequenceFilm:
             versions=self.p.BUILD/'versions';versions.mkdir(exist_ok=True)
             previous=versions/(destination.stem+'__'+hashlib.sha256(destination.read_bytes()).hexdigest()[:12]+destination.suffix)
             if not previous.exists():shutil.copy2(destination,previous)
+        if self.plan.get('render_mode')=='segmented':
+            from sequence_segments import render_segments
+            return render_segments(self,destination)
         self.prepare_video();command=[FF,'-v','error','-y','-f','rawvideo','-pix_fmt','rgb24','-s',f'{self.W}x{self.H}','-r',str(self.fps),'-i','-','-i',str(self.p.BUILD/'mix.wav'),'-map','0:v','-map','1:a','-c:v','libx264','-threads','4','-preset','fast','-crf','19','-pix_fmt','yuv420p','-c:a','aac','-b:a','192k','-movflags','+faststart','-t',str(self.plan['frames']/self.fps),str(destination)]
         p=subprocess.Popen(command,stdin=subprocess.PIPE)
         try:

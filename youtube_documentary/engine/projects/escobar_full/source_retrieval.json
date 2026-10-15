@@ -1,0 +1,59 @@
+{
+  "run": 38795410452,
+  "objects": {
+    "1200": {
+      "run": 38795410452,
+      "blob_sha": "18ac129be89c7374cf60eba906c46add3754c4a8",
+      "rights_cleared": false,
+      "viewed": false,
+      "heard": false
+    },
+    "2160": {
+      "run": 38795410452,
+      "blob_sha": "b3a2355aed91aaf63fc384d755d50daa20d3162e",
+      "rights_cleared": false,
+      "viewed": false,
+      "heard": false
+    },
+    "4080": {
+      "run": 38795410452,
+      "blob_sha": "b2ce76297e46a1cfc66f276ab4120bb70d49534c",
+      "rights_cleared": false,
+      "viewed": false,
+      "heard": false
+    },
+    "3120": {
+      "run": 38795410452,
+      "blob_sha": "26e8ada38a4fd1366b12a7a914de2c1342c49fa9",
+      "rights_cleared": false,
+      "viewed": false,
+      "heard": false
+    }
+  },
+  "earlier_media": "../escobar_intro5/source_retrieval.json",
+  "rights_cleared": false,
+  "raw_narration_drive_zip": "1NxeTyKABBS35oTOBq__oOyfCjy4wWL5J",
+  "permanent_private_drive_archives": [
+    {
+      "file": "Full_Film_Original_Sources_Part1.zip",
+      "bytes": 42050351,
+      "sha256": "6cb4913bda993d33a91906f1b5c08e83226bec3cff3dfa5fc4424792d24cc30a",
+      "md5": "b2a44f2e147cc51f051479d5a1a14b23",
+      "drive_id": "1SteQgpBbQy0kQDttnLsPEWazwGE2Xd_Z"
+    },
+    {
+      "file": "Full_Film_Original_Sources_Part2.zip",
+      "bytes": 47534889,
+      "sha256": "032a2b9e7b0b094939c0239d3e9fa0086a79eeda892707e1d73671fbd8089922",
+      "md5": "a1211654a5603d5c58a4a6ae65921823",
+      "drive_id": "1ptQVHBqzYPcbqXOvWpiZZOg-elwSszrQ"
+    },
+    {
+      "file": "Full_Film_Original_Sources_Part3.zip",
+      "bytes": 52517982,
+      "sha256": "8fd37cf475b1ac5c77373a30e2b551f129379ac6f17522392b4c0a922971eb1e",
+      "md5": "35104473e70237041ad21ad71f0cb428",
+      "drive_id": "1A8ovaYxAMrZGv1OaDL_DlCHlAMa6hfUL"
+    }
+  ]
+}

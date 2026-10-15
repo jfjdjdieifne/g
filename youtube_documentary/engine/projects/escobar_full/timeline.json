@@ -1,0 +1,1929 @@
+{
+  "schema": "sequence-film/1",
+  "render_mode": "segmented",
+  "fps": 24,
+  "frames": 9055,
+  "audio": [
+    {
+      "id": "01_business",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/escobar_full/narration/01_business.flac",
+      "start": 0.0,
+      "end": 49.10075,
+      "duration": 49.10075
+    },
+    {
+      "id": "02_support",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/escobar_full/narration/02_support.flac",
+      "start": 49.333333333333336,
+      "end": 99.07514583333334,
+      "duration": 49.7418125
+    },
+    {
+      "id": "03_politics",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/escobar_full/narration/03_politics.flac",
+      "start": 99.33333333333333,
+      "end": 154.0701875,
+      "duration": 54.73685416666667
+    },
+    {
+      "id": "04_extradition",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/escobar_full/narration/04_extradition.flac",
+      "start": 154.29166666666666,
+      "end": 209.58160416666666,
+      "duration": 55.2899375
+    },
+    {
+      "id": "05_prison_a",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_film/clips/05_prison_a.wav",
+      "start": 209.83333333333334,
+      "end": 234.68233365149666,
+      "duration": 24.849000318163306
+    },
+    {
+      "id": "murphy",
+      "kind": "archive",
+      "file": "/home/user/build/escobar_film/clips/murphy.wav",
+      "start": 234.76233365149668,
+      "end": 239.1023336514959,
+      "duration": 4.339999999999236
+    },
+    {
+      "id": "05_prison_b",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_film/clips/05_prison_b.wav",
+      "start": 239.1823336514959,
+      "end": 267.0832916666659,
+      "duration": 27.900958015170026
+    },
+    {
+      "id": "06_collapse",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/escobar_full/narration/06_collapse.flac",
+      "start": 267.3333333333333,
+      "end": 319.882,
+      "duration": 52.54866666666667
+    },
+    {
+      "id": "07_legacy_a",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_film/clips/07_legacy_a.wav",
+      "start": 320.125,
+      "end": 361.1471458333333,
+      "duration": 41.022145833333326
+    },
+    {
+      "id": "blum",
+      "kind": "archive",
+      "file": "/home/user/build/escobar_film/clips/blum.wav",
+      "start": 361.2271458333333,
+      "end": 365.8771458333329,
+      "duration": 4.649999999999636
+    },
+    {
+      "id": "07_legacy_b",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_film/clips/07_legacy_b.wav",
+      "start": 365.95714583333296,
+      "end": 375.8526041666663,
+      "duration": 9.895458333333337
+    }
+  ],
+  "shots": [
+    {
+      "id": "01_business_00",
+      "kind": "video",
+      "first": 0,
+      "last": 52,
+      "start": 0.0,
+      "end": 2.1666666666666665,
+      "meaning": "Wealth followed the operation; estate footage, not a reconstructed crime",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 427,
+      "original_source_in": 787,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_01",
+      "kind": "video",
+      "first": 52,
+      "last": 123,
+      "start": 2.1666666666666665,
+      "end": 5.125,
+      "meaning": "Different estate/home-movie scene; private possessions, no claim of a photographed deal",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 442,
+      "original_source_in": 802,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_02",
+      "kind": "video",
+      "first": 123,
+      "last": 230,
+      "start": 5.125,
+      "end": 9.583333333333334,
+      "meaning": "US demand: contextual Miami street imagery",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 823,
+      "original_source_in": 1183,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_03",
+      "kind": "video",
+      "first": 230,
+      "last": 330,
+      "start": 9.583333333333334,
+      "end": 13.75,
+      "meaning": "The actual subject; a different portion of the home-movie moment",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 524,
+      "original_source_in": 884,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_04",
+      "kind": "route",
+      "first": 330,
+      "last": 448,
+      "start": 13.75,
+      "end": 18.666666666666668,
+      "meaning": "Coca inputs from Peru/Bolivia to Colombia; conceptual network, not one shipment",
+      "credit": [
+        "Explanatory map / Natural Earth",
+        "Schematic links, not recorded flights"
+      ],
+      "stage": "andes",
+      "nodes": [
+        {
+          "label": "Peru",
+          "lon": -75,
+          "lat": -10
+        },
+        {
+          "label": "Bolivia",
+          "lon": -65,
+          "lat": -17
+        },
+        {
+          "label": "Colombia",
+          "lon": -75.58,
+          "lat": 6.24
+        }
+      ],
+      "edges": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "01_business_05",
+      "kind": "video",
+      "first": 448,
+      "last": 490,
+      "start": 18.666666666666668,
+      "end": 20.416666666666668,
+      "meaning": "Actual Tranquilandia lab interior and equipment; historical contextual example, not every Colombian lab",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 430.1999999999998,
+      "original_source_in": 2590.2,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_06",
+      "kind": "video",
+      "first": 490,
+      "last": 552,
+      "start": 20.416666666666668,
+      "end": 23.0,
+      "meaning": "Actual pilot/cockpit imagery; transport north",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 599,
+      "original_source_in": 959,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_07",
+      "kind": "video",
+      "first": 552,
+      "last": 622,
+      "start": 23.0,
+      "end": 25.916666666666668,
+      "meaning": "The cartel network was not one man; actual group footage",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 697,
+      "original_source_in": 1057,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_08",
+      "kind": "video",
+      "first": 622,
+      "last": 697,
+      "start": 25.916666666666668,
+      "end": 29.041666666666668,
+      "meaning": "Ochoa family context from the original report, not three falsely identified faces",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 49,
+      "original_source_in": 1249,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_09",
+      "kind": "route",
+      "first": 697,
+      "last": 814,
+      "start": 29.041666666666668,
+      "end": 33.916666666666664,
+      "meaning": "Bahamas connection and onward movement; schematic paths, true geography",
+      "credit": [
+        "Explanatory map / Natural Earth",
+        "Schematic links, not recorded flights"
+      ],
+      "stage": "north",
+      "nodes": [
+        {
+          "label": "Colombia",
+          "lon": -75.58,
+          "lat": 6.24
+        },
+        {
+          "label": "Bahamas",
+          "lon": -76.82,
+          "lat": 24.6,
+          "label_offset": [
+            15,
+            12
+          ]
+        },
+        {
+          "label": "Miami",
+          "lon": -80.19,
+          "lat": 25.76,
+          "label_offset": [
+            -100,
+            -30
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ]
+    },
+    {
+      "id": "01_business_10",
+      "kind": "video",
+      "first": 814,
+      "last": 896,
+      "start": 33.916666666666664,
+      "end": 37.333333333333336,
+      "meaning": "Flights and onward movement; native smuggling/interdiction imagery",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 777,
+      "original_source_in": 1137,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_11",
+      "kind": "video",
+      "first": 896,
+      "last": 1013,
+      "start": 37.333333333333336,
+      "end": 42.208333333333336,
+      "meaning": "Demand at the end of the chain: original street and consumer-cocaine imagery, not an asserted filmed Escobar transaction",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 833,
+      "original_source_in": 1193,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "01_business_12",
+      "kind": "route",
+      "first": 1013,
+      "last": 1094,
+      "start": 42.208333333333336,
+      "end": 45.583333333333336,
+      "meaning": "Return to the whole geographical supply chain, with a wider camera",
+      "credit": [
+        "Explanatory map / Natural Earth",
+        "Schematic links, not recorded flights"
+      ],
+      "stage": "network",
+      "nodes": [
+        {
+          "label": "Peru",
+          "lon": -75,
+          "lat": -10,
+          "label_offset": [
+            12,
+            -80
+          ]
+        },
+        {
+          "label": "Colombia",
+          "lon": -75.58,
+          "lat": 6.24
+        },
+        {
+          "label": "Bahamas",
+          "lon": -76.82,
+          "lat": 24.6,
+          "label_offset": [
+            15,
+            12
+          ]
+        },
+        {
+          "label": "Miami",
+          "lon": -80.19,
+          "lat": 25.76,
+          "label_offset": [
+            -100,
+            -30
+          ]
+        }
+      ],
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    },
+    {
+      "id": "01_business_13",
+      "kind": "video",
+      "first": 1094,
+      "last": 1184,
+      "start": 45.583333333333336,
+      "end": 49.333333333333336,
+      "meaning": "A moving aircraft completes the supply-chain explanation",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 724,
+      "original_source_in": 1084,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_00",
+      "kind": "video",
+      "first": 1184,
+      "last": 1253,
+      "start": 49.333333333333336,
+      "end": 52.208333333333336,
+      "meaning": "Transport succeeds only with protection; native source flight imagery",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 767,
+      "original_source_in": 1127,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_01",
+      "kind": "video",
+      "first": 1253,
+      "last": 1371,
+      "start": 52.208333333333336,
+      "end": 57.125,
+      "meaning": "Real hidden-camera payoff footage from the report; NOT a fabricated payment by Escobar",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 784,
+      "original_source_in": 1984,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_02",
+      "kind": "video",
+      "first": 1371,
+      "last": 1463,
+      "start": 57.125,
+      "end": 60.958333333333336,
+      "meaning": "Threats against officials: institutional security, not an invented assault",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 516,
+      "original_source_in": 2676,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_03",
+      "kind": "video",
+      "first": 1463,
+      "last": 1539,
+      "start": 60.958333333333336,
+      "end": 64.125,
+      "meaning": "The next shipment: different source aircraft moment",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 740,
+      "original_source_in": 1100,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_04",
+      "kind": "video",
+      "first": 1539,
+      "last": 1612,
+      "start": 64.125,
+      "end": 67.16666666666667,
+      "meaning": "Transition to Medellin through its actual filmed streets",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 23,
+      "original_source_in": 383,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_05",
+      "kind": "image",
+      "first": 1612,
+      "last": 1695,
+      "start": 67.16666666666667,
+      "end": 70.625,
+      "meaning": "Actual 1983 construction photograph, intentionally returning to opening evidence in a longer explanation",
+      "credit": [
+        "Housing under construction, 1983",
+        "Edgar El Chino Jimenez / El Pais"
+      ],
+      "asset": "housing1983.jpg",
+      "center": [
+        600,
+        410
+      ],
+      "span": 1200,
+      "push": 0.04,
+      "yaw": 0.018,
+      "travel": [
+        5,
+        -2
+      ]
+    },
+    {
+      "id": "02_support_06",
+      "kind": "video",
+      "first": 1695,
+      "last": 1761,
+      "start": 70.625,
+      "end": 73.375,
+      "meaning": "Football facilities in the source report, not an unrelated stadium",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 666.2,
+      "original_source_in": 1866.2,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_07",
+      "kind": "video",
+      "first": 1761,
+      "last": 1830,
+      "start": 73.375,
+      "end": 76.25,
+      "meaning": "Actual neighborhood houses, contemporary to the original report",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 597,
+      "original_source_in": 1797,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_08",
+      "kind": "video",
+      "first": 1830,
+      "last": 1914,
+      "start": 76.25,
+      "end": 79.75,
+      "meaning": "The Flores household, identified as rehoused beneficiaries in the original programme",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 643,
+      "original_source_in": 1843,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_09",
+      "kind": "video",
+      "first": 1914,
+      "last": 2008,
+      "start": 79.75,
+      "end": 83.66666666666667,
+      "meaning": "Genuine painted Escobar myth in the community; not a generated portrait or a muted expert interview",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 689,
+      "original_source_in": 1889,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_10",
+      "kind": "video",
+      "first": 2008,
+      "last": 2104,
+      "start": 83.66666666666667,
+      "end": 87.66666666666667,
+      "meaning": "People living in the community; no claim all residents endorsed crime",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 620,
+      "original_source_in": 1820,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_11",
+      "kind": "video",
+      "first": 2104,
+      "last": 2206,
+      "start": 87.66666666666667,
+      "end": 91.91666666666667,
+      "meaning": "Modern neighborhood context, explicitly dated 2013; not evidence of a particular 1983 recipient",
+      "credit": [
+        "BBC News / 2013",
+        "Later Medellin context"
+      ],
+      "path": "/home/user/build/escobar_intro5/primary_media/bbc_research.mp4",
+      "source_in": 106.0,
+      "original_source_in": 106.0,
+      "watermark": true,
+      "source_url": "https://www.bbc.com/news/av/world-25158010"
+    },
+    {
+      "id": "02_support_12",
+      "kind": "video",
+      "first": 2206,
+      "last": 2291,
+      "start": 91.91666666666667,
+      "end": 95.45833333333333,
+      "meaning": "The same man: actual Escobar with people at a public football appearance, no expert interview under the narrator",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 671,
+      "original_source_in": 1871,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "02_support_13",
+      "kind": "video",
+      "first": 2291,
+      "last": 2384,
+      "start": 95.45833333333333,
+      "end": 99.33333333333333,
+      "meaning": "Same city, later time: 2018 Medellin context, explicitly dated",
+      "credit": [
+        "Al Jazeera English / 2018",
+        "Later Medellin context"
+      ],
+      "path": "/home/user/build/escobar_intro5/primary_media/aj_research.mp4",
+      "source_in": 25.0,
+      "original_source_in": 25.0,
+      "watermark": true,
+      "source_url": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust"
+    },
+    {
+      "id": "03_politics_00",
+      "kind": "video",
+      "first": 2384,
+      "last": 2469,
+      "start": 99.33333333333333,
+      "end": 102.875,
+      "meaning": "Actual 1982 election mural from source; no fabricated newspaper",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 740,
+      "original_source_in": 1940,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_01",
+      "kind": "image",
+      "first": 2469,
+      "last": 2584,
+      "start": 102.875,
+      "end": 107.66666666666667,
+      "meaning": "Actual congressional photograph, deliberately reused for the alternate-representative qualification",
+      "credit": [
+        "Congress, 1983 / El Tiempo archive"
+      ],
+      "asset": "congress.jpg",
+      "center": [
+        300,
+        220
+      ],
+      "span": 610,
+      "push": 0.025,
+      "yaw": 0.014,
+      "travel": [
+        0,
+        -3
+      ]
+    },
+    {
+      "id": "03_politics_02",
+      "kind": "video",
+      "first": 2584,
+      "last": 2685,
+      "start": 107.66666666666667,
+      "end": 111.875,
+      "meaning": "Legitimate institutions; chamber imagery rather than pretending he ran the country",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 754,
+      "original_source_in": 1954,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_03",
+      "kind": "depth",
+      "first": 2685,
+      "last": 2832,
+      "start": 111.875,
+      "end": 118.0,
+      "meaning": "Actual public appearance, original-pixel 2.5D rather than invented action",
+      "credit": [
+        "Public appearance, 1983 / El Tiempo archive",
+        "Animated photograph / Original pixels"
+      ],
+      "asset": "football.jpg",
+      "center": [
+        300,
+        262
+      ],
+      "span": 575
+    },
+    {
+      "id": "03_politics_04",
+      "kind": "video",
+      "first": 2832,
+      "last": 2902,
+      "start": 118.0,
+      "end": 120.91666666666667,
+      "meaning": "Actual Escobar family photograph from the report; not another person passed off as him",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 920,
+      "original_source_in": 2120,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_05",
+      "kind": "video",
+      "first": 2902,
+      "last": 2958,
+      "start": 120.91666666666667,
+      "end": 123.25,
+      "meaning": "Public benefactor image in the actual community",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 605,
+      "original_source_in": 1805,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_06",
+      "kind": "video",
+      "first": 2958,
+      "last": 3044,
+      "start": 123.25,
+      "end": 126.83333333333333,
+      "meaning": "Contrast with cocaine processing: real industrial laboratory imagery",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 322,
+      "original_source_in": 2482,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_07",
+      "kind": "video",
+      "first": 3044,
+      "last": 3125,
+      "start": 126.83333333333333,
+      "end": 130.20833333333334,
+      "meaning": "Actual Justice Minister Rodrigo Lara Bonilla speaking publicly",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 868,
+      "original_source_in": 2068,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_08",
+      "kind": "video",
+      "first": 3125,
+      "last": 3198,
+      "start": 130.20833333333334,
+      "end": 133.25,
+      "meaning": "Archival political meeting in the report; no further identity claim",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 877,
+      "original_source_in": 2077,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_09",
+      "kind": "video",
+      "first": 3198,
+      "last": 3274,
+      "start": 133.25,
+      "end": 136.41666666666666,
+      "meaning": "Aftermath of the minister assassination: damaged car, no graphic body",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 572,
+      "original_source_in": 2732,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_10",
+      "kind": "video",
+      "first": 3274,
+      "last": 3370,
+      "start": 136.41666666666666,
+      "end": 140.41666666666666,
+      "meaning": "Security outside public institutions; danger to people challenging the trade",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 520,
+      "original_source_in": 2680,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_11",
+      "kind": "video",
+      "first": 3370,
+      "last": 3488,
+      "start": 140.41666666666666,
+      "end": 145.33333333333334,
+      "meaning": "The press was also targeted: actual newspaper newsroom staff and computers",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 483,
+      "original_source_in": 3603,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_12",
+      "kind": "video",
+      "first": 3488,
+      "last": 3604,
+      "start": 145.33333333333334,
+      "end": 150.16666666666666,
+      "meaning": "Actual Escobar political address photograph; public image versus intimidation",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 510,
+      "original_source_in": 2670,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "03_politics_13",
+      "kind": "video",
+      "first": 3604,
+      "last": 3703,
+      "start": 150.16666666666666,
+      "end": 154.29166666666666,
+      "meaning": "State response to cartel violence: genuine armed helicopter/operation imagery, not a muted interview or an asserted fatal shooter",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 589.3000000000002,
+      "original_source_in": 2749.3,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_00",
+      "kind": "video",
+      "first": 3703,
+      "last": 3774,
+      "start": 154.29166666666666,
+      "end": 157.25,
+      "meaning": "US prison exterior in the report, extradition as the central threat",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 140,
+      "original_source_in": 3260,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_01",
+      "kind": "video",
+      "first": 3774,
+      "last": 3845,
+      "start": 157.25,
+      "end": 160.20833333333334,
+      "meaning": "Definition: face justice in another country; actual US exterior",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 907,
+      "original_source_in": 3067,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_02",
+      "kind": "video",
+      "first": 3845,
+      "last": 3912,
+      "start": 160.20833333333334,
+      "end": 163.0,
+      "meaning": "United States government context, not a fake news anchor",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 890.5999999999999,
+      "original_source_in": 3050.6,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_03",
+      "kind": "video",
+      "first": 3912,
+      "last": 4011,
+      "start": 163.0,
+      "end": 167.125,
+      "meaning": "Actual hidden-camera political payoff, later non-overlapping source seconds",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 790,
+      "original_source_in": 1990,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_04",
+      "kind": "video",
+      "first": 4011,
+      "last": 4147,
+      "start": 167.125,
+      "end": 172.79166666666666,
+      "meaning": "A prison cell abroad; genuine prison security footage, not a CGI cell",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 145,
+      "original_source_in": 3265,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_05",
+      "kind": "video",
+      "first": 4147,
+      "last": 4231,
+      "start": 172.79166666666666,
+      "end": 176.29166666666666,
+      "meaning": "Communications in trafficking logistics, contextual source imagery, not Escobar lip-sync",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 753,
+      "original_source_in": 2913,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_06",
+      "kind": "video",
+      "first": 4231,
+      "last": 4314,
+      "start": 176.29166666666666,
+      "end": 179.75,
+      "meaning": "Actual historical Escobar portrait in the source biography; not an unrelated informant face",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_intro5/industry_media/pbs_industry_research.mp4",
+      "source_in": 250,
+      "original_source_in": 610,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_07",
+      "kind": "video",
+      "first": 4314,
+      "last": 4416,
+      "start": 179.75,
+      "end": 184.0,
+      "meaning": "Actual terror aftermath; contextual historical violence, no body close-up",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 814,
+      "original_source_in": 3934,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_08",
+      "kind": "video",
+      "first": 4416,
+      "last": 4474,
+      "start": 184.0,
+      "end": 186.41666666666666,
+      "meaning": "Journalists: original newspaper production footage",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 480,
+      "original_source_in": 3600,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_09",
+      "kind": "video",
+      "first": 4474,
+      "last": 4555,
+      "start": 186.41666666666666,
+      "end": 189.79166666666666,
+      "meaning": "Civilian cost: damaged buildings, not stock explosions",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 829.5,
+      "original_source_in": 3949.5,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_10",
+      "kind": "video",
+      "first": 4555,
+      "last": 4614,
+      "start": 189.79166666666666,
+      "end": 192.25,
+      "meaning": "Actual Galan campaign rally before the assassination",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 501,
+      "original_source_in": 3621,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_11",
+      "kind": "video",
+      "first": 4614,
+      "last": 4699,
+      "start": 192.25,
+      "end": 195.79166666666666,
+      "meaning": "The same documented campaign event, no synthetic gunfire",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 527,
+      "original_source_in": 3647,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_12",
+      "kind": "video",
+      "first": 4699,
+      "last": 4789,
+      "start": 195.79166666666666,
+      "end": 199.54166666666666,
+      "meaning": "Confusion and response at the event, source speed unchanged",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 571,
+      "original_source_in": 3691,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_13",
+      "kind": "video",
+      "first": 4789,
+      "last": 4902,
+      "start": 199.54166666666666,
+      "end": 204.25,
+      "meaning": "Ordinary people living with the consequences; historical Medellin housing",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 590,
+      "original_source_in": 1790,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "04_extradition_14",
+      "kind": "video",
+      "first": 4902,
+      "last": 5036,
+      "start": 204.25,
+      "end": 209.83333333333334,
+      "meaning": "Later Medellin view explicitly dated 2018; the city is not reduced to one man",
+      "credit": [
+        "Al Jazeera English / 2018",
+        "Later Medellin context"
+      ],
+      "path": "/home/user/build/escobar_intro5/primary_media/aj_research.mp4",
+      "source_in": 35.0,
+      "original_source_in": 35.0,
+      "watermark": true,
+      "source_url": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust"
+    },
+    {
+      "id": "05_prison_00",
+      "kind": "video",
+      "first": 5036,
+      "last": 5131,
+      "start": 209.83333333333334,
+      "end": 213.79166666666666,
+      "meaning": "Actual constituent assembly; reform was larger than Escobar",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 907,
+      "original_source_in": 4027,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_01",
+      "kind": "video",
+      "first": 5131,
+      "last": 5267,
+      "start": 213.79166666666666,
+      "end": 219.45833333333334,
+      "meaning": "Different assembly angle: prohibition on extradition, not a forged constitution",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 919.4000000000001,
+      "original_source_in": 4039.4,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_02",
+      "kind": "video",
+      "first": 5267,
+      "last": 5389,
+      "start": 219.45833333333334,
+      "end": 224.54166666666666,
+      "meaning": "Constitutional process continued: avoid claiming he wrote the document",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/3120/pbs_later_3120_research.mp4",
+      "source_in": 912,
+      "original_source_in": 4032,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_03",
+      "kind": "video",
+      "first": 5389,
+      "last": 5467,
+      "start": 224.54166666666666,
+      "end": 227.79166666666666,
+      "meaning": "Actual surrender transport helicopter, June 1991 in source context",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 17,
+      "original_source_in": 4097,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_04",
+      "kind": "video",
+      "first": 5467,
+      "last": 5549,
+      "start": 227.79166666666666,
+      "end": 231.20833333333334,
+      "meaning": "Actual La Catedral hillside location",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 27,
+      "original_source_in": 4107,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_05",
+      "kind": "video",
+      "first": 5549,
+      "last": 5632,
+      "start": 231.20833333333334,
+      "end": 234.66666666666666,
+      "meaning": "Prison grounds: comfort is not the whole issue",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 51,
+      "original_source_in": 4131,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_06",
+      "kind": "video",
+      "first": 5632,
+      "last": 5731,
+      "start": 234.66666666666666,
+      "end": 238.79166666666666,
+      "meaning": "Prison comfort: original English testimony, source picture/audio clock matched",
+      "credit": [
+        "STEPHEN MURPHY / DEA agent",
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 111.27000000000037,
+      "original_source_in": 4191.27,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "speaker": true
+    },
+    {
+      "id": "05_prison_08",
+      "kind": "video",
+      "first": 5731,
+      "last": 5849,
+      "start": 238.79166666666666,
+      "end": 243.70833333333334,
+      "meaning": "Return to the genuine prison interior under the witness tail; source audio remains untouched",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 169.0,
+      "original_source_in": 4249.0,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_09",
+      "kind": "video",
+      "first": 5849,
+      "last": 5943,
+      "start": 243.70833333333334,
+      "end": 247.625,
+      "meaning": "Prison guards and perimeter; power inside an ostensibly controlled place",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 66,
+      "original_source_in": 4146,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_10",
+      "kind": "video",
+      "first": 5943,
+      "last": 6017,
+      "start": 247.625,
+      "end": 250.70833333333334,
+      "meaning": "Actual facility exterior, not a fabricated prison plan",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 36,
+      "original_source_in": 4116,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_11",
+      "kind": "video",
+      "first": 6017,
+      "last": 6094,
+      "start": 250.70833333333334,
+      "end": 253.91666666666666,
+      "meaning": "Actual prison interior; no claim a shown family photo depicts murdered associates",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 123,
+      "original_source_in": 4203,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_12",
+      "kind": "video",
+      "first": 6094,
+      "last": 6174,
+      "start": 253.91666666666666,
+      "end": 257.25,
+      "meaning": "Return to the actual prison location on the breakdown of the arrangement",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 41,
+      "original_source_in": 4121,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_13",
+      "kind": "video",
+      "first": 6174,
+      "last": 6239,
+      "start": 257.25,
+      "end": 259.9583333333333,
+      "meaning": "Nighttime exterior from the original escape report; not claimed to show him walking out",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 203,
+      "original_source_in": 4283,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_14",
+      "kind": "video",
+      "first": 6239,
+      "last": 6324,
+      "start": 259.9583333333333,
+      "end": 263.5,
+      "meaning": "Actual wanted poster after escape; do not misread peso reward as dollars",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 213,
+      "original_source_in": 4293,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "05_prison_15",
+      "kind": "video",
+      "first": 6324,
+      "last": 6416,
+      "start": 263.5,
+      "end": 267.3333333333333,
+      "meaning": "Police mobilization after the failed agreement",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 228,
+      "original_source_in": 4308,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_00",
+      "kind": "video",
+      "first": 6416,
+      "last": 6519,
+      "start": 267.3333333333333,
+      "end": 271.625,
+      "meaning": "Manhunt street patrol, actual original report",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 235,
+      "original_source_in": 4315,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_01",
+      "kind": "video",
+      "first": 6519,
+      "last": 6611,
+      "start": 271.625,
+      "end": 275.4583333333333,
+      "meaning": "Road searches, native source footage",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 257,
+      "original_source_in": 4337,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_02",
+      "kind": "video",
+      "first": 6611,
+      "last": 6693,
+      "start": 275.4583333333333,
+      "end": 278.875,
+      "meaning": "Actual police computer imagery modeling Escobar disguises during the search; not a modern generated face or a muted interview",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 330,
+      "original_source_in": 4410,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_03",
+      "kind": "video",
+      "first": 6693,
+      "last": 6792,
+      "start": 278.875,
+      "end": 283.0,
+      "meaning": "Property targeted by rivals during the manhunt, as identified by source context",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 289.3000000000002,
+      "original_source_in": 4369.3,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_04",
+      "kind": "video",
+      "first": 6792,
+      "last": 6856,
+      "start": 283.0,
+      "end": 285.6666666666667,
+      "meaning": "Aftermath and attacks on the network, not a lawful solution",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 298,
+      "original_source_in": 4378,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_05",
+      "kind": "video",
+      "first": 6856,
+      "last": 6985,
+      "start": 285.6666666666667,
+      "end": 291.0416666666667,
+      "meaning": "Pressure from different directions: police night operation",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 407,
+      "original_source_in": 4487,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_06",
+      "kind": "image",
+      "first": 6985,
+      "last": 7084,
+      "start": 291.0416666666667,
+      "end": 295.1666666666667,
+      "meaning": "Actual 1987 wealth entry; deliberate callback to why a fortune was not protection",
+      "credit": [
+        "Forbes / 1987 billionaires issue"
+      ],
+      "asset": "forbes_entry.png",
+      "center": [
+        315,
+        641
+      ],
+      "span": 650,
+      "push": 0.025,
+      "yaw": 0.012,
+      "travel": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "06_collapse_07",
+      "kind": "video",
+      "first": 7084,
+      "last": 7218,
+      "start": 295.1666666666667,
+      "end": 300.75,
+      "meaning": "Institutions and searches, not a fabricated betrayal scene",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 335,
+      "original_source_in": 4415,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_08",
+      "kind": "video",
+      "first": 7218,
+      "last": 7292,
+      "start": 300.75,
+      "end": 303.8333333333333,
+      "meaning": "Actual tracking equipment on the dated final search",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 380,
+      "original_source_in": 4460,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_09",
+      "kind": "video",
+      "first": 7292,
+      "last": 7356,
+      "start": 303.8333333333333,
+      "end": 306.5,
+      "meaning": "Mobile direction-finding imagery from the report",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 470,
+      "original_source_in": 4550,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_10",
+      "kind": "video",
+      "first": 7356,
+      "last": 7462,
+      "start": 306.5,
+      "end": 310.9166666666667,
+      "meaning": "Actual house/roofline in the final operation report; omit corpse images",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 529,
+      "original_source_in": 4609,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_11",
+      "kind": "video",
+      "first": 7462,
+      "last": 7548,
+      "start": 310.9166666666667,
+      "end": 314.5,
+      "meaning": "Actual location exterior; disputed fatal shot is not assigned to a person",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 500,
+      "original_source_in": 4580,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "06_collapse_12",
+      "kind": "video",
+      "first": 7548,
+      "last": 7683,
+      "start": 314.5,
+      "end": 320.125,
+      "meaning": "Actual death-site house and roof imagery from the report, not footage identifying the fatal shooter; no corpse close-up",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 563.5,
+      "original_source_in": 4643.5,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "07_legacy_00",
+      "kind": "video",
+      "first": 7683,
+      "last": 7781,
+      "start": 320.125,
+      "end": 324.2083333333333,
+      "meaning": "Later merchandise and memory, explicitly 2018",
+      "credit": [
+        "Al Jazeera English / 2018",
+        "Later Medellin context"
+      ],
+      "path": "/home/user/build/escobar_intro5/primary_media/aj_research.mp4",
+      "source_in": 65.0,
+      "original_source_in": 65.0,
+      "watermark": true,
+      "source_url": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust"
+    },
+    {
+      "id": "07_legacy_01",
+      "kind": "video",
+      "first": 7781,
+      "last": 7849,
+      "start": 324.2083333333333,
+      "end": 327.0416666666667,
+      "meaning": "Actual beneficiary household from source; the aid was not imaginary",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 648,
+      "original_source_in": 1848,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "07_legacy_02",
+      "kind": "video",
+      "first": 7849,
+      "last": 7931,
+      "start": 327.0416666666667,
+      "end": 330.4583333333333,
+      "meaning": "Medellin Memory House Museum, not a generic memorial passed off as a particular victim",
+      "credit": [
+        "Al Jazeera English / 2018",
+        "Later Medellin context"
+      ],
+      "path": "/home/user/build/escobar_intro5/primary_media/aj_research.mp4",
+      "source_in": 48.0,
+      "original_source_in": 48.0,
+      "watermark": true,
+      "source_url": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust"
+    },
+    {
+      "id": "07_legacy_03",
+      "kind": "video",
+      "first": 7931,
+      "last": 8032,
+      "start": 330.4583333333333,
+      "end": 334.6666666666667,
+      "meaning": "Modern families in the neighborhood, contextual not verified original recipients",
+      "credit": [
+        "BBC News / 2013",
+        "Later Medellin context"
+      ],
+      "path": "/home/user/build/escobar_intro5/primary_media/bbc_research.mp4",
+      "source_in": 102.8,
+      "original_source_in": 102.8,
+      "watermark": true,
+      "source_url": "https://www.bbc.com/news/av/world-25158010"
+    },
+    {
+      "id": "07_legacy_04",
+      "kind": "video",
+      "first": 8032,
+      "last": 8144,
+      "start": 334.6666666666667,
+      "end": 339.3333333333333,
+      "meaning": "Genuine housing neighborhood in the older report, not a claim all residents agreed",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/1200/pbs_later_1200_research.mp4",
+      "source_in": 614,
+      "original_source_in": 1814,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "07_legacy_05",
+      "kind": "video",
+      "first": 8144,
+      "last": 8242,
+      "start": 339.3333333333333,
+      "end": 343.4166666666667,
+      "meaning": "Memory House archive display; competing memories and documented history",
+      "credit": [
+        "Al Jazeera English / 2018",
+        "Later Medellin context"
+      ],
+      "path": "/home/user/build/escobar_intro5/primary_media/aj_research.mp4",
+      "source_in": 144.0,
+      "original_source_in": 144.0,
+      "watermark": true,
+      "source_url": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust"
+    },
+    {
+      "id": "07_legacy_06",
+      "kind": "video",
+      "first": 8242,
+      "last": 8355,
+      "start": 343.4166666666667,
+      "end": 348.125,
+      "meaning": "Historical Tranquilandia lab-complex/cargo imagery: the larger operation, not falsely presented as a filmed post-1993 transaction",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/2160/pbs_later_2160_research.mp4",
+      "source_in": 436,
+      "original_source_in": 2596,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "07_legacy_07",
+      "kind": "video",
+      "first": 8355,
+      "last": 8480,
+      "start": 348.125,
+      "end": 353.3333333333333,
+      "meaning": "Contemporary city life continued, explicitly dated 2018",
+      "credit": [
+        "Al Jazeera English / 2018",
+        "Later Medellin context"
+      ],
+      "path": "/home/user/build/escobar_intro5/primary_media/aj_research.mp4",
+      "source_in": 38.0,
+      "original_source_in": 38.0,
+      "watermark": true,
+      "source_url": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust"
+    },
+    {
+      "id": "07_legacy_08",
+      "kind": "video",
+      "first": 8480,
+      "last": 8668,
+      "start": 353.3333333333333,
+      "end": 361.1666666666667,
+      "meaning": "Later trafficking incentives; waterfront/city imagery from the 1995 report",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 814,
+      "original_source_in": 4894,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "07_legacy_09",
+      "kind": "video",
+      "first": 8668,
+      "last": 8783,
+      "start": 361.1666666666667,
+      "end": 365.9583333333333,
+      "meaning": "Death did not change the trade: original English witness, 1995 perspective",
+      "credit": [
+        "JACK BLUM / Senate investigator",
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 797.3500000000003,
+      "original_source_in": 4877.35,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "speaker": true
+    },
+    {
+      "id": "07_legacy_11",
+      "kind": "video",
+      "first": 8783,
+      "last": 8897,
+      "start": 365.9583333333333,
+      "end": 370.7083333333333,
+      "meaning": "Continue the interrupted source moment after the original witness, without replaying it",
+      "credit": [
+        "FRONTLINE / 1995"
+      ],
+      "path": "/home/user/build/escobar_film/research/4080/pbs_later_4080_research.mp4",
+      "source_in": 821.8012101704189,
+      "original_source_in": 4901.801210170419,
+      "source_url": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/"
+    },
+    {
+      "id": "07_legacy_12",
+      "kind": "video",
+      "first": 8897,
+      "last": 9055,
+      "start": 370.7083333333333,
+      "end": 377.2916666666667,
+      "meaning": "Return to Medellin rather than ending on the criminal as a hero",
+      "credit": [
+        "Al Jazeera English / 2018",
+        "Later Medellin context"
+      ],
+      "path": "/home/user/build/escobar_intro5/primary_media/aj_research.mp4",
+      "source_in": 36.5,
+      "original_source_in": 36.5,
+      "watermark": true,
+      "source_url": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust",
+      "fade_out": 1.0
+    }
+  ],
+  "chapters": [
+    {
+      "id": "01_business",
+      "start": 0.0,
+      "end": 49.333333333333336,
+      "voice_seconds": 49.10075,
+      "quote_seconds": 0
+    },
+    {
+      "id": "02_support",
+      "start": 49.333333333333336,
+      "end": 99.33333333333333,
+      "voice_seconds": 49.7418125,
+      "quote_seconds": 0
+    },
+    {
+      "id": "03_politics",
+      "start": 99.33333333333333,
+      "end": 154.29166666666666,
+      "voice_seconds": 54.73685416666667,
+      "quote_seconds": 0
+    },
+    {
+      "id": "04_extradition",
+      "start": 154.29166666666666,
+      "end": 209.83333333333334,
+      "voice_seconds": 55.2899375,
+      "quote_seconds": 0
+    },
+    {
+      "id": "05_prison",
+      "start": 209.83333333333334,
+      "end": 267.3333333333333,
+      "voice_seconds": 52.74995833333333,
+      "quote_seconds": 4.499999999999236
+    },
+    {
+      "id": "06_collapse",
+      "start": 267.3333333333333,
+      "end": 320.125,
+      "voice_seconds": 52.54866666666667,
+      "quote_seconds": 0
+    },
+    {
+      "id": "07_legacy",
+      "start": 320.125,
+      "end": 377.2916666666667,
+      "voice_seconds": 50.91760416666666,
+      "quote_seconds": 4.809999999999636
+    }
+  ],
+  "score_sections": [
+    {
+      "start": 0.0,
+      "end": 49.333333333333336,
+      "bpm": 122,
+      "mode": "pulse",
+      "density": 1,
+      "root": 73.416
+    },
+    {
+      "start": 49.333333333333336,
+      "end": 99.33333333333333,
+      "bpm": 112,
+      "mode": "pulse",
+      "density": 0.8,
+      "root": 65.406
+    },
+    {
+      "start": 99.33333333333333,
+      "end": 154.29166666666666,
+      "bpm": 116,
+      "mode": "pulse",
+      "density": 0.84,
+      "root": 73.416
+    },
+    {
+      "start": 154.29166666666666,
+      "end": 209.83333333333334,
+      "bpm": 132,
+      "mode": "pressure",
+      "density": 1.05,
+      "root": 69.296
+    },
+    {
+      "start": 209.83333333333334,
+      "end": 267.3333333333333,
+      "bpm": 86,
+      "mode": "sparse",
+      "density": 0.7,
+      "root": 65.406
+    },
+    {
+      "start": 267.3333333333333,
+      "end": 320.125,
+      "bpm": 138,
+      "mode": "pressure",
+      "density": 1,
+      "root": 73.416
+    },
+    {
+      "start": 320.125,
+      "end": 377.2916666666667,
+      "bpm": 94,
+      "mode": "sparse",
+      "density": 0.65,
+      "root": 65.406
+    }
+  ],
+  "effects": [
+    49.333333333333336,
+    99.33333333333333,
+    154.29166666666666,
+    209.83333333333334,
+    267.3333333333333,
+    320.125
+  ],
+  "music_holes": [],
+  "source_rights_cleared": false,
+  "manual_listening_claimed": false,
+  "native_footage_retimed": false,
+  "archive_witnesses_retimed": false,
+  "narration_clause_processed": true,
+  "intro_prefix_external_locked": true
+}

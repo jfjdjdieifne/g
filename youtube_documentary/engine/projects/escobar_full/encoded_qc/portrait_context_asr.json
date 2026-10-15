@@ -1,0 +1,445 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/escobar_film/source_fine_checks/portrait_context.wav",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 0.734768,
+          "end": 0.42,
+          "start": 0.36,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.691276,
+          "start": 0.42,
+          "word": "number"
+        },
+        {
+          "conf": 0.761063,
+          "end": 0.746656,
+          "start": 0.691276,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.81,
+          "start": 0.746656,
+          "word": "the"
+        },
+        {
+          "conf": 0.920472,
+          "end": 1.442196,
+          "start": 0.81,
+          "word": "conversations"
+        },
+        {
+          "conf": 0.932631,
+          "end": 1.56,
+          "start": 1.442558,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.68,
+          "start": 1.56,
+          "word": "i've"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.86,
+          "start": 1.68,
+          "word": "had"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.01,
+          "start": 1.86,
+          "word": "with"
+        },
+        {
+          "conf": 0.536597,
+          "end": 2.46,
+          "start": 2.01,
+          "word": "pablo"
+        }
+      ],
+      "text": "a number of the conversations that i've had with pablo"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.427622,
+          "end": 4.62,
+          "start": 4.35,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.86,
+          "start": 4.68,
+          "word": "go"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.1,
+          "start": 4.86,
+          "word": "back"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.34,
+          "start": 5.1,
+          "word": "into"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.49,
+          "start": 5.34,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.73,
+          "start": 5.49,
+          "word": "early"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.12,
+          "start": 5.73,
+          "word": "days"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.27,
+          "start": 6.12,
+          "word": "as"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.39,
+          "start": 6.27,
+          "word": "to"
+        },
+        {
+          "conf": 0.847206,
+          "end": 6.566626,
+          "start": 6.39,
+          "word": "when"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.63,
+          "start": 6.566626,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.78,
+          "start": 6.63,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.14,
+          "start": 6.78,
+          "word": "stealing"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.5,
+          "start": 7.14,
+          "word": "cars"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.62,
+          "start": 7.5,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.65,
+          "start": 7.62,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.07,
+          "start": 7.65,
+          "word": "living"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.52,
+          "start": 8.1,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.76,
+          "start": 8.52,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.09,
+          "start": 8.76,
+          "word": "stealing"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.45,
+          "start": 9.09,
+          "word": "cars"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.63,
+          "start": 9.45,
+          "word": "how"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.69,
+          "start": 9.63,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.292515,
+          "start": 9.69,
+          "word": "graduated"
+        },
+        {
+          "conf": 0.828746,
+          "end": 10.41,
+          "start": 10.292515,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.74,
+          "start": 10.44,
+          "word": "taking"
+        },
+        {
+          "conf": 0.612871,
+          "end": 11.253123,
+          "start": 10.74,
+          "word": "contract"
+        },
+        {
+          "conf": 0.559441,
+          "end": 11.34,
+          "start": 11.253123,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.67,
+          "start": 11.34,
+          "word": "killing"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.09,
+          "start": 11.67,
+          "word": "people"
+        }
+      ],
+      "text": "he go back into his early days as to when he was stealing cars for a living and from stealing cars how he graduated and taking contract to killing people"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.369966,
+          "end": 13.810341,
+          "start": 13.71,
+          "word": "he"
+        },
+        {
+          "conf": 0.630034,
+          "end": 13.86,
+          "start": 13.810341,
+          "word": "you"
+        },
+        {
+          "conf": 0.630034,
+          "end": 14.19,
+          "start": 13.86,
+          "word": "start"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.49,
+          "start": 14.19,
+          "word": "killing"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.76,
+          "start": 14.49,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.85,
+          "start": 14.76,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.97,
+          "start": 14.85,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.21,
+          "start": 14.97,
+          "word": "late"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.63,
+          "start": 15.21,
+          "word": "teens"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.11,
+          "start": 15.75,
+          "word": "eighteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.53,
+          "start": 16.11,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.95,
+          "start": 16.53,
+          "word": "someone"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.49,
+          "start": 16.95,
+          "word": "admission"
+        }
+      ],
+      "text": "he you start killing people in his late teens eighteen nineteen someone admission"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 18.75,
+          "start": 18.57,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.87,
+          "start": 18.75,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.05,
+          "start": 18.87,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.673199,
+          "start": 19.05,
+          "word": "contract"
+        },
+        {
+          "conf": 0.565573,
+          "end": 19.767303,
+          "start": 19.68,
+          "word": "and"
+        },
+        {
+          "conf": 0.777378,
+          "end": 20.19,
+          "start": 19.767303,
+          "word": "was"
+        },
+        {
+          "conf": 0.89943,
+          "end": 20.61,
+          "start": 20.34,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.06,
+          "start": 20.61,
+          "word": "salary"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.75,
+          "start": 21.6,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.11,
+          "start": 21.75,
+          "word": "wasn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.56,
+          "start": 22.11,
+          "word": "because"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.83,
+          "start": 22.56,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.25,
+          "start": 22.83,
+          "word": "the"
+        }
+      ],
+      "text": "it was on contract and was for salary it wasn't because of the"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.430039,
+          "end": 24.48,
+          "start": 24.21,
+          "word": "mean"
+        },
+        {
+          "conf": 0.511659,
+          "end": 24.5925,
+          "start": 24.48,
+          "word": "no"
+        },
+        {
+          "conf": 0.356624,
+          "end": 24.93,
+          "start": 24.5925,
+          "word": "nursery"
+        }
+      ],
+      "text": "mean no nursery"
+    }
+  ]
+}

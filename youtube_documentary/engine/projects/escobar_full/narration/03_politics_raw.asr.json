@@ -1,0 +1,961 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/escobar_film/voice/03_politics_raw.wav",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 0.813859,
+          "end": 0.326865,
+          "start": 0.15,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.78,
+          "start": 0.326865,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.05,
+          "start": 0.81,
+          "word": "eighty"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.5,
+          "start": 1.05,
+          "word": "two"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.7,
+          "start": 2.01,
+          "word": "escobar"
+        },
+        {
+          "conf": 0.881573,
+          "end": 3.3,
+          "start": 2.97,
+          "word": "took"
+        },
+        {
+          "conf": 0.452305,
+          "end": 3.54,
+          "start": 3.307855,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.02,
+          "start": 3.549964,
+          "word": "public"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.8,
+          "start": 4.02,
+          "word": "profile"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.25,
+          "start": 4.95,
+          "word": "into"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.06,
+          "start": 5.25,
+          "word": "politics"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.84,
+          "start": 6.66,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.05,
+          "start": 6.84,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.71,
+          "start": 7.05,
+          "word": "elected"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.19,
+          "start": 8.01,
+          "word": "as"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.31,
+          "start": 8.19,
+          "word": "an"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.85,
+          "start": 8.31,
+          "word": "alternate"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.36,
+          "start": 8.85,
+          "word": "member"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.51,
+          "start": 9.36,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.14,
+          "start": 9.51,
+          "word": "colombia's"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.89,
+          "start": 10.14,
+          "word": "congress"
+        },
+        {
+          "conf": 0.688996,
+          "end": 11.58,
+          "start": 11.37,
+          "word": "an"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.27,
+          "start": 11.60067,
+          "word": "alternate"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.02,
+          "start": 12.63,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.11,
+          "start": 13.02,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.8,
+          "start": 13.11,
+          "word": "president"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.46,
+          "start": 14.28,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.73,
+          "start": 14.46,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.82,
+          "start": 14.73,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.21,
+          "start": 14.82,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.57,
+          "start": 15.24,
+          "word": "running"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.66,
+          "start": 15.57,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.2,
+          "start": 15.66,
+          "word": "country"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.65,
+          "start": 16.5,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.86,
+          "start": 16.65,
+          "word": "even"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.1,
+          "start": 16.86,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.73,
+          "start": 17.1,
+          "word": "position"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.3,
+          "start": 18.06,
+          "word": "give"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.33,
+          "start": 18.3,
+          "word": "a"
+        },
+        {
+          "conf": 0.794441,
+          "end": 18.78,
+          "start": 18.33,
+          "word": "traffic"
+        },
+        {
+          "conf": 0.794441,
+          "end": 18.87,
+          "start": 18.78,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.38,
+          "start": 18.87,
+          "word": "something"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.8,
+          "start": 19.41,
+          "word": "cash"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.16,
+          "start": 19.8,
+          "word": "alone"
+        }
+      ],
+      "text": "in nineteen eighty two escobar took the public profile into politics he was elected as an alternate member of colombia's congress an alternate not the president and not the man running the country but even that position give a traffic or something cash alone"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.52362,
+          "end": 20.19,
+          "start": 20.16,
+          "word": "i"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.55,
+          "start": 20.28,
+          "word": "couldn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.12,
+          "start": 20.55,
+          "word": "provide"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.96,
+          "start": 21.87,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.41,
+          "start": 21.96,
+          "word": "place"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.07,
+          "start": 22.41,
+          "word": "inside"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.0,
+          "start": 23.37,
+          "word": "legitimate"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.54,
+          "start": 24.0,
+          "word": "political"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.99,
+          "start": 24.54,
+          "word": "life"
+        }
+      ],
+      "text": "i couldn't provide a place inside legitimate political life"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 25.89,
+          "start": 25.77,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.34,
+          "start": 25.89,
+          "word": "public"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.85,
+          "start": 26.37,
+          "word": "image"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.36,
+          "start": 27.12,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.45,
+          "start": 27.36,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.02,
+          "start": 27.45,
+          "word": "generous"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.38,
+          "start": 28.02,
+          "word": "local"
+        },
+        {
+          "conf": 0.643207,
+          "end": 29.16,
+          "start": 28.38,
+          "word": "businessmen"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.91,
+          "start": 29.82,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.18,
+          "start": 29.91,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.63,
+          "start": 30.18,
+          "word": "behind"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.81,
+          "start": 30.63,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.41,
+          "start": 31.17,
+          "word": "came"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.62,
+          "start": 31.41,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.28,
+          "start": 31.62,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.88,
+          "start": 32.55,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.6,
+          "start": 32.88,
+          "word": "contradiction"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.93,
+          "start": 33.6,
+          "word": "became"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.26,
+          "start": 33.93,
+          "word": "harder"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.38,
+          "start": 34.26,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.83,
+          "start": 34.38,
+          "word": "hide"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.52,
+          "start": 35.25,
+          "word": "when"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.27,
+          "start": 35.52,
+          "word": "journalists"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.87,
+          "start": 36.63,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.29,
+          "start": 36.87,
+          "word": "justice"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.74,
+          "start": 37.29,
+          "word": "minister"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.46,
+          "start": 37.74,
+          "word": "rodrigo"
+        },
+        {
+          "conf": 0.677808,
+          "end": 38.88,
+          "start": 38.49,
+          "word": "lara"
+        },
+        {
+          "conf": 0.672696,
+          "end": 39.48,
+          "start": 38.88,
+          "word": "bunia"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.74,
+          "start": 40.02,
+          "word": "exposed"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.98,
+          "start": 40.74,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.43,
+          "start": 40.98,
+          "word": "criminal"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.15,
+          "start": 41.43,
+          "word": "background"
+        }
+      ],
+      "text": "the public image was the generous local businessmen the money behind it came from cocaine that contradiction became harder to hide when journalists and justice minister rodrigo lara bunia exposed his criminal background"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 43.580588,
+          "start": 43.02,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.1,
+          "start": 43.640588,
+          "word": "political"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.73,
+          "start": 44.1,
+          "word": "project"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.54,
+          "start": 44.79,
+          "word": "unraveled"
+        },
+        {
+          "conf": 0.607181,
+          "end": 46.68,
+          "start": 46.02,
+          "word": "laura"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.04,
+          "start": 46.8,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.0,
+          "start": 47.04,
+          "word": "assassinated"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.33,
+          "start": 48.12,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.69,
+          "start": 48.33,
+          "word": "april"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.11,
+          "start": 48.69,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.38,
+          "start": 49.14,
+          "word": "eighty"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.83,
+          "start": 49.38,
+          "word": "four"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.4,
+          "start": 50.16,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.73,
+          "start": 50.4,
+          "word": "wasn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.12,
+          "start": 50.73,
+          "word": "simply"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.21,
+          "start": 51.12,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.48,
+          "start": 51.21,
+          "word": "rich"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.78,
+          "start": 51.48,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.41,
+          "start": 51.78,
+          "word": "failing"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.53,
+          "start": 52.41,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.74,
+          "start": 52.53,
+          "word": "get"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.83,
+          "start": 52.74,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.61,
+          "start": 52.83,
+          "word": "respectable"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.09,
+          "start": 53.61,
+          "word": "career"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.21,
+          "start": 54.09,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.78,
+          "start": 54.21,
+          "word": "wanted"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.98,
+          "start": 55.53,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.7,
+          "start": 55.98,
+          "word": "challenging"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.79,
+          "start": 56.7,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.09,
+          "start": 56.79,
+          "word": "drug"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.45,
+          "start": 57.09,
+          "word": "trade"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.6,
+          "start": 57.45,
+          "word": "were"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.87,
+          "start": 57.6,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.11,
+          "start": 57.87,
+          "word": "put"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.23,
+          "start": 58.11,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.83,
+          "start": 58.23,
+          "word": "danger"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.64,
+          "start": 59.46,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.7,
+          "start": 59.64,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.0,
+          "start": 59.7,
+          "word": "battle"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.39,
+          "start": 60.0,
+          "word": "ahead"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.57,
+          "start": 60.39,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.87,
+          "start": 60.57,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.26,
+          "start": 60.9,
+          "word": "much"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.77,
+          "start": 61.26,
+          "word": "more"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.22,
+          "start": 62.01,
+          "word": "than"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.4,
+          "start": 62.22,
+          "word": "who"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.64,
+          "start": 62.4,
+          "word": "got"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.67,
+          "start": 62.64,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.09,
+          "start": 62.67,
+          "word": "seat"
+        }
+      ],
+      "text": "escobar political project unraveled laura was assassinated in april nineteen eighty four this wasn't simply a rich man failing to get the respectable career he wanted people challenging the drug trade were being put in danger and the battle ahead was about much more than who got a seat"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 63.24,
+          "start": 63.12,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.02,
+          "start": 63.24,
+          "word": "congress"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.53,
+          "start": 64.41,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.68,
+          "start": 64.53,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.95,
+          "start": 64.68,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.25,
+          "start": 64.95,
+          "word": "whether"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.37,
+          "start": 65.25,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.79,
+          "start": 65.37,
+          "word": "state"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.0,
+          "start": 65.79,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.39,
+          "start": 66.0,
+          "word": "actually"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.66,
+          "start": 66.39,
+          "word": "put"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.93,
+          "start": 66.66,
+          "word": "these"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.44,
+          "start": 66.93,
+          "word": "men"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.28,
+          "start": 67.83,
+          "word": "beyond"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.37,
+          "start": 68.28,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.91,
+          "start": 68.37,
+          "word": "reach"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.09,
+          "start": 68.97,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.27,
+          "start": 69.09,
+          "word": "their"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.57,
+          "start": 69.27,
+          "word": "own"
+        },
+        {
+          "conf": 1.0,
+          "end": 70.32,
+          "start": 69.57,
+          "word": "influence"
+        }
+      ],
+      "text": "in congress it was about whether the state could actually put these men beyond the reach of their own influence"
+    }
+  ]
+}

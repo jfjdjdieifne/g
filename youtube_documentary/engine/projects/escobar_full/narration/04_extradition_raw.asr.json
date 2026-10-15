@@ -1,0 +1,976 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/escobar_film/voice/04_extradition_raw.wav",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 0.33,
+          "start": 0.12,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.42,
+          "start": 0.33,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.66,
+          "start": 0.42,
+          "word": "why"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.38,
+          "start": 0.66,
+          "word": "extradition"
+        },
+        {
+          "conf": 0.79078,
+          "end": 1.74,
+          "start": 1.38,
+          "word": "matter"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.04,
+          "start": 1.75883,
+          "word": "so"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.61,
+          "start": 2.04,
+          "word": "much"
+        }
+      ],
+      "text": "that is why extradition matter so much"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 3.54,
+          "start": 3.42,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.78,
+          "start": 3.54,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.08,
+          "start": 3.78,
+          "word": "being"
+        },
+        {
+          "conf": 0.813207,
+          "end": 4.495436,
+          "start": 4.08,
+          "word": "sent"
+        },
+        {
+          "conf": 0.876274,
+          "end": 4.588629,
+          "start": 4.5,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.98,
+          "start": 4.588629,
+          "word": "face"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.73,
+          "start": 4.98,
+          "word": "justice"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.15,
+          "start": 6.0,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.42,
+          "start": 6.15,
+          "word": "another"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.14,
+          "start": 6.42,
+          "word": "country"
+        }
+      ],
+      "text": "a man being sent of face justice in another country"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 8.46,
+          "start": 7.86,
+          "word": "especially"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.58,
+          "start": 8.46,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.03,
+          "start": 8.58,
+          "word": "united"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.63,
+          "start": 9.03,
+          "word": "states"
+        },
+        {
+          "conf": 0.907292,
+          "end": 10.23,
+          "start": 10.08,
+          "word": "in"
+        },
+        {
+          "conf": 0.514488,
+          "end": 10.95,
+          "start": 10.23,
+          "word": "colombia"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.28,
+          "start": 11.19,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.82,
+          "start": 11.28,
+          "word": "powerful"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.51,
+          "start": 11.82,
+          "word": "trafficker"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.72,
+          "start": 12.51,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.96,
+          "start": 12.72,
+          "word": "try"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.08,
+          "start": 12.96,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.56,
+          "start": 13.08,
+          "word": "pressure"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.34,
+          "start": 13.56,
+          "word": "officials"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.36,
+          "start": 14.73,
+          "word": "intimidate"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.11,
+          "start": 15.39,
+          "word": "witnesses"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.56,
+          "start": 16.41,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.83,
+          "start": 16.56,
+          "word": "by"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.52,
+          "start": 16.83,
+          "word": "protection"
+        }
+      ],
+      "text": "especially the united states in colombia a powerful trafficker could try to pressure officials intimidate witnesses or by protection"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 18.42,
+          "start": 18.33,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.81,
+          "start": 18.42,
+          "word": "prison"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.14,
+          "start": 18.81,
+          "word": "cell"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.77,
+          "start": 19.14,
+          "word": "abroad"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.46,
+          "start": 19.98,
+          "word": "threatened"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.55,
+          "start": 20.46,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.85,
+          "start": 20.55,
+          "word": "take"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.06,
+          "start": 20.85,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.33,
+          "start": 21.09,
+          "word": "out"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.42,
+          "start": 21.33,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.63,
+          "start": 21.42,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.38,
+          "start": 21.63,
+          "word": "environment"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.07,
+          "start": 22.8,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.34,
+          "start": 23.07,
+          "word": "just"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.58,
+          "start": 23.34,
+          "word": "away"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.79,
+          "start": 23.58,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.21,
+          "start": 23.79,
+          "word": "home"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.96,
+          "start": 24.57,
+          "word": "away"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.17,
+          "start": 24.96,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.26,
+          "start": 25.17,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.55,
+          "start": 25.26,
+          "word": "relationships"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.85,
+          "start": 26.67,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.27,
+          "start": 26.85,
+          "word": "helped"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.66,
+          "start": 27.27,
+          "word": "keep"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.87,
+          "start": 27.66,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.62,
+          "start": 27.87,
+          "word": "powerful"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.85,
+          "start": 29.1,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.27,
+          "start": 30.06,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.54,
+          "start": 30.27,
+          "word": "other"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.93,
+          "start": 30.54,
+          "word": "wanted"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.65,
+          "start": 30.93,
+          "word": "traffickers"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.13,
+          "start": 31.65,
+          "word": "fought"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.0,
+          "start": 32.16,
+          "word": "extradition"
+        },
+        {
+          "conf": 0.757144,
+          "end": 33.45,
+          "start": 33.3,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.69,
+          "start": 33.45,
+          "word": "under"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.35,
+          "start": 33.69,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.95,
+          "start": 34.68,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.28,
+          "start": 34.95,
+          "word": "fight"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.79,
+          "start": 35.28,
+          "word": "included"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.85,
+          "start": 35.79,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.48,
+          "start": 35.85,
+          "word": "campaign"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.57,
+          "start": 36.48,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.62,
+          "start": 36.57,
+          "word": "assassinations"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.4,
+          "start": 37.98,
+          "word": "kidnap"
+        }
+      ],
+      "text": "a prison cell abroad threatened to take him out of that environment not just away from home away from the relationships that helped keep him powerful escobar and other wanted traffickers fought extradition in under escobar that fight included a campaign of assassinations kidnap"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 38.82,
+          "start": 38.4,
+          "word": "pings"
+        },
+        {
+          "conf": 0.572566,
+          "end": 39.24,
+          "start": 39.09,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.87,
+          "start": 39.24,
+          "word": "bombings"
+        }
+      ],
+      "text": "pings and bombings"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 41.01,
+          "start": 40.62,
+          "word": "police"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.76,
+          "start": 41.01,
+          "word": "officers"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.54,
+          "start": 41.88,
+          "word": "judges"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.56,
+          "start": 42.75,
+          "word": "journalists"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.89,
+          "start": 43.71,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.64,
+          "start": 43.89,
+          "word": "civilians"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.3,
+          "start": 44.97,
+          "word": "paid"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.36,
+          "start": 45.3,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.9,
+          "start": 45.36,
+          "word": "price"
+        },
+        {
+          "conf": 1.0,
+          "end": 46.53,
+          "start": 46.35,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 46.98,
+          "start": 46.53,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.19,
+          "start": 47.01,
+          "word": "eighty"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.76,
+          "start": 47.19,
+          "word": "nine"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.6,
+          "start": 48.03,
+          "word": "presidential"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.2,
+          "start": 48.6,
+          "word": "candidate"
+        },
+        {
+          "conf": 0.583738,
+          "end": 49.89,
+          "start": 49.5,
+          "word": "louis"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.4,
+          "start": 49.89,
+          "word": "carlos"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.0,
+          "start": 50.4,
+          "word": "golan"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.24,
+          "start": 51.03,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.08,
+          "start": 51.24,
+          "word": "assassinated"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.46,
+          "start": 52.89,
+          "word": "terror"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.94,
+          "start": 53.7,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.21,
+          "start": 53.94,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.72,
+          "start": 54.21,
+          "word": "used"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.81,
+          "start": 54.72,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.41,
+          "start": 54.81,
+          "word": "influence"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.95,
+          "start": 55.41,
+          "word": "political"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.7,
+          "start": 55.95,
+          "word": "decisions"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.39,
+          "start": 57.12,
+          "word": "there's"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.45,
+          "start": 57.39,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.99,
+          "start": 57.45,
+          "word": "difference"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.35,
+          "start": 57.99,
+          "word": "between"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.62,
+          "start": 58.35,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.34,
+          "start": 58.62,
+          "word": "popular"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.97,
+          "start": 59.82,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.18,
+          "start": 59.97,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.45,
+          "start": 60.18,
+          "word": "able"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.57,
+          "start": 60.45,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.72,
+          "start": 60.57,
+          "word": "make"
+        }
+      ],
+      "text": "police officers judges journalists and civilians paid the price in nineteen eighty nine presidential candidate louis carlos golan was assassinated terror was being used to influence political decisions there's a difference between being popular and being able to make"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 61.53,
+          "start": 60.72,
+          "word": "opposition"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.19,
+          "start": 61.83,
+          "word": "feel"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.12,
+          "start": 62.22,
+          "word": "unbearable"
+        }
+      ],
+      "text": "opposition feel unbearable"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 64.56,
+          "start": 64.02,
+          "word": "escobar"
+        },
+        {
+          "conf": 0.858209,
+          "end": 64.86,
+          "start": 64.56,
+          "word": "use"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.37,
+          "start": 64.864255,
+          "word": "both"
+        },
+        {
+          "conf": 0.676103,
+          "end": 66.27,
+          "start": 66.12,
+          "word": "an"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.81,
+          "start": 66.290281,
+          "word": "ordinary"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.17,
+          "start": 66.81,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.44,
+          "start": 67.17,
+          "word": "didn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.65,
+          "start": 67.44,
+          "word": "get"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.71,
+          "start": 67.65,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.31,
+          "start": 67.74,
+          "word": "choice"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.55,
+          "start": 68.31,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.88,
+          "start": 68.58,
+          "word": "living"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.42,
+          "start": 68.88,
+          "word": "inside"
+        },
+        {
+          "conf": 0.767099,
+          "end": 69.54,
+          "start": 69.42,
+          "word": "their"
+        },
+        {
+          "conf": 1.0,
+          "end": 70.11,
+          "start": 69.546987,
+          "word": "struggle"
+        },
+        {
+          "conf": 1.0,
+          "end": 70.47,
+          "start": 70.35,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 70.8,
+          "start": 70.47,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 70.92,
+          "start": 70.8,
+          "word": "who"
+        },
+        {
+          "conf": 1.0,
+          "end": 71.1,
+          "start": 70.92,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 71.46,
+          "start": 71.1,
+          "word": "pay"
+        },
+        {
+          "conf": 1.0,
+          "end": 71.670864,
+          "start": 71.46,
+          "word": "for"
+        },
+        {
+          "conf": 0.868043,
+          "end": 71.73,
+          "start": 71.670864,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.24,
+          "start": 71.73,
+          "word": "home"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.93,
+          "start": 72.54,
+          "word": "also"
+        },
+        {
+          "conf": 1.0,
+          "end": 73.29,
+          "start": 72.93,
+          "word": "helped"
+        },
+        {
+          "conf": 1.0,
+          "end": 73.98,
+          "start": 73.29,
+          "word": "create"
+        },
+        {
+          "conf": 1.0,
+          "end": 74.19,
+          "start": 74.07,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 74.73,
+          "start": 74.19,
+          "word": "fear"
+        },
+        {
+          "conf": 1.0,
+          "end": 75.3,
+          "start": 74.76,
+          "word": "outside"
+        },
+        {
+          "conf": 1.0,
+          "end": 75.54,
+          "start": 75.3,
+          "word": "it"
+        }
+      ],
+      "text": "escobar use both an ordinary people didn't get a choice about living inside their struggle the man who could pay for a home also helped create the fear outside it"
+    }
+  ]
+}

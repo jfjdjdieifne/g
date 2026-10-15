@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "e051ce4",
+ "head_commit": "04d9048",
  "studies": [
   {
    "ref": "vaping",
@@ -275,6 +275,29 @@
    "drive_id": "1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ",
    "kind": "file",
    "path": "engine/projects/escobar_intro5/QC.md"
+  },
+  {
+   "name": "Escobar — الفيلم الكامل6:50",
+   "drive_id": "1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw",
+   "kind": "file",
+   "path": "engine/projects/escobar_full/README.md"
+  },
+  {
+   "name": "Escobar — المشروع وملفات الاستعادة",
+   "drive_id": "1UQiCf8rn5pXUhHXhwp7TdT_usLAz5D2H",
+   "kind": "file",
+   "path": "engine/projects/escobar_full/delivery.json"
+  },
+  {
+   "name": "Escobar — فحص الترميز النهائي",
+   "drive_id": "1FwiyXZgRFJJ36Jii7B3K1UetXiO2Eb4s",
+   "kind": "file",
+   "path": "engine/projects/escobar_full/FINAL_QC.md"
+  },
+  {
+   "name": "Escobar — سلسلة أدلة المراجعة",
+   "drive_id": "1s3igyX80z99SyoBGns2FTkveOsWj6oon",
+   "kind": "file"
   }
  ],
  "engine_state": {
@@ -286,7 +309,8 @@
   "montage_theory": "engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار)",
   "rulebook": "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md (29 قسم — آخرها إضافات P2)",
   "engine/runtime/xyz_scene.py + blender_xyz.py": "Runtime XYZ مشترك + backend Cycles جزئي؛ ملف إسكوبار profile إخراج، مو engine مستقل لكل فيلم.",
-  "engine/runtime/photo_depth.py": "كاميرا XYZ مشتركة + صفحات وثائق وparallax للصور الأصلية؛2.5Dمصرّح عنه، مو غرفة سجن ولا إعادة بناء تاريخية مساحية."
+  "engine/runtime/photo_depth.py": "كاميرا XYZ مشتركة + صفحات وثائق وparallax للصور الأصلية؛2.5Dمصرّح عنه، مو غرفة سجن ولا إعادة بناء تاريخية مساحية.",
+  "engine/runtime/sequence_segments.py + geo_route.py + long_score.py + speech_pacing.py": "رندرومكسوخرائطوتشكيلإيقاعمُشترك؛ profileإسكوبارمنفصل. الأرشيفوالشهودبسرعتهمالأصلية. أدواتreview/joinتدعمالفيلمالكاملوتثبتالافتتاحيةستيريو."
  },
  "environment": {
   "note": "السانسبوكس بينصفّر بين الجولات: /home/user/build وpip لا يبقون. المستودع (GitHub) + الدرايف هم الحفظ الحقيقي.",
@@ -299,14 +323,13 @@
   ]
  },
  "next_steps": [
-  "انتظررأيالمستخدمعلىاختبارالصوتالمسرّع15.855ث. لا تولّدباقيالفويساتبالإيقاعالمرفوض. الافتتاحيةمعتمدةومحفوظةSHAمطابق؛ بقيةالفيلم4–9دقائق مأذونة.",
-  "PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت",
-  "باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
-  "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
+  "الفيلمالكامل6:50جاهزومرفوع؛ انتظررأيالمستخدمالفعلي، لاموافقةمفترضةولاسؤالسرعةمكرر.",
+  "عندطلبتعديل: اقرأengine/projects/escobar_full/README.mdوdelivery.json؛ حافظعلىافتتاحيةRevision5وعلىهويةvoice-02والتسجيلاتالخام.",
+  "المراجعةالبصريةالموثّقةمكتملةلشبكاتالعينات؛ السماعالبشريوحقوقالنشرغيرمُدّعيين، وإعادةالرندرتستلزممراجعةالترميزالجديد."
  ],
  "open_questions": [
-  "Revision4ليست معتمدة بعد. Revision3نالتثناءكبيرًا مع طلب تعديلالريثم. هويةvoice-02معتمدة؛ الأداءمعاد استخدامهمن3وبلا توليدجديد. الفحصالصوتيASRوقياسات، لاسمـاعيدوي مُدّعى.",
-  "تراخيص نشر الأرشيف/صور الطرف الثالث غير محسومة. حركة العمق2.5Dوفجوات الخلفية إعادة بناء، وليست حركة كاميرا تاريخية. صورة ميديين حديثة ومصرّح بذلك."
+  "بانتظاررأيالمستخدمبالنسخةالكاملة، وليسسؤالسرعةإضافيًا. الافتتاحيةوالاتجاهالإيقاعيمازالمعتمدين؛ اعتمادالفيلمالكامللميحصلبعد.",
+  "تراخيصنشرالأرشيفوصورالطرفالثالثغيرمحسومة. لاادعاءسماعأذنيدوي؛ ASRوقياساتصوتيةفقط."
  ],
  "laws": [
   "صفر سكيب: كل ثانية وكل لقطة تُقرأ وتُفهم قبل التقدّم",
@@ -321,7 +344,7 @@
   "المشهد وحدة التصميم؛ لا انبثاق وصندوق افتراضي لكل جملة. لا تكفي texture/shadow/bounce لإثبات الاحتراف. اتجاه v3 معتمد ويعمم كسياسة لا قالب.",
   "قبل أي رندر جديد: engine/PRODUCTION_POLICY.json + tools/production_policy.py؛ المحركات القديمة ليست كلها مربوطة تلقائياً فلا تشغّلها دون البوابة.",
   "كل أطوال الفيديو: راوي إنكليزي بأسلوب يوتيوبر طبيعي، حكي وتفسير وأخذ وعطا، لا إنشاء وخطب محفوظة أو أسئلة درامية متكررة.",
-  "تصحيح المستخدم الأخير: الافتتاحية عن إسكوبار بشكل أوسع، والسجن مو فرضيتها الأساسية؛ بلا حرق للهروب أو المصير أو نقاط الذروة. طولها مو محدود30ث، لكن مو تفويض لباقي الوثائقي.",
+  "تعليماتمنعالحرقخاصةبالافتتاحيةالمعتمدة؛ التفويضاللاحقللفيلمالكامل4–9دقائقيسمحبالسجنوالهروبوالنهاية.",
   "آخر تصحيح للمستخدم: افتتاحية سريعة ومتنوعة ومشوقة؛ مطابقة الصورة للمعنى، وقد تخدم جملة واحدة عدة لقطات ذات معنى. لا تدوير صور قليلة بقصات مختلفة.",
   "حركة الاسم/الشتر/الماركر السابقة ملغاة؛ ليست مطالبة بقالب جاهز.",
   "طلب المستخدم أداءً جديدًا أسرع وأحماسيًا بهويةvoice-02نفسها، مع تفاوت طبيعي بين الاندفاع والكلام العادي؛ التوليد/قياسWPM لا يعنيان موافقة.",
@@ -426,18 +449,21 @@
  },
  "active_hook": {
   "project": "engine/projects/escobar_intro5",
-  "status": "المستخدم اعتمد Revision5؛ الافتتاحيةمحفوظة. باقيالفيلممأذون4–9دقائقلكنإيقاعالجسمموقوفللتصحيح.",
-  "scope": "افتتاحيةفقط33.125ث، مو سقف30ث ولا تفويض لباقي الوثائقي؛ بلا حرق مصير/هروب/نهايات.",
+  "status": "Revision5معتمدةومحفوظةكماهي. الفيلمالكامل6:50أُنجزوسُلّمللمراجعة؛ بانتظاررأيالمستخدمبالفيلمالكامل.",
+  "scope": "الافتتاحيةالمعتمدة33.125ثوبلاحرقللمصير. التفويضاللاحقيشملالفيلمالكامل4–9دقائقوسمحوصولالقصةللسجنوالهروبوالنهاية.",
   "video_drive": "1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI",
   "voice": "هويةvoice-02المعتمدة،3تسجيلاتجديدةمأذونةومحفوظة؛ لاatempoولاspeedupعام. أداءالتسجيلاتالجديدةللمراجعة.",
   "source_truth": "شهادتانمنسياقيْمقابلةمختلفينبنفسFRONTLINE1995، مو قنواتمختلفة. BBC2013/AJ2018صورمتَحركةمؤرخة؛ لااختلاقمتحدثينولاlip-sync.",
   "design": "17مقطعًابصريًامؤلَّفًا؛4صور/وثيقةكلواحدةمرة، أغلبالافتتاحيةأرشيفمتحرك. حركةالاسم/الماركرالقديمةملغاة؛ عنواننهائيواحد.",
   "review": "شوهدت67عينة0.5ث+49حدود+107حركةمنالترميزالنهائيب16لوحة؛795فريمdecode،41اختبارميكانيكيPASS. لاادعاءسماعولااستحقاقفنيآلي.",
   "rights": "مصادرحقيقيةلكنحقوقالنشرغيرمُخلّصة؛ مراجعةداخليةفقط.",
-  "next": "انتظررأيهباختبارV3المعالج15.855ث؛ كلهبالهويةنفسها، التبطئةلـanAmericanprisonفقط. لا تعممسرعةغيرمعتمدة.",
+  "next": "Full review film delivered. Await actual user feedback; do not rerender or ask the old pace question. Read engine/projects/escobar_full/README.md and delivery.json for recovery.",
   "source_packet_drive": "1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0",
   "qc_notes_drive": "1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ",
-  "pace_demo_drive": "1da--B-ytj1ErASq9SUb-zFS6XCnNnk2O"
+  "pace_demo_drive": "1da--B-ytj1ErASq9SUb-zFS6XCnNnk2O",
+  "full_film_status": "delivered_review_cut_pending_user_feedback",
+  "full_film_video_drive": "1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw",
+  "full_film_project_drive": "1UQiCf8rn5pXUhHXhwp7TdT_usLAz5D2H"
  },
  "active_intro3": {
   "project": "engine/projects/escobar_intro3",
@@ -561,7 +587,7 @@
   }
  },
  "active_full_film": {
-  "status": "full_film_authorized_pace_revision_pending",
+  "status": "delivered_review_cut_pending_user_feedback",
   "approved_intro": {
    "project": "escobar_intro5",
    "user_approved": true,
@@ -572,18 +598,47 @@
   "latest_feedback": [
    "Full-body raw narration is much too slow.",
    "Faster baseline speech, occasional slow two/three-word emphasis and short meaningful pauses only.",
-   "User rejected the first new raw pace example as still a little slow."
+   "User rejected the first new raw pace example as still a little slow.",
+   "Latest: user requested a tiny slowdown from processedV3 and explicitly ordered full production; implemented, no extra pace question."
   ],
   "current_demo": "pace_test/Escobar_Pace_Faster_V3.mp3",
   "demo_method": "New voice-02 take shaped clause by clause with pitch-preserving tempo factors 1.13-1.43. Important three-word phrase stays at original rate. This is processed, NOT a claim of naturally faster raw acting.",
   "demo_seconds": 15.855,
   "previous_raw_seconds": 20.19,
-  "pace_approved": false,
-  "whole_film_work_paused_for_pace_review": true,
-  "seven_slow_full_body_takes": "Rejected for pacing, preserve as raw source only. Not approved and not queued for rendering.",
+  "pace_approved": true,
+  "whole_film_work_paused_for_pace_review": false,
+  "seven_slow_full_body_takes": "Original slow pacing rejected. Raw recordings preserved untouched; derived clause-paced FLACs now used under the user instruction to proceed, slightly slower than V3. Not a claim of faster raw acting.",
   "no_change_to_approved_intro": true,
   "pace_demo_drive": "1da--B-ytj1ErASq9SUb-zFS6XCnNnk2O",
   "rejected_raw_archive_drive": "1NxeTyKABBS35oTOBq__oOyfCjy4wWL5J",
-  "rejected_raw_archive_md5": "52cb09a7d232cb8f5fe1599fd4df79e5"
+  "rejected_raw_archive_md5": "52cb09a7d232cb8f5fe1599fd4df79e5",
+  "handoff_drive": "1j9dmLjqJ7g-Df_vsqsArA3WfDnv6uL4_",
+  "pace_adjustment": {
+   "user_request": "خليه ابطء بنتفه صغيره وباشر شغل",
+   "implementation": "3.5 percent slower than V3 baseline. Emphasis remains deliberately slower. Raw identity stays voice-02; processing disclosed.",
+   "baseline_rate_vs_v3": 0.965
+  },
+  "latest_user_authorization": "Proceed with full film, slightly slower than V3 test.",
+  "pace_actual_body_recognized_wpm_range": [
+   168.2,
+   175.96
+  ],
+  "full_body_user_approved": false,
+  "project": "engine/projects/escobar_full",
+  "video_drive": "1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw",
+  "project_capsule_drive": "1UQiCf8rn5pXUhHXhwp7TdT_usLAz5D2H",
+  "qc_evidence_drive": "1FwiyXZgRFJJ36Jii7B3K1UetXiO2Eb4s",
+  "review_provenance_drive": "1s3igyX80z99SyoBGns2FTkveOsWj6oon",
+  "sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14",
+  "seconds": 410.4166666666667,
+  "body_shots": 97,
+  "final_review_counts": {
+   "half": 821,
+   "join": 481,
+   "motion": 271
+  },
+  "review": "Actual sampled visual review complete via inspected images plus exact-image provenance;31targeted tests pass. No manual listening or full-film user approval claimed.",
+  "publication_rights_cleared": false,
+  "manual_listening_claimed": false
  }
 }

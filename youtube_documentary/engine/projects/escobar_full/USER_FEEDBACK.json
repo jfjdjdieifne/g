@@ -18,7 +18,7 @@
   "previous_raw_seconds": 20.19,
   "pace_approved": true,
   "whole_film_work_paused_for_pace_review": false,
-  "seven_slow_full_body_takes": "Rejected for pacing, preserve as raw source only. Not approved and not queued for rendering.",
+  "seven_slow_full_body_takes": "Original slow pacing rejected. Raw recordings preserved untouched; derived clause-paced FLACs now used under the user instruction to proceed, slightly slower than V3. Not a claim of faster raw acting.",
   "no_change_to_approved_intro": true,
   "pace_demo_drive": "1da--B-ytj1ErASq9SUb-zFS6XCnNnk2O",
   "rejected_raw_archive_drive": "1NxeTyKABBS35oTOBq__oOyfCjy4wWL5J",
@@ -29,5 +29,10 @@
     "implementation": "3.5 percent slower than V3 baseline. Emphasis remains deliberately slower. Raw identity stays voice-02; processing disclosed.",
     "baseline_rate_vs_v3": 0.965
   },
-  "latest_user_authorization": "Proceed with full film, slightly slower than V3 test."
+  "latest_user_authorization": "Proceed with full film, slightly slower than V3 test.",
+  "pace_actual_body_recognized_wpm_range": [
+    168.2,
+    175.96
+  ],
+  "full_body_user_approved": false
 }
