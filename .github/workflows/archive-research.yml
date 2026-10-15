@@ -1,0 +1,49 @@
+name: Inspect candidate documentary archive
+on:
+  push:
+    branches: [arena/b2ef2032-g]
+    paths: [.github/workflows/archive-research.yml]
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Acquire candidate for research, not publication clearance
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/archive-research
+          cd /tmp/archive-research
+          curl --fail --location --retry 2 --max-time 240 'https://archive.org/download/youtube-jR7_c8KeGZI/jR7_c8KeGZI.mkv' -o source.mkv
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y ffmpeg)
+          ffprobe -v error -show_format -show_streams -of json source.mkv > probe.json
+          sha256sum source.mkv > source.sha256
+          # Low-resolution research proxy only. Original remains transient on runner.
+          ffmpeg -y -v error -i source.mkv -vf "scale='min(640,iw)':-2,fps=12" -c:v libx264 -preset fast -crf 29 -c:a aac -b:a 48k proxy.mp4
+          printf '%s\n' 'RESEARCH ONLY. Repost candidate, original broadcaster/date/rights not yet verified. Not a delivery. Source https://archive.org/details/youtube-jR7_c8KeGZI . No rights clearance inferred.' > NOTICE.txt
+          tar -czf research.tar.gz proxy.mp4 probe.json source.sha256 NOTICE.txt
+      - name: Temporary unreferenced research retrieval handle (not private; no media commit)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64,json,os,urllib.request
+          from pathlib import Path
+          p=Path('/tmp/archive-research/research.tar.gz')
+          if p.stat().st_size>40_000_000:raise SystemExit('Research size cap exceeded')
+          payload=json.dumps({'content':base64.b64encode(p.read_bytes()).decode(),'encoding':'base64'}).encode()
+          request=urllib.request.Request('https://api.github.com/repos/'+os.environ['REPO']+'/git/blobs',data=payload,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+          with urllib.request.urlopen(request) as response:result=json.load(response)
+          print('RESEARCH_BLOB_SHA='+result['sha'])
+          print('Unreferenced transient Git object only; no media committed, no release, no branch created.')
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: archive-research-only
+          path: /tmp/archive-research/research.tar.gz
+          retention-days: 1
