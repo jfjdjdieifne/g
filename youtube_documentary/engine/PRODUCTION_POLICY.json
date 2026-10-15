@@ -10,7 +10,7 @@
   },
   "art_direction": {
     "unit_of_design": "scene",
-    "default_annotation": "direct_spatial_label",
+    "default_annotation": "none",
     "generic_popup_boxes": "disallowed_by_default",
     "exception_requires": [
       "narrative_reason",
@@ -18,7 +18,17 @@
     ],
     "continuity": "Persistent world-space anchors across camera/scene beats; avoid reset at every sentence.",
     "quality": "A technical pass, texture, grain, drop shadow or spring animation is not evidence of professional art direction.",
-    "reference": "WW2 P2 @2:04–2:15; v3 user-approved design direction, not blanket certification of all engines."
+    "reference": "WW2 P2 @2:04–2:15; v3 user-approved design direction, not blanket certification of all engines.",
+    "on_screen_text": {
+      "default": "off",
+      "allowed_only_when": "Necessary for understanding/source context, or a deliberately motivated word-motion scene. No decorative sentence-summary captions.",
+      "rejected_examples": [
+        "HIS DESIGN",
+        "HIS GUARDS",
+        "STILL IN BUSINESS"
+      ],
+      "legal_source_notes": "Necessary factual dates, source credits and illustrative-model notices remain allowed; do not turn them into permanent narrative captions."
+    }
   },
   "depth": {
     "mode": "narrative_choice",
@@ -40,7 +50,10 @@
     "no text collisions",
     "no offshore city/convoy markers",
     "reference evidence",
-    "visual review separate from technical QA"
+    "visual review separate from technical QA",
+    "No default decorative word captions",
+    "Archive-dependent edit blocked until original clips are acquired, viewed and heard",
+    "No narrator-free slide filler disguised as archive-led storytelling"
   ],
   "narration": {
     "language": "en",
@@ -61,7 +74,7 @@
       "Fake hesitations or filler words sprinkled onto an otherwise stiff script.",
       "Invented archive quotations or synthetic anchor speech presented as authentic news."
     ],
-    "archive_handoff": "Archive may take over the storytelling for a purposeful beat. Narrator re-enters with explanation/question and can yield to real archive again. Do not keep VO running over every second.",
+    "archive_handoff": "Where an edit promises actual news/presenter footage, use acquired, viewed AND heard authentic clips with their own original audio. A narrator pause must carry real audiovisual storytelling; typeset quotation slides are NOT an acceptable substitute. If missing, block production and secure the clips first.",
     "voice_status": "voice-02 and the conversational script-preview performance approved by user 2026-10-15. Preserve this delivery; do not re-audition without need. voice-00 rejected."
   }
 }

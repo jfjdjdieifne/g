@@ -15,7 +15,7 @@ import imageio_ffmpeg
 import numpy as np
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 import sys
-from production_policy import enforce_display,enforce_design
+from production_policy import enforce_display,enforce_design,enforce_editorial_review
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'engine/runtime'))
@@ -336,7 +336,8 @@ def make_audio():
 
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--preview',action='store_true');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--preview',action='store_true');p.add_argument('--historical-rebuild',action='store_true');args=p.parse_args()
+    enforce_editorial_review(PROJECT,args.historical_rebuild)
     demo=Demo();picks=[1.1,4.1,6.5,7.9,10,13,16.5,19.8,23.5,29.1]
     for t in picks:demo.render(t).save(BUILD/f'preview_{t:04.1f}.jpg',quality=96)
     if args.preview:return

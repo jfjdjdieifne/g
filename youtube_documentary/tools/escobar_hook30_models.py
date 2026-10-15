@@ -3,11 +3,13 @@
 import argparse
 import sys
 import time
-from escobar_hook30 import camera,world_scene,BUILD,FPS,ROOT
+from escobar_hook30 import camera,world_scene,BUILD,FPS,ROOT,PROJECT
 sys.path.insert(0,str(ROOT/'engine/runtime'))
 from blender_xyz import CyclesWorldRenderer
+from production_policy import enforce_editorial_review
 
-p=argparse.ArgumentParser();p.add_argument('--test',action='store_true');args=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('--test',action='store_true');p.add_argument('--historical-rebuild',action='store_true');args=p.parse_args()
+enforce_editorial_review(PROJECT,args.historical_rebuild)
 out=BUILD/'cycles_samples';out.mkdir(parents=True,exist_ok=True)
 r=CyclesWorldRenderer(width=960,height=540,samples=4)
 frames=[240] if args.test else list(range(128,273,4))+list(range(360,721,4))

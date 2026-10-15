@@ -76,4 +76,17 @@ def enforce_design(design):
     return design
 
 
+def enforce_editorial_review(project, historical_rebuild=False):
+    """Do not accidentally re-render a rejected cut as if it were a revision.
+
+    Explicit historical reproduction is allowed for debugging, NOT approval.
+    This gate does not claim to verify footage contents or clear its rights.
+    """
+    review = Path(project) / 'editorial_review.json'
+    if review.exists() and json.loads(review.read_text()).get('production_blocked'):
+        if not historical_rebuild:
+            raise ValueError('Editorial production blocked: v1 rejected. Acquire, view and hear real news/presenter clips first. No quotation-slide fallback. --historical-rebuild is ONLY for reproducing the rejected historical artifact, not a revised delivery.')
+        print('WARNING: historical reproduction of REJECTED v1, not a new approved cut.')
+
+
 if __name__=='__main__':main()

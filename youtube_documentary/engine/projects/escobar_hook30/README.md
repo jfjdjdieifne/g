@@ -1,4 +1,6 @@
-# Escobar hook / 30 seconds / review cut v1
+# Escobar hook / 30 seconds / v1 REJECTED by user
+
+**Editorial status (2026-10-15): v1 rejected.** Linking was good; still choices, quotation-slide pauses, captions and montage were rejected. Model showed progress but is not approved/professional and does not read sufficiently as a prison. No revised video created. Read `editorial_review.json` and `ARCHIVE_PREFLIGHT.json` first. **Do not render a revision until real news/presenter clips are acquired, viewed and heard.** Commands below are historical v1 reproduction only.
 
 User-approved narrator: **voice-02**, explicit approval 15 October 2026. This profile reuses the approved recording verbatim; no fresh audition/generation. English-only on-screen editorial copy and narration. Conversation/internal notes may be Arabic.
 
@@ -18,8 +20,8 @@ From the `youtube_documentary` directory, with Python 3.11:
 ```sh
 python3 -m pip install --break-system-packages numpy pillow imageio-ffmpeg bpy==4.2.23
 python3 tools/bootstrap_bpy_headless.py
-LD_LIBRARY_PATH=/home/user/build/blender_libs python3 tools/escobar_hook30_models.py
-python3 tools/escobar_hook30_finish.py
+LD_LIBRARY_PATH=/home/user/build/blender_libs python3 tools/escobar_hook30_models.py --historical-rebuild
+python3 tools/escobar_hook30_finish.py --historical-rebuild
 python3 tools/escobar_hook30_qa.py
 python3 -m unittest discover -s tools/tests -v
 ```
@@ -37,3 +39,5 @@ One shared XYZ runtime (`engine/runtime/xyz_scene.py`) and optional shared Cycle
 ## Scope / outstanding
 
 Only the first 30 seconds. The video still needs the user's visual/editorial review. Authentic TV/news audio was **not acquired**; narrator-free moments use brief, visibly sourced **1997 transcript / 2023 article** excerpts, not period news footage. The model is an illustration, not a measured historical reconstruction; its gate/figure movement is symbolic, not evidence of the real escape route. No uncertain-rights Escobar portrait, stock watermark, TV reconstruction or fabricated anchor used.
+
+The render, model and finish CLIs now refuse production while this editorial review is blocked. `--historical-rebuild` is for debugging the rejected old cut only, never a bypass to label it a revision. No new footage or revised video has been acquired/created by the feedback update.

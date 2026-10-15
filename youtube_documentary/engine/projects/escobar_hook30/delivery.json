@@ -1,5 +1,5 @@
 {
-  "status": "review cut delivered; art direction awaits user",
+  "status": "v1 rejected by user 2026-10-15; historical artifact, not an approved cut",
   "date": "2026-10-15",
   "scope_seconds": 30,
   "file_name": "Escobar_Hook30_v1_EN_voice02.mp4",
@@ -81,5 +81,7 @@
     "Full agent listening/playback certification",
     "User approval of video art direction",
     "Full documentary production"
-  ]
+  ],
+  "editorial_review": "editorial_review.json",
+  "archive_preflight": "ARCHIVE_PREFLIGHT.json"
 }

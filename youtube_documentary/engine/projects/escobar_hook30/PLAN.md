@@ -1,4 +1,6 @@
-# Escobar — first 30 seconds / review cut v1
+# Escobar — first 30 seconds / historical v1 plan — REJECTED
+
+User rejected this slide-based archive workaround and decorative captions on 2026-10-15. Do NOT reuse this plan as the revision brief. Preserve continuity and approved voice only. See `editorial_review.json` and `ARCHIVE_PREFLIGHT.json`.
 
 Scope: only this 30-second opening. English picture and narration. No full documentary or next reference study. Voice-02 and its complete performance were explicitly approved on 2026-10-15; use that recording, not a new generation.
 

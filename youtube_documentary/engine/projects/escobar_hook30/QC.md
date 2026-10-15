@@ -1,5 +1,7 @@
 # QC — Escobar 30s review cut v1 / 2026-10-15
 
+**SUBSEQUENT USER VERDICT: REJECTED.** Technical results below describe the historical file, NOT editorial success. User approved continuity only; rejected stills, slide-based pauses, decorative captions and montage. Prison model shows progress but remains insufficiently legible/professional. See `editorial_review.json`; revision blocked pending real acquired/viewed/heard news clips.
+
 ## Actual delivered file
 
 - `/home/user/build/escobar_hook30/render/escobar_hook30_v1.mp4`

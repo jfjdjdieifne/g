@@ -10,8 +10,10 @@ import subprocess
 from pathlib import Path
 import imageio_ffmpeg
 from escobar_hook30 import BUILD,PROJECT
+from production_policy import enforce_editorial_review
 
-parser=argparse.ArgumentParser();parser.add_argument('--shot',choices=['design','escape']);parser.add_argument('--prepare-only',action='store_true');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--shot',choices=['design','escape']);parser.add_argument('--prepare-only',action='store_true');parser.add_argument('--historical-rebuild',action='store_true');args=parser.parse_args()
+enforce_editorial_review(PROJECT,args.historical_rebuild)
 ff=imageio_ffmpeg.get_ffmpeg_exe();cache=BUILD/'model_frames';cache.mkdir(exist_ok=True)
 # Delete only the initial standalone lighting test, not any required scene sample.
 for a,b,name in [(128,272,'design'),(360,720,'escape')]:
@@ -46,4 +48,4 @@ if args.shot:raise RuntimeError('Single shot requires --prepare-only; do not com
     'limitations':['Illustrative geometry, not a measured plan','6fps model renders interpolated to 24fps; inspect fences and gate for ghosting','No authentic news audio acquired']
 },indent=2)+'\n')
 print('Interpolation done. Compositing approved narration.',flush=True)
-subprocess.run(['python3',str(Path(__file__).with_name('escobar_hook30.py'))],check=True)
+subprocess.run(['python3',str(Path(__file__).with_name('escobar_hook30.py'))]+(['--historical-rebuild'] if args.historical_rebuild else []),check=True)

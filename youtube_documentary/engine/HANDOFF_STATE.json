@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "7b28f64",
+ "head_commit": "f86de61",
  "studies": [
   {
    "ref": "vaping",
@@ -195,13 +195,13 @@
   ]
  },
  "next_steps": [
-  "ناطرين تقييم المستخدم لنسخة Escobar Hook30 v1؛ ثبّت voice-02 المعتمد. لا تعمل باقي الوثائقي تلقائياً. صوت أخبار أصلي غير مؤمّن.",
+  "تأمين وفحص/سماع أخبار حقيقية ومذيعين للهوك قبل أي رندر جديد. إزالة الكابشن الافتراضي، وعدم استبدال الأرشيف بسلايدات. الحفاظ على الصوت المعتمد والربط الجيد؛ لا بدء باقي الوثائقي.",
   "PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت",
   "باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
   "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
  ],
  "open_questions": [
-  "رأي المستخدم البصري/الإيقاعي بنسخة Escobar Hook30 v1؛ الصوت voice-02 معتمد أصلاً، لا تعيد اختبار صوته."
+  "لا مقاطع أرشيف أصلية منزلة/مشاهدة/مسموعة بعد؛ الإنتاج متوقف على تأمين المناسب وفحصه، لا على سؤال المستخدم مجدداً عن الصوت."
  ],
  "laws": [
   "صفر سكيب: كل ثانية وكل لقطة تُقرأ وتُفهم قبل التقدّم",
@@ -314,16 +314,18 @@
  },
  "active_hook": {
   "scope": "أول 30 ثانية نظامية لإسكوبار فقط؛ لا بدء باقي الوثائقي تلقائياً. طلب جديد من المستخدم بعد ديموهات المرجع.",
-  "status": "أول30ث v1 اكتملت، قُدّمت للمستخدم ورُفعت للدرايف؛ ناطرين رأيه البصري. voice-02 معتمد؛ الفيديو نفسه غير معتمد بعد.",
+  "status": "المستخدم رفض v1 إخراجياً: الربط جيد، الصور/العرض/المونتاج سيئة، سكتات على سلايدات مرفوضة، الكابشن الزائد مرفوض. المجسم أحسن جزء لكن مو واضح كسجن وغير احترافي؛ ليس معتمداً.",
   "audio": "voice-02 معتمد 2026-10-15: بحسه شخص عم يحكيلي طبيعي حبيت موافق. canonical engine/projects/escobar_hook30/assets/narrator_approved.mp3؛ ممنوع إعادة توليد الأداء.",
   "script": "engine/projects/escobar_hook30/SCRIPT_EN.md",
-  "archive": "لا صوت أخبار أصلي. اقتباس PBS1997 مكتوب + وصف AmusingPlanet2023 مع تاريخ ومصدر. صورة موقع2019 Stefanomione CC BY-SA4؛ مو إعادة بناء تاريخية دقيقة.",
+  "archive": "لا مقاطع أخبار/مذيعين أصلية مؤمّنة بعد. ممنوع رندر نسخة بديلة على سلايدات. مرشح MOBFAX/CharlieRose من metadata بحث فقط، غير منزّل/مشاهد/مسموع أو مرخّص.",
   "plan": "engine/projects/escobar_hook30/PLAN.md",
   "sources": "engine/projects/escobar_hook30/SOURCES_AND_RIGHTS.md",
   "video_drive": "1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW",
   "delivery": "engine/projects/escobar_hook30/delivery.json",
   "qc": "engine/projects/escobar_hook30/QC.md",
   "actual_qc": "21/21 tests PASS؛ 720فريم decode؛60عينة2fps+8فريمات بينية شوهدت؛−15.34LUFS/−0.93dBTP. لا ادعاء سماع/تشغيل كامل. النموذج540p6fps→24fps، صورة/نص/ترميز1080p. آثار تنعيم طفيفة بالأسلاك.",
-  "scope_reminder": "أول30ث فقط، لا بدء الباقي ولا المرجع التالي تلقائياً."
+  "scope_reminder": "أول30ث فقط، لا بدء الباقي ولا المرجع التالي تلقائياً.",
+  "editorial_review": "engine/projects/escobar_hook30/editorial_review.json",
+  "preflight": "engine/projects/escobar_hook30/ARCHIVE_PREFLIGHT.json"
  }
 }

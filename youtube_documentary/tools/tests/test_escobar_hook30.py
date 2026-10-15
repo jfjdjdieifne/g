@@ -9,11 +9,18 @@ from PIL import Image
 
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
 import escobar_hook30 as h
-from production_policy import display_errors,design_errors
+from production_policy import display_errors,design_errors,enforce_editorial_review
 from xyz_scene import Camera,World,cylinder
 
 
 class HookGates(unittest.TestCase):
+    def test_rejected_cut_is_blocked_before_render(self):
+        with self.assertRaisesRegex(ValueError,'Editorial production blocked'):
+            enforce_editorial_review(h.PROJECT)
+        import contextlib,io
+        with contextlib.redirect_stdout(io.StringIO()) as output:
+            enforce_editorial_review(h.PROJECT,historical_rebuild=True)
+        self.assertIn('REJECTED',output.getvalue())
     def test_explicit_approval_and_exact_take(self):
         meta=json.loads((h.PROJECT/'voice_preview.json').read_text())
         self.assertEqual(meta['approved_voice_id'],'voice-02')

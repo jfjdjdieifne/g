@@ -1,0 +1,25 @@
+{
+  "status": "blocked",
+  "reason": "Required authentic news/presenter footage has not been acquired, viewed or heard. No quotation-slide substitute authorized.",
+  "selected_clips": [],
+  "required_per_clip": [
+    "local media file and SHA256",
+    "original broadcaster/program and original date, independently checked",
+    "actual viewed/heard source in/out timecodes",
+    "transcribed audible English words and identified speaker/role",
+    "narrative function and narrator handoff point",
+    "rights/use basis; repost does not grant reuse permission"
+  ],
+  "unverified_leads": [
+    {
+      "url": "https://www.youtube.com/watch?v=jR7_c8KeGZI",
+      "mirror": "https://archive.org/details/youtube-jR7_c8KeGZI",
+      "search_metadata_only": "Reposter MOBFAX describes La Catedral b-roll and a 1992 Charlie Rose discussion. Original program/date/contents not verified.",
+      "downloaded": false,
+      "viewed": false,
+      "heard": false,
+      "rights_cleared": false
+    }
+  ],
+  "no_new_render_until": "Suitable actual clips secured and reviewed; approved voice preserved; revised scene selection grounded in clips, not filler stills."
+}
