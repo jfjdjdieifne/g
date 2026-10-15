@@ -1,0 +1,61 @@
+name: Intro5 bounded selected footage
+on:
+  push:
+    branches: [arena/b2ef2032-g]
+    paths: [.github/workflows/intro5-selected.yml]
+permissions:
+  contents: write
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Obtain bounded ordinary public selections; never bypass access
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          python3 -m pip -q install yt-dlp
+          mkdir -p /tmp/intro5
+          python3 - <<'PYCODE'
+          import subprocess,json,concurrent.futures
+          from pathlib import Path
+          root=Path('/tmp/intro5')
+          sources={
+            'pbs':('https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/', [('escobar',882,3),('cash',149.95,3.99),('max',221.92,4.85),('estate',778,5),('aircraft',926,7),('takeoff',943,3),('load',1118,12),('interdiction',1138,13),('night',1183,3)]),
+            'bbc':('https://www.bbc.com/news/av/world-25158010',[('housing',102.6,2.8)]),
+            'aj':('https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust',[('aftermath',14,5),('mural',70,4)])}
+          def work(item):
+            source,(url,ranges)=item;rows=[]
+            p=subprocess.run(['yt-dlp','--no-playlist','--socket-timeout','15','--retries','0','--skip-download','--dump-single-json','-f','best[height<=720]/best',url],capture_output=True,text=True,timeout=60)
+            if p.returncode:return [{'id':source,'error':p.stderr[-1500:]}]
+            data=json.loads(p.stdout)
+            if data.get('entries'):data=data['entries'][0]
+            media=data.get('url');assert media,'No public combined AV; no bypass'
+            (root/(source+'_metadata.json')).write_text(json.dumps(data,indent=2))
+            for key,start,duration in ranges:
+              name=source+'_'+key;row={'id':name,'source':url,'source_offset_seconds':start,'bounded_seconds':duration,'rights_cleared':False,'manual_viewing_or_listening':False}
+              p=subprocess.run(['ffmpeg','-v','error','-rw_timeout','15000000','-ss',str(start),'-i',media,'-t',str(duration),'-vf','scale=min(1280\,iw):-2','-c:v','libx264','-threads','2','-preset','fast','-crf','18','-maxrate','2500k','-bufsize','5000k','-c:a','aac','-b:a','128k','-movflags','+faststart','-y',str(root/(name+'.mp4'))],capture_output=True,text=True,timeout=90)
+              (root/(name+'_download.log')).write_text(p.stderr[-4000:]);row['download_returncode']=p.returncode;rows.append(row)
+            return rows
+          with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:rows=[r for group in pool.map(work,sources.items()) for r in group]
+          (root/'retrieval_report.json').write_text(json.dumps(rows,indent=2));print(json.dumps(rows,indent=2))
+          PYCODE
+      - name: Store bounded unreferenced research object
+        id: stash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json,base64,subprocess,os,tarfile
+          from pathlib import Path
+          root=Path('/tmp/intro5');out=Path('/tmp/intro5.tar.gz')
+          with tarfile.open(out,'w:gz')as tar:
+            for f in root.iterdir():
+              if f.is_file() and f.stat().st_size<35000000:tar.add(f,arcname=f.name)
+          data=out.read_bytes();assert len(data)<60000000
+          payload=json.dumps({'content':base64.b64encode(data).decode(),'encoding':'base64'})
+          r=json.loads(subprocess.check_output(['gh','api','--method','POST','repos/'+os.environ['REPO']+'/git/blobs','--input','-'],input=payload.encode()))
+          with open(os.environ['GITHUB_OUTPUT'],'a')as f:f.write('sha='+r['sha']+'\n')
+          PY
+      - name: Research object ${{ steps.stash.outputs.sha }}
+        run: echo 'Research only. Different source programmes are not yet verified usable footage; inspect actual pictures and speech.'
