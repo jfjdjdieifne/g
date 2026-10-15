@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `61d1756` · **HEAD الحالي:** `61d1756`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `bb2fab1` · **HEAD الحالي:** `bb2fab1`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -59,31 +59,38 @@
 | ديمو WW2-drive v4 (عمق وإنكليزي) |  [درايف](https://drive.google.com/file/d/1xzUM0fyO2T7cyCBUeDlOkbVa4yALg6wq/view) |
 | خطة اختبار عمق v4 |  [درايف](https://drive.google.com/file/d/1fSd6WDq6XpvEFzNITt3KAW4oKIxTp8g2/view) |
 | سياسة الإنتاج العامة — English / Scene-first |  [درايف](https://drive.google.com/file/d/1eflzeVEYkokGL0dV3BYJMV-Dxr84XLg_/view) |
-| Escobar Hook30 v1 EN / approved voice-02 | `engine/projects/escobar_hook30/delivery.json` [درايف](https://drive.google.com/file/d/1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW/view) |
+| Escobar Hook30 v1 REJECTED / voice-02 only approved | `engine/projects/escobar_hook30/delivery.json` [درايف](https://drive.google.com/file/d/1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW/view) |
+| Current HANDOFF — official archive acquired, no revised film | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1ZqoJ_Ecquvg8agmi9HssjndMm801t4K7/view) |
 
 ## المشروع النشط — الهوك الحالي
 
 - **scope:** أول 30 ثانية نظامية لإسكوبار فقط؛ لا بدء باقي الوثائقي تلقائياً. طلب جديد من المستخدم بعد ديموهات المرجع.
-- **status:** جارٍ تأمين المادة الأصلية فعلياً، لا رندر جديد. اتصال archive.org المباشر محجوب TLS؛ بدأ job بحث محدود عبر GitHub على نفس فرع الجلسة لتنزيل مرشح وفحصه. لم يُكتسب الملف/تُتحقق محتوياته محلياً بعد.
+- **status:** الأرشيف الأصلي مؤمّن فعلياً: أول120ث من Charlie Rose الرسمي، مع مرشح جملة عن سجنه من صنعه. شوهدت عينات وتأكدت الكلمات من captions الأصلية. لا فيديو معدّل/رندر جديد؛ بوابة v1 المرفوضة باقية.
 - **audio:** voice-02 معتمد 2026-10-15: بحسه شخص عم يحكيلي طبيعي حبيت موافق. canonical engine/projects/escobar_hook30/assets/narrator_approved.mp3؛ ممنوع إعادة توليد الأداء.
 - **script:** engine/projects/escobar_hook30/SCRIPT_EN.md
-- **archive:** لا مقاطع أخبار/مذيعين أصلية مؤمّنة بعد. ممنوع رندر نسخة بديلة على سلايدات. مرشح MOBFAX/CharlieRose من metadata بحث فقط، غير منزّل/مشاهد/مسموع أو مرخّص.
+- **archive:** البرنامج الأصلي Andrew and Leslie Cockburn بتاريخ12نوفمبر1992 مؤكد من صفحة البرنامج وReelin ID58597. ملف محلي original_opening.mp4؛ مرشح30.18–37.18s من هذا الملف تحديداً. لا WAZEE/ABCtimecodes/MOBFAX في العينات الرسمية المشاهدة؛ لم تُمح علامات. صوت المذيع CharlieRose، جزء من سؤال وليس نشرة حية وقت الهروب. ASR+captions فقط، لا ادعاء سماع يدوي؛ أساس استعمال النشر لم يُحسم.
 - **plan:** engine/projects/escobar_hook30/PLAN.md
 - **sources:** engine/projects/escobar_hook30/SOURCES_AND_RIGHTS.md
 - **video_drive:** [درايف](https://drive.google.com/file/d/1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW/view)
 - **delivery:** engine/projects/escobar_hook30/delivery.json
 - **qc:** engine/projects/escobar_hook30/QC.md
-- **actual_qc:** 21/21 tests PASS؛ 720فريم decode؛60عينة2fps+8فريمات بينية شوهدت؛−15.34LUFS/−0.93dBTP. لا ادعاء سماع/تشغيل كامل. النموذج540p6fps→24fps، صورة/نص/ترميز1080p. آثار تنعيم طفيفة بالأسلاك.
+- **actual_qc:** الـv1 المرفوض فقط:21/21 testsPASS؛720فريم decode؛60عينة2fps+8فريمات بينية شوهدت؛−15.34LUFS/−0.93dBTP. لا ادعاء سماع/تشغيل كامل. النموذج540p6fps→24fps. ليست مراجعة أو شهادة للنسخة الجديدة غير الموجودة.
 - **scope_reminder:** أول30ث فقط، لا بدء الباقي ولا المرجع التالي تلقائياً.
 - **editorial_review:** engine/projects/escobar_hook30/editorial_review.json
 - **preflight:** engine/projects/escobar_hook30/ARCHIVE_PREFLIGHT.json
 - **user_clarification:** المستخدم ذكّر بالمراجع: خبر حقيقي عن الموضوع يقول جملة محددة، ثم يدخل الراوي مستلماً معناها. انتقاء الجملة/المقطع الحقيقي أولاً، مو أخبار للزينة أو سكتات جاهزة نملأها. تفكيك Juul الموجود يسجّل مقال/مذيع عند0:00–0:07؛ هذه إحالة لدراسة سابقة لا ادعاء إعادة مشاهدة/سماع الآن.
-- **acquisition_run:** https://github.com/jfjdjdieifne/g/actions/runs/38730137943
+- **acquisition_run:** https://github.com/jfjdjdieifne/g/actions/runs/38732941054
 - **global_user_instruction:** قبل أي تسليم ولكل فيديو: افهم وصفّن بكل مشهد وعاين الناتج بنفسك، أصلح الأخطاء الإخراجية الكبيرة قبل المراجعة. protocol engine/EDITORIAL_REVIEW_PROTOCOL.md؛ لا شهادة احتراف آلية.
+- **acquisition_status:** completed_success; لا jobs معلّقة. blob4e7114018505ee78e1aedf93d38f007c6bd2b10b. الدليل المفصل يحفظ أربع عمليات استرجاع ناجحة؛ لا تستأنف old watchers.
+- **archive_evidence:** engine/projects/escobar_hook30/archive_research/official_source_evidence.json
+- **archive_research:** engine/projects/escobar_hook30/archive_research/SOURCE_REVIEW_2026-10-15.md
+- **archive_candidate_handoff:** ...a prison of his own making. → This is Pablo Escobar's prison. He helped design it... لا ترتيب أخبار شكلي ولا سلايدات مكان الكلام.
+- **revision_qc:** لا نسخة معدلة، لا encoded self-review جديد، لا رفع فيديو جديد. الصوت voice-02 مطابق SHA523220dab1465d8958a24345978de76982953396e05b9bcf7ed012da44c7485d.
+- **handoff_drive:** [درايف](https://drive.google.com/file/d/https://drive.google.com/file/d/1ZqoJ_Ecquvg8agmi9HssjndMm801t4K7/view — ملاحظات تسليم الحالة فقط، لا فيديو جديد./view)
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. تأمين وفحص/سماع أخبار حقيقية ومذيعين للهوك قبل أي رندر جديد. إزالة الكابشن الافتراضي، وعدم استبدال الأرشيف بسلايدات. الحفاظ على الصوت المعتمد والربط الجيد؛ لا بدء باقي الوثائقي.
+1. المرشح الأصلي المحدد صار موجوداً، لا تعِد البحث من الصفر. أنهِ مراجعة حدود الاقتباس/تسليم الصوت وأساس الاستعمال مع صدق الأدلة؛ صمّم وافحص مشهد سجن جديد واضح قبل الرندر الطويل، دون نسخ النموذج المرفوض أو اختراع مسار هروب. ثم عاين كل مشهد والناتج المشفّر؛ أول30ث فقط والصوت المعتمد بلا إعادة توليد.
 2. PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت
 3. باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
 4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث

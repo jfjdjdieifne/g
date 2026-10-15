@@ -1,0 +1,190 @@
+{
+  "schema": "archive-source-review/1",
+  "updated": "2026-10-15",
+  "status": "candidate_not_delivery_approved",
+  "source": {
+    "program": "Charlie Rose",
+    "segment": "Andrew and Leslie Cockburn",
+    "original_air_date": "1992-11-12",
+    "date_evidence": [
+      "https://charlierose.com/videos/15564",
+      "https://www.footage.net/clipdetail?supplier=reelin&key=32618363"
+    ],
+    "licensor_catalog_id": "Reelin 58597",
+    "original_page": "https://charlierose.com/videos/15564",
+    "primary_captions_url": "https://charlie-p-2ac84d7056ca7f9d.s3.amazonaws.com/clips/subtitles/000/015/564/original/1HY294_004.vtt?1556809068",
+    "webpage_metadata_id": "15564"
+  },
+  "acquisition": {
+    "run": 38732941054,
+    "head": "bb2fab1",
+    "blob_sha": "4e7114018505ee78e1aedf93d38f007c6bd2b10b",
+    "local_excerpt": "/home/user/build/escobar_archive_official/original_opening.mp4",
+    "sha256": "6b533a7506d8996607780271ed627dbc49fe9f2e348fc061dec7596ce8e754e7",
+    "bytes": 9945144,
+    "resolution": [
+      720,
+      480
+    ],
+    "fps": "30000/1001",
+    "sample_aspect_ratio": "1:1",
+    "workflow": "/.github/workflows/archive-research.yml",
+    "restore_command": "python3 tools/archive_research_fetch.py --run 38732941054 --out /home/user/build/escobar_archive_official",
+    "bounded_research_transcode": true,
+    "original_master": false,
+    "watermarks_removed": false,
+    "requested_duration_seconds": 120
+  },
+  "candidate": {
+    "in_seconds": 30.18,
+    "out_seconds": 37.18,
+    "timebase": "local original_opening.mp4, NOT repost or subtitle cue timecodes",
+    "timing_status": "candidate; exact cut and final AV synchronization not approved",
+    "words": "his decision to allow himself to be put in a prison of his own making",
+    "speaker": "Charlie Rose",
+    "role": "interviewer / program host",
+    "context": "Fragment of a question to Andrew Cockburn, not a standalone declarative news report. The broadcast was after the July escape. Do not portray this as a live surrender/escape bulletin.",
+    "narrative_function": "Establishes the central contradiction: choosing a prison of his own making. Approved narrator then identifies Escobar and explains design, guards and ongoing business.",
+    "handoff": "...of his own making. / This is Pablo Escobar's prison. He helped design it...",
+    "asr_words": [
+      {
+        "conf": 1.0,
+        "end": 30.45,
+        "start": 30.24,
+        "word": "his"
+      },
+      {
+        "conf": 1.0,
+        "end": 31.23,
+        "start": 30.45,
+        "word": "decision"
+      },
+      {
+        "conf": 1.0,
+        "end": 32.16,
+        "start": 31.62,
+        "word": "to"
+      },
+      {
+        "conf": 1.0,
+        "end": 33.21,
+        "start": 32.91,
+        "word": "allow"
+      },
+      {
+        "conf": 1.0,
+        "end": 33.57,
+        "start": 33.21,
+        "word": "himself"
+      },
+      {
+        "conf": 1.0,
+        "end": 33.69,
+        "start": 33.57,
+        "word": "to"
+      },
+      {
+        "conf": 1.0,
+        "end": 33.81,
+        "start": 33.69,
+        "word": "be"
+      },
+      {
+        "conf": 1.0,
+        "end": 34.05,
+        "start": 33.81,
+        "word": "put"
+      },
+      {
+        "conf": 0.840653,
+        "end": 34.17,
+        "start": 34.05,
+        "word": "in"
+      },
+      {
+        "conf": 0.840653,
+        "end": 34.23,
+        "start": 34.17,
+        "word": "a"
+      },
+      {
+        "conf": 1.0,
+        "end": 34.86,
+        "start": 34.23,
+        "word": "prison"
+      },
+      {
+        "conf": 1.0,
+        "end": 35.91,
+        "start": 35.73,
+        "word": "of"
+      },
+      {
+        "conf": 1.0,
+        "end": 36.03,
+        "start": 35.91,
+        "word": "his"
+      },
+      {
+        "conf": 1.0,
+        "end": 36.24,
+        "start": 36.03,
+        "word": "own"
+      },
+      {
+        "conf": 1.0,
+        "end": 36.66,
+        "start": 36.24,
+        "word": "making"
+      }
+    ]
+  },
+  "performed_review": {
+    "official_contact_sheet_viewed": true,
+    "candidate_contact_sheet_viewed": true,
+    "candidate_frames_viewed": 15,
+    "candidate_sampling_fps": 2,
+    "sampling_note": "ffmpeg fps filter samples; labels approximate, not frame-accurate edit points. Not continuous playback.",
+    "visual_findings": [
+      "Actual program footage: Andrew listens at the beginning; editorial camera cuts back to Charlie Rose speaking roughly three seconds into the candidate. Preserve this native picture/audio relationship.",
+      "No WAZEE, ABC licensing timecodes or MOBFAX mark visible in viewed official-source samples. None removed.",
+      "Primary page and separate licensor catalog agree on November 12, 1992.",
+      "Low-resolution SD archive, not a clean HD master. Preserve native proportions; do not describe upscale as restored HD."
+    ],
+    "audio_content_checks": [
+      "Local Vosk ASR of official source",
+      "Local Vosk ASR of matching repost section",
+      "Primary program English VTT cues 9–12 corroborate the quoted wording. VTT cue times differ from actual media/ASR; do not use them for precise cuts."
+    ],
+    "manual_listening": false,
+    "continuous_av_playback": false,
+    "primary_caption_excerpt": "primary_caption_excerpt.vtt"
+  },
+  "rights": {
+    "publicly_playable": true,
+    "rights_holder_notice": "Charlie Rose LLC",
+    "publication_license_obtained": false,
+    "rights_cleared": false,
+    "use_basis_status": "Research and quotation candidate only. Public playback is not a reuse license; publication-use basis remains unresolved.",
+    "licensor_catalog": "https://www.footage.net/clipdetail?supplier=reelin&key=32618363"
+  },
+  "delivery": {
+    "revision_video_created": false,
+    "new_render": false,
+    "approved_voice_unchanged": true,
+    "production_blocked": true,
+    "remaining": [
+      "Review cut boundaries and source/narrator audio transition; do not claim manual listening from ASR.",
+      "Resolve/document publication-use basis without inventing permission.",
+      "Redesign and inspect actual prison scenes; no automatic reuse of rejected model, unsupported generic watchtowers or fabricated escape route.",
+      "Review every encoded scene at 0.5s cadence plus interstitial movement and the actual mixed audio evidence. Technical checks do not certify art."
+    ],
+    "new_video_drive_upload": false
+  },
+  "technical_regression": {
+    "command": "python3 -m unittest discover -s tools/tests -v",
+    "result": "22 PASS",
+    "seconds": 5.698,
+    "editorial_or_rights_approval": false
+  }
+}

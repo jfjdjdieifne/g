@@ -11,7 +11,8 @@
     "Overall editing and visual art direction not professional"
   ],
   "partial_positive": "Prison model is the best visual part and shows progress, but does not read clearly enough as a prison and is not yet professional. NOT approval of the model or whole cut.",
-  "next_action": "Secure and actually view/hear real period news/presenter/report clips before planning or rendering a revision. No slide fallback.",
+  "next_action": "Official Charlie Rose source acquired; review exact soundbite/audio boundary and use basis, then redesign and inspect prison staging before any revision. Preserve rejected-v1 gate. No slide fallback.",
   "production_blocked": true,
-  "revision_video_created": false
+  "revision_video_created": false,
+  "archive_research_evidence": "archive_research/official_source_evidence.json"
 }

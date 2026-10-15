@@ -2,6 +2,10 @@
 
 **Editorial status (2026-10-15): v1 rejected.** Linking was good; still choices, quotation-slide pauses, captions and montage were rejected. Model showed progress but is not approved/professional and does not read sufficiently as a prison. No revised video created. Read `editorial_review.json` and `ARCHIVE_PREFLIGHT.json` first. **Do not render a revision until real news/presenter clips are acquired, viewed and heard.** Commands below are historical v1 reproduction only.
 
+## Archive acquisition update — not a revised video
+
+The official **Charlie Rose / Andrew and Leslie Cockburn / 12 November 1992** opening120s is acquired. A specific prison-of-his-own-making question fragment has been visually sampled and its words checked against primary captions. This is no longer a metadata-only lead. No manual-listening or publication-license claim, no revised render, no approval of the rejected model. Read `archive_research/SOURCE_REVIEW_2026-10-15.md` and `official_source_evidence.json`; all four acquisition jobs completed, none pending.
+
 User-approved narrator: **voice-02**, explicit approval 15 October 2026. This profile reuses the approved recording verbatim; no fresh audition/generation. English-only on-screen editorial copy and narration. Conversation/internal notes may be Arabic.
 
 ## Source of truth
@@ -38,6 +42,6 @@ One shared XYZ runtime (`engine/runtime/xyz_scene.py`) and optional shared Cycle
 
 ## Scope / outstanding
 
-Only the first 30 seconds. The video still needs the user's visual/editorial review. Authentic TV/news audio was **not acquired**; narrator-free moments use brief, visibly sourced **1997 transcript / 2023 article** excerpts, not period news footage. The model is an illustration, not a measured historical reconstruction; its gate/figure movement is symbolic, not evidence of the real escape route. No uncertain-rights Escobar portrait, stock watermark, TV reconstruction or fabricated anchor used.
+Historical v1 only: first30seconds, rejected by the user. For that old cut, authentic TV/news audio was **not acquired**; narrator-free moments use brief, visibly sourced **1997 transcript / 2023 article** excerpts, not period news footage. The model is an illustration, not a measured historical reconstruction; its gate/figure movement is symbolic, not evidence of the real escape route. No uncertain-rights Escobar portrait, stock watermark, TV reconstruction or fabricated anchor used.
 
-The render, model and finish CLIs now refuse production while this editorial review is blocked. `--historical-rebuild` is for debugging the rejected old cut only, never a bypass to label it a revision. No new footage or revised video has been acquired/created by the feedback update.
+The render, model and finish CLIs now refuse production while this editorial review is blocked. `--historical-rebuild` is for debugging the rejected old cut only, never a bypass to label it a revision. The initial feedback update acquired no footage. The later research update acquired actual official program media; it did not produce a revised video. The historical CLI gates remain blocked.

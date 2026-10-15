@@ -3,7 +3,7 @@
   "voice_id": "voice-02",
   "approval": "approved by user 2026-10-15: بحسه شخص عم يحكيلي طبيعي حبيت موافق",
   "narrator_text": "This is Pablo Escobar's prison. He helped design it, picked his own guards, and kept running his business from inside. So, yes, he went to prison. But not quite the way you'd expect. A year later, he escaped. How did he get that deal? And why did the government finally try to take it away?",
-  "news_audio_status": "not acquired; 1997 transcript / 2023 article typeset excerpts instead; no synthetic anchor",
+  "news_audio_status": "Official Charlie Rose November 12, 1992 opening acquired. Specific question-fragment candidate corroborated by primary captions; not yet delivery-approved. See ARCHIVE_PREFLIGHT.json.",
   "video_status": "v1 rejected by user: wrong images, slide pauses, decorative captions, insufficient art direction. Voice-02 remains approved.",
   "approved_voice_id": "voice-02",
   "approved_audio": "assets/narrator_approved.mp3",

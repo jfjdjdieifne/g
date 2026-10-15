@@ -1,3 +1,5 @@
+> **Later archive research, not used in v1:** official Charlie Rose segment acquired; primary and licensor catalogs date it12November1992. See `archive_research/SOURCE_REVIEW_2026-10-15.md` and `official_source_evidence.json`. Public playback is not a publication license; no license acquired or rights-clearance claim. Below describes the historical rejected v1 assets unless stated otherwise.
+
 # Sources, credits and rights — Escobar hook 30s
 
 ## Actual site photograph (3.00–5.90s)
