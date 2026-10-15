@@ -27,32 +27,10 @@ def validate():
     if errors:raise ValueError('; '.join(errors))
 
 
-def decode(path,start=0,dur=None):
-    args=[FF,'-v','error','-ss',str(start),'-i',str(path)]
-    if dur is not None:args+=['-t',str(dur)]
-    return np.frombuffer(subprocess.check_output(args+['-ac','1','-ar','48000','-f','f32le','-']),dtype='<f4').astype(np.float64)
-
-def wav(path,x):
-    if x.ndim==1:x=np.column_stack([x,x])
-    with wave.open(str(path),'wb') as f:f.setnchannels(2);f.setsampwidth(2);f.setframerate(48000);f.writeframes((np.clip(x,-1,1)*32767).astype('<i2').tobytes())
-
-def rms(x):return float(np.sqrt(np.mean(x*x)))
-
-@lru_cache(maxsize=24)
-def image(name):return np.array(Image.open(A/name).convert('RGB'))
-
-@lru_cache(maxsize=40)
-def font(size,bold=False):return ImageFont.truetype(str(FONTB if bold else FONT),size)
-
-def caption(frame,text,right=False):
-    frame=frame.copy();ramp=np.linspace(0,.68,110,dtype=np.float32)[:,None,None];frame[-110:]=(frame[-110:].astype(np.float32)*(1-ramp)).astype(np.uint8)
-    im=Image.fromarray(frame);d=ImageDraw.Draw(im);f=font(32);x=64
-    if right:x=W-64-d.textlength(text,font=f)
-    d.text((x,H-57),text,font=f,fill=(224,224,215),stroke_width=2,stroke_fill=(12,14,16));return np.array(im)
-
-def region(name,c0,c1,span0,span1,u,yaw=.0):
-    k=smooth(u);center=np.array(c0)*(1-k)+np.array(c1)*k
-    return view(image(name),center,span0*(1-k)+span1*k,(W,H),yaw=yaw*math.sin(math.pi*k))
+# Shared runtime; source and silhouette choices live in the film profile.
+from film_runtime import FilmVisuals,decode,wav,rms
+visuals=FilmVisuals([A],(W,H),ROOT/'assets_global/fonts',P.DEPTH)
+image=visuals.image;font=visuals.font;caption=visuals.caption;region=visuals.region
 
 def prepare():
     B.mkdir(parents=True,exist_ok=True);(B/'frames').mkdir(exist_ok=True)
@@ -119,22 +97,7 @@ def television(key,t):
     return caption(frame,'Charlie Rose  /  Nov 12, 1992')
 
 
-@lru_cache(maxsize=4)
-def depth_scene(name):
-    im=image(name);h,w=im.shape[:2];mask=np.zeros((h,w),np.uint8)
-    if name=='football.jpg':
-        pts=[(321,115),(335,122),(341,145),(351,155),(367,182),(374,214),(379,232),(373,244),(367,240),(365,220),(358,206),(356,253),(345,302),(335,348),(332,386),(327,409),(312,418),(304,411),(301,393),(306,363),(310,319),(306,286),(292,308),(285,340),(282,382),(270,403),(259,407),(252,400),(260,381),(263,351),(267,312),(276,285),(272,252),(260,241),(251,230),(249,204),(256,180),(270,162),(285,153),(290,146),(294,134),(299,122)]
-        cv2.fillPoly(mask,[np.int32(pts)],255)
-        # Refine the actual silhouette using image edges, not a guessed person shape.
-        gc=np.zeros((h,w),np.uint8);gc[98:433,230:395]=cv2.GC_PR_BGD;gc[mask>0]=cv2.GC_PR_FGD;gc[cv2.erode(mask,np.ones((9,9),np.uint8))>0]=cv2.GC_FGD
-        cv2.setRNGSeed(193)
-        cv2.grabCut(im,gc,None,np.zeros((1,65),np.float64),np.zeros((1,65),np.float64),5,cv2.GC_INIT_WITH_MASK)
-        mask=np.where((gc==1)|(gc==3),255,0).astype(np.uint8)
-        cv2.circle(mask,(263,377),25,255)
-    elif name=='city.jpg':
-        pts=[(0,320),(100,309),(166,268),(235,269),(260,241),(305,244),(336,228),(369,216),(405,217),(437,244),(491,254),(541,273),(574,251),(634,250),(681,257),(711,239),(779,237),(779,h),(0,h)]
-        cv2.fillPoly(mask,[np.int32(pts)],255)
-    return PhotoDepth(im,mask)
+depth_scene=visuals.depth_scene
 
 
 def name_clip(source,box,u):

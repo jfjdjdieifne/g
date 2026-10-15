@@ -27,7 +27,7 @@ def material_errors(plan, expected_beats=None):
     if any(not isinstance(i, str) or not i for i in ids) or len(set(ids)) != len(ids):
         return ['Material IDs must be non-empty unique strings.']
     by_id = dict(zip(ids, assets))
-    authentic = {'archive_video', 'real_photo', 'press_scan', 'interview'}
+    authentic = {'archive_video', 'real_photo', 'press_scan', 'press_webpage', 'interview'}
     generated = {'generated_from_photo', 'generated_illustration'}
     kinds = authentic | generated | {'original_model', 'graphic', 'typography'}
     for a in assets:
@@ -73,7 +73,7 @@ def material_errors(plan, expected_beats=None):
             word = b.get('word')
             for aid in refs:
                 a = by_id[aid]
-                if a.get('kind') != 'press_scan' or not isinstance(word, str) or not word or word.casefold() not in str(a.get('verified_crop_text', '')).casefold():
+                if a.get('kind') not in {'press_scan', 'press_webpage'} or not isinstance(word, str) or not word or word.casefold() not in str(a.get('verified_crop_text', '')).casefold():
                     errors.append(f'Beat {name}: word-match needs genuine inspected press crops containing the exact word.')
             if not b.get('semantic_reason'):
                 errors.append(f'Beat {name}: word-match needs a semantic reason, not merely speed.')

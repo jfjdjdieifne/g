@@ -1,0 +1,47 @@
+{
+  "forbes_cover.png": {
+    "path": "engine/projects/escobar_intro3/assets/forbes_cover.png",
+    "bytes": 850171,
+    "sha256": "ef998932f1fc8b5516432838d907808a693d4ec2b3d4c7d86f65cdc6d4cbcb20"
+  },
+  "forbes_entry.png": {
+    "path": "engine/projects/escobar_intro3/assets/forbes_entry.png",
+    "bytes": 1123356,
+    "sha256": "c21aa708fda0f496642e18c22054c0e44aaf2e4843f67688a152027948b71778"
+  },
+  "semana.jpg": {
+    "path": "engine/projects/escobar_intro3/assets/semana.jpg",
+    "bytes": 178243,
+    "sha256": "f3cbd870b1067ffaebe85a45eb0ee040f4b0d4a1c7ccf139abb1bd6f02eef652"
+  },
+  "football.jpg": {
+    "path": "engine/projects/escobar_intro3/assets/football.jpg",
+    "bytes": 35178,
+    "sha256": "5b24e412196fc01b29291ae1f2aee5e9895df2ca89af6cec265f581eabeba958"
+  },
+  "congress.jpg": {
+    "path": "engine/projects/escobar_intro3/assets/congress.jpg",
+    "bytes": 44112,
+    "sha256": "5f28148cd06670274a68d165dd681f36ae1b07953737bfda976e8261e01d584d"
+  },
+  "city.jpg": {
+    "path": "engine/projects/escobar_intro3/assets/city.jpg",
+    "bytes": 125827,
+    "sha256": "84d91428c19b11a42c1780e2a4e079959fdf90b252e440d3f2d70cd0aa090f4e"
+  },
+  "housing1983.jpg": {
+    "path": "engine/projects/escobar_intro4/assets/housing1983.jpg",
+    "bytes": 282850,
+    "sha256": "02cd1e752ed6ba6f509214f758184ed12df033dd7aecfa28fd865322884490a3"
+  },
+  "guardian_word.png": {
+    "path": "engine/projects/escobar_intro4/assets/guardian_word.png",
+    "bytes": 8381,
+    "sha256": "e960c692de4562d80e181e78efa45f1ff6a33b5b41730f644913b3b49753de96"
+  },
+  "elpais_word.png": {
+    "path": "engine/projects/escobar_intro4/assets/elpais_word.png",
+    "bytes": 6518,
+    "sha256": "95ecffbe1e2398fd44345775305376aaf6f14584b12f64badb97c5411da6821a"
+  }
+}

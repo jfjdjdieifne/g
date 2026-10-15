@@ -18,3 +18,7 @@ ARCHIVE={
 # Intentional intervals, not a preset30-second limit. Length includes intact new takes.
 STARTS={'ship':0.0,'wealth':5.35,'wanted':21.0,'social':23.84,'fear':40.70,'questions':46.45,'close':57.80}
 DURATION=63.25
+
+# Film data for the shared runtime, not a separate per-film engine.
+import json
+DEPTH=json.loads((Path(__file__).parent/"depth_masks.json").read_text())

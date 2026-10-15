@@ -1,0 +1,17 @@
+{
+  "duration": 53.833333333333336,
+  "frames": 1292,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "bytes": 21330143,
+  "sha256": "b30d20d13b0c42ccb117f4575d44259890132c506bc2372c9bac4bffa0c0ca71",
+  "user_approved": false,
+  "visual_review_complete": true,
+  "manual_listening_claimed": false,
+  "revision3_untouched": true,
+  "composition": "Shared XYZ/photo_depth engine; native1080pcomposition of lower-resolution authentic sources.",
+  "visual_review_method": "AI-agent visually inspected all108half-second frames via7sheets, all73join frames via5sheets, and all35subsecond motion frames via3sheets. Not all1292individual frames, not real-time playback, not human ear-listening or user approval."
+}

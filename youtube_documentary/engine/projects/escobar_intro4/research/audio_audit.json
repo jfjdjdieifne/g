@@ -1,0 +1,104 @@
+{
+  "clips": [
+    {
+      "id": "name_host",
+      "start": 0,
+      "duration": 1.27,
+      "end": 1.27,
+      "gain": 2.2064838802238653
+    },
+    {
+      "id": "name_guest",
+      "start": 1.335,
+      "duration": 1.06,
+      "end": 2.395,
+      "gain": 2.5829708950383043
+    },
+    {
+      "id": "ship",
+      "start": 2.46,
+      "duration": 4.27,
+      "end": 6.7299999999999995,
+      "gain": 2.5132764747908523
+    },
+    {
+      "id": "wealth",
+      "start": 6.85,
+      "duration": 11.988,
+      "end": 18.838,
+      "gain": 0.8037374763956352
+    },
+    {
+      "id": "wanted",
+      "start": 18.958,
+      "duration": 2.64,
+      "end": 21.598,
+      "gain": 2.9748387755157335
+    },
+    {
+      "id": "social",
+      "start": 21.718,
+      "duration": 10.364,
+      "end": 32.082,
+      "gain": 0.7935094461811888
+    },
+    {
+      "id": "fear",
+      "start": 32.202,
+      "duration": 5.51,
+      "end": 37.711999999999996,
+      "gain": 2.2796381281372566
+    },
+    {
+      "id": "questions",
+      "start": 37.832,
+      "duration": 10.333541666666667,
+      "end": 48.16554166666667,
+      "gain": 0.7663558710408274
+    },
+    {
+      "id": "close",
+      "start": 48.28554166666667,
+      "duration": 4.180875,
+      "end": 52.46641666666667,
+      "gain": 0.6839863067140505
+    }
+  ],
+  "sfx_events": [
+    [
+      6.85,
+      "camera shutter"
+    ],
+    [
+      8.75,
+      "paper turn"
+    ],
+    [
+      9.399999999999999,
+      "camera shutter"
+    ],
+    [
+      25.068,
+      "camera shutter"
+    ],
+    [
+      44.482,
+      "camera shutter"
+    ],
+    [
+      48.28554166666667,
+      "camera shutter"
+    ],
+    [
+      50.28554166666667,
+      "camera shutter"
+    ]
+  ],
+  "sfx_relative_to_music_db": -8,
+  "master_constant_gain_db": -0.019999999999999574,
+  "global_time_stretch": false,
+  "pitch_shift": false,
+  "new_voice_generation": false,
+  "manual_listening_claimed": false,
+  "name_bites_source": "Two speakers from the SAME1992CharlieRoseprogramme, not separate news broadcasts. ABC acquisition was blocked and excluded."
+}

@@ -1,0 +1,355 @@
+{
+  "assets": [
+    {
+      "id": "forbes_cover",
+      "kind": "press_scan",
+      "path": "../escobar_intro3/assets/forbes_cover.png",
+      "description": "Actual complete cover. Richest-man theme is NOT an Escobar No.1claim.",
+      "source": "https://www.forbes.com/sites/halahtouryalai/2015/09/15/watching-netflixs-narcos-heres-pablo-escobar-in-forbes-first-ever-billionaire-issue-in-1987/",
+      "date_context": "5October1987",
+      "review_status": "inspected",
+      "review_evidence": "Source inspection recorded in revision3; revision4 staging and actual encoded2fps/joins reviewed separately in QC.md, not automatic artistic approval.",
+      "rights_status": "Internal editorial review only; publication permission not obtained."
+    },
+    {
+      "id": "forbes_entry",
+      "kind": "press_scan",
+      "path": "../escobar_intro3/assets/forbes_entry.png",
+      "description": "Actual entry/portrait, plus original printed name.",
+      "source": "https://blogs-images.forbes.com/halahtouryalai/files/2015/09/escobar-write-up1.png",
+      "date_context": "5October1987",
+      "review_status": "inspected",
+      "review_evidence": "Source inspection recorded in revision3; revision4 staging and actual encoded2fps/joins reviewed separately in QC.md, not automatic artistic approval.",
+      "rights_status": "Internal editorial review only; publication permission not obtained.",
+      "verified_crop_text": "Escobar"
+    },
+    {
+      "id": "semana",
+      "kind": "press_scan",
+      "path": "../escobar_intro3/assets/semana.jpg",
+      "description": "Original photograph/name, no home-handover claim or Spanish article copy.",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0962629825001763",
+      "date_context": "19April1983",
+      "review_status": "inspected",
+      "review_evidence": "Source inspection recorded in revision3; revision4 staging and actual encoded2fps/joins reviewed separately in QC.md, not automatic artistic approval.",
+      "rights_status": "Internal editorial review only; publication permission not obtained.",
+      "verified_crop_text": "Escobar"
+    },
+    {
+      "id": "football",
+      "kind": "real_photo",
+      "path": "../escobar_intro3/assets/football.jpg",
+      "description": "Actual football-field inauguration, different exposure from the Moravia plate.",
+      "source": "https://www.eltiempo.com/cultura/gente/pablo-escobar-como-fue-su-vida-politica-620562",
+      "date_context": "1983per actual publisher caption",
+      "review_status": "inspected",
+      "review_evidence": "Source inspection recorded in revision3; revision4 staging and actual encoded2fps/joins reviewed separately in QC.md, not automatic artistic approval.",
+      "rights_status": "Internal editorial review only; publication permission not obtained."
+    },
+    {
+      "id": "congress",
+      "kind": "real_photo",
+      "path": "../escobar_intro3/assets/congress.jpg",
+      "description": "Whole actual congressional group photograph. No uncertain face isolation.",
+      "source": "https://www.eltiempo.com/cultura/gente/pablo-escobar-como-fue-su-vida-politica-620562",
+      "date_context": "1983per actual publisher caption",
+      "review_status": "inspected",
+      "review_evidence": "Source inspection recorded in revision3; revision4 staging and actual encoded2fps/joins reviewed separately in QC.md, not automatic artistic approval.",
+      "rights_status": "Internal editorial review only; publication permission not obtained."
+    },
+    {
+      "id": "city",
+      "kind": "real_photo",
+      "path": "../escobar_intro3/assets/city.jpg",
+      "description": "Correct Medellin/CerroNutibara; AndresCamiloSuarezEcheverry. Not1980s or the housing project.",
+      "source": "https://www.elcolombiano.com/medellin/cerro-nutibara-hogar-de-250-especies-de-fauna-y-flora-medellin-CP35098648",
+      "date_context": "Published31March2026; explicitly contemporary",
+      "review_status": "inspected",
+      "review_evidence": "Source inspection recorded in revision3; revision4 staging and actual encoded2fps/joins reviewed separately in QC.md, not automatic artistic approval.",
+      "rights_status": "Internal editorial review only; publication permission not obtained."
+    },
+    {
+      "id": "football_depth",
+      "kind": "generated_from_photo",
+      "reference_id": "football",
+      "description": "Original-pixel2.5D parallax, mask/inpainting; not image-model generation.",
+      "presented_as_archive": false,
+      "disclosure": "Editorial photo animation; not recorded historical camera motion or surveyed depth.",
+      "preserve": "Actual source subject pixels, composition, no generated faces/actions.",
+      "unknown_or_invented": "Depth is editorial; hidden areas behind foreground and tiny newly exposed gutters are computationally reconstructed, not evidence.",
+      "review_evidence": "Source inspection recorded in revision3; revision4 staging and actual encoded2fps/joins reviewed separately in QC.md, not automatic artistic approval."
+    },
+    {
+      "id": "city_depth",
+      "kind": "generated_from_photo",
+      "reference_id": "city",
+      "description": "Original-pixel2.5D parallax, mask/inpainting; not image-model generation.",
+      "presented_as_archive": false,
+      "disclosure": "Editorial photo animation; not recorded historical camera motion or surveyed depth.",
+      "preserve": "Actual source subject pixels, composition, no generated faces/actions.",
+      "unknown_or_invented": "Depth is editorial; hidden areas behind foreground and tiny newly exposed gutters are computationally reconstructed, not evidence.",
+      "review_evidence": "Source inspection recorded in revision3; revision4 staging and actual encoded2fps/joins reviewed separately in QC.md, not automatic artistic approval."
+    },
+    {
+      "id": "title",
+      "kind": "typography",
+      "description": "Original editorial PABLO ESCOBAR title; no claim this is historical print.",
+      "review_evidence": "Source inspection recorded in revision3; revision4 staging and actual encoded2fps/joins reviewed separately in QC.md, not automatic artistic approval."
+    },
+    {
+      "id": "housing1983",
+      "kind": "real_photo",
+      "path": "assets/housing1983.jpg",
+      "description": "Sin Tugurios housing actually under construction,1983; original Edgar El Chino Jimenez photograph reproduced by El Pais.1200x811source, not recorded moving footage.",
+      "source": "https://english.elpais.com/usa/2021-12-24/pablo-escobar-unseen-portraits-of-a-drug-lord.html",
+      "date_context": "1983 per original publisher caption, reproduced24Dec2021",
+      "review_status": "inspected",
+      "review_evidence": "Full original viewed; building rows/unfinished walls verified; both staging crops inspected and final encoded checks recorded in QC.",
+      "rights_status": "Publicly accessible material, NOT publication-cleared. Internal editorial review only."
+    },
+    {
+      "id": "guardian_name",
+      "kind": "press_webpage",
+      "path": "assets/guardian_word.png",
+      "description": "Current public webpage rendering of a1992article; only Escobar name is used, no outcome headline. NOT a historical newspaper scan; no retyped/synthetic archival words.",
+      "source": "https://www.theguardian.com/world/1992/jul/24/colombia.fromthearchive",
+      "date_context": "Current public webpage rendering of a1992article; only Escobar name is used, no outcome headline.",
+      "review_status": "inspected",
+      "review_evidence": "Actual crop pixels viewed and verified as Escobar; fixed matched ink anchor,2-secondhold and editorial multiply highlighter. ElPais initially cookie-obscured crop was REJECTED; ordinary anonymous-browser ACCEPT AND CONTINUE, then new genuine unobscured capture reviewed. No overlay deletion, login or subscription bypass.",
+      "rights_status": "Publicly accessible material, NOT publication-cleared. Internal editorial review only.",
+      "verified_crop_text": "Escobar"
+    },
+    {
+      "id": "elpais_name",
+      "kind": "press_webpage",
+      "path": "assets/elpais_word.png",
+      "description": "Current public webpage rendering of24Dec2021article; only real headline Escobar word is used. NOT a historical newspaper scan; no retyped/synthetic archival words.",
+      "source": "https://english.elpais.com/usa/2021-12-24/pablo-escobar-unseen-portraits-of-a-drug-lord.html",
+      "date_context": "Current public webpage rendering of24Dec2021article; only real headline Escobar word is used.",
+      "review_status": "inspected",
+      "review_evidence": "Actual crop pixels viewed and verified as Escobar; fixed matched ink anchor,2-secondhold and editorial multiply highlighter. ElPais initially cookie-obscured crop was REJECTED; ordinary anonymous-browser ACCEPT AND CONTINUE, then new genuine unobscured capture reviewed. No overlay deletion, login or subscription bypass.",
+      "rights_status": "Publicly accessible material, NOT publication-cleared. Internal editorial review only.",
+      "verified_crop_text": "Escobar"
+    },
+    {
+      "id": "name_host",
+      "kind": "interview",
+      "description": "Original1992CharlieRose interview source. Name_host/name_guest are two real voices from the SAME programme, not separate newscasts. Wanted/host are explicitly audio-only over independently credited real images.",
+      "source": "https://charlierose.com/videos/15564",
+      "date_context": "12November1992",
+      "review_status": "inspected",
+      "review_evidence": "Original source visuals and frame bounds inspected. Official VTT/source record and fallible Vosk word timing; final AAC ASR checked. NO new human ear-listening claim.",
+      "rights_status": "Publicly accessible material, NOT publication-cleared. Internal editorial review only.",
+      "exact_quote": "Pablo Escobar",
+      "speaker": "Charlie Rose",
+      "source_in_out": [
+        11.36,
+        12.63
+      ],
+      "audio_review_method": "Official source/VTT plus automatic Vosk word timing on original and finalAAC; not a manual listening claim."
+    },
+    {
+      "id": "name_guest",
+      "kind": "interview",
+      "description": "Original1992CharlieRose interview source. Name_host/name_guest are two real voices from the SAME programme, not separate newscasts. Wanted/host are explicitly audio-only over independently credited real images.",
+      "source": "https://charlierose.com/videos/15564",
+      "date_context": "12November1992",
+      "review_status": "inspected",
+      "review_evidence": "Original source visuals and frame bounds inspected. Official VTT/source record and fallible Vosk word timing; final AAC ASR checked. NO new human ear-listening claim.",
+      "rights_status": "Publicly accessible material, NOT publication-cleared. Internal editorial review only.",
+      "exact_quote": "Pablo Escobar",
+      "speaker": "Andrew Cockburn",
+      "source_in_out": [
+        38.72,
+        39.78
+      ],
+      "audio_review_method": "Official source/VTT plus automatic Vosk word timing on original and finalAAC; not a manual listening claim."
+    },
+    {
+      "id": "ship",
+      "kind": "interview",
+      "description": "Original1992CharlieRose interview source. Name_host/name_guest are two real voices from the SAME programme, not separate newscasts. Wanted/host are explicitly audio-only over independently credited real images.",
+      "source": "https://charlierose.com/videos/15564",
+      "date_context": "12November1992",
+      "review_status": "inspected",
+      "review_evidence": "Original source visuals and frame bounds inspected. Official VTT/source record and fallible Vosk word timing; final AAC ASR checked. NO new human ear-listening claim.",
+      "rights_status": "Publicly accessible material, NOT publication-cleared. Internal editorial review only.",
+      "exact_quote": "I mean, not just a little kilo here, a kilo there, but planeloads, shiploads.",
+      "speaker": "Andrew Cockburn",
+      "source_in_out": [
+        67.26,
+        71.53
+      ],
+      "audio_review_method": "Official source/VTT plus automatic Vosk word timing on original and finalAAC; not a manual listening claim."
+    },
+    {
+      "id": "wanted",
+      "kind": "interview",
+      "description": "Original1992CharlieRose interview source. Name_host/name_guest are two real voices from the SAME programme, not separate newscasts. Wanted/host are explicitly audio-only over independently credited real images.",
+      "source": "https://charlierose.com/videos/15564",
+      "date_context": "12November1992",
+      "review_status": "inspected",
+      "review_evidence": "Original source visuals and frame bounds inspected. Official VTT/source record and fallible Vosk word timing; final AAC ASR checked. NO new human ear-listening claim.",
+      "rights_status": "Publicly accessible material, NOT publication-cleared. Internal editorial review only.",
+      "exact_quote": "the most wanted man in the Western Hemisphere",
+      "speaker": "Charlie Rose",
+      "source_in_out": [
+        12.66,
+        15.3
+      ],
+      "audio_review_method": "Official source/VTT plus automatic Vosk word timing on original and finalAAC; not a manual listening claim."
+    },
+    {
+      "id": "fear",
+      "kind": "interview",
+      "description": "Original1992CharlieRose interview source. Name_host/name_guest are two real voices from the SAME programme, not separate newscasts. Wanted/host are explicitly audio-only over independently credited real images.",
+      "source": "https://charlierose.com/videos/15564",
+      "date_context": "12November1992",
+      "review_status": "inspected",
+      "review_evidence": "Original source visuals and frame bounds inspected. Official VTT/source record and fallible Vosk word timing; final AAC ASR checked. NO new human ear-listening claim.",
+      "rights_status": "Publicly accessible material, NOT publication-cleared. Internal editorial review only.",
+      "exact_quote": "He didn't really invent anything, but he had the gift for organization and instilling fear.",
+      "speaker": "Andrew Cockburn",
+      "source_in_out": [
+        76.74,
+        82.25
+      ],
+      "audio_review_method": "Official source/VTT plus automatic Vosk word timing on original and finalAAC; not a manual listening claim."
+    }
+  ],
+  "beats": [
+    {
+      "id": "names",
+      "function": "Two genuine source voices name the subject; one programme honestly credited.",
+      "choice_reason": "Two genuine source voices name the subject; one programme honestly credited.",
+      "why_not_real": "Authentic exact-subject media chosen first. Modest editorial camera/hidden-background reconstruction only on declared original-pixel photo scenes.",
+      "material_ids": [
+        "name_host",
+        "name_guest",
+        "semana"
+      ],
+      "narrative_owner": "archive"
+    },
+    {
+      "id": "scale",
+      "function": "Intact archive sentence establishes industrial scale, not a silent news prop.",
+      "choice_reason": "Intact archive sentence establishes industrial scale, not a silent news prop.",
+      "why_not_real": "Authentic exact-subject media chosen first. Modest editorial camera/hidden-background reconstruction only on declared original-pixel photo scenes.",
+      "material_ids": [
+        "ship"
+      ],
+      "narrative_owner": "archive"
+    },
+    {
+      "id": "wealth",
+      "function": "Actual billionaire issue, real entry and photographer portrait contrast cocaine/public wealth without a No1claim.",
+      "choice_reason": "Actual billionaire issue, real entry and photographer portrait contrast cocaine/public wealth without a No1claim.",
+      "why_not_real": "Authentic exact-subject media chosen first. Modest editorial camera/hidden-background reconstruction only on declared original-pixel photo scenes.",
+      "material_ids": [
+        "forbes_cover",
+        "forbes_entry",
+        "semana"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "wanted",
+      "function": "Most-wanted audio against an authentic legislative photograph: public-power contradiction, not more seconds of the same print portrait.",
+      "choice_reason": "Most-wanted audio against an authentic legislative photograph: public-power contradiction, not more seconds of the same print portrait.",
+      "why_not_real": "Authentic exact-subject media chosen first. Modest editorial camera/hidden-background reconstruction only on declared original-pixel photo scenes.",
+      "material_ids": [
+        "wanted",
+        "congress"
+      ],
+      "narrative_owner": "archive"
+    },
+    {
+      "id": "benefactor",
+      "function": "Exact housing/pitch photos cut on their spoken nouns. Actual housing detail shows the reason for gratitude; Congress supplies political consequence.",
+      "choice_reason": "Exact housing/pitch photos cut on their spoken nouns. Actual housing detail shows the reason for gratitude; Congress supplies political consequence.",
+      "why_not_real": "Authentic exact-subject media chosen first. Modest editorial camera/hidden-background reconstruction only on declared original-pixel photo scenes.",
+      "material_ids": [
+        "semana",
+        "housing1983",
+        "football_depth",
+        "football",
+        "congress"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "fear",
+      "function": "Original source delivers organization/instilling fear; picture cuts away only after intact source meaning.",
+      "choice_reason": "Original source delivers organization/instilling fear; picture cuts away only after intact source meaning.",
+      "why_not_real": "Authentic exact-subject media chosen first. Modest editorial camera/hidden-background reconstruction only on declared original-pixel photo scenes.",
+      "material_ids": [
+        "fear",
+        "forbes_entry"
+      ],
+      "narrative_owner": "archive"
+    },
+    {
+      "id": "questions",
+      "function": "Substantive power/hero questions answered by neither the opening nor a payoff spoiler. Different sources, not a long repeating portrait.",
+      "choice_reason": "Substantive power/hero questions answered by neither the opening nor a payoff spoiler. Different sources, not a long repeating portrait.",
+      "why_not_real": "Authentic exact-subject media chosen first. Modest editorial camera/hidden-background reconstruction only on declared original-pixel photo scenes.",
+      "material_ids": [
+        "semana",
+        "congress",
+        "football",
+        "football_depth",
+        "housing1983",
+        "city",
+        "city_depth"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "name_match",
+      "function": "Narrator says the name took over the story; original headline-name pixels align without blur or tiny frantic print cuts.",
+      "choice_reason": "Narrator says the name took over the story; original headline-name pixels align without blur or tiny frantic print cuts.",
+      "why_not_real": "Authentic exact-subject media chosen first. Modest editorial camera/hidden-background reconstruction only on declared original-pixel photo scenes.",
+      "material_ids": [
+        "guardian_name",
+        "elpais_name"
+      ],
+      "narrative_owner": "narrator",
+      "type": "press_word_match",
+      "word": "Escobar",
+      "semantic_reason": "Actual spoken name motif resolves into film title; two real source words held2seconds each, no fabricated historical headlines."
+    },
+    {
+      "id": "title",
+      "function": "Close the opening, not the documentary; contemporary location explicitly distinguished from1980s archive.",
+      "choice_reason": "Close the opening, not the documentary; contemporary location explicitly distinguished from1980s archive.",
+      "why_not_real": "Authentic exact-subject media chosen first. Modest editorial camera/hidden-background reconstruction only on declared original-pixel photo scenes.",
+      "material_ids": [
+        "title",
+        "city"
+      ],
+      "narrative_owner": "narrator"
+    }
+  ],
+  "rejected_research": [
+    {
+      "asset": "campaign1982.jpg",
+      "reason": "Original banner includes Spanish slogan; cropped crowd is naturally out-of-focus and weaker than exact housing evidence. Acquired/reviewed but NOT used in final cut."
+    },
+    {
+      "asset": "ElPais first crop",
+      "reason": "Cookie text obscured the real name. Rejected on actual pixel inspection; replaced only after ordinary public consent."
+    },
+    {
+      "source": "ABC YouTube YufAG5D1ZiE",
+      "reason": "Bot-login block; no media obtained, no bypass or invented broadcaster."
+    },
+    {
+      "source": "Forbes current webpage capture",
+      "reason": "h1timeout; no screenshot exists or is used."
+    },
+    {
+      "asset": "Moravia composite",
+      "reason": "Low-resolution composite and prominent Spanish banner; not used."
+    }
+  ]
+}

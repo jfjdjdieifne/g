@@ -1,0 +1,60 @@
+{
+  "clips": [
+    {
+      "id": "name_host",
+      "start": 0,
+      "duration": 1.27,
+      "end": 1.27
+    },
+    {
+      "id": "name_guest",
+      "start": 1.335,
+      "duration": 1.06,
+      "end": 2.395
+    },
+    {
+      "id": "ship",
+      "start": 2.46,
+      "duration": 4.27,
+      "end": 6.7299999999999995
+    },
+    {
+      "id": "wealth",
+      "start": 6.85,
+      "duration": 11.988,
+      "end": 18.838
+    },
+    {
+      "id": "wanted",
+      "start": 18.958,
+      "duration": 2.64,
+      "end": 21.598
+    },
+    {
+      "id": "social",
+      "start": 21.718,
+      "duration": 10.364,
+      "end": 32.082
+    },
+    {
+      "id": "fear",
+      "start": 32.202,
+      "duration": 5.51,
+      "end": 37.711999999999996
+    },
+    {
+      "id": "questions",
+      "start": 37.832,
+      "duration": 10.333541666666667,
+      "end": 48.16554166666667
+    },
+    {
+      "id": "close",
+      "start": 48.28554166666667,
+      "duration": 4.180875,
+      "end": 52.46641666666667
+    }
+  ],
+  "duration": 53.833333333333336,
+  "fps": 24
+}

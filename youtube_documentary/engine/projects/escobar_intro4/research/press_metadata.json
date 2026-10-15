@@ -1,0 +1,23 @@
+[
+  {
+    "id": "elpais",
+    "url": "https://english.elpais.com/usa/2021-12-24/pablo-escobar-unseen-portraits-of-a-drug-lord.html",
+    "method": "Unmodified public browser rendering, no overlay removal, no login or paywall bypass",
+    "pixel_scale": 2,
+    "title": "Pablo Escobar: Unseen portraits of a drug lord",
+    "name_box_css": {
+      "x": 439.21875,
+      "y": 541.890625,
+      "w": 157.203125,
+      "h": 40,
+      "text": "Escobar"
+    }
+  },
+  {
+    "id": "forbes",
+    "url": "https://www.forbes.com/sites/halahtouryalai/2015/09/15/watching-netflixs-narcos-heres-pablo-escobar-in-forbes-first-ever-billionaire-issue-in-1987/",
+    "method": "Unmodified public browser rendering, no overlay removal, no login or paywall bypass",
+    "pixel_scale": 2,
+    "error": "Locator.scroll_into_view_if_needed: Timeout 10000ms exceeded.\nCall log:\n  - waiting for locator(\"h1\").first\n"
+  }
+]
