@@ -3,6 +3,9 @@ on:
   push:
     branches: [arena/b2ef2032-g]
     paths: [.github/workflows/archive-research.yml]
+concurrency:
+  group: archive-research-session
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
@@ -26,6 +29,7 @@ jobs:
           printf '%s\n' 'RESEARCH ONLY. Repost candidate, original broadcaster/date/rights not yet verified. Not a delivery. Source https://archive.org/details/youtube-jR7_c8KeGZI . No rights clearance inferred.' > NOTICE.txt
           tar -czf research.tar.gz proxy.mp4 probe.json source.sha256 NOTICE.txt
       - name: Temporary unreferenced research retrieval handle (not private; no media commit)
+        id: stash
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
@@ -40,8 +44,11 @@ jobs:
           request=urllib.request.Request('https://api.github.com/repos/'+os.environ['REPO']+'/git/blobs',data=payload,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
           with urllib.request.urlopen(request) as response:result=json.load(response)
           print('RESEARCH_BLOB_SHA='+result['sha'])
+          with open(os.environ['GITHUB_OUTPUT'],'a') as output:output.write('sha='+result['sha']+'\n')
           print('Unreferenced transient Git object only; no media committed, no release, no branch created.')
           PY
+      - name: Research object ${{ steps.stash.outputs.sha }}
+        run: echo 'Research object available for temporary inspection; not rights clearance.'
       - uses: actions/upload-artifact@v4
         with:
           name: archive-research-only
