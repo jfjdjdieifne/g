@@ -1,0 +1,62 @@
+{
+  "actual_broadcast_audio": true,
+  "archive_program": "Charlie Rose, 1992-11-12",
+  "source_in": 29.8,
+  "source_audio_out": 37.2,
+  "source_timeline": [
+    0,
+    7.4
+  ],
+  "voice_id": "voice-02",
+  "voice_sha256": "523220dab1465d8958a24345978de76982953396e05b9bcf7ed012da44c7485d",
+  "narration_samples": 1046355,
+  "narration_sr": 48000,
+  "narrator_timeline": [
+    7.6,
+    29.3990625
+  ],
+  "approved_voice_intact": true,
+  "source_speed_change": false,
+  "voice_pitch_change": false,
+  "voice_speed_change": false,
+  "voice_split": false,
+  "narrator_constant_gain": 1.0097191276783979,
+  "archive_constant_gain": 3.5935465249191187,
+  "mastering": {
+    "method": "constant gain only, no compressor/limiter/time change",
+    "gain_db": 0.51,
+    "output_i": "-16.38",
+    "output_tp": "-1.40",
+    "output_lra": "4.80"
+  },
+  "sfx": [
+    {
+      "time": 7.6,
+      "event": "soft spatial arrival",
+      "rms_db_relative_to_local_bed": -9.0
+    },
+    {
+      "time": 11.8,
+      "event": "subtle metal texture",
+      "rms_db_relative_to_local_bed": -9.0
+    },
+    {
+      "time": 13.3,
+      "event": "desk transition",
+      "rms_db_relative_to_local_bed": -9.0
+    },
+    {
+      "time": 21.95,
+      "event": "soft room change",
+      "rms_db_relative_to_local_bed": -9.0
+    }
+  ],
+  "music": "Original synthesized minor-key ambient underscore; not orchestral",
+  "manual_listening": false,
+  "review_methods": [
+    "primary source captions",
+    "ASR",
+    "waveform and mix measurements"
+  ],
+  "approved_take_stem_correlation": 0.9999999892223024
+}

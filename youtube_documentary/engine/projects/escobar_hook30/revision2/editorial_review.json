@@ -1,0 +1,108 @@
+{
+  "scope": "New revision2 editorial review cut only; does not unblock rejected v1 CLIs or authorize the full documentary",
+  "date": "2026-10-15",
+  "internal_edit_authorized": true,
+  "user_approved": false,
+  "encoded_review_complete": true,
+  "publication_license_obtained": false,
+  "source_use_basis": "Short acknowledged interview quotation in a transformative historical explanation, supplied as an editorial review cut. No blanket publication rights or sublicense claimed. Publication use requires its own assessment.",
+  "source": "../archive_research/official_source_evidence.json",
+  "source_file_sha256": "6b533a7506d8996607780271ed627dbc49fe9f2e348fc061dec7596ce8e754e7",
+  "source_in": 29.8,
+  "source_video_out": 37.4,
+  "source_audio_out": 37.2,
+  "source_quote": "to his decision to allow himself to be put in a prison of his own making",
+  "source_context": "A fragment of Charlie Rose's actual question, not fabricated breaking news. The 1992-11-12 program is after the escape. Original camera cuts retained.",
+  "source_review_methods": [
+    "Official video frame samples viewed",
+    "Local ASR of original and repost",
+    "Words corroborated against primary program captions"
+  ],
+  "manual_audio_listening_claimed": false,
+  "narrator_start": 7.6,
+  "voice_id": "voice-02",
+  "voice_sha256": "523220dab1465d8958a24345978de76982953396e05b9bcf7ed012da44c7485d",
+  "voice_changes": "Constant gain only. Intact approved take, no splitting, regeneration, pitch or speed change.",
+  "representative_scene_tests_viewed": [
+    "All six original staging stills in contact sheet",
+    "Guard, office and absence fixes individually",
+    "Rebuilt guard final still individually"
+  ],
+  "proactive_fixes": [
+    "Rejected original guard composition: foreground fence obscured the figure. Moved camera inside the boundary; fence is now background context.",
+    "Rejected block-bodied guard: rebuilt tapered torso, jointed limbs, rounded boots/cap, anonymous head. No named likeness.",
+    "Rejected rectangular bedding block: continuous folded cloth mesh and soft pillow.",
+    "Removed decorative low-poly trees, which read as toys and added no narrative information.",
+    "Added physical mesh, coil, barred gate and actual cutaway window openings so the location reads as secure custody rather than an ordinary office.",
+    "No invented escape figure, opening-gate escape animation, generic watchtowers or glowing business routes. Bed/room emptiness is an illustration of absence, not documentary evidence of the escape mechanism.",
+    "Initial encoded full cut was actually sampled: a black slit on the desk was traced to a drawer/tabletop intersection. Rebuilt the macro furniture detail with drawers below the desktop and rerendered the office at1280x720 before delivery; not a painted-over source watermark."
+  ],
+  "model_honesty": "Illustrative schematic with documented categories of features; not a surveyed floorplan, measured reconstruction, historical portrait or period footage. In-picture identification required.",
+  "scene_decisions": [
+    {
+      "range": [
+        0,
+        7.6
+      ],
+      "purpose": "Actual question about choosing a self-made prison; meaning leads the narrator",
+      "failure_to_avoid": "Cut phonemes, mislabeled speaker, false live-event date, archive merely for decoration"
+    },
+    {
+      "range": [
+        7.6,
+        11.8
+      ],
+      "purpose": "Establish secure boundary and luxury interior together, then explain design",
+      "failure_to_avoid": "Ambiguous office model, unsupported claim of exact layout"
+    },
+    {
+      "range": [
+        11.8,
+        13.3
+      ],
+      "purpose": "Focus on guard as narrator says picked his own guards",
+      "failure_to_avoid": "Toy block figure, occluding foreground fence, decorative HIS GUARDS caption"
+    },
+    {
+      "range": [
+        13.3,
+        16.15
+      ],
+      "purpose": "Actual 3D telephone, desk and fax imply business continuing inside",
+      "failure_to_avoid": "Floating routes, fabricated readable documents, unrelated photo"
+    },
+    {
+      "range": [
+        16.15,
+        21.95
+      ],
+      "purpose": "Pitch and comfortable rooms inside the boundary explain not quite the prison one expects",
+      "failure_to_avoid": "Unmotivated reset; long camera move with nothing interpretable"
+    },
+    {
+      "range": [
+        21.95,
+        24.5
+      ],
+      "purpose": "Empty room accompanies the escape statement without inventing a route",
+      "failure_to_avoid": "Pretending a symbolic gate walk is the historical mechanism"
+    },
+    {
+      "range": [
+        24.5,
+        30
+      ],
+      "purpose": "Return to whole custody arrangement for the two unresolved questions",
+      "failure_to_avoid": "Title card, blank-slide hold, implying the question has already been answered"
+    }
+  ],
+  "remaining_delivery_gate": "Actual sampled encoded visual review complete. User judgment of this new cut and separate publication-rights assessment remain; no full documentary authorization.",
+  "initial_encoded_review": {
+    "sha256": "172a48b9190d859433855777d6de3bf43950dd6fce896b6a92180adfcebb77a5",
+    "all_120_chronological_samples_viewed": true,
+    "boundary_sheet_and_guard_phone_bed_details_viewed": true,
+    "finding": "Office tabletop seam required correction; initial encoding not delivered."
+  },
+  "final_encoded_sha256": "fdee46267fa2e8aeebd6b6988ab6bd86230c41c75955806d348fdf3dd83c3a14",
+  "final_review_evidence": "evidence/encoded_review.json"
+}

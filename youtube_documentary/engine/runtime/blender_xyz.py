@@ -53,6 +53,27 @@ class CyclesWorldRenderer:
             bump=nodes.new('ShaderNodeBump');bump.inputs['Strength'].default_value=.19;bump.inputs['Distance'].default_value=.018
             links.new(noise.outputs['Fac'],bump.inputs['Height']);links.new(bump.outputs['Normal'],shader.inputs['Normal'])
         self.materials[k]=mat;return mat
+    def style_surface(self,color,kind='wood',roughness=.6):
+        """Optional physical surface recipe for any profile's RGB palette.
+
+        Object-space coordinates keep grain scale stable between camera shots.
+        Existing profiles keep their original material unless they opt in.
+        """
+        for key,mat in self.materials.items():
+            if tuple(key[0])!=tuple(color):continue
+            nodes=mat.node_tree.nodes;links=mat.node_tree.links
+            shader=nodes.get('Principled BSDF');shader.inputs['Roughness'].default_value=roughness
+            coords=nodes.new('ShaderNodeTexCoord');vector=nodes.new('ShaderNodeVectorMath');vector.operation='MULTIPLY'
+            vector.inputs[1].default_value=(2,32,5) if kind=='wood' else (100,100,100)
+            links.new(coords.outputs['Object'],vector.inputs[0])
+            noise=nodes.new('ShaderNodeTexNoise');noise.inputs['Scale'].default_value=1.7;noise.inputs['Detail'].default_value=2
+            links.new(vector.outputs['Vector'],noise.inputs['Vector'])
+            ramp=nodes.new('ShaderNodeValToRGB');linear=[(c/255)**2.2 for c in color]
+            for stop,mul in zip(ramp.color_ramp.elements,[.86,1.10]):stop.color=(*(min(1,c*mul) for c in linear),1)
+            links.new(noise.outputs['Fac'],ramp.inputs[0]);links.new(ramp.outputs['Color'],shader.inputs['Base Color'])
+            bump=nodes.new('ShaderNodeBump');bump.inputs['Strength'].default_value=.13;bump.inputs['Distance'].default_value=.006 if kind=='wood' else .003
+            links.new(noise.outputs['Fac'],bump.inputs['Height']);links.new(bump.outputs['Normal'],shader.inputs['Normal'])
+
     def set_world(self,world):
         import bmesh
         bpy=self.bpy
@@ -86,8 +107,13 @@ class CyclesWorldRenderer:
                 for dest,src in zip(sp.points,pts):dest.co=(*src,1)
             obj=bpy.data.objects.new('World lines',curve);self.scene.collection.objects.link(obj)
             obj.data.materials.append(self.material(col,False,False));self.objects.append(obj)
-    def render(self,camera,path):
+    def render(self,camera,path,focus=None,aperture=5.6):
+        """Render shared geometry. Optional physical DOF; no film timeline here."""
         bpy=self.bpy
+        self.camera.data.dof.use_dof=focus is not None
+        if focus is not None:
+            self.camera.data.dof.focus_distance=float(np.linalg.norm(np.asarray(focus)-camera.eye))
+            self.camera.data.dof.aperture_fstop=aperture
         self.camera.location=tuple(camera.eye)
         # Forward vector is row two of the shared camera's rotation matrix.
         f=self.Vector(tuple(camera.R[2]));self.camera.rotation_euler=f.to_track_quat('-Z','Y').to_euler()

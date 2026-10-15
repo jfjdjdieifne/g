@@ -1,10 +1,12 @@
-# Escobar hook / 30 seconds / v1 REJECTED by user
+# Escobar / first30English seconds
 
-**Editorial status (2026-10-15): v1 rejected.** Linking was good; still choices, quotation-slide pauses, captions and montage were rejected. Model showed progress but is not approved/professional and does not read sufficiently as a prison. No revised video created. Read `editorial_review.json` and `ARCHIVE_PREFLIGHT.json` first. **Do not render a revision until real news/presenter clips are acquired, viewed and heard.** Commands below are historical v1 reproduction only.
+## Active: revision2 review cut delivered
 
-## Archive acquisition update — not a revised video
+The new source-led cut is complete: real Charlie Rose question, unchanged approved voice-02, six motivated physical-camera views in an illustrative prison world. See [revision2/README.md](revision2/README.md), [delivery](revision2/delivery.json), [actual encoded QC](revision2/QC.md), and [rights](revision2/SOURCES_AND_RIGHTS.md). This is **not user approval or a publication license**. Only the first30seconds are authorized.
 
-The official **Charlie Rose / Andrew and Leslie Cockburn / 12 November 1992** opening120s is acquired. A specific prison-of-his-own-making question fragment has been visually sampled and its words checked against primary captions. This is no longer a metadata-only lead. No manual-listening or publication-license claim, no revised render, no approval of the rejected model. Read `archive_research/SOURCE_REVIEW_2026-10-15.md` and `official_source_evidence.json`; all four acquisition jobs completed, none pending.
+## Historical v1 — rejected and still production-blocked
+
+The original v1 below is retained for history only. User rejected image selection, quote-slide pauses, decorative captions and montage. Its gate remains blocked; do not use historical commands to replace the new cut. Official source acquisition is complete, and there are no archive jobs to resume. Revision2 uses a separate internal editorial-review authorization without changing the historical verdict.
 
 User-approved narrator: **voice-02**, explicit approval 15 October 2026. This profile reuses the approved recording verbatim; no fresh audition/generation. English-only on-screen editorial copy and narration. Conversation/internal notes may be Arabic.
 
