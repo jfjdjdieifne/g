@@ -1,0 +1,66 @@
+name: Public press-page visual research
+on:
+  push:
+    branches: [arena/b2ef2032-g]
+    paths: [.github/workflows/intro-materials.yml]
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Inspect public article rendering without sign-in or paywall bypass
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/press-research
+          python3 -m pip -q install playwright
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          from playwright.sync_api import sync_playwright
+          root=Path('/tmp/press-research'); rows=[]
+          urls=[('guardian','https://www.theguardian.com/world/1992/jul/24/colombia.fromthearchive'),('bbc','https://www.bbc.com/news/world-latin-america-54280467'),('nyt','https://www.nytimes.com/1992/07/23/world/colombian-drug-baron-escapes-luxurious-prison-after-gunfight.html')]
+          with sync_playwright() as p:
+            browser=p.chromium.launch(executable_path='/usr/bin/google-chrome',headless=True,args=['--no-sandbox'])
+            context=browser.new_context(viewport={'width':1600,'height':1250},device_scale_factor=1.5)
+            for key,url in urls:
+              page=context.new_page()
+              row={'id':key,'url':url,'method':'Public browser screenshot; no login, no paywall bypass','screens':[]}
+              try:
+                page.goto(url,wait_until='domcontentloaded',timeout=35000)
+                page.wait_for_timeout(2500)
+                for label in ['Reject all','Reject All','Continue without accepting','No, thanks']:
+                  try:page.get_by_role('button',name=label,exact=True).click(timeout=600)
+                  except Exception:pass
+                for n,scroll in enumerate([0,700]):
+                  page.evaluate('(y)=>window.scrollTo(0,y)',scroll);page.wait_for_timeout(500)
+                  path=root/f'{key}_{n}.jpg';page.screenshot(path=str(path),type='jpeg',quality=94)
+                  words=page.evaluate('''()=>{let out=[];let w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode()){let re=/Escobar/gi,m;while(m=re.exec(n.textContent)){let r=document.createRange();r.setStart(n,m.index);r.setEnd(n,m.index+m[0].length);let b=r.getBoundingClientRect();if(b.width>5&&b.height>5&&b.x>=0&&b.y>=0&&b.right<innerWidth&&b.bottom<innerHeight)out.push({text:m[0],x:b.x,y:b.y,w:b.width,h:b.height});}}return out;}''')
+                  row['screens'].append({'file':path.name,'scroll':scroll,'pixel_scale':1.5,'word_boxes_css_pixels':words})
+                row['title']=page.title();row['visible_text']=page.locator('body').inner_text()[:25000]
+              except Exception as e:row['error']=str(e)
+              rows.append(row);page.close()
+            browser.close()
+          (root/'provenance.json').write_text(json.dumps(rows,indent=2))
+          PY
+          cd /tmp/press-research
+          tar -czf /tmp/press-research.tar.gz ./*.jpg provenance.json
+      - name: Store bounded research object without a branch media commit
+        id: stash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json,base64,subprocess,os
+          from pathlib import Path
+          data=Path('/tmp/press-research.tar.gz').read_bytes()
+          assert len(data)<25_000_000
+          payload=json.dumps({'content':base64.b64encode(data).decode(),'encoding':'base64'})
+          result=json.loads(subprocess.check_output(['gh','api','--method','POST','repos/'+os.environ['REPO']+'/git/blobs','--input','-'],input=payload.encode()))
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('sha='+result['sha']+'\n')
+          PY
+      - name: Research object ${{ steps.stash.outputs.sha }}
+        run: echo 'Research screenshots only, not a rights grant or a delivery.'
