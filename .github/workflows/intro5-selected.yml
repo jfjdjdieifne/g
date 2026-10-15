@@ -20,7 +20,7 @@ jobs:
           from pathlib import Path
           root=Path('/tmp/intro5')
           sources={
-            'pbs':('https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/', [('escobar',882,3),('cash',149.95,3.99),('max',221.92,4.85),('estate',778,5),('aircraft',926,7),('takeoff',943,3),('load',1118,12),('interdiction',1138,13),('night',1183,3)]),
+            'pbs':('https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/', [('escobar',882,6),('cash',149.95,3.99),('max',216.9,3.9),('estate',778,5),('aircraft',926,7),('takeoff',943,3),('load',1118,12),('interdiction',1138,13),('night',1183,3)]),
             'bbc':('https://www.bbc.com/news/av/world-25158010',[('housing',102.6,2.8)]),
             'aj':('https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust',[('aftermath',14,5),('mural',70,4)])}
           def work(item):
