@@ -11,42 +11,25 @@ permissions:
 jobs:
   inspect:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
-      - name: Acquire candidate for research, not publication clearance
+      - name: Acquire first three minutes for inspection only
         shell: bash
         run: |
           set -euo pipefail
           mkdir -p /tmp/archive-research
           cd /tmp/archive-research
-          curl --fail --location --retry 2 --max-time 240 'https://archive.org/download/youtube-jR7_c8KeGZI/jR7_c8KeGZI.mkv' -o source.mkv
+          trap 'echo "::error::Research command failed at line $LINENO"' ERR
+          curl --fail --location --retry 1 --connect-timeout 15 --max-time 180 'https://archive.org/download/youtube-jR7_c8KeGZI/jR7_c8KeGZI.mkv' -o source.mkv
           command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y ffmpeg)
           ffprobe -v error -show_format -show_streams -of json source.mkv > probe.json
           sha256sum source.mkv > source.sha256
-          python3 - <<'PYMETA'
-          import json
-          d=json.load(open('probe.json'));print('::notice title=Source probe::'+str({'duration':d['format'].get('duration'),'streams':[(s.get('codec_type'),s.get('width'),s.get('height')) for s in d['streams']]}))
-          PYMETA
-          # Low-resolution research proxy only. Original remains transient on runner.
-          ffmpeg -y -v error -i source.mkv -vf "scale='min(512,iw)':-2,fps=6" -c:v libx264 -preset fast -crf 34 -c:a aac -b:a 32k -fs 18000000 proxy.mp4
-          printf '%s\n' 'RESEARCH ONLY. Repost candidate, original broadcaster/date/rights not yet verified. Not a delivery. Source https://archive.org/details/youtube-jR7_c8KeGZI . No rights clearance inferred.' > NOTICE.txt
-          ffmpeg -y -v error -i source.mkv -t 45 -vf "scale='min(960,iw)':-2" -c:v libx264 -preset fast -crf 21 -c:a aac -b:a 128k opening.mp4
-          ffmpeg -y -v error -sseof -45 -i source.mkv -vf "scale='min(960,iw)':-2" -c:v libx264 -preset fast -crf 21 -c:a aac -b:a 128k ending.mp4
-          ffmpeg -y -v error -i source.mkv -vf 'fps=1/30,scale=480:-2' -q:v 3 source_%03d.jpg
-          python3 -m pip install -q faster-whisper
-          python3 - <<'PYASR'
-          import json
-          from faster_whisper import WhisperModel
-          model=WhisperModel('base.en',device='cpu',compute_type='int8',cpu_threads=4)
-          segments,info=model.transcribe('source.mkv',beam_size=1,vad_filter=True,word_timestamps=True)
-          rows=[]
-          for s in segments:
-              rows.append({'start':s.start,'end':s.end,'text':s.text,'words':[{'start':w.start,'end':w.end,'word':w.word,'probability':w.probability} for w in (s.words or [])]})
-          json.dump({'method':'faster-whisper base.en, automatic not independently verified listening','language':info.language,'duration':info.duration,'segments':rows},open('transcript_asr.json','w'),indent=2)
-          PYASR
-          tar -czf research.tar.gz proxy.mp4 opening.mp4 ending.mp4 probe.json source.sha256 NOTICE.txt transcript_asr.json source_*.jpg
-      - name: Temporary unreferenced research retrieval handle (not private; no media commit)
+          ffmpeg -y -v error -i source.mkv -t 180 -vf "scale='min(854,iw)':-2" -c:v libx264 -preset fast -crf 26 -maxrate 700k -bufsize 1400k -c:a aac -b:a 96k opening.mp4
+          ffmpeg -y -v error -i opening.mp4 -vf 'fps=1/5,scale=640:-2' -q:v 3 source_%03d.jpg
+          printf '%s\n' 'RESEARCH ONLY. First 180s. Full source duration 2625.328s. Repost candidate, original broadcaster/date/rights not yet independently verified. Source https://archive.org/details/youtube-jR7_c8KeGZI . No rights clearance inferred.' > NOTICE.txt
+          tar -czf research.tar.gz opening.mp4 probe.json source.sha256 NOTICE.txt source_*.jpg
+      - name: Unreferenced research retrieval (no media commit or release)
         id: stash
         env:
           GH_TOKEN: ${{ github.token }}
@@ -54,27 +37,51 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import base64,json,os,urllib.request
+          import base64,json,os,urllib.request,urllib.error
           from pathlib import Path
           p=Path('/tmp/archive-research/research.tar.gz')
           print('::notice title=Research bundle size::'+str(p.stat().st_size))
-          if p.stat().st_size>40_000_000:
-              print('::error::Research size cap exceeded');raise SystemExit(1)
+          if p.stat().st_size>25_000_000:print('::error::Research size cap exceeded');raise SystemExit(1)
           payload=json.dumps({'content':base64.b64encode(p.read_bytes()).decode(),'encoding':'base64'}).encode()
           request=urllib.request.Request('https://api.github.com/repos/'+os.environ['REPO']+'/git/blobs',data=payload,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
           try:
               with urllib.request.urlopen(request) as response:result=json.load(response)
-          except Exception as error:
-              print('::error::Research retrieval API failed: '+str(error));raise
-          print('RESEARCH_BLOB_SHA='+result['sha'])
+          except urllib.error.HTTPError as error:
+              print('::error::Research retrieval API: '+str(error)+' '+error.read().decode()[:1000]);raise
           with open(os.environ['GITHUB_OUTPUT'],'a') as output:output.write('sha='+result['sha']+'\n')
-          print('Unreferenced transient Git object only; no media committed, no release, no branch created.')
           PY
       - name: Research object ${{ steps.stash.outputs.sha }}
-        run: echo 'Research object available for temporary inspection; not rights clearance.'
+        run: echo 'Temporary research object, not private and not rights-cleared. No branch media commit.'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: archive-research-only
           path: /tmp/archive-research/research.tar.gz
           retention-days: 1
+      - name: Automatic speech transcript (optional; never claim independent listening)
+        id: transcript
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          cd /tmp/archive-research
+          python3 -m pip install -q --break-system-packages faster-whisper
+          python3 - <<'PY'
+          import json,base64,urllib.request,os,tarfile
+          from faster_whisper import WhisperModel
+          model=WhisperModel('base.en',device='cpu',compute_type='int8',cpu_threads=4)
+          segments,info=model.transcribe('opening.mp4',beam_size=1,vad_filter=True,word_timestamps=True)
+          rows=[{'start':s.start,'end':s.end,'text':s.text,'words':[{'start':w.start,'end':w.end,'word':w.word,'probability':w.probability} for w in (s.words or [])]} for s in segments]
+          json.dump({'method':'Automatic ASR, NOT independent listening','duration':info.duration,'segments':rows},open('transcript_asr.json','w'),indent=2)
+          with tarfile.open('transcript.tar.gz','w:gz') as tar:tar.add('transcript_asr.json')
+          payload=json.dumps({'content':base64.b64encode(open('transcript.tar.gz','rb').read()).decode(),'encoding':'base64'}).encode()
+          request=urllib.request.Request('https://api.github.com/repos/'+os.environ['REPO']+'/git/blobs',data=payload,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+          with urllib.request.urlopen(request) as response:result=json.load(response)
+          with open(os.environ['GITHUB_OUTPUT'],'a') as output:output.write('sha='+result['sha']+'\n')
+          PY
+      - name: Transcript object ${{ steps.transcript.outputs.sha }}
+        if: steps.transcript.outcome == 'success'
+        run: echo 'Automatic transcript available for checking against footage; not independent listening.'

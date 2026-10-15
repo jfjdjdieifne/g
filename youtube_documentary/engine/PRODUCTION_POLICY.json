@@ -77,5 +77,12 @@
     "archive_handoff": "Where an edit promises actual news/presenter footage, use acquired, viewed AND heard authentic clips with their own original audio. A narrator pause must carry real audiovisual storytelling; typeset quotation slides are NOT an acceptable substitute. If missing, block production and secure the clips first.",
     "voice_status": "voice-02 and the conversational script-preview performance approved by user 2026-10-15. Preserve this delivery; do not re-audition without need. voice-00 rejected.",
     "archive_selection_order": "Select and actually view/hear a real, relevant news soundbite FIRST. Its specific spoken sentence must establish the premise/question; the narrator enters by continuing, explaining or reframing that exact meaning. Do not insert generic news images or fill preallocated narrator silences. Archive and narrator exchange narrative responsibility; not a rigid template."
+  },
+  "editorial_self_review": {
+    "applies_to": "Every film, every scene and duration, not only Escobar",
+    "protocol": "engine/EDITORIAL_REVIEW_PROTOCOL.md",
+    "before_build": "Understand the narrative function and verify exact source relevance before choosing assets or motion. Anticipate why this specific scene might fail.",
+    "before_delivery": "Inspect actual encoded scenes and transitions, source-audio meaning, image selection, staging, rhythm and small-screen readability. Fix foundational errors before user review.",
+    "not_a_certificate": "Tests, 3D and checkboxes do not certify professional editing. Record actual observations and uncertainties; do not claim viewing/listening that did not occur."
   }
 }
