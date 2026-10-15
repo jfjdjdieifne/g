@@ -12,15 +12,56 @@
     "unit_of_design": "scene",
     "default_annotation": "direct_spatial_label",
     "generic_popup_boxes": "disallowed_by_default",
-    "exception_requires": ["narrative_reason", "reference_evidence"],
+    "exception_requires": [
+      "narrative_reason",
+      "reference_evidence"
+    ],
     "continuity": "Persistent world-space anchors across camera/scene beats; avoid reset at every sentence.",
     "quality": "A technical pass, texture, grain, drop shadow or spring animation is not evidence of professional art direction.",
     "reference": "WW2 P2 @2:04–2:15; v3 user-approved design direction, not blanket certification of all engines."
   },
   "depth": {
     "mode": "narrative_choice",
-    "required_when_claiming_3d": ["perspective_camera", "world_space_xyz", "height_dependent_projection", "occlusion_or_depth_ordering"],
-    "anti": ["Do not call a flat image with a shadow 3D.", "Do not tilt labels into unreadability.", "Do not add depth unrelated to the narrative."]
+    "required_when_claiming_3d": [
+      "perspective_camera",
+      "world_space_xyz",
+      "height_dependent_projection",
+      "occlusion_or_depth_ordering"
+    ],
+    "anti": [
+      "Do not call a flat image with a shadow 3D.",
+      "Do not tilt labels into unreadability.",
+      "Do not add depth unrelated to the narrative."
+    ]
   },
-  "gates": ["English-only display manifest", "spatial anchor invariance", "no text collisions", "no offshore city/convoy markers", "reference evidence", "visual review separate from technical QA"]
+  "gates": [
+    "English-only display manifest",
+    "spatial anchor invariance",
+    "no text collisions",
+    "no offshore city/convoy markers",
+    "reference evidence",
+    "visual review separate from technical QA"
+  ],
+  "narration": {
+    "language": "en",
+    "style": "conversational_documentary_youtuber",
+    "applies_to": "Every duration: short hooks and 10–30 minute documentaries, not only the opening.",
+    "delivery": "Use natural contractions, varied sentence length, and meaningful pauses. Interested person explaining a story; not a memorized ceremonial speech.",
+    "writing": [
+      "Concrete people, events, mechanisms and consequences before abstract claims.",
+      "Explain and react naturally; use a question only where it advances the story.",
+      "Vary factual exposition, context, short reactions, archive-only beats and narrator returns.",
+      "Read aloud and rewrite anything that sounds performed or mechanically repeated.",
+      "Keep English video content separate from Arabic internal notes."
+    ],
+    "avoid": [
+      "Continuous purple prose, aphorisms, metaphors and grand declarations.",
+      "Repeated rhetorical questions or identical dramatic sentence patterns.",
+      "Formulaic Look / Here is the thing / Imagine openings on every beat.",
+      "Fake hesitations or filler words sprinkled onto an otherwise stiff script.",
+      "Invented archive quotations or synthetic anchor speech presented as authentic news."
+    ],
+    "archive_handoff": "Archive may take over the storytelling for a purposeful beat. Narrator re-enters with explanation/question and can yield to real archive again. Do not keep VO running over every second.",
+    "voice_status": "voice-01 selected in the new English audition; not yet validated in a finished conversational hook. voice-00 rejected as obviously synthetic. No guarantee of indistinguishability from a human."
+  }
 }
