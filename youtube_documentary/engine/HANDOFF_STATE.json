@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
- "updated": "2026-10-14",
- "head_commit": "a1553e5",
+ "updated": "2026-10-15",
+ "head_commit": "74e0cef",
  "studies": [
   {
    "ref": "vaping",
@@ -142,6 +142,16 @@
    "name": "فيلمستريب WW2 P2 (32 صفحة)",
    "drive_id": "1UVPNR0fA54c_zwkPlwzttIFPoWW-CJzc",
    "kind": "file"
+  },
+  {
+   "name": "ديمو WW2-drive v3 (اختبار خرائط غير معتمد)",
+   "drive_id": "1NqNEXeZeNEZToXPue6BbZPecLguo9Dl9",
+   "kind": "file"
+  },
+  {
+   "name": "خطة اختبار تصميم v3",
+   "drive_id": "1_1Xlh8vRWggFuTUa9mDKNT26NOCRRAki",
+   "kind": "file"
   }
  ],
  "engine_state": {
@@ -162,7 +172,7 @@
   ]
  },
  "next_steps": [
-  "مراجعة المستخدم للديمو v2 → v3 (أو الموافقة والانتقال)",
+  "مراجعة المستخدم لاختبار خرائط v3 — تحسين التصميم والمشاهد المطلوبة؛ لا اعتماد تلقائي ولا انتقال للمرجع التالي.",
   "PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت",
   "باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
   "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
@@ -178,13 +188,14 @@
   "النص ≤6 كلمات، بلا زووم عدواني على نص >4 كلمات (≤10%)",
   "الخريطة: النقاط عالبَر + دقة جغرافية",
   "إخراج بالعربي الشامي، رسائل قصيرة (المستخدم على iPhone)",
-  "بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه"
+  "بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه",
+  "إصلاح الغليف أو إضافة texture لا يعني احتراف. v2 مرفوض بصرياً. لا يُسمّى اختبار v3 بمستوى المرجع ولا يُعتمد كمحرك جاهز دون مراجعة."
  ],
  "demos": [
   {
    "id": "ww2drive_v1",
    "name_ar": "ديمو اختبار Rulebook v1.3 — إسكوبار (23 ث، بلا VO)",
-   "status": "v1 — جاهز للمراجعة",
+   "status": "v1 — مرفوض بصرياً؛ تاريخ سابق",
    "chain": "سكربت (engine/database/scripts/escobar_ww2drive_demo.json) → plan (director) → كوكتيل 3 مصادر (cocktail) → رندر (tools/ww2demo.py)",
    "cards_used": [
     "chapter_black_silence",
@@ -215,7 +226,7 @@
   {
    "id": "ww2drive_v2",
    "name_ar": "ديمو اختبار Rulebook v1.3 — إسكوبار (23 ث، بلا VO) — v2 بعد ملاحظات المستخدم",
-   "status": "v2 — جاهز للمراجعة",
+   "status": "v2 — المستخدم رأى تطوراً، لكن رفضه كعمل احترافي (Paint/PowerPoint)",
    "fixes_vs_v1": [
     "ما في مربعات فاضية: محرّك خطوط هجين (Noto Naskh + DejaVu) لأي رمز ناقص بالخط العربي",
     "التسميات: شارات (chips) بزوايا مدوّرة + شريط تعريفي + خيط دلالة + دائرة هدف (بدل النص العائم)",
@@ -231,7 +242,23 @@
     "tools/ww2demo.py",
     "assets_global/geo/latam_10m.json",
     "engine/projects/ww2_demo/cocktail/plan.json"
-   ]
+   ],
+   "user_verdict": "نسخة خام؛ الانبثاقات والمستطيلات بدائية؛ المطلوب مستوى المراجع، لا مجرد تحسن تقني."
+  },
+  {
+   "id": "ww2drive_v3_design",
+   "name_ar": "v3 — اختبار تصميم خرائط متصلة، غير معتمد",
+   "status": "جاهز لمراجعة المستخدم؛ لا ادعاء أنه بمستوى المرجع",
+   "spec": "1920×1080 · 24fps · 16.0 ث · H.264/AAC · 7,806,545 bytes",
+   "drive": "1NqNEXeZeNEZToXPue6BbZPecLguo9Dl9",
+   "plan_drive": "1_1Xlh8vRWggFuTUa9mDKNT26NOCRRAki",
+   "files": [
+    "tools/ww2demo_v3.py",
+    "tools/tests/test_ww2demo_v3.py",
+    "engine/projects/ww2_demo/v3_design/PLAN.md"
+   ],
+   "scope": "اختبار خرائط فقط، وليس الديمو السابق بـ11 كرت؛ أزيلت الانبثاقات والختم والعدادات. المسارات رمزية وليست موثقة تاريخياً.",
+   "qc": "32/32 عينة 2fps من الملف النهائي شوهدت، 4/4 اختبارات آلية PASS، كامل 384 فريم فك ترميز بلا خطأ؛ لا ادعاء مراجعة حركة كل فريم بصرياً. صوت RMS -19.6 dBFS وذروة -10.9 dBFS."
   }
  ]
 }

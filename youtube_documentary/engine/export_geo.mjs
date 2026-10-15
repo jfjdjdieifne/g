@@ -5,7 +5,7 @@ const fc = feature(topo, topo.objects.countries);
 const WANT = new Set(['170','862','591','218','604','76','188','558','340','320','484','192','840','630','332','214','388','780']); // ISO numeric
 const out = {};
 for (const f of fc.features) {
-  const id = String(f.id);
+  const id = String(Number(f.id));
   if (!WANT.has(id)) continue;
   out[id] = f.geometry;
 }

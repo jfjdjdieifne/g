@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-14 · **آخر كوميت محفوظ:** `a1553e5` · **HEAD الحالي:** `a1553e5`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `74e0cef` · **HEAD الحالي:** `74e0cef`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -53,10 +53,12 @@
 | ديمو WW2-drive v2 (فيديو) |  [درايف](https://drive.google.com/file/d/1K3eH_RDNoueB7T31CFBAFrRUEAEAIXPg/view) |
 | فيلمستريب WW2 P1 (28 صفحة) |  [درايف](https://drive.google.com/file/d/1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS/view) |
 | فيلمستريب WW2 P2 (32 صفحة) |  [درايف](https://drive.google.com/file/d/1UVPNR0fA54c_zwkPlwzttIFPoWW-CJzc/view) |
+| ديمو WW2-drive v3 (اختبار خرائط غير معتمد) |  [درايف](https://drive.google.com/file/d/1NqNEXeZeNEZToXPue6BbZPecLguo9Dl9/view) |
+| خطة اختبار تصميم v3 |  [درايف](https://drive.google.com/file/d/1_1Xlh8vRWggFuTUa9mDKNT26NOCRRAki/view) |
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. مراجعة المستخدم للديمو v2 → v3 (أو الموافقة والانتقال)
+1. مراجعة المستخدم لاختبار خرائط v3 — تحسين التصميم والمشاهد المطلوبة؛ لا اعتماد تلقائي ولا انتقال للمرجع التالي.
 2. PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت
 3. باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
 4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
@@ -75,6 +77,7 @@
 - الخريطة: النقاط عالبَر + دقة جغرافية
 - إخراج بالعربي الشامي، رسائل قصيرة (المستخدم على iPhone)
 - بعد كل جولة: حدّث ENGINE/HANDOFF_STATE.json ثم شغّل tools/handoff.py → HANDOFF.md + ارفعه
+- إصلاح الغليف أو إضافة texture لا يعني احتراف. v2 مرفوض بصرياً. لا يُسمّى اختبار v3 بمستوى المرجع ولا يُعتمد كمحرك جاهز دون مراجعة.
 
 ## 8) البيئة (بعد أي ريست)
 
