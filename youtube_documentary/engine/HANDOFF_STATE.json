@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "0aafe88",
+ "head_commit": "bbb45ce",
  "studies": [
   {
    "ref": "vaping",
@@ -232,6 +232,33 @@
    "name": "Escobar Intro3 — source/review packet, not publication clearance",
    "kind": "file",
    "drive_id": "1r-_FIlhGSO4-_mgNsvj1d-sjgV8w-uzd"
+  },
+  {
+   "name": "Previous HANDOFF — Revision3 delivery before rhythm feedback",
+   "drive_id": "11wEdTbkYLZL-ecq8hiVl8fuCHYS6F6dC",
+   "kind": "file"
+  },
+  {
+   "name": "Escobar Intro Revision4 —53.83sEnglish, faster rhythm/clear name, not user-approved",
+   "drive_id": "1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5",
+   "kind": "file",
+   "path": "engine/projects/escobar_intro4/delivery.json"
+  },
+  {
+   "name": "Escobar Intro4 — actual QC and source-use notes",
+   "drive_id": "1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0",
+   "kind": "file",
+   "path": "engine/projects/escobar_intro4/QC.md"
+  },
+  {
+   "name": "Escobar Intro4 — source/engine/voice/stems/encoded review packet; no rights clearance",
+   "drive_id": "1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W",
+   "kind": "file"
+  },
+  {
+   "name": "Latest HANDOFF — Revision4delivery; self-link recorded after upload",
+   "drive_id": "1VA3MOpBKhzsa1OPVzeW0USWm4Bvx3d7I",
+   "kind": "file"
   }
  ],
  "engine_state": {
@@ -256,13 +283,13 @@
   ]
  },
  "next_steps": [
-  "انتظر حكم المستخدم على Revision3الموسّع63.25ث. المطلوب عن إسكوبار عمومًا: ثروة/صورة شعبية/نفوذ وخوف، مو السجن أو الصفقة، وبلا كشف هروب أو مصير/نهايات. التنفيذ كان مأذونًا بلا سقف30ث، مو باقي الوثائقي. احفظ الأصل وRevision2.",
+  "انتظر رأي المستخدم علىRevision4الجديدة53.83ث. تم شد السكتات وحذفThinkaboutthat/Nowlisten... وإضافةصوتينأصليينللاسم، وتنوعموادأوضح، واسمين2ث/ماركر. لا تسريعكلامولااختلاقنشرات؛ لاشغلمعلّقمفتوح. لا تبدأباقيالوثائقيتلقائيًا.",
   "PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت",
   "باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
   "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
  ],
  "open_questions": [
-  "Revision3الجديد ليس معتمدًا من المستخدم. هويةvoice-02معتمدة سابقًا؛ النص/الأداء الجديدين مو معتمدين. فحص الصوت كانASRوقياسات، لا ادعاء استماع يدوي.",
+  "Revision4ليست معتمدة بعد. Revision3نالتثناءكبيرًا مع طلب تعديلالريثم. هويةvoice-02معتمدة؛ الأداءمعاد استخدامهمن3وبلا توليدجديد. الفحصالصوتيASRوقياسات، لاسمـاعيدوي مُدّعى.",
   "تراخيص نشر الأرشيف/صور الطرف الثالث غير محسومة. حركة العمق2.5Dوفجوات الخلفية إعادة بناء، وليست حركة كاميرا تاريخية. صورة ميديين حديثة ومصرّح بذلك."
  ],
  "laws": [
@@ -377,8 +404,43 @@
   "material_ideas_protocol": "engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md"
  },
  "active_hook": {
+  "scope": "مقدمة إسكوبار الواسعة فقط، مو باقي الوثائقي، ولا سقف30ث. ثروة/صورة شعبية/نفوذ وخوف؛ بلا سجن يقود الفكرة ولا هروب/مصير/نهايات.",
+  "status": "Revision4مسلّمة للمراجعة53.83ث بعد ثناء المستخدم علىRevision3وطلب ريثم أسرع واسم أوضح. لا اعتماد تلقائي.",
+  "audio": "نفس هويةvoice-02ونفس ملفات أداءRevision3: قص سكتات وجملتين زائدتين فقط، بلا توليد جديد أو تسريع/تغييرطبقة. التسجيل الأصلي المعتمد محفوظ.",
+  "script": "engine/projects/escobar_intro4/display_manifest.json",
+  "plan": "engine/projects/escobar_intro4/BRIEF.md",
+  "sources": "engine/projects/escobar_intro4/MATERIALS.json",
+  "delivery": "engine/projects/escobar_intro4/delivery.json",
+  "qc": "engine/projects/escobar_intro4/QC.md",
+  "video_drive": "1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5",
+  "actual_qc": "108عينات0.5ث+73حدود+35حركة، شوهدت15لوحة منالترميزالنهائي؛1292فريمdecode؛55testsPASS؛−16.02LUFS/−2dBTP/LRA5.7. ASRلايعني سماعًايدويًا.",
+  "source_truth": "صوتان حقيقيان يقولان الاسم من نفس مقابلةCharlieRose1992، مو نشرات مستقلة. قصاصتااسم منصفحاتGuardian/ElPaisالحديثة، مو سكانصحفقديمة. صورةالسكن1983حقيقية؛ صورةالحملةاكتُسبتثم رُفضت منالكَت.",
+  "common_engine": "engine/runtime/{photo_depth,film_runtime,speech_edit,encoded_review}.py؛ بيانات/بروفايلات منفصلة، مو محرك مستقل لكل فيلم.",
+  "new_reusable_rules": "engine/RHYTHM_AND_REAL_MEDIA.md",
+  "scope_reminder": "انتظار رأي المستخدم علىRevision4، لا بدءباقيالفيلم/مرجعجديدتلقائيًا. احفظكلالنسخالسابقة.",
+  "global_user_instruction": "المطلوب إيقاع أسرع ومليان تداخل أصوات وأرشيف وصحافة، مع اسم مقروء وماركر. مو تسريع عام ولا قصات اسم مهزوزة4Hz. الحقوق غيرمحسومة؛ حركةالصورإعادةبناء2.5Dمعلنة.",
+  "source_packet_drive": "1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W",
+  "qc_notes_drive": "1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0",
+  "handoff_drive": "1VA3MOpBKhzsa1OPVzeW0USWm4Bvx3d7I"
+ },
+ "active_intro3": {
+  "project": "engine/projects/escobar_intro3",
+  "status": "strongly_praised_but_rhythm_and_name_readability_revision_requested",
+  "duration": 63.25,
+  "video_id": "1tL0x2TwY_DYyDOaucqdjEjhFMvdmvab6",
+  "sha256": "37e5342b1745381dd41255eb332c9c3d0af33e1aa48134ff6711def650f32eb0",
+  "picture_review": "127exact0.5sframes +79joins/page-turn frames +23inner-broadcast-cut frames, all actually viewed",
+  "audio_review": "Final AAC ASR and loudness; no manual ear-listening claim",
+  "prison_scenes": 0,
+  "future_outcome_reveals": 0,
+  "new_take_approved": false,
+  "source_packet_id": "1r-_FIlhGSO4-_mgNsvj1d-sjgV8w-uzd",
+  "qc_notes_id": "1h0EIxKMduiv7XYPakSIy0JmFZzEIxHw2",
+  "user_feedback_summary": "تطور خارق وكتير حلو، لكن الريثم بطيء؛ مطلوب أسرع وأكتر تنوع واسم أوضح، مو تسريع كل الكلام."
+ },
+ "legacy_hook_revision2": {
   "scope": "مقدمة إسكوبار: أول30ث المنجزة أساس مراجعة؛ المستخدم لا يريد30ث كسقف يضعف الأفكار. التخطيط يمكن يتوسع، لكن مدة جديدة أو أداء صوتي جديد أو باقي الوثائقي مو معتمدين تلقائياً.",
-  "status": "المستخدم حبّ تطوّر revision2 والثري دي واللقطات جداً؛ طلب تقوية الفكرة/السكربت والتنوع واستعمال السجن الحقيقي بدل هيمنة المجسّم. لا اعتماد شامل للنص أو النسخة ولا رندر جديد بهالجولة.",
+  "status": "Historical only. Prison-led direction superseded; do not resume automatically.",
   "audio": "voice-02 معتمد 2026-10-15: بحسه شخص عم يحكيلي طبيعي حبيت موافق. canonical engine/projects/escobar_hook30/assets/narrator_approved.mp3؛ ممنوع إعادة توليد الأداء.",
   "script": "engine/projects/escobar_hook30/SCRIPT_EN.md",
   "archive": "Charlie Rose /12Nov1992، جزء من سؤال استعادي؛ صورة29.8–37.4 وصوت29.8–37.2 من المصدر الرسمي. لا نشرة حية ولا إزالة watermark. تحقق captions+ASR، لا سماع يدوي مُدّعى.",
@@ -410,18 +472,24 @@
   "next_direction_drive": "1NlhISYWHmjZDEj-r00eeQUzWgGaJ0WAs",
   "global_material_policy_drive": "1HNLb7NPS1EzxyZyKL0PhAIzj-RY6EblF"
  },
- "active_intro3": {
-  "project": "engine/projects/escobar_intro3",
-  "status": "review_cut_rendered_and_visually_reviewed_not_user_approved",
-  "duration": 63.25,
-  "video_id": "1tL0x2TwY_DYyDOaucqdjEjhFMvdmvab6",
-  "sha256": "37e5342b1745381dd41255eb332c9c3d0af33e1aa48134ff6711def650f32eb0",
-  "picture_review": "127exact0.5sframes +79joins/page-turn frames +23inner-broadcast-cut frames, all actually viewed",
-  "audio_review": "Final AAC ASR and loudness; no manual ear-listening claim",
+ "active_intro4": {
+  "project": "engine/projects/escobar_intro4",
+  "status": "delivered_internal_review_awaiting_user_feedback",
+  "duration": 53.833333333333336,
+  "video_id": "1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5",
+  "sha256": "b30d20d13b0c42ccb117f4575d44259890132c506bc2372c9bac4bffa0c0ca71",
+  "picture_review": "108exact0.5s +73join +35subsecond-motion review images, all viewed via15sheets; full1292frame decode. Not all1292individually watched.",
+  "audio_review": "FinalAACASR/loudness; no manual ear-listening claim",
+  "global_speedup": false,
+  "voice_regenerated": false,
+  "user_approved": false,
+  "name_sources": "Two genuine speakers, same1992CharlieRoseprogramme, not multiple news broadcasts",
+  "press": "Two real current-webpage name crops,2seach, fixed ink anchor/editorial marker. Not historical print scans.",
   "prison_scenes": 0,
-  "future_outcome_reveals": 0,
-  "new_take_approved": false,
-  "source_packet_id": "1r-_FIlhGSO4-_mgNsvj1d-sjgV8w-uzd",
-  "qc_notes_id": "1h0EIxKMduiv7XYPakSIy0JmFZzEIxHw2"
+  "payoff_reveals": 0,
+  "revision3_preserved": true,
+  "source_packet_id": "1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W",
+  "qc_notes_id": "1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0",
+  "handoff_id": "1VA3MOpBKhzsa1OPVzeW0USWm4Bvx3d7I"
  }
 }

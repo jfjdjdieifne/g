@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `0aafe88` · **HEAD الحالي:** `0aafe88`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `bbb45ce` · **HEAD الحالي:** `bbb45ce`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -71,52 +71,41 @@
 | Escobar Expanded Intro Revision3 —63sEnglish, broad/spoiler-free, NOT user-approved | `engine/projects/escobar_intro3/delivery.json` [درايف](https://drive.google.com/file/d/1tL0x2TwY_DYyDOaucqdjEjhFMvdmvab6/view) |
 | Escobar Intro3 — actual QC/source-use notes | `engine/projects/escobar_intro3/QC.md` [درايف](https://drive.google.com/file/d/1h0EIxKMduiv7XYPakSIy0JmFZzEIxHw2/view) |
 | Escobar Intro3 — source/review packet, not publication clearance |  [درايف](https://drive.google.com/file/d/1r-_FIlhGSO4-_mgNsvj1d-sjgV8w-uzd/view) |
+| Previous HANDOFF — Revision3 delivery before rhythm feedback |  [درايف](https://drive.google.com/file/d/11wEdTbkYLZL-ecq8hiVl8fuCHYS6F6dC/view) |
+| Escobar Intro Revision4 —53.83sEnglish, faster rhythm/clear name, not user-approved | `engine/projects/escobar_intro4/delivery.json` [درايف](https://drive.google.com/file/d/1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5/view) |
+| Escobar Intro4 — actual QC and source-use notes | `engine/projects/escobar_intro4/QC.md` [درايف](https://drive.google.com/file/d/1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0/view) |
+| Escobar Intro4 — source/engine/voice/stems/encoded review packet; no rights clearance |  [درايف](https://drive.google.com/file/d/1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W/view) |
 
 ## المشروع النشط — الهوك الحالي
 
-- **scope:** مقدمة إسكوبار: أول30ث المنجزة أساس مراجعة؛ المستخدم لا يريد30ث كسقف يضعف الأفكار. التخطيط يمكن يتوسع، لكن مدة جديدة أو أداء صوتي جديد أو باقي الوثائقي مو معتمدين تلقائياً.
-- **status:** المستخدم حبّ تطوّر revision2 والثري دي واللقطات جداً؛ طلب تقوية الفكرة/السكربت والتنوع واستعمال السجن الحقيقي بدل هيمنة المجسّم. لا اعتماد شامل للنص أو النسخة ولا رندر جديد بهالجولة.
-- **audio:** voice-02 معتمد 2026-10-15: بحسه شخص عم يحكيلي طبيعي حبيت موافق. canonical engine/projects/escobar_hook30/assets/narrator_approved.mp3؛ ممنوع إعادة توليد الأداء.
-- **script:** engine/projects/escobar_hook30/SCRIPT_EN.md
-- **archive:** Charlie Rose /12Nov1992، جزء من سؤال استعادي؛ صورة29.8–37.4 وصوت29.8–37.2 من المصدر الرسمي. لا نشرة حية ولا إزالة watermark. تحقق captions+ASR، لا سماع يدوي مُدّعى.
-- **plan:** engine/projects/escobar_hook30/revision2/README.md
-- **sources:** engine/projects/escobar_hook30/revision2/SOURCES_AND_RIGHTS.md
-- **video_drive:** [درايف](https://drive.google.com/file/d/1Wd71BUBgJlAdhXZtcg3f8oI6XbP6uthD/view)
-- **delivery:** engine/projects/escobar_hook30/revision2/delivery.json
-- **qc:** engine/projects/escobar_hook30/revision2/QC.md
-- **actual_qc:** النسخة المصححة:720فريم decode؛ شوهدت140عينة مشفّرة، كل0.5ث+بينية+حدود، وثلاث تفاصيل كاملة.26testsPASS،−16.43LUFS/−1.41dBTP. نموذج540p8fps ومكتب720p8fps→24fps/1080p، ليس native1080p24. لا سماع يدوي ولا شهادة احتراف آلية.
-- **scope_reminder:** أول30ث فقط، لا بدء الباقي ولا المرجع التالي تلقائياً.
-- **editorial_review:** engine/projects/escobar_hook30/revision2/editorial_review.json
-- **preflight:** engine/projects/escobar_hook30/ARCHIVE_PREFLIGHT.json
-- **user_clarification:** المستخدم ذكّر بالمراجع: خبر حقيقي عن الموضوع يقول جملة محددة، ثم يدخل الراوي مستلماً معناها. انتقاء الجملة/المقطع الحقيقي أولاً، مو أخبار للزينة أو سكتات جاهزة نملأها. تفكيك Juul الموجود يسجّل مقال/مذيع عند0:00–0:07؛ هذه إحالة لدراسة سابقة لا ادعاء إعادة مشاهدة/سماع الآن.
-- **acquisition_run:** https://github.com/jfjdjdieifne/g/actions/runs/38732941054
-- **global_user_instruction:** قبل أي تسليم ولكل فيديو: افهم وصفّن بكل مشهد وعاين الناتج بنفسك، أصلح الأخطاء الإخراجية الكبيرة قبل المراجعة. protocol engine/EDITORIAL_REVIEW_PROTOCOL.md؛ لا شهادة احتراف آلية.
-- **acquisition_status:** completed_success; لا jobs معلّقة. blob4e7114018505ee78e1aedf93d38f007c6bd2b10b. الدليل المفصل يحفظ أربع عمليات استرجاع ناجحة؛ لا تستأنف old watchers.
-- **archive_evidence:** engine/projects/escobar_hook30/archive_research/official_source_evidence.json
-- **archive_research:** engine/projects/escobar_hook30/archive_research/SOURCE_REVIEW_2026-10-15.md
-- **archive_candidate_handoff:** ...a prison of his own making. → This is Pablo Escobar's prison. He helped design it... لا ترتيب أخبار شكلي ولا سلايدات مكان الكلام.
-- **revision_qc:** الفيديو المنجز ومراجعته محفوظان؛ وصّل المستخدم رأيه الإيجابي بالثري دي مع طلب تعديل السكربت/المادة. لا تعِد نفس المونولوج بلقطات أكثر.
-- **legacy_rejection:** v1 فقط: engine/projects/escobar_hook30/editorial_review.json؛ production_blocked=true
-- **handoff_drive:** [درايف](https://drive.google.com/file/d/1u-M8W6Wc6DZRKZQOu5rFLpDw8l0SKuUC/view)
-- **review_notes_drive:** [درايف](https://drive.google.com/file/d/1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG/view)
-- **next_direction:** engine/projects/escobar_hook30/next_intro/DIRECTION.md
-- **user_feedback:** engine/projects/escobar_hook30/revision2/USER_FEEDBACK_2026-10-15.json
-- **global_material_policy:** engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md
-- **new_source_work:** شوهدت مجدداً28عينة تقريبية0:00–13:30 في overview_contact_1 من تجميعةABC/CBS؛ مداخل ومبانٍ وداخلية فعلية كمراجع. العلامات موجودة: ليست ماستر نظيفاً مرخصاً. lead صورة غرفة/AP من بحث فقط، غير مكتسبة/مشاهدة. لا صحف أصلية جديدة بعد.
-- **material_policy_tests:** 34 structural tests passed in5.532s; no new footage, generated image or film approval implied.
-- **next_direction_drive:** [درايف](https://drive.google.com/file/d/1NlhISYWHmjZDEj-r00eeQUzWgGaJ0WAs/view)
-- **global_material_policy_drive:** [درايف](https://drive.google.com/file/d/1HNLb7NPS1EzxyZyKL0PhAIzj-RY6EblF/view)
+- **scope:** مقدمة إسكوبار الواسعة فقط، مو باقي الوثائقي، ولا سقف30ث. ثروة/صورة شعبية/نفوذ وخوف؛ بلا سجن يقود الفكرة ولا هروب/مصير/نهايات.
+- **status:** Revision4مسلّمة للمراجعة53.83ث بعد ثناء المستخدم علىRevision3وطلب ريثم أسرع واسم أوضح. لا اعتماد تلقائي.
+- **audio:** نفس هويةvoice-02ونفس ملفات أداءRevision3: قص سكتات وجملتين زائدتين فقط، بلا توليد جديد أو تسريع/تغييرطبقة. التسجيل الأصلي المعتمد محفوظ.
+- **script:** engine/projects/escobar_intro4/display_manifest.json
+- **plan:** engine/projects/escobar_intro4/BRIEF.md
+- **sources:** engine/projects/escobar_intro4/MATERIALS.json
+- **delivery:** engine/projects/escobar_intro4/delivery.json
+- **qc:** engine/projects/escobar_intro4/QC.md
+- **video_drive:** [درايف](https://drive.google.com/file/d/1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5/view)
+- **actual_qc:** 108عينات0.5ث+73حدود+35حركة، شوهدت15لوحة منالترميزالنهائي؛1292فريمdecode؛55testsPASS؛−16.02LUFS/−2dBTP/LRA5.7. ASRلايعني سماعًايدويًا.
+- **source_truth:** صوتان حقيقيان يقولان الاسم من نفس مقابلةCharlieRose1992، مو نشرات مستقلة. قصاصتااسم منصفحاتGuardian/ElPaisالحديثة، مو سكانصحفقديمة. صورةالسكن1983حقيقية؛ صورةالحملةاكتُسبتثم رُفضت منالكَت.
+- **common_engine:** engine/runtime/{photo_depth,film_runtime,speech_edit,encoded_review}.py؛ بيانات/بروفايلات منفصلة، مو محرك مستقل لكل فيلم.
+- **new_reusable_rules:** engine/RHYTHM_AND_REAL_MEDIA.md
+- **scope_reminder:** انتظار رأي المستخدم علىRevision4، لا بدءباقيالفيلم/مرجعجديدتلقائيًا. احفظكلالنسخالسابقة.
+- **global_user_instruction:** المطلوب إيقاع أسرع ومليان تداخل أصوات وأرشيف وصحافة، مع اسم مقروء وماركر. مو تسريع عام ولا قصات اسم مهزوزة4Hz. الحقوق غيرمحسومة؛ حركةالصورإعادةبناء2.5Dمعلنة.
+- **source_packet_drive:** [درايف](https://drive.google.com/file/d/1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W/view)
+- **qc_notes_drive:** [درايف](https://drive.google.com/file/d/1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0/view)
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. انتظر حكم المستخدم على Revision3الموسّع63.25ث. المطلوب عن إسكوبار عمومًا: ثروة/صورة شعبية/نفوذ وخوف، مو السجن أو الصفقة، وبلا كشف هروب أو مصير/نهايات. التنفيذ كان مأذونًا بلا سقف30ث، مو باقي الوثائقي. احفظ الأصل وRevision2.
+1. انتظر رأي المستخدم علىRevision4الجديدة53.83ث. تم شد السكتات وحذفThinkaboutthat/Nowlisten... وإضافةصوتينأصليينللاسم، وتنوعموادأوضح، واسمين2ث/ماركر. لا تسريعكلامولااختلاقنشرات؛ لاشغلمعلّقمفتوح. لا تبدأباقيالوثائقيتلقائيًا.
 2. PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت
 3. باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
 4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
 
 ## 6) أسئلة معلّقة (بتنتظر قرار)
 
-- Revision3الجديد ليس معتمدًا من المستخدم. هويةvoice-02معتمدة سابقًا؛ النص/الأداء الجديدين مو معتمدين. فحص الصوت كانASRوقياسات، لا ادعاء استماع يدوي.
+- Revision4ليست معتمدة بعد. Revision3نالتثناءكبيرًا مع طلب تعديلالريثم. هويةvoice-02معتمدة؛ الأداءمعاد استخدامهمن3وبلا توليدجديد. الفحصالصوتيASRوقياسات، لاسمـاعيدوي مُدّعى.
 - تراخيص نشر الأرشيف/صور الطرف الثالث غير محسومة. حركة العمق2.5Dوفجوات الخلفية إعادة بناء، وليست حركة كاميرا تاريخية. صورة ميديين حديثة ومصرّح بذلك.
 
 ## 7) قوانين ثابتة (ما تتغيّر بين الجولات)
