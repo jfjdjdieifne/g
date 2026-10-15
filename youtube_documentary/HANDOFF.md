@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `4fe9e87` · **HEAD الحالي:** `4fe9e87`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `0aafe88` · **HEAD الحالي:** `0aafe88`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -16,6 +16,7 @@
 | `montage_theory` | engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار) |
 | `rulebook` | engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md (29 قسم — آخرها إضافات P2) |
 | `engine/runtime/xyz_scene.py + blender_xyz.py` | Runtime XYZ مشترك + backend Cycles جزئي؛ ملف إسكوبار profile إخراج، مو engine مستقل لكل فيلم. |
+| `engine/runtime/photo_depth.py` | كاميرا XYZ مشتركة + صفحات وثائق وparallax للصور الأصلية؛2.5Dمصرّح عنه، مو غرفة سجن ولا إعادة بناء تاريخية مساحية. |
 
 ## 2) حالة المراجع (الدراسة فريم-فريم)
 
@@ -65,8 +66,11 @@
 | Escobar Revision2 actual QC + source/use notes | `engine/projects/escobar_hook30/revision2/QC.md` [درايف](https://drive.google.com/file/d/1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG/view) |
 | Previous HANDOFF — Revision2 delivery before user feedback | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco/view) |
 | Global documentary material and idea policy | `engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md` [درايف](https://drive.google.com/file/d/1HNLb7NPS1EzxyZyKL0PhAIzj-RY6EblF/view) |
-| Escobar next intro direction — draft, not a new film | `engine/projects/escobar_hook30/next_intro/DIRECTION.md` [درايف](https://drive.google.com/file/d/1NlhISYWHmjZDEj-r00eeQUzWgGaJ0WAs/view) |
-| Current HANDOFF — positive shots feedback, stronger script/material direction | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1u-M8W6Wc6DZRKZQOu5rFLpDw8l0SKuUC/view) |
+| SUPERSEDED — narrow prison-centered draft, do not produce | `engine/projects/escobar_hook30/next_intro/DIRECTION.md` [درايف](https://drive.google.com/file/d/1NlhISYWHmjZDEj-r00eeQUzWgGaJ0WAs/view) |
+| Previous HANDOFF — Revision2 feedback before broad opening correction | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1u-M8W6Wc6DZRKZQOu5rFLpDw8l0SKuUC/view) |
+| Escobar Expanded Intro Revision3 —63sEnglish, broad/spoiler-free, NOT user-approved | `engine/projects/escobar_intro3/delivery.json` [درايف](https://drive.google.com/file/d/1tL0x2TwY_DYyDOaucqdjEjhFMvdmvab6/view) |
+| Escobar Intro3 — actual QC/source-use notes | `engine/projects/escobar_intro3/QC.md` [درايف](https://drive.google.com/file/d/1h0EIxKMduiv7XYPakSIy0JmFZzEIxHw2/view) |
+| Escobar Intro3 — source/review packet, not publication clearance |  [درايف](https://drive.google.com/file/d/1r-_FIlhGSO4-_mgNsvj1d-sjgV8w-uzd/view) |
 
 ## المشروع النشط — الهوك الحالي
 
@@ -105,15 +109,15 @@
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. للمقدمة الجديدة: أمّن مادة سجن حقيقية مناسبة وسكانات صحف أصلية؛ اختَر الجمل الأرشيفية وأدوار الراوي حول فرضية أقوى، ثم اعرض سكربت English ومدة مبرّرة قبل أداء صوتي/رندر جديد. الثري دي لغة ضمن الخليط، لا البديل الوحيد. لا باقي الوثائقي تلقائياً.
+1. انتظر حكم المستخدم على Revision3الموسّع63.25ث. المطلوب عن إسكوبار عمومًا: ثروة/صورة شعبية/نفوذ وخوف، مو السجن أو الصفقة، وبلا كشف هروب أو مصير/نهايات. التنفيذ كان مأذونًا بلا سقف30ث، مو باقي الوثائقي. احفظ الأصل وRevision2.
 2. PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت
 3. باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
 4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
 
 ## 6) أسئلة معلّقة (بتنتظر قرار)
 
-- المادة الأصلية القابلة للاستعمال للسجن والصحف بحاجة تأمين/تحقق؛ نسخةABC الحالية preview بعلامات. ترخيص النشر غير محسوم.
-- السكربت الجديد ومدته لم يُقترحا كنسخة نهائية ولم يُعتمدا؛ هوية/طبيعية voice-02 تبقى معتمدة والأداء السابق محفوظ.
+- Revision3الجديد ليس معتمدًا من المستخدم. هويةvoice-02معتمدة سابقًا؛ النص/الأداء الجديدين مو معتمدين. فحص الصوت كانASRوقياسات، لا ادعاء استماع يدوي.
+- تراخيص نشر الأرشيف/صور الطرف الثالث غير محسومة. حركة العمق2.5Dوفجوات الخلفية إعادة بناء، وليست حركة كاميرا تاريخية. صورة ميديين حديثة ومصرّح بذلك.
 
 ## 7) قوانين ثابتة (ما تتغيّر بين الجولات)
 
@@ -129,6 +133,7 @@
 - المشهد وحدة التصميم؛ لا انبثاق وصندوق افتراضي لكل جملة. لا تكفي texture/shadow/bounce لإثبات الاحتراف. اتجاه v3 معتمد ويعمم كسياسة لا قالب.
 - قبل أي رندر جديد: engine/PRODUCTION_POLICY.json + tools/production_policy.py؛ المحركات القديمة ليست كلها مربوطة تلقائياً فلا تشغّلها دون البوابة.
 - كل أطوال الفيديو: راوي إنكليزي بأسلوب يوتيوبر طبيعي، حكي وتفسير وأخذ وعطا، لا إنشاء وخطب محفوظة أو أسئلة درامية متكررة.
+- تصحيح المستخدم الأخير: الافتتاحية عن إسكوبار بشكل أوسع، والسجن مو فرضيتها الأساسية؛ بلا حرق للهروب أو المصير أو نقاط الذروة. طولها مو محدود30ث، لكن مو تفويض لباقي الوثائقي.
 
 ## 8) البيئة (بعد أي ريست)
 
@@ -137,6 +142,7 @@
 - `نزّل الفيديو من الدرايف → build/videos/`
 - `python3 tools/reference_motion.py build/videos/X.mp4 --video-id ID --out build/analysis/ID`
 - `هوك إسكوبار revision2: اقرأ engine/projects/escobar_hook30/revision2/README.md؛ bpy==4.2.23 + bootstrap_bpy_headless.py ثم stills → render-samples → finish → qa. لا ترندر من جديد لتعديل التوثيق فقط؛ الـMP4 النهائي محفوظ بالدرايف.`
+- `Revision3: اقرأengine/projects/escobar_intro3/BRIEF.mdوQC.md؛ الصور/التسجيلات الجديدة محفوظة بالمستودع، الأرشيف الأصلي يُستعاد منCI38732941054أو حزمةالمصادر بالدرايف؛ tools/escobar_intro3.py prepare→audio→stills→finish. الـMP4المسلّم محفوظبالدرايف، لا تعِد الرندر لتغيير التوثيق فقط.`
 
 ## 9) كيف تكمّل من هون (لأي أيجنت جديد)
 

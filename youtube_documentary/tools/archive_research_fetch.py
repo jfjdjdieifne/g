@@ -30,9 +30,10 @@ for attempt in range(28):
             args.out.mkdir(parents=True,exist_ok=True)
             with tarfile.open(fileobj=io.BytesIO(payload),mode='r:gz') as tar:
                 for member in tar.getmembers():
-                    if not member.isfile() or Path(member.name).name!=member.name:raise RuntimeError('Unexpected archive member')
+                    name=member.name[2:] if member.name.startswith('./') else member.name
+                    if not member.isfile() or name in ('','.','..') or Path(name).name!=name:raise RuntimeError('Unexpected archive member')
                     if member.size>100_000_000:raise RuntimeError('Member size cap exceeded')
-                    (args.out/member.name).write_bytes(tar.extractfile(member).read())
+                    (args.out/name).write_bytes(tar.extractfile(member).read())
             (args.out/'retrieval.json').write_text(json.dumps({'run':args.run,'blob_sha':sha,'rights_cleared':False,'viewed':False,'heard':False},indent=2)+'\n')
             print('RESEARCH_READY',args.out,flush=True);raise SystemExit(0)
     if jobs and all(j['status']=='completed' for j in jobs):raise SystemExit('Job ended without a retrievable research object: '+str([(j['name'],j['conclusion']) for j in jobs]))

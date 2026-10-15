@@ -1,3 +1,5 @@
+> SUPERSEDED: This earlier prison-led draft is NOT the active brief. The user explicitly rejected that focus. See `engine/projects/escobar_intro3/BRIEF.md` and its broad, spoiler-free review cut.
+
 # Next Escobar intro — direction, not an approved script or rendered revision
 
 ## What changed after viewing revision2

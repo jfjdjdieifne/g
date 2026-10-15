@@ -1,0 +1,259 @@
+{
+  "assets": [
+    {
+      "id": "forbes_cover",
+      "kind": "press_scan",
+      "path": "assets/forbes_cover.png",
+      "description": "Actual complete cover. Richest-man theme is NOT an Escobar No.1claim.",
+      "source": "https://www.forbes.com/sites/halahtouryalai/2015/09/15/watching-netflixs-narcos-heres-pablo-escobar-in-forbes-first-ever-billionaire-issue-in-1987/",
+      "date_context": "5October1987",
+      "review_status": "inspected",
+      "review_evidence": "Original source read/view plus127exact half-second encoded frames and79join/page-turn frames; actual observations in QC.md.",
+      "rights_status": "Internal editorial review only; publication permission not obtained."
+    },
+    {
+      "id": "forbes_entry",
+      "kind": "press_scan",
+      "path": "assets/forbes_entry.png",
+      "description": "Actual entry/portrait, plus original printed name.",
+      "source": "https://blogs-images.forbes.com/halahtouryalai/files/2015/09/escobar-write-up1.png",
+      "date_context": "5October1987",
+      "review_status": "inspected",
+      "review_evidence": "Original source read/view plus127exact half-second encoded frames and79join/page-turn frames; actual observations in QC.md.",
+      "rights_status": "Internal editorial review only; publication permission not obtained.",
+      "verified_crop_text": "Escobar"
+    },
+    {
+      "id": "semana",
+      "kind": "press_scan",
+      "path": "assets/semana.jpg",
+      "description": "Original photograph/name, no home-handover claim or Spanish article copy.",
+      "source": "https://www.sciencedirect.com/science/article/pii/S0962629825001763",
+      "date_context": "19April1983",
+      "review_status": "inspected",
+      "review_evidence": "Original source read/view plus127exact half-second encoded frames and79join/page-turn frames; actual observations in QC.md.",
+      "rights_status": "Internal editorial review only; publication permission not obtained.",
+      "verified_crop_text": "Escobar"
+    },
+    {
+      "id": "football",
+      "kind": "real_photo",
+      "path": "assets/football.jpg",
+      "description": "Actual football-field inauguration, different exposure from the Moravia plate.",
+      "source": "https://www.eltiempo.com/cultura/gente/pablo-escobar-como-fue-su-vida-politica-620562",
+      "date_context": "1983per actual publisher caption",
+      "review_status": "inspected",
+      "review_evidence": "Original source read/view plus127exact half-second encoded frames and79join/page-turn frames; actual observations in QC.md.",
+      "rights_status": "Internal editorial review only; publication permission not obtained."
+    },
+    {
+      "id": "congress",
+      "kind": "real_photo",
+      "path": "assets/congress.jpg",
+      "description": "Whole actual congressional group photograph. No uncertain face isolation.",
+      "source": "https://www.eltiempo.com/cultura/gente/pablo-escobar-como-fue-su-vida-politica-620562",
+      "date_context": "1983per actual publisher caption",
+      "review_status": "inspected",
+      "review_evidence": "Original source read/view plus127exact half-second encoded frames and79join/page-turn frames; actual observations in QC.md.",
+      "rights_status": "Internal editorial review only; publication permission not obtained."
+    },
+    {
+      "id": "city",
+      "kind": "real_photo",
+      "path": "assets/city.jpg",
+      "description": "Correct Medellin/CerroNutibara; AndresCamiloSuarezEcheverry. Not1980s or the housing project.",
+      "source": "https://www.elcolombiano.com/medellin/cerro-nutibara-hogar-de-250-especies-de-fauna-y-flora-medellin-CP35098648",
+      "date_context": "Published31March2026; explicitly contemporary",
+      "review_status": "inspected",
+      "review_evidence": "Original source read/view plus127exact half-second encoded frames and79join/page-turn frames; actual observations in QC.md.",
+      "rights_status": "Internal editorial review only; publication permission not obtained."
+    },
+    {
+      "id": "daily_name",
+      "kind": "press_scan",
+      "path": "assets/daily_page7.jpg",
+      "description": "Only Escobar word pixels. No outcome/headline/body context, even behind blur.",
+      "source": "Actual DailyNews23July1992page7, earlier archive acquisition; see SOURCES.md",
+      "date_context": "1992isolated name pixels only",
+      "review_status": "inspected",
+      "review_evidence": "Original source read/view plus127exact half-second encoded frames and79join/page-turn frames; actual observations in QC.md.",
+      "rights_status": "Internal editorial review only; publication permission not obtained.",
+      "verified_crop_text": "Escobar"
+    },
+    {
+      "id": "football_depth",
+      "kind": "generated_from_photo",
+      "reference_id": "football",
+      "description": "Original-pixel2.5D parallax, mask/inpainting; not image-model generation.",
+      "presented_as_archive": false,
+      "disclosure": "Editorial photo animation; not recorded historical camera motion or surveyed depth.",
+      "preserve": "Actual source subject pixels, composition, no generated faces/actions.",
+      "unknown_or_invented": "Depth is editorial; hidden areas behind foreground and tiny newly exposed gutters are computationally reconstructed, not evidence."
+    },
+    {
+      "id": "city_depth",
+      "kind": "generated_from_photo",
+      "reference_id": "city",
+      "description": "Original-pixel2.5D parallax, mask/inpainting; not image-model generation.",
+      "presented_as_archive": false,
+      "disclosure": "Editorial photo animation; not recorded historical camera motion or surveyed depth.",
+      "preserve": "Actual source subject pixels, composition, no generated faces/actions.",
+      "unknown_or_invented": "Depth is editorial; hidden areas behind foreground and tiny newly exposed gutters are computationally reconstructed, not evidence."
+    },
+    {
+      "id": "ship",
+      "kind": "interview",
+      "description": "To the United States. I mean, not just a little kilo here, a kilo there, but planeloads, shiploads.",
+      "source": "https://charlierose.com/videos/15564",
+      "date_context": "12November1992",
+      "review_status": "inspected",
+      "review_evidence": "Actual clip pictures, official VTT and original/encoded decoded-audio ASR.",
+      "rights_status": "Publication permission not obtained.",
+      "exact_quote": "To the United States. I mean, not just a little kilo here, a kilo there, but planeloads, shiploads.",
+      "speaker": "Andrew Cockburn",
+      "source_in_out": [
+        66.38,
+        71.53
+      ],
+      "audio_review_method": "Official VTT plus decoded-audio word-timed ASR; no manual ear-listening claim.",
+      "audio_only": false
+    },
+    {
+      "id": "wanted",
+      "kind": "interview",
+      "description": "the most wanted man in the Western Hemisphere",
+      "source": "https://charlierose.com/videos/15564",
+      "date_context": "12November1992",
+      "review_status": "inspected",
+      "review_evidence": "Actual clip pictures, official VTT and original/encoded decoded-audio ASR.",
+      "rights_status": "Publication permission not obtained.",
+      "exact_quote": "the most wanted man in the Western Hemisphere",
+      "speaker": "Charlie Rose",
+      "source_in_out": [
+        12.66,
+        15.3
+      ],
+      "audio_review_method": "Official VTT plus decoded-audio word-timed ASR; no manual ear-listening claim.",
+      "audio_only": true
+    },
+    {
+      "id": "fear",
+      "kind": "interview",
+      "description": "He didn't really invent anything, but he had the gift for organization and instilling fear.",
+      "source": "https://charlierose.com/videos/15564",
+      "date_context": "12November1992",
+      "review_status": "inspected",
+      "review_evidence": "Actual clip pictures, official VTT and original/encoded decoded-audio ASR.",
+      "rights_status": "Publication permission not obtained.",
+      "exact_quote": "He didn't really invent anything, but he had the gift for organization and instilling fear.",
+      "speaker": "Andrew Cockburn",
+      "source_in_out": [
+        76.74,
+        82.25
+      ],
+      "audio_review_method": "Official VTT plus decoded-audio word-timed ASR; no manual ear-listening claim.",
+      "audio_only": false
+    },
+    {
+      "id": "title",
+      "kind": "typography",
+      "description": "Original editorial PABLO ESCOBAR title; no claim this is historical print."
+    }
+  ],
+  "beats": [
+    {
+      "id": "ship",
+      "function": "Actual industrial-quantity sentence establishes the scale.",
+      "material_ids": [
+        "ship"
+      ],
+      "choice_reason": "Actual industrial-quantity sentence establishes the scale.",
+      "why_not_real": "Exact-subject real material selected first. Only specified camera motion/background repair is reconstructed.",
+      "narrative_owner": "archive"
+    },
+    {
+      "id": "wealth",
+      "function": "Actual cover\u2192entry\u2192portrait verifies billionaire-list inclusion.",
+      "material_ids": [
+        "forbes_cover",
+        "forbes_entry"
+      ],
+      "choice_reason": "Actual cover\u2192entry\u2192portrait verifies billionaire-list inclusion.",
+      "why_not_real": "Exact-subject real material selected first. Only specified camera motion/background repair is reconstructed.",
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "wanted",
+      "function": "Genuine host sentence over relevant image, never unrelated original picture.",
+      "material_ids": [
+        "wanted",
+        "forbes_entry"
+      ],
+      "choice_reason": "Genuine host sentence over relevant image, never unrelated original picture.",
+      "why_not_real": "Exact-subject real material selected first. Only specified camera motion/background repair is reconstructed.",
+      "narrative_owner": "archive"
+    },
+    {
+      "id": "public_image",
+      "function": "Real public-image/football/political photographs, not invented homes/crowds.",
+      "material_ids": [
+        "semana",
+        "football",
+        "football_depth",
+        "congress"
+      ],
+      "choice_reason": "Real public-image/football/political photographs, not invented homes/crowds.",
+      "why_not_real": "Exact-subject real material selected first. Only specified camera motion/background repair is reconstructed.",
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "fear",
+      "function": "Real organization/fear sentence advances the contrast without later outcomes.",
+      "material_ids": [
+        "fear"
+      ],
+      "choice_reason": "Real organization/fear sentence advances the contrast without later outcomes.",
+      "why_not_real": "Exact-subject real material selected first. Only specified camera motion/background repair is reconstructed.",
+      "narrative_owner": "archive"
+    },
+    {
+      "id": "questions",
+      "function": "Two questions about wealth/political influence/public image; contemporary city only for geography.",
+      "material_ids": [
+        "congress",
+        "semana",
+        "city",
+        "city_depth"
+      ],
+      "choice_reason": "Two questions about wealth/political influence/public image; contemporary city only for geography.",
+      "why_not_real": "Exact-subject real material selected first. Only specified camera motion/background repair is reconstructed.",
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "press_name",
+      "function": "The actual name becomes the film title; no event-resolution headline.",
+      "material_ids": [
+        "forbes_entry",
+        "semana",
+        "daily_name"
+      ],
+      "choice_reason": "The actual name becomes the film title; no event-resolution headline.",
+      "why_not_real": "Exact-subject real material selected first. Only specified camera motion/background repair is reconstructed.",
+      "narrative_owner": "narrator",
+      "type": "press_word_match",
+      "word": "Escobar",
+      "semantic_reason": "Narrator says the name took over the story; original printed word matches into editorial title."
+    },
+    {
+      "id": "title",
+      "function": "Editorial title/location closes the opening, not its central questions.",
+      "material_ids": [
+        "title",
+        "city"
+      ],
+      "choice_reason": "Editorial title/location closes the opening, not its central questions.",
+      "why_not_real": "Exact-subject real material selected first. Only specified camera motion/background repair is reconstructed.",
+      "narrative_owner": "narrator"
+    }
+  ]
+}

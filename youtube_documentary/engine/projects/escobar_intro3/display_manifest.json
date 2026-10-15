@@ -1,0 +1,17 @@
+{
+  "language": "en",
+  "texts": {
+    "title": "PABLO ESCOBAR",
+    "wealth": "In nineteen eighty-seven, Forbes put Pablo Escobar on its billionaire list. Think about that. A cocaine trafficker, listed alongside the world's richest people.",
+    "social": "But in parts of Medell\u00edn, there was another picture of him. He paid for homes and football fields. People had reasons to be grateful. That support mattered. Now listen to the other side of the story.",
+    "questions": "How does someone selling cocaine become powerful enough to challenge a government? And how does he convince some of the people living with that violence to see him as a hero?",
+    "close": "We're going back to Medell\u00edn, before the name took over the story.",
+    "source": "Forbes / original1987entry; Image:Forbes1987 / Audio:CharlieRose1992; Semana / Apr19,1983 / photograph detail;1983 / ElTiempoarchive / animated photograph; Escobar in Congress / ElTiempoarchive; CharlieRose / Nov12,1992; Medellin / contemporary establishing view"
+  },
+  "design": {
+    "unit_of_design": "scene",
+    "generic_popups": [],
+    "claims_3d": false,
+    "method": "2.5D original-pixel planes and geometric page turn through shared XYZ camera, not surveyed3D."
+  }
+}

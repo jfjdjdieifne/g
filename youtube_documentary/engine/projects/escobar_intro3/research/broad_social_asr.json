@@ -1,0 +1,221 @@
+{
+  "text": "but in parts of madelene there was another picture of him he paid for homes and football fields people had reasons to be grateful that support mattered now listen to the other side of the story",
+  "words": [
+    {
+      "conf": 1.0,
+      "end": 0.3,
+      "start": 0.12,
+      "word": "but"
+    },
+    {
+      "conf": 1.0,
+      "end": 0.39,
+      "start": 0.3,
+      "word": "in"
+    },
+    {
+      "conf": 1.0,
+      "end": 0.78,
+      "start": 0.39,
+      "word": "parts"
+    },
+    {
+      "conf": 1.0,
+      "end": 0.87,
+      "start": 0.78,
+      "word": "of"
+    },
+    {
+      "conf": 0.583738,
+      "end": 1.56,
+      "start": 0.87,
+      "word": "madelene"
+    },
+    {
+      "conf": 1.0,
+      "end": 1.89,
+      "start": 1.74,
+      "word": "there"
+    },
+    {
+      "conf": 1.0,
+      "end": 2.1,
+      "start": 1.89,
+      "word": "was"
+    },
+    {
+      "conf": 1.0,
+      "end": 2.4,
+      "start": 2.1,
+      "word": "another"
+    },
+    {
+      "conf": 1.0,
+      "end": 2.79,
+      "start": 2.4,
+      "word": "picture"
+    },
+    {
+      "conf": 1.0,
+      "end": 2.88,
+      "start": 2.79,
+      "word": "of"
+    },
+    {
+      "conf": 1.0,
+      "end": 3.18,
+      "start": 2.88,
+      "word": "him"
+    },
+    {
+      "conf": 1.0,
+      "end": 4.08,
+      "start": 3.93,
+      "word": "he"
+    },
+    {
+      "conf": 1.0,
+      "end": 4.41,
+      "start": 4.08,
+      "word": "paid"
+    },
+    {
+      "conf": 1.0,
+      "end": 4.56,
+      "start": 4.41,
+      "word": "for"
+    },
+    {
+      "conf": 1.0,
+      "end": 5.1,
+      "start": 4.56,
+      "word": "homes"
+    },
+    {
+      "conf": 1.0,
+      "end": 5.22,
+      "start": 5.1,
+      "word": "and"
+    },
+    {
+      "conf": 1.0,
+      "end": 5.64,
+      "start": 5.22,
+      "word": "football"
+    },
+    {
+      "conf": 1.0,
+      "end": 6.21,
+      "start": 5.64,
+      "word": "fields"
+    },
+    {
+      "conf": 1.0,
+      "end": 7.29,
+      "start": 6.84,
+      "word": "people"
+    },
+    {
+      "conf": 1.0,
+      "end": 7.5,
+      "start": 7.29,
+      "word": "had"
+    },
+    {
+      "conf": 0.828606,
+      "end": 8.04,
+      "start": 7.5,
+      "word": "reasons"
+    },
+    {
+      "conf": 1.0,
+      "end": 8.16,
+      "start": 8.045142,
+      "word": "to"
+    },
+    {
+      "conf": 1.0,
+      "end": 8.31,
+      "start": 8.16,
+      "word": "be"
+    },
+    {
+      "conf": 1.0,
+      "end": 8.91,
+      "start": 8.31,
+      "word": "grateful"
+    },
+    {
+      "conf": 1.0,
+      "end": 9.99,
+      "start": 9.63,
+      "word": "that"
+    },
+    {
+      "conf": 1.0,
+      "end": 10.74,
+      "start": 9.99,
+      "word": "support"
+    },
+    {
+      "conf": 1.0,
+      "end": 11.82,
+      "start": 11.19,
+      "word": "mattered"
+    },
+    {
+      "conf": 1.0,
+      "end": 13.08,
+      "start": 12.69,
+      "word": "now"
+    },
+    {
+      "conf": 1.0,
+      "end": 14.25,
+      "start": 13.77,
+      "word": "listen"
+    },
+    {
+      "conf": 1.0,
+      "end": 14.37,
+      "start": 14.25,
+      "word": "to"
+    },
+    {
+      "conf": 1.0,
+      "end": 14.52,
+      "start": 14.37,
+      "word": "the"
+    },
+    {
+      "conf": 1.0,
+      "end": 14.73,
+      "start": 14.52,
+      "word": "other"
+    },
+    {
+      "conf": 1.0,
+      "end": 15.27,
+      "start": 14.73,
+      "word": "side"
+    },
+    {
+      "conf": 1.0,
+      "end": 15.84,
+      "start": 15.69,
+      "word": "of"
+    },
+    {
+      "conf": 1.0,
+      "end": 15.96,
+      "start": 15.84,
+      "word": "the"
+    },
+    {
+      "conf": 1.0,
+      "end": 16.53,
+      "start": 15.96,
+      "word": "story"
+    }
+  ]
+}

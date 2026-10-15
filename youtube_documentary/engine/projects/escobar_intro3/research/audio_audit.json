@@ -1,0 +1,59 @@
+{
+  "clips": [
+    {
+      "key": "ship",
+      "start": 0.0,
+      "decoded_duration": 5.15,
+      "constant_gain": 3.599502696164265,
+      "voice": null
+    },
+    {
+      "key": "wealth",
+      "start": 5.35,
+      "decoded_duration": 15.487729166666666,
+      "constant_gain": 1.1542585148757465,
+      "voice": "voice-02"
+    },
+    {
+      "key": "wanted",
+      "start": 21.0,
+      "decoded_duration": 2.64,
+      "constant_gain": 4.094209586075758,
+      "voice": null
+    },
+    {
+      "key": "social",
+      "start": 23.84,
+      "decoded_duration": 16.6719375,
+      "constant_gain": 1.1365324631180056,
+      "voice": "voice-02"
+    },
+    {
+      "key": "fear",
+      "start": 40.7,
+      "decoded_duration": 5.51,
+      "constant_gain": 3.264959999684688,
+      "voice": null
+    },
+    {
+      "key": "questions",
+      "start": 46.45,
+      "decoded_duration": 11.087541666666667,
+      "constant_gain": 1.0976140799350211,
+      "voice": "voice-02"
+    },
+    {
+      "key": "close",
+      "start": 57.8,
+      "decoded_duration": 4.260875,
+      "constant_gain": 0.9796594386420121,
+      "voice": "voice-02"
+    }
+  ],
+  "master_constant_gain_db": -0.019999999999999574,
+  "sfx_db_relative_to_local_music": -9,
+  "narrator_regenerated_from_approved_identity": true,
+  "original_approved_take_untouched": true,
+  "no_voice_retiming_or_pitch_change": true,
+  "manual_listening_claimed": false
+}
