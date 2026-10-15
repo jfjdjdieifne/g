@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "b1d7308",
+ "head_commit": "e051ce4",
  "studies": [
   {
    "ref": "vaping",
@@ -299,7 +299,7 @@
   ]
  },
  "next_steps": [
-  "انتظر رأي المستخدم علىRevision5الجديدة33.125ث. طبّق نقد الإحساس فعليًا؛ قياساتالكلاموASRوالاختباراتلا تثبت الحماس/الطبيعية. النسخالسابقةمحفوظة، لا تبدأباقيالوثائقي.",
+  "انتظررأيالمستخدمعلىاختبارالصوتالمسرّع15.855ث. لا تولّدباقيالفويساتبالإيقاعالمرفوض. الافتتاحيةمعتمدةومحفوظةSHAمطابق؛ بقيةالفيلم4–9دقائق مأذونة.",
   "PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت",
   "باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
   "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
@@ -426,7 +426,7 @@
  },
  "active_hook": {
   "project": "engine/projects/escobar_intro5",
-  "status": "Revision5 الجديدة للمراجعة؛ Revision4 مرفوضة إبداعيًا. لا موافقة أداء/إخراج بعد.",
+  "status": "المستخدم اعتمد Revision5؛ الافتتاحيةمحفوظة. باقيالفيلممأذون4–9دقائقلكنإيقاعالجسمموقوفللتصحيح.",
   "scope": "افتتاحيةفقط33.125ث، مو سقف30ث ولا تفويض لباقي الوثائقي؛ بلا حرق مصير/هروب/نهايات.",
   "video_drive": "1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI",
   "voice": "هويةvoice-02المعتمدة،3تسجيلاتجديدةمأذونةومحفوظة؛ لاatempoولاspeedupعام. أداءالتسجيلاتالجديدةللمراجعة.",
@@ -434,9 +434,10 @@
   "design": "17مقطعًابصريًامؤلَّفًا؛4صور/وثيقةكلواحدةمرة، أغلبالافتتاحيةأرشيفمتحرك. حركةالاسم/الماركرالقديمةملغاة؛ عنواننهائيواحد.",
   "review": "شوهدت67عينة0.5ث+49حدود+107حركةمنالترميزالنهائيب16لوحة؛795فريمdecode،41اختبارميكانيكيPASS. لاادعاءسماعولااستحقاقفنيآلي.",
   "rights": "مصادرحقيقيةلكنحقوقالنشرغيرمُخلّصة؛ مراجعةداخليةفقط.",
-  "next": "انتظررأيالمستخدمعلىالنسخةالجديدةخصوصًاالإحساسبالإيقاعوالأداء؛ لاتبدأباقيالفيلمتلقائيًا.",
+  "next": "انتظررأيهباختبارV3المعالج15.855ث؛ كلهبالهويةنفسها، التبطئةلـanAmericanprisonفقط. لا تعممسرعةغيرمعتمدة.",
   "source_packet_drive": "1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0",
-  "qc_notes_drive": "1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ"
+  "qc_notes_drive": "1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ",
+  "pace_demo_drive": "1da--B-ytj1ErASq9SUb-zFS6XCnNnk2O"
  },
  "active_intro3": {
   "project": "engine/projects/escobar_intro3",
@@ -510,8 +511,8 @@
  },
  "active_intro5": {
   "project": "engine/projects/escobar_intro5",
-  "status": "delivered_internal_review_awaiting_user_feedback",
-  "user_approved": false,
+  "status": "user_approved_opening_full_documentary_authorized",
+  "user_approved": true,
   "duration": 33.125,
   "frames": 795,
   "fps": 24,
@@ -558,5 +559,31 @@
    "md5": "12db82ecf6994de7783362c0ce1e0a4b",
    "files": 294
   }
+ },
+ "active_full_film": {
+  "status": "full_film_authorized_pace_revision_pending",
+  "approved_intro": {
+   "project": "escobar_intro5",
+   "user_approved": true,
+   "sha256": "1a05ed7c029b7f910cd1d62be1bd911745fefc23b96652292b1bea9ceec0894d",
+   "reconstructed_byte_identically": true
+  },
+  "full_scope": "4-9 minutes total, naturally suited to story; English only; conversational explanatory YouTuber voice; motivated footage, sound, camera and 3D.",
+  "latest_feedback": [
+   "Full-body raw narration is much too slow.",
+   "Faster baseline speech, occasional slow two/three-word emphasis and short meaningful pauses only.",
+   "User rejected the first new raw pace example as still a little slow."
+  ],
+  "current_demo": "pace_test/Escobar_Pace_Faster_V3.mp3",
+  "demo_method": "New voice-02 take shaped clause by clause with pitch-preserving tempo factors 1.13-1.43. Important three-word phrase stays at original rate. This is processed, NOT a claim of naturally faster raw acting.",
+  "demo_seconds": 15.855,
+  "previous_raw_seconds": 20.19,
+  "pace_approved": false,
+  "whole_film_work_paused_for_pace_review": true,
+  "seven_slow_full_body_takes": "Rejected for pacing, preserve as raw source only. Not approved and not queued for rendering.",
+  "no_change_to_approved_intro": true,
+  "pace_demo_drive": "1da--B-ytj1ErASq9SUb-zFS6XCnNnk2O",
+  "rejected_raw_archive_drive": "1NxeTyKABBS35oTOBq__oOyfCjy4wWL5J",
+  "rejected_raw_archive_md5": "52cb09a7d232cb8f5fe1599fd4df79e5"
  }
 }

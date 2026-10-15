@@ -1,3 +1,5 @@
+> UPDATE: The user approved this complete33.125s opening and authorized a4–9minute full film. The opening is locked, byte-identically reconstructed (sameSHA256). Later body narration is separately pending pace approval; earlier candidate/unapproved wording below is historical.
+
 # Revision 5 — source-led opening, not another shortening pass
 
 **33.125 seconds. Candidate for the user's review, not approved. Opening only.**

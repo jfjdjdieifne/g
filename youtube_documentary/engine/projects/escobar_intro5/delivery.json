@@ -1,6 +1,6 @@
 {
-  "status": "delivered_internal_review_awaiting_user_feedback",
-  "user_approved": false,
+  "status": "user_approved_opening_full_documentary_authorized",
+  "user_approved": true,
   "duration": 33.125,
   "frames": 795,
   "fps": 24,
@@ -18,7 +18,7 @@
   "voice_programmes": 1,
   "narrator_voice": "voice-02",
   "new_narrator_performances": true,
-  "voice_performance_user_approved": false,
+  "voice_performance_user_approved": true,
   "manual_listening_claimed": false,
   "visual_review_complete": true,
   "visual_review_method": "67 half-second +49 join +107 subsecond frames via16 inspected sheets; full795-frame decode. Not795 individually viewed or continuous real-time playback.",
