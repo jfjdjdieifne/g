@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `d26245d` · **HEAD الحالي:** `d26245d`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `4fe9e87` · **HEAD الحالي:** `4fe9e87`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -63,7 +63,10 @@
 | Previous HANDOFF — archive acquisition only, historical | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1ZqoJ_Ecquvg8agmi9HssjndMm801t4K7/view) |
 | Escobar First30 English Revision2 — review cut, not user-approved | `engine/projects/escobar_hook30/revision2/delivery.json` [درايف](https://drive.google.com/file/d/1Wd71BUBgJlAdhXZtcg3f8oI6XbP6uthD/view) |
 | Escobar Revision2 actual QC + source/use notes | `engine/projects/escobar_hook30/revision2/QC.md` [درايف](https://drive.google.com/file/d/1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG/view) |
-| Current HANDOFF — Revision2 actual film delivered | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco/view) |
+| Previous HANDOFF — Revision2 delivery before user feedback | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco/view) |
+| Global documentary material and idea policy | `engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md` [درايف](https://drive.google.com/file/d/1HNLb7NPS1EzxyZyKL0PhAIzj-RY6EblF/view) |
+| Escobar next intro direction — draft, not a new film | `engine/projects/escobar_hook30/next_intro/DIRECTION.md` [درايف](https://drive.google.com/file/d/1NlhISYWHmjZDEj-r00eeQUzWgGaJ0WAs/view) |
+| Current HANDOFF — positive shots feedback, stronger script/material direction | `HANDOFF.md` [درايف](https://drive.google.com/file/d/1u-M8W6Wc6DZRKZQOu5rFLpDw8l0SKuUC/view) |
 
 ## المشروع النشط — الهوك الحالي
 
@@ -90,12 +93,15 @@
 - **archive_candidate_handoff:** ...a prison of his own making. → This is Pablo Escobar's prison. He helped design it... لا ترتيب أخبار شكلي ولا سلايدات مكان الكلام.
 - **revision_qc:** الفيديو المنجز ومراجعته محفوظان؛ وصّل المستخدم رأيه الإيجابي بالثري دي مع طلب تعديل السكربت/المادة. لا تعِد نفس المونولوج بلقطات أكثر.
 - **legacy_rejection:** v1 فقط: engine/projects/escobar_hook30/editorial_review.json؛ production_blocked=true
-- **handoff_drive:** [درايف](https://drive.google.com/file/d/1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco/view)
+- **handoff_drive:** [درايف](https://drive.google.com/file/d/1u-M8W6Wc6DZRKZQOu5rFLpDw8l0SKuUC/view)
 - **review_notes_drive:** [درايف](https://drive.google.com/file/d/1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG/view)
 - **next_direction:** engine/projects/escobar_hook30/next_intro/DIRECTION.md
 - **user_feedback:** engine/projects/escobar_hook30/revision2/USER_FEEDBACK_2026-10-15.json
 - **global_material_policy:** engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md
 - **new_source_work:** شوهدت مجدداً28عينة تقريبية0:00–13:30 في overview_contact_1 من تجميعةABC/CBS؛ مداخل ومبانٍ وداخلية فعلية كمراجع. العلامات موجودة: ليست ماستر نظيفاً مرخصاً. lead صورة غرفة/AP من بحث فقط، غير مكتسبة/مشاهدة. لا صحف أصلية جديدة بعد.
+- **material_policy_tests:** 34 structural tests passed in5.532s; no new footage, generated image or film approval implied.
+- **next_direction_drive:** [درايف](https://drive.google.com/file/d/1NlhISYWHmjZDEj-r00eeQUzWgGaJ0WAs/view)
+- **global_material_policy_drive:** [درايف](https://drive.google.com/file/d/1HNLb7NPS1EzxyZyKL0PhAIzj-RY6EblF/view)
 
 ## 5) الخطوات الجاية (بالترتيب)
 

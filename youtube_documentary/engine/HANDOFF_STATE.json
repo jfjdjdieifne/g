@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "d26245d",
+ "head_commit": "4fe9e87",
  "studies": [
   {
    "ref": "vaping",
@@ -193,8 +193,26 @@
    "path": "engine/projects/escobar_hook30/revision2/QC.md"
   },
   {
-   "name": "Current HANDOFF — Revision2 actual film delivered",
+   "name": "Previous HANDOFF — Revision2 delivery before user feedback",
    "drive_id": "1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco",
+   "kind": "file",
+   "path": "HANDOFF.md"
+  },
+  {
+   "name": "Global documentary material and idea policy",
+   "drive_id": "1HNLb7NPS1EzxyZyKL0PhAIzj-RY6EblF",
+   "kind": "file",
+   "path": "engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md"
+  },
+  {
+   "name": "Escobar next intro direction — draft, not a new film",
+   "drive_id": "1NlhISYWHmjZDEj-r00eeQUzWgGaJ0WAs",
+   "kind": "file",
+   "path": "engine/projects/escobar_hook30/next_intro/DIRECTION.md"
+  },
+  {
+   "name": "Current HANDOFF — positive shots feedback, stronger script/material direction",
+   "drive_id": "1u-M8W6Wc6DZRKZQOu5rFLpDw8l0SKuUC",
    "kind": "file",
    "path": "HANDOFF.md"
   }
@@ -362,11 +380,14 @@
   "archive_candidate_handoff": "...a prison of his own making. → This is Pablo Escobar's prison. He helped design it... لا ترتيب أخبار شكلي ولا سلايدات مكان الكلام.",
   "revision_qc": "الفيديو المنجز ومراجعته محفوظان؛ وصّل المستخدم رأيه الإيجابي بالثري دي مع طلب تعديل السكربت/المادة. لا تعِد نفس المونولوج بلقطات أكثر.",
   "legacy_rejection": "v1 فقط: engine/projects/escobar_hook30/editorial_review.json؛ production_blocked=true",
-  "handoff_drive": "1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco",
+  "handoff_drive": "1u-M8W6Wc6DZRKZQOu5rFLpDw8l0SKuUC",
   "review_notes_drive": "1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG",
   "next_direction": "engine/projects/escobar_hook30/next_intro/DIRECTION.md",
   "user_feedback": "engine/projects/escobar_hook30/revision2/USER_FEEDBACK_2026-10-15.json",
   "global_material_policy": "engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md",
-  "new_source_work": "شوهدت مجدداً28عينة تقريبية0:00–13:30 في overview_contact_1 من تجميعةABC/CBS؛ مداخل ومبانٍ وداخلية فعلية كمراجع. العلامات موجودة: ليست ماستر نظيفاً مرخصاً. lead صورة غرفة/AP من بحث فقط، غير مكتسبة/مشاهدة. لا صحف أصلية جديدة بعد."
+  "new_source_work": "شوهدت مجدداً28عينة تقريبية0:00–13:30 في overview_contact_1 من تجميعةABC/CBS؛ مداخل ومبانٍ وداخلية فعلية كمراجع. العلامات موجودة: ليست ماستر نظيفاً مرخصاً. lead صورة غرفة/AP من بحث فقط، غير مكتسبة/مشاهدة. لا صحف أصلية جديدة بعد.",
+  "material_policy_tests": "34 structural tests passed in5.532s; no new footage, generated image or film approval implied.",
+  "next_direction_drive": "1NlhISYWHmjZDEj-r00eeQUzWgGaJ0WAs",
+  "global_material_policy_drive": "1HNLb7NPS1EzxyZyKL0PhAIzj-RY6EblF"
  }
 }
