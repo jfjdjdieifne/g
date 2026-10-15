@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `bbb45ce` · **HEAD الحالي:** `bbb45ce`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `f000d5a` · **HEAD الحالي:** `f000d5a`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -75,30 +75,24 @@
 | Escobar Intro Revision4 —53.83sEnglish, faster rhythm/clear name, not user-approved | `engine/projects/escobar_intro4/delivery.json` [درايف](https://drive.google.com/file/d/1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5/view) |
 | Escobar Intro4 — actual QC and source-use notes | `engine/projects/escobar_intro4/QC.md` [درايف](https://drive.google.com/file/d/1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0/view) |
 | Escobar Intro4 — source/engine/voice/stems/encoded review packet; no rights clearance |  [درايف](https://drive.google.com/file/d/1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W/view) |
+| Latest HANDOFF — Revision4delivery; self-link recorded after upload |  [درايف](https://drive.google.com/file/d/1VA3MOpBKhzsa1OPVzeW0USWm4Bvx3d7I/view) |
 
 ## المشروع النشط — الهوك الحالي
 
-- **scope:** مقدمة إسكوبار الواسعة فقط، مو باقي الوثائقي، ولا سقف30ث. ثروة/صورة شعبية/نفوذ وخوف؛ بلا سجن يقود الفكرة ولا هروب/مصير/نهايات.
-- **status:** Revision4مسلّمة للمراجعة53.83ث بعد ثناء المستخدم علىRevision3وطلب ريثم أسرع واسم أوضح. لا اعتماد تلقائي.
-- **audio:** نفس هويةvoice-02ونفس ملفات أداءRevision3: قص سكتات وجملتين زائدتين فقط، بلا توليد جديد أو تسريع/تغييرطبقة. التسجيل الأصلي المعتمد محفوظ.
-- **script:** engine/projects/escobar_intro4/display_manifest.json
-- **plan:** engine/projects/escobar_intro4/BRIEF.md
-- **sources:** engine/projects/escobar_intro4/MATERIALS.json
-- **delivery:** engine/projects/escobar_intro4/delivery.json
-- **qc:** engine/projects/escobar_intro4/QC.md
-- **video_drive:** [درايف](https://drive.google.com/file/d/1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5/view)
-- **actual_qc:** 108عينات0.5ث+73حدود+35حركة، شوهدت15لوحة منالترميزالنهائي؛1292فريمdecode؛55testsPASS؛−16.02LUFS/−2dBTP/LRA5.7. ASRلايعني سماعًايدويًا.
-- **source_truth:** صوتان حقيقيان يقولان الاسم من نفس مقابلةCharlieRose1992، مو نشرات مستقلة. قصاصتااسم منصفحاتGuardian/ElPaisالحديثة، مو سكانصحفقديمة. صورةالسكن1983حقيقية؛ صورةالحملةاكتُسبتثم رُفضت منالكَت.
-- **common_engine:** engine/runtime/{photo_depth,film_runtime,speech_edit,encoded_review}.py؛ بيانات/بروفايلات منفصلة، مو محرك مستقل لكل فيلم.
-- **new_reusable_rules:** engine/RHYTHM_AND_REAL_MEDIA.md
-- **scope_reminder:** انتظار رأي المستخدم علىRevision4، لا بدءباقيالفيلم/مرجعجديدتلقائيًا. احفظكلالنسخالسابقة.
-- **global_user_instruction:** المطلوب إيقاع أسرع ومليان تداخل أصوات وأرشيف وصحافة، مع اسم مقروء وماركر. مو تسريع عام ولا قصات اسم مهزوزة4Hz. الحقوق غيرمحسومة؛ حركةالصورإعادةبناء2.5Dمعلنة.
-- **source_packet_drive:** [درايف](https://drive.google.com/file/d/1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W/view)
-- **qc_notes_drive:** [درايف](https://drive.google.com/file/d/1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0/view)
+- **project:** engine/projects/escobar_intro5
+- **status:** Revision5 الجديدة للمراجعة؛ Revision4 مرفوضة إبداعيًا. لا موافقة أداء/إخراج بعد.
+- **scope:** افتتاحيةفقط33.125ث، مو سقف30ث ولا تفويض لباقي الوثائقي؛ بلا حرق مصير/هروب/نهايات.
+- **video_drive:** [درايف](https://drive.google.com/file/d/1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI/view)
+- **voice:** هويةvoice-02المعتمدة،3تسجيلاتجديدةمأذونةومحفوظة؛ لاatempoولاspeedupعام. أداءالتسجيلاتالجديدةللمراجعة.
+- **source_truth:** شهادتانمنسياقيْمقابلةمختلفينبنفسFRONTLINE1995، مو قنواتمختلفة. BBC2013/AJ2018صورمتَحركةمؤرخة؛ لااختلاقمتحدثينولاlip-sync.
+- **design:** 17مقطعًابصريًامؤلَّفًا؛4صور/وثيقةكلواحدةمرة، أغلبالافتتاحيةأرشيفمتحرك. حركةالاسم/الماركرالقديمةملغاة؛ عنواننهائيواحد.
+- **review:** شوهدت67عينة0.5ث+49حدود+107حركةمنالترميزالنهائيب16لوحة؛795فريمdecode،41اختبارميكانيكيPASS. لاادعاءسماعولااستحقاقفنيآلي.
+- **rights:** مصادرحقيقيةلكنحقوقالنشرغيرمُخلّصة؛ مراجعةداخليةفقط.
+- **next:** انتظررأيالمستخدمعلىالنسخةالجديدةخصوصًاالإحساسبالإيقاعوالأداء؛ لاتبدأباقيالفيلمتلقائيًا.
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. انتظر رأي المستخدم علىRevision4الجديدة53.83ث. تم شد السكتات وحذفThinkaboutthat/Nowlisten... وإضافةصوتينأصليينللاسم، وتنوعموادأوضح، واسمين2ث/ماركر. لا تسريعكلامولااختلاقنشرات؛ لاشغلمعلّقمفتوح. لا تبدأباقيالوثائقيتلقائيًا.
+1. انتظر رأي المستخدم علىRevision5الجديدة33.125ث. طبّق نقد الإحساس فعليًا؛ قياساتالكلاموASRوالاختباراتلا تثبت الحماس/الطبيعية. النسخالسابقةمحفوظة، لا تبدأباقيالوثائقي.
 2. PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت
 3. باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
 4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
@@ -123,6 +117,11 @@
 - قبل أي رندر جديد: engine/PRODUCTION_POLICY.json + tools/production_policy.py؛ المحركات القديمة ليست كلها مربوطة تلقائياً فلا تشغّلها دون البوابة.
 - كل أطوال الفيديو: راوي إنكليزي بأسلوب يوتيوبر طبيعي، حكي وتفسير وأخذ وعطا، لا إنشاء وخطب محفوظة أو أسئلة درامية متكررة.
 - تصحيح المستخدم الأخير: الافتتاحية عن إسكوبار بشكل أوسع، والسجن مو فرضيتها الأساسية؛ بلا حرق للهروب أو المصير أو نقاط الذروة. طولها مو محدود30ث، لكن مو تفويض لباقي الوثائقي.
+- آخر تصحيح للمستخدم: افتتاحية سريعة ومتنوعة ومشوقة؛ مطابقة الصورة للمعنى، وقد تخدم جملة واحدة عدة لقطات ذات معنى. لا تدوير صور قليلة بقصات مختلفة.
+- حركة الاسم/الشتر/الماركر السابقة ملغاة؛ ليست مطالبة بقالب جاهز.
+- طلب المستخدم أداءً جديدًا أسرع وأحماسيًا بهويةvoice-02نفسها، مع تفاوت طبيعي بين الاندفاع والكلام العادي؛ التوليد/قياسWPM لا يعنيان موافقة.
+- أول صوت مصدر يمكن يسبق الصورة قليلًا، ثم يظهر المتحدث الحقيقي سريعًا؛ لا وجه يقول كلامًا آخر ولا ادعاء مشاهدة/سماع لم يحدث.
+- التفريق بين عددالبرامج وعددالمقابلات وعددالمتحدثين؛ ASR لا يثبت أن المتحدث ظاهر في الصورة.
 
 ## 8) البيئة (بعد أي ريست)
 

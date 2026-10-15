@@ -1,0 +1,32 @@
+{
+  "language": "en",
+  "texts": {
+    "hook": "A cocaine trafficker made the billionaire list, won a seat in Congress, and paid for homes in a city he helped terrorize. That's Pablo Escobar. The money didn't just make him rich. It made him powerful.",
+    "industry": "A single flight could carry four hundred kilos of cocaine and bring in ten million dollars.",
+    "close": "But money alone doesn't explain this. How do you build that much power, and get people to defend it?",
+    "title": "PABLO ESCOBAR",
+    "cold_flight_credits": "FRONTLINE / 1995 / Aircraft imagery from its Escobar report",
+    "billionaire_entry_credits": "Forbes / 1987 billionaires issue",
+    "congress_credits": "Congress, 1983 / El Tiempo archive",
+    "homes_credits": "Housing construction, 1983 / Edgar El Chino Jimenez / El Pais",
+    "city_terror_credits": "Historical footage / Al Jazeera report, 2018",
+    "actual_escobar_credits": "Pablo Escobar / FRONTLINE, 1995",
+    "estate_credits": "Hacienda Napoles / FRONTLINE, 1995",
+    "public_power_prelap_credits": "Public appearance, 1983 / El Tiempo archive / Animated photograph",
+    "cash_reveal_credits": "THOMAS CASH / DEA official / FRONTLINE / 1995",
+    "single_flight_credits": "FRONTLINE / 1995 / Contextual aircraft imagery",
+    "carry_credits": "FRONTLINE / 1995 / Contextual aircraft imagery",
+    "four_hundred_kilos_credits": "FRONTLINE / 1995 / Smuggling-route imagery",
+    "ten_million_credits": "FRONTLINE / 1995 / Smuggling-route imagery",
+    "insider_threat_credits": "MAX MERMELSTEIN / Cartel insider (in disguise) / FRONTLINE / 1995",
+    "power_question_credits": "FRONTLINE / 1995 / Miami street imagery from its Escobar report",
+    "residents_credits": "Medellin residents / BBC News, 2013",
+    "public_image_credits": "Medellin mural / Al Jazeera, 2018"
+  },
+  "design": {
+    "unit_of_design": "scene",
+    "generic_popups": [],
+    "claims_3d": false,
+    "method": "Full-frame native-speed source video; source logos preserved. Four unique photographic/document assets, one disclosed 2.5D animation. No repeated-name/shutter/marker montage. Single end title. No generated historical action. Captions OFF."
+  }
+}

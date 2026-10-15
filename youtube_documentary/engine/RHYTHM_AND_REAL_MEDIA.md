@@ -14,3 +14,12 @@ These are judgement aids, not a mandatory montage/template or an artistic certif
 10. Review the actual final encode at every0.5seconds, all joins and meaningful subsecond phases. Full decode/levels/ASR supplement frame inspection. Say exactly what was inspected: sampled images are not all source frames, ASR is not human listening, and tests are not creative/user approval.
 
 Shared implementation: `runtime/photo_depth.py`, `film_runtime.py`, `speech_edit.py`, `encoded_review.py`. Profiles carry subject-specific silhouettes, crops, verified sources and editorial timing. Preserve prior approved takes/delivered cuts.
+
+## Revision5 corrections — source identity and performance
+
+- An ASR quote/time is not proof that its speaker is on screen. The promising56-ton Mermelstein quote plays over empty seats; it was rejected for a prompt face reveal. The selected on-camera threat gives this edit a real firsthand stake. Do not paste another speaking moment over it.
+- Count programmes, interview contexts and people separately. Revision5's two expert/insider interviews share FRONTLINE; BBC/AJ supply dated moving imagery, not claimed extra English interview voices.
+- Native programmes may internally reuse footage. Distinct programme timestamps are not automatically distinct visual evidence. No still is reused in the new cut; native prologue/night-street reuse is not claimed as new independent footage.
+- Use new requested same-identity takes; retain raw recordings. Contrast the energetic opening/question with a calmer numerical explanation. WPM, ASR and silence edits cannot certify emotion/naturalness or override feedback.
+- Quiet-pause targets must preserve the70ms word guards on BOTH sides. A target below140ms now raises an error instead of silently failing to shorten gaps. Nothing here authorizes time-stretching archive speech.
+- Common `sequence_runtime`/`score_runtime` take film-profile decisions. Preserve full source framing, protect original broadcaster-logo pixels from credits and end titles, disclose title freezes/2.5D photo motion, and verify the source file hashes before encoding.

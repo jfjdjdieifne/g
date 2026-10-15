@@ -1,0 +1,744 @@
+{
+  "hook": {
+    "method": "Delete quiet pauses/explicit phrase;4ms boundary crossfades, no time stretching/pitch shift",
+    "original_duration": 13.7810625,
+    "edited_duration": 12.06,
+    "cuts": [
+      {
+        "in": 0,
+        "out": 0.10999999999999999,
+        "reason": "head silence"
+      },
+      {
+        "in": 2.58,
+        "out": 2.8499999999999996,
+        "reason": "quiet pause shortened"
+      },
+      {
+        "in": 4.47,
+        "out": 4.71,
+        "reason": "quiet pause shortened"
+      },
+      {
+        "in": 7.950000000000001,
+        "out": 8.4,
+        "reason": "quiet pause shortened"
+      },
+      {
+        "in": 9.9,
+        "out": 10.290000000000001,
+        "reason": "quiet pause shortened"
+      },
+      {
+        "in": 12.09,
+        "out": 12.27,
+        "reason": "quiet pause shortened"
+      },
+      {
+        "in": 13.719999999999999,
+        "out": 13.7810625,
+        "reason": "tail silence"
+      }
+    ],
+    "mapping": [
+      {
+        "source_in": 0.11,
+        "source_out": 2.58,
+        "output_in": 0.0,
+        "output_out": 2.47
+      },
+      {
+        "source_in": 2.85,
+        "source_out": 4.47,
+        "output_in": 2.466,
+        "output_out": 4.086
+      },
+      {
+        "source_in": 4.71,
+        "source_out": 7.95,
+        "output_in": 4.082,
+        "output_out": 7.322
+      },
+      {
+        "source_in": 8.4,
+        "source_out": 9.9,
+        "output_in": 7.318,
+        "output_out": 8.818
+      },
+      {
+        "source_in": 10.29,
+        "source_out": 12.09,
+        "output_in": 8.814,
+        "output_out": 10.614
+      },
+      {
+        "source_in": 12.27,
+        "source_out": 13.72,
+        "output_in": 10.61,
+        "output_out": 12.06
+      }
+    ],
+    "complete_raw_duration": 13.7810625,
+    "selected_source_bounds": [
+      0,
+      13.7810625
+    ],
+    "source_sha256": "53427f661055014a5b3fed4da0dab2c695339a091f7aa564e890ae7bf739f8fc",
+    "words": [
+      {
+        "conf": 1.0,
+        "end": 0.27,
+        "start": 0.18,
+        "word": "a",
+        "edited_start": 0.06999999999999999,
+        "edited_end": 0.16000000000000003
+      },
+      {
+        "conf": 1.0,
+        "end": 0.69,
+        "start": 0.27,
+        "word": "cocaine",
+        "edited_start": 0.16000000000000003,
+        "edited_end": 0.58
+      },
+      {
+        "conf": 1.0,
+        "end": 1.23,
+        "start": 0.69,
+        "word": "trafficker",
+        "edited_start": 0.58,
+        "edited_end": 1.1199999999999999
+      },
+      {
+        "conf": 1.0,
+        "end": 1.47,
+        "start": 1.23,
+        "word": "made",
+        "edited_start": 1.1199999999999999,
+        "edited_end": 1.3599999999999999
+      },
+      {
+        "conf": 1.0,
+        "end": 1.53,
+        "start": 1.47,
+        "word": "the",
+        "edited_start": 1.3599999999999999,
+        "edited_end": 1.42
+      },
+      {
+        "conf": 1.0,
+        "end": 2.04,
+        "start": 1.53,
+        "word": "billionaire",
+        "edited_start": 1.42,
+        "edited_end": 1.93
+      },
+      {
+        "conf": 1.0,
+        "end": 2.49,
+        "start": 2.04,
+        "word": "list",
+        "edited_start": 1.93,
+        "edited_end": 2.3800000000000003
+      },
+      {
+        "conf": 0.787285,
+        "end": 3.18,
+        "start": 2.94,
+        "word": "won",
+        "edited_start": 2.5560000000000005,
+        "edited_end": 2.7960000000000007
+      },
+      {
+        "conf": 1.0,
+        "end": 3.21,
+        "start": 3.18,
+        "word": "a",
+        "edited_start": 2.7960000000000007,
+        "edited_end": 2.826
+      },
+      {
+        "conf": 1.0,
+        "end": 3.6,
+        "start": 3.21,
+        "word": "seat",
+        "edited_start": 2.826,
+        "edited_end": 3.2160000000000006
+      },
+      {
+        "conf": 1.0,
+        "end": 3.72,
+        "start": 3.6,
+        "word": "in",
+        "edited_start": 3.2160000000000006,
+        "edited_end": 3.336
+      },
+      {
+        "conf": 1.0,
+        "end": 4.38,
+        "start": 3.72,
+        "word": "congress",
+        "edited_start": 3.336,
+        "edited_end": 3.996
+      },
+      {
+        "conf": 1.0,
+        "end": 4.95,
+        "start": 4.8,
+        "word": "and",
+        "edited_start": 4.172,
+        "edited_end": 4.322
+      },
+      {
+        "conf": 1.0,
+        "end": 5.25,
+        "start": 4.95,
+        "word": "paid",
+        "edited_start": 4.322,
+        "edited_end": 4.622000000000001
+      },
+      {
+        "conf": 1.0,
+        "end": 5.43,
+        "start": 5.25,
+        "word": "for",
+        "edited_start": 4.622000000000001,
+        "edited_end": 4.8020000000000005
+      },
+      {
+        "conf": 1.0,
+        "end": 5.94,
+        "start": 5.43,
+        "word": "homes",
+        "edited_start": 4.8020000000000005,
+        "edited_end": 5.312
+      },
+      {
+        "conf": 1.0,
+        "end": 6.09,
+        "start": 5.94,
+        "word": "in",
+        "edited_start": 5.312,
+        "edited_end": 5.462000000000001
+      },
+      {
+        "conf": 1.0,
+        "end": 6.12,
+        "start": 6.09,
+        "word": "a",
+        "edited_start": 5.462000000000001,
+        "edited_end": 5.492
+      },
+      {
+        "conf": 1.0,
+        "end": 6.51,
+        "start": 6.12,
+        "word": "city",
+        "edited_start": 5.492,
+        "edited_end": 5.881999999999999
+      },
+      {
+        "conf": 1.0,
+        "end": 6.69,
+        "start": 6.51,
+        "word": "he",
+        "edited_start": 5.881999999999999,
+        "edited_end": 6.062
+      },
+      {
+        "conf": 1.0,
+        "end": 7.05,
+        "start": 6.69,
+        "word": "helped",
+        "edited_start": 6.062,
+        "edited_end": 6.422
+      },
+      {
+        "conf": 0.78466,
+        "end": 7.86,
+        "start": 7.08,
+        "word": "terrorize",
+        "edited_start": 6.451999999999999,
+        "edited_end": 7.232
+      },
+      {
+        "conf": 1.0,
+        "end": 8.76,
+        "start": 8.49,
+        "word": "that's",
+        "edited_start": 7.4079999999999995,
+        "edited_end": 7.677999999999999
+      },
+      {
+        "conf": 1.0,
+        "end": 9.24,
+        "start": 8.76,
+        "word": "pablo",
+        "edited_start": 7.677999999999999,
+        "edited_end": 8.158
+      },
+      {
+        "conf": 1.0,
+        "end": 9.81,
+        "start": 9.24,
+        "word": "escobar",
+        "edited_start": 8.158,
+        "edited_end": 8.728
+      },
+      {
+        "conf": 1.0,
+        "end": 10.5,
+        "start": 10.38,
+        "word": "the",
+        "edited_start": 8.904000000000003,
+        "edited_end": 9.024000000000001
+      },
+      {
+        "conf": 1.0,
+        "end": 10.77,
+        "start": 10.5,
+        "word": "money",
+        "edited_start": 9.024000000000001,
+        "edited_end": 9.294
+      },
+      {
+        "conf": 1.0,
+        "end": 10.98,
+        "start": 10.77,
+        "word": "didn't",
+        "edited_start": 9.294,
+        "edited_end": 9.504000000000001
+      },
+      {
+        "conf": 1.0,
+        "end": 11.25,
+        "start": 10.98,
+        "word": "just",
+        "edited_start": 9.504000000000001,
+        "edited_end": 9.774000000000001
+      },
+      {
+        "conf": 1.0,
+        "end": 11.43,
+        "start": 11.25,
+        "word": "make",
+        "edited_start": 9.774000000000001,
+        "edited_end": 9.954
+      },
+      {
+        "conf": 1.0,
+        "end": 11.58,
+        "start": 11.43,
+        "word": "him",
+        "edited_start": 9.954,
+        "edited_end": 10.104
+      },
+      {
+        "conf": 1.0,
+        "end": 12.0,
+        "start": 11.58,
+        "word": "rich",
+        "edited_start": 10.104,
+        "edited_end": 10.524000000000001
+      },
+      {
+        "conf": 1.0,
+        "end": 12.51,
+        "start": 12.36,
+        "word": "it",
+        "edited_start": 10.7,
+        "edited_end": 10.849999999999998
+      },
+      {
+        "conf": 1.0,
+        "end": 12.75,
+        "start": 12.51,
+        "word": "made",
+        "edited_start": 10.849999999999998,
+        "edited_end": 11.09
+      },
+      {
+        "conf": 1.0,
+        "end": 12.9,
+        "start": 12.75,
+        "word": "him",
+        "edited_start": 11.09,
+        "edited_end": 11.239999999999998
+      },
+      {
+        "conf": 1.0,
+        "end": 13.62,
+        "start": 12.9,
+        "word": "powerful",
+        "edited_start": 11.239999999999998,
+        "edited_end": 11.959999999999997
+      }
+    ],
+    "wpm": 179.1044776119403
+  },
+  "industry": {
+    "method": "Delete quiet pauses/explicit phrase;4ms boundary crossfades, no time stretching/pitch shift",
+    "original_duration": 6.55,
+    "edited_duration": 6.44,
+    "cuts": [
+      {
+        "in": 0,
+        "out": 0.10999999999999999,
+        "reason": "head silence"
+      }
+    ],
+    "mapping": [
+      {
+        "source_in": 0.11,
+        "source_out": 6.55,
+        "output_in": 0.0,
+        "output_out": 6.44
+      }
+    ],
+    "complete_raw_duration": 15.394833333333333,
+    "selected_source_bounds": [
+      0,
+      6.55
+    ],
+    "source_sha256": "a07913169da34b210354b665d985acf109bf87466267147b6386e6833ecd092d",
+    "words": [
+      {
+        "conf": 1.0,
+        "end": 0.24,
+        "start": 0.18,
+        "word": "a",
+        "edited_start": 0.06999999999999999,
+        "edited_end": 0.13
+      },
+      {
+        "conf": 1.0,
+        "end": 0.69,
+        "start": 0.24,
+        "word": "single",
+        "edited_start": 0.13,
+        "edited_end": 0.58
+      },
+      {
+        "conf": 1.0,
+        "end": 1.17,
+        "start": 0.69,
+        "word": "flight",
+        "edited_start": 0.58,
+        "edited_end": 1.0599999999999998
+      },
+      {
+        "conf": 1.0,
+        "end": 1.65,
+        "start": 1.44,
+        "word": "could",
+        "edited_start": 1.3299999999999998,
+        "edited_end": 1.5399999999999998
+      },
+      {
+        "conf": 1.0,
+        "end": 2.07,
+        "start": 1.65,
+        "word": "carry",
+        "edited_start": 1.5399999999999998,
+        "edited_end": 1.9599999999999997
+      },
+      {
+        "conf": 1.0,
+        "end": 2.46,
+        "start": 2.07,
+        "word": "four",
+        "edited_start": 1.9599999999999997,
+        "edited_end": 2.35
+      },
+      {
+        "conf": 1.0,
+        "end": 2.97,
+        "start": 2.46,
+        "word": "hundred",
+        "edited_start": 2.35,
+        "edited_end": 2.8600000000000003
+      },
+      {
+        "conf": 1.0,
+        "end": 3.57,
+        "start": 2.97,
+        "word": "kilos",
+        "edited_start": 2.8600000000000003,
+        "edited_end": 3.46
+      },
+      {
+        "conf": 1.0,
+        "end": 3.66,
+        "start": 3.57,
+        "word": "of",
+        "edited_start": 3.46,
+        "edited_end": 3.5500000000000003
+      },
+      {
+        "conf": 1.0,
+        "end": 4.32,
+        "start": 3.66,
+        "word": "cocaine",
+        "edited_start": 3.5500000000000003,
+        "edited_end": 4.21
+      },
+      {
+        "conf": 1.0,
+        "end": 4.74,
+        "start": 4.56,
+        "word": "and",
+        "edited_start": 4.449999999999999,
+        "edited_end": 4.63
+      },
+      {
+        "conf": 0.709119,
+        "end": 5.04,
+        "start": 4.77,
+        "word": "bring",
+        "edited_start": 4.659999999999999,
+        "edited_end": 4.93
+      },
+      {
+        "conf": 0.709119,
+        "end": 5.16,
+        "start": 5.04,
+        "word": "in",
+        "edited_start": 4.93,
+        "edited_end": 5.05
+      },
+      {
+        "conf": 1.0,
+        "end": 5.43,
+        "start": 5.16,
+        "word": "ten",
+        "edited_start": 5.05,
+        "edited_end": 5.319999999999999
+      },
+      {
+        "conf": 1.0,
+        "end": 5.82,
+        "start": 5.43,
+        "word": "million",
+        "edited_start": 5.319999999999999,
+        "edited_end": 5.71
+      },
+      {
+        "conf": 1.0,
+        "end": 6.45,
+        "start": 5.82,
+        "word": "dollars",
+        "edited_start": 5.71,
+        "edited_end": 6.34
+      }
+    ],
+    "wpm": 149.06832298136644
+  },
+  "close": {
+    "method": "Delete quiet pauses/explicit phrase;4ms boundary crossfades, no time stretching/pitch shift",
+    "original_duration": 7.163375,
+    "edited_duration": 6.132,
+    "cuts": [
+      {
+        "in": 0,
+        "out": 0.04999999999999999,
+        "reason": "head silence"
+      },
+      {
+        "in": 2.46,
+        "out": 3.0599999999999996,
+        "reason": "quiet pause shortened"
+      },
+      {
+        "in": 5.01,
+        "out": 5.3100000000000005,
+        "reason": "quiet pause shortened"
+      },
+      {
+        "in": 7.09,
+        "out": 7.163375,
+        "reason": "tail silence"
+      }
+    ],
+    "mapping": [
+      {
+        "source_in": 0.05,
+        "source_out": 2.46,
+        "output_in": 0.0,
+        "output_out": 2.41
+      },
+      {
+        "source_in": 3.06,
+        "source_out": 5.01,
+        "output_in": 2.406,
+        "output_out": 4.356
+      },
+      {
+        "source_in": 5.31,
+        "source_out": 7.09,
+        "output_in": 4.352,
+        "output_out": 6.132
+      }
+    ],
+    "complete_raw_duration": 7.163375,
+    "selected_source_bounds": [
+      0,
+      7.163375
+    ],
+    "source_sha256": "52509d0be7c6ac7915206f9cd4acc26383c0038d76fd534653c6b1521b5e68b3",
+    "words": [
+      {
+        "conf": 1.0,
+        "end": 0.33,
+        "start": 0.12,
+        "word": "but",
+        "edited_start": 0.06999999999999999,
+        "edited_end": 0.28
+      },
+      {
+        "conf": 1.0,
+        "end": 0.63,
+        "start": 0.33,
+        "word": "money",
+        "edited_start": 0.28,
+        "edited_end": 0.58
+      },
+      {
+        "conf": 1.0,
+        "end": 1.08,
+        "start": 0.63,
+        "word": "alone",
+        "edited_start": 0.58,
+        "edited_end": 1.03
+      },
+      {
+        "conf": 1.0,
+        "end": 1.44,
+        "start": 1.11,
+        "word": "doesn't",
+        "edited_start": 1.06,
+        "edited_end": 1.39
+      },
+      {
+        "conf": 1.0,
+        "end": 1.95,
+        "start": 1.44,
+        "word": "explain",
+        "edited_start": 1.39,
+        "edited_end": 1.9
+      },
+      {
+        "conf": 1.0,
+        "end": 2.37,
+        "start": 1.95,
+        "word": "this",
+        "edited_start": 1.9,
+        "edited_end": 2.3200000000000003
+      },
+      {
+        "conf": 1.0,
+        "end": 3.39,
+        "start": 3.15,
+        "word": "how",
+        "edited_start": 2.496,
+        "edited_end": 2.736
+      },
+      {
+        "conf": 1.0,
+        "end": 3.45,
+        "start": 3.39,
+        "word": "do",
+        "edited_start": 2.736,
+        "edited_end": 2.796
+      },
+      {
+        "conf": 1.0,
+        "end": 3.57,
+        "start": 3.45,
+        "word": "you",
+        "edited_start": 2.796,
+        "edited_end": 2.916
+      },
+      {
+        "conf": 1.0,
+        "end": 3.84,
+        "start": 3.57,
+        "word": "build",
+        "edited_start": 2.916,
+        "edited_end": 3.1860000000000004
+      },
+      {
+        "conf": 1.0,
+        "end": 4.08,
+        "start": 3.84,
+        "word": "that",
+        "edited_start": 3.1860000000000004,
+        "edited_end": 3.4260000000000006
+      },
+      {
+        "conf": 1.0,
+        "end": 4.35,
+        "start": 4.08,
+        "word": "much",
+        "edited_start": 3.4260000000000006,
+        "edited_end": 3.696
+      },
+      {
+        "conf": 1.0,
+        "end": 4.92,
+        "start": 4.38,
+        "word": "power",
+        "edited_start": 3.7259999999999995,
+        "edited_end": 4.266
+      },
+      {
+        "conf": 1.0,
+        "end": 5.55,
+        "start": 5.4,
+        "word": "and",
+        "edited_start": 4.442000000000001,
+        "edited_end": 4.592000000000001
+      },
+      {
+        "conf": 1.0,
+        "end": 5.76,
+        "start": 5.55,
+        "word": "get",
+        "edited_start": 4.592000000000001,
+        "edited_end": 4.8020000000000005
+      },
+      {
+        "conf": 1.0,
+        "end": 6.15,
+        "start": 5.76,
+        "word": "people",
+        "edited_start": 4.8020000000000005,
+        "edited_end": 5.192000000000001
+      },
+      {
+        "conf": 1.0,
+        "end": 6.27,
+        "start": 6.15,
+        "word": "to",
+        "edited_start": 5.192000000000001,
+        "edited_end": 5.312
+      },
+      {
+        "conf": 1.0,
+        "end": 6.72,
+        "start": 6.27,
+        "word": "defend",
+        "edited_start": 5.312,
+        "edited_end": 5.762
+      },
+      {
+        "conf": 1.0,
+        "end": 6.99,
+        "start": 6.72,
+        "word": "it",
+        "edited_start": 5.762,
+        "edited_end": 6.032000000000001
+      }
+    ],
+    "wpm": 185.90998043052838
+  }
+}

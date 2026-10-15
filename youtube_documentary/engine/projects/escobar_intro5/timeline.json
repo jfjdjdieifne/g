@@ -1,0 +1,355 @@
+{
+  "schema": "sequence-film/1",
+  "fps": 24,
+  "frames": 795,
+  "audio": [
+    {
+      "id": "hook",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_intro5/clips/hook.wav",
+      "start": 0.0,
+      "end": 12.06,
+      "duration": 12.06
+    },
+    {
+      "id": "cash",
+      "kind": "archive",
+      "file": "/home/user/build/escobar_intro5/clips/cash.wav",
+      "start": 12.125,
+      "end": 16.115000000000002,
+      "duration": 3.99
+    },
+    {
+      "id": "industry",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_intro5/clips/industry.wav",
+      "start": 16.166666666666668,
+      "end": 22.60666666666667,
+      "duration": 6.44
+    },
+    {
+      "id": "max",
+      "kind": "archive",
+      "file": "/home/user/build/escobar_intro5/clips/max.wav",
+      "start": 22.666666666666668,
+      "end": 25.886666666666667,
+      "duration": 3.22
+    },
+    {
+      "id": "close",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_intro5/clips/close.wav",
+      "start": 25.958333333333332,
+      "end": 32.090333333333334,
+      "duration": 6.132
+    }
+  ],
+  "shots": [
+    {
+      "id": "cold_flight",
+      "kind": "video",
+      "first": 0,
+      "last": 27,
+      "start": 0.0,
+      "end": 1.125,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_takeoff.mp4",
+      "source_in": 0.05,
+      "credit": [
+        "FRONTLINE / 1995",
+        "Aircraft imagery from its Escobar report"
+      ],
+      "meaning": "Trafficking: moving aircraft, contextual not a claimed photographed cocaine load"
+    },
+    {
+      "id": "billionaire_entry",
+      "kind": "image",
+      "first": 27,
+      "last": 61,
+      "start": 1.125,
+      "end": 2.5416666666666665,
+      "asset": "forbes_entry.png",
+      "center": [
+        315,
+        641
+      ],
+      "span": 650,
+      "push": 0.035,
+      "yaw": 0.025,
+      "travel": [
+        4,
+        -2
+      ],
+      "credit": [
+        "Forbes / 1987 billionaires issue"
+      ],
+      "meaning": "Actual Escobar entry; NOT a claim he was the richest man"
+    },
+    {
+      "id": "congress",
+      "kind": "image",
+      "first": 61,
+      "last": 100,
+      "start": 2.5416666666666665,
+      "end": 4.166666666666667,
+      "asset": "congress.jpg",
+      "center": [
+        300,
+        220
+      ],
+      "span": 600,
+      "push": 0.035,
+      "yaw": 0.025,
+      "travel": [
+        4,
+        -2
+      ],
+      "credit": [
+        "Congress, 1983 / El Tiempo archive"
+      ],
+      "meaning": "Elected alternate representative, not president"
+    },
+    {
+      "id": "homes",
+      "kind": "image",
+      "first": 100,
+      "last": 132,
+      "start": 4.166666666666667,
+      "end": 5.5,
+      "asset": "housing1983.jpg",
+      "center": [
+        600,
+        420
+      ],
+      "span": 1180,
+      "push": 0.035,
+      "yaw": 0.025,
+      "travel": [
+        4,
+        -2
+      ],
+      "credit": [
+        "Housing construction, 1983",
+        "Edgar El Chino Jimenez / El Pais"
+      ],
+      "meaning": "The actual housing project, not a generic town"
+    },
+    {
+      "id": "city_terror",
+      "kind": "video",
+      "first": 132,
+      "last": 178,
+      "start": 5.5,
+      "end": 7.416666666666667,
+      "path": "/home/user/build/escobar_intro5/selected_media/aj_aftermath.mp4",
+      "source_in": 2.05,
+      "credit": [
+        "Historical footage / Al Jazeera report, 2018"
+      ],
+      "meaning": "Actual response footage, continuous rather than falsely counted as two new shots; no literal added gunfire",
+      "watermark": true
+    },
+    {
+      "id": "actual_escobar",
+      "kind": "video",
+      "first": 178,
+      "last": 214,
+      "start": 7.416666666666667,
+      "end": 8.916666666666666,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_escobar.mp4",
+      "source_in": 0.3,
+      "credit": [
+        "Pablo Escobar / FRONTLINE, 1995"
+      ],
+      "meaning": "Actual moving subject on his name, not a portrait repeated as new sources"
+    },
+    {
+      "id": "estate",
+      "kind": "video",
+      "first": 214,
+      "last": 257,
+      "start": 8.916666666666666,
+      "end": 10.708333333333334,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_estate.mp4",
+      "source_in": 1.0,
+      "credit": [
+        "Hacienda Napoles / FRONTLINE, 1995"
+      ],
+      "meaning": "His estate on the word rich"
+    },
+    {
+      "id": "public_power_prelap",
+      "kind": "depth",
+      "first": 257,
+      "last": 301,
+      "start": 10.708333333333334,
+      "end": 12.541666666666666,
+      "asset": "football.jpg",
+      "center": [
+        300,
+        262
+      ],
+      "span": 575,
+      "credit": [
+        "Public appearance, 1983 / El Tiempo archive",
+        "Animated photograph"
+      ],
+      "meaning": "Public/political standing rather than a repeated private-wealth clip; Cash prelap lasts 10 frames"
+    },
+    {
+      "id": "cash_reveal",
+      "kind": "video",
+      "first": 301,
+      "last": 388,
+      "start": 12.541666666666666,
+      "end": 16.166666666666668,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_cash.mp4",
+      "source_in": 0.416667,
+      "credit": [
+        "THOMAS CASH / DEA official",
+        "FRONTLINE / 1995"
+      ],
+      "meaning": "Same source picture and audio timestamps; editorial 7% push toward the comparison",
+      "speaker": true,
+      "push": 0.07,
+      "watermark": false
+    },
+    {
+      "id": "single_flight",
+      "kind": "video",
+      "first": 388,
+      "last": 420,
+      "start": 16.166666666666668,
+      "end": 17.5,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_aircraft.mp4",
+      "source_in": 4.2,
+      "credit": [
+        "FRONTLINE / 1995",
+        "Contextual aircraft imagery"
+      ],
+      "meaning": "A single flight: native aircraft view, never a claim this is the stated particular flight"
+    },
+    {
+      "id": "carry",
+      "kind": "video",
+      "first": 420,
+      "last": 447,
+      "start": 17.5,
+      "end": 18.625,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_takeoff.mp4",
+      "source_in": 1.65,
+      "credit": [
+        "FRONTLINE / 1995",
+        "Contextual aircraft imagery"
+      ],
+      "meaning": "Continuing flight transport, distinct source time without loop"
+    },
+    {
+      "id": "four_hundred_kilos",
+      "kind": "video",
+      "first": 447,
+      "last": 492,
+      "start": 18.625,
+      "end": 20.5,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_load.mp4",
+      "source_in": 6.0,
+      "credit": [
+        "FRONTLINE / 1995",
+        "Smuggling-route imagery"
+      ],
+      "meaning": "Source footage accompanies its own 400kg/trip reporting; not a visible weighing of 400kg"
+    },
+    {
+      "id": "ten_million",
+      "kind": "video",
+      "first": 492,
+      "last": 544,
+      "start": 20.5,
+      "end": 22.666666666666668,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_interdiction.mp4",
+      "source_in": 2.0,
+      "credit": [
+        "FRONTLINE / 1995",
+        "Smuggling-route imagery"
+      ],
+      "meaning": "The source reports a flight could net $10M; imagery does not purport to show the cash"
+    },
+    {
+      "id": "insider_threat",
+      "kind": "video",
+      "first": 544,
+      "last": 623,
+      "start": 22.666666666666668,
+      "end": 25.958333333333332,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_max.mp4",
+      "source_in": 0.63,
+      "credit": [
+        "MAX MERMELSTEIN / Cartel insider (in disguise)",
+        "FRONTLINE / 1995"
+      ],
+      "meaning": "Actual on-camera speaker on the three-million-dollar contract claim",
+      "speaker": true
+    },
+    {
+      "id": "power_question",
+      "kind": "video",
+      "first": 623,
+      "last": 681,
+      "start": 25.958333333333332,
+      "end": 28.375,
+      "path": "/home/user/build/escobar_intro5/selected_media/pbs_night.mp4",
+      "source_in": 0.1,
+      "credit": [
+        "FRONTLINE / 1995",
+        "Miami street imagery from its Escobar report"
+      ],
+      "meaning": "The operating environment of the cocaine economy, rather than repeating the Escobar home-movie scene"
+    },
+    {
+      "id": "residents",
+      "kind": "video",
+      "first": 681,
+      "last": 717,
+      "start": 28.375,
+      "end": 29.875,
+      "path": "/home/user/build/escobar_intro5/selected_media/bbc_housing.mp4",
+      "source_in": 1.1,
+      "credit": [
+        "Medellin residents / BBC News, 2013"
+      ],
+      "meaning": "Modern housing/community context, not an asserted specific recipient identity or 1980s record",
+      "watermark": true
+    },
+    {
+      "id": "public_image",
+      "kind": "video",
+      "first": 717,
+      "last": 795,
+      "start": 29.875,
+      "end": 33.125,
+      "path": "/home/user/build/escobar_intro5/selected_media/aj_mural.mp4",
+      "source_in": 1.8,
+      "credit": [
+        "Medellin mural / Al Jazeera, 2018"
+      ],
+      "meaning": "Present-day public iconography on the question about defenders, followed by one editorial film title",
+      "watermark": true,
+      "freeze_tail": true,
+      "title_after": 2.215333000000001
+    }
+  ],
+  "effects": [
+    1.12,
+    2.556,
+    5.492,
+    7.408,
+    16.166666666666668,
+    22.666666666666668,
+    32.090333333333334
+  ],
+  "source_rights_cleared": false,
+  "manual_listening_claimed": false,
+  "global_speedup": false,
+  "voice_regenerated_same_approved_identity": true,
+  "native_footage_retimed": false,
+  "title_freeze_disclosed": true
+}

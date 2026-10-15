@@ -5,6 +5,7 @@ import numpy as np
 
 
 def tighten(samples,words,sr=48000,explicit=(),threshold=.44,target=.26,fade_ms=4):
+    if not .14 <= target < threshold:raise ValueError('Pause target must protect 70ms word margins on each side and remain below threshold')
     x=np.asarray(samples)
     if x.ndim!=1 or sr<=0:raise ValueError('Mono samples and positive sample rate required')
     duration=len(x)/sr;cuts=[(float(a),float(b),'explicit phrase removal') for a,b in explicit]

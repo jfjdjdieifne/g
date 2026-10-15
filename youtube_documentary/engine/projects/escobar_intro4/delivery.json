@@ -17,7 +17,7 @@
   "drive_id": "1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5",
   "drive_url": "https://drive.google.com/file/d/1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5/view",
   "md5": "ad83950d3a43573579e9c30cb7a3c2e4",
-  "status": "delivered_internal_review",
+  "status": "user_feedback_substantial_rebuild_required",
   "revision3_status": "strongly_praised_but_rhythm_changes_requested",
   "source_rights_cleared": false,
   "loudness": {
@@ -28,5 +28,6 @@
   "source_packet_id": "1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W",
   "qc_notes_id": "1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0",
   "source_packet_bytes": 41543670,
-  "source_packet_md5": "3d649d3fadf1e81018c9c66e56897bfc"
+  "source_packet_md5": "3d649d3fadf1e81018c9c66e56897bfc",
+  "feedback_path": "../escobar_intro5/USER_FEEDBACK.json"
 }

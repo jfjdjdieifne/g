@@ -1,0 +1,41 @@
+{
+  "status": "delivered_internal_review_awaiting_user_feedback",
+  "user_approved": false,
+  "duration": 33.125,
+  "frames": 795,
+  "fps": 24,
+  "resolution": [
+    1920,
+    1080
+  ],
+  "bytes": 22152363,
+  "sha256": "1a05ed7c029b7f910cd1d62be1bd911745fefc23b96652292b1bea9ceec0894d",
+  "md5": "6d087d826af498ac3c99a83b14d1a079",
+  "drive_id": "1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI",
+  "drive_url": "https://drive.google.com/file/d/1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI/view",
+  "source_programmes": 3,
+  "independent_interview_contexts": 2,
+  "voice_programmes": 1,
+  "narrator_voice": "voice-02",
+  "new_narrator_performances": true,
+  "voice_performance_user_approved": false,
+  "manual_listening_claimed": false,
+  "visual_review_complete": true,
+  "visual_review_method": "67 half-second +49 join +107 subsecond frames via16 inspected sheets; full795-frame decode. Not795 individually viewed or continuous real-time playback.",
+  "global_speedup": false,
+  "archival_voice_retimed": false,
+  "source_rights_cleared": false,
+  "previous_deliveries_preserved": true,
+  "common_engine": "sequence_runtime/score_runtime/film_runtime/photo_depth/speech_edit/encoded_review",
+  "loudness": {
+    "LUFS": -16.17,
+    "dBTP": -1.66,
+    "LRA": 7.2
+  },
+  "tests": {
+    "new": 12,
+    "regression": 29,
+    "total_passed": 41,
+    "aesthetic_approval_implied": false
+  }
+}

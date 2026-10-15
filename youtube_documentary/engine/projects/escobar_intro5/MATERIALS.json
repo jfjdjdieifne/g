@@ -1,0 +1,443 @@
+{
+  "assets": [
+    {
+      "id": "pbs_takeoff",
+      "kind": "archive_video",
+      "description": "Trafficking: moving aircraft, contextual not a claimed photographed cocaine load",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "pbs_takeoff.mp4",
+      "source_offset_seconds": 943,
+      "bounded_seconds": 3,
+      "sha256": "c6a8294252c83960caaf3ba39e13ae47b03327b90b9dd8fbb78669b1a14c57c9",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    },
+    {
+      "id": "forbes_entry",
+      "kind": "press_scan",
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/forbes_entry.png",
+      "description": "Actual entry/portrait, plus original printed name.",
+      "source": "https://blogs-images.forbes.com/halahtouryalai/files/2015/09/escobar-write-up1.png",
+      "date_context": "5October1987",
+      "review_status": "inspected",
+      "review_evidence": "Original file and current encoded staging visually inspected; original-pixel source retained, no new historical action generated.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "verified_crop_text": "Escobar"
+    },
+    {
+      "id": "congress",
+      "kind": "real_photo",
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/congress.jpg",
+      "description": "Whole actual congressional group photograph. No uncertain face isolation.",
+      "source": "https://www.eltiempo.com/cultura/gente/pablo-escobar-como-fue-su-vida-politica-620562",
+      "date_context": "1983per actual publisher caption",
+      "review_status": "inspected",
+      "review_evidence": "Original file and current encoded staging visually inspected; original-pixel source retained, no new historical action generated.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved."
+    },
+    {
+      "id": "housing1983",
+      "kind": "real_photo",
+      "path": "youtube_documentary/engine/projects/escobar_intro4/assets/housing1983.jpg",
+      "description": "Sin Tugurios housing actually under construction,1983; original Edgar El Chino Jimenez photograph reproduced by El Pais.1200x811source, not recorded moving footage.",
+      "source": "https://english.elpais.com/usa/2021-12-24/pablo-escobar-unseen-portraits-of-a-drug-lord.html",
+      "date_context": "1983 per original publisher caption, reproduced24Dec2021",
+      "review_status": "inspected",
+      "review_evidence": "Original file and current encoded staging visually inspected; original-pixel source retained, no new historical action generated.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved."
+    },
+    {
+      "id": "aj_aftermath",
+      "kind": "archive_video",
+      "description": "Actual response footage, continuous rather than falsely counted as two new shots; no literal added gunfire",
+      "source": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust",
+      "date_context": "Al Jazeera English 2018; historical images are retrospective",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "aj_aftermath.mp4",
+      "source_offset_seconds": 14,
+      "bounded_seconds": 5,
+      "sha256": "a59d000b43cdaaf70bb2ab700fe40563211800e4b91319c8edbea8765e1b6e1d",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    },
+    {
+      "id": "pbs_escobar",
+      "kind": "archive_video",
+      "description": "Actual moving subject on his name, not a portrait repeated as new sources",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "pbs_escobar.mp4",
+      "source_offset_seconds": 882,
+      "bounded_seconds": 6,
+      "sha256": "04bc6ccd909dc242ae9b3baac09d131eed5c0dc1dc6b40ddd1f661ffa777e407",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    },
+    {
+      "id": "pbs_estate",
+      "kind": "archive_video",
+      "description": "His estate on the word rich",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "pbs_estate.mp4",
+      "source_offset_seconds": 778,
+      "bounded_seconds": 5,
+      "sha256": "453e74d6c86251dfaa06928b1c3a47ae72280cc1c5f3a5c4d11ee666dbe41099",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    },
+    {
+      "id": "football",
+      "kind": "real_photo",
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/football.jpg",
+      "description": "Actual football-field inauguration, different exposure from the Moravia plate.",
+      "source": "https://www.eltiempo.com/cultura/gente/pablo-escobar-como-fue-su-vida-politica-620562",
+      "date_context": "1983per actual publisher caption",
+      "review_status": "inspected",
+      "review_evidence": "Original file and current encoded staging visually inspected; original-pixel source retained, no new historical action generated.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved."
+    },
+    {
+      "id": "football_animation",
+      "kind": "generated_from_photo",
+      "reference_id": "football",
+      "description": "Original-pixel editorial 2.5D parallax, not recorded historical movement.",
+      "presented_as_archive": false,
+      "disclosure": "On-screen Animated photograph; computational hidden-edge reconstruction is not evidence.",
+      "preserve": "Original subjects and source photo pixels. No invented facial acting.",
+      "unknown_or_invented": "Foreground separation and inferred depth; tiny inpainted disocclusion gutters."
+    },
+    {
+      "id": "pbs_cash",
+      "kind": "interview",
+      "description": "Same source picture and audio timestamps; editorial 7% push toward the comparison",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "pbs_cash.mp4",
+      "source_offset_seconds": 149.95,
+      "bounded_seconds": 3.99,
+      "sha256": "308ae3279d777b564e888eeba49c9a66d3f57c811efbcbb302ef2e9c91a7370f",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false,
+      "speaker": "Thomas Cash",
+      "exact_quote": "Escobar was to cocaine what Ford was to automobiles.",
+      "source_in_out": [
+        149.95,
+        153.94
+      ],
+      "audio_review_method": "Original broadcast audio unchanged in rate/pitch, fallible Vosk original/final ASR and source textual context; not independent manual listening. Max excerpt quotes only the unambiguous core, not a newly certified full verbatim transcript."
+    },
+    {
+      "id": "pbs_aircraft",
+      "kind": "archive_video",
+      "description": "A single flight: native aircraft view, never a claim this is the stated particular flight",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "pbs_aircraft.mp4",
+      "source_offset_seconds": 926,
+      "bounded_seconds": 7,
+      "sha256": "e3e3c820140bc13bd0ba8be77e3ac4575af78f8c1fcd94783f8358c7d12c66df",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    },
+    {
+      "id": "pbs_load",
+      "kind": "archive_video",
+      "description": "Source footage accompanies its own 400kg/trip reporting; not a visible weighing of 400kg",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "pbs_load.mp4",
+      "source_offset_seconds": 1118,
+      "bounded_seconds": 12,
+      "sha256": "c2e1b2105f814d07d0ce37c3d6bcfc2ef4963ca533f01e1a035783934e282baa",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    },
+    {
+      "id": "pbs_interdiction",
+      "kind": "archive_video",
+      "description": "The source reports a flight could net $10M; imagery does not purport to show the cash",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "pbs_interdiction.mp4",
+      "source_offset_seconds": 1138,
+      "bounded_seconds": 13,
+      "sha256": "2b7342aaf8e5f969388f5c66c147ce606814e2559f716c5a770fc71b77a1ed65",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    },
+    {
+      "id": "pbs_max",
+      "kind": "interview",
+      "description": "Actual on-camera speaker on the three-million-dollar contract claim",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "pbs_max.mp4",
+      "source_offset_seconds": 216.9,
+      "bounded_seconds": 3.9,
+      "sha256": "f1ede448bae86cdc75d0f232b1fdb3b57ee084d58f7f393bd6ff0228e314825b",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false,
+      "speaker": "Max Mermelstein",
+      "exact_quote": "three million dollar contract on my head",
+      "source_in_out": [
+        217.53,
+        220.75
+      ],
+      "audio_review_method": "Original broadcast audio unchanged in rate/pitch, fallible Vosk original/final ASR and source textual context; not independent manual listening. Max excerpt quotes only the unambiguous core, not a newly certified full verbatim transcript."
+    },
+    {
+      "id": "pbs_night",
+      "kind": "archive_video",
+      "description": "The operating environment of the cocaine economy, rather than repeating the Escobar home-movie scene",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "pbs_night.mp4",
+      "source_offset_seconds": 1183,
+      "bounded_seconds": 3,
+      "sha256": "486c91d4baf3f1023ce92b472cad08b10a53f3ddf3aec9a05a5878a306cc3abf",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    },
+    {
+      "id": "bbc_housing",
+      "kind": "archive_video",
+      "description": "Modern housing/community context, not an asserted specific recipient identity or 1980s record",
+      "source": "https://www.bbc.com/news/av/world-25158010",
+      "date_context": "BBC News 2013",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "bbc_housing.mp4",
+      "source_offset_seconds": 102.6,
+      "bounded_seconds": 2.8,
+      "sha256": "159ca419d48e45fea5ad76a095274b4de00f40f33f83de51e09d87b637f89551",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    },
+    {
+      "id": "aj_mural",
+      "kind": "archive_video",
+      "description": "Present-day public iconography on the question about defenders, followed by one editorial film title",
+      "source": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust",
+      "date_context": "Al Jazeera English 2018; historical images are retrospective",
+      "review_status": "inspected",
+      "review_evidence": "Original sampled contact sheets and actual encoded half-second, join and subsecond frames visually inspected. Not a human listening claim.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "source_file": "aj_mural.mp4",
+      "source_offset_seconds": 70,
+      "bounded_seconds": 4,
+      "sha256": "aebf790b60ec7ea65c72014842fd48b843e30bc4c38d0a1429209f73e9ab8f49",
+      "watermark_preserved": true,
+      "actual_recording_of_specific_escobar_flight_verified": false
+    }
+  ],
+  "beats": [
+    {
+      "id": "cold_flight",
+      "function": "Trafficking: moving aircraft, contextual not a claimed photographed cocaine load",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_takeoff"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "billionaire_entry",
+      "function": "Actual Escobar entry; NOT a claim he was the richest man",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "forbes_entry"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "congress",
+      "function": "Elected alternate representative, not president",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "congress"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "homes",
+      "function": "The actual housing project, not a generic town",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "housing1983"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "city_terror",
+      "function": "Actual response footage, continuous rather than falsely counted as two new shots; no literal added gunfire",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "aj_aftermath"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "actual_escobar",
+      "function": "Actual moving subject on his name, not a portrait repeated as new sources",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_escobar"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "estate",
+      "function": "His estate on the word rich",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_estate"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "public_power_prelap",
+      "function": "Public/political standing rather than a repeated private-wealth clip; Cash prelap lasts 10 frames",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "football",
+        "football_animation"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "cash_reveal",
+      "function": "Same source picture and audio timestamps; editorial 7% push toward the comparison",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_cash"
+      ],
+      "narrative_owner": "archive"
+    },
+    {
+      "id": "single_flight",
+      "function": "A single flight: native aircraft view, never a claim this is the stated particular flight",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_aircraft"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "carry",
+      "function": "Continuing flight transport, distinct source time without loop",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_takeoff"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "four_hundred_kilos",
+      "function": "Source footage accompanies its own 400kg/trip reporting; not a visible weighing of 400kg",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_load"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "ten_million",
+      "function": "The source reports a flight could net $10M; imagery does not purport to show the cash",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_interdiction"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "insider_threat",
+      "function": "Actual on-camera speaker on the three-million-dollar contract claim",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_max"
+      ],
+      "narrative_owner": "archive"
+    },
+    {
+      "id": "power_question",
+      "function": "The operating environment of the cocaine economy, rather than repeating the Escobar home-movie scene",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "pbs_night"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "residents",
+      "function": "Modern housing/community context, not an asserted specific recipient identity or 1980s record",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "bbc_housing"
+      ],
+      "narrative_owner": "narrator"
+    },
+    {
+      "id": "public_image",
+      "function": "Present-day public iconography on the question about defenders, followed by one editorial film title",
+      "choice_reason": "Meaning-led real source selection; no source is made into several new sources by cropping.",
+      "why_not_real": "Authentic source used. Editorial photo movement/title is disclosed; not new historical footage.",
+      "material_ids": [
+        "aj_mural"
+      ],
+      "narrative_owner": "narrator"
+    }
+  ],
+  "source_programmes_used": 3,
+  "source_voice_programmes_used": 1,
+  "independent_interview_contexts": 2,
+  "source_rights_cleared": false,
+  "source_truth": "Cash and Mermelstein are TWO separate interview contexts from the SAME FRONTLINE documentary, not separate broadcasters. BBC/AJ contribute moving report imagery, not additional claimed on-camera English speakers."
+}
