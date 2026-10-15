@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "51b401e",
+ "head_commit": "7b28f64",
  "studies": [
   {
    "ref": "vaping",
@@ -167,6 +167,12 @@
    "name": "سياسة الإنتاج العامة — English / Scene-first",
    "drive_id": "1eflzeVEYkokGL0dV3BYJMV-Dxr84XLg_",
    "kind": "file"
+  },
+  {
+   "name": "Escobar Hook30 v1 EN / approved voice-02",
+   "kind": "file",
+   "drive_id": "1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW",
+   "path": "engine/projects/escobar_hook30/delivery.json"
   }
  ],
  "engine_state": {
@@ -176,24 +182,26 @@
   "sound_bank": "engine/database/sound_bank.json (10 مزاج + 11 SFX + قوانين)",
   "continuity": "engine/CONTINUITY_MODEL.md (4 خيوط + لقطة وحدة + in-shot vs cut)",
   "montage_theory": "engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار)",
-  "rulebook": "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md (29 قسم — آخرها إضافات P2)"
+  "rulebook": "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md (29 قسم — آخرها إضافات P2)",
+  "engine/runtime/xyz_scene.py + blender_xyz.py": "Runtime XYZ مشترك + backend Cycles جزئي؛ ملف إسكوبار profile إخراج، مو engine مستقل لكل فيلم."
  },
  "environment": {
   "note": "السانسبوكس بينصفّر بين الجولات: /home/user/build وpip لا يبقون. المستودع (GitHub) + الدرايف هم الحفظ الحقيقي.",
   "rebuild_cmds": [
    "pip install -q --break-system-packages numpy pillow imageio-ffmpeg",
    "نزّل الفيديو من الدرايف → build/videos/",
-   "python3 tools/reference_motion.py build/videos/X.mp4 --video-id ID --out build/analysis/ID"
+   "python3 tools/reference_motion.py build/videos/X.mp4 --video-id ID --out build/analysis/ID",
+   "هوك إسكوبار: اقرأ engine/projects/escobar_hook30/README.md؛ bpy==4.2.23 + bootstrap_bpy_headless.py ثم models → finish → qa؛ رندر CPU استغرق نحو17دقيقة، لا تعِدْه لتعديل النصوص فقط."
   ]
  },
  "next_steps": [
-  "تعليق المستخدم على سكربت هوك السجن وصوت voice-02، ثم تأمين/فحص الأرشيف وإكمال رندر أول30ث فقط.",
+  "ناطرين تقييم المستخدم لنسخة Escobar Hook30 v1؛ ثبّت voice-02 المعتمد. لا تعمل باقي الوثائقي تلقائياً. صوت أخبار أصلي غير مؤمّن.",
   "PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت",
   "باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد",
   "بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث"
  ],
  "open_questions": [
-  "مراجعة الديمو v1: شو بدنا نضبط قبل v2؟ (موشن/إيقاع/نص/صوت/محتوى)"
+  "رأي المستخدم البصري/الإيقاعي بنسخة Escobar Hook30 v1؛ الصوت voice-02 معتمد أصلاً، لا تعيد اختبار صوته."
  ],
  "laws": [
   "صفر سكيب: كل ثانية وكل لقطة تُقرأ وتُفهم قبل التقدّم",
@@ -306,9 +314,16 @@
  },
  "active_hook": {
   "scope": "أول 30 ثانية نظامية لإسكوبار فقط؛ لا بدء باقي الوثائقي تلقائياً. طلب جديد من المستخدم بعد ديموهات المرجع.",
-  "status": "مسوّدة سكربت أول30ث عُرضت + تجربة VO كاملة مولدة، لا فيديو مرندر بعد.",
-  "audio": "voice-02 تجربة جديدة على نص السجن؛ ليس صوتاً معتمداً نهائياً قبل تعليق المستخدم. ملف معاينة /home/user/build/escobar_hook30/narrator_script_preview.mp3",
+  "status": "أول30ث v1 اكتملت، قُدّمت للمستخدم ورُفعت للدرايف؛ ناطرين رأيه البصري. voice-02 معتمد؛ الفيديو نفسه غير معتمد بعد.",
+  "audio": "voice-02 معتمد 2026-10-15: بحسه شخص عم يحكيلي طبيعي حبيت موافق. canonical engine/projects/escobar_hook30/assets/narrator_approved.mp3؛ ممنوع إعادة توليد الأداء.",
   "script": "engine/projects/escobar_hook30/SCRIPT_EN.md",
-  "archive": "أخبار حقيقية غير مؤمّنة بعد؛ لا ندعي أنها في المعاينة. مصادر الحقائق PBS/Britannica محفوظة بالسكربت."
+  "archive": "لا صوت أخبار أصلي. اقتباس PBS1997 مكتوب + وصف AmusingPlanet2023 مع تاريخ ومصدر. صورة موقع2019 Stefanomione CC BY-SA4؛ مو إعادة بناء تاريخية دقيقة.",
+  "plan": "engine/projects/escobar_hook30/PLAN.md",
+  "sources": "engine/projects/escobar_hook30/SOURCES_AND_RIGHTS.md",
+  "video_drive": "1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW",
+  "delivery": "engine/projects/escobar_hook30/delivery.json",
+  "qc": "engine/projects/escobar_hook30/QC.md",
+  "actual_qc": "21/21 tests PASS؛ 720فريم decode؛60عينة2fps+8فريمات بينية شوهدت؛−15.34LUFS/−0.93dBTP. لا ادعاء سماع/تشغيل كامل. النموذج540p6fps→24fps، صورة/نص/ترميز1080p. آثار تنعيم طفيفة بالأسلاك.",
+  "scope_reminder": "أول30ث فقط، لا بدء الباقي ولا المرجع التالي تلقائياً."
  }
 }

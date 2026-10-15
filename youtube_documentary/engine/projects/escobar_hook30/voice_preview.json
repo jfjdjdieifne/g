@@ -1,9 +1,14 @@
 {
   "language": "en",
   "voice_id": "voice-02",
-  "approval": "provisional audition / await feedback",
+  "approval": "approved by user 2026-10-15: بحسه شخص عم يحكيلي طبيعي حبيت موافق",
   "narrator_text": "This is Pablo Escobar's prison. He helped design it, picked his own guards, and kept running his business from inside. So, yes, he went to prison. But not quite the way you'd expect. A year later, he escaped. How did he get that deal? And why did the government finally try to take it away?",
-  "local_preview": "/home/user/build/escobar_hook30/narrator_script_preview.mp3",
-  "news_audio_status": "not acquired, not fabricated",
-  "video_status": "not rendered"
+  "news_audio_status": "not acquired; 1997 transcript / 2023 article typeset excerpts instead; no synthetic anchor",
+  "video_status": "30-second v1 review cut rendered, decoded, sampled, presented and uploaded; awaits user visual review",
+  "approved_voice_id": "voice-02",
+  "approved_audio": "assets/narrator_approved.mp3",
+  "sha256": "523220dab1465d8958a24345978de76982953396e05b9bcf7ed012da44c7485d",
+  "original_excluded_preview": "/home/user/build/escobar_hook30/narrator_script_preview.mp3",
+  "local_preview": "assets/narrator_approved.mp3",
+  "delivery": "delivery.json"
 }

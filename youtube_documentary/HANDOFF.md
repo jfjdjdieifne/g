@@ -1,6 +1,6 @@
 # HANDOFF — وين وصلنا (ملف حي، يتحدّث كل جولة)
 
-> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `51b401e` · **HEAD الحالي:** `51b401e`
+> **آخر تحديث:** 2026-10-15 · **آخر كوميت محفوظ:** `7b28f64` · **HEAD الحالي:** `7b28f64`
 > هاد الملف مولّد بـ`tools/handoff.py` من `engine/HANDOFF_STATE.json` + فحص فعلي للمستودع.
 > **القانون:** كل جولة = تحديث `HANDOFF_STATE.json` + تشغيل `handoff.py` + رفع `HANDOFF.md` عالدرايف. ما في شغل يعتمد على ذاكرة أي أحد.
 
@@ -15,6 +15,7 @@
 | `continuity` | engine/CONTINUITY_MODEL.md (4 خيوط + لقطة وحدة + in-shot vs cut) |
 | `montage_theory` | engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار) |
 | `rulebook` | engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md (29 قسم — آخرها إضافات P2) |
+| `engine/runtime/xyz_scene.py + blender_xyz.py` | Runtime XYZ مشترك + backend Cycles جزئي؛ ملف إسكوبار profile إخراج، مو engine مستقل لكل فيلم. |
 
 ## 2) حالة المراجع (الدراسة فريم-فريم)
 
@@ -58,17 +59,33 @@
 | ديمو WW2-drive v4 (عمق وإنكليزي) |  [درايف](https://drive.google.com/file/d/1xzUM0fyO2T7cyCBUeDlOkbVa4yALg6wq/view) |
 | خطة اختبار عمق v4 |  [درايف](https://drive.google.com/file/d/1fSd6WDq6XpvEFzNITt3KAW4oKIxTp8g2/view) |
 | سياسة الإنتاج العامة — English / Scene-first |  [درايف](https://drive.google.com/file/d/1eflzeVEYkokGL0dV3BYJMV-Dxr84XLg_/view) |
+| Escobar Hook30 v1 EN / approved voice-02 | `engine/projects/escobar_hook30/delivery.json` [درايف](https://drive.google.com/file/d/1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW/view) |
+
+## المشروع النشط — الهوك الحالي
+
+- **scope:** أول 30 ثانية نظامية لإسكوبار فقط؛ لا بدء باقي الوثائقي تلقائياً. طلب جديد من المستخدم بعد ديموهات المرجع.
+- **status:** أول30ث v1 اكتملت، قُدّمت للمستخدم ورُفعت للدرايف؛ ناطرين رأيه البصري. voice-02 معتمد؛ الفيديو نفسه غير معتمد بعد.
+- **audio:** voice-02 معتمد 2026-10-15: بحسه شخص عم يحكيلي طبيعي حبيت موافق. canonical engine/projects/escobar_hook30/assets/narrator_approved.mp3؛ ممنوع إعادة توليد الأداء.
+- **script:** engine/projects/escobar_hook30/SCRIPT_EN.md
+- **archive:** لا صوت أخبار أصلي. اقتباس PBS1997 مكتوب + وصف AmusingPlanet2023 مع تاريخ ومصدر. صورة موقع2019 Stefanomione CC BY-SA4؛ مو إعادة بناء تاريخية دقيقة.
+- **plan:** engine/projects/escobar_hook30/PLAN.md
+- **sources:** engine/projects/escobar_hook30/SOURCES_AND_RIGHTS.md
+- **video_drive:** [درايف](https://drive.google.com/file/d/1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW/view)
+- **delivery:** engine/projects/escobar_hook30/delivery.json
+- **qc:** engine/projects/escobar_hook30/QC.md
+- **actual_qc:** 21/21 tests PASS؛ 720فريم decode؛60عينة2fps+8فريمات بينية شوهدت؛−15.34LUFS/−0.93dBTP. لا ادعاء سماع/تشغيل كامل. النموذج540p6fps→24fps، صورة/نص/ترميز1080p. آثار تنعيم طفيفة بالأسلاك.
+- **scope_reminder:** أول30ث فقط، لا بدء الباقي ولا المرجع التالي تلقائياً.
 
 ## 5) الخطوات الجاية (بالترتيب)
 
-1. تعليق المستخدم على سكربت هوك السجن وصوت voice-02، ثم تأمين/فحص الأرشيف وإكمال رندر أول30ث فقط.
+1. ناطرين تقييم المستخدم لنسخة Escobar Hook30 v1؛ ثبّت voice-02 المعتمد. لا تعمل باقي الوثائقي تلقائياً. صوت أخبار أصلي غير مؤمّن.
 2. PayPal: بدو ≤100MiB (تقسيم المستخدم لجزئين) أو جلسة سكانر — بعدها part_study + كروت
 3. باقي المراجع (Crypto / Apple / AI / Saudi / Dubai) واحد واحد
 4. بالنهاية: technique_db.md + الجرامر البصرية + خطة التنفيذ + 3 عروض ديمو 6–10 ث
 
 ## 6) أسئلة معلّقة (بتنتظر قرار)
 
-- مراجعة الديمو v1: شو بدنا نضبط قبل v2؟ (موشن/إيقاع/نص/صوت/محتوى)
+- رأي المستخدم البصري/الإيقاعي بنسخة Escobar Hook30 v1؛ الصوت voice-02 معتمد أصلاً، لا تعيد اختبار صوته.
 
 ## 7) قوانين ثابتة (ما تتغيّر بين الجولات)
 
@@ -91,6 +108,7 @@
 - `pip install -q --break-system-packages numpy pillow imageio-ffmpeg`
 - `نزّل الفيديو من الدرايف → build/videos/`
 - `python3 tools/reference_motion.py build/videos/X.mp4 --video-id ID --out build/analysis/ID`
+- `هوك إسكوبار: اقرأ engine/projects/escobar_hook30/README.md؛ bpy==4.2.23 + bootstrap_bpy_headless.py ثم models → finish → qa؛ رندر CPU استغرق نحو17دقيقة، لا تعِدْه لتعديل النصوص فقط.`
 
 ## 9) كيف تكمّل من هون (لأي أيجنت جديد)
 

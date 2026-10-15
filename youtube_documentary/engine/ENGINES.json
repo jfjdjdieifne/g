@@ -80,6 +80,30 @@
     "Allow Arabic internal planning notes"
    ],
    "notes": "English detector checks writing system, not semantic language; human copy review still needed."
+  },
+  {
+   "id": "xyz_scene_runtime",
+   "kind": "shared-scene-runtime",
+   "status": "partial",
+   "entry": "engine/runtime/xyz_scene.py",
+   "optional_backend": "engine/runtime/blender_xyz.py",
+   "does": [
+    "Shared perspective camera / textured plane homography",
+    "Reusable lit geometry and oriented cylinders",
+    "Pillow depth-order preview",
+    "Cycles CPU rendering with bevels, shadows, noise materials"
+   ],
+   "limitations": [
+    "Not a measured terrain/globe renderer",
+    "Pillow painter ordering is not a Z-buffer",
+    "Cycles requires bpy and headless library bootstrap",
+    "Escobar film profile is not a universal script-to-film director"
+   ],
+   "profiles": [
+    "tools/escobar_hook30.py",
+    "tools/escobar_hook30_models.py"
+   ],
+   "dependencies": "bpy==4.2.23, pillow, numpy, imageio-ffmpeg; tools/bootstrap_bpy_headless.py"
   }
  ],
  "scene_engines": [

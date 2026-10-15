@@ -127,6 +127,15 @@ def render(state, stats, head):
         path = f"`{a['path']}`" if a.get("path") else ""
         L.append(f"| {a.get('name')} | {path} {link} |")
     L.append("")
+    active = state.get("active_hook")
+    if active:
+        L.append("## المشروع النشط — الهوك الحالي")
+        L.append("")
+        for key, value in active.items():
+            if key.endswith("_drive"):
+                value = f"[درايف](https://drive.google.com/file/d/{value}/view)"
+            L.append(f"- **{key}:** {value}")
+        L.append("")
     L.append("## 5) الخطوات الجاية (بالترتيب)")
     L.append("")
     for i, s in enumerate(state.get("next_steps", []), 1):

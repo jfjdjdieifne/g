@@ -1,0 +1,85 @@
+{
+  "status": "review cut delivered; art direction awaits user",
+  "date": "2026-10-15",
+  "scope_seconds": 30,
+  "file_name": "Escobar_Hook30_v1_EN_voice02.mp4",
+  "build_path": "/home/user/build/escobar_hook30/render/escobar_hook30_v1.mp4",
+  "drive_id": "1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW",
+  "bytes": 21084945,
+  "sha256": "18a099fe9113858c925ce70938c35f84101ad1558b13c7a24f7f65e797c70777",
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "decoded_frames": 720,
+  "voice_id": "voice-02",
+  "original_voice_sha256": "523220dab1465d8958a24345978de76982953396e05b9bcf7ed012da44c7485d",
+  "audio": {
+    "voice_id": "voice-02",
+    "approved_take_reused": true,
+    "source_samples": 1046355,
+    "sample_rate": 48000,
+    "source_split_seconds": 8.3,
+    "timeline_voice_ranges": [
+      [
+        3,
+        11.3
+      ],
+      [
+        15,
+        28.4990625
+      ]
+    ],
+    "archive_only_ranges": [
+      [
+        0,
+        3
+      ],
+      [
+        11.3,
+        15
+      ]
+    ],
+    "actual_broadcast_audio": false,
+    "peak_dbfs": -1.012199867101744,
+    "voice_gain": 1.3539197767010673,
+    "scope": "Synthetic underscore, not an orchestral score. Authentic broadcast insert still pending."
+  },
+  "image_pipeline": {
+    "backend": "Blender 4.2.23 LTS / Cycles CPU",
+    "model_sample_resolution": [
+      960,
+      540
+    ],
+    "model_sample_fps": 6,
+    "model_samples": 128,
+    "model_interpolation": "ffmpeg minterpolate mci/aobmc/bidir, per shot",
+    "composite_resolution": [
+      1920,
+      1080
+    ],
+    "delivery_fps": 24,
+    "original_voice_untouched_except_gain_and_silent_split": true,
+    "historical_architectural_reconstruction": false,
+    "limitations": [
+      "Illustrative geometry, not a measured plan",
+      "6fps model renders interpolated to 24fps; inspect fences and gate for ghosting",
+      "No authentic news audio acquired"
+    ]
+  },
+  "encoded_audio_measurements": {
+    "input_i": "-15.34",
+    "input_tp": "-0.93",
+    "input_lra": "9.40"
+  },
+  "qc": "QC.md",
+  "plan_drive_id": "1QKKcIjWz2YeQtTlZ5hXmn-AjAJ-7sK81",
+  "credits_drive_id": "1cCDi-1AUstrNWJVY3fNA3Zf2KCgD06VJ",
+  "not_claimed": [
+    "Authentic TV/news audio",
+    "Historically accurate model or escape route",
+    "Native 1080p24 model sampling",
+    "Full agent listening/playback certification",
+    "User approval of video art direction",
+    "Full documentary production"
+  ]
+}
