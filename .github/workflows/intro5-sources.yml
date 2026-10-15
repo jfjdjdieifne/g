@@ -12,11 +12,13 @@ jobs:
     steps:
       - name: Inspect distinct public original programmes, never bypass access blocks
         run: |
-          python3 -m pip -q install yt-dlp imageio-ffmpeg
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+          ffmpeg -version
+          python3 -m pip -q install yt-dlp
           mkdir -p /tmp/intro5
           python3 - <<'PY'
-          import subprocess,json,concurrent.futures,urllib.request,re,imageio_ffmpeg
-          FF=imageio_ffmpeg.get_ffmpeg_exe()
+          import subprocess,json,concurrent.futures,urllib.request,re
+          FF='ffmpeg'
           from pathlib import Path
           root=Path('/tmp/intro5')
           sources=[('pbs','https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/',360),('bbc','https://www.bbc.com/news/av/world-25158010',180),('aj','https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust',180)]
@@ -44,7 +46,7 @@ jobs:
                   break
               media=data.get('url')
               if not media:row['error']='No ordinary public combined audio-video format; no access workaround';return row
-              cmd=[FF,'-v','error','-rw_timeout','15000000','-i',media,'-t',str(dur),'-vf','scale=640:-2','-c:v','libx264','-preset','fast','-crf','28','-maxrate','340k','-bufsize','680k','-c:a','aac','-b:a','48k','-movflags','+faststart','-y',str(root/(key+'_research.mp4'))]
+              cmd=[FF,'-v','error','-rw_timeout','15000000','-i',media,'-t',str(dur),'-vf','scale=640:-2','-c:v','libx264','-threads','2','-preset','fast','-crf','28','-maxrate','340k','-bufsize','680k','-c:a','aac','-b:a','48k','-movflags','+faststart','-y',str(root/(key+'_research.mp4'))]
               p=subprocess.run(cmd,capture_output=True,text=True,timeout=150);(root/(key+'_download.log')).write_text(p.stderr[-4000:]);row['download_returncode']=p.returncode
               if p.returncode:row['error']='Public media download failed; do not bypass'
               else:row['bounded_seconds']=dur
