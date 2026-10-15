@@ -1,7 +1,7 @@
 {
  "schema": "handoff-state/1",
  "updated": "2026-10-15",
- "head_commit": "f86de61",
+ "head_commit": "65dff8a",
  "studies": [
   {
    "ref": "vaping",
@@ -326,6 +326,7 @@
   "actual_qc": "21/21 tests PASS؛ 720فريم decode؛60عينة2fps+8فريمات بينية شوهدت؛−15.34LUFS/−0.93dBTP. لا ادعاء سماع/تشغيل كامل. النموذج540p6fps→24fps، صورة/نص/ترميز1080p. آثار تنعيم طفيفة بالأسلاك.",
   "scope_reminder": "أول30ث فقط، لا بدء الباقي ولا المرجع التالي تلقائياً.",
   "editorial_review": "engine/projects/escobar_hook30/editorial_review.json",
-  "preflight": "engine/projects/escobar_hook30/ARCHIVE_PREFLIGHT.json"
+  "preflight": "engine/projects/escobar_hook30/ARCHIVE_PREFLIGHT.json",
+  "user_clarification": "المستخدم ذكّر بالمراجع: خبر حقيقي عن الموضوع يقول جملة محددة، ثم يدخل الراوي مستلماً معناها. انتقاء الجملة/المقطع الحقيقي أولاً، مو أخبار للزينة أو سكتات جاهزة نملأها. تفكيك Juul الموجود يسجّل مقال/مذيع عند0:00–0:07؛ هذه إحالة لدراسة سابقة لا ادعاء إعادة مشاهدة/سماع الآن."
  }
 }
