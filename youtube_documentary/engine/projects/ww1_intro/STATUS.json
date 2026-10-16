@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "job": "ww1_intro",
+  "authorization": "User explicitly requested a 30–60 second, high-energy, purely explanatory World War I opening with hook, maps, English script, voice and motion; specifically asked to continue through delivery without pausing for preliminary approvals (2026-10-16).",
+  "style": "pure_explainer",
+  "production_state": "Encoded v1 delivered for user review; approval/publication rights not implied.",
+  "script": "SCRIPT_AND_RESEARCH.md",
+  "visual_plan": "VISUAL_PLAN.md",
+  "narration": {
+    "file": "voice_take_v1.mp3",
+    "voice_id_current_session": "voice-01",
+    "identity_note": "This is the voice selected in this session. It is not represented as the project's persistent cross-session voice03 identity.",
+    "duration_seconds": 48.98
+  },
+  "delivery": {
+    "file": "WWI_Explainer_Intro_v1.mp4",
+    "sha256": "6478576182b4d61d602f6d0b11c93fc30ba53ee579eabff82242441422945faa",
+    "bytes": 24773709,
+    "container": "MP4",
+    "video": "H.264 High, 1600x900, 25 fps",
+    "audio": "AAC-LC, 48 kHz stereo, 193 kb/s",
+    "duration_seconds": 48.98,
+    "full_stream_decode": "passed; ffmpeg reported no errors"
+  },
+  "audio_qc": {
+    "measurement": "FFmpeg EBU R128 analysis of final AAC in delivery MP4",
+    "integrated_lufs": -16.3,
+    "loudness_range_lu": 3.1,
+    "true_peak_dbfs": -2.4,
+    "ear_review": "Not claimed as human-listened by the agent; user review remains important."
+  },
+  "sources": [
+    "https://www.iwm.org.uk/history/first-world-war/outbreak",
+    "https://www.open.edu/openlearn/history-the-arts/history/world-history/the-july-crisis-chronology",
+    "https://www.iwm.org.uk/history/first-world-war/outbreak/schlieffen-plan",
+    "https://github.com/aourednik/historical-basemaps"
+  ],
+  "review": {
+    "encoded_2fps_samples": 98,
+    "evidence": "review_sheet_1.jpg through review_sheet_4.jpg (contact sheets from the final encode; full-size samples are temporary and not part of the delivery pack).",
+    "visual_findings": "Reviewed the entire 48.98-second encode at 0.5-second intervals. The initial full-resolution frame and opening text entrance were checked after correcting the first-pass off-screen clipping; final pullback and closing frame also checked. No obvious sampled render or label clipping defects found.",
+    "limits": [
+      "Review is visual sampling, not exhaustive frame-by-frame artistic certification.",
+      "No human ear-listening claim.",
+      "User approval pending.",
+      "Publication rights are not cleared by historical citations.",
+      "Historical boundary dataset is explicitly work-in-progress; boundaries remain approximate.",
+      "Date-to-voice cue timing is authored, not human-verified word-level synchronization."
+    ]
+  }
+}
