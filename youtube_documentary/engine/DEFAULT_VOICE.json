@@ -1,0 +1,15 @@
+{
+  "approved_on": "2026-10-16",
+  "scope": "Default narrator for ALL future videos",
+  "display_name": "Approved Conversational English — voice-03",
+  "current_conversation_voice_id": "voice-03",
+  "authoritative_profile": "voices/approved_voice03/VOICE_PROFILE.json",
+  "actual_approved_reference": "voices/approved_voice03/approved_reference.wav",
+  "recovery_guide": "voices/approved_voice03/README_AR.md",
+  "identity_and_clean_extended_performance_explicitly_approved": true,
+  "commercial_provider_name_exposed": false,
+  "registry_id_is_universally_portable": false,
+  "direction": "Natural connected knowledgeable-YouTuber conversation, not a dramatic sentence parade, artificial tempo/pitch adjustment or fake hesitation.",
+  "historical_films": "Do not replace voices or alter approved historical films. voice-02 is not the new-production default.",
+  "fallback": "Restore/resolve the same approved identity and compare the saved reference. If exact restoration is unavailable, disclose that and obtain approval before a substitute; do not pretend a newly numbered voice-03 is identical."
+}
