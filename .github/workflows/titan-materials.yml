@@ -13,9 +13,13 @@ jobs:
       - name: Fetch ordinary public investigative material
         run: |
           set -euo pipefail
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
           mkdir -p /tmp/titan
           python3 - <<'PY'
-          import urllib.request,json,hashlib,subprocess
+          import urllib.request,json,hashlib,subprocess,sys,traceback
+          def onerror(t,v,tb):
+            print('::error::'+str(v));traceback.print_exception(t,v,tb)
+          sys.excepthook=onerror
           from pathlib import Path
           p=Path('/tmp/titan');rows=[]
           items=[('ntsb_report.pdf','https://www.ntsb.gov/investigations/AccidentReports/Reports/MIR2536.pdf'),('titan_descending.jpg','https://www.ntsb.gov/investigations/PublishingImages/DCA23FM036-img.jpg'),('rov_original.webm','https://upload.wikimedia.org/wikipedia/commons/5/5c/OceanGate_Titan_submersible_ocean_floor_footage.webm')]
@@ -33,6 +37,7 @@ jobs:
           print(json.dumps(rows,indent=2))
           PY
       - name: Store bounded research object without media commit
+        if: always()
         id: stash
         env:
           GH_TOKEN: ${{ github.token }}
