@@ -1,0 +1,344 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/phantom_traffic/voice/02_raw.wav",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 0.48,
+          "start": 0.12,
+          "word": "here's"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.6,
+          "start": 0.48,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.11,
+          "start": 0.6,
+          "word": "strange"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.62,
+          "start": 1.11,
+          "word": "part"
+        }
+      ],
+      "text": "here's the strange part"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 2.58,
+          "start": 2.46,
+          "word": "the"
+        },
+        {
+          "conf": 0.724469,
+          "end": 3.0,
+          "start": 2.58,
+          "word": "cars"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.27,
+          "start": 3.0,
+          "word": "keep"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.63,
+          "start": 3.27,
+          "word": "moving"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.23,
+          "start": 3.63,
+          "word": "forward"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.65,
+          "start": 4.47,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.71,
+          "start": 4.65,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.1,
+          "start": 4.71,
+          "word": "slow"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.49,
+          "start": 5.1,
+          "word": "patch"
+        },
+        {
+          "conf": 0.913309,
+          "end": 5.91,
+          "start": 5.49,
+          "word": "moves"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.78,
+          "start": 5.94,
+          "word": "backwards"
+        }
+      ],
+      "text": "the cars keep moving forward but the slow patch moves backwards"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 7.83,
+          "start": 7.53,
+          "word": "new"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.28,
+          "start": 7.83,
+          "word": "cars"
+        },
+        {
+          "conf": 0.388144,
+          "end": 8.751456,
+          "start": 8.28,
+          "word": "joying"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.85,
+          "start": 8.751456,
+          "word": "at"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.94,
+          "start": 8.85,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.45,
+          "start": 8.94,
+          "word": "back"
+        },
+        {
+          "conf": 0.777828,
+          "end": 9.87,
+          "start": 9.63,
+          "word": "while"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.29,
+          "start": 9.87,
+          "word": "cars"
+        },
+        {
+          "conf": 0.822888,
+          "end": 10.38,
+          "start": 10.29,
+          "word": "at"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.44,
+          "start": 10.38,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.98,
+          "start": 10.44,
+          "word": "front"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.37,
+          "start": 11.1,
+          "word": "pull"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.91,
+          "start": 11.37,
+          "word": "away"
+        }
+      ],
+      "text": "new cars joying at the back while cars at the front pull away"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 12.96,
+          "start": 12.81,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.47,
+          "start": 12.96,
+          "word": "jam"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.13,
+          "start": 13.62,
+          "word": "isn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.61,
+          "start": 14.25,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.97,
+          "start": 14.61,
+          "word": "group"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.09,
+          "start": 14.97,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.75,
+          "start": 15.09,
+          "word": "cars"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.38,
+          "start": 16.2,
+          "word": "it's"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.44,
+          "start": 16.38,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.07,
+          "start": 16.44,
+          "word": "pattern"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.85,
+          "start": 17.22,
+          "word": "passing"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.6,
+          "start": 18.18,
+          "word": "between"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.9,
+          "start": 18.6,
+          "word": "them"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.44,
+          "start": 19.17,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.56,
+          "start": 19.44,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.62,
+          "start": 19.56,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.31,
+          "start": 19.62,
+          "word": "simplified"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.03,
+          "start": 20.31,
+          "word": "animation"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.72,
+          "start": 21.39,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.78,
+          "start": 21.72,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.32,
+          "start": 21.78,
+          "word": "prediction"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.44,
+          "start": 22.32,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.47,
+          "start": 22.44,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.8,
+          "start": 22.47,
+          "word": "real"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.28,
+          "start": 22.8,
+          "word": "road"
+        }
+      ],
+      "text": "the jam isn't one group of cars it's a pattern passing between them this is a simplified animation not a prediction of a real road"
+    }
+  ]
+}

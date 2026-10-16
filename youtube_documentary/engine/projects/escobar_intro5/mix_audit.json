@@ -1,0 +1,89 @@
+{
+  "dialogue": [
+    {
+      "id": "hook",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_intro5/clips/hook.wav",
+      "start": 0.0,
+      "end": 12.06,
+      "duration": 12.06,
+      "gain": 0.7874246566720559,
+      "input_rms": 0.15871382596767403
+    },
+    {
+      "id": "cash",
+      "kind": "archive",
+      "file": "/home/user/build/escobar_intro5/clips/cash.wav",
+      "start": 12.125,
+      "end": 16.115000000000002,
+      "duration": 3.99,
+      "gain": 1.2978793917588378,
+      "input_rms": 0.09747384189820364
+    },
+    {
+      "id": "industry",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_intro5/clips/industry.wav",
+      "start": 16.166666666666668,
+      "end": 22.60666666666667,
+      "duration": 6.44,
+      "gain": 0.7072462605128489,
+      "input_rms": 0.1743079796200232
+    },
+    {
+      "id": "max",
+      "kind": "archive",
+      "file": "/home/user/build/escobar_intro5/clips/max.wav",
+      "start": 22.666666666666668,
+      "end": 25.886666666666667,
+      "duration": 3.22,
+      "gain": 1.557075034571317,
+      "input_rms": 0.08390745785585961
+    },
+    {
+      "id": "close",
+      "kind": "narration",
+      "file": "/home/user/build/escobar_intro5/clips/close.wav",
+      "start": 25.958333333333332,
+      "end": 32.090333333333334,
+      "duration": 6.132,
+      "gain": 0.6909948917117017,
+      "input_rms": 0.17686594724796995
+    }
+  ],
+  "per_event_effects": [
+    {
+      "at": 1.12,
+      "relative_to_local_music_db": -7.958800173440753
+    },
+    {
+      "at": 2.556,
+      "relative_to_local_music_db": -7.958800173440753
+    },
+    {
+      "at": 5.492,
+      "relative_to_local_music_db": -7.958800173440751
+    },
+    {
+      "at": 7.408,
+      "relative_to_local_music_db": -7.958800173440751
+    },
+    {
+      "at": 16.166666666666668,
+      "relative_to_local_music_db": -7.958800173440753
+    },
+    {
+      "at": 22.666666666666668,
+      "relative_to_local_music_db": -7.958800173440751
+    },
+    {
+      "at": 32.090333333333334,
+      "relative_to_local_music_db": -7.958800173440749
+    }
+  ],
+  "music_rms": 0.03957571780869786,
+  "effects_rms": 0.0026388359976263426,
+  "effects_vs_music_db": -23.52032801598407,
+  "music_type": "Original synthesized 144 BPM minor-key industrial pulse; editorial effects, not archive location sound.",
+  "global_speedup": false
+}

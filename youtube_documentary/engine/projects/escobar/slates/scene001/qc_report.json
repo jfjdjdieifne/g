@@ -1,0 +1,355 @@
+{
+  "scene": "escobar_s001",
+  "strategy": "spatial-canvas",
+  "tokenCheck": {
+    "pass": true,
+    "joined": "In 1993, one of the richest criminals in the world was hiding inside a house in Colombia.",
+    "expected": "In 1993, one of the richest criminals in the world was hiding inside a house in Colombia."
+  },
+  "schedule": [
+    {
+      "index": 0,
+      "text": "In",
+      "onset": 0,
+      "animStart": 0,
+      "readable": 0,
+      "duration": 0,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": true
+    },
+    {
+      "index": 1,
+      "text": "1993,",
+      "onset": 0.23,
+      "animStart": 0,
+      "readable": 0.17,
+      "duration": 0.17,
+      "deltaMs": -60,
+      "emphasized": true,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 2,
+      "text": "one",
+      "onset": 1.05,
+      "animStart": 0.71,
+      "readable": 1.05,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 3,
+      "text": "of",
+      "onset": 1.23,
+      "animStart": 0.8899999999999999,
+      "readable": 1.23,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 4,
+      "text": "the",
+      "onset": 1.48,
+      "animStart": 1.14,
+      "readable": 1.48,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 5,
+      "text": "richest",
+      "onset": 2.02,
+      "animStart": 1.7,
+      "readable": 1.96,
+      "duration": 0.26,
+      "deltaMs": -60,
+      "emphasized": true,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 6,
+      "text": "criminals",
+      "onset": 2.35,
+      "animStart": 2.0300000000000002,
+      "readable": 2.29,
+      "duration": 0.26,
+      "deltaMs": -60,
+      "emphasized": true,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 7,
+      "text": "in",
+      "onset": 2.62,
+      "animStart": 2.2800000000000002,
+      "readable": 2.62,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 8,
+      "text": "the",
+      "onset": 2.98,
+      "animStart": 2.64,
+      "readable": 2.98,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 9,
+      "text": "world",
+      "onset": 3.2,
+      "animStart": 2.8600000000000003,
+      "readable": 3.2,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 10,
+      "text": "was",
+      "onset": 3.62,
+      "animStart": 3.2800000000000002,
+      "readable": 3.62,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 11,
+      "text": "hiding",
+      "onset": 3.92,
+      "animStart": 3.58,
+      "readable": 3.92,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 12,
+      "text": "inside",
+      "onset": 4.33,
+      "animStart": 3.99,
+      "readable": 4.33,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 13,
+      "text": "a",
+      "onset": 4.58,
+      "animStart": 4.24,
+      "readable": 4.58,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 14,
+      "text": "house",
+      "onset": 5.57,
+      "animStart": 5.23,
+      "readable": 5.57,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 15,
+      "text": "in",
+      "onset": 5.83,
+      "animStart": 5.49,
+      "readable": 5.83,
+      "duration": 0.34,
+      "deltaMs": 0,
+      "emphasized": false,
+      "onScreenAtZero": false
+    },
+    {
+      "index": 16,
+      "text": "Colombia.",
+      "onset": 6.28,
+      "animStart": 5.960000000000001,
+      "readable": 6.220000000000001,
+      "duration": 0.26,
+      "deltaMs": -60,
+      "emphasized": true,
+      "onScreenAtZero": false
+    }
+  ],
+  "findings": [
+    {
+      "level": "WARN",
+      "code": "ASSET_STORYBOARD_ONLY",
+      "msg": "medellin_hillside_manrique: replace with licensed full-res before production"
+    },
+    {
+      "level": "WARN",
+      "code": "ASSET_UPSCALE",
+      "msg": "medellin_hillside_manrique: upscale 3.14x > 2.5x"
+    }
+  ],
+  "gateAB": "PASS_WITH_WARNINGS",
+  "measures": {
+    "sb_t0_27.png": {
+      "textRects": [
+        {
+          "text": "In",
+          "x": 120,
+          "y": 390,
+          "w": 35.625,
+          "h": 37
+        },
+        {
+          "text": "1993,",
+          "x": 120,
+          "y": 427,
+          "w": 345.78125,
+          "h": 175.75
+        }
+      ],
+      "subjectRects": []
+    },
+    "sb_t2_37.png": {
+      "textRects": [
+        {
+          "text": "one",
+          "x": 120,
+          "y": 265,
+          "w": 68.21875,
+          "h": 50
+        },
+        {
+          "text": "of",
+          "x": 199.6875,
+          "y": 265,
+          "w": 36.390625,
+          "h": 50
+        },
+        {
+          "text": "the",
+          "x": 247.546875,
+          "y": 265,
+          "w": 58.8125,
+          "h": 50
+        },
+        {
+          "text": "richest",
+          "x": 120,
+          "y": 315,
+          "w": 396.875,
+          "h": 108.15625
+        },
+        {
+          "text": "criminals",
+          "x": 120,
+          "y": 423.15625,
+          "w": 525.734375,
+          "h": 108.15625
+        }
+      ],
+      "subjectRects": [
+        {
+          "id": "mugshot",
+          "x": 1226.560132050362,
+          "y": 233.94529686641258,
+          "w": 549.596305688091,
+          "h": 583.0866623238186
+        }
+      ]
+    },
+    "sb_t6_70.png": {
+      "textRects": [
+        {
+          "text": "in",
+          "x": 120,
+          "y": 840.6875,
+          "w": 53,
+          "h": 64.65625
+        },
+        {
+          "text": "the",
+          "x": 187.828125,
+          "y": 840.6875,
+          "w": 94.234375,
+          "h": 64.65625
+        },
+        {
+          "text": "world",
+          "x": 296.890625,
+          "y": 840.6875,
+          "w": 162.765625,
+          "h": 64.65625
+        },
+        {
+          "text": "was",
+          "x": 474.484375,
+          "y": 840.6875,
+          "w": 117.1875,
+          "h": 64.65625
+        },
+        {
+          "text": "hiding",
+          "x": 606.5,
+          "y": 840.6875,
+          "w": 176.703125,
+          "h": 64.65625
+        },
+        {
+          "text": "inside",
+          "x": 120,
+          "y": 905.34375,
+          "w": 173.734375,
+          "h": 64.65625
+        },
+        {
+          "text": "a",
+          "x": 308.5625,
+          "y": 905.34375,
+          "w": 35.359375,
+          "h": 64.65625
+        },
+        {
+          "text": "house",
+          "x": 358.75,
+          "y": 905.34375,
+          "w": 173.796875,
+          "h": 64.65625
+        },
+        {
+          "text": "in",
+          "x": 547.375,
+          "y": 905.34375,
+          "w": 53,
+          "h": 64.65625
+        },
+        {
+          "text": "Colombia.",
+          "x": 615.203125,
+          "y": 905.34375,
+          "w": 288.59375,
+          "h": 64.65625
+        }
+      ],
+      "subjectRects": []
+    }
+  }
+}

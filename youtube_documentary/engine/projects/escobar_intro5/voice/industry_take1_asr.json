@@ -1,0 +1,221 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/escobar_intro5/voice/industry_take1.wav",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 0.24,
+          "start": 0.18,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.69,
+          "start": 0.24,
+          "word": "single"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.17,
+          "start": 0.69,
+          "word": "flight"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.65,
+          "start": 1.44,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.07,
+          "start": 1.65,
+          "word": "carry"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.46,
+          "start": 2.07,
+          "word": "four"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.97,
+          "start": 2.46,
+          "word": "hundred"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.57,
+          "start": 2.97,
+          "word": "kilos"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.66,
+          "start": 3.57,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.32,
+          "start": 3.66,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.74,
+          "start": 4.56,
+          "word": "and"
+        },
+        {
+          "conf": 0.709119,
+          "end": 5.04,
+          "start": 4.77,
+          "word": "bring"
+        },
+        {
+          "conf": 0.709119,
+          "end": 5.16,
+          "start": 5.04,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.43,
+          "start": 5.16,
+          "word": "ten"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.82,
+          "start": 5.43,
+          "word": "million"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.45,
+          "start": 5.82,
+          "word": "dollars"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.29,
+          "start": 7.08,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.65,
+          "start": 7.29,
+          "word": "wasn't"
+        },
+        {
+          "conf": 0.840745,
+          "end": 8.04,
+          "start": 7.65,
+          "word": "street"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.49,
+          "start": 8.04,
+          "word": "dealing"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.0,
+          "start": 8.82,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.21,
+          "start": 9.0,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.33,
+          "start": 9.21,
+          "word": "an"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.9,
+          "start": 9.33,
+          "word": "industry"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.62,
+          "start": 10.38,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.34,
+          "start": 10.62,
+          "word": "pilots"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.63,
+          "start": 11.73,
+          "word": "laboratories"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.17,
+          "start": 13.02,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.2,
+          "start": 13.17,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.65,
+          "start": 13.2,
+          "word": "system"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.77,
+          "start": 13.65,
+          "word": "of"
+        },
+        {
+          "conf": 0.618217,
+          "end": 14.1,
+          "start": 13.77,
+          "word": "pay"
+        },
+        {
+          "conf": 0.618217,
+          "end": 14.4,
+          "start": 14.1,
+          "word": "offs"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.97,
+          "start": 14.4,
+          "word": "protecting"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.21,
+          "start": 14.97,
+          "word": "it"
+        }
+      ],
+      "text": "a single flight could carry four hundred kilos of cocaine and bring in ten million dollars this wasn't street dealing it was an industry with pilots laboratories and a system of pay offs protecting it"
+    }
+  ]
+}

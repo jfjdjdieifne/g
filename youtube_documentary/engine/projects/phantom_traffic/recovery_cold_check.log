@@ -1,0 +1,12 @@
+Fresh independent extraction. Every included file hash checked. No render/ear-listening/art-approval claim.
+
+$ /home/user/.venv/bin/python /tmp/film-cold-check-84br1lb_/youtube_documentary/tools/style_contract.py check --project /tmp/film-cold-check-84br1lb_/youtube_documentary/engine/projects/phantom_traffic
+PASS: declared style/material consistency ONLY. Actual encoded visual/audio review remains required.
+
+$ /home/user/.venv/bin/python /tmp/film-cold-check-84br1lb_/youtube_documentary/tools/production_policy.py /tmp/film-cold-check-84br1lb_/youtube_documentary/engine/projects/phantom_traffic/display_manifest.json
+PASS: display / declared design policy. Art direction still requires visual review.
+
+$ node /tmp/film-cold-check-84br1lb_/youtube_documentary/tools/tests/test_traffic_motion.mjs
+{"result":"PASS: source invariants only","minimumCenterGap":5.729440443660906,"minimumForwardSpeed":0.4600045733600666,"minimumBufferBumperGap":4.8270899908406255}
+
+$ node --check /tmp/film-cold-check-84br1lb_/youtube_documentary/tools/render_webgl_profile.mjs

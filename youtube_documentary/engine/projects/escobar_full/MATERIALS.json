@@ -1,0 +1,1036 @@
+{
+  "assets": [
+    {
+      "id": "pbs_industry_research",
+      "kind": "archive_video",
+      "description": "Original source programme; only selected bounds are used. Selected scenes visually inspected, never count a programme chunk as a different broadcaster.",
+      "source_file": "pbs_industry_research.mp4",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "sha256": "e42197afd48805ec286a53a1edbd4e83ed286cf9bd274494c50a82e11313c100",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Source-level inventory inherited only for an identical previously inventoried SHA. NOT proof that every second or newly selected bound was viewed. Exact-bound final-encode observations belong in editorial_review.json and encoded_qc/. No manual ear-listening claim.",
+      "rights_status": "Internal review only; public access does not confer publication rights. Licensing unresolved."
+    },
+    {
+      "id": "geographic_network",
+      "kind": "original_model",
+      "description": "Explanatory Natural Earth map with perspective camera and raised XYZ routes; conceptual network, NOT an actual shipment path or satellite evidence. Andean inputs branch independently into Colombia."
+    },
+    {
+      "id": "pbs_later_2160_research",
+      "kind": "archive_video",
+      "description": "Original source programme; only selected bounds are used. Selected scenes visually inspected, never count a programme chunk as a different broadcaster.",
+      "source_file": "pbs_later_2160_research.mp4",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "sha256": "14c54005e1f6fd6c1ea2d9c4f92fcfea0408f05c5d2d1bdbafc6678764a01965",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Source-level inventory inherited only for an identical previously inventoried SHA. NOT proof that every second or newly selected bound was viewed. Exact-bound final-encode observations belong in editorial_review.json and encoded_qc/. No manual ear-listening claim.",
+      "rights_status": "Internal review only; public access does not confer publication rights. Licensing unresolved."
+    },
+    {
+      "id": "pbs_later_1200_research",
+      "kind": "archive_video",
+      "description": "Original source programme; only selected bounds are used. Selected scenes visually inspected, never count a programme chunk as a different broadcaster.",
+      "source_file": "pbs_later_1200_research.mp4",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "sha256": "a2e6c3eb417cf5575f74247e353628bde85dc18f9a04dfd5deca6139df67df70",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Source-level inventory inherited only for an identical previously inventoried SHA. NOT proof that every second or newly selected bound was viewed. Exact-bound final-encode observations belong in editorial_review.json and encoded_qc/. No manual ear-listening claim.",
+      "rights_status": "Internal review only; public access does not confer publication rights. Licensing unresolved."
+    },
+    {
+      "id": "housing1983",
+      "kind": "real_photo",
+      "path": "youtube_documentary/engine/projects/escobar_intro4/assets/housing1983.jpg",
+      "description": "Sin Tugurios housing actually under construction,1983; original Edgar El Chino Jimenez photograph reproduced by El Pais.1200x811source, not recorded moving footage.",
+      "source": "https://english.elpais.com/usa/2021-12-24/pablo-escobar-unseen-portraits-of-a-drug-lord.html",
+      "date_context": "1983 per original publisher caption, reproduced24Dec2021",
+      "review_status": "inspected",
+      "review_evidence": "Original file and current encoded staging visually inspected; original-pixel source retained, no new historical action generated.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved."
+    },
+    {
+      "id": "bbc_research",
+      "kind": "archive_video",
+      "description": "Original source programme; only selected bounds are used. Selected scenes visually inspected, never count a programme chunk as a different broadcaster.",
+      "source_file": "bbc_research.mp4",
+      "source": "https://www.bbc.com/news/av/world-25158010",
+      "sha256": "fa7e7776984f8dab9680f3346c959bec0f095a6fbac3d13b3c893a36a38f9e0e",
+      "date_context": "BBC News 2013",
+      "review_status": "inspected",
+      "review_evidence": "Source-level inventory inherited only for an identical previously inventoried SHA. NOT proof that every second or newly selected bound was viewed. Exact-bound final-encode observations belong in editorial_review.json and encoded_qc/. No manual ear-listening claim.",
+      "rights_status": "Internal review only; public access does not confer publication rights. Licensing unresolved."
+    },
+    {
+      "id": "aj_research",
+      "kind": "archive_video",
+      "description": "Original source programme; only selected bounds are used. Selected scenes visually inspected, never count a programme chunk as a different broadcaster.",
+      "source_file": "aj_research.mp4",
+      "source": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust",
+      "sha256": "9124027abf1699869eafd0f8cf73ee49942153fbee00eae3ca4c13555ccb75d3",
+      "date_context": "Al Jazeera English 2018",
+      "review_status": "inspected",
+      "review_evidence": "Source-level inventory inherited only for an identical previously inventoried SHA. NOT proof that every second or newly selected bound was viewed. Exact-bound final-encode observations belong in editorial_review.json and encoded_qc/. No manual ear-listening claim.",
+      "rights_status": "Internal review only; public access does not confer publication rights. Licensing unresolved."
+    },
+    {
+      "id": "congress",
+      "kind": "real_photo",
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/congress.jpg",
+      "description": "Whole actual congressional group photograph. No uncertain face isolation.",
+      "source": "https://www.eltiempo.com/cultura/gente/pablo-escobar-como-fue-su-vida-politica-620562",
+      "date_context": "1983per actual publisher caption",
+      "review_status": "inspected",
+      "review_evidence": "Original file and current encoded staging visually inspected; original-pixel source retained, no new historical action generated.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved."
+    },
+    {
+      "id": "football",
+      "kind": "real_photo",
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/football.jpg",
+      "description": "Actual football-field inauguration, different exposure from the Moravia plate.",
+      "source": "https://www.eltiempo.com/cultura/gente/pablo-escobar-como-fue-su-vida-politica-620562",
+      "date_context": "1983per actual publisher caption",
+      "review_status": "inspected",
+      "review_evidence": "Original file and current encoded staging visually inspected; original-pixel source retained, no new historical action generated.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved."
+    },
+    {
+      "id": "pbs_later_3120_research",
+      "kind": "archive_video",
+      "description": "Original source programme; only selected bounds are used. Selected scenes visually inspected, never count a programme chunk as a different broadcaster.",
+      "source_file": "pbs_later_3120_research.mp4",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "sha256": "0cd7bd1bde3720070cbf782272ef9674f03c82067be0a549fbfee560e3fd6014",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Source-level inventory inherited only for an identical previously inventoried SHA. NOT proof that every second or newly selected bound was viewed. Exact-bound final-encode observations belong in editorial_review.json and encoded_qc/. No manual ear-listening claim.",
+      "rights_status": "Internal review only; public access does not confer publication rights. Licensing unresolved."
+    },
+    {
+      "id": "pbs_later_4080_research",
+      "kind": "archive_video",
+      "description": "Original source programme; only selected bounds are used. Selected scenes visually inspected, never count a programme chunk as a different broadcaster.",
+      "source_file": "pbs_later_4080_research.mp4",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "sha256": "56ad470dce7b60daec26fa1ecf73a10f5f020f76e485e416c5352e80e796e35a",
+      "date_context": "FRONTLINE 1995",
+      "review_status": "inspected",
+      "review_evidence": "Source-level inventory inherited only for an identical previously inventoried SHA. NOT proof that every second or newly selected bound was viewed. Exact-bound final-encode observations belong in editorial_review.json and encoded_qc/. No manual ear-listening claim.",
+      "rights_status": "Internal review only; public access does not confer publication rights. Licensing unresolved."
+    },
+    {
+      "id": "forbes_entry",
+      "kind": "press_scan",
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/forbes_entry.png",
+      "description": "Actual entry/portrait, plus original printed name.",
+      "source": "https://blogs-images.forbes.com/halahtouryalai/files/2015/09/escobar-write-up1.png",
+      "date_context": "5October1987",
+      "review_status": "inspected",
+      "review_evidence": "Original file and current encoded staging visually inspected; original-pixel source retained, no new historical action generated.",
+      "rights_status": "Public access is NOT publication clearance. Internal editorial review only; permission/licensing remains unresolved.",
+      "verified_crop_text": "Escobar"
+    }
+  ],
+  "beats": [
+    {
+      "id": "01_business_00",
+      "function": "Wealth followed the operation; estate footage, not a reconstructed crime",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "01_business_01",
+      "function": "Different estate/home-movie scene; private possessions, no claim of a photographed deal",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "01_business_02",
+      "function": "US demand: contextual Miami street imagery",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "01_business_03",
+      "function": "The actual subject; a different portion of the home-movie moment",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "01_business_04",
+      "function": "Coca inputs from Peru/Bolivia to Colombia; conceptual network, not one shipment",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "No historic footage records this abstract whole network; explicitly disclosed geographical explanation replaces fabricated historical action.",
+      "material_ids": [
+        "geographic_network"
+      ]
+    },
+    {
+      "id": "01_business_05",
+      "function": "Actual Tranquilandia lab interior and equipment; historical contextual example, not every Colombian lab",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "01_business_06",
+      "function": "Actual pilot/cockpit imagery; transport north",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "01_business_07",
+      "function": "The cartel network was not one man; actual group footage",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "01_business_08",
+      "function": "Ochoa family context from the original report, not three falsely identified faces",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "01_business_09",
+      "function": "Bahamas connection and onward movement; schematic paths, true geography",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "No historic footage records this abstract whole network; explicitly disclosed geographical explanation replaces fabricated historical action.",
+      "material_ids": [
+        "geographic_network"
+      ]
+    },
+    {
+      "id": "01_business_10",
+      "function": "Flights and onward movement; native smuggling/interdiction imagery",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "01_business_11",
+      "function": "Demand at the end of the chain: original street and consumer-cocaine imagery, not an asserted filmed Escobar transaction",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "01_business_12",
+      "function": "Return to the whole geographical supply chain, with a wider camera",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "No historic footage records this abstract whole network; explicitly disclosed geographical explanation replaces fabricated historical action.",
+      "material_ids": [
+        "geographic_network"
+      ]
+    },
+    {
+      "id": "01_business_13",
+      "function": "A moving aircraft completes the supply-chain explanation",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "02_support_00",
+      "function": "Transport succeeds only with protection; native source flight imagery",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "02_support_01",
+      "function": "Real hidden-camera payoff footage from the report; NOT a fabricated payment by Escobar",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "02_support_02",
+      "function": "Threats against officials: institutional security, not an invented assault",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "02_support_03",
+      "function": "The next shipment: different source aircraft moment",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "02_support_04",
+      "function": "Transition to Medellin through its actual filmed streets",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "02_support_05",
+      "function": "Actual 1983 construction photograph, intentionally returning to opening evidence in a longer explanation",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "housing1983"
+      ]
+    },
+    {
+      "id": "02_support_06",
+      "function": "Football facilities in the source report, not an unrelated stadium",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "02_support_07",
+      "function": "Actual neighborhood houses, contemporary to the original report",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "02_support_08",
+      "function": "The Flores household, identified as rehoused beneficiaries in the original programme",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "02_support_09",
+      "function": "Genuine painted Escobar myth in the community; not a generated portrait or a muted expert interview",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "02_support_10",
+      "function": "People living in the community; no claim all residents endorsed crime",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "02_support_11",
+      "function": "Modern neighborhood context, explicitly dated 2013; not evidence of a particular 1983 recipient",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "bbc_research"
+      ]
+    },
+    {
+      "id": "02_support_12",
+      "function": "The same man: actual Escobar with people at a public football appearance, no expert interview under the narrator",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "02_support_13",
+      "function": "Same city, later time: 2018 Medellin context, explicitly dated",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "aj_research"
+      ]
+    },
+    {
+      "id": "03_politics_00",
+      "function": "Actual 1982 election mural from source; no fabricated newspaper",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "03_politics_01",
+      "function": "Actual congressional photograph, deliberately reused for the alternate-representative qualification",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "congress"
+      ]
+    },
+    {
+      "id": "03_politics_02",
+      "function": "Legitimate institutions; chamber imagery rather than pretending he ran the country",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "03_politics_03",
+      "function": "Actual public appearance, original-pixel 2.5D rather than invented action",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "football"
+      ]
+    },
+    {
+      "id": "03_politics_04",
+      "function": "Actual Escobar family photograph from the report; not another person passed off as him",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "03_politics_05",
+      "function": "Public benefactor image in the actual community",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "03_politics_06",
+      "function": "Contrast with cocaine processing: real industrial laboratory imagery",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "03_politics_07",
+      "function": "Actual Justice Minister Rodrigo Lara Bonilla speaking publicly",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "03_politics_08",
+      "function": "Archival political meeting in the report; no further identity claim",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "03_politics_09",
+      "function": "Aftermath of the minister assassination: damaged car, no graphic body",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "03_politics_10",
+      "function": "Security outside public institutions; danger to people challenging the trade",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "03_politics_11",
+      "function": "The press was also targeted: actual newspaper newsroom staff and computers",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "03_politics_12",
+      "function": "Actual Escobar political address photograph; public image versus intimidation",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "03_politics_13",
+      "function": "State response to cartel violence: genuine armed helicopter/operation imagery, not a muted interview or an asserted fatal shooter",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "04_extradition_00",
+      "function": "US prison exterior in the report, extradition as the central threat",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "04_extradition_01",
+      "function": "Definition: face justice in another country; actual US exterior",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "04_extradition_02",
+      "function": "United States government context, not a fake news anchor",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "04_extradition_03",
+      "function": "Actual hidden-camera political payoff, later non-overlapping source seconds",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "04_extradition_04",
+      "function": "A prison cell abroad; genuine prison security footage, not a CGI cell",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "04_extradition_05",
+      "function": "Communications in trafficking logistics, contextual source imagery, not Escobar lip-sync",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "04_extradition_06",
+      "function": "Actual historical Escobar portrait in the source biography; not an unrelated informant face",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_industry_research"
+      ]
+    },
+    {
+      "id": "04_extradition_07",
+      "function": "Actual terror aftermath; contextual historical violence, no body close-up",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "04_extradition_08",
+      "function": "Journalists: original newspaper production footage",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "04_extradition_09",
+      "function": "Civilian cost: damaged buildings, not stock explosions",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "04_extradition_10",
+      "function": "Actual Galan campaign rally before the assassination",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "04_extradition_11",
+      "function": "The same documented campaign event, no synthetic gunfire",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "04_extradition_12",
+      "function": "Confusion and response at the event, source speed unchanged",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "04_extradition_13",
+      "function": "Ordinary people living with the consequences; historical Medellin housing",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "04_extradition_14",
+      "function": "Later Medellin view explicitly dated 2018; the city is not reduced to one man",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "aj_research"
+      ]
+    },
+    {
+      "id": "05_prison_00",
+      "function": "Actual constituent assembly; reform was larger than Escobar",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "05_prison_01",
+      "function": "Different assembly angle: prohibition on extradition, not a forged constitution",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "05_prison_02",
+      "function": "Constitutional process continued: avoid claiming he wrote the document",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_3120_research"
+      ]
+    },
+    {
+      "id": "05_prison_03",
+      "function": "Actual surrender transport helicopter, June 1991 in source context",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_04",
+      "function": "Actual La Catedral hillside location",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_05",
+      "function": "Prison grounds: comfort is not the whole issue",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_06",
+      "function": "Prison comfort: original English testimony, source picture/audio clock matched",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_08",
+      "function": "Return to the genuine prison interior under the witness tail; source audio remains untouched",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_09",
+      "function": "Prison guards and perimeter; power inside an ostensibly controlled place",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_10",
+      "function": "Actual facility exterior, not a fabricated prison plan",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_11",
+      "function": "Actual prison interior; no claim a shown family photo depicts murdered associates",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_12",
+      "function": "Return to the actual prison location on the breakdown of the arrangement",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_13",
+      "function": "Nighttime exterior from the original escape report; not claimed to show him walking out",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_14",
+      "function": "Actual wanted poster after escape; do not misread peso reward as dollars",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "05_prison_15",
+      "function": "Police mobilization after the failed agreement",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_00",
+      "function": "Manhunt street patrol, actual original report",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_01",
+      "function": "Road searches, native source footage",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_02",
+      "function": "Actual police computer imagery modeling Escobar disguises during the search; not a modern generated face or a muted interview",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_03",
+      "function": "Property targeted by rivals during the manhunt, as identified by source context",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_04",
+      "function": "Aftermath and attacks on the network, not a lawful solution",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_05",
+      "function": "Pressure from different directions: police night operation",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_06",
+      "function": "Actual 1987 wealth entry; deliberate callback to why a fortune was not protection",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "forbes_entry"
+      ]
+    },
+    {
+      "id": "06_collapse_07",
+      "function": "Institutions and searches, not a fabricated betrayal scene",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_08",
+      "function": "Actual tracking equipment on the dated final search",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_09",
+      "function": "Mobile direction-finding imagery from the report",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_10",
+      "function": "Actual house/roofline in the final operation report; omit corpse images",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_11",
+      "function": "Actual location exterior; disputed fatal shot is not assigned to a person",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "06_collapse_12",
+      "function": "Actual death-site house and roof imagery from the report, not footage identifying the fatal shooter; no corpse close-up",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "07_legacy_00",
+      "function": "Later merchandise and memory, explicitly 2018",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "aj_research"
+      ]
+    },
+    {
+      "id": "07_legacy_01",
+      "function": "Actual beneficiary household from source; the aid was not imaginary",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "07_legacy_02",
+      "function": "Medellin Memory House Museum, not a generic memorial passed off as a particular victim",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "aj_research"
+      ]
+    },
+    {
+      "id": "07_legacy_03",
+      "function": "Modern families in the neighborhood, contextual not verified original recipients",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "bbc_research"
+      ]
+    },
+    {
+      "id": "07_legacy_04",
+      "function": "Genuine housing neighborhood in the older report, not a claim all residents agreed",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_1200_research"
+      ]
+    },
+    {
+      "id": "07_legacy_05",
+      "function": "Memory House archive display; competing memories and documented history",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "aj_research"
+      ]
+    },
+    {
+      "id": "07_legacy_06",
+      "function": "Historical Tranquilandia lab-complex/cargo imagery: the larger operation, not falsely presented as a filmed post-1993 transaction",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_2160_research"
+      ]
+    },
+    {
+      "id": "07_legacy_07",
+      "function": "Contemporary city life continued, explicitly dated 2018",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "aj_research"
+      ]
+    },
+    {
+      "id": "07_legacy_08",
+      "function": "Later trafficking incentives; waterfront/city imagery from the 1995 report",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "07_legacy_09",
+      "function": "Death did not change the trade: original English witness, 1995 perspective",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "07_legacy_11",
+      "function": "Continue the interrupted source moment after the original witness, without replaying it",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "pbs_later_4080_research"
+      ]
+    },
+    {
+      "id": "07_legacy_12",
+      "function": "Return to Medellin rather than ending on the criminal as a hero",
+      "choice_reason": "Exact-subject real source first; camera/motion selected for this explanation, not arbitrary popup captions.",
+      "why_not_real": "Real source used.",
+      "material_ids": [
+        "aj_research"
+      ]
+    }
+  ],
+  "source_quotes": [
+    {
+      "speaker": "Stephen Murphy, DEA agent",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_in_out": [
+        4191.35,
+        4195.69
+      ],
+      "exact_quote": "The prison itself contained its own discotheque, its own bar.",
+      "audio_review_method": "Published FRONTLINE transcript plus original-recording Vosk word times. Pictures inspected at 1-second intervals. No human listening claimed."
+    },
+    {
+      "speaker": "Jack Blum, Senate investigator",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_in_out": [
+        4877.43,
+        4882.08
+      ],
+      "exact_quote": "It didn't change the pace of trafficking. It didn't raise or lower the price of cocaine.",
+      "audio_review_method": "Published FRONTLINE transcript plus original-recording Vosk word times. Speaker visible at selected bounds. No human listening claimed."
+    }
+  ],
+  "rights_cleared": false
+}

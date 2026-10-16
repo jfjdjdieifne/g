@@ -1,0 +1,38 @@
+{
+  "engine": "geo",
+  "id": "geo_route_medellin_miami_v1",
+  "note": "Real NASA Blue Marble earth. Camera zooms into the eruption, follows the arrow's head across the rotating globe, settles on the destination for its eruption.",
+  "tex": "assets_global/earth/earth_4096.jpg",
+  "from": { "lat": 6.25,  "lon": -75.56, "name": "MEDELLÍN", "sub": "COLOMBIA" },
+  "to":   { "lat": 25.76, "lon": -80.19, "name": "MIAMI",    "sub": "UNITED STATES" },
+  "radius": 420, "cx": 960, "cy": 548, "tilt": -8,
+  "spinStart": -95, "spinRate": 2.6,
+  "cam": [
+    { "t": 0.00, "z": 1.00, "aim": null,   "at": [0.50, 0.50] },
+    { "t": 1.05, "z": 1.06, "aim": null,   "at": [0.50, 0.50] },
+    { "t": 1.45, "z": 1.50, "aim": "from", "at": [0.50, 0.58] },
+    { "t": 2.45, "z": 1.58, "aim": "from", "at": [0.50, 0.58] },
+    { "t": 2.85, "z": 1.85, "aim": "head", "at": [0.42, 0.54] },
+    { "t": 5.55, "z": 2.10, "aim": "head", "at": [0.42, 0.54] },
+    { "t": 5.95, "z": 1.92, "aim": "to",   "at": [0.55, 0.52] },
+    { "t": 6.55, "z": 2.00, "aim": "to",   "at": [0.55, 0.52] },
+    { "t": 8.00, "z": 1.78, "aim": "to",   "at": [0.55, 0.52] }
+  ],
+  "timing": {
+    "fadeIn": [0.0, 0.7], "markA": [0.7, 1.5], "labelA": [1.1, 1.7],
+    "travel": [2.0, 5.0], "markB": [4.9, 5.6], "labelB": [5.3, 6.0],
+    "fadeOut": [7.4, 8.0], "dur": 8.0
+  },
+  "audio": [
+    { "t": 0.0, "sfx": "swell",  "gain": 0.20, "dur": 2.6 },
+    { "t": 0.7, "sfx": "impact", "gain": 0.22, "f0": 78, "f1": 46, "dur": 0.6 },
+    { "t": 1.1, "sfx": "brush",  "gain": 0.07, "dur": 0.4 },
+    { "t": 2.0, "sfx": "whooshUp","gain": 0.16, "dur": 1.1 },
+    { "t": 2.2, "sfx": "note",   "freq": 98.0,  "gain": 0.10, "dur": 3.4, "bright": 0.3 },
+    { "t": 4.1, "sfx": "whoosh", "gain": 0.14, "dur": 1.0 },
+    { "t": 4.9, "sfx": "impact", "gain": 0.24, "f0": 84, "f1": 48, "dur": 0.7 },
+    { "t": 5.3, "sfx": "brush",  "gain": 0.07, "dur": 0.4 },
+    { "t": 5.6, "sfx": "note",   "freq": 146.83,"gain": 0.10, "dur": 3.0, "bright": 0.26 },
+    { "t": 7.4, "sfx": "swell",  "gain": 0.15, "dur": 1.8 }
+  ]
+}

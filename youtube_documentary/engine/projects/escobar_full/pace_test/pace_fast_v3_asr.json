@@ -1,0 +1,305 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/escobar_film/pace_test/Escobar_Pace_Faster_V3.mp3",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 0.18,
+          "start": 0.0,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.69,
+          "start": 0.18,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.93,
+          "start": 0.69,
+          "word": "brought"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.02,
+          "start": 0.93,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.41,
+          "start": 1.02,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.760945,
+          "start": 1.65,
+          "word": "and"
+        },
+        {
+          "conf": 0.34008,
+          "end": 1.86,
+          "start": 1.77,
+          "word": "our"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.13,
+          "start": 1.874221,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.4,
+          "start": 2.13,
+          "word": "paid"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.52,
+          "start": 2.4,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.97,
+          "start": 2.52,
+          "word": "pilots"
+        },
+        {
+          "conf": 0.653712,
+          "end": 3.54,
+          "start": 3.15,
+          "word": "roots"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.66,
+          "start": 3.54,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.17,
+          "start": 3.66,
+          "word": "protection"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.5,
+          "start": 4.35,
+          "word": "so"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.83,
+          "start": 4.53,
+          "word": "every"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.28,
+          "start": 4.83,
+          "word": "successful"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.76,
+          "start": 5.28,
+          "word": "shipment"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.12,
+          "start": 5.91,
+          "word": "help"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.18,
+          "start": 6.12,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.42,
+          "start": 6.18,
+          "word": "next"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.57,
+          "start": 6.42,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.72,
+          "start": 6.57,
+          "word": "get"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.05,
+          "start": 6.72,
+          "word": "through"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.44,
+          "start": 7.26,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.04,
+          "start": 7.44,
+          "word": "extradition"
+        },
+        {
+          "conf": 0.639718,
+          "end": 8.37,
+          "start": 8.04,
+          "word": "threatened"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.7,
+          "start": 8.373956,
+          "word": "something"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.88,
+          "start": 8.7,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.27,
+          "start": 8.88,
+          "word": "fortune"
+        },
+        {
+          "conf": 0.722371,
+          "end": 9.51,
+          "start": 9.27,
+          "word": "couldn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.81,
+          "start": 9.51,
+          "word": "easily"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.23,
+          "start": 9.81,
+          "word": "fix"
+        },
+        {
+          "conf": 0.812736,
+          "end": 10.71,
+          "start": 10.53,
+          "word": "an"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.28,
+          "start": 10.71,
+          "word": "american"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.85,
+          "start": 11.28,
+          "word": "prison"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.3,
+          "start": 12.18,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.48,
+          "start": 12.3,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.72,
+          "start": 12.48,
+          "word": "lose"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.2,
+          "start": 12.72,
+          "word": "access"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.32,
+          "start": 13.2,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.41,
+          "start": 13.32,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.71,
+          "start": 13.41,
+          "word": "very"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.25,
+          "start": 13.71,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.61,
+          "start": 14.43,
+          "word": "who'd"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.76,
+          "start": 14.61,
+          "word": "been"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.176037,
+          "start": 14.76,
+          "word": "keeping"
+        },
+        {
+          "conf": 0.867898,
+          "end": 15.27,
+          "start": 15.18,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.75,
+          "start": 15.27,
+          "word": "safe"
+        }
+      ],
+      "text": "the cocaine brought him money and our money paid for pilots roots and protection so every successful shipment help the next one get through but extradition threatened something his fortune couldn't easily fix an american prison he could lose access to the very people who'd been keeping him safe"
+    }
+  ]
+}

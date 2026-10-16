@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>geo_engine v2 — real 3D earth + camera (zoom & follow)</title>
+<style>
+  @font-face { font-family:"Playfair"; src:url("../../DEMO1_ESCOBAR/assets/fonts/PlayfairDisplay.ttf"); font-weight:400 900; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { background:#000; }
+  #stage { position:relative; width:1920px; height:1080px; overflow:hidden; background:#04070c; }
+  #globe { position:absolute; left:0; top:0; width:1920px; height:1080px; }
+  .label { position:absolute; white-space:nowrap; font-family:"Playfair",serif; font-weight:700; color:#eaf4fb;
+    letter-spacing:.22em; text-shadow:0 0 18px rgba(0,0,0,.9), 0 0 34px rgba(120,190,230,.35); transform:translate(-50%,-50%); }
+  .label .sub { display:block; font-family:"DejaVu Sans Mono",monospace; font-weight:400; font-size:15px;
+    letter-spacing:.3em; color:#9fc4dc; margin-top:8px; opacity:.85; }
+  #vig { position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(ellipse 72% 66% at 50% 48%, rgba(0,0,0,0) 34%, rgba(0,0,0,.55) 76%, rgba(0,0,0,.9) 100%); }
+  #grain { position:absolute; inset:-60px; pointer-events:none; opacity:.05; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='420' height='420' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  #dip { position:absolute; inset:0; pointer-events:none; background:#000; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="globe" width="1920" height="1080"></canvas>
+  <div class="label" id="lblA"><span id="lblA_t"></span><span class="sub" id="lblA_s"></span></div>
+  <div class="label" id="lblB"><span id="lblB_t"></span><span class="sub" id="lblB_s"></span></div>
+  <div id="vig"></div><div id="grain"></div><div id="dip"></div>
+</div>
+<script>
+/* =========================================================================
+   geo_engine v2 — REAL Earth (NASA Blue Marble, public domain) + CINEMATIC CAMERA.
+   v2 adds: a scriptable camera path with ZOOM and TARGET FOLLOWING —
+   the camera can lock onto the source marker, follow the arrow's head while
+   it flies across the rotating globe (zoom pulled in), then settle onto the
+   destination for its eruption.  Config: cam:[{t,z,aim,at}] with aim in
+   null|"from"|"to"|"head"|[lat,lon].
+   ========================================================================= */
+const CFG = Object.assign({
+  tex:"",
+  from:{lat:6.25,lon:-75.56,name:"MEDELLÍN",sub:"COLOMBIA"},
+  to:{lat:25.76,lon:-80.19,name:"MIAMI",sub:"UNITED STATES"},
+  radius:420, cx:960, cy:548, tilt:-8,
+  spinStart:-75, spinRate:2.2,
+  cam:[ {t:0.0,z:1.00,aim:null,at:[0.50,0.50]} ],
+  timing:{ fadeIn:[0.0,0.7], markA:[0.7,1.5], labelA:[1.15,1.7], travel:[2.0,5.0],
+           markB:[4.9,5.6], labelB:[5.3,6.0], fadeOut:[7.4,8.0], dur:8.0 }
+}, window.SCENE_CONFIG||{});
+const T=CFG.timing;
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const lerp=(a,b,p)=>a+(b-a)*p;
+const eOutCubic=p=>1-Math.pow(1-p,3);
+const eInOutSine=p=>-(Math.cos(Math.PI*p)-1)/2;
+const seg=(t,a,b)=>clamp((t-a)/(b-a),0,1);
+const D=document;
+const cv=D.getElementById("globe"), ctx=cv.getContext("2d", {alpha:true});
+const W=cv.width, Hh=cv.height;
+const R=CFG.radius;
+const TILT=CFG.tilt*Math.PI/180;
+const CAMK=(CFG.cam&&CFG.cam.length)?CFG.cam:[{t:0,z:1,aim:null,at:[0.5,0.5]}];
+const ZMAX=Math.max(1.05, ...CAMK.map(k=>k.z));
+
+/* ---------- texture ---------- */
+let tex=null, texW=0, texH=0, texData=null;
+const img=new Image();
+img.src=CFG.tex;
+img.onload=()=>{
+  texW=img.naturalWidth; texH=img.naturalHeight;
+  const oc=D.createElement("canvas"); oc.width=texW; oc.height=texH;
+  const octx=oc.getContext("2d"); octx.drawImage(img,0,0);
+  try{ texData=octx.getImageData(0,0,texW,texH).data; tex=true; }
+  catch(e){ console.error("texture read blocked:",e); }
+};
+
+/* ---------- projection ---------- */
+function rotYf(v,a){ const ca=Math.cos(a), sa=Math.sin(a);
+  return [v[0]*ca + v[2]*sa, v[1], -v[0]*sa + v[2]*ca]; }
+function rotXf(v,a){ const ca=Math.cos(a), sa=Math.sin(a);
+  return [v[0], v[1]*ca - v[2]*sa, v[1]*sa + v[2]*ca]; }
+function ll2v(lat,lon){ const la=lat*Math.PI/180, lo=lon*Math.PI/180;
+  return [Math.cos(la)*Math.sin(lo), Math.sin(la), Math.cos(la)*Math.cos(lo)]; }
+function centreLon(t){ return (CFG.spinStart + CFG.spinRate*t) * Math.PI/180; }
+/* unit camera-space coords (radius 1, centre 0) of a lat/lon */
+function unitOf(lat,lon,cLon){
+  let v=ll2v(lat,lon); v=rotYf(v,-cLon); v=rotXf(v,TILT); return v;
+}
+/* great-circle sample (with lift) in unit camera coords */
+function arcUnit(pr,cLon){
+  const A=ll2v(CFG.from.lat,CFG.from.lon), B=ll2v(CFG.to.lat,CFG.to.lon);
+  const dot=clamp(A[0]*B[0]+A[1]*B[1]+A[2]*B[2], -1, 1), om=Math.acos(dot);
+  let v;
+  if(om<1e-4) v=A;
+  else{
+    const s1=Math.sin((1-pr)*om)/Math.sin(om), s2=Math.sin(pr*om)/Math.sin(om);
+    v=[A[0]*s1+B[0]*s2, A[1]*s1+B[1]*s2, A[2]*s1+B[2]*s2];
+    const n=Math.hypot(...v); v=v.map(q=>q/n);
+  }
+  const lift=1.11, bump=1+(lift-1)*Math.sin(Math.PI*pr);
+  let vv=rotYf([v[0]*bump, v[1]*bump, v[2]*bump], -cLon); vv=rotXf(vv,TILT);
+  return vv;
+}
+/* ---------- camera ---------- */
+let CAM={z:1, cx:CFG.cx, cy:CFG.cy};
+function aimUnit(aim,t){
+  if(aim==null) return null;
+  const cLon=centreLon(t);
+  if(aim==="from"||aim==="to") return unitOf(CFG[aim].lat, CFG[aim].lon, cLon);
+  if(aim==="head"){ const pr=seg(t,T.travel[0],T.travel[1]); return arcUnit(pr,cLon); }
+  if(Array.isArray(aim)) return unitOf(aim[0],aim[1],cLon);
+  return null;
+}
+function keyCenter(k,t){
+  const z=k.z, at=k.at||[0.5,0.5];
+  const u=aimUnit(k.aim,t);
+  if(!u) return [CFG.cx, CFG.cy];
+  return [ at[0]*W - R*z*u[0], at[1]*Hh + R*z*u[1] ];
+}
+function camSolve(t){
+  if(t<=CAMK[0].t){ const c=keyCenter(CAMK[0],t); return {z:CAMK[0].z, cx:c[0], cy:c[1]}; }
+  for(let i=0;i<CAMK.length-1;i++){
+    const a=CAMK[i], b=CAMK[i+1];
+    if(t>=a.t && t<=b.t){
+      const p=eInOutSine((t-a.t)/(b.t-a.t));
+      const z=lerp(a.z,b.z,p);
+      const ca=keyCenter(a,t), cb=keyCenter(b,t);
+      return {z, cx:lerp(ca[0],cb[0],p), cy:lerp(ca[1],cb[1],p)};
+    }
+  }
+  const l=CAMK[CAMK.length-1]; const c=keyCenter(l,t);
+  return {z:l.z, cx:c[0], cy:c[1]};
+}
+function project(lat,lon,cLon){
+  const v=unitOf(lat,lon,cLon);
+  return { x:CAM.cx + v[0]*R*CAM.z, y:CAM.cy - v[1]*R*CAM.z, z:v[2] };
+}
+
+/* ---------- per-frame sphere raster (dynamic centre + zoom) ---------- */
+const BOXS=Math.ceil(2*R*ZMAX)+4;
+const off=D.createElement("canvas"); off.width=BOXS; off.height=BOXS;
+const octx2=off.getContext("2d");
+const imgData=octx2.createImageData(BOXS, BOXS);
+const Lg=(()=>{ const v=[-0.45,-0.42,0.79]; const n=Math.hypot(...v); return v.map(q=>q/n); })();
+
+function drawSphere(t, cLon){
+  const z=CAM.z, r=R*z;
+  const x0i=Math.floor(CAM.cx-r), y0i=Math.floor(CAM.cy-r);
+  const px0=Math.max(0, x0i), py0=Math.max(0, y0i);
+  const px1=Math.min(W-1, Math.ceil(CAM.cx+r)), py1=Math.min(Hh-1, Math.ceil(CAM.cy+r));
+  const d=imgData.data, S=BOXS, inv=1/r;
+  const bx=px0-x0i, by=py0-y0i;              /* buffer-space origin of the visible rect */
+  for(let py=py0; py<=py1; py++){
+    const dy=(py-CAM.cy)*inv;
+    const row=(py-y0i)*S;
+    for(let px=px0; px<=px1; px++){
+      const dx=(px-CAM.cx)*inv;
+      const i=(row+(px-x0i))*4;
+      const rho2=dx*dx+dy*dy;
+      if(rho2>1.0){ d[i+3]=0; continue; }
+      const rho=Math.sqrt(rho2);
+      const nz=Math.sqrt(Math.max(0,1-rho2));
+      const v2=[dx, -dy, nz];
+      const v1=rotXf(v2, -TILT);
+      const vw=rotYf(v1, cLon);
+      const lat=Math.asin(clamp(vw[1],-1,1));
+      const lon=Math.atan2(vw[0], vw[2]);
+      let latDeg=lat*180/Math.PI, lonDeg=lon*180/Math.PI;
+      while(lonDeg>180) lonDeg-=360; while(lonDeg<-180) lonDeg+=360;
+      let u=Math.floor((lonDeg+180)/360*texW); if(u>=texW)u-=texW; if(u<0)u+=texW;
+      let v=Math.floor((90-latDeg)/180*texH); v=clamp(v,0,texH-1);
+      let tr=210,tg=228,tb=244;
+      if(texData){ const ti=(v*texW+u)*4; tr=texData[ti]; tg=texData[ti+1]; tb=texData[ti+2]; }
+      const diff=Math.max(0, v2[0]*Lg[0] + v2[1]*Lg[1] + v2[2]*Lg[2]);
+      const shade=0.22 + 0.92*diff;
+      const rf=Math.pow(rho, 3.2);
+      const rim=Math.pow(rho, 6.0)*0.55;
+      let R2=tr*shade*(1-rf*0.55) + rim*120;
+      let G2=tg*shade*(1-rf*0.55) + rim*170;
+      let B2=tb*shade*(1-rf*0.55) + rim*205;
+      d[i]=clamp(R2,0,255); d[i+1]=clamp(G2,0,255); d[i+2]=clamp(B2,0,255);
+      d[i+3]=255;
+    }
+  }
+  octx2.putImageData(imgData, 0, 0, bx, by, Math.max(1,px1-px0+1), Math.max(1,py1-py0+1));
+  ctx.clearRect(0,0,W,Hh);
+  const bg=ctx.createRadialGradient(CAM.cx,CAM.cy,r*0.2,CAM.cx,CAM.cy,r*2.4);
+  bg.addColorStop(0,"#0b1622"); bg.addColorStop(0.55,"#060c14"); bg.addColorStop(1,"#02040a");
+  ctx.fillStyle=bg; ctx.fillRect(0,0,W,Hh);
+  const g2=ctx.createRadialGradient(CAM.cx,CAM.cy,r*0.96,CAM.cx,CAM.cy,r*1.18);
+  g2.addColorStop(0,"rgba(120,190,235,0.28)"); g2.addColorStop(1,"rgba(120,190,235,0)");
+  ctx.fillStyle=g2; ctx.beginPath(); ctx.arc(CAM.cx,CAM.cy,r*1.18,0,Math.PI*2); ctx.fill();
+  ctx.drawImage(off, 0,0, BOXS,BOXS, x0i, y0i, BOXS,BOXS);
+}
+
+/* ---------- overlays on the sphere ---------- */
+function spike(p, h, col, alpha){
+  if(p.z<=0.02) return;
+  ctx.save(); ctx.globalAlpha=alpha;
+  const hh=h*(0.7+0.3*CAM.z);
+  const tip={x:p.x, y:p.y-hh};
+  const grad=ctx.createLinearGradient(p.x,p.y,tip.x,tip.y);
+  grad.addColorStop(0, col+"0)"); grad.addColorStop(1, col+"1)");
+  ctx.strokeStyle=grad; ctx.lineWidth=2.4; ctx.beginPath();
+  ctx.moveTo(p.x,p.y); ctx.lineTo(tip.x,tip.y); ctx.stroke();
+  ctx.beginPath(); ctx.arc(tip.x,tip.y,4.2,0,Math.PI*2); ctx.fillStyle=col+"1)"; ctx.fill();
+  ctx.restore();
+}
+function pulse(p, age, col){
+  if(p.z<=0.02||age<0||age>1) return;
+  const rr=(8+70*eOutCubic(age))*CAM.z, a=(1-age)*0.75;
+  ctx.save(); ctx.globalAlpha=a; ctx.strokeStyle=col+"1)"; ctx.lineWidth=2.2;
+  ctx.beginPath(); ctx.arc(p.x,p.y,rr,0,Math.PI*2); ctx.stroke();
+  ctx.restore();
+  ctx.save(); ctx.globalAlpha=Math.min(1, (1-age)*1.4); ctx.fillStyle=col+"1)";
+  ctx.beginPath(); ctx.arc(p.x,p.y,5.5,0,Math.PI*2); ctx.fill(); ctx.restore();
+}
+function arcPoints(cLon){
+  const N=96, pts=[];
+  for(let i=0;i<=N;i++){
+    const vv=arcUnit(i/N,cLon);
+    pts.push({x:CAM.cx+vv[0]*R*CAM.z, y:CAM.cy-vv[1]*R*CAM.z, z:vv[2]});
+  }
+  return pts;
+}
+function drawArc(t){
+  const cLon=centreLon(t);
+  const pts=arcPoints(cLon);
+  const prog=seg(t,T.travel[0],T.travel[1]);
+  if(prog<=0) return;
+  const upto=Math.max(2, Math.round(prog*pts.length));
+  ctx.save(); ctx.lineCap="round";
+  ctx.lineWidth=3.2*Math.min(1.5,0.85+0.25*CAM.z); ctx.strokeStyle="rgba(255,190,120,0.95)";
+  ctx.shadowColor="rgba(255,170,90,0.85)"; ctx.shadowBlur=14;
+  ctx.beginPath(); let drawing=false;
+  for(let i=0;i<upto;i++){
+    const p=pts[i];
+    if(p.z>0.0){ if(!drawing){ ctx.moveTo(p.x,p.y); drawing=true; } else ctx.lineTo(p.x,p.y); }
+    else drawing=false;
+  }
+  ctx.stroke();
+  if(prog<1){
+    const p=pts[Math.min(upto-1,pts.length-1)];
+    if(p.z>0){ ctx.beginPath(); ctx.arc(p.x,p.y,6.5*Math.min(1.6,0.85+0.35*CAM.z),0,Math.PI*2);
+      ctx.fillStyle="#fff3dd"; ctx.fill(); }
+  }
+  ctx.restore();
+  return pts;
+}
+
+/* ---------- labels ---------- */
+const lblA=D.getElementById("lblA"), lblB=D.getElementById("lblB");
+D.getElementById("lblA_t").textContent=CFG.from.name||"";
+D.getElementById("lblA_s").textContent=CFG.from.sub||"";
+D.getElementById("lblB_t").textContent=CFG.to.name||"";
+D.getElementById("lblB_s").textContent=CFG.to.sub||"";
+function setLabel(ele, p, vis, prog){
+  if(!vis){ ele.style.opacity=0; return; }
+  const e=eOutCubic(prog);
+  const fx=clamp((960+200-Math.abs(p.x-960))/200,0,1);
+  const fy=clamp((540+200-Math.abs(p.y-540))/200,0,1);
+  ele.style.opacity=(e*fx*fy).toFixed(3);
+  ele.style.left=(p.x)+"px";
+  ele.style.top=(p.y - (96*(0.7+0.3*CAM.z)+36) - (1-e)*18)+"px";
+  ele.style.letterSpacing=lerp(.5,.22,e)+"em";
+  ele.style.transform=`translate(-50%,-50%) scale(${((0.96+0.04*e)*(1+0.07*(CAM.z-1))).toFixed(3)})`;
+}
+
+/* ---------- main seek ---------- */
+window.seek=function(t){
+  CAM=camSolve(t);
+  const cLon=centreLon(t);
+  drawSphere(t, cLon);
+  const pA=project(CFG.from.lat, CFG.from.lon, cLon);
+  const pB=project(CFG.to.lat, CFG.to.lon, cLon);
+  const aAge=seg(t,T.markA[0],T.markA[1]);
+  const bAge=seg(t,T.markB[0],T.markB[1]);
+  drawArc(t);
+  if(aAge>0){
+    pulse(pA, aAge, "rgba(255,205,150,");
+    spike(pA, 96, "rgba(255,205,150,", Math.min(1,aAge*1.4)*(1-seg(t,T.travel[0]+0.4,T.travel[0]+1.0)*0.55));
+  }
+  if(bAge>0){
+    pulse(pB, bAge, "rgba(255,150,90,");
+    spike(pB, 96, "rgba(255,150,90,", Math.min(1,bAge*1.4));
+  }
+  setLabel(lblA, pA, t>=T.labelA[0], seg(t,T.labelA[0],T.labelA[1]));
+  setLabel(lblB, pB, t>=T.labelB[0], seg(t,T.labelB[0],T.labelB[1]));
+  const dip=D.getElementById("dip");
+  let o=1-seg(t,T.fadeIn[0],T.fadeIn[1]);
+  if(t>T.fadeOut[0]) o=Math.max(o, eInOutSine(seg(t,T.fadeOut[0],T.fadeOut[1])));
+  dip.style.opacity=o.toFixed(3);
+  const grain=D.getElementById("grain");
+  grain.style.backgroundPosition=`${Math.round(t*80)%420}px ${Math.round(t*33)%420}px`;
+};
+window.ready = ()=>!!tex;
+window.seek(0);
+</script>
+</body>
+</html>

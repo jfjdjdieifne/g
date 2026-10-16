@@ -1,0 +1,58 @@
+{
+  "status": "Both corrected-source ranges actually captured and stitched; final movie encoded and extracted. Actual final visual inspection pending.",
+  "reason": "Ensure small-hole example is visibly stretched entirely BEFORE its horizon; keep interior astronaut wholly inside the schematic horizon and outside central cutoff; anchor different pull vectors to current body. Not to scale still applies.",
+  "base_scene_copy": "history/scene_base_capture.mjs",
+  "base_scene_sha256": "2f3ea00f1d1c95251c840e4dbbe08faf72b220902fb7554b16a25fe4b7f96fc9",
+  "corrected_scene_sha256": "510a8d99b951df9fca02627f3903fb26eec89bd035733304273049f4784315f8",
+  "replacement_absolute_ranges_end_exclusive": [
+    [
+      812,
+      1137
+    ],
+    [
+      2197,
+      2720
+    ]
+  ],
+  "whole_picture_reencoding_required": true,
+  "approved_escobar_untouched": true,
+  "patch_receipts": [
+    {
+      "base": "/home/user/build/black_hole/picture_base_capture.mp4",
+      "patch": "/home/user/build/black_hole/spatial_patches/comparison.mp4",
+      "output": "/home/user/build/black_hole/picture_comparison_fixed.mp4",
+      "absolute_frames": [
+        812,
+        1137
+      ],
+      "frame_spec": [
+        2990,
+        24.0,
+        1920,
+        1080
+      ],
+      "note": "Silent-picture revision, fully re-encoded. No claim of unchanged outside pixels. Not applied to approved Escobar or approved prefix.",
+      "sha256": "badc3e144e9445581ae905b46e37b90a03426f517c0a82c9bdb29fec014a0287"
+    },
+    {
+      "base": "/home/user/build/black_hole/picture_comparison_fixed.mp4",
+      "patch": "/home/user/build/black_hole/spatial_patches/interior.mp4",
+      "output": "/home/user/build/black_hole/picture.mp4",
+      "absolute_frames": [
+        2197,
+        2720
+      ],
+      "frame_spec": [
+        2990,
+        24.0,
+        1920,
+        1080
+      ],
+      "note": "Silent-picture revision, fully re-encoded. No claim of unchanged outside pixels. Not applied to approved Escobar or approved prefix.",
+      "sha256": "a3472e103c6a5514b5c490b75e6082cf85ef4308174a1dc317151b9546f0e625"
+    }
+  ],
+  "final_video_sha256": "da485d5bd3719c317485d43c748c11b2a786125407961686939e17d5a148bd97",
+  "picture_remarks": "Two full-picture re-encodes, not approved/outside-pixel preservation. Original Escobar untouched.",
+  "final_inspection": "Both spatial corrections inspected in final delivered SHA; see review_inspection.json. Later title-only correction is in legibility_revision.json."
+}

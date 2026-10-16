@@ -1,0 +1,114 @@
+{
+  "dialogue": [
+    {
+      "id": "narration_01",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/phantom_traffic/narration/01.flac",
+      "start": 0.18,
+      "end": 23.476625,
+      "duration": 23.296625,
+      "gain": 0.7413943431794782,
+      "input_rms": 0.14684268926932592
+    },
+    {
+      "id": "narration_02",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/phantom_traffic/narration/02.flac",
+      "start": 24.276625,
+      "end": 43.04785416666667,
+      "duration": 18.771229166666668,
+      "gain": 0.7470022238426206,
+      "input_rms": 0.150387238248206
+    },
+    {
+      "id": "narration_03",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/phantom_traffic/narration/03.flac",
+      "start": 44.04785416666667,
+      "end": 66.8108125,
+      "duration": 22.762958333333334,
+      "gain": 0.7286606809066506,
+      "input_rms": 0.14849045374573278
+    }
+  ],
+  "score_sections": [
+    {
+      "start": 0,
+      "end": 11.836018965517244,
+      "bpm": 108,
+      "mode": "pulse",
+      "root": 110,
+      "density": 0.6
+    },
+    {
+      "start": 11.836018965517244,
+      "end": 39.54192211862621,
+      "bpm": 114,
+      "mode": "pulse",
+      "root": 130.813,
+      "density": 0.8
+    },
+    {
+      "start": 39.54192211862621,
+      "end": 44.09617216981132,
+      "bpm": 108,
+      "mode": "sparse",
+      "root": 110,
+      "density": 0.6
+    },
+    {
+      "start": 44.09617216981132,
+      "end": 69.125,
+      "bpm": 108,
+      "mode": "pulse",
+      "root": 146.832,
+      "density": 0.65
+    }
+  ],
+  "per_event_effects": [
+    {
+      "at": 11.836018965517244,
+      "relative_to_local_music_db": -8.404328067663796
+    },
+    {
+      "at": 15.176465072463772,
+      "relative_to_local_music_db": -8.404328067663798
+    },
+    {
+      "at": 20.643377113929688,
+      "relative_to_local_music_db": -8.404328067663798
+    },
+    {
+      "at": 31.269350161141805,
+      "relative_to_local_music_db": -8.404328067663798
+    },
+    {
+      "at": 44.09617216981132,
+      "relative_to_local_music_db": -8.404328067663796
+    },
+    {
+      "at": 60.44431598706984,
+      "relative_to_local_music_db": -8.404328067663796
+    }
+  ],
+  "music_rms": 0.030757865123383372,
+  "effects_rms": 0.0016867244704716396,
+  "music_type": "Original section-specific synthesized documentary score. Not source sound.",
+  "global_speedup": false,
+  "native_archive_audio_retimed": false,
+  "normalization_first_pass": {
+    "input_i": "-15.84",
+    "input_tp": "-1.21",
+    "input_lra": "4.60",
+    "input_thresh": "-26.57",
+    "output_i": "-16.17",
+    "output_tp": "-1.50",
+    "output_lra": "3.80",
+    "output_thresh": "-26.76",
+    "normalization_type": "dynamic",
+    "target_offset": "0.17"
+  },
+  "encoded_file": "/home/user/build/phantom_traffic/Phantom_Traffic_Pure_Explainer_Review.mp4",
+  "encoded_sha256": "27d3d24f3e41d631a5815ce99d42434a63f1d93ed15105738e4fc4f4daa5c935",
+  "manual_listening_claim": false
+}

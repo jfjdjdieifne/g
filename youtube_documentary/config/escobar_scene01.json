@@ -1,0 +1,58 @@
+{
+  "engine": "board",
+  "id": "escobar_scene01_v5",
+  "note": "No frames. Bare photo at true aspect. Name written under it on the surface. Wide spacing.",
+  "board": { "w": 6400, "h": 2800 },
+  "hero": { "x": 2000, "y": 1250, "photoW": 880, "rot": -0.7 },
+  "slots": [
+    { "x": -420, "y": 900,  "w": 470, "h": 330, "rot": -1.6 },
+    { "x": 3960, "y": 760,  "w": 500, "h": 360, "rot": 1.2 },
+    { "x": 4120, "y": 1820, "w": 460, "h": 320, "rot": -1.1 },
+    { "x": -380, "y": 2050, "w": 520, "h": 350, "rot": 1.8 },
+    { "x": 3150, "y": 2460, "w": 480, "h": 330, "rot": -2.0 }
+  ],
+  "text": {
+    "top": "THIS IS",
+    "name": "PABLO ESCOBAR",
+    "line": "A MYSTERIOUS FIGURE",
+    "why": ["BUT", "WHY"],
+    "date": "DECEMBER 2, 1993"
+  },
+  "hero_img": "DEMO1_ESCOBAR/assets/hero_solo_cc0.jpg",
+  "sil_img":  "DEMO1_ESCOBAR/assets/hero_silhouette_dark.png",
+  "rim_img":  "DEMO1_ESCOBAR/assets/hero_rim.png",
+  "signature": "DEMO1_ESCOBAR/assets/escobar_signature.png",
+  "timing": {
+    "in": 0.45, "top": [0.50, 0.92], "name": [0.95, 1.75], "sig": [1.85, 2.60], "date": [1.35, 2.35],
+    "transform": [2.05, 3.15], "line": [[2.20, 2.46], [2.44, 2.80], [2.76, 3.04]], "q": [2.95, 3.50],
+    "beat": [3.50, 3.95], "pan": [3.95, 5.00], "why": [[4.70, 5.05], [4.98, 5.40]],
+    "whyq": [5.70, 6.60], "dur": 10.0
+  },
+  "audio": [
+    { "t": 0.00, "sfx": "whoosh",  "gain": 0.30, "dur": 0.52 },
+    { "t": 0.43, "sfx": "impact",  "gain": 0.30 },
+    { "t": 0.52, "sfx": "brush",   "gain": 0.085, "dur": 0.36, "pan": -0.10 },
+    { "t": 0.76, "sfx": "brush",   "gain": 0.075, "dur": 0.32, "pan": 0.04 },
+    { "t": 0.96, "sfx": "brush",   "gain": 0.10,  "dur": 0.55, "pan": -0.06 },
+    { "t": 1.28, "sfx": "brush",   "gain": 0.09,  "dur": 0.48, "pan": 0.02 },
+    { "t": 1.52, "sfx": "brush",   "gain": 0.075, "dur": 0.42, "pan": 0.06 },
+    { "t": 1.05, "sfx": "note",    "freq": 110.0,  "gain": 0.15, "dur": 3.2, "bright": 0.30 },
+    { "t": 1.42, "sfx": "note",    "freq": 164.81, "gain": 0.11, "dur": 3.0, "bright": 0.26, "pan": 0.15 },
+    { "t": 1.87, "sfx": "brush",   "gain": 0.085, "dur": 0.75, "pan": -0.02 },
+    { "t": 2.00, "sfx": "swell",   "gain": 0.20,  "dur": 1.9 },
+    { "t": 2.10, "sfx": "whooshUp","gain": 0.16,  "dur": 0.95 },
+    { "t": 2.22, "sfx": "brush",   "gain": 0.06,  "dur": 0.34, "pan": -0.05 },
+    { "t": 2.55, "sfx": "impact",  "gain": 0.20,  "f0": 60, "f1": 38, "dur": 0.65 },
+    { "t": 2.97, "sfx": "brush",   "gain": 0.075, "dur": 0.42, "pan": -0.02 },
+    { "t": 3.96, "sfx": "whoosh",  "gain": 0.20,  "dur": 0.70 },
+    { "t": 4.00, "sfx": "note",    "freq": 82.41,  "gain": 0.10, "dur": 2.6, "bright": 0.24, "pan": -0.12 },
+    { "t": 4.72, "sfx": "brush",   "gain": 0.075, "dur": 0.36, "pan": -0.06 },
+    { "t": 5.00, "sfx": "brush",   "gain": 0.075, "dur": 0.36, "pan": 0.00 },
+    { "t": 5.62, "sfx": "note",    "freq": 98.0,   "gain": 0.12, "dur": 3.0, "bright": 0.28 },
+    { "t": 5.55, "sfx": "riser",   "gain": 0.13,  "dur": 1.05 },
+    { "t": 5.72, "sfx": "brush",   "gain": 0.10,  "dur": 0.95, "pan": 0.03 },
+    { "t": 6.60, "sfx": "impact",  "gain": 0.22,  "f0": 72, "f1": 44, "dur": 0.80 },
+    { "t": 7.20, "sfx": "swell",   "gain": 0.14,  "dur": 2.4 },
+    { "t": 7.60, "sfx": "note",    "freq": 130.81, "gain": 0.09, "dur": 3.4, "bright": 0.22, "pan": 0.18 }
+  ]
+}

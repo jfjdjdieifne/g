@@ -1,0 +1,25 @@
+{
+  "schema": "style-delivery/1",
+  "date": "2026-10-16",
+  "overlay": {
+    "name": "Documentary_Styles_and_Agent_Onboarding_2026-10-16.zip",
+    "bytes": 268358,
+    "sha256": "54b060aca064d2215777a4ad8810fc754d39fb70a67dcaa501190c1fbcd5a13c",
+    "md5": "d6fdcd89d3ef0f452ca8a917b1fab847",
+    "files": 66,
+    "cold_start_tests_passed": 33,
+    "media_regenerated": false,
+    "drive_id": "1w76GNAd7KDXBK0_p34aJm-jFp4QflbVX",
+    "drive_md5_verified": true,
+    "scope": "Policy/onboarding overlay; not a new film or self-contained source-media package."
+  },
+  "handoff": {
+    "drive_id": "1T6GGkOcQfcFfBxqa1rogY3qsQimLmoYe",
+    "bytes": 21037,
+    "md5": "740d8321d90be5f7c7983283e6e9e4d0",
+    "drive_md5_verified": true
+  },
+  "new_media_generated": false,
+  "new_listening_claimed": false,
+  "sharing_changes_performed": false
+}

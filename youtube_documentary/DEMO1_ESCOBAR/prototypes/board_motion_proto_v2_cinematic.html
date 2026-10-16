@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>board_motion_proto_v2_cinematic</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { background:#000; }
+  #stage { position:relative; width:1920px; height:1080px; overflow:hidden; background:#0a0806;
+    -webkit-font-smoothing:antialiased; }
+  #boardWrap { position:absolute; left:0; top:0; width:1920px; height:1080px; transform-origin:0 0; will-change:transform,filter,opacity; }
+  #board { position:absolute; width:3600px; height:2400px;
+    background: radial-gradient(1400px 1000px at 30% 26%, #4c3b29 0%, #382b1e 44%, #291e15 74%, #201710 100%); }
+  #board::before { content:""; position:absolute; inset:0;
+    background: repeating-linear-gradient(96deg, rgba(255,235,200,.028) 0px, rgba(255,235,200,.028) 2px, rgba(0,0,0,0) 3px, rgba(0,0,0,0) 92px); }
+  .card { position:absolute; background:#f4ecdc; border-radius:4px;
+    box-shadow: 0 34px 70px rgba(0,0,0,.62), 0 10px 22px rgba(0,0,0,.45), inset 0 0 0 1px rgba(120,100,70,.22); }
+  .card .ph { position:absolute; inset:26px 26px 74px 26px; background:
+      linear-gradient(135deg,#bcb098 0%, #a4967c 45%, #8a7e66 100%);
+    box-shadow: inset 0 0 0 1px rgba(60,48,30,.35), inset 0 -30px 60px rgba(40,30,18,.22);
+    overflow:hidden; }
+  .card .ph::after { content:""; position:absolute; inset:0;
+    background: repeating-linear-gradient(45deg, rgba(255,255,255,.028) 0 10px, rgba(0,0,0,0) 10px 20px); }
+  .card .cap { position:absolute; left:0; right:0; bottom:0; height:74px; display:flex; align-items:center; justify-content:center;
+    font-family:"Noto Sans",sans-serif; font-size:19px; letter-spacing:.14em; color:#4a4030; }
+  .pin { position:absolute; right:26px; top:-9px; width:16px; height:16px; border-radius:50%; z-index:3;
+    background: radial-gradient(circle at 35% 30%, #e6dcc8, #9a8b72 55%, #67593f); box-shadow:0 3px 6px rgba(0,0,0,.55); }
+  .tag { position:absolute; top:-13px; left:16px; transform:rotate(-2.5deg); background:rgba(250,246,236,.95); color:#6a5c44;
+    font-family:"Noto Sans",sans-serif; font-size:14px; letter-spacing:.16em; padding:6px 10px 5px; border-radius:2px;
+    box-shadow:0 2px 6px rgba(0,0,0,.3), inset 0 0 0 1px rgba(120,100,70,.3); }
+  .slip { position:absolute; background:#efe6d2; border-radius:3px;
+    box-shadow: 0 16px 34px rgba(0,0,0,.5), inset 0 0 0 1px rgba(120,100,70,.22); padding:16px; }
+  .slip .ln { height:7px; background:rgba(42,33,24,.35); border-radius:2px; margin-bottom:11px; }
+  .card.doc .du { position:absolute; inset:26px; background: linear-gradient(180deg,#f7f1e2,#efe6d2);
+    box-shadow: inset 0 0 0 1px rgba(120,100,70,.3); padding:34px 30px; }
+  .card.doc .du .ln { height:9px; background:rgba(42,33,24,.42); border-radius:2px; margin-bottom:16px; }
+  .seal { position:absolute; right:34px; bottom:96px; width:96px; height:96px; border-radius:50%; border:3px double rgba(160,60,40,.55); opacity:.8; }
+  .sig { position:absolute; left:34px; bottom:104px; }
+  /* portrait placeholder (abstract, no real face) */
+  .card.p2 .ph { background: linear-gradient(160deg,#8a7560 0%, #6b5a48 46%, #4c3f33 100%); }
+  .card.p2 .head { position:absolute; left:50%; top:24%; width:46%; height:44%; margin-left:-23%;
+    border-radius:50% 50% 46% 46%; background: radial-gradient(circle at 42% 36%, #a48e70 0%, #6d5a45 58%, #3d3228 100%); filter: blur(1.6px); }
+  .card.p2 .shoulders { position:absolute; left:50%; top:64%; width:78%; height:54%; margin-left:-39%;
+    border-radius:38% 38% 8% 8%; background: linear-gradient(180deg,#5c4e3e,#332a21); filter: blur(2.2px); }
+  .card.p2 .shadowize { position:absolute; inset:0; opacity:0;
+    background: radial-gradient(closest-side at 48% 38%, rgba(6,6,9,.55) 0%, rgba(4,4,7,.96) 74%, #030305 100%); }
+  .card.p2 .rim { position:absolute; inset:0; opacity:0;
+    background: linear-gradient(118deg, rgba(255,196,138,0) 42%, rgba(255,196,138,.16) 55%, rgba(255,196,138,0) 68%); }
+  /* captions pinned to the board (montage text, not subtitles) */
+  .bcap { position:absolute; text-align:center; color:#f5edde; white-space:nowrap; }
+  #capThis { left:1000px; top:745px; transform:translateX(-50%) translateY(-50%); font-family:"Noto Sans",sans-serif;
+    font-size:46px; letter-spacing:.34em; color:#efe5d2; text-shadow:0 3px 18px rgba(0,0,0,.65); }
+  #capName { left:1000px; top:1625px; transform:translateX(-50%) translateY(-50%); font-family:"Noto Serif",serif;
+    font-weight:700; font-size:92px; letter-spacing:.05em; color:#f7f0e1; text-shadow:0 4px 26px rgba(0,0,0,.7); }
+  #capLine { left:1000px; top:1560px; transform:translateX(-50%) translateY(-50%); font-family:"Noto Serif",serif;
+    font-style:italic; font-weight:400; font-size:64px; letter-spacing:.12em; color:#efe6d5; text-shadow:0 4px 22px rgba(0,0,0,.7); }
+  #capLine span { display:inline-block; }
+  #whyWrap { position:absolute; left:1430px; top:1075px; font-family:"Noto Serif",serif; font-weight:700; font-size:98px;
+    letter-spacing:.05em; color:#f7f0e1; white-space:nowrap; text-shadow:0 5px 28px rgba(0,0,0,.72); }
+  #whyWrap .w { display:inline-block; }
+  .ink { position:absolute; }
+  #light { position:absolute; inset:0; pointer-events:none; mix-blend-mode:soft-light; }
+  #bloom { position:absolute; inset:-140px; pointer-events:none; mix-blend-mode:screen; opacity:.30; filter:blur(46px); }
+  #fill { position:absolute; inset:0; pointer-events:none; mix-blend-mode:soft-light; opacity:.85;
+    background: radial-gradient(1100px 800px at 78% 16%, rgba(126,158,196,.34) 0%, rgba(0,0,0,0) 62%); }
+  #grain { position:absolute; inset:-60px; pointer-events:none; opacity:.07; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='420' height='420'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='420' height='420' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  #vig { position:absolute; inset:0; pointer-events:none;
+    background:radial-gradient(ellipse 76% 70% at 50% 46%, rgba(0,0,0,0) 34%, rgba(0,0,0,.5) 74%, rgba(0,0,0,.86) 100%); }
+  #dip { position:absolute; inset:0; pointer-events:none; background:#000; opacity:1; }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div id="boardWrap"><div id="board"><svg id="threads" width="3600" height="2400" style="position:absolute;left:0;top:0;"></svg></div></div>
+  <div id="light"></div>
+  <div id="bloom"></div>
+  <div id="fill"></div>
+  <div id="grain"></div>
+  <div id="vig"></div>
+  <div id="dip"></div>
+</div>
+<script>
+/* ---------------- helpers ---------------- */
+const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
+const lerp=(a,b,p)=>a+(b-a)*p;
+const eOutCubic=p=>1-Math.pow(1-p,3);
+const eOutQuint=p=>1-Math.pow(1-p,5);
+const eOutQuad=p=>1-Math.pow(1-p,2);
+const eInOutCubic=p=>p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;
+const eInOutSine=p=>-(Math.cos(Math.PI*p)-1)/2;
+const eInQuart=p=>p*p*p*p;
+function seg(t,a,b){ return clamp((t-a)/(b-a),0,1); }
+const D=document;
+
+/* ---------------- board data ---------------- */
+const CARDS=[
+  {id:"name", x:1000, y:1150, w:520, h:700, rot:-1.0, kind:"p2", tag:"ARCHIVE PORTRAIT · PLACEHOLDER"},
+  {id:"money",x:1620, y:770,  w:470, h:330, rot: 1.1, kind:"photo", cap:"US MARKET · PLACEHOLDER", tag:"SEIZED ASSETS · PLACEHOLDER"},
+  {id:"jet",  x:2620, y:1480, w:500, h:350, rot:-1.6, kind:"photo", cap:"SHIPPING · PLACEHOLDER", tag:"AIRCRAFT · PLACEHOLDER"},
+  {id:"doc",  x:2800, y:830,  w:450, h:580, rot: 0.8, kind:"doc", cap:"OFFICIAL RECORD · PLACEHOLDER", tag:"DOCUMENT · PLACEHOLDER"},
+  {id:"map",  x:1560, y:1820, w:640, h:430, rot:-1.0, kind:"photo", cap:"ROUTE MAP · PLACEHOLDER", tag:"MAP · PLACEHOLDER"},
+  {id:"slip1",x:640,  y:1800, w:200, h:230, rot: 2.2, kind:"slip"},
+  {id:"slip2",x:2500, y:1850, w:230, h:180, rot:-1.8, kind:"slip"},
+  {id:"slip3",x:860,  y:590,  w:240, h:160, rot: 1.4, kind:"slip"},
+  {id:"far1", x:3195, y:1120, w:400, h:540, rot:-1.2, kind:"p2", tag:"PLACEHOLDER"},
+  {id:"far2", x:3130, y:1930, w:480, h:320, rot: 1.8, kind:"photo", cap:"", tag:"PLACEHOLDER"}
+];
+const board=D.getElementById("board");
+const threadsSvg=D.getElementById("threads");
+function el(tag,cls,html){ const e=D.createElement(tag); if(cls)e.className=cls; if(html!=null)e.innerHTML=html; return e; }
+
+const nameCardEls={};
+CARDS.forEach(c=>{
+  const e=el("div");
+  e.className="card "+(c.kind==="slip"?"":c.kind);
+  if(c.kind==="slip") e.className="slip";
+  e.style.cssText=`left:${c.x-c.w/2}px;top:${c.y-c.h/2}px;width:${c.w}px;height:${c.h}px;transform:rotate(${c.rot}deg)`;
+  if(c.kind==="slip"){
+    e.innerHTML='<div class="ln" style="width:78%"></div><div class="ln" style="width:92%"></div><div class="ln" style="width:64%"></div><div class="ln" style="width:84%"></div><div class="ln" style="width:50%"></div>';
+  } else if(c.kind==="doc"){
+    e.innerHTML='<div class="du"><div class="ln" style="width:88%"></div><div class="ln" style="width:96%"></div><div class="ln" style="width:82%"></div><div class="ln" style="width:93%"></div><div class="ln" style="width:76%"></div><div class="ln" style="width:90%"></div><div class="ln" style="width:58%"></div><svg class="sig" width="150" height="46" viewBox="0 0 150 46"><path d="M4 34 C 26 6, 40 40, 62 20 S 100 40, 128 14" fill="none" stroke="rgba(42,33,24,.5)" stroke-width="2.4" stroke-linecap="round"/></svg><div class="seal"></div></div>'+(c.tag?`<div class="tag">${c.tag}</div>`:"");
+  } else if(c.kind==="p2"){
+    e.innerHTML='<div class="ph"><div class="shoulders"></div><div class="head"></div><div class="shadowize"></div><div class="rim"></div></div>'+(c.tag?`<div class="tag">${c.tag}</div>`:"")+'<div class="pin"></div>';
+    if(c.id==="name"){ nameCardEls.el=e; nameCardEls.ph=e.querySelector(".ph"); nameCardEls.sh=e.querySelector(".shadowize"); nameCardEls.rim=e.querySelector(".rim"); }
+  } else {
+    e.innerHTML='<div class="ph"></div><div class="pin"></div>'+(c.tag?`<div class="tag">${c.tag}</div>`:"")+(c.cap?`<div class="cap">${c.cap}</div>`:"");
+  }
+  if(!e.querySelector(".pin")&&c.kind!=="slip"){ e.appendChild(el("div","pin")); }
+  if(c.kind==="slip") e.appendChild(el("div","pin"));
+  board.appendChild(e);
+  c.el=e;
+});
+
+/* threads (drawn during the pan) */
+const byId={}; CARDS.forEach(c=>byId[c.id]=c);
+window.threads=[["name","money",150,4.50,4.83],["name","jet",-130,4.68,5.02],["name","doc",110,4.86,5.18]].map(([a,b,off,t0,t1])=>{
+  const A=byId[a],B=byId[b];
+  const dx=B.x-A.x,dy=B.y-A.y,L=Math.hypot(dx,dy),nx=-dy/L,ny=dx/L;
+  const cx=(A.x+B.x)/2+nx*off, cy=(A.y+B.y)/2+ny*off;
+  const p=D.createElementNS("http://www.w3.org/2000/svg","path");
+  p.setAttribute("d",`M ${A.x} ${A.y} Q ${cx} ${cy} ${B.x} ${B.y}`);
+  p.setAttribute("fill","none"); p.setAttribute("stroke","#a8442c"); p.setAttribute("stroke-width","2.7");
+  p.setAttribute("stroke-linecap","round"); p.setAttribute("opacity",".8");
+  
+  threadsSvg.appendChild(p);
+  const pLen=p.getTotalLength();
+  p.setAttribute("stroke-dasharray",pLen);
+  p.setAttribute("stroke-dashoffset",pLen);
+  const mk=(x,y)=>{const c=D.createElementNS("http://www.w3.org/2000/svg","circle");
+    c.setAttribute("cx",x);c.setAttribute("cy",y);c.setAttribute("r",5.5);c.setAttribute("fill","#8f3823");
+    c.setAttribute("opacity","0"); threadsSvg.appendChild(c); return c;};
+  return {el:p,len:pLen,t0,t1, knA:mk(A.x,A.y), knB:mk(B.x,B.y)};
+});
+
+/* ---------------- captions + ink (montage text) ---------------- */
+function capDiv(id,x,y,html){ const d=el("div","bcap",html); d.id=id; d.style.left=x+"px"; d.style.top=y+"px"; return d; }
+const capThis=el("div","bcap","THIS IS"); capThis.id="capThis"; board.appendChild(capThis);
+const capName=el("div","bcap","PABLO ESCOBAR"); capName.id="capName"; board.appendChild(capName);
+const capLine=el("div","bcap",'<span id="wA">A</span>&nbsp;<span id="wM">MYSTERIOUS</span>&nbsp;<span id="wF">FIGURE</span>');
+capLine.id="capLine"; board.appendChild(capLine);
+const whyWrap=el("div","",'<span class="w" id="wB">BUT</span> <span class="w" id="wW">WHY</span>&#8202;');
+whyWrap.id="whyWrap"; board.appendChild(whyWrap);
+
+function mkSvg(id,x,y,w,h,vb,paths,stroke,sw){
+  const s=D.createElementNS("http://www.w3.org/2000/svg","svg");
+  s.setAttribute("id",id); s.setAttribute("class","ink");
+  s.setAttribute("width",w); s.setAttribute("height",h); s.setAttribute("viewBox",vb);
+  s.style.cssText=`left:${x}px;top:${y}px;overflow:visible`;
+  paths.forEach(p=>{
+    const pe=D.createElementNS("http://www.w3.org/2000/svg",p.t);
+    Object.entries(p.a).forEach(([k,v])=>pe.setAttribute(k,v));
+    if(p.t==="path"){ pe.setAttribute("fill","none"); pe.setAttribute("stroke",stroke); pe.setAttribute("stroke-width",sw);
+      pe.setAttribute("stroke-linecap","round"); pe.setAttribute("stroke-linejoin","round"); }
+    s.appendChild(pe); p.ref=pe;
+  });
+  board.appendChild(s);
+  return {svg:s,paths};
+}
+const QVB="0 0 220 300";
+const QPATH="M56,52 C 44,10 96,-14 132,6 C 164,24 162,70 130,92 C 106,108 96,118 94,150";
+const under = mkSvg("underName", 730, 1690, 540, 24, "0 0 540 24",
+  [{t:"path",a:{d:"M6,14 C 130,6 320,20 534,10"}}], "rgba(244,236,220,.75)", 5);
+const qmys = mkSvg("qmys", 1052, 946, 190, 260, QVB,
+  [{t:"path",a:{d:QPATH}},{t:"circle",a:{cx:94,cy:196,r:13,fill:"#e8a33d"}}], "#e8a33d", 13);
+const underWhy = mkSvg("underWhy", 1434, 1198, 500, 22, "0 0 500 22",
+  [{t:"path",a:{d:"M6,12 C 120,4 300,18 494,8"}}], "rgba(244,236,220,.8)", 6);
+const qwhy = mkSvg("qwhy", 1966, 1052, 292, 398, QVB,
+  [{t:"path",a:{d:QPATH}},{t:"circle",a:{cx:94,cy:196,r:13,fill:"#e2582f"}}], "#e2582f", 14);
+
+/* prepare draw lengths */
+function prepDraw(o){ const p=o.paths[0].ref; const L=p.getTotalLength(); p.setAttribute("stroke-dasharray",L); o.len=L;
+  const dot=o.paths[1]&&o.paths[1].ref; if(dot){ dot.style.transformOrigin="94px 196px"; } return o; }
+[under,qmys,underWhy,qwhy].forEach(prepDraw);
+function draw(o,t0,t1,t){ const p=clamp((t-t0)/(t1-t0),0,1), e=eInOutSine(p);
+  o.paths[0].ref.setAttribute("stroke-dashoffset",(1-e)*o.len); return e; }
+function dotPop(o,t0,t,t1){ if(!o.paths[1])return; const p=seg(t,t0,t1||t0+0.14); const s=p>0?(0.2+0.8*eOutCubic(p)):0;
+  o.paths[1].ref.style.transform=`scale(${s})`; o.paths[1].ref.style.opacity=p>0?1:0; }
+
+/* ---------------- camera ---------------- */
+const CAM=[
+  {t0:0.00,t1:0.50, a:{x:1450,y:860, z:0.60}, b:{x:1000,y:1195,z:1.14}, e:eOutQuint},
+  {t0:0.50,t1:0.66, a:{x:1000,y:1195,z:1.14}, b:{x:1002,y:1191,z:1.065}, e:eOutCubic},
+  {t0:0.66,t1:2.05, a:{x:1002,y:1191,z:1.065},b:{x:1006,y:1192,z:1.05}, e:eInOutSine},
+  {t0:2.05,t1:3.55, a:{x:1006,y:1192,z:1.05}, b:{x:1012,y:1172,z:1.12}, e:eInOutSine},
+  {t0:3.55,t1:4.30, a:{x:1012,y:1172,z:1.12}, b:{x:1014,y:1175,z:1.10}, e:eInOutSine},
+  {t0:4.30,t1:5.25, a:{x:1014,y:1175,z:1.10}, b:{x:1490,y:1150,z:1.015},e:eInOutCubic},
+  {t0:5.25,t1:6.90, a:{x:1490,y:1150,z:1.015},b:{x:1512,y:1145,z:1.005},e:eInOutSine},
+  {t0:6.90,t1:8.15, a:{x:1512,y:1145,z:1.005},b:{x:1560,y:1122,z:1.07}, e:eInOutSine},
+  {t0:8.15,t1:9.40, a:{x:1560,y:1122,z:1.07}, b:{x:1330,y:1145,z:0.975},e:eInOutSine},
+  {t0:9.40,t1:10.0, a:{x:1330,y:1145,z:0.975},b:{x:1322,y:1148,z:0.985},e:eInOutSine}
+];
+function camAt(t){
+  if(t<=CAM[0].t0) return CAM[0].a;
+  for(const s of CAM){ if(t>=s.t0&&t<=s.t1){ const p=s.e((t-s.t0)/(s.t1-s.t0)); return {x:lerp(s.a.x,s.b.x,p),y:lerp(s.a.y,s.b.y,p),z:lerp(s.a.z,s.b.z,p)}; } }
+  return CAM[CAM.length-1].b;
+}
+function pwP(pieces,t){ if(t<=pieces[0][0]) return pieces[0][1];
+  for(let i=0;i<pieces.length-1;i++){ const [t0,v0]=pieces[i],[t1,v1]=pieces[i+1];
+    if(t>=t0&&t<=t1){ return lerp(v0,v1,(t-t0)/(t1-t0)); } } return pieces[pieces.length-1][1]; }
+const BLUR =[[0,40],[0.16,22],[0.40,5],[0.55,0],[9.5,0]];
+const LIGHTX=[[0,1180],[4.30,1010],[5.25,1640],[9.40,1500]];
+const LIGHTY=[[0,1120],[4.30,1180],[5.25,1120],[9.40,1150]];
+const LIGHTR=[[0,560],[4.30,520],[5.25,760],[9.40,820]];
+
+const boardWrap=D.getElementById("boardWrap"), light=D.getElementById("light"),
+      bloom=D.getElementById("bloom"), grain=D.getElementById("grain"), dip=D.getElementById("dip");
+
+/* text reveal helper: clip L->R + rise + optional letterspacing settle */
+function reveal(ele,t,t0,t1,rise,lsFrom,lsTo){
+  const p=seg(t,t0,t1), e=eOutCubic(p);
+  ele.style.clipPath=`inset(0 ${(1-e)*100}% 0 0)`;
+  ele.style.transform=`translateX(-50%) translateY(-50%) translateY(${(1-e)*(rise||26)}px)`;
+  if(lsFrom!=null) ele.style.letterSpacing=lerp(lsFrom,lsTo,e)+"em";
+  ele.style.opacity=p>0?1:0;
+}
+function revealSpan(ele,t,t0,t1,rise,lsFrom,lsTo){
+  const p=seg(t,t0,t1), e=eOutCubic(p);
+  ele.style.clipPath=`inset(0 ${(1-e)*100}% 0 0)`;
+  ele.style.transform=`translateY(${(1-e)*(rise||22)}px)`;
+  if(lsFrom!=null) ele.style.letterSpacing=lerp(lsFrom,lsTo,e)+"em";
+  ele.style.opacity=p>0?1:0;
+}
+function fade(ele,t,t0,t1){ const o=1-seg(t,t0,t1); ele.style.opacity=o.toFixed(3); return o; }
+
+/* ---------------- seek ---------------- */
+window.seek=function(t){
+  /* camera + shake + breathing */
+  const c=camAt(t);
+  let px=960-c.x*c.z, py=540-c.y*c.z;
+  if(t>0.50&&t<1.0){ const d=t-0.50, a=6.5*Math.exp(-d/0.115); px+=a*Math.sin(2*Math.PI*11*d); py+=a*0.7*Math.cos(2*Math.PI*9.5*d); }
+  px+=Math.sin(t*0.7)*1.2; py+=Math.cos(t*0.55)*1.0;
+  boardWrap.style.transform=`translate(${px}px, ${py}px) scale(${c.z})`;
+  const bl=pwP(BLUR,t);
+  boardWrap.style.filter=(bl>0.05?`blur(${bl.toFixed(2)}px) `:"")+`saturate(1.06) contrast(1.05)`;
+  boardWrap.style.opacity="1";
+
+  /* cinematic light: key pool + bloom follow a board anchor */
+  const ax=pwP(LIGHTX,t), ay=pwP(LIGHTY,t), ar=pwP(LIGHTR,t);
+  const sx=960+(ax-c.x)*c.z, sy=540+(ay-c.y)*c.z, sr=ar*c.z;
+  const warm = 0.55 - 0.18*seg(t,2.10,2.90);   /* key dims slightly as the figure darkens */
+  light.style.background=`radial-gradient(${sr}px ${sr*0.78}px at ${sx}px ${sy}px, rgba(255,214,160,${warm.toFixed(2)}) 0%, rgba(255,190,120,${(warm*0.32).toFixed(2)}) 46%, rgba(0,0,0,0) 74%)`;
+  bloom.style.background=`radial-gradient(${sr*0.8}px ${sr*0.62}px at ${sx}px ${sy}px, rgba(255,196,132,.5) 0%, rgba(0,0,0,0) 70%)`;
+  bloom.style.opacity=(0.30-0.10*seg(t,2.10,2.90)).toFixed(2);
+
+  /* grain crawl + flicker */
+  grain.style.backgroundPosition=`${Math.round(t*96)%420}px ${Math.round(t*41)%420}px`;
+  grain.style.opacity=(0.06+0.018*Math.sin(t*13.7)).toFixed(3);
+
+  /* fade from/to black */
+  dip.style.opacity=(1-seg(t,0.02,0.16)).toFixed(3) * (1) + 0; /* start fade-in */
+  if(t>9.72) dip.style.opacity=eInOutSine(seg(t,9.72,9.98)).toFixed(3);
+
+  /* ---- THIS IS ---- */
+  const tOut = seg(t,2.05,2.28);
+  reveal(capThis,t,0.62,0.94,24,0.42,0.34);
+  if(tOut>0) capThis.style.opacity=(1-tOut).toFixed(3);
+
+  /* ---- PABLO ESCOBAR + underline ---- */
+  reveal(capName,t,1.00,1.62,30,0.12,0.05);
+  if(tOut>0) capName.style.opacity=(1-tOut).toFixed(3);
+  draw(under,1.58,1.90,t);
+  if(tOut>0) under.svg.style.opacity=(1-tOut).toFixed(3);
+
+  /* ---- photo -> dark unknown figure ---- */
+  const tr=eInOutSine(seg(t,2.05,2.85));
+  nameCardEls.ph.style.filter=`saturate(${(1-tr).toFixed(3)}) brightness(${(1-0.55*tr).toFixed(3)}) contrast(${(1+0.28*tr).toFixed(3)})`;
+  nameCardEls.sh.style.opacity=(tr*0.97).toFixed(3);
+  nameCardEls.rim.style.opacity=(seg(t,2.55,3.05)*(1-seg(t,4.30,4.80))*0.95).toFixed(3);
+  nameCardEls.el.querySelector(".tag").style.opacity=(1-seg(t,2.02,2.30)).toFixed(3);
+
+  /* ---- A MYSTERIOUS FIGURE (word by word) ---- */
+  const lineOut=seg(t,4.35,4.62);
+  revealSpan(D.getElementById("wA"),t,2.10,2.34,20);
+  revealSpan(D.getElementById("wM"),t,2.32,2.62,20,.30,.12);
+  revealSpan(D.getElementById("wF"),t,2.58,2.86,20);
+  if(lineOut>0) capLine.style.opacity=(1-lineOut).toFixed(3);
+
+  /* hand-drawn question mark over the silhouette */
+  draw(qmys,2.78,3.34,t);
+  dotPop(qmys,3.30,t,3.46);
+  const br=1+0.035*Math.sin((t-3.3)*1.9)*(seg(t,3.3,3.6)*(1-seg(t,4.2,4.5)));
+  qmys.svg.style.transform=`scale(${br.toFixed(3)})`;
+  qmys.svg.style.transformOrigin="50% 50%";
+  qmys.svg.style.opacity=(seg(t,2.76,2.9)*(1-seg(t,4.30,4.60))).toFixed(3);
+
+  /* threads drawn during the pan */
+  window.threads.forEach(s=>{ const p=clamp((t-s.t0)/(s.t1-s.t0),0,1), e=eInOutSine(p);
+    s.el.setAttribute("stroke-dashoffset",(1-e)*s.len);
+    if(s.knA){ s.knA.setAttribute("opacity",(e*0.9).toFixed(2)); s.knB.setAttribute("opacity",(e*0.9).toFixed(2)); } });
+
+  /* ---- BUT WHY + drawn coloured ? ---- */
+  const wB=revealSpan(D.getElementById("wB"),t,5.30,5.62,26);
+  const wW=revealSpan(D.getElementById("wW"),t,5.56,5.90,26,.30,.05);
+  const pop=0.06*Math.sin(Math.PI*seg(t,6.72,7.00));
+  whyWrap.style.transform=`translateY(${-pop*260}px) scale(${(1+pop).toFixed(3)})`;
+  whyWrap.style.transformOrigin="0 60%";
+  draw(underWhy,6.70,7.06,t);
+  draw(qwhy,5.95,6.68,t);
+  dotPop(qwhy,6.64,t,6.80);
+
+  /* dev: nothing else */
+};
+window.seek(0);
+</script>
+</body>
+</html>

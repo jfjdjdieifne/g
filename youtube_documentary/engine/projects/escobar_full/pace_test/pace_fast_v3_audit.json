@@ -1,0 +1,64 @@
+{
+  "method": "New same-identity take, clause-level pitch-preserving tempo processing, not raw acted speed; emphasis phrase left at original speed.",
+  "duration": 15.85475,
+  "script_word_count": 49,
+  "overall_wpm": 185.43338747063183,
+  "regions": [
+    {
+      "phrase": "opening",
+      "source_in": 0.05,
+      "source_out": 1.83,
+      "tempo_factor": 1.22,
+      "output_in": 0,
+      "output_out": 1.462875,
+      "pause_after": 0.1
+    },
+    {
+      "phrase": "pilots_routes_protection",
+      "source_in": 2.1,
+      "source_out": 5.73,
+      "tempo_factor": 1.38,
+      "output_in": 1.562875,
+      "output_out": 4.173770833333333,
+      "pause_after": 0.1
+    },
+    {
+      "phrase": "next_shipment",
+      "source_in": 5.91,
+      "source_out": 9.57,
+      "tempo_factor": 1.3,
+      "output_in": 4.273770833333334,
+      "output_out": 7.083354166666667,
+      "pause_after": 0.14
+    },
+    {
+      "phrase": "extradition_threat",
+      "source_in": 9.66,
+      "source_out": 14.01,
+      "tempo_factor": 1.43,
+      "output_in": 7.223354166666667,
+      "output_out": 10.26575,
+      "pause_after": 0.18
+    },
+    {
+      "phrase": "an_American_prison",
+      "source_in": 14.31,
+      "source_out": 15.78,
+      "tempo_factor": 1.0,
+      "output_in": 10.44575,
+      "output_out": 11.909437500000001,
+      "pause_after": 0.18
+    },
+    {
+      "phrase": "explanation",
+      "source_in": 15.9,
+      "source_out": 20.14,
+      "tempo_factor": 1.13,
+      "output_in": 12.0894375,
+      "output_out": 15.854750000000001,
+      "pause_after": 0
+    }
+  ],
+  "manual_listening_claimed": false,
+  "user_approved": false
+}

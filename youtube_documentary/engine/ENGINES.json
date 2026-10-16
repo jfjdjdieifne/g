@@ -1,0 +1,403 @@
+{
+ "meta": {
+  "schema": "engines-registry/1",
+  "updated": "2026-10-16",
+  "note": "فهرس المحركات والأدوات — يقرأه الأيجنت قبل أي شغل: شو موجود، شو بيعمل، شو مدخلاته/مخرجاته، وحالته الحقيقية. ما في محرك هون إلا إذا موجود فعليًا بالمستودع.",
+  "rule": "الأيجنت لازم يعتمد على `status`: live = جاهز للتشغيل، partial = بيشتغل بس ناقصه شي (بيّن بالنوت)، concept = تصميم مو منفّذ (ممنوع يوعد فيه كمنفَّذ).",
+  "production_policy": "engine/PRODUCTION_POLICY.json",
+  "display_gate": "tools/production_policy.py — mandatory for future renders; older renderers are not all wired automatically.",
+  "style_registry": "engine/STYLE_REGISTRY.json",
+  "style_gate": "tools/style_contract.py; connected to director planning and shared film-profile rendering. Declaration validation only, not automatic creative quality."
+ },
+ "renderers": [
+  {
+   "id": "build_scene",
+   "kind": "scene-renderer",
+   "status": "live",
+   "entry": "tools/build_scene.py",
+   "runtime": "Playwright/Chromium → PNG frames → ffmpeg mp4 (synth_audio events→wav)",
+   "input": "config/*.json (one scene config with engine id + assets + timing + audio events)",
+   "output": ".cache/scene_frames/f%04d.png + mp4",
+   "usage": "python3 tools/build_scene.py config/escobar_scene01.json out_name poster_t",
+   "deps": "pip install playwright && playwright install chromium (غير مثبّتة بالجلسة الحالية)",
+   "notes": "يستدعي `ffmpeg` من النظام؛ عنا بديل: imageio_ffmpeg.get_ffmpeg_exe()"
+  },
+  {
+   "id": "render_engine",
+   "kind": "scene-renderer",
+   "status": "live",
+   "entry": "tools/render_engine.py",
+   "runtime": "Playwright/Chromium (board_engine)",
+   "input": "scene json",
+   "output": "PNG frames",
+   "usage": "python3 tools/render_engine.py scene.json outdir [poster_t]"
+  },
+  {
+   "id": "qa_frame",
+   "kind": "qa",
+   "status": "live",
+   "entry": "tools/qa_frame.py",
+   "usage": "python3 tools/qa_frame.py ENGINE CFG t1,t2,... SELECTOR OUTDIR",
+   "notes": "يرندر فريمات محددة ويقيس عناصر DOM (للتحقق البصري)"
+  },
+  {
+   "id": "render_check",
+   "kind": "qa",
+   "status": "live",
+   "entry": "tools/render_check.py",
+   "usage": "python3 tools/render_check.py IN.svg OUT.png W H"
+  },
+  {
+   "id": "cartographic_continuity",
+   "kind": "scene-renderer",
+   "status": "partial",
+   "entry": "tools/ww2demo_v3.py",
+   "runtime": "Pillow atlas affine camera → ffmpeg",
+   "notes": "User approved v3 design direction; English-only future output. Escobar-specific study, not script-general engine."
+  },
+  {
+   "id": "cartographic_depth",
+   "kind": "scene-renderer",
+   "status": "partial",
+   "entry": "tools/ww2demo_v4_depth.py",
+   "runtime": "software perspective XYZ / plane homographies / extruded side-wall quads → ffmpeg",
+   "input": "engine/projects/ww2_demo/v4_depth/display.json",
+   "does": [
+    "perspective dolly/orbit",
+    "raised country slab with vertical walls",
+    "height-dependent path projection",
+    "billboard text anchors",
+    "English display gate"
+   ],
+   "notes": "Implemented 16s Escobar study. Not a terrain/globe renderer; art direction awaits v4 user review."
+  },
+  {
+   "id": "production_policy",
+   "kind": "qa",
+   "status": "live",
+   "entry": "tools/production_policy.py",
+   "input": "display manifest JSON with language=en and texts dictionary",
+   "does": [
+    "Reject non-Latin on-screen letters and non-Western digits",
+    "Allow Arabic internal planning notes"
+   ],
+   "notes": "English detector checks writing system, not semantic language; human copy review still needed."
+  },
+  {
+   "id": "xyz_scene_runtime",
+   "kind": "shared-scene-runtime",
+   "status": "partial",
+   "entry": "engine/runtime/xyz_scene.py",
+   "optional_backend": "engine/runtime/blender_xyz.py",
+   "does": [
+    "Shared perspective camera / textured plane homography",
+    "Reusable lit geometry and oriented cylinders",
+    "Pillow depth-order preview",
+    "Cycles CPU rendering with bevels, shadows, noise materials"
+   ],
+   "limitations": [
+    "Not a measured terrain/globe renderer",
+    "Pillow painter ordering is not a Z-buffer",
+    "Cycles requires bpy and headless library bootstrap",
+    "Escobar film profile is not a universal script-to-film director"
+   ],
+   "profiles": [
+    "tools/escobar_hook30.py",
+    "tools/escobar_hook30_models.py"
+   ],
+   "dependencies": "bpy==4.2.23, pillow, numpy, imageio-ffmpeg; tools/bootstrap_bpy_headless.py"
+  },
+  {
+   "id": "shared_webgl_profile",
+   "kind": "shared-scene-runtime-and-capture",
+   "status": "live",
+   "entry": "tools/render_webgl_profile.mjs",
+   "runtime": "Three.js PBR + diffuse scene / real Z-buffer, perspective camera and dynamic contact shadows; headless Chromium; deterministic per-frame capture; film-specific scene.mjs/render.json profiles.",
+   "shared_stage": "engine/runtime/webgl_stage.mjs",
+   "shared_motion_example": "engine/runtime/traffic_motion.mjs — authored illustrative wave, NOT a calibrated traffic solver",
+   "gates": "style_contract.py + production_policy.py; declared policies, never artistic approval",
+   "mix": "tools/mix_webgl_profile.py, existing long_score.py/speech_pacing.py; parameters reside in profile",
+   "review": "tools/review_webgl_profile.py + encoded_review.py; actual MP4 half-second/subsecond evidence; inspection is separate",
+   "install": "tools/install_webgl_runtime.py EXTERNAL_CACHE; versions in engine/runtime/webgl_dependencies.json",
+   "implemented_profile": "engine/projects/phantom_traffic",
+   "limitations": [
+    "Tested on actual1659-frame,69.125s native1080p movie, including two frame-range authoring revisions, full audio mux and actual encoded review. This is one executed profile, NOT automatic exceptional-art or user approval.",
+    "Software headless rendering is not live playback; browser stage is an internal capture service.",
+    "No automatic natural-voice, traffic accuracy, exceptional-art or user-approval certification."
+   ]
+  }
+ ],
+ "scene_engines": [
+  {
+   "id": "board",
+   "kind": "scene-engine",
+   "status": "live",
+   "entry": "tools/engines/board_engine.html",
+   "api": [
+    "window.SCENE_CONFIG",
+    "window.ready",
+    "window.seek(t)"
+   ],
+   "does": [
+    "fit تلقائي للصورة الكاملة (بلا قص/إطار)",
+    "كتابة الاسم/التوقيع",
+    "silhouette/light trace",
+    "سؤال عالشاشة"
+   ],
+   "motions": [
+    "photo_fit_reveal",
+    "signature_trace",
+    "light_sweep_reveal",
+    "staggered_build",
+    "word_reveal_sync",
+    "impact_ring"
+   ],
+   "config_keys": [
+    "engine",
+    "id",
+    "board",
+    "hero",
+    "slots",
+    "text",
+    "hero_img",
+    "sil_img",
+    "rim_img",
+    "signature",
+    "timing",
+    "audio"
+   ],
+   "example": "config/escobar_scene01.json"
+  },
+  {
+   "id": "geo",
+   "kind": "scene-engine",
+   "status": "live",
+   "entry": "tools/engines/geo_engine.html",
+   "api": [
+    "window.SCENE_CONFIG",
+    "window.ready",
+    "window.seek(t)"
+   ],
+   "does": [
+    "نقطة/قوس/سهم عالخريطة",
+    "زوم على المصدر",
+    "متابعة رأس السهم",
+    "الوصول للوجهة"
+   ],
+   "motions": [
+    "map_descent",
+    "source_to_target",
+    "follow_arrow",
+    "zoom_through"
+   ],
+   "rules": [
+    "كل نقطة عالبَرّ (on_land) — ممنوع بالسالب"
+   ],
+   "example": "config/geo_scene01.json"
+  },
+  {
+   "id": "story",
+   "kind": "scene-engine",
+   "status": "live",
+   "entry": "tools/engines/story_engine.html",
+   "api": [
+    "window.SCENE_CONFIG",
+    "window.ready",
+    "window.seek(t)"
+   ],
+   "does": [
+    "تأسيس المكان",
+    "تتبع (tracking)",
+    "عدّاد قيمة + صدمة",
+    "walkaway/pullback"
+   ],
+   "motions": [
+    "push_in_reveal",
+    "pull_back_context",
+    "truck_follow",
+    "dolly_follow",
+    "counter_countup",
+    "countup_impact",
+    "anticipation_release"
+   ],
+   "example": "config/bank_scene01.json"
+  },
+  {
+   "id": "docengine",
+   "kind": "scene-engine",
+   "status": "partial",
+   "entry": "engine/",
+   "runtime": "Node + Three.js + DOM composite (runtime/scene.html)",
+   "api": [
+    "__setTime(t)",
+    "__measure()"
+   ],
+   "does": [
+    "محلّل مشاهد JSON → جدولة كاملة",
+    "تايبوغرافي متزامن مع الكلام (word-sync)",
+    "كاميرا keyframes (smoothstep)",
+    "Gates A/B: أصول + تركيب"
+   ],
+   "gates": {
+    "A": "live",
+    "B": "live",
+    "C": "pending",
+    "D": "pending",
+    "E": "pending"
+   },
+   "schema": "projects/<id>/scenes/*.json — strategy/layers/camera/phrases/atmosphere/fadeIn",
+   "example": "engine/projects/escobar/scenes/scene001.json",
+   "deps": "npm i في engine/ (three@0.186 + puppeteer-core + @sparticuz/chromium)",
+   "notes": "المشروع الوحيد المبني: projects/escobar (scene001 = PASS_WITH_WARNINGS من Gate B)"
+  }
+ ],
+ "audio": [
+  {
+   "id": "synth_sfx_v3",
+   "kind": "sfx-generator",
+   "status": "live",
+   "entry": "tools/synth_sfx_v3.py",
+   "runtime": "numpy → wav 48k",
+   "primitives": [
+    "swoosh",
+    "landing",
+    "pen_stroke",
+    "pen_flourish",
+    "type_key",
+    "felt_thud",
+    "shimmer",
+    "paper_breath"
+   ],
+   "rules": [
+    "SFX تحت الجو (≈ −7dB مقابل الطبعة القديمة)",
+    "بلا صدى مزعج",
+    "ما في SFX عند كل قطع"
+   ],
+   "outputs": "demo1/render_proto/*.wav (نسخ سابقة)"
+  },
+  {
+   "id": "sound_bank",
+   "kind": "sound-mapping",
+   "status": "live",
+   "entry": "engine/database/sound_bank.json",
+   "does": [
+    "خريطة المزاج → موسيقى (مقام/سرعة/آلات/شدة)",
+    "خريطة الحدث → SFX + قواعد مزج",
+    "قواعد الصمت (قبل بطاقات الفصول)"
+   ]
+  }
+ ],
+ "analysis": [
+  {
+   "id": "reference_motion",
+   "kind": "reference-analysis",
+   "status": "live",
+   "entry": "tools/reference_motion.py",
+   "does": [
+    "قطع/أسود/تجمّد/صمت بالملي",
+    "قياسات بان/زووم/دوران لكل 0.5ث",
+    "مقاطع مراجعة 15fps لكل حدث",
+    "فيلمستريب 2fps + dossier"
+   ],
+   "selftest": "PASS",
+   "perf": "4.5× realtime @1080p (width 384)"
+  },
+  {
+   "id": "part_study",
+   "kind": "method",
+   "status": "live",
+   "entry": "tools/part_study.py",
+   "does": [
+    "تقسيم مرجع طويل لأجزاء 10د بتداخل 1ث",
+    "دمج ماستر (dossier+metrics+strips+تفكيك)",
+    "فحص كل جزء"
+   ],
+   "validated": "47=47 قطع مقابل التحليل الكامل (WW2 P1 0-120s)"
+  },
+  {
+   "id": "study_audit",
+   "kind": "coverage-guard",
+   "status": "live",
+   "entry": "tools/study_audit.py",
+   "does": [
+    "دفتر تغطية COVERAGE.md",
+    "فراغات زمنية + أحداث بلا صف → FAIL",
+    "فحص جزء بـ--range"
+   ],
+   "selftest": "6/6 PASS"
+  },
+  {
+   "id": "sheet_slice_combo",
+   "kind": "reading-tools",
+   "status": "live",
+   "entry": "tools/sheet_slice.py + tools/sheet_combo.py",
+   "does": [
+    "قص نافذة زمنية من صفحة فيلمستريب مكبّرة",
+    "تجميع نواوذ بصفحة مراجعة"
+   ]
+  },
+  {
+   "id": "reference_ingest",
+   "kind": "reference-analysis",
+   "status": "partial",
+   "entry": "tools/reference_ingest.py",
+   "notes": "نسخة أولية أقدم — استعمل reference_motion.py بدلًا عنها"
+  }
+ ],
+ "planning": [
+  {
+   "id": "cocktail",
+   "kind": "idea-mixer",
+   "status": "live",
+   "entry": "tools/cocktail.py",
+   "does": [
+    "بحث بالنية/المجال ببنك المكوّنات",
+    "بناء خطة كوكتيل من نبضات",
+    "فحص تنوّع المصادر (تحذير >60%)"
+   ],
+   "bank": "engine/database/technique_db.json (29 كرت)"
+  },
+  {
+   "id": "director",
+   "kind": "script-planner",
+   "status": "live",
+   "entry": "tools/director.py",
+   "does": [
+    "سكربت → خطة فيديو كاملة لقطة-بلقطة",
+    "تقنية + موشن + صوت + استمرارية لكل جملة",
+    "تجميع بلوكات «لقطة وحدة» لمشاهد متعددة",
+    "ميزانية ابتكار مقيّدة + فحص PASS/FAIL"
+   ],
+   "inputs": "engine/database/scripts/*.json",
+   "outputs": "PLAN.md + plan.json"
+  }
+ ],
+ "banks_and_rules": [
+  {
+   "id": "technique_db",
+   "path": "engine/database/technique_db.json",
+   "count": 29,
+   "note": "كل كرت بدليله (فيديو@توقيت) — ما بينضاف كرت بلا مشاهدة"
+  },
+  {
+   "id": "motion_vocabulary",
+   "path": "11_MOTION_VOCABULARY.md",
+   "note": "أسماء الموشن للاستدعاء (push_in_reveal، map_descent، match_cut_shape…)"
+  },
+  {
+   "id": "motion_encyclopedia",
+   "path": "12_PRO_MOTION_ENCYCLOPEDIA.md",
+   "note": "عائلات الحركة والوصفات"
+  },
+  {
+   "id": "continuity_model",
+   "path": "engine/CONTINUITY_MODEL.md",
+   "note": "خيوط الترابط + قواعد اللقطة الواحدة متعددة المشاهد"
+  },
+  {
+   "id": "agent_brief",
+   "path": "engine/AGENT_BRIEF.md",
+   "note": "يقرأه الأيجنت الجديد أول شي"
+  }
+ ]
+}

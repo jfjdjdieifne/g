@@ -1,0 +1,112 @@
+{
+  "schema": 1,
+  "release": "studio-2026-10-16-v1",
+  "scope": "Historical local audio moved out of current Git/source-kit payload into verified external recovery. Working files kept untouched. Approved voice03 reference remains in Git. The final Titan V2 editable recovery is NOT provided by this audio pack.",
+  "files": [
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/01.flac",
+      "bytes": 1326807,
+      "sha256": "f90427a699a247e789dd2f8e0036176c683a23751654b7ec31bf4b3843c28412",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/02.flac",
+      "bytes": 1232089,
+      "sha256": "fcd7fe882bd52bbeff9358555a35efc703b9819cd6f13430059a16ea38dbb38f",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/03.flac",
+      "bytes": 1294938,
+      "sha256": "523fe5ef8987c39a503c29b4da519b3af64a5fae428cd2d4d3178cf651d3b47b",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/04.flac",
+      "bytes": 1313601,
+      "sha256": "9fb0716d561b4914259f9fb219a152704657894c934639ffc4ccdc02b3832ed5",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/01_raw.wav",
+      "bytes": 3585730,
+      "sha256": "37d6978add782be33a32c341f6927ee9295b211b6232f0bec90f69631b6f6b65",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/02_raw.wav",
+      "bytes": 3293494,
+      "sha256": "ba0142fa39e728cca9be619826bbb657f8618a48ee48fe26b4178535ee90d7fd",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/03_raw.wav",
+      "bytes": 3262146,
+      "sha256": "1b3d01bb74d9ac3c7293cba9e5a5a747b5617307055eb9edec51b532abf64255",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/04_raw.wav",
+      "bytes": 3610702,
+      "sha256": "42dca6af0b50e72d3829e79650d8d026913a26ff750c68df5456b154daa6d9f8",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/01.flac",
+      "bytes": 947057,
+      "sha256": "7fa2594368914e39b177afa3374adbb28013bbcbcb21030193e401566f0f211c",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/02.flac",
+      "bytes": 792794,
+      "sha256": "b01c782753e110bf8f7093a151adaa93e3bc698dabad1937f65af8a0fda986ec",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/03.flac",
+      "bytes": 1021141,
+      "sha256": "ae49c874b4306cc2cddd51e2f7dbf82be70f39f352f2d92dd57b93e52df7ede1",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/01_raw.wav",
+      "bytes": 4895030,
+      "sha256": "ddfc327573c1086dbc86d84b525a8632eaaf02bf30c59acc9cc40bc1bb4bf3d4",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/02_raw.wav",
+      "bytes": 5030594,
+      "sha256": "c7fb55ab2977debd4e0add150e2afec46bac002edc56fbf2fe6ca401023fe90d",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/03_raw.wav",
+      "bytes": 5387342,
+      "sha256": "fdfa7207a00a6cf735fc8fe9666d78b958f2bb234009922e9e4007564a9a8fd2",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/04_raw.wav",
+      "bytes": 5891778,
+      "sha256": "ebde3917c906dadac48b3ed4bbcea44d96e3244b8b638d416d4cc1cefe596e83",
+      "external_asset_key": "local_audio_recovery_2026_10_16",
+      "role": "Historical untouched native/derived audio; approved status remains scoped in REFERENCE_INDEX/profile."
+    }
+  ]
+}

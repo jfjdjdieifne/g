@@ -1,0 +1,22 @@
+{
+  "language": "en",
+  "texts": {
+    "title": "PABLO ESCOBAR",
+    "wealth": "In nineteen eighty-seven, Forbes put Pablo Escobar on its billionaire list. A cocaine trafficker, listed alongside the world's richest people.",
+    "social": "But in parts of Medellin, there was another picture of him. He paid for homes and football fields. People had reasons to be grateful. That support mattered.",
+    "questions": "How does someone selling cocaine become powerful enough to challenge a government? And how does he convince some of the people living with that violence to see him as a hero?",
+    "close": "We're going back to Medellin, before the name took over the story.",
+    "name_host": "Pablo Escobar",
+    "name_guest": "Pablo Escobar",
+    "ship": "I mean, not just a little kilo here, a kilo there, but planeloads, shiploads.",
+    "wanted": "the most wanted man in the Western Hemisphere",
+    "fear": "He didn't really invent anything, but he had the gift for organization and instilling fear.",
+    "source_credits": "Image: Semana 1983  /  Audio: Charlie Rose 1992; tv; tv; cover; turn; entry; Semana  /  1983 photograph; entry_name; entry_close; congress_audio; Semana  /  1983 photograph; housing; football; housing_close; congress; tv; Image: Forbes 1987  /  Audio: Charlie Rose 1992; Semana  /  1983 photograph; congress; football_close; housing; city; The Guardian  /  archive webpage name only; El Pais  /  2021 article headline; title"
+  },
+  "design": {
+    "unit_of_design": "scene",
+    "generic_popups": [],
+    "claims_3d": false,
+    "method": "Shared XYZ/photo-depth camera, original-pixel2.5D plus document/page turn. Not surveyed3D or recorded motion. Real modern headline-word pixels, fixed scale/ink anchor, editorial highlight. Default captions OFF."
+  }
+}

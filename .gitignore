@@ -1,0 +1,20 @@
+google_drive/
+node_modules/
+__pycache__/
+*.pyc
+build_scratch/
+
+# Research image downloads; only vetted selected assets are vendored.
+/image-search/
+
+# Disposable production dependencies/renders/recovery downloads (keep in Drive).
+/build/
+/.venv/
+/studio/jobs/*/scratch/
+/studio/jobs/*/downloads/
+/studio/jobs/*/renders/
+
+# New raw/derived film audio belongs in versioned Drive recovery; existing tracked
+# historical assets remain untouched. Approved small voice reference is kept in Git.
+/youtube_documentary/engine/projects/*/raw_voice/
+/youtube_documentary/engine/projects/*/narration/*.flac

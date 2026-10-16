@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "release": "studio-2026-10-16-v1",
+  "updated": "2026-10-16",
+  "project": "English Documentary & Explainer Studio",
+  "authority": {
+    "entry": "START_HERE.md",
+    "user_rules": "studio/USER_RULES.md",
+    "current_state": "studio/CURRENT_STATE.json",
+    "styles": "youtube_documentary/engine/STYLE_REGISTRY.json",
+    "approvals": "studio/REFERENCE_INDEX.json",
+    "external_assets": "studio/ASSET_REGISTRY.json",
+    "file_catalog": "studio/FILE_CATALOG.json",
+    "operator_guide": "studio/OPERATIONS.md",
+    "external_dependency_manifest": "studio/EXTERNAL_DEPENDENCIES.json"
+  },
+  "precedence": [
+    "platform/system safety and workspace restrictions",
+    "latest explicit user instruction",
+    "studio/USER_RULES.md and the current job brief",
+    "studio/CURRENT_STATE.json for status; REFERENCE_INDEX.json for approvals",
+    "selected style contract and shared production policy",
+    "project-specific technical plans",
+    "historical guides and old handoffs: background only"
+  ],
+  "storage": {
+    "github": "Current source, rules, project profiles, registries, small approved voice reference; version-controlled history.",
+    "drive": "Large original media, finished films, raw voice, review evidence and versioned recovery ZIPs. Navigation/boot kit here mirrors this release, not an independent policy.",
+    "scratch": "Temporary downloads, caches and renders are disposable. No stage is durably saved until its source and media checkpoint are published and independently verified."
+  },
+  "distribution": {
+    "repository": "jfjdjdieifne/g",
+    "published_branch": "arena/b2ef2032-g",
+    "entry_url": "https://github.com/jfjdjdieifne/g/blob/arena/b2ef2032-g/START_HERE.md",
+    "default_branch_audit": "main was not the current production branch at this audit. Do not assume a default clone is current. Respect any platform-locked working branch; import reviewed source without switching to a forbidden branch.",
+    "drive_home_id": "1wyEvNfgln5bvlquVQwKmhl2N0xEQepNp"
+  },
+  "architecture": {
+    "shared_engine": "youtube_documentary/engine/runtime",
+    "film_profiles": "youtube_documentary/engine/projects/<slug>",
+    "shared_tools": "youtube_documentary/tools",
+    "job_records": "studio/jobs/<slug>",
+    "rule": "Extend the common engine; one profile per film, never clone an engine per topic/style."
+  },
+  "not_guaranteed": [
+    "Identical artistic judgment across agents",
+    "Portable executable voice identity from a local voice number",
+    "Commercial rights from an attribution or government-hosted source",
+    "Availability of files referenced only by old /home/user/build paths"
+  ]
+}

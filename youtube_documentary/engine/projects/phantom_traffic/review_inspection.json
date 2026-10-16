@@ -1,0 +1,169 @@
+{
+  "schema": "encoded-visual-inspection/1",
+  "date": "2026-10-16",
+  "video_sha256": "27d3d24f3e41d631a5815ce99d42434a63f1d93ed15105738e4fc4f4daa5c935",
+  "visual_inspection_status": "inspected",
+  "method": "Agent visually opened and inspected every chronological half-second sheet, every recorded join/motion sheet, and three native1920x1080 encoded frames. Not a real-time full-playback or human-listening claim.",
+  "half_second_samples": 139,
+  "join_samples": 51,
+  "motion_samples": 225,
+  "unique_encoded_frames_in_sample_groups": 374,
+  "full_decode_frames": 1659,
+  "sheets_opened": 22,
+  "native_frames_opened": [
+    336,
+    888,
+    1188
+  ],
+  "every_half_second_without_skips": true,
+  "manual_listening_claimed": false,
+  "real_time_playback_claimed": false,
+  "user_approval": false,
+  "observations": [
+    {
+      "range": [
+        0,
+        11.836
+      ],
+      "finding": "Opening selected gold car starts inside an actual slow cluster and emerges into open road; camera retreat reveals the same unobstructed circuit. No unrelated archive or freeze-card."
+    },
+    {
+      "range": [
+        11.836,
+        24.3
+      ],
+      "finding": "Direct attention cut to gold car makes setup reset an intentional shot change. Camera follows first gold, then the two real followers; increasing delayed responses and pullout stay in one road world. Patch frames285\u2013306 joins inspected."
+    },
+    {
+      "range": [
+        24.3,
+        39.6
+      ],
+      "finding": "Forward car arrow and backward patch arrow point oppositely. Closer boundary view shows new cars joining and old cars leaving, gold identity exits the cluster. Clipped CARS label during the return was found and corrected; final frames876\u2013915 and37sec native inspected."
+    },
+    {
+      "range": [
+        39.6,
+        44.1
+      ],
+      "finding": "Spoken simplified/not-prediction statement sits on the same moving ring model, not an invented scientific chart."
+    },
+    {
+      "range": [
+        44.1,
+        60.44
+      ],
+      "finding": "Motivated cut to open-road variant. Gold/leader separation and bracket span the real available gap; lead perturbation versus gentler selected response remains spatially readable. Caveat text keeps the explanation from claiming a universal cure."
+    },
+    {
+      "range": [
+        60.44,
+        69.125
+      ],
+      "finding": "Clean single return cut to gold, motivated pullout to the original pattern, selective conclusion and complete smooth fade. No one-frame stray scene or missing final hold observed."
+    }
+  ],
+  "secondary_note": "Stylized explanatory geometry, not photoreal evidence. Small secondary animation footer is not a running-caption track; a full spoken model caveat is also present.",
+  "evidence_files": [
+    {
+      "name": "half_sheet_1.jpg",
+      "sha256": "bc56e9ae4f1296473df94f981da453b2b6860ee1eb3d9a1c1b9d5d2b9d17d42d"
+    },
+    {
+      "name": "half_sheet_2.jpg",
+      "sha256": "f84ff629f94bce82380d66f434cc6b49e55f18e23c3c92069644bb87f4b1805b"
+    },
+    {
+      "name": "half_sheet_3.jpg",
+      "sha256": "b01b8f8d73a33522b68766e572d62868fcca77bd185e77e136009dae364b0c53"
+    },
+    {
+      "name": "half_sheet_4.jpg",
+      "sha256": "3fd1a5c3a29ef25da5bb51cfb74f500cac7f0c83e12a0d49a2a4ca3897e680d8"
+    },
+    {
+      "name": "half_sheet_5.jpg",
+      "sha256": "a37f89b37e108b05a605de65e76380e2c80a127e2298e2c7ef7b796270c12da5"
+    },
+    {
+      "name": "half_sheet_6.jpg",
+      "sha256": "ce132b8d3c4adae60dcd70692fea6eb74b7dbc63cbee680212c6ec7e09ee4dde"
+    },
+    {
+      "name": "half_sheet_7.jpg",
+      "sha256": "3f62377c43de39a5ec99d3e3d511a3c3b9f160be705de2c2795c4cf4dcf07365"
+    },
+    {
+      "name": "join_sheet_1.jpg",
+      "sha256": "8c72b3d878b901213d58530a778e83d940a691247fc716236667afdb15007137"
+    },
+    {
+      "name": "join_sheet_2.jpg",
+      "sha256": "7c2df41d672b59c8ebb960f88fd6ef46aa08bf5970fc6d64d32b2920e5c15613"
+    },
+    {
+      "name": "join_sheet_3.jpg",
+      "sha256": "3949b38ee98228221809bd27afae1287039a72d00f9251991374c000bc7d4915"
+    },
+    {
+      "name": "motion_sheet_1.jpg",
+      "sha256": "9ae420dab7d0d79b25392e17b6811a5197c829dd3cb2509eb97b55586ad65da2"
+    },
+    {
+      "name": "motion_sheet_10.jpg",
+      "sha256": "2651f218685e69346695b494a8f6d9177b70302423c2702a268b23c69f13d164"
+    },
+    {
+      "name": "motion_sheet_11.jpg",
+      "sha256": "a042b78f2a40fb77da839e9646aa5fc8bc1575b4960054c0197111b43b677a6c"
+    },
+    {
+      "name": "motion_sheet_12.jpg",
+      "sha256": "c81aeae712ba4a5de09566433c515954f830b77e36115e9cd1ecead824e86243"
+    },
+    {
+      "name": "motion_sheet_2.jpg",
+      "sha256": "f74dc35ac177d5e5b273295e4ad9dd03d9e4574807e02ba6495f0846a7e2acf1"
+    },
+    {
+      "name": "motion_sheet_3.jpg",
+      "sha256": "895dff8661fceb169e42c3b15f5c4ef5ea51cd7b1bf4bd86c7b2cc51626f6fc5"
+    },
+    {
+      "name": "motion_sheet_4.jpg",
+      "sha256": "38f5c04e843c5b5d70d857f65e323f21ccdaa0e9f59bf75b64c6aa878bcf272a"
+    },
+    {
+      "name": "motion_sheet_5.jpg",
+      "sha256": "6710cf105fcf385bd59637c9a259f5a26c1159418b002ca0c8a418f5f6ea8ddb"
+    },
+    {
+      "name": "motion_sheet_6.jpg",
+      "sha256": "44b9469ea1151e2f36955aa07bb26eab2860c297ba7b38091ac8cfcf65c85021"
+    },
+    {
+      "name": "motion_sheet_7.jpg",
+      "sha256": "9e1b012c3c33dbb9230224221a3229d7fbe97908c80f63d7e6fe39d834898293"
+    },
+    {
+      "name": "motion_sheet_8.jpg",
+      "sha256": "9932fa7287735a7b564f51f977a6149b3971496876204a86967c300af6495532"
+    },
+    {
+      "name": "motion_sheet_9.jpg",
+      "sha256": "1125cc23cee7891565bb22cd7353b88ac1011409209c5415450368582abc162b"
+    },
+    {
+      "name": "native_0336.png",
+      "sha256": "7a98d7d0d1adc01a904def1530cdefbdc31154ea5ee9dafbb2a7e9b45970cc96"
+    },
+    {
+      "name": "native_0888.png",
+      "sha256": "c439588479045394772c85224d579acf1facb78ab0c69ef38896b2f3ba19b83d"
+    },
+    {
+      "name": "native_1188.png",
+      "sha256": "1c047980c1fb09603432b6c25a4236f47f65ba6e3a19a8eafe56aeeae2c36c6a"
+    }
+  ]
+}

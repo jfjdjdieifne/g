@@ -1,0 +1,30 @@
+[
+  {
+    "file": "forbes_cover.png",
+    "url": "https://blogs-images.forbes.com/halahtouryalai/files/2015/09/cover3.png",
+    "content_type": "image/png",
+    "resolved_url": "https://blogs-images.forbes.com/halahtouryalai/files/2015/09/cover3.png",
+    "bytes": 850171
+  },
+  {
+    "file": "forbes_entry.png",
+    "url": "https://blogs-images.forbes.com/halahtouryalai/files/2015/09/escobar-write-up1.png",
+    "content_type": "image/png",
+    "resolved_url": "https://blogs-images.forbes.com/halahtouryalai/files/2015/09/escobar-write-up1.png",
+    "bytes": 1123356
+  },
+  {
+    "file": "moravia.jpg",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0962629825001763-gr3.jpg",
+    "content_type": "image/jpeg",
+    "resolved_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0962629825001763-gr3.jpg",
+    "bytes": 69111
+  },
+  {
+    "file": "semana.jpg",
+    "url": "https://ars.els-cdn.com/content/image/1-s2.0-S0962629825001763-gr4.jpg",
+    "content_type": "image/jpeg",
+    "resolved_url": "https://ars.els-cdn.com/content/image/1-s2.0-S0962629825001763-gr4.jpg",
+    "bytes": 178243
+  }
+]

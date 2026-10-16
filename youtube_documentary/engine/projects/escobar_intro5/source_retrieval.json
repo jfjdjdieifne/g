@@ -1,0 +1,119 @@
+{
+  "selected_run": 38788051284,
+  "selected_object_sha": "171e655351917365fc0be0549f71de00734a8e2f",
+  "industry_run": 38786222136,
+  "industry_object_sha": "21abbc1b9115d7d260829261a15ac2db2cc8c5ef",
+  "primary_run": 38785446503,
+  "primary_object_sha": "e851884bdf2b825d73e3a8fc8a8001655450df5d",
+  "helper": "tools/archive_research_fetch.py",
+  "selected_rows": [
+    {
+      "id": "pbs_escobar",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_offset_seconds": 882,
+      "bounded_seconds": 6,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "pbs_cash",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_offset_seconds": 149.95,
+      "bounded_seconds": 3.99,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "pbs_max",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_offset_seconds": 216.9,
+      "bounded_seconds": 3.9,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "pbs_estate",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_offset_seconds": 778,
+      "bounded_seconds": 5,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "pbs_aircraft",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_offset_seconds": 926,
+      "bounded_seconds": 7,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "pbs_takeoff",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_offset_seconds": 943,
+      "bounded_seconds": 3,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "pbs_load",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_offset_seconds": 1118,
+      "bounded_seconds": 12,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "pbs_interdiction",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_offset_seconds": 1138,
+      "bounded_seconds": 13,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "pbs_night",
+      "source": "https://www.pbs.org/video/the-godfather-of-cocaine-ongrgz/",
+      "source_offset_seconds": 1183,
+      "bounded_seconds": 3,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "bbc_housing",
+      "source": "https://www.bbc.com/news/av/world-25158010",
+      "source_offset_seconds": 102.6,
+      "bounded_seconds": 2.8,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "aj_aftermath",
+      "source": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust",
+      "source_offset_seconds": 14,
+      "bounded_seconds": 5,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    },
+    {
+      "id": "aj_mural",
+      "source": "https://www.aljazeera.com/news/2018/12/2/pablo-escobars-legacy-25-years-on-tributes-and-disgust",
+      "source_offset_seconds": 70,
+      "bounded_seconds": 4,
+      "rights_cleared": false,
+      "manual_viewing_or_listening": false,
+      "download_returncode": 0
+    }
+  ]
+}

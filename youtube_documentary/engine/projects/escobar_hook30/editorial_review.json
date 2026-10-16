@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-15",
+  "verdict": "rejected_by_user",
+  "continuity": "User says linking is good; preserve this learning, not the failed visuals.",
+  "narrator": "voice-02 approval remains; no new audition requested.",
+  "rejected": [
+    "Unsuitable still-image selection and presentation",
+    "Quotation slides in place of actual news and talking presenters",
+    "Narrator silences over slides that carry no audiovisual story",
+    "Persistent/decorative short-word captions",
+    "Overall editing and visual art direction not professional"
+  ],
+  "partial_positive": "Prison model is the best visual part and shows progress, but does not read clearly enough as a prison and is not yet professional. NOT approval of the model or whole cut.",
+  "next_action": "Revision2 actual MP4 rendered, sampled encoded review complete and delivered for user judgment. Read revision2 records. Do not rerender or redeliver rejected v1; legacy production_blocked stays true.",
+  "production_blocked": true,
+  "revision_video_created": true,
+  "archive_research_evidence": "archive_research/official_source_evidence.json",
+  "active_revision": "revision2/delivery.json"
+}

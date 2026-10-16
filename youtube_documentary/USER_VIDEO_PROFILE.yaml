@@ -1,0 +1,10 @@
+# Compatibility pointer, not a second preference database.
+profile_version: 3
+updated: "2026-10-16"
+authoritative_rules: "../studio/USER_RULES.md"
+authoritative_state: "../studio/CURRENT_STATE.json"
+authoritative_approvals: "../studio/REFERENCE_INDEX.json"
+style_registry: "engine/STYLE_REGISTRY.json"
+voice_default: "engine/DEFAULT_VOICE.json"
+legacy_snapshot: "../studio/history/pre_organization/youtube_documentary/USER_VIDEO_PROFILE.yaml"
+precedence: "Latest explicit user instruction > current authority > historical guides"

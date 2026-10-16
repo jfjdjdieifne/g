@@ -1,0 +1,139 @@
+{
+  "schema": "film-styles/1",
+  "updated": "2026-10-16",
+  "default_style": null,
+  "selection": "Resolve an explicit user name/alias. If unspecified, ask once or propose a style; never silently reuse the last film.",
+  "shared_engine": true,
+  "guide": "engine/STYLE_GUIDE.md",
+  "styles": [
+    {
+      "id": "pure_documentary",
+      "name_ar": "وثائقي بحت",
+      "aliases": [
+        "وثائقي بحت",
+        "بستايل وثائقي بحت"
+      ],
+      "status": "user_approved_film_reference",
+      "visual_driver": "archive",
+      "archive_policy": "required",
+      "allowed_screen_kinds": [
+        "archive_video",
+        "interview",
+        "real_photo",
+        "press_scan",
+        "press_webpage",
+        "typography"
+      ],
+      "rule": "Authentic footage/photos/documents carry the story. No generated historical imagery, original models or explanatory graphics by default. Source/title/date typography is supporting, not a replacement for material. Original-pixel reframing/depth is allowed when honest and motivated.",
+      "reference": {
+        "project": "engine/projects/escobar_full",
+        "drive_id": "1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw",
+        "sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14",
+        "approved_on": "2026-10-16",
+        "scope": "User praised the full film and named its authentic-material approach. The delivered reference contains three disclosed map movements and one original-pixel2.5D photo: do NOT claim it was literally100% unmodified archive. For NEW pure-documentary work, explanatory models/maps are opt-in, not inferred from those exceptions."
+      }
+    },
+    {
+      "id": "documentary_explainer",
+      "name_ar": "وثائقي مع شرح",
+      "aliases": [
+        "وثائقي مع شرح",
+        "وثائقي شرحي"
+      ],
+      "status": "requested_direction_not_yet_approved_finished_reference",
+      "visual_driver": "mixed",
+      "archive_policy": "required",
+      "allowed_screen_kinds": [
+        "archive_video",
+        "interview",
+        "real_photo",
+        "press_scan",
+        "press_webpage",
+        "original_model",
+        "graphic",
+        "typography",
+        "generated_from_photo",
+        "generated_illustration"
+      ],
+      "rule": "Archive establishes people/events/evidence; authored explanatory scenes reveal mechanisms, geography, scale and causal relations. Handoffs are motivated by the question, not a fixed alternating template or percentage."
+    },
+    {
+      "id": "pure_explainer",
+      "name_ar": "شرحي بحت",
+      "aliases": [
+        "شرحي بحت",
+        "شرح بحت"
+      ],
+      "status": "qualified_positive_execution_feedback_but_first_topic_rejected",
+      "visual_driver": "explanation",
+      "archive_policy": "forbidden_on_screen",
+      "allowed_screen_kinds": [
+        "original_model",
+        "graphic",
+        "typography",
+        "generated_from_photo",
+        "generated_illustration"
+      ],
+      "rule": "All on-screen story material is authored explanation. Research and real references remain mandatory for factual accuracy; they are not automatically screen archive. Connected worlds, meaningful transformations and camera navigation; no PowerPoint, decorative2D or fake3D. The board-with-images navigation idea is liked, not an approved finished pure-explainer film.",
+      "demonstration": {
+        "project": "engine/projects/phantom_traffic",
+        "title": "The Jam With No Blockage",
+        "drive_id": "1qzcn1eHS0z8dVK1tbltClRklZb8G24Bd",
+        "sha256": "27d3d24f3e41d631a5815ce99d42434a63f1d93ed15105738e4fc4f4daa5c935",
+        "duration": 69.125,
+        "approved_by_user": false,
+        "scope": "First requested original pure-explainer demonstration, not an approved benchmark or universal visual template.",
+        "user_feedback_verbatim": "حلو بس الفكره سخيفه بدي افكار اقوى ومشوقه وبتجيب مشاهدات عملي فيديو هيك",
+        "feedback_scope": "Qualified positive wording; explicit weak-topic rejection. Not full approval or an endorsed topic/benchmark."
+      },
+      "historical_delivered_example": {
+        "project": "engine/projects/black_hole",
+        "title": "What If You Fell Into a Black Hole?",
+        "status": "delivered_awaiting_user_review",
+        "approved_by_user": false,
+        "user_approval": false,
+        "delivery": "engine/projects/black_hole/delivery.json",
+        "film_url": "https://drive.google.com/file/d/14Iew5HQ8gxORHRgA3pviQj1dFvBEpbNx/view"
+      }
+    },
+    {
+      "id": "explainer_with_archive",
+      "name_ar": "شرحي مع أرشيف قليل",
+      "aliases": [
+        "شرحي مع أرشيف قليل",
+        "شرحي كتير وبقلبو ارشفة قليلة",
+        "شرحي مع أرشفة قليلة"
+      ],
+      "status": "requested_direction_not_yet_approved_finished_reference",
+      "visual_driver": "explanation",
+      "archive_policy": "selective_required",
+      "allowed_screen_kinds": [
+        "archive_video",
+        "interview",
+        "real_photo",
+        "press_scan",
+        "press_webpage",
+        "original_model",
+        "graphic",
+        "typography",
+        "generated_from_photo",
+        "generated_illustration"
+      ],
+      "rule": "Authored explanation carries the argument; occasional authentic inserts add evidence, original voice or human stakes, then return to the same explanatory world. Archive is not filler and must have a stated insert_reason. No invented numeric archive quota."
+    }
+  ],
+  "universal_rules": [
+    "Select strong, intriguing topics with a concrete curiosity gap, stakes and an earned payoff. User explicitly rejected a polished but weak traffic topic. Audience appeal is a creative aim, never a promise of view counts.",
+    "English narration and authored display; Arabic conversation/internal notes.",
+    "Natural explanatory YouTuber delivery, not ceremonial prose or fake casual filler. Preserve approved voice identity/raw takes; pace is film-specific, not an obligatory179WPM.",
+    "No fake historical evidence, speakers, quotes, signs or archive. No claim of viewing/listening without doing it.",
+    "Meaning determines visual/camera/motion/depth/sound; no automatic slideshow, obligatory3D, permanent subtitles or decorative keyword spam.",
+    "No arbitrary asset-count/medium-ratio quota. Tests and declarations cannot certify professional art direction.",
+    "Inspect actual final encoded scenes, every0.5s sample and finer movement/joins, fix foundations, preserve project/source/output provenance.",
+    "User approval, technical verification, actual review and publication rights are distinct.",
+    "Permanently approved voice03 identity AND clean native extended performance for new films; DEFAULT_VOICE.json. Local voice numbers are not universal identifiers; preserve historical films and do not silently substitute/re-audition."
+  ],
+  "user_instruction_source": "engine/STYLE_USER_DIRECTION_2026-10-16.md",
+  "current_state_authority": "../../studio/CURRENT_STATE.json",
+  "approval_authority": "../../studio/REFERENCE_INDEX.json"
+}

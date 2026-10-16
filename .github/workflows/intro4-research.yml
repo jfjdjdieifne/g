@@ -1,0 +1,70 @@
+name: Intro4 readable press and optional original name-bite research
+on:
+  push:
+    branches: [arena/b2ef2032-g]
+    paths: [.github/workflows/intro4-research.yml]
+permissions:
+  contents: write
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Inspect public pages without removing overlays or bypassing access controls
+        run: |
+          python3 -m pip install -q playwright
+          mkdir -p /tmp/intro4
+          python3 - <<'PY'
+          from playwright.sync_api import sync_playwright
+          from pathlib import Path
+          import json
+          root=Path('/tmp/intro4');rows=[]
+          pages=[('elpais','https://english.elpais.com/usa/2021-12-24/pablo-escobar-unseen-portraits-of-a-drug-lord.html')]
+          with sync_playwright() as p:
+            browser=p.chromium.launch(channel='chrome',args=['--no-sandbox'])
+            for id,url in pages:
+              row={'id':id,'url':url,'method':'Unmodified public browser rendering, no overlay removal, no login or paywall bypass','pixel_scale':2}
+              try:
+                page=browser.new_page(viewport={'width':1600,'height':1100},device_scale_factor=2)
+                page.goto(url,wait_until='domcontentloaded',timeout=45000);page.wait_for_timeout(4500)
+                # Ordinary public free-browsing consent button, never DOM/CSS removal.
+                import re
+                for frame in page.frames:
+                  try:
+                    button=frame.get_by_role('button',name=re.compile('accept and continue',re.I))
+                    if button.count() and button.first.is_visible():
+                      button.first.click(timeout=4000);row['consent_action']='Clicked public ACCEPT AND CONTINUE in anonymous browser';break
+                  except Exception:pass
+                page.wait_for_timeout(2500)
+                h=page.locator('h1').first;h.scroll_into_view_if_needed(timeout=10000)
+                row['title']=h.inner_text();row['name_box_css']=h.evaluate('''el=>{const walk=document.createTreeWalker(el,NodeFilter.SHOW_TEXT);let nodes=[],n,all='';while(n=walk.nextNode()){nodes.push([n,all.length]);all+=n.textContent};let m=/Escobar/i.exec(all);if(!m)return null;let r=document.createRange();for(let [n,start]of nodes){let end=start+n.textContent.length;if(start<=m.index&&end>m.index)r.setStart(n,m.index-start);if(start<m.index+7&&end>=m.index+7){r.setEnd(n,m.index+7-start);break}};let b=r.getBoundingClientRect();return {x:b.x,y:b.y,w:b.width,h:b.height,text:r.toString()}}''')
+                page.screenshot(path=str(root/(id+'_page.jpg')),quality=94)
+                box=row['name_box_css']
+                if box and box['w']>40 and box['h']>15:
+                  page.screenshot(path=str(root/(id+'_word.png')),clip={'x':box['x']-2,'y':box['y']-2,'width':box['w']+4,'height':box['h']+4})
+                page.close()
+              except Exception as e:row['error']=str(e)[:500]
+              rows.append(row)
+            browser.close()
+          (root/'press_metadata.json').write_text(json.dumps(rows,indent=2))
+          PY
+      - name: Store bounded research object
+        id: stash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json,base64,subprocess,os,tarfile
+          from pathlib import Path
+          root=Path('/tmp/intro4');out=Path('/tmp/intro4.tar.gz')
+          with tarfile.open(out,'w:gz') as tar:
+            for f in root.iterdir():
+              if f.is_file() and f.stat().st_size<16000000:tar.add(f,arcname=f.name)
+          data=out.read_bytes();assert len(data)<25000000
+          payload=json.dumps({'content':base64.b64encode(data).decode(),'encoding':'base64'})
+          r=json.loads(subprocess.check_output(['gh','api','--method','POST','repos/'+os.environ['REPO']+'/git/blobs','--input','-'],input=payload.encode()))
+          with open(os.environ['GITHUB_OUTPUT'],'a')as f:f.write('sha='+r['sha']+'\n')
+          PY
+      - name: Research object ${{ steps.stash.outputs.sha }}
+        run: echo 'Research only. Must inspect pictures and exact audio before use.'

@@ -1,0 +1,8 @@
+{
+  "video_sha256": "ba39427cb5f44791703db6c2397cd2907b6222d8fa96e11999838b4bae7ec823",
+  "decoded_stereo_pcm_f32le_hash": "SHA256=1ea2bcc7449f40ab95adf4fd93fab696ca0ba211c4987729de3d46a19e2413e4",
+  "asr_file": "final_encoded_asr.json",
+  "final_video_sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14",
+  "decoded_audio_identical": true,
+  "manual_listening_claimed": false
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "elpais",
+    "url": "https://english.elpais.com/usa/2021-12-24/pablo-escobar-unseen-portraits-of-a-drug-lord.html",
+    "method": "Unmodified public browser rendering, no overlay removal, no login or paywall bypass",
+    "pixel_scale": 2,
+    "consent_action": "Clicked public ACCEPT AND CONTINUE in anonymous browser",
+    "title": "Pablo Escobar: Unseen portraits of a drug lord",
+    "name_box_css": {
+      "x": 439.21875,
+      "y": 541.890625,
+      "w": 157.203125,
+      "h": 40,
+      "text": "Escobar"
+    }
+  }
+]

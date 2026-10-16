@@ -1,0 +1,59 @@
+{
+  "status": "blocked_after_source_acquisition",
+  "reason": "Matching official program acquired, candidate visually sampled and wording corroborated by primary captions. Final cut/audio review, publication-use basis and revised scene design remain unresolved. No revised film rendered.",
+  "selected_clips": [
+    {
+      "id": "charlie_rose_1992_11_12_own_making",
+      "selection": "editorial_candidate_only_not_approved",
+      "evidence": "archive_research/official_source_evidence.json",
+      "source": {
+        "program": "Charlie Rose",
+        "segment": "Andrew and Leslie Cockburn",
+        "original_air_date": "1992-11-12",
+        "date_evidence": [
+          "https://charlierose.com/videos/15564",
+          "https://www.footage.net/clipdetail?supplier=reelin&key=32618363"
+        ],
+        "licensor_catalog_id": "Reelin 58597",
+        "original_page": "https://charlierose.com/videos/15564",
+        "primary_captions_url": "https://charlie-p-2ac84d7056ca7f9d.s3.amazonaws.com/clips/subtitles/000/015/564/original/1HY294_004.vtt?1556809068",
+        "webpage_metadata_id": "15564"
+      },
+      "local_media": "/home/user/build/escobar_archive_official/original_opening.mp4",
+      "sha256": "6b533a7506d8996607780271ed627dbc49fe9f2e348fc061dec7596ce8e754e7",
+      "candidate_in": 30.18,
+      "candidate_out": 37.18,
+      "speaker": "Charlie Rose",
+      "words": "his decision to allow himself to be put in a prison of his own making",
+      "viewed_samples": true,
+      "heard": false,
+      "rights_cleared": false,
+      "approved_for_delivery": false
+    }
+  ],
+  "required_per_clip": [
+    "local media file and SHA256",
+    "original broadcaster/program and original date, independently checked",
+    "actual viewed/heard source in/out timecodes",
+    "transcribed audible English words and identified speaker/role",
+    "narrative function and narrator handoff point",
+    "rights/use basis; repost does not grant reuse permission"
+  ],
+  "unverified_leads": [
+    {
+      "url": "https://www.youtube.com/watch?v=jR7_c8KeGZI",
+      "mirror": "https://archive.org/details/youtube-jR7_c8KeGZI",
+      "downloaded_excerpts": true,
+      "viewed": "88 overview samples plus opening sheets; not continuous playback",
+      "heard": false,
+      "source_section_findings": {
+        "opening_cbs": "Central WAZEE preview mark; reject this copy for delivery. Exact CBS editions not matched.",
+        "abc_raw": "ABC VideoSource logo and timecodes; reject stock preview for final.",
+        "late_charlie_rose": "No central stock-preview mark in inspected frames, only MOBFAX corner. Replaced as candidate by matching official program."
+      },
+      "rights_cleared": false
+    }
+  ],
+  "no_new_render_until": "Suitable actual clips secured and reviewed; approved voice preserved; revised scene selection grounded in clips, not filler stills.",
+  "research_note": "archive_research/SOURCE_REVIEW_2026-10-15.md"
+}

@@ -1,0 +1,29 @@
+{
+  "assets": [
+    {
+      "path": "assets/narrator_approved.mp3",
+      "kind": "AI narration",
+      "voice_id": "voice-02",
+      "approval": "Explicit user approval 2026-10-15",
+      "reuse": "Exact approved take; no regenerated speech",
+      "sha256": "523220dab1465d8958a24345978de76982953396e05b9bcf7ed012da44c7485d",
+      "bytes": 174933
+    },
+    {
+      "path": "assets/la_catedral_site_2019.jpg",
+      "kind": "Photograph of actual site in 2019, NOT period archive",
+      "author": "Stefanomione",
+      "date": "2019-09-05",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Helipad_at_La_Catedral,_the_former_Pablo_Escobar_prison_overlooking_the_City_of_Medellin.jpg",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "sha256": "18830c66853af41b67b3282d295509dc9ab4d90c407aa279e2f64c91665fba66",
+      "checked": "Original image and source-page author/date/license viewed",
+      "changes": "Cool grade, crop/scale animation, editorial/date/credit overlays; photo adaptation under CC BY-SA 4.0",
+      "on_screen_date_label_required": true,
+      "bytes": 369246
+    }
+  ],
+  "quotations": "Brief editorial retrospective source quotations; no blanket third-party license/clearance claimed. See SOURCES_AND_RIGHTS.md.",
+  "authentic_broadcast_audio": false
+}

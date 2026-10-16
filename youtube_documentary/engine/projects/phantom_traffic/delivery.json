@@ -1,0 +1,42 @@
+{
+  "schema": "film-delivery/1",
+  "date": "2026-10-16",
+  "style": "pure_explainer",
+  "selection": "Explicit original-idea/script pure-explainer user request.",
+  "film": {
+    "title": "The Jam With No Blockage",
+    "path": "/home/user/build/phantom_traffic/Phantom_Traffic_Pure_Explainer_Review.mp4",
+    "drive_id": "1qzcn1eHS0z8dVK1tbltClRklZb8G24Bd",
+    "drive_url": "https://drive.google.com/file/d/1qzcn1eHS0z8dVK1tbltClRklZb8G24Bd/view",
+    "bytes": 19583654,
+    "sha256": "27d3d24f3e41d631a5815ce99d42434a63f1d93ed15105738e4fc4f4daa5c935",
+    "md5": "e42bbe826197437fb68ab4ca5dbdfce5",
+    "drive_checksum_and_size_verified": true,
+    "format": {
+      "width": 1920,
+      "height": 1080,
+      "fps": 24,
+      "frames": 1659,
+      "duration": 69.125,
+      "video": "H264/yuv420p",
+      "audio": "AAC/stereo/48000Hz"
+    },
+    "status": "Uploaded for user review; NOT user-approved."
+  },
+  "review": "review_inspection.json / QC.md / encoded_review_audit.json",
+  "voice": "voice-02 approved identity, raw WAVs retained in recovery capsule; no new audition, no global film speedup.",
+  "permissions": "Inherited existing folder permissions. No sharing changes.",
+  "recovery": {
+    "path": "/home/user/build/phantom_traffic/Phantom_Traffic_Source_Voice_Review_Recovery.zip",
+    "bytes": 16603984,
+    "sha256": "6b5d6514f52e3190de93a36fc26e80f36113b2d12de35761ac37ffd9918bbeac",
+    "md5": "65f32bc75968c45f5435a764ec4c5ee7",
+    "included_files": 101,
+    "cold_checks": "Every extracted file hash, style/material declarations, English/display declaration, authored motion invariants and shared capture syntax PASS. Not a fresh film render or artistic certificate.",
+    "drive_id": "11Gi1bRj3bcXpyGC-VPoLS8M4AV2t7u_D",
+    "drive_url": "https://drive.google.com/file/d/11Gi1bRj3bcXpyGC-VPoLS8M4AV2t7u_D/view",
+    "drive_checksum_and_size_verified": true
+  },
+  "status": "Completed, uploaded with verified checksums, presented for user review; no user approval yet.",
+  "archive_metadata_note": "Capsule holds the source snapshot immediately before its own upload; this external receipt supplies the subsequently assigned recovery Drive ID."
+}

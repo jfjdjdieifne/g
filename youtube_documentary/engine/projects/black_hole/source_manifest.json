@@ -1,0 +1,306 @@
+{
+  "date": "2026-10-16",
+  "purpose": "Final reproducible source/creative inputs and untouched raw recordings. Historical captures separately identified. Source hashes are not visual/listening/user approval. Review/evidence/all other capsule file hashes are covered by CAPSULE_INDEX.json.",
+  "delivered_video_sha256": "959ebb08c76d0c0003742c537413411a472568f8462f6f86f3bc8e07404693ae",
+  "files": [
+    {
+      "path": "youtube_documentary/assets_global/fonts/DejaVuSans-Bold.ttf",
+      "bytes": 708920,
+      "sha256": "0d977336a6d5fba34eab8e3199eb218327161b5143749f802982c2bc34df0c96"
+    },
+    {
+      "path": "youtube_documentary/assets_global/fonts/DejaVuSans.ttf",
+      "bytes": 759720,
+      "sha256": "abdc775b21b1bc470d50c97e790d276f2054b7504e56e5bd3e64f48d68582322"
+    },
+    {
+      "path": "youtube_documentary/assets_global/fonts/DejaVu_LICENSE.txt",
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/CREATIVE_BRIEF.md",
+      "bytes": 2300,
+      "sha256": "3a4e05a0c68ab68e18dcf168ae94938eb4da0602578e22d3c8bf381219b65822"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/FACT_CHECK.md",
+      "bytes": 6329,
+      "sha256": "e67fc60d748fe86ed476f3f4e338331a06015cd05253381b1d62d52cbb8934ad"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/MATERIALS.json",
+      "bytes": 11946,
+      "sha256": "41cb38fd1ad41a608cf2f2905becfecfa92df5b740f08641855eb16550162417"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/SCRIPT.md",
+      "bytes": 2227,
+      "sha256": "eca48a67e5f68e4fabe83e84f818f629aff5f9f30191a272ec11c04784e7ed88"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/base_capture_source_manifest.json",
+      "bytes": 1972,
+      "sha256": "6a978da6a43527c18ba6f23ff7807cf9665503dedfe34cf58318ee41ec70f343"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/display_manifest.json",
+      "bytes": 2145,
+      "sha256": "927a17039daf8bd78b9eaec4f728cd147e8951f1b9d0391b621aff18eeab6ac6"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/history/scene_base_capture.mjs",
+      "bytes": 21527,
+      "sha256": "2f3ea00f1d1c95251c840e4dbbe08faf72b220902fb7554b16a25fe4b7f96fc9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/history/scene_spatial_capture.mjs",
+      "bytes": 21696,
+      "sha256": "510a8d99b951df9fca02627f3903fb26eec89bd035733304273049f4784315f8"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/legibility_revision.json",
+      "bytes": 1087,
+      "sha256": "ef6fcadfd96af724b00590ba531b903ff7ba4a1cd852d60c4bbce4662c490278"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/motion_math_review.json",
+      "bytes": 1771,
+      "sha256": "d6af79a84a3bc5964c1d61d675c2f1a5d79bff8e9371b8860f72f74a548bea8d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/01.flac",
+      "bytes": 1326807,
+      "sha256": "f90427a699a247e789dd2f8e0036176c683a23751654b7ec31bf4b3843c28412"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/01_raw.asr.json",
+      "bytes": 11920,
+      "sha256": "f1b5da966c625127e5014d923b680b25977b0b49216dc7b0141094bdee6df1e4"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/02.flac",
+      "bytes": 1232089,
+      "sha256": "fcd7fe882bd52bbeff9358555a35efc703b9819cd6f13430059a16ea38dbb38f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/02_raw.asr.json",
+      "bytes": 10962,
+      "sha256": "93a679350f2cf2b9d1ce7f2bef115635a4ae297466333586092f81ba9ea7ad59"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/03.flac",
+      "bytes": 1294938,
+      "sha256": "523fe5ef8987c39a503c29b4da519b3af64a5fae428cd2d4d3178cf651d3b47b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/03_raw.asr.json",
+      "bytes": 11495,
+      "sha256": "c1e4ebd8e8821d4e6d07eb41bf1f70b46446b0140edda630f7c7ac0511d5250a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/04.flac",
+      "bytes": 1313601,
+      "sha256": "9fb0716d561b4914259f9fb219a152704657894c934639ffc4ccdc02b3832ed5"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/04_raw.asr.json",
+      "bytes": 11973,
+      "sha256": "f96b09da1929ae128982f7c2eccdfc540c337a6625dffa0c5d090c1560e74e0d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration_pacing.json",
+      "bytes": 19513,
+      "sha256": "1663299681b26b644cad0c576a6c56f8345648a7c352e7c744545080780c7a7b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration_recipe.json",
+      "bytes": 425,
+      "sha256": "5c9aa7f2a648fc23f3dc3725552d40a8c2ec98655b4b13d68ea79c004e0e875e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/prepare_narration.py",
+      "bytes": 8115,
+      "sha256": "6f89bc3e4c02e31a9e4d34733f7cbdce27011535a57733f04fc195a61d69473c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/render.json",
+      "bytes": 5501,
+      "sha256": "307af8e7669e4bc3760cb95aa2a1c9080511dd77a61d3e23e532f9b78af83e5c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/scene.mjs",
+      "bytes": 21708,
+      "sha256": "6b13eb4bbf0ed4c8d977203d76584fe3a8b2ec0f1045f738fbb6e6421910735a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/spatial_clarity_revision.json",
+      "bytes": 2489,
+      "sha256": "a3fe5c291a026b76b5da1ef14f5bed45b9e03f6a2bc532929f70159b9c5e1abf"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/style_contract.json",
+      "bytes": 674,
+      "sha256": "81d06f7314d56b26cfa7b89f108fd171272fb7f10d6cf0e7e8c2b0c688a7723e"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/blender_headless_libs.json",
+      "bytes": 1587,
+      "sha256": "5de1a6cecb470c5a2275c973a7957ff2fb5869e57c8599bc2b8a289bbd5763ab"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/blender_xyz.py",
+      "bytes": 8017,
+      "sha256": "3a0619dbf787e8f886ccf43f8add7793889396fd663ad94fa39a7c8260baa374"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/encoded_review.py",
+      "bytes": 2913,
+      "sha256": "e69a8102c9e4283cdf58a0779d039b88de77ed4854ba643e2df048938326f4dc"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/film_runtime.py",
+      "bytes": 3197,
+      "sha256": "4402f16cf40751b03fa1954fe3ca7ff0a939df48404f906c77d9681b16318f4b"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/geo_route.py",
+      "bytes": 3626,
+      "sha256": "23aaa093d0419ccecb16797ff9d4dbe1437d286dd61d5b858d2005897657f710"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/horizon_motion.mjs",
+      "bytes": 1533,
+      "sha256": "c263e54aec7c1ce4b7f13031c2dcbe0bf38ff3c3cc7fe0a35b5c507d7f515301"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/long_score.py",
+      "bytes": 4088,
+      "sha256": "5d359a5f36bc7ad5bc939358a4673a14de285617f7490b081251afc3f7547085"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/photo_depth.py",
+      "bytes": 4360,
+      "sha256": "6cedee2c9e4d90964883137f72c957fb5214b6a2411d0a4b2c3a57cb0c05d6aa"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/score_runtime.py",
+      "bytes": 4038,
+      "sha256": "2d8a60c042eb86cfe14d405a7f3ed171f990ad2b4aa700e428ec7f38121124bc"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/sequence_runtime.py",
+      "bytes": 6115,
+      "sha256": "32d7faf713915e2a9bcc8686eae171adb3f22d8c030966ca10404a2311a96c6f"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/sequence_segments.py",
+      "bytes": 4368,
+      "sha256": "27bfc52a1a30880fa1d8893c1435e39811bc97aee8d51f0fd68c3c1365ee8413"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/speech_edit.py",
+      "bytes": 2896,
+      "sha256": "408cc287aaef095a04874f46d5adc212af3e66d64ff73d941ff3b35199d7636c"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/speech_pacing.py",
+      "bytes": 3573,
+      "sha256": "64e59d6bdd3fad3f366f4d6f77a895fad2cbd3878ab621ad2b22198bac1df2eb"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/traffic_motion.mjs",
+      "bytes": 1944,
+      "sha256": "61aff25f4093ce6f4bf9ed79d1b53b0b558c331a448b1dccf6bdcdbb32f74750"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/webgl_dependencies.json",
+      "bytes": 472,
+      "sha256": "64104d839da152073813f7e1fdfb31fd8470e6ef010815e518807c58fffa19f0"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/webgl_stage.mjs",
+      "bytes": 5472,
+      "sha256": "e2ac5ec6b0e27d4d557f42c5374261d7d1676dc7c3d714f2b28f6bbcfaf635d5"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/xyz_scene.py",
+      "bytes": 4602,
+      "sha256": "72c81db5696e4c4a76b917fb4fb83fa9e994087f9072c87a77191d0627ea4d22"
+    },
+    {
+      "path": "youtube_documentary/tools/documentary_materials.py",
+      "bytes": 5303,
+      "sha256": "4db9ceae0c15fd0ae03ffabb50326c0335dd006f68a60cad2b72df321f1d4516"
+    },
+    {
+      "path": "youtube_documentary/tools/install_webgl_runtime.py",
+      "bytes": 1023,
+      "sha256": "31694414b7c6e396e6decc484898332e0576ee61d869b750928f4d2840dbc458"
+    },
+    {
+      "path": "youtube_documentary/tools/mix_webgl_profile.py",
+      "bytes": 2264,
+      "sha256": "b0d4fba298532659def7fce34a28a44b03f349dac115cd09a5808ce854009969"
+    },
+    {
+      "path": "youtube_documentary/tools/package_webgl_profile.py",
+      "bytes": 4707,
+      "sha256": "55d705f54ba890034fbd1c056ce4b40882e7e07f957b1301bfb68a8b05cc4c57"
+    },
+    {
+      "path": "youtube_documentary/tools/production_policy.py",
+      "bytes": 3807,
+      "sha256": "61e5a318284b1f364536db055e9ff2a4bd1b5432362121ad8d40a4650221dea0"
+    },
+    {
+      "path": "youtube_documentary/tools/render_webgl_profile.mjs",
+      "bytes": 7915,
+      "sha256": "5f72b52e11109471a5ff71646298e9c40a6cd79603a45d812b19101df37db90c"
+    },
+    {
+      "path": "youtube_documentary/tools/replace_picture_frames.py",
+      "bytes": 1676,
+      "sha256": "d6af4bd05ea6e33b759ebbe671541d45a171dbf6bc769ad463f4b6a304c1af56"
+    },
+    {
+      "path": "youtube_documentary/tools/review_webgl_profile.py",
+      "bytes": 1226,
+      "sha256": "9bbfd012e1e49f548bf4a14008b2ddaa51c8d25b876cadecaad759a054c69937"
+    },
+    {
+      "path": "youtube_documentary/tools/style_contract.py",
+      "bytes": 9182,
+      "sha256": "23a227b26bff5bf844179183fa9d3d33b1658073335c362ceae5ac4ef05950ea"
+    },
+    {
+      "path": "youtube_documentary/tools/transcribe_archive_vosk.py",
+      "bytes": 1470,
+      "sha256": "1e4f3c152d8a063eec92d418bab309061e1acd8701f0bf5b709b7fd12648e725"
+    },
+    {
+      "capsule_path": "raw_voice/01_raw.wav",
+      "repository_path": "youtube_documentary/engine/projects/black_hole/raw_voice/01_raw.wav",
+      "bytes": 3585730,
+      "sha256": "37d6978add782be33a32c341f6927ee9295b211b6232f0bec90f69631b6f6b65"
+    },
+    {
+      "capsule_path": "raw_voice/02_raw.wav",
+      "repository_path": "youtube_documentary/engine/projects/black_hole/raw_voice/02_raw.wav",
+      "bytes": 3293494,
+      "sha256": "ba0142fa39e728cca9be619826bbb657f8618a48ee48fe26b4178535ee90d7fd"
+    },
+    {
+      "capsule_path": "raw_voice/03_raw.wav",
+      "repository_path": "youtube_documentary/engine/projects/black_hole/raw_voice/03_raw.wav",
+      "bytes": 3262146,
+      "sha256": "1b3d01bb74d9ac3c7293cba9e5a5a747b5617307055eb9edec51b532abf64255"
+    },
+    {
+      "capsule_path": "raw_voice/04_raw.wav",
+      "repository_path": "youtube_documentary/engine/projects/black_hole/raw_voice/04_raw.wav",
+      "bytes": 3610702,
+      "sha256": "42dca6af0b50e72d3829e79650d8d026913a26ff750c68df5456b154daa6d9f8"
+    }
+  ]
+}

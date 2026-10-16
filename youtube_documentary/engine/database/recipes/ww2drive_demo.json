@@ -1,0 +1,18 @@
+{
+ "title": "إسكوبار — ديمو اختبار Rulebook v1.3 (23 ث، بلا VO · كوكتيل 3 مراجع)",
+ "sources_allowed": ["vaping", "ww2p1", "ww2p2"],
+ "note": "ديمو اختبار التعلّم: كل نبضة اسمها من بنك الأفكار (فيديو@توقيت)، والخلّاط يوزّع المصادر. النبضات الـmap بتجرّب كروت P2 الجديدة (خط الإمداد، بلوكات الوحدات، الختم، موجة الدهان).",
+ "beats": [
+  {"t": "0:00", "role": "chapter", "intents": ["chapter", "structure", "title"], "note": "أسود + عنوان الجزء: كولومبيا، 1993"},
+  {"t": "0:01.6", "role": "map", "intents": ["map", "label", "context"], "note": "الخريطة تدخل + تسمية ميديين جوّاها"},
+  {"t": "0:03.4", "role": "map", "intents": ["supply", "link", "map", "emphasis"], "note": "خط الإمداد ميديين → ميامي بينرسم"},
+  {"t": "0:06.0", "role": "map", "intents": ["expansion", "map", "war", "color"], "note": "فيضان أحمر على منطقة العمليات"},
+  {"t": "0:08.4", "role": "numbers", "intents": ["numbers", "scale", "growth"], "note": "العدّاد: 525 طن"},
+  {"t": "0:11.0", "role": "emphasis", "intents": ["emphasis", "numbers", "verdict"], "note": "العدّاد على أسود (الرقم الأصعب)"},
+  {"t": "0:13.0", "role": "archive", "intents": ["archive", "texture", "character"], "note": "صورة أرشيف حقيقية بتلوين الفيلم"},
+  {"t": "0:15.6", "role": "map", "intents": ["control", "flag", "war", "map"], "note": "وحدات + أعلام سيطرة: الطرق قفلت"},
+  {"t": "0:17.6", "role": "emphasis", "intents": ["stamp", "verdict", "comedy"], "note": "الختم: 1993"},
+  {"t": "0:19.2", "role": "map", "intents": ["world", "alliance", "color", "scale"], "note": "المقياس العالمي: كولومبيا ضمن أميركا"},
+  {"t": "0:21.4", "role": "closer", "intents": ["ending", "close", "stat", "weight"], "note": "كارت التكلفة/الخاتمة + سكون"}
+ ]
+}

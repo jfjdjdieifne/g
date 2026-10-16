@@ -1,0 +1,16 @@
+[
+  {
+    "file": "housing1983.jpg",
+    "url": "https://imagenes.elpais.com/resizer/v2/3TYQVAYDDFCJFLG3MAGCCEOUIY.jpg?auth=f17dde9a09539c3a9f10d212b600e99705a95382e38312566109c0c44e0aa809&width=1200",
+    "content_type": "image/jpeg",
+    "resolved_url": "https://imagenes.elpais.com/resizer/v2/3TYQVAYDDFCJFLG3MAGCCEOUIY.jpg?auth=f17dde9a09539c3a9f10d212b600e99705a95382e38312566109c0c44e0aa809&width=1200",
+    "bytes": 282850
+  },
+  {
+    "file": "campaign1982.jpg",
+    "url": "https://imagenes.elpais.com/resizer/v2/SI6GJT4VEJB6FG6LKZIUEHB3G4.jpg?auth=5d121e5bac2dce916104d40461002caa94e08c89c546c1747e17ccfab8facb60&width=1200",
+    "content_type": "image/jpeg",
+    "resolved_url": "https://imagenes.elpais.com/resizer/v2/SI6GJT4VEJB6FG6LKZIUEHB3G4.jpg?auth=5d121e5bac2dce916104d40461002caa94e08c89c546c1747e17ccfab8facb60&width=1200",
+    "bytes": 181105
+  }
+]

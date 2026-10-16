@@ -1,0 +1,336 @@
+{
+  "schema": "handoff-state/1",
+  "updated": "2026-10-16",
+  "authority": "../../studio/CURRENT_STATE.json",
+  "approval_authority": "../../studio/REFERENCE_INDEX.json",
+  "historical_snapshot": "../../studio/history/pre_organization/youtube_documentary/engine/HANDOFF_STATE.json",
+  "note": "Compatibility index only. Old active_* entries are historical, not current work. tools/handoff.py now delegates verification to the studio entrypoint.",
+  "studies": [
+    {
+      "ref": "vaping",
+      "name_ar": "Juul: A Villain Origin Story (MagnatesMedia)",
+      "status": "complete",
+      "progress": "27:27 كامل — 356 صف، تغطية 55/55 صفحة، audit PASS",
+      "deliverables": [
+        "engine/reference_lab/Vaping_BREAKDOWN_2fps_full_v2.md",
+        "engine/reference_lab/Vaping_COVERAGE.md",
+        "engine/reference_lab/Vaping_GAPFILL_2026-10-14.md"
+      ]
+    },
+    {
+      "ref": "ww2p1",
+      "name_ar": "WW2 — OverSimplified (Part 1)",
+      "status": "complete",
+      "progress": "13:45 كامل — 28/28 صفحة، 46 قاعدة، audit PASS (228 صف · 0 فراغ)",
+      "deliverables": [
+        "engine/reference_lab/BREAKDOWN_WW2P1.md",
+        "engine/reference_lab/DIRECTING_RULEBOOK_v1.2.md"
+      ]
+    },
+    {
+      "ref": "ww2p2",
+      "name_ar": "WW2 — OverSimplified (Part 2)",
+      "status": "complete",
+      "progress": "15:34 كامل — 32/32 صفحة، 29 قاعدة (47–75)، audit PASS (221 صف · 761 حدث · 0 فراغ)",
+      "deliverables": [
+        "engine/reference_lab/BREAKDOWN_WW2P2.md",
+        "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md"
+      ]
+    }
+  ],
+  "artifacts": [
+    {
+      "name": "AI Director Kit (فولدر)",
+      "drive_id": "14HxMPs32AKd7V72wMOw2g9M60mvYdTl7",
+      "kind": "folder"
+    },
+    {
+      "name": "BREAKDOWN_AR (فحص آلي)",
+      "drive_id": "1Im39FaJKTWHblPecNtNhEJDZy-xULiB6",
+      "kind": "file"
+    },
+    {
+      "name": "BREAKDOWN_WW2P1 (كامل)",
+      "drive_id": "1uhTrBNUzL2piNL5wqHk9P_KgkF2I9hpH",
+      "path": "engine/reference_lab/BREAKDOWN_WW2P1.md",
+      "kind": "file"
+    },
+    {
+      "name": "BREAKDOWN_WW2P2 (كامل)",
+      "path": "engine/reference_lab/BREAKDOWN_WW2P2.md",
+      "kind": "file",
+      "drive_id": "1JjuXamqgqJpT5SFxEnV3HVmEghSQ_IIl"
+    },
+    {
+      "name": "DIRECTING_RULEBOOK_v1.2",
+      "drive_id": "1Q5vN_-e-4ONq2u3fgZ6E5y5JP-9yCiIi",
+      "path": "engine/reference_lab/DIRECTING_RULEBOOK_v1.2.md",
+      "kind": "file"
+    },
+    {
+      "name": "DIRECTING_RULEBOOK_v1.3",
+      "drive_id": "1qrDQhrjNE4t89VfJcT7yUnAo9VU8OXqK",
+      "path": "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md",
+      "kind": "file"
+    },
+    {
+      "name": "PayPal (فيديو — 722MB، أكبر من حد التنزيل)",
+      "drive_id": "1y_stCNW5l9cvN-gUzNmfZW9zzkyt7Emt",
+      "kind": "file"
+    },
+    {
+      "name": "Ref Studies (فولدر)",
+      "drive_id": "1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC",
+      "kind": "folder"
+    },
+    {
+      "name": "TRANSITION_ATLAS (P1+P2)",
+      "path": "engine/reference_lab/TRANSITION_ATLAS.md",
+      "kind": "file",
+      "drive_id": "1Be1oLFDpVLQMbOtKQkBxblEjLAivZtUj"
+    },
+    {
+      "name": "Vaping (فيديو)",
+      "drive_id": "117J6M88EstNWF6NOcHRm1fmfLmu5C0vh",
+      "kind": "file"
+    },
+    {
+      "name": "WW2 P1 (فيديو)",
+      "drive_id": "10ZD7FJwSS9J5JSkbB2SQeDs_LwJ-FyCs",
+      "kind": "file"
+    },
+    {
+      "name": "WW2 P2 (فيديو)",
+      "drive_id": "1NPzS-IOkUlEFHrWd392WY7KLQtvSFylj",
+      "kind": "file"
+    },
+    {
+      "name": "dossier_WW2P1 (قياسات)",
+      "drive_id": "1-op46-a3uDSfIDQS7AoE9d6REyremzxv",
+      "kind": "file"
+    },
+    {
+      "name": "dossier_WW2P2 (قياسات)",
+      "drive_id": "1SyF_0aG2Hh3axcti4e0ad6WPAt9s4aCa",
+      "kind": "file"
+    },
+    {
+      "name": "technique_db (94 كرت)",
+      "drive_id": "1Z3LtcQqmrQndLX5YXr6_ADKUSyTo54Ig",
+      "path": "engine/database/technique_db.json",
+      "kind": "file"
+    },
+    {
+      "name": "ديمو WW2-drive v1 (PLAN كوكتيل)",
+      "drive_id": "1dNWbTLO0FEAgzRw1heYcAwFevuSJWBpe",
+      "path": "engine/projects/ww2_demo/cocktail/PLAN.md",
+      "kind": "file"
+    },
+    {
+      "name": "ديمو WW2-drive v1 (فيديو — نسخة أولى)",
+      "drive_id": "11Rn4XAqx0fAExu0X0c_6s3yIs3TFqJ0g",
+      "kind": "file"
+    },
+    {
+      "name": "ديمو WW2-drive v2 (فيديو)",
+      "drive_id": "1K3eH_RDNoueB7T31CFBAFrRUEAEAIXPg",
+      "kind": "file"
+    },
+    {
+      "name": "فيلمستريب WW2 P1 (28 صفحة)",
+      "drive_id": "1S5xae1ZNn-MBvDEAUNHRmOBhvb1DCxSS",
+      "kind": "file"
+    },
+    {
+      "name": "فيلمستريب WW2 P2 (32 صفحة)",
+      "drive_id": "1UVPNR0fA54c_zwkPlwzttIFPoWW-CJzc",
+      "kind": "file"
+    },
+    {
+      "name": "ديمو WW2-drive v3 (اختبار خرائط غير معتمد)",
+      "drive_id": "1NqNEXeZeNEZToXPue6BbZPecLguo9Dl9",
+      "kind": "file"
+    },
+    {
+      "name": "خطة اختبار تصميم v3",
+      "drive_id": "1_1Xlh8vRWggFuTUa9mDKNT26NOCRRAki",
+      "kind": "file"
+    },
+    {
+      "name": "ديمو WW2-drive v4 (عمق وإنكليزي)",
+      "drive_id": "1xzUM0fyO2T7cyCBUeDlOkbVa4yALg6wq",
+      "kind": "file"
+    },
+    {
+      "name": "خطة اختبار عمق v4",
+      "drive_id": "1fSd6WDq6XpvEFzNITt3KAW4oKIxTp8g2",
+      "kind": "file"
+    },
+    {
+      "name": "سياسة الإنتاج العامة — English / Scene-first",
+      "drive_id": "1eflzeVEYkokGL0dV3BYJMV-Dxr84XLg_",
+      "kind": "file"
+    },
+    {
+      "name": "Escobar Hook30 v1 REJECTED / voice-02 only approved",
+      "kind": "file",
+      "drive_id": "1u5iEILmRSzMnIFsGxtDdP3ikXi8j7ufW",
+      "path": "engine/projects/escobar_hook30/delivery.json"
+    },
+    {
+      "name": "Previous HANDOFF — archive acquisition only, historical",
+      "kind": "file",
+      "drive_id": "1ZqoJ_Ecquvg8agmi9HssjndMm801t4K7",
+      "path": "HANDOFF.md"
+    },
+    {
+      "name": "Escobar First30 English Revision2 — review cut, not user-approved",
+      "drive_id": "1Wd71BUBgJlAdhXZtcg3f8oI6XbP6uthD",
+      "kind": "file",
+      "path": "engine/projects/escobar_hook30/revision2/delivery.json"
+    },
+    {
+      "name": "Escobar Revision2 actual QC + source/use notes",
+      "drive_id": "1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG",
+      "kind": "file",
+      "path": "engine/projects/escobar_hook30/revision2/QC.md"
+    },
+    {
+      "name": "Previous HANDOFF — Revision2 delivery before user feedback",
+      "drive_id": "1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco",
+      "kind": "file",
+      "path": "HANDOFF.md"
+    },
+    {
+      "name": "Global documentary material and idea policy",
+      "drive_id": "1HNLb7NPS1EzxyZyKL0PhAIzj-RY6EblF",
+      "kind": "file",
+      "path": "engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md"
+    },
+    {
+      "name": "SUPERSEDED — narrow prison-centered draft, do not produce",
+      "drive_id": "1NlhISYWHmjZDEj-r00eeQUzWgGaJ0WAs",
+      "kind": "file",
+      "path": "engine/projects/escobar_hook30/next_intro/DIRECTION.md"
+    },
+    {
+      "name": "Previous HANDOFF — Revision2 feedback before broad opening correction",
+      "drive_id": "1u-M8W6Wc6DZRKZQOu5rFLpDw8l0SKuUC",
+      "kind": "file",
+      "path": "HANDOFF.md"
+    },
+    {
+      "name": "Escobar Expanded Intro Revision3 —63sEnglish, broad/spoiler-free, NOT user-approved",
+      "drive_id": "1tL0x2TwY_DYyDOaucqdjEjhFMvdmvab6",
+      "kind": "file",
+      "path": "engine/projects/escobar_intro3/delivery.json"
+    },
+    {
+      "name": "Escobar Intro3 — actual QC/source-use notes",
+      "kind": "file",
+      "path": "engine/projects/escobar_intro3/QC.md",
+      "drive_id": "1h0EIxKMduiv7XYPakSIy0JmFZzEIxHw2"
+    },
+    {
+      "name": "Escobar Intro3 — source/review packet, not publication clearance",
+      "kind": "file",
+      "drive_id": "1r-_FIlhGSO4-_mgNsvj1d-sjgV8w-uzd"
+    },
+    {
+      "name": "Previous HANDOFF — Revision3 delivery before rhythm feedback",
+      "drive_id": "11wEdTbkYLZL-ecq8hiVl8fuCHYS6F6dC",
+      "kind": "file"
+    },
+    {
+      "name": "Escobar Intro Revision4 —53.83sEnglish, faster rhythm/clear name, not user-approved",
+      "drive_id": "1L4SFgVFKbqMVVMiW4_0WhR2ngcssnHn5",
+      "kind": "file",
+      "path": "engine/projects/escobar_intro4/delivery.json"
+    },
+    {
+      "name": "Escobar Intro4 — actual QC and source-use notes",
+      "drive_id": "1KIf29aT2XLPnYfZ14U5Ex-1c8hJa81G0",
+      "kind": "file",
+      "path": "engine/projects/escobar_intro4/QC.md"
+    },
+    {
+      "name": "Escobar Intro4 — source/engine/voice/stems/encoded review packet; no rights clearance",
+      "drive_id": "1QWcbTWW0Vgjp78f-Icr3HxlHghWF6l_W",
+      "kind": "file"
+    },
+    {
+      "name": "Latest HANDOFF — Revision4delivery; self-link recorded after upload",
+      "drive_id": "1VA3MOpBKhzsa1OPVzeW0USWm4Bvx3d7I",
+      "kind": "file"
+    },
+    {
+      "name": "Escobar Revision5 — new opening33.125s, awaiting review",
+      "drive_id": "1H62QuxCmfmEEnUZFw-GQddiaOfqYqEuI",
+      "kind": "file"
+    },
+    {
+      "name": "Escobar Revision5 — sources and encoded review packet",
+      "drive_id": "1KUQ89tSqxS99-LlrCHNKYX01RInfFlF0",
+      "kind": "file"
+    },
+    {
+      "name": "Escobar Revision5 — actual QC and limitations",
+      "drive_id": "1WFmhK_G88LmxATfMksaI5eVK6LCBWeFQ",
+      "kind": "file",
+      "path": "engine/projects/escobar_intro5/QC.md"
+    },
+    {
+      "name": "Escobar — الفيلم الكامل6:50",
+      "drive_id": "1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw",
+      "kind": "file",
+      "path": "engine/projects/escobar_full/README.md"
+    },
+    {
+      "name": "Escobar — المشروع وملفات الاستعادة",
+      "drive_id": "1UQiCf8rn5pXUhHXhwp7TdT_usLAz5D2H",
+      "kind": "file",
+      "path": "engine/projects/escobar_full/delivery.json"
+    },
+    {
+      "name": "Escobar — فحص الترميز النهائي",
+      "drive_id": "1FwiyXZgRFJJ36Jii7B3K1UetXiO2Eb4s",
+      "kind": "file",
+      "path": "engine/projects/escobar_full/FINAL_QC.md"
+    },
+    {
+      "name": "Escobar — سلسلة أدلة المراجعة",
+      "drive_id": "1s3igyX80z99SyoBGns2FTkveOsWj6oon",
+      "kind": "file"
+    },
+    {
+      "name": "Black-hole film — awaiting user review",
+      "drive_id": "14Iew5HQ8gxORHRgA3pviQj1dFvBEpbNx",
+      "kind": "file",
+      "path": "engine/projects/black_hole/delivery.json"
+    },
+    {
+      "name": "Black-hole source/raw-voice/review recovery",
+      "drive_id": "1PCgBVHa5889QViRkPY9X1F-CTX-LIXpx",
+      "kind": "file",
+      "path": "engine/projects/black_hole/delivery.json"
+    }
+  ],
+  "engine_state": {
+    "technique_bank": "engine/database/technique_db.json (94 كرت: 43 ww2p1 + 33 ww2p2 + 18 vaping — كل كرت why + qc + مصدر فريمي)",
+    "director": "tools/director.py (سكربت→PLAN.md+plan.json+engine_tasks.json، فحص --validate، طبقة فهم إلزامية)",
+    "transition_atlas": "tools/transition_atlas.py → engine/reference_lab/TRANSITION_ATLAS.md (قياس الانتقالات والترابط)",
+    "sound_bank": "engine/database/sound_bank.json (10 مزاج + 11 SFX + قوانين)",
+    "continuity": "engine/CONTINUITY_MODEL.md (4 خيوط + لقطة وحدة + in-shot vs cut)",
+    "montage_theory": "engine/MONTAGE_THEORY.md (10 قوانين فهم + منطق القرار)",
+    "rulebook": "engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md (29 قسم — آخرها إضافات P2)",
+    "engine/runtime/xyz_scene.py + blender_xyz.py": "Runtime XYZ مشترك + backend Cycles جزئي؛ ملف إسكوبار profile إخراج، مو engine مستقل لكل فيلم.",
+    "engine/runtime/photo_depth.py": "كاميرا XYZ مشتركة + صفحات وثائق وparallax للصور الأصلية؛2.5Dمصرّح عنه، مو غرفة سجن ولا إعادة بناء تاريخية مساحية.",
+    "engine/runtime/sequence_segments.py + geo_route.py + long_score.py + speech_pacing.py": "رندرومكسوخرائطوتشكيلإيقاعمُشترك؛ profileإسكوبارمنفصل. الأرشيفوالشهودبسرعتهمالأصلية. أدواتreview/joinتدعمالفيلمالكاملوتثبتالافتتاحيةستيريو."
+  },
+  "next_steps": [
+    "Read repository-root START_HERE.md and studio/CURRENT_STATE.json. Do not start a film from this compatibility index."
+  ],
+  "laws": [
+    "Current policy is studio/USER_RULES.md, not old handoff laws."
+  ]
+}

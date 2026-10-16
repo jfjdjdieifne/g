@@ -1,0 +1,7119 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/escobar_film/Escobar_Full_Film_Review.mp4",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 0.80244,
+          "end": 0.15,
+          "start": 0.0,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.57,
+          "start": 0.15,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.11,
+          "start": 0.57,
+          "word": "trafficker"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.35,
+          "start": 1.11,
+          "word": "made"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.44,
+          "start": 1.35,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.92,
+          "start": 1.44,
+          "word": "billionaire"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.37,
+          "start": 1.92,
+          "word": "list"
+        },
+        {
+          "conf": 0.787337,
+          "end": 2.79,
+          "start": 2.58,
+          "word": "won"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.85,
+          "start": 2.79,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.21,
+          "start": 2.85,
+          "word": "seat"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.33,
+          "start": 3.21,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.99,
+          "start": 3.33,
+          "word": "congress"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.32,
+          "start": 4.17,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.62,
+          "start": 4.32,
+          "word": "paid"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.8,
+          "start": 4.62,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.31,
+          "start": 4.8,
+          "word": "homes"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.46,
+          "start": 5.31,
+          "word": "in"
+        },
+        {
+          "conf": 0.843298,
+          "end": 5.52,
+          "start": 5.46,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.88,
+          "start": 5.52,
+          "word": "city"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.06,
+          "start": 5.88,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.42,
+          "start": 6.06,
+          "word": "helped"
+        },
+        {
+          "conf": 0.784659,
+          "end": 7.2,
+          "start": 6.45,
+          "word": "terrorize"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.68,
+          "start": 7.44,
+          "word": "that's"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.16,
+          "start": 7.68,
+          "word": "pablo"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.73,
+          "start": 8.16,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.03,
+          "start": 8.91,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.263719,
+          "start": 9.03,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.51,
+          "start": 9.27,
+          "word": "didn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.75,
+          "start": 9.51,
+          "word": "just"
+        },
+        {
+          "conf": 0.915254,
+          "end": 9.99,
+          "start": 9.75,
+          "word": "make"
+        },
+        {
+          "conf": 0.915254,
+          "end": 10.11,
+          "start": 9.99,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.53,
+          "start": 10.11,
+          "word": "rich"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.86,
+          "start": 10.71,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.07,
+          "start": 10.86,
+          "word": "made"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.25,
+          "start": 11.07,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.94,
+          "start": 11.25,
+          "word": "powerful"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.02,
+          "start": 12.24,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.56,
+          "start": 13.02,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.71,
+          "start": 13.56,
+          "word": "to"
+        },
+        {
+          "conf": 0.656247,
+          "end": 14.31,
+          "start": 13.71,
+          "word": "cocaine"
+        },
+        {
+          "conf": 0.49628,
+          "end": 14.52,
+          "start": 14.31,
+          "word": "what"
+        },
+        {
+          "conf": 0.890988,
+          "end": 14.88,
+          "start": 14.52,
+          "word": "ford"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.113928,
+          "start": 14.88,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.84,
+          "start": 15.21,
+          "word": "automobiles"
+        },
+        {
+          "conf": 0.887087,
+          "end": 16.318821,
+          "start": 16.23,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.74,
+          "start": 16.318821,
+          "word": "single"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.22,
+          "start": 16.74,
+          "word": "flight"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.7,
+          "start": 17.49,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.12,
+          "start": 17.7,
+          "word": "carry"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.54,
+          "start": 18.12,
+          "word": "four"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.02,
+          "start": 18.54,
+          "word": "hundred"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.62,
+          "start": 19.02,
+          "word": "kilos"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.71,
+          "start": 19.62,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.16,
+          "start": 19.71,
+          "word": "cocaine"
+        }
+      ],
+      "text": "the cocaine trafficker made the billionaire list won a seat in congress and paid for homes in a city he helped terrorize that's pablo escobar the money didn't just make him rich it made him powerful escobar was to cocaine what ford was automobiles a single flight could carry four hundred kilos of cocaine"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.315584,
+          "end": 20.4,
+          "start": 20.16,
+          "word": "pain"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.79,
+          "start": 20.61,
+          "word": "and"
+        },
+        {
+          "conf": 0.749615,
+          "end": 21.09,
+          "start": 20.82,
+          "word": "bring"
+        },
+        {
+          "conf": 0.749615,
+          "end": 21.21,
+          "start": 21.09,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.51,
+          "start": 21.21,
+          "word": "ten"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.87,
+          "start": 21.51,
+          "word": "million"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.47,
+          "start": 21.87,
+          "word": "dollars"
+        },
+        {
+          "conf": 0.677525,
+          "end": 22.89,
+          "start": 22.71,
+          "word": "they're"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.25,
+          "start": 22.895874,
+          "word": "still"
+        },
+        {
+          "conf": 0.347032,
+          "end": 23.372144,
+          "start": 23.25,
+          "word": "and"
+        },
+        {
+          "conf": 0.409899,
+          "end": 23.55,
+          "start": 23.372144,
+          "word": "men"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.88,
+          "start": 23.55,
+          "word": "effect"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.09,
+          "start": 23.88,
+          "word": "three"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.42,
+          "start": 24.09,
+          "word": "million"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.66,
+          "start": 24.42,
+          "word": "dollar"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.2,
+          "start": 24.66,
+          "word": "contract"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.32,
+          "start": 25.2,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.47,
+          "start": 25.32,
+          "word": "my"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.8,
+          "start": 25.47,
+          "word": "head"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.22,
+          "start": 26.04,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.55,
+          "start": 26.22,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.0,
+          "start": 26.55,
+          "word": "alone"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.33,
+          "start": 27.0,
+          "word": "doesn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.87,
+          "start": 27.33,
+          "word": "explain"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.26,
+          "start": 27.87,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.68,
+          "start": 28.47,
+          "word": "how"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.77,
+          "start": 28.68,
+          "word": "do"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.86,
+          "start": 28.77,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.16,
+          "start": 28.86,
+          "word": "build"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.4,
+          "start": 29.16,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.67,
+          "start": 29.4,
+          "word": "much"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.24,
+          "start": 29.7,
+          "word": "power"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.54,
+          "start": 30.39,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.78,
+          "start": 30.54,
+          "word": "get"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.17,
+          "start": 30.78,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.26,
+          "start": 31.17,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.74,
+          "start": 31.26,
+          "word": "defend"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.95,
+          "start": 31.74,
+          "word": "it"
+        }
+      ],
+      "text": "pain and bring in ten million dollars they're still and men effect three million dollar contract on my head but money alone doesn't explain this how do you build that much power and get people to defend it"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 33.57,
+          "start": 33.21,
+          "word": "start"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.725171,
+          "start": 33.57,
+          "word": "with"
+        },
+        {
+          "conf": 0.512292,
+          "end": 33.81,
+          "start": 33.725171,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.38,
+          "start": 33.81,
+          "word": "business"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.95,
+          "start": 34.68,
+          "word": "because"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.04,
+          "start": 34.95,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.4,
+          "start": 35.04,
+          "word": "private"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.91,
+          "start": 35.4,
+          "word": "zoo"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.15,
+          "start": 36.03,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.21,
+          "start": 36.15,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.57,
+          "start": 36.21,
+          "word": "piles"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.69,
+          "start": 36.57,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.23,
+          "start": 36.69,
+          "word": "cash"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.65,
+          "start": 37.41,
+          "word": "came"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.04,
+          "start": 37.65,
+          "word": "later"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.46,
+          "start": 38.34,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.52,
+          "start": 38.46,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.82,
+          "start": 38.52,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.48,
+          "start": 38.82,
+          "word": "seventies"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.08,
+          "start": 39.75,
+          "word": "demand"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.2,
+          "start": 40.08,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.77,
+          "start": 40.2,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.16,
+          "start": 40.95,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.55,
+          "start": 41.16,
+          "word": "growing"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.76,
+          "start": 41.64,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.82,
+          "start": 41.76,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.09,
+          "start": 41.82,
+          "word": "united"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.54,
+          "start": 42.09,
+          "word": "states"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.32,
+          "start": 42.81,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.77,
+          "start": 43.41,
+          "word": "didn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.28,
+          "start": 43.83,
+          "word": "invent"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.58,
+          "start": 44.34,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.94,
+          "start": 44.58,
+          "word": "demand"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.36,
+          "start": 45.21,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.66,
+          "start": 45.36,
+          "word": "helped"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.99,
+          "start": 45.69,
+          "word": "build"
+        },
+        {
+          "conf": 1.0,
+          "end": 46.02,
+          "start": 45.99,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 46.62,
+          "start": 46.02,
+          "word": "system"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.07,
+          "start": 46.92,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.19,
+          "start": 47.07,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.46,
+          "start": 47.19,
+          "word": "feed"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.64,
+          "start": 47.46,
+          "word": "it"
+        },
+        {
+          "conf": 0.476039,
+          "end": 48.18,
+          "start": 47.88,
+          "word": "coca"
+        },
+        {
+          "conf": 0.552789,
+          "end": 48.57,
+          "start": 48.18,
+          "word": "paste"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.84,
+          "start": 48.63,
+          "word": "came"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.05,
+          "start": 48.84,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.38,
+          "start": 49.05,
+          "word": "ending"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.89,
+          "start": 49.38,
+          "word": "countries"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.28,
+          "start": 50.04,
+          "word": "such"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.37,
+          "start": 50.28,
+          "word": "as"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.88,
+          "start": 50.37,
+          "word": "peru"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.12,
+          "start": 50.97,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.63,
+          "start": 51.12,
+          "word": "bolivia"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.38,
+          "start": 51.84,
+          "word": "laboratories"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.44,
+          "start": 52.38,
+          "word": "in"
+        },
+        {
+          "conf": 0.622627,
+          "end": 52.8,
+          "start": 52.44,
+          "word": "colombia"
+        }
+      ],
+      "text": "start with the business because the private zoo and the piles of cash came later in the nineteen seventies demand for cocaine was growing in the united states escobar didn't invent that demand he helped build a system that could feed it coca paste came from ending countries such as peru and bolivia laboratories in colombia"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 53.22,
+          "start": 52.8,
+          "word": "processed"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.37,
+          "start": 53.22,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.15,
+          "start": 53.61,
+          "word": "pilots"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.27,
+          "start": 54.15,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.81,
+          "start": 54.27,
+          "word": "smugglers"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.32,
+          "start": 54.96,
+          "word": "moved"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.44,
+          "start": 55.35,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.71,
+          "start": 55.44,
+          "word": "finished"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.98,
+          "start": 55.71,
+          "word": "drug"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.34,
+          "start": 55.98,
+          "word": "north"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.7,
+          "start": 56.58,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.82,
+          "start": 56.7,
+          "word": "this"
+        },
+        {
+          "conf": 0.795901,
+          "end": 57.06,
+          "start": 56.82,
+          "word": "wasn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.3,
+          "start": 57.06,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.54,
+          "start": 57.3,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.78,
+          "start": 57.54,
+          "word": "doing"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.26,
+          "start": 57.78,
+          "word": "everything"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.68,
+          "start": 58.47,
+          "word": "other"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.4,
+          "start": 58.68,
+          "word": "traffickers"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.97,
+          "start": 59.58,
+          "word": "including"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.06,
+          "start": 59.97,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.42,
+          "start": 60.15,
+          "word": "show"
+        },
+        {
+          "conf": 0.843693,
+          "end": 60.63,
+          "start": 60.42,
+          "word": "us"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.75,
+          "start": 60.63,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.14,
+          "start": 60.75,
+          "word": "carlos"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.56,
+          "start": 61.14,
+          "word": "later"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.1,
+          "start": 61.8,
+          "word": "brought"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.28,
+          "start": 62.1,
+          "word": "their"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.49,
+          "start": 62.28,
+          "word": "own"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.03,
+          "start": 62.49,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.66,
+          "start": 63.27,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.05,
+          "start": 63.9,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.5,
+          "start": 64.05,
+          "word": "routes"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.13,
+          "start": 64.8,
+          "word": "later"
+        },
+        {
+          "conf": 0.85754,
+          "end": 65.31,
+          "start": 65.13,
+          "word": "help"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.64,
+          "start": 65.314277,
+          "word": "develop"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.7,
+          "start": 65.64,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.03,
+          "start": 65.7,
+          "word": "bahamas"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.45,
+          "start": 66.03,
+          "word": "connection"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.11,
+          "start": 66.72,
+          "word": "larger"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.53,
+          "start": 67.11,
+          "word": "shipments"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.68,
+          "start": 67.53,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.98,
+          "start": 67.68,
+          "word": "arrive"
+        },
+        {
+          "conf": 0.732962,
+          "end": 68.22,
+          "start": 67.98,
+          "word": "there"
+        },
+        {
+          "conf": 0.470505,
+          "end": 68.666646,
+          "start": 68.49,
+          "word": "then"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.88,
+          "start": 68.666646,
+          "word": "move"
+        },
+        {
+          "conf": 0.653907,
+          "end": 69.36,
+          "start": 68.88,
+          "word": "onward"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.51,
+          "start": 69.39,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.87,
+          "start": 69.51,
+          "word": "smaller"
+        },
+        {
+          "conf": 1.0,
+          "end": 70.29,
+          "start": 69.87,
+          "word": "loads"
+        },
+        {
+          "conf": 1.0,
+          "end": 70.83,
+          "start": 70.56,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 71.46,
+          "start": 70.83,
+          "word": "changes"
+        },
+        {
+          "conf": 1.0,
+          "end": 71.55,
+          "start": 71.46,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.03,
+          "start": 71.55,
+          "word": "scale"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.15,
+          "start": 72.03,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.24,
+          "start": 72.15,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.81,
+          "start": 72.24,
+          "word": "story"
+        }
+      ],
+      "text": "processed it pilots and smugglers moved the finished drug north and this wasn't one man doing everything other traffickers including the show us and carlos later brought their own people money and routes later help develop the bahamas connection larger shipments could arrive there then move onward in smaller loads that changes the scale of the story"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 73.29,
+          "start": 73.11,
+          "word": "you're"
+        },
+        {
+          "conf": 1.0,
+          "end": 73.5,
+          "start": 73.29,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 73.98,
+          "start": 73.5,
+          "word": "following"
+        },
+        {
+          "conf": 1.0,
+          "end": 74.04,
+          "start": 73.98,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 74.4,
+          "start": 74.04,
+          "word": "street"
+        },
+        {
+          "conf": 1.0,
+          "end": 74.76,
+          "start": 74.4,
+          "word": "dealer"
+        },
+        {
+          "conf": 1.0,
+          "end": 74.91,
+          "start": 74.76,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 74.94,
+          "start": 74.91,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 75.27,
+          "start": 74.94,
+          "word": "lucky"
+        },
+        {
+          "conf": 1.0,
+          "end": 75.78,
+          "start": 75.27,
+          "word": "break"
+        },
+        {
+          "conf": 0.750116,
+          "end": 76.26,
+          "start": 76.08,
+          "word": "you're"
+        },
+        {
+          "conf": 1.0,
+          "end": 76.68,
+          "start": 76.26,
+          "word": "looking"
+        },
+        {
+          "conf": 1.0,
+          "end": 76.83,
+          "start": 76.68,
+          "word": "at"
+        },
+        {
+          "conf": 0.539034,
+          "end": 76.92,
+          "start": 76.83,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 77.4,
+          "start": 76.924351,
+          "word": "supply"
+        },
+        {
+          "conf": 1.0,
+          "end": 77.82,
+          "start": 77.4,
+          "word": "chain"
+        },
+        {
+          "conf": 1.0,
+          "end": 78.3,
+          "start": 78.15,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 78.6,
+          "start": 78.3,
+          "word": "every"
+        },
+        {
+          "conf": 1.0,
+          "end": 79.05,
+          "start": 78.6,
+          "word": "successful"
+        },
+        {
+          "conf": 1.0,
+          "end": 79.53,
+          "start": 79.05,
+          "word": "shipment"
+        },
+        {
+          "conf": 1.0,
+          "end": 80.01,
+          "start": 79.74,
+          "word": "gave"
+        },
+        {
+          "conf": 1.0,
+          "end": 80.19,
+          "start": 80.01,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 80.61,
+          "start": 80.19,
+          "word": "network"
+        },
+        {
+          "conf": 1.0,
+          "end": 80.82,
+          "start": 80.61,
+          "word": "more"
+        },
+        {
+          "conf": 1.0,
+          "end": 81.18,
+          "start": 80.82,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 81.3,
+          "start": 81.18,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 81.51,
+          "start": 81.3,
+          "word": "keep"
+        },
+        {
+          "conf": 1.0,
+          "end": 81.84,
+          "start": 81.51,
+          "word": "itself"
+        },
+        {
+          "conf": 1.0,
+          "end": 82.17,
+          "start": 81.84,
+          "word": "running"
+        },
+        {
+          "conf": 0.414269,
+          "end": 82.65,
+          "start": 82.56,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 82.98,
+          "start": 82.65,
+          "word": "moving"
+        },
+        {
+          "conf": 1.0,
+          "end": 83.49,
+          "start": 82.98,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 83.73,
+          "start": 83.52,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 83.94,
+          "start": 83.73,
+          "word": "only"
+        },
+        {
+          "conf": 1.0,
+          "end": 84.36,
+          "start": 83.94,
+          "word": "half"
+        },
+        {
+          "conf": 1.0,
+          "end": 84.48,
+          "start": 84.36,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 84.99,
+          "start": 84.48,
+          "word": "problem"
+        },
+        {
+          "conf": 1.0,
+          "end": 85.35,
+          "start": 85.26,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 85.65,
+          "start": 85.35,
+          "word": "business"
+        },
+        {
+          "conf": 1.0,
+          "end": 85.86,
+          "start": 85.65,
+          "word": "like"
+        },
+        {
+          "conf": 1.0,
+          "end": 86.13,
+          "start": 85.86,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 86.55,
+          "start": 86.16,
+          "word": "also"
+        },
+        {
+          "conf": 1.0,
+          "end": 86.79,
+          "start": 86.55,
+          "word": "needed"
+        },
+        {
+          "conf": 1.0,
+          "end": 87.39,
+          "start": 86.79,
+          "word": "protection"
+        },
+        {
+          "conf": 1.0,
+          "end": 88.2,
+          "start": 87.66,
+          "word": "bribes"
+        },
+        {
+          "conf": 1.0,
+          "end": 88.38,
+          "start": 88.2,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 88.59,
+          "start": 88.38,
+          "word": "make"
+        },
+        {
+          "conf": 1.0,
+          "end": 88.68,
+          "start": 88.59,
+          "word": "an"
+        },
+        {
+          "conf": 1.0,
+          "end": 89.07,
+          "start": 88.68,
+          "word": "official"
+        },
+        {
+          "conf": 1.0,
+          "end": 89.25,
+          "start": 89.07,
+          "word": "look"
+        },
+        {
+          "conf": 1.0,
+          "end": 89.7,
+          "start": 89.25,
+          "word": "away"
+        },
+        {
+          "conf": 1.0,
+          "end": 90.51,
+          "start": 89.97,
+          "word": "threats"
+        },
+        {
+          "conf": 1.0,
+          "end": 90.84,
+          "start": 90.66,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 90.96,
+          "start": 90.84,
+          "word": "make"
+        },
+        {
+          "conf": 1.0,
+          "end": 91.32,
+          "start": 90.96,
+          "word": "refusing"
+        },
+        {
+          "conf": 1.0,
+          "end": 91.35,
+          "start": 91.32,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 91.62,
+          "start": 91.35,
+          "word": "bribe"
+        },
+        {
+          "conf": 1.0,
+          "end": 92.13,
+          "start": 91.62,
+          "word": "dangerous"
+        },
+        {
+          "conf": 1.0,
+          "end": 92.52,
+          "start": 92.37,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 92.76,
+          "start": 92.52,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 93.06,
+          "start": 92.76,
+          "word": "wasn't"
+        }
+      ],
+      "text": "you're not following a street dealer with a lucky break you're looking at it supply chain and every successful shipment gave that network more money to keep itself running a moving cocaine was only half the problem a business like this also needed protection bribes could make an official look away threats could make refusing a bribe dangerous the money wasn't"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 93.36,
+          "start": 93.12,
+          "word": "just"
+        },
+        {
+          "conf": 1.0,
+          "end": 93.39,
+          "start": 93.36,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 93.87,
+          "start": 93.39,
+          "word": "reward"
+        },
+        {
+          "conf": 1.0,
+          "end": 93.99,
+          "start": 93.87,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 94.08,
+          "start": 93.99,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 94.68,
+          "start": 94.08,
+          "word": "operation"
+        },
+        {
+          "conf": 1.0,
+          "end": 95.1,
+          "start": 94.95,
+          "word": "it"
+        },
+        {
+          "conf": 0.888214,
+          "end": 95.46,
+          "start": 95.1,
+          "word": "helped"
+        },
+        {
+          "conf": 1.0,
+          "end": 95.97,
+          "start": 95.46,
+          "word": "protect"
+        },
+        {
+          "conf": 1.0,
+          "end": 96.15,
+          "start": 96.03,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 96.51,
+          "start": 96.15,
+          "word": "next"
+        },
+        {
+          "conf": 1.0,
+          "end": 97.05,
+          "start": 96.54,
+          "word": "shipment"
+        },
+        {
+          "conf": 0.705804,
+          "end": 97.56,
+          "start": 97.35,
+          "word": "now"
+        },
+        {
+          "conf": 1.0,
+          "end": 97.77,
+          "start": 97.56,
+          "word": "put"
+        },
+        {
+          "conf": 1.0,
+          "end": 97.98,
+          "start": 97.77,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 98.52,
+          "start": 97.98,
+          "word": "beside"
+        },
+        {
+          "conf": 1.0,
+          "end": 98.67,
+          "start": 98.52,
+          "word": "what"
+        },
+        {
+          "conf": 1.0,
+          "end": 98.82,
+          "start": 98.67,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 99.33,
+          "start": 98.82,
+          "word": "happening"
+        },
+        {
+          "conf": 0.531452,
+          "end": 99.448,
+          "start": 99.33,
+          "word": "and"
+        },
+        {
+          "conf": 0.895534,
+          "end": 100.05,
+          "start": 99.448,
+          "word": "managing"
+        },
+        {
+          "conf": 1.0,
+          "end": 100.86,
+          "start": 100.32,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 101.28,
+          "start": 101.01,
+          "word": "paid"
+        },
+        {
+          "conf": 1.0,
+          "end": 101.4,
+          "start": 101.28,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 101.82,
+          "start": 101.4,
+          "word": "housing"
+        },
+        {
+          "conf": 1.0,
+          "end": 102.15,
+          "start": 102.0,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 102.39,
+          "start": 102.15,
+          "word": "football"
+        },
+        {
+          "conf": 1.0,
+          "end": 102.99,
+          "start": 102.39,
+          "word": "facilities"
+        },
+        {
+          "conf": 1.0,
+          "end": 103.41,
+          "start": 103.26,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 103.62,
+          "start": 103.41,
+          "word": "poor"
+        },
+        {
+          "conf": 1.0,
+          "end": 104.22,
+          "start": 103.62,
+          "word": "communities"
+        },
+        {
+          "conf": 1.0,
+          "end": 105.06,
+          "start": 104.79,
+          "word": "those"
+        },
+        {
+          "conf": 1.0,
+          "end": 105.51,
+          "start": 105.06,
+          "word": "homes"
+        },
+        {
+          "conf": 1.0,
+          "end": 105.9,
+          "start": 105.75,
+          "word": "were"
+        },
+        {
+          "conf": 1.0,
+          "end": 106.29,
+          "start": 105.9,
+          "word": "real"
+        },
+        {
+          "conf": 1.0,
+          "end": 106.8,
+          "start": 106.5,
+          "word": "so"
+        },
+        {
+          "conf": 0.422613,
+          "end": 106.975693,
+          "start": 106.8,
+          "word": "where"
+        },
+        {
+          "conf": 0.705532,
+          "end": 107.07,
+          "start": 106.98,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 107.7,
+          "start": 107.07,
+          "word": "improvements"
+        },
+        {
+          "conf": 1.0,
+          "end": 108.0,
+          "start": 107.85,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 108.33,
+          "start": 108.0,
+          "word": "people's"
+        },
+        {
+          "conf": 1.0,
+          "end": 108.78,
+          "start": 108.33,
+          "word": "lives"
+        },
+        {
+          "conf": 1.0,
+          "end": 109.17,
+          "start": 109.02,
+          "word": "if"
+        },
+        {
+          "conf": 1.0,
+          "end": 109.26,
+          "start": 109.17,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 109.74,
+          "start": 109.26,
+          "word": "family"
+        },
+        {
+          "conf": 0.72006,
+          "end": 110.07,
+          "start": 109.74,
+          "word": "needed"
+        },
+        {
+          "conf": 1.0,
+          "end": 110.46,
+          "start": 110.07,
+          "word": "somewhere"
+        },
+        {
+          "conf": 1.0,
+          "end": 110.88,
+          "start": 110.46,
+          "word": "decent"
+        },
+        {
+          "conf": 1.0,
+          "end": 111.0,
+          "start": 110.88,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 111.45,
+          "start": 111.0,
+          "word": "live"
+        },
+        {
+          "conf": 1.0,
+          "end": 111.99,
+          "start": 111.72,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 112.32,
+          "start": 111.99,
+          "word": "mattered"
+        },
+        {
+          "conf": 1.0,
+          "end": 112.38,
+          "start": 112.32,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 112.68,
+          "start": 112.38,
+          "word": "lot"
+        },
+        {
+          "conf": 1.0,
+          "end": 113.13,
+          "start": 112.68,
+          "word": "more"
+        }
+      ],
+      "text": "just a reward for the operation it helped protect the next shipment now put that beside what was happening and managing escobar paid for housing and football facilities in poor communities those homes were real so where the improvements in people's lives if your family needed somewhere decent to live that mattered a lot more"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.587575,
+          "end": 113.55,
+          "start": 113.37,
+          "word": "than"
+        },
+        {
+          "conf": 1.0,
+          "end": 113.61,
+          "start": 113.55,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 114.03,
+          "start": 113.61,
+          "word": "billionaire"
+        },
+        {
+          "conf": 1.0,
+          "end": 114.48,
+          "start": 114.03,
+          "word": "ranking"
+        },
+        {
+          "conf": 1.0,
+          "end": 114.93,
+          "start": 114.78,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 115.2,
+          "start": 114.93,
+          "word": "also"
+        },
+        {
+          "conf": 1.0,
+          "end": 115.41,
+          "start": 115.2,
+          "word": "gave"
+        },
+        {
+          "conf": 1.0,
+          "end": 115.56,
+          "start": 115.41,
+          "word": "him"
+        },
+        {
+          "conf": 0.761516,
+          "end": 116.22,
+          "start": 115.56,
+          "word": "goodwill"
+        },
+        {
+          "conf": 1.0,
+          "end": 117.24,
+          "start": 116.49,
+          "word": "visibility"
+        },
+        {
+          "conf": 1.0,
+          "end": 117.66,
+          "start": 117.54,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 118.02,
+          "start": 117.66,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 118.32,
+          "start": 118.02,
+          "word": "willing"
+        },
+        {
+          "conf": 1.0,
+          "end": 118.41,
+          "start": 118.32,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 118.71,
+          "start": 118.41,
+          "word": "speak"
+        },
+        {
+          "conf": 1.0,
+          "end": 118.86,
+          "start": 118.71,
+          "word": "up"
+        },
+        {
+          "conf": 1.0,
+          "end": 118.98,
+          "start": 118.86,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 119.22,
+          "start": 118.98,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 119.61,
+          "start": 119.46,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 119.79,
+          "start": 119.61,
+          "word": "doesn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 120.0,
+          "start": 119.79,
+          "word": "mean"
+        },
+        {
+          "conf": 1.0,
+          "end": 120.27,
+          "start": 120.0,
+          "word": "every"
+        },
+        {
+          "conf": 0.601532,
+          "end": 120.54,
+          "start": 120.27,
+          "word": "great"
+        },
+        {
+          "conf": 0.601532,
+          "end": 120.69,
+          "start": 120.54,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 121.14,
+          "start": 120.69,
+          "word": "resident"
+        },
+        {
+          "conf": 1.0,
+          "end": 121.89,
+          "start": 121.32,
+          "word": "supported"
+        },
+        {
+          "conf": 1.0,
+          "end": 122.01,
+          "start": 121.89,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 122.46,
+          "start": 122.01,
+          "word": "crimes"
+        },
+        {
+          "conf": 1.0,
+          "end": 122.91,
+          "start": 122.73,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 122.97,
+          "start": 122.91,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 123.24,
+          "start": 122.97,
+          "word": "doesn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 123.48,
+          "start": 123.24,
+          "word": "make"
+        },
+        {
+          "conf": 1.0,
+          "end": 123.57,
+          "start": 123.48,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 123.96,
+          "start": 123.57,
+          "word": "crimes"
+        },
+        {
+          "conf": 1.0,
+          "end": 124.68,
+          "start": 123.96,
+          "word": "disappear"
+        },
+        {
+          "conf": 1.0,
+          "end": 125.1,
+          "start": 124.98,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 125.37,
+          "start": 125.1,
+          "word": "means"
+        },
+        {
+          "conf": 1.0,
+          "end": 125.46,
+          "start": 125.37,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 126.15,
+          "start": 125.46,
+          "word": "generosity"
+        },
+        {
+          "conf": 0.88064,
+          "end": 126.451729,
+          "start": 126.36,
+          "word": "and"
+        },
+        {
+          "conf": 0.869721,
+          "end": 126.51,
+          "start": 126.451729,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 127.05,
+          "start": 126.51,
+          "word": "violence"
+        },
+        {
+          "conf": 0.717838,
+          "end": 127.56,
+          "start": 127.26,
+          "word": "weren't"
+        },
+        {
+          "conf": 0.460776,
+          "end": 127.68,
+          "start": 127.56,
+          "word": "to"
+        },
+        {
+          "conf": 0.812789,
+          "end": 127.978462,
+          "start": 127.68,
+          "word": "separate"
+        },
+        {
+          "conf": 1.0,
+          "end": 128.4,
+          "start": 127.978462,
+          "word": "stories"
+        },
+        {
+          "conf": 1.0,
+          "end": 128.82,
+          "start": 128.7,
+          "word": "they"
+        },
+        {
+          "conf": 1.0,
+          "end": 128.97,
+          "start": 128.82,
+          "word": "were"
+        },
+        {
+          "conf": 1.0,
+          "end": 129.66,
+          "start": 128.97,
+          "word": "operating"
+        },
+        {
+          "conf": 1.0,
+          "end": 129.96,
+          "start": 129.84,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 130.05,
+          "start": 129.96,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 130.29,
+          "start": 130.05,
+          "word": "same"
+        },
+        {
+          "conf": 1.0,
+          "end": 130.74,
+          "start": 130.29,
+          "word": "city"
+        },
+        {
+          "conf": 1.0,
+          "end": 131.34,
+          "start": 131.01,
+          "word": "around"
+        },
+        {
+          "conf": 1.0,
+          "end": 131.43,
+          "start": 131.34,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 131.7,
+          "start": 131.43,
+          "word": "same"
+        },
+        {
+          "conf": 1.0,
+          "end": 132.15,
+          "start": 131.7,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 132.69,
+          "start": 132.54,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 133.08,
+          "start": 132.69,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 133.32,
+          "start": 133.11,
+          "word": "eighty"
+        },
+        {
+          "conf": 1.0,
+          "end": 133.44,
+          "start": 133.32,
+          "word": "two"
+        }
+      ],
+      "text": "than a billionaire ranking it also gave him goodwill visibility and people willing to speak up for him that doesn't mean every great for resident supported his crimes and it doesn't make the crimes disappear it means the generosity and the violence weren't to separate stories they were operating in the same city around the same man in nineteen eighty two"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.500196,
+          "end": 133.71,
+          "start": 133.44,
+          "word": "two"
+        },
+        {
+          "conf": 1.0,
+          "end": 134.43,
+          "start": 133.98,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 134.88,
+          "start": 134.61,
+          "word": "took"
+        },
+        {
+          "conf": 0.910884,
+          "end": 135.06,
+          "start": 134.88,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 135.36,
+          "start": 135.06,
+          "word": "public"
+        },
+        {
+          "conf": 1.0,
+          "end": 135.9,
+          "start": 135.36,
+          "word": "profile"
+        },
+        {
+          "conf": 1.0,
+          "end": 136.23,
+          "start": 135.99,
+          "word": "into"
+        },
+        {
+          "conf": 1.0,
+          "end": 136.77,
+          "start": 136.23,
+          "word": "politics"
+        },
+        {
+          "conf": 1.0,
+          "end": 137.16,
+          "start": 137.04,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 137.34,
+          "start": 137.16,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 137.82,
+          "start": 137.34,
+          "word": "elected"
+        },
+        {
+          "conf": 1.0,
+          "end": 138.15,
+          "start": 138.03,
+          "word": "as"
+        },
+        {
+          "conf": 1.0,
+          "end": 138.24,
+          "start": 138.15,
+          "word": "an"
+        },
+        {
+          "conf": 1.0,
+          "end": 138.63,
+          "start": 138.24,
+          "word": "alternate"
+        },
+        {
+          "conf": 1.0,
+          "end": 139.02,
+          "start": 138.63,
+          "word": "member"
+        },
+        {
+          "conf": 1.0,
+          "end": 139.14,
+          "start": 139.02,
+          "word": "of"
+        },
+        {
+          "conf": 0.853044,
+          "end": 139.59,
+          "start": 139.14,
+          "word": "colombia's"
+        },
+        {
+          "conf": 1.0,
+          "end": 140.13,
+          "start": 139.59,
+          "word": "congress"
+        },
+        {
+          "conf": 0.55814,
+          "end": 140.52,
+          "start": 140.37,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 141.03,
+          "start": 140.52,
+          "word": "alternate"
+        },
+        {
+          "conf": 1.0,
+          "end": 141.54,
+          "start": 141.24,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 141.6,
+          "start": 141.54,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 142.08,
+          "start": 141.6,
+          "word": "president"
+        },
+        {
+          "conf": 1.0,
+          "end": 142.53,
+          "start": 142.35,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 142.77,
+          "start": 142.53,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 142.86,
+          "start": 142.77,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 143.25,
+          "start": 142.86,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 143.58,
+          "start": 143.28,
+          "word": "running"
+        },
+        {
+          "conf": 1.0,
+          "end": 143.7,
+          "start": 143.58,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 144.24,
+          "start": 143.7,
+          "word": "country"
+        },
+        {
+          "conf": 1.0,
+          "end": 144.66,
+          "start": 144.51,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 144.87,
+          "start": 144.66,
+          "word": "even"
+        },
+        {
+          "conf": 1.0,
+          "end": 145.11,
+          "start": 144.87,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 145.74,
+          "start": 145.11,
+          "word": "position"
+        },
+        {
+          "conf": 1.0,
+          "end": 146.28,
+          "start": 146.04,
+          "word": "give"
+        },
+        {
+          "conf": 1.0,
+          "end": 146.31,
+          "start": 146.28,
+          "word": "a"
+        },
+        {
+          "conf": 0.52375,
+          "end": 146.76,
+          "start": 146.31,
+          "word": "traffic"
+        },
+        {
+          "conf": 0.52375,
+          "end": 146.85,
+          "start": 146.76,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 147.33,
+          "start": 146.857837,
+          "word": "something"
+        },
+        {
+          "conf": 1.0,
+          "end": 147.75,
+          "start": 147.33,
+          "word": "cash"
+        },
+        {
+          "conf": 1.0,
+          "end": 148.23,
+          "start": 147.75,
+          "word": "alone"
+        },
+        {
+          "conf": 1.0,
+          "end": 148.5,
+          "start": 148.29,
+          "word": "couldn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 148.92,
+          "start": 148.5,
+          "word": "provide"
+        },
+        {
+          "conf": 1.0,
+          "end": 149.49,
+          "start": 149.4,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 149.79,
+          "start": 149.49,
+          "word": "place"
+        },
+        {
+          "conf": 1.0,
+          "end": 150.27,
+          "start": 149.79,
+          "word": "inside"
+        },
+        {
+          "conf": 1.0,
+          "end": 151.14,
+          "start": 150.51,
+          "word": "legitimate"
+        },
+        {
+          "conf": 1.0,
+          "end": 151.65,
+          "start": 151.14,
+          "word": "political"
+        },
+        {
+          "conf": 1.0,
+          "end": 152.13,
+          "start": 151.65,
+          "word": "life"
+        },
+        {
+          "conf": 1.0,
+          "end": 152.55,
+          "start": 152.43,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 152.85,
+          "start": 152.55,
+          "word": "public"
+        },
+        {
+          "conf": 1.0,
+          "end": 153.24,
+          "start": 152.85,
+          "word": "image"
+        },
+        {
+          "conf": 1.0,
+          "end": 153.6,
+          "start": 153.42,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 153.66,
+          "start": 153.6,
+          "word": "the"
+        },
+        {
+          "conf": 0.198536,
+          "end": 153.84,
+          "start": 153.66,
+          "word": "job"
+        }
+      ],
+      "text": "two escobar took that public profile into politics he was elected as an alternate member of colombia's congress and alternate not the president and not the man running the country but even that position give a traffic or something cash alone couldn't provide a place inside legitimate political life the public image was the job"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.397983,
+          "end": 154.08,
+          "start": 153.84,
+          "word": "nervous"
+        },
+        {
+          "conf": 1.0,
+          "end": 154.32,
+          "start": 154.08,
+          "word": "local"
+        },
+        {
+          "conf": 0.616735,
+          "end": 154.89,
+          "start": 154.32,
+          "word": "businessman"
+        },
+        {
+          "conf": 1.0,
+          "end": 155.28,
+          "start": 155.16,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 155.52,
+          "start": 155.28,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 155.97,
+          "start": 155.52,
+          "word": "behind"
+        },
+        {
+          "conf": 1.0,
+          "end": 156.15,
+          "start": 155.97,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 156.63,
+          "start": 156.45,
+          "word": "came"
+        },
+        {
+          "conf": 1.0,
+          "end": 156.78,
+          "start": 156.63,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 157.26,
+          "start": 156.78,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 157.74,
+          "start": 157.47,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 158.25,
+          "start": 157.74,
+          "word": "contradiction"
+        },
+        {
+          "conf": 1.0,
+          "end": 158.52,
+          "start": 158.25,
+          "word": "became"
+        },
+        {
+          "conf": 1.0,
+          "end": 158.76,
+          "start": 158.52,
+          "word": "harder"
+        },
+        {
+          "conf": 1.0,
+          "end": 158.85,
+          "start": 158.76,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 159.21,
+          "start": 158.85,
+          "word": "hide"
+        },
+        {
+          "conf": 1.0,
+          "end": 159.66,
+          "start": 159.48,
+          "word": "when"
+        },
+        {
+          "conf": 1.0,
+          "end": 160.2,
+          "start": 159.66,
+          "word": "journalists"
+        },
+        {
+          "conf": 1.0,
+          "end": 160.59,
+          "start": 160.41,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 160.89,
+          "start": 160.59,
+          "word": "justice"
+        },
+        {
+          "conf": 1.0,
+          "end": 161.19,
+          "start": 160.89,
+          "word": "minister"
+        },
+        {
+          "conf": 1.0,
+          "end": 161.67,
+          "start": 161.19,
+          "word": "rodrigo"
+        },
+        {
+          "conf": 0.474327,
+          "end": 162.0,
+          "start": 161.73,
+          "word": "laura"
+        },
+        {
+          "conf": 0.54526,
+          "end": 162.42,
+          "start": 162.0,
+          "word": "bania"
+        },
+        {
+          "conf": 1.0,
+          "end": 163.17,
+          "start": 162.69,
+          "word": "exposed"
+        },
+        {
+          "conf": 1.0,
+          "end": 163.35,
+          "start": 163.17,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 163.65,
+          "start": 163.35,
+          "word": "criminal"
+        },
+        {
+          "conf": 1.0,
+          "end": 164.16,
+          "start": 163.65,
+          "word": "background"
+        },
+        {
+          "conf": 1.0,
+          "end": 164.79,
+          "start": 164.4,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 165.18,
+          "start": 164.85,
+          "word": "political"
+        },
+        {
+          "conf": 1.0,
+          "end": 165.6,
+          "start": 165.18,
+          "word": "project"
+        },
+        {
+          "conf": 1.0,
+          "end": 166.17,
+          "start": 165.63,
+          "word": "unraveled"
+        },
+        {
+          "conf": 0.843642,
+          "end": 166.98,
+          "start": 166.41,
+          "word": "laura"
+        },
+        {
+          "conf": 1.0,
+          "end": 167.25,
+          "start": 167.04,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 167.97,
+          "start": 167.25,
+          "word": "assassinated"
+        },
+        {
+          "conf": 1.0,
+          "end": 168.24,
+          "start": 168.09,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 168.54,
+          "start": 168.24,
+          "word": "april"
+        },
+        {
+          "conf": 1.0,
+          "end": 168.87,
+          "start": 168.54,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 169.08,
+          "start": 168.9,
+          "word": "eighty"
+        },
+        {
+          "conf": 1.0,
+          "end": 169.44,
+          "start": 169.08,
+          "word": "four"
+        },
+        {
+          "conf": 1.0,
+          "end": 169.89,
+          "start": 169.68,
+          "word": "this"
+        },
+        {
+          "conf": 0.893688,
+          "end": 170.13,
+          "start": 169.89,
+          "word": "wasn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 170.46,
+          "start": 170.13,
+          "word": "simply"
+        },
+        {
+          "conf": 1.0,
+          "end": 170.52,
+          "start": 170.46,
+          "word": "a"
+        },
+        {
+          "conf": 0.865778,
+          "end": 170.73,
+          "start": 170.52,
+          "word": "rich"
+        },
+        {
+          "conf": 0.865778,
+          "end": 170.97,
+          "start": 170.73,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 171.45,
+          "start": 170.97,
+          "word": "failing"
+        },
+        {
+          "conf": 1.0,
+          "end": 171.57,
+          "start": 171.45,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 171.721611,
+          "start": 171.57,
+          "word": "get"
+        },
+        {
+          "conf": 0.805828,
+          "end": 171.78,
+          "start": 171.721611,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 172.41,
+          "start": 171.78,
+          "word": "respectable"
+        },
+        {
+          "conf": 1.0,
+          "end": 172.77,
+          "start": 172.41,
+          "word": "career"
+        },
+        {
+          "conf": 1.0,
+          "end": 172.89,
+          "start": 172.77,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 173.37,
+          "start": 172.89,
+          "word": "wanted"
+        },
+        {
+          "conf": 1.0,
+          "end": 174.0,
+          "start": 173.61,
+          "word": "people"
+        }
+      ],
+      "text": "nervous local businessman the money behind it came from cocaine that contradiction became harder to hide when journalists and justice minister rodrigo laura bania exposed his criminal background escobar political project unraveled laura was assassinated in april nineteen eighty four this wasn't simply a rich man failing to get the respectable career he wanted people"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 174.72,
+          "start": 174.03,
+          "word": "challenging"
+        },
+        {
+          "conf": 1.0,
+          "end": 174.81,
+          "start": 174.72,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 175.08,
+          "start": 174.81,
+          "word": "drug"
+        },
+        {
+          "conf": 1.0,
+          "end": 175.38,
+          "start": 175.08,
+          "word": "trade"
+        },
+        {
+          "conf": 1.0,
+          "end": 175.53,
+          "start": 175.38,
+          "word": "were"
+        },
+        {
+          "conf": 1.0,
+          "end": 175.8,
+          "start": 175.53,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 176.01,
+          "start": 175.8,
+          "word": "put"
+        },
+        {
+          "conf": 1.0,
+          "end": 176.13,
+          "start": 176.01,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 176.67,
+          "start": 176.13,
+          "word": "danger"
+        },
+        {
+          "conf": 1.0,
+          "end": 177.15,
+          "start": 177.0,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 177.21,
+          "start": 177.15,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 177.51,
+          "start": 177.21,
+          "word": "battle"
+        },
+        {
+          "conf": 1.0,
+          "end": 177.9,
+          "start": 177.51,
+          "word": "ahead"
+        },
+        {
+          "conf": 1.0,
+          "end": 178.08,
+          "start": 177.9,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 178.38,
+          "start": 178.08,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 178.74,
+          "start": 178.38,
+          "word": "much"
+        },
+        {
+          "conf": 1.0,
+          "end": 179.25,
+          "start": 178.74,
+          "word": "more"
+        },
+        {
+          "conf": 1.0,
+          "end": 179.7,
+          "start": 179.49,
+          "word": "than"
+        },
+        {
+          "conf": 1.0,
+          "end": 179.85,
+          "start": 179.7,
+          "word": "who"
+        },
+        {
+          "conf": 1.0,
+          "end": 180.09,
+          "start": 179.85,
+          "word": "got"
+        },
+        {
+          "conf": 1.0,
+          "end": 180.15,
+          "start": 180.09,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 180.54,
+          "start": 180.15,
+          "word": "seat"
+        },
+        {
+          "conf": 1.0,
+          "end": 180.69,
+          "start": 180.54,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 181.47,
+          "start": 180.69,
+          "word": "congress"
+        },
+        {
+          "conf": 1.0,
+          "end": 181.89,
+          "start": 181.74,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 182.01,
+          "start": 181.89,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 182.31,
+          "start": 182.01,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 182.61,
+          "start": 182.31,
+          "word": "whether"
+        },
+        {
+          "conf": 1.0,
+          "end": 182.73,
+          "start": 182.61,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 183.12,
+          "start": 182.73,
+          "word": "state"
+        },
+        {
+          "conf": 1.0,
+          "end": 183.33,
+          "start": 183.12,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 183.72,
+          "start": 183.33,
+          "word": "actually"
+        },
+        {
+          "conf": 1.0,
+          "end": 183.99,
+          "start": 183.72,
+          "word": "put"
+        },
+        {
+          "conf": 1.0,
+          "end": 184.23,
+          "start": 183.99,
+          "word": "these"
+        },
+        {
+          "conf": 1.0,
+          "end": 184.74,
+          "start": 184.23,
+          "word": "men"
+        },
+        {
+          "conf": 1.0,
+          "end": 185.4,
+          "start": 185.01,
+          "word": "beyond"
+        },
+        {
+          "conf": 1.0,
+          "end": 185.49,
+          "start": 185.4,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 185.97,
+          "start": 185.49,
+          "word": "reach"
+        },
+        {
+          "conf": 1.0,
+          "end": 186.09,
+          "start": 186.0,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 186.24,
+          "start": 186.09,
+          "word": "their"
+        },
+        {
+          "conf": 1.0,
+          "end": 186.51,
+          "start": 186.24,
+          "word": "own"
+        },
+        {
+          "conf": 1.0,
+          "end": 187.17,
+          "start": 186.51,
+          "word": "influence"
+        },
+        {
+          "conf": 1.0,
+          "end": 187.68,
+          "start": 187.5,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 187.77,
+          "start": 187.68,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 187.98,
+          "start": 187.77,
+          "word": "why"
+        },
+        {
+          "conf": 1.0,
+          "end": 188.55,
+          "start": 187.98,
+          "word": "extradition"
+        },
+        {
+          "conf": 1.0,
+          "end": 188.88,
+          "start": 188.55,
+          "word": "matter"
+        },
+        {
+          "conf": 1.0,
+          "end": 189.12,
+          "start": 188.88,
+          "word": "so"
+        },
+        {
+          "conf": 1.0,
+          "end": 189.63,
+          "start": 189.12,
+          "word": "much"
+        },
+        {
+          "conf": 1.0,
+          "end": 189.99,
+          "start": 189.9,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 190.2,
+          "start": 189.99,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 190.44,
+          "start": 190.2,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 190.771743,
+          "start": 190.44,
+          "word": "sent"
+        },
+        {
+          "conf": 0.611543,
+          "end": 190.83,
+          "start": 190.771743,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 191.19,
+          "start": 190.853306,
+          "word": "face"
+        },
+        {
+          "conf": 1.0,
+          "end": 191.82,
+          "start": 191.19,
+          "word": "justice"
+        },
+        {
+          "conf": 1.0,
+          "end": 192.18,
+          "start": 192.03,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 192.39,
+          "start": 192.18,
+          "word": "another"
+        },
+        {
+          "conf": 1.0,
+          "end": 192.99,
+          "start": 192.39,
+          "word": "country"
+        },
+        {
+          "conf": 1.0,
+          "end": 193.68,
+          "start": 193.23,
+          "word": "especially"
+        },
+        {
+          "conf": 1.0,
+          "end": 193.77,
+          "start": 193.68,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 194.07,
+          "start": 193.77,
+          "word": "united"
+        }
+      ],
+      "text": "challenging the drug trade were being put in danger and the battle ahead was about much more than who got a seat in congress it was about whether the state could actually put these men beyond the reach of their own influence that is why extradition matter so much a man being sent to face justice in another country especially the united"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 194.49,
+          "start": 194.16,
+          "word": "dates"
+        },
+        {
+          "conf": 0.518572,
+          "end": 194.88,
+          "start": 194.76,
+          "word": "and"
+        },
+        {
+          "conf": 0.570653,
+          "end": 195.39,
+          "start": 194.88,
+          "word": "columbia"
+        },
+        {
+          "conf": 1.0,
+          "end": 195.63,
+          "start": 195.57,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 196.02,
+          "start": 195.63,
+          "word": "powerful"
+        },
+        {
+          "conf": 1.0,
+          "end": 196.53,
+          "start": 196.02,
+          "word": "trafficker"
+        },
+        {
+          "conf": 1.0,
+          "end": 196.68,
+          "start": 196.53,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 196.86,
+          "start": 196.68,
+          "word": "try"
+        },
+        {
+          "conf": 1.0,
+          "end": 196.95,
+          "start": 196.86,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 197.28,
+          "start": 196.95,
+          "word": "pressure"
+        },
+        {
+          "conf": 1.0,
+          "end": 197.85,
+          "start": 197.28,
+          "word": "officials"
+        },
+        {
+          "conf": 1.0,
+          "end": 198.57,
+          "start": 198.09,
+          "word": "intimidate"
+        },
+        {
+          "conf": 1.0,
+          "end": 199.08,
+          "start": 198.57,
+          "word": "witnesses"
+        },
+        {
+          "conf": 0.815557,
+          "end": 199.38,
+          "start": 199.29,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 199.56,
+          "start": 199.38,
+          "word": "by"
+        },
+        {
+          "conf": 1.0,
+          "end": 200.04,
+          "start": 199.56,
+          "word": "protection"
+        },
+        {
+          "conf": 1.0,
+          "end": 200.4,
+          "start": 200.31,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 200.82,
+          "start": 200.4,
+          "word": "prison"
+        },
+        {
+          "conf": 1.0,
+          "end": 201.15,
+          "start": 200.82,
+          "word": "cell"
+        },
+        {
+          "conf": 1.0,
+          "end": 201.78,
+          "start": 201.15,
+          "word": "abroad"
+        },
+        {
+          "conf": 1.0,
+          "end": 202.56,
+          "start": 202.08,
+          "word": "threatened"
+        },
+        {
+          "conf": 1.0,
+          "end": 202.65,
+          "start": 202.56,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 202.95,
+          "start": 202.65,
+          "word": "take"
+        },
+        {
+          "conf": 1.0,
+          "end": 203.16,
+          "start": 202.95,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 203.43,
+          "start": 203.19,
+          "word": "out"
+        },
+        {
+          "conf": 1.0,
+          "end": 203.52,
+          "start": 203.43,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 203.73,
+          "start": 203.52,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 204.45,
+          "start": 203.73,
+          "word": "environment"
+        },
+        {
+          "conf": 1.0,
+          "end": 205.02,
+          "start": 204.78,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 205.29,
+          "start": 205.02,
+          "word": "just"
+        },
+        {
+          "conf": 1.0,
+          "end": 205.53,
+          "start": 205.29,
+          "word": "away"
+        },
+        {
+          "conf": 1.0,
+          "end": 205.74,
+          "start": 205.53,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 206.1,
+          "start": 205.74,
+          "word": "home"
+        },
+        {
+          "conf": 1.0,
+          "end": 206.7,
+          "start": 206.43,
+          "word": "away"
+        },
+        {
+          "conf": 1.0,
+          "end": 206.85,
+          "start": 206.7,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 206.94,
+          "start": 206.85,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 207.81,
+          "start": 206.94,
+          "word": "relationships"
+        },
+        {
+          "conf": 1.0,
+          "end": 208.05,
+          "start": 207.87,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 208.32,
+          "start": 208.05,
+          "word": "helped"
+        },
+        {
+          "conf": 1.0,
+          "end": 208.59,
+          "start": 208.32,
+          "word": "keep"
+        },
+        {
+          "conf": 1.0,
+          "end": 208.71,
+          "start": 208.59,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 209.25,
+          "start": 208.71,
+          "word": "powerful"
+        },
+        {
+          "conf": 1.0,
+          "end": 210.06,
+          "start": 209.49,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 210.33,
+          "start": 210.18,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 210.51,
+          "start": 210.33,
+          "word": "other"
+        },
+        {
+          "conf": 0.533078,
+          "end": 210.698086,
+          "start": 210.51,
+          "word": "want"
+        },
+        {
+          "conf": 1.0,
+          "end": 211.26,
+          "start": 210.764004,
+          "word": "traffickers"
+        },
+        {
+          "conf": 0.758198,
+          "end": 211.59,
+          "start": 211.26,
+          "word": "fought"
+        },
+        {
+          "conf": 1.0,
+          "end": 212.22,
+          "start": 211.597251,
+          "word": "extradition"
+        },
+        {
+          "conf": 1.0,
+          "end": 212.52,
+          "start": 212.37,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 212.67,
+          "start": 212.52,
+          "word": "under"
+        },
+        {
+          "conf": 1.0,
+          "end": 213.15,
+          "start": 212.67,
+          "word": "escobar"
+        },
+        {
+          "conf": 0.507797,
+          "end": 213.562383,
+          "start": 213.33,
+          "word": "left"
+        },
+        {
+          "conf": 1.0,
+          "end": 213.78,
+          "start": 213.562383,
+          "word": "fight"
+        },
+        {
+          "conf": 1.0,
+          "end": 214.14,
+          "start": 213.78,
+          "word": "included"
+        },
+        {
+          "conf": 0.622768,
+          "end": 214.17,
+          "start": 214.14,
+          "word": "a"
+        }
+      ],
+      "text": "dates and columbia a powerful trafficker could try to pressure officials intimidate witnesses or by protection a prison cell abroad threatened to take him out of that environment not just away from home away from the relationships that helped keep him powerful escobar and other want traffickers fought extradition in under escobar left fight included a"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 214.59,
+          "start": 214.35,
+          "word": "pain"
+        },
+        {
+          "conf": 1.0,
+          "end": 214.68,
+          "start": 214.59,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 215.4,
+          "start": 214.68,
+          "word": "assassinations"
+        },
+        {
+          "conf": 1.0,
+          "end": 216.24,
+          "start": 215.64,
+          "word": "kidnappings"
+        },
+        {
+          "conf": 1.0,
+          "end": 216.54,
+          "start": 216.39,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 216.96,
+          "start": 216.54,
+          "word": "bombings"
+        },
+        {
+          "conf": 1.0,
+          "end": 217.5,
+          "start": 217.2,
+          "word": "police"
+        },
+        {
+          "conf": 1.0,
+          "end": 218.01,
+          "start": 217.5,
+          "word": "officers"
+        },
+        {
+          "conf": 1.0,
+          "end": 218.55,
+          "start": 218.04,
+          "word": "judges"
+        },
+        {
+          "conf": 1.0,
+          "end": 219.24,
+          "start": 218.67,
+          "word": "journalists"
+        },
+        {
+          "conf": 1.0,
+          "end": 219.48,
+          "start": 219.36,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 219.99,
+          "start": 219.48,
+          "word": "civilians"
+        },
+        {
+          "conf": 1.0,
+          "end": 220.41,
+          "start": 220.2,
+          "word": "pay"
+        },
+        {
+          "conf": 1.0,
+          "end": 220.5,
+          "start": 220.41,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 220.86,
+          "start": 220.5,
+          "word": "price"
+        },
+        {
+          "conf": 1.0,
+          "end": 221.28,
+          "start": 221.13,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 221.58,
+          "start": 221.28,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 221.7,
+          "start": 221.58,
+          "word": "eighty"
+        },
+        {
+          "conf": 1.0,
+          "end": 222.12,
+          "start": 221.7,
+          "word": "nine"
+        },
+        {
+          "conf": 1.0,
+          "end": 222.69,
+          "start": 222.27,
+          "word": "presidential"
+        },
+        {
+          "conf": 1.0,
+          "end": 223.11,
+          "start": 222.69,
+          "word": "candidate"
+        },
+        {
+          "conf": 0.514928,
+          "end": 223.56,
+          "start": 223.29,
+          "word": "louis"
+        },
+        {
+          "conf": 1.0,
+          "end": 223.92,
+          "start": 223.56353,
+          "word": "carlos"
+        },
+        {
+          "conf": 1.0,
+          "end": 224.34,
+          "start": 223.92,
+          "word": "golan"
+        },
+        {
+          "conf": 1.0,
+          "end": 224.52,
+          "start": 224.37,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 225.09,
+          "start": 224.52,
+          "word": "assassinated"
+        },
+        {
+          "conf": 1.0,
+          "end": 225.78,
+          "start": 225.33,
+          "word": "terror"
+        },
+        {
+          "conf": 1.0,
+          "end": 226.08,
+          "start": 225.9,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 226.26,
+          "start": 226.08,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 226.636758,
+          "start": 226.26,
+          "word": "used"
+        },
+        {
+          "conf": 1.0,
+          "end": 227.1,
+          "start": 226.68,
+          "word": "influence"
+        },
+        {
+          "conf": 1.0,
+          "end": 227.46,
+          "start": 227.1,
+          "word": "political"
+        },
+        {
+          "conf": 1.0,
+          "end": 228.0,
+          "start": 227.46,
+          "word": "decisions"
+        },
+        {
+          "conf": 1.0,
+          "end": 228.48,
+          "start": 228.24,
+          "word": "there's"
+        },
+        {
+          "conf": 1.0,
+          "end": 228.54,
+          "start": 228.48,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 228.96,
+          "start": 228.54,
+          "word": "difference"
+        },
+        {
+          "conf": 1.0,
+          "end": 229.23,
+          "start": 228.96,
+          "word": "between"
+        },
+        {
+          "conf": 1.0,
+          "end": 229.47,
+          "start": 229.23,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 230.07,
+          "start": 229.47,
+          "word": "popular"
+        },
+        {
+          "conf": 1.0,
+          "end": 230.43,
+          "start": 230.31,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 230.58,
+          "start": 230.43,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 230.79,
+          "start": 230.58,
+          "word": "able"
+        },
+        {
+          "conf": 1.0,
+          "end": 230.88,
+          "start": 230.79,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 231.03,
+          "start": 230.88,
+          "word": "make"
+        },
+        {
+          "conf": 1.0,
+          "end": 231.6,
+          "start": 231.03,
+          "word": "opposition"
+        },
+        {
+          "conf": 1.0,
+          "end": 232.11,
+          "start": 231.81,
+          "word": "feel"
+        },
+        {
+          "conf": 1.0,
+          "end": 232.77,
+          "start": 232.11,
+          "word": "unbearable"
+        },
+        {
+          "conf": 1.0,
+          "end": 233.52,
+          "start": 233.04,
+          "word": "escobar"
+        },
+        {
+          "conf": 0.87565,
+          "end": 233.79,
+          "start": 233.52,
+          "word": "use"
+        },
+        {
+          "conf": 1.0,
+          "end": 234.24,
+          "start": 233.793735,
+          "word": "both"
+        }
+      ],
+      "text": "pain of assassinations kidnappings and bombings police officers judges journalists and civilians pay the price in nineteen eighty nine presidential candidate louis carlos golan was assassinated terror was being used influence political decisions there's a difference between being popular and being able to make opposition feel unbearable escobar use both"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.608568,
+          "end": 235.047114,
+          "start": 234.9,
+          "word": "an"
+        },
+        {
+          "conf": 1.0,
+          "end": 235.5,
+          "start": 235.047114,
+          "word": "ordinary"
+        },
+        {
+          "conf": 1.0,
+          "end": 235.83,
+          "start": 235.5,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 236.07,
+          "start": 235.83,
+          "word": "didn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 236.22,
+          "start": 236.07,
+          "word": "get"
+        },
+        {
+          "conf": 1.0,
+          "end": 236.28,
+          "start": 236.22,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 236.82,
+          "start": 236.28,
+          "word": "choice"
+        },
+        {
+          "conf": 1.0,
+          "end": 237.0,
+          "start": 236.82,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 237.33,
+          "start": 237.03,
+          "word": "living"
+        },
+        {
+          "conf": 1.0,
+          "end": 237.81,
+          "start": 237.33,
+          "word": "inside"
+        },
+        {
+          "conf": 0.683903,
+          "end": 237.928037,
+          "start": 237.81,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 238.38,
+          "start": 237.928037,
+          "word": "struggle"
+        },
+        {
+          "conf": 1.0,
+          "end": 238.71,
+          "start": 238.59,
+          "word": "the"
+        },
+        {
+          "conf": 0.853255,
+          "end": 239.01,
+          "start": 238.71,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 239.1,
+          "start": 239.01,
+          "word": "who"
+        },
+        {
+          "conf": 1.0,
+          "end": 239.25,
+          "start": 239.1,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 239.58,
+          "start": 239.25,
+          "word": "pay"
+        },
+        {
+          "conf": 1.0,
+          "end": 239.761846,
+          "start": 239.58,
+          "word": "for"
+        },
+        {
+          "conf": 0.542899,
+          "end": 239.79,
+          "start": 239.761846,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 240.27,
+          "start": 239.79,
+          "word": "home"
+        },
+        {
+          "conf": 1.0,
+          "end": 240.84,
+          "start": 240.54,
+          "word": "also"
+        },
+        {
+          "conf": 1.0,
+          "end": 241.08,
+          "start": 240.84,
+          "word": "helped"
+        },
+        {
+          "conf": 1.0,
+          "end": 241.59,
+          "start": 241.08,
+          "word": "create"
+        },
+        {
+          "conf": 1.0,
+          "end": 241.74,
+          "start": 241.62,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 242.1,
+          "start": 241.74,
+          "word": "fear"
+        },
+        {
+          "conf": 1.0,
+          "end": 242.52,
+          "start": 242.13,
+          "word": "outside"
+        },
+        {
+          "conf": 1.0,
+          "end": 242.7,
+          "start": 242.52,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 243.21,
+          "start": 243.03,
+          "word": "by"
+        },
+        {
+          "conf": 0.867837,
+          "end": 243.54,
+          "start": 243.21,
+          "word": "ninety"
+        },
+        {
+          "conf": 1.0,
+          "end": 243.81,
+          "start": 243.547925,
+          "word": "ninety"
+        },
+        {
+          "conf": 1.0,
+          "end": 244.23,
+          "start": 243.81,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 244.59,
+          "start": 244.47,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 244.98,
+          "start": 244.59,
+          "word": "pressure"
+        },
+        {
+          "conf": 1.0,
+          "end": 245.46,
+          "start": 244.98,
+          "word": "produced"
+        },
+        {
+          "conf": 1.0,
+          "end": 245.49,
+          "start": 245.46,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 245.97,
+          "start": 245.49,
+          "word": "deal"
+        },
+        {
+          "conf": 0.480343,
+          "end": 246.63,
+          "start": 246.21,
+          "word": "colombia's"
+        },
+        {
+          "conf": 1.0,
+          "end": 246.84,
+          "start": 246.632285,
+          "word": "new"
+        },
+        {
+          "conf": 1.0,
+          "end": 247.47,
+          "start": 246.84,
+          "word": "constitution"
+        },
+        {
+          "conf": 1.0,
+          "end": 248.04,
+          "start": 247.5,
+          "word": "prohibited"
+        },
+        {
+          "conf": 1.0,
+          "end": 248.28,
+          "start": 248.19,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 248.88,
+          "start": 248.28,
+          "word": "extradition"
+        },
+        {
+          "conf": 1.0,
+          "end": 249.03,
+          "start": 248.91,
+          "word": "of"
+        },
+        {
+          "conf": 0.733879,
+          "end": 249.12,
+          "start": 249.03,
+          "word": "its"
+        },
+        {
+          "conf": 1.0,
+          "end": 249.69,
+          "start": 249.12,
+          "word": "nationals"
+        },
+        {
+          "conf": 1.0,
+          "end": 250.2,
+          "start": 249.93,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 250.35,
+          "start": 250.2,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 250.71,
+          "start": 250.35,
+          "word": "part"
+        },
+        {
+          "conf": 1.0,
+          "end": 250.86,
+          "start": 250.74,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 250.89,
+          "start": 250.86,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 251.16,
+          "start": 250.89,
+          "word": "much"
+        },
+        {
+          "conf": 1.0,
+          "end": 251.58,
+          "start": 251.16,
+          "word": "wider"
+        },
+        {
+          "conf": 1.0,
+          "end": 252.15,
+          "start": 251.58,
+          "word": "constitutional"
+        },
+        {
+          "conf": 1.0,
+          "end": 252.72,
+          "start": 252.15,
+          "word": "process"
+        },
+        {
+          "conf": 1.0,
+          "end": 253.2,
+          "start": 252.96,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 253.59,
+          "start": 253.2,
+          "word": "simply"
+        },
+        {
+          "conf": 1.0,
+          "end": 253.68,
+          "start": 253.59,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 254.22,
+          "start": 253.68,
+          "word": "document"
+        },
+        {
+          "conf": 0.762606,
+          "end": 254.64,
+          "start": 254.43,
+          "word": "ask"
+        }
+      ],
+      "text": "an ordinary people didn't get a choice about living inside that struggle the man who could pay for a home also helped create the fear outside it by ninety ninety one the pressure produced a deal colombia's new constitution prohibited the extradition of its nationals that was part of a much wider constitutional process not simply a document ask"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.602415,
+          "end": 254.85,
+          "start": 254.64,
+          "word": "our"
+        },
+        {
+          "conf": 0.809398,
+          "end": 255.116104,
+          "start": 254.85,
+          "word": "wrote"
+        },
+        {
+          "conf": 1.0,
+          "end": 255.24,
+          "start": 255.116104,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 255.72,
+          "start": 255.24,
+          "word": "himself"
+        },
+        {
+          "conf": 1.0,
+          "end": 256.05,
+          "start": 255.9,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 256.11,
+          "start": 256.05,
+          "word": "the"
+        },
+        {
+          "conf": 0.814565,
+          "end": 256.35,
+          "start": 256.11,
+          "word": "band"
+        },
+        {
+          "conf": 1.0,
+          "end": 256.65,
+          "start": 256.35,
+          "word": "mattered"
+        },
+        {
+          "conf": 1.0,
+          "end": 257.22,
+          "start": 256.65,
+          "word": "enormously"
+        },
+        {
+          "conf": 1.0,
+          "end": 257.34,
+          "start": 257.22,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 257.67,
+          "start": 257.34,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 258.06,
+          "start": 257.94,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 258.6,
+          "start": 258.06,
+          "word": "surrendered"
+        },
+        {
+          "conf": 1.0,
+          "end": 258.72,
+          "start": 258.6,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 259.14,
+          "start": 258.72,
+          "word": "june"
+        },
+        {
+          "conf": 1.0,
+          "end": 259.56,
+          "start": 259.38,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 259.83,
+          "start": 259.56,
+          "word": "entered"
+        },
+        {
+          "conf": 1.0,
+          "end": 259.89,
+          "start": 259.83,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 260.22,
+          "start": 259.89,
+          "word": "prison"
+        },
+        {
+          "conf": 1.0,
+          "end": 260.67,
+          "start": 260.22,
+          "word": "called"
+        },
+        {
+          "conf": 0.604351,
+          "end": 261.21,
+          "start": 260.97,
+          "word": "like"
+        },
+        {
+          "conf": 0.788873,
+          "end": 261.36,
+          "start": 261.21,
+          "word": "how"
+        },
+        {
+          "conf": 1.0,
+          "end": 261.48,
+          "start": 261.36,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 262.02,
+          "start": 261.48,
+          "word": "draw"
+        },
+        {
+          "conf": 1.0,
+          "end": 262.471992,
+          "start": 262.35,
+          "word": "in"
+        },
+        {
+          "conf": 0.794398,
+          "end": 262.53,
+          "start": 262.471992,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 262.98,
+          "start": 262.536182,
+          "word": "hills"
+        },
+        {
+          "conf": 1.0,
+          "end": 263.31,
+          "start": 262.98,
+          "word": "above"
+        },
+        {
+          "conf": 1.0,
+          "end": 263.52,
+          "start": 263.31,
+          "word": "and"
+        },
+        {
+          "conf": 0.685654,
+          "end": 263.64,
+          "start": 263.52,
+          "word": "we"
+        },
+        {
+          "conf": 0.944686,
+          "end": 264.15,
+          "start": 263.64,
+          "word": "gotta"
+        },
+        {
+          "conf": 1.0,
+          "end": 264.54,
+          "start": 264.42,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 265.02,
+          "start": 264.54,
+          "word": "important"
+        },
+        {
+          "conf": 1.0,
+          "end": 265.47,
+          "start": 265.05,
+          "word": "part"
+        },
+        {
+          "conf": 1.0,
+          "end": 266.04,
+          "start": 265.74,
+          "word": "isn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 266.28,
+          "start": 266.04,
+          "word": "just"
+        },
+        {
+          "conf": 1.0,
+          "end": 266.49,
+          "start": 266.28,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 266.58,
+          "start": 266.49,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 266.91,
+          "start": 266.58,
+          "word": "place"
+        },
+        {
+          "conf": 1.0,
+          "end": 267.06,
+          "start": 266.91,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 267.72,
+          "start": 267.06,
+          "word": "comfortable"
+        },
+        {
+          "conf": 1.0,
+          "end": 268.14,
+          "start": 267.96,
+          "word": "the"
+        },
+        {
+          "conf": 0.568346,
+          "end": 268.524814,
+          "start": 268.14,
+          "word": "prisoners"
+        },
+        {
+          "conf": 1.0,
+          "end": 269.1,
+          "start": 268.524814,
+          "word": "self"
+        },
+        {
+          "conf": 1.0,
+          "end": 269.91,
+          "start": 269.55,
+          "word": "contained"
+        },
+        {
+          "conf": 0.805369,
+          "end": 270.0,
+          "start": 269.91,
+          "word": "it's"
+        },
+        {
+          "conf": 1.0,
+          "end": 270.15,
+          "start": 270.0,
+          "word": "own"
+        },
+        {
+          "conf": 1.0,
+          "end": 270.81,
+          "start": 270.15,
+          "word": "discotheque"
+        },
+        {
+          "conf": 0.805367,
+          "end": 271.44,
+          "start": 271.26,
+          "word": "it's"
+        },
+        {
+          "conf": 1.0,
+          "end": 271.65,
+          "start": 271.44,
+          "word": "own"
+        },
+        {
+          "conf": 1.0,
+          "end": 272.1,
+          "start": 271.65,
+          "word": "bar"
+        },
+        {
+          "conf": 1.0,
+          "end": 272.61,
+          "start": 272.46,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 272.76,
+          "start": 272.61,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 272.88,
+          "start": 272.76,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 273.36,
+          "start": 272.88,
+          "word": "retained"
+        },
+        {
+          "conf": 1.0,
+          "end": 273.69,
+          "start": 273.36,
+          "word": "enough"
+        },
+        {
+          "conf": 1.0,
+          "end": 274.11,
+          "start": 273.69,
+          "word": "control"
+        },
+        {
+          "conf": 1.0,
+          "end": 274.2,
+          "start": 274.11,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 274.74,
+          "start": 274.2,
+          "word": "continue"
+        }
+      ],
+      "text": "our wrote for himself but the band mattered enormously to him he surrendered in june and entered a prison called like how to draw in the hills above and we gotta the important part isn't just that the place was comfortable the prisoners self contained it's own discotheque it's own bar is that he retained enough control to continue"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 274.92,
+          "start": 274.8,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 275.28,
+          "start": 274.92,
+          "word": "criminal"
+        },
+        {
+          "conf": 1.0,
+          "end": 275.7,
+          "start": 275.28,
+          "word": "business"
+        },
+        {
+          "conf": 1.0,
+          "end": 275.85,
+          "start": 275.7,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 276.45,
+          "start": 275.85,
+          "word": "inside"
+        },
+        {
+          "conf": 1.0,
+          "end": 276.84,
+          "start": 276.75,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 277.2,
+          "start": 276.84,
+          "word": "prison"
+        },
+        {
+          "conf": 1.0,
+          "end": 277.29,
+          "start": 277.2,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 277.68,
+          "start": 277.29,
+          "word": "supposed"
+        },
+        {
+          "conf": 1.0,
+          "end": 277.74,
+          "start": 277.68,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 278.16,
+          "start": 277.74,
+          "word": "separate"
+        },
+        {
+          "conf": 1.0,
+          "end": 278.49,
+          "start": 278.16,
+          "word": "someone"
+        },
+        {
+          "conf": 1.0,
+          "end": 278.67,
+          "start": 278.49,
+          "word": "from"
+        },
+        {
+          "conf": 0.608546,
+          "end": 278.787979,
+          "start": 278.67,
+          "word": "their"
+        },
+        {
+          "conf": 1.0,
+          "end": 279.36,
+          "start": 278.787979,
+          "word": "operation"
+        },
+        {
+          "conf": 0.533736,
+          "end": 279.96,
+          "start": 279.57,
+          "word": "hear"
+        },
+        {
+          "conf": 1.0,
+          "end": 280.05,
+          "start": 279.96,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 280.47,
+          "start": 280.05,
+          "word": "boundary"
+        },
+        {
+          "conf": 1.0,
+          "end": 280.8,
+          "start": 280.47,
+          "word": "between"
+        },
+        {
+          "conf": 1.0,
+          "end": 281.16,
+          "start": 280.8,
+          "word": "prisoner"
+        },
+        {
+          "conf": 0.786441,
+          "end": 281.28,
+          "start": 281.16,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 281.7,
+          "start": 281.28,
+          "word": "power"
+        },
+        {
+          "conf": 0.829076,
+          "end": 282.027979,
+          "start": 281.85,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 282.3,
+          "start": 282.027979,
+          "word": "still"
+        },
+        {
+          "conf": 1.0,
+          "end": 282.93,
+          "start": 282.3,
+          "word": "frighteningly"
+        },
+        {
+          "conf": 1.0,
+          "end": 283.32,
+          "start": 282.93,
+          "word": "week"
+        },
+        {
+          "conf": 1.0,
+          "end": 283.74,
+          "start": 283.59,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 284.13,
+          "start": 283.74,
+          "word": "arrangement"
+        },
+        {
+          "conf": 1.0,
+          "end": 284.4,
+          "start": 284.13,
+          "word": "broke"
+        },
+        {
+          "conf": 1.0,
+          "end": 284.82,
+          "start": 284.4,
+          "word": "down"
+        },
+        {
+          "conf": 1.0,
+          "end": 285.3,
+          "start": 285.06,
+          "word": "after"
+        },
+        {
+          "conf": 1.0,
+          "end": 285.39,
+          "start": 285.3,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 285.69208,
+          "start": 285.39,
+          "word": "killed"
+        },
+        {
+          "conf": 0.56655,
+          "end": 285.75,
+          "start": 285.69208,
+          "word": "a"
+        },
+        {
+          "conf": 0.5951,
+          "end": 285.99,
+          "start": 285.75,
+          "word": "two"
+        },
+        {
+          "conf": 0.551515,
+          "end": 286.65,
+          "start": 285.99,
+          "word": "associates"
+        },
+        {
+          "conf": 1.0,
+          "end": 287.22,
+          "start": 286.71,
+          "word": "inside"
+        },
+        {
+          "conf": 1.0,
+          "end": 287.31,
+          "start": 287.22,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 287.82,
+          "start": 287.31,
+          "word": "facility"
+        },
+        {
+          "conf": 1.0,
+          "end": 288.24,
+          "start": 288.12,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 288.51,
+          "start": 288.24,
+          "word": "july"
+        },
+        {
+          "conf": 1.0,
+          "end": 288.84,
+          "start": 288.51,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 289.08,
+          "start": 288.84,
+          "word": "ninety"
+        },
+        {
+          "conf": 0.66747,
+          "end": 289.5,
+          "start": 289.08,
+          "word": "two"
+        },
+        {
+          "conf": 1.0,
+          "end": 289.92,
+          "start": 289.8,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 290.46,
+          "start": 289.92,
+          "word": "authorities"
+        },
+        {
+          "conf": 0.65534,
+          "end": 290.812412,
+          "start": 290.46,
+          "word": "tried"
+        },
+        {
+          "conf": 1.0,
+          "end": 290.94,
+          "start": 290.812412,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 291.21,
+          "start": 290.94,
+          "word": "move"
+        },
+        {
+          "conf": 1.0,
+          "end": 291.54,
+          "start": 291.21,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 291.99,
+          "start": 291.81,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 292.56,
+          "start": 291.99,
+          "word": "escaped"
+        },
+        {
+          "conf": 1.0,
+          "end": 293.25,
+          "start": 292.83,
+          "word": "so"
+        },
+        {
+          "conf": 1.0,
+          "end": 293.52,
+          "start": 293.34,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 294.0,
+          "start": 293.52,
+          "word": "agreement"
+        },
+        {
+          "conf": 1.0,
+          "end": 294.24,
+          "start": 294.09,
+          "word": "that"
+        },
+        {
+          "conf": 0.860116,
+          "end": 294.358945,
+          "start": 294.24,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 294.72,
+          "start": 294.358945,
+          "word": "supposed"
+        },
+        {
+          "conf": 1.0,
+          "end": 294.78,
+          "start": 294.72,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 294.96,
+          "start": 294.78,
+          "word": "cunt"
+        }
+      ],
+      "text": "his criminal business from inside a prison is supposed to separate someone from their operation hear the boundary between prisoner and power was still frighteningly week that arrangement broke down after he killed a two associates inside the facility in july nineteen ninety two the authorities tried to move him he escaped so the agreement that was supposed to cunt"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.223214,
+          "end": 295.2,
+          "start": 294.96,
+          "word": "kane"
+        },
+        {
+          "conf": 1.0,
+          "end": 295.74,
+          "start": 295.2046,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 296.16,
+          "start": 295.98,
+          "word": "had"
+        },
+        {
+          "conf": 1.0,
+          "end": 296.64,
+          "start": 296.16,
+          "word": "failed"
+        },
+        {
+          "conf": 1.0,
+          "end": 296.88,
+          "start": 296.73,
+          "word": "at"
+        },
+        {
+          "conf": 1.0,
+          "end": 297.0,
+          "start": 296.88,
+          "word": "it's"
+        },
+        {
+          "conf": 1.0,
+          "end": 297.27,
+          "start": 297.0,
+          "word": "most"
+        },
+        {
+          "conf": 1.0,
+          "end": 297.69,
+          "start": 297.27,
+          "word": "basic"
+        },
+        {
+          "conf": 1.0,
+          "end": 298.11,
+          "start": 297.69,
+          "word": "job"
+        },
+        {
+          "conf": 1.0,
+          "end": 298.65,
+          "start": 298.32,
+          "word": "keeping"
+        },
+        {
+          "conf": 1.0,
+          "end": 298.83,
+          "start": 298.65,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 299.22,
+          "start": 298.83,
+          "word": "under"
+        },
+        {
+          "conf": 1.0,
+          "end": 299.43,
+          "start": 299.31,
+          "word": "the"
+        },
+        {
+          "conf": 0.804597,
+          "end": 299.73,
+          "start": 299.43,
+          "word": "state's"
+        },
+        {
+          "conf": 1.0,
+          "end": 300.18,
+          "start": 299.73,
+          "word": "control"
+        },
+        {
+          "conf": 1.0,
+          "end": 300.72,
+          "start": 300.54,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 300.96,
+          "start": 300.72,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 301.23,
+          "start": 300.96,
+          "word": "back"
+        },
+        {
+          "conf": 0.614222,
+          "end": 301.35,
+          "start": 301.23,
+          "word": "our"
+        },
+        {
+          "conf": 0.614222,
+          "end": 301.92,
+          "start": 301.35,
+          "word": "side"
+        },
+        {
+          "conf": 1.0,
+          "end": 302.46,
+          "start": 302.19,
+          "word": "didn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 302.73,
+          "start": 302.46,
+          "word": "mean"
+        },
+        {
+          "conf": 1.0,
+          "end": 302.97,
+          "start": 302.73,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 303.27,
+          "start": 302.97,
+          "word": "back"
+        },
+        {
+          "conf": 1.0,
+          "end": 303.39,
+          "start": 303.27,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 303.87,
+          "start": 303.39,
+          "word": "top"
+        },
+        {
+          "conf": 1.0,
+          "end": 304.68,
+          "start": 304.17,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 304.83,
+          "start": 304.68,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 305.01,
+          "start": 304.83,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 305.49,
+          "start": 305.01,
+          "word": "hunted"
+        },
+        {
+          "conf": 1.0,
+          "end": 305.61,
+          "start": 305.49,
+          "word": "by"
+        },
+        {
+          "conf": 1.0,
+          "end": 305.73,
+          "start": 305.61,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 306.12,
+          "start": 305.73,
+          "word": "colombian"
+        },
+        {
+          "conf": 1.0,
+          "end": 306.63,
+          "start": 306.12,
+          "word": "police"
+        },
+        {
+          "conf": 1.0,
+          "end": 307.05,
+          "start": 306.9,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 307.38,
+          "start": 307.05,
+          "word": "american"
+        },
+        {
+          "conf": 1.0,
+          "end": 307.89,
+          "start": 307.38,
+          "word": "assistance"
+        },
+        {
+          "conf": 1.0,
+          "end": 308.64,
+          "start": 308.13,
+          "word": "rivals"
+        },
+        {
+          "conf": 0.447951,
+          "end": 308.76,
+          "start": 308.64,
+          "word": "were"
+        },
+        {
+          "conf": 1.0,
+          "end": 309.03,
+          "start": 308.76,
+          "word": "also"
+        },
+        {
+          "conf": 1.0,
+          "end": 309.27,
+          "start": 309.03,
+          "word": "turning"
+        },
+        {
+          "conf": 1.0,
+          "end": 309.57,
+          "start": 309.27,
+          "word": "against"
+        },
+        {
+          "conf": 1.0,
+          "end": 309.72,
+          "start": 309.57,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 310.14,
+          "start": 309.72,
+          "word": "network"
+        },
+        {
+          "conf": 0.755459,
+          "end": 310.5,
+          "start": 310.41,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 310.95,
+          "start": 310.507324,
+          "word": "vigilante"
+        },
+        {
+          "conf": 1.0,
+          "end": 311.19,
+          "start": 310.95,
+          "word": "group"
+        },
+        {
+          "conf": 1.0,
+          "end": 311.49,
+          "start": 311.19,
+          "word": "called"
+        },
+        {
+          "conf": 0.424297,
+          "end": 311.786543,
+          "start": 311.58,
+          "word": "last"
+        },
+        {
+          "conf": 0.563004,
+          "end": 312.3,
+          "start": 311.786543,
+          "word": "peppers"
+        },
+        {
+          "conf": 1.0,
+          "end": 312.81,
+          "start": 312.45,
+          "word": "attacked"
+        },
+        {
+          "conf": 1.0,
+          "end": 313.14,
+          "start": 312.81,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 313.47,
+          "start": 313.32,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 313.77,
+          "start": 313.47,
+          "word": "property"
+        },
+        {
+          "conf": 1.0,
+          "end": 314.25,
+          "start": 313.77,
+          "word": "associated"
+        },
+        {
+          "conf": 1.0,
+          "end": 314.37,
+          "start": 314.25,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 314.58,
+          "start": 314.37,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 315.12,
+          "start": 314.73,
+          "word": "that"
+        }
+      ],
+      "text": "kane escobar had failed at it's most basic job keeping him under the state's control but being back our side didn't mean being back on top escobar was being hunted by the colombian police with american assistance rivals were also turning against his network a vigilante group called last peppers attacked people and property associated with him that"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 315.21,
+          "start": 315.12,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 315.54,
+          "start": 315.33,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 315.69,
+          "start": 315.54,
+          "word": "more"
+        },
+        {
+          "conf": 1.0,
+          "end": 316.23,
+          "start": 315.69,
+          "word": "violence"
+        },
+        {
+          "conf": 1.0,
+          "end": 316.74,
+          "start": 316.5,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 316.77,
+          "start": 316.74,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 317.22,
+          "start": 316.77,
+          "word": "clean"
+        },
+        {
+          "conf": 1.0,
+          "end": 317.46,
+          "start": 317.31,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 317.82,
+          "start": 317.46,
+          "word": "lawful"
+        },
+        {
+          "conf": 1.0,
+          "end": 318.33,
+          "start": 317.82,
+          "word": "solution"
+        },
+        {
+          "conf": 1.0,
+          "end": 318.72,
+          "start": 318.57,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 319.11,
+          "start": 318.72,
+          "word": "pressure"
+        },
+        {
+          "conf": 1.0,
+          "end": 319.26,
+          "start": 319.11,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 319.59,
+          "start": 319.26,
+          "word": "coming"
+        },
+        {
+          "conf": 1.0,
+          "end": 319.74,
+          "start": 319.59,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 320.04,
+          "start": 319.74,
+          "word": "different"
+        },
+        {
+          "conf": 1.0,
+          "end": 320.7,
+          "start": 320.04,
+          "word": "directions"
+        },
+        {
+          "conf": 1.0,
+          "end": 321.12,
+          "start": 320.97,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 321.21,
+          "start": 321.12,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 321.87,
+          "start": 321.21,
+          "word": "network"
+        },
+        {
+          "conf": 1.0,
+          "end": 322.11,
+          "start": 321.93,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 322.23,
+          "start": 322.11,
+          "word": "had"
+        },
+        {
+          "conf": 1.0,
+          "end": 322.8,
+          "start": 322.23,
+          "word": "protected"
+        },
+        {
+          "conf": 1.0,
+          "end": 323.07,
+          "start": 322.8,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 323.61,
+          "start": 323.37,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 323.82,
+          "start": 323.61,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 324.12,
+          "start": 323.82,
+          "word": "torn"
+        },
+        {
+          "conf": 1.0,
+          "end": 324.54,
+          "start": 324.12,
+          "word": "apart"
+        },
+        {
+          "conf": 1.0,
+          "end": 325.02,
+          "start": 324.81,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 325.14,
+          "start": 325.02,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 325.29,
+          "start": 325.14,
+          "word": "where"
+        },
+        {
+          "conf": 1.0,
+          "end": 325.41,
+          "start": 325.29,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 325.86,
+          "start": 325.41,
+          "word": "size"
+        },
+        {
+          "conf": 1.0,
+          "end": 325.92,
+          "start": 325.86,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 326.01,
+          "start": 325.92,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 326.64,
+          "start": 326.01,
+          "word": "fortune"
+        },
+        {
+          "conf": 1.0,
+          "end": 327.12,
+          "start": 326.94,
+          "word": "can"
+        },
+        {
+          "conf": 1.0,
+          "end": 327.24,
+          "start": 327.12,
+          "word": "be"
+        },
+        {
+          "conf": 1.0,
+          "end": 327.9,
+          "start": 327.24,
+          "word": "misleading"
+        },
+        {
+          "conf": 1.0,
+          "end": 328.62,
+          "start": 328.2,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 328.98,
+          "start": 328.8,
+          "word": "can"
+        },
+        {
+          "conf": 1.0,
+          "end": 329.16,
+          "start": 328.98,
+          "word": "pay"
+        },
+        {
+          "conf": 1.0,
+          "end": 329.25,
+          "start": 329.16,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 329.73,
+          "start": 329.25,
+          "word": "support"
+        },
+        {
+          "conf": 1.0,
+          "end": 330.104209,
+          "start": 329.97,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 330.45,
+          "start": 330.129932,
+          "word": "cannot"
+        },
+        {
+          "conf": 1.0,
+          "end": 330.96,
+          "start": 330.45,
+          "word": "guarantee"
+        },
+        {
+          "conf": 1.0,
+          "end": 331.11,
+          "start": 330.96,
+          "word": "that"
+        },
+        {
+          "conf": 0.889848,
+          "end": 331.556543,
+          "start": 331.11,
+          "word": "supports"
+        },
+        {
+          "conf": 0.517201,
+          "end": 331.74,
+          "start": 331.556543,
+          "word": "stay"
+        },
+        {
+          "conf": 1.0,
+          "end": 332.28,
+          "start": 331.821943,
+          "word": "loyal"
+        },
+        {
+          "conf": 1.0,
+          "end": 332.61,
+          "start": 332.43,
+          "word": "when"
+        },
+        {
+          "conf": 1.0,
+          "end": 332.67,
+          "start": 332.61,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 333.09,
+          "start": 332.67,
+          "word": "risks"
+        },
+        {
+          "conf": 1.0,
+          "end": 333.72,
+          "start": 333.09,
+          "word": "change"
+        },
+        {
+          "conf": 1.0,
+          "end": 334.08,
+          "start": 333.96,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 334.41,
+          "start": 334.08,
+          "word": "december"
+        },
+        {
+          "conf": 1.0,
+          "end": 334.86,
+          "start": 334.41,
+          "word": "second"
+        },
+        {
+          "conf": 0.475648,
+          "end": 335.28,
+          "start": 335.13,
+          "word": "now"
+        }
+      ],
+      "text": "it was more violence not a clean or lawful solution the pressure was coming from different directions and the network that had protected him was being torn apart this is where the size of the fortune can be misleading money can pay for support it cannot guarantee that supports stay loyal when the risks change on december second now"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 335.43,
+          "start": 335.28,
+          "word": "eighty"
+        },
+        {
+          "conf": 1.0,
+          "end": 335.64,
+          "start": 335.43,
+          "word": "ninety"
+        },
+        {
+          "conf": 1.0,
+          "end": 336.03,
+          "start": 335.64,
+          "word": "three"
+        },
+        {
+          "conf": 0.698892,
+          "end": 336.72,
+          "start": 336.27,
+          "word": "columbia"
+        },
+        {
+          "conf": 1.0,
+          "end": 337.17,
+          "start": 336.72,
+          "word": "forces"
+        },
+        {
+          "conf": 1.0,
+          "end": 337.56,
+          "start": 337.17,
+          "word": "located"
+        },
+        {
+          "conf": 1.0,
+          "end": 338.13,
+          "start": 337.59,
+          "word": "escobar"
+        },
+        {
+          "conf": 0.86316,
+          "end": 338.25,
+          "start": 338.16,
+          "word": "he"
+        },
+        {
+          "conf": 0.86316,
+          "end": 338.43,
+          "start": 338.25,
+          "word": "met"
+        },
+        {
+          "conf": 0.86316,
+          "end": 338.73,
+          "start": 338.43,
+          "word": "again"
+        },
+        {
+          "conf": 1.0,
+          "end": 339.12,
+          "start": 339.0,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 339.42,
+          "start": 339.12,
+          "word": "died"
+        },
+        {
+          "conf": 1.0,
+          "end": 339.69,
+          "start": 339.42,
+          "word": "during"
+        },
+        {
+          "conf": 1.0,
+          "end": 339.81,
+          "start": 339.72,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 340.29,
+          "start": 339.81,
+          "word": "rooftop"
+        },
+        {
+          "conf": 1.0,
+          "end": 340.8,
+          "start": 340.29,
+          "word": "shootout"
+        },
+        {
+          "conf": 1.0,
+          "end": 341.46,
+          "start": 341.04,
+          "word": "claims"
+        },
+        {
+          "conf": 1.0,
+          "end": 341.76,
+          "start": 341.46,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 341.91,
+          "start": 341.76,
+          "word": "who"
+        },
+        {
+          "conf": 1.0,
+          "end": 342.36,
+          "start": 341.91,
+          "word": "fired"
+        },
+        {
+          "conf": 1.0,
+          "end": 342.45,
+          "start": 342.36,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 342.84,
+          "start": 342.45,
+          "word": "fatal"
+        },
+        {
+          "conf": 1.0,
+          "end": 343.35,
+          "start": 342.84,
+          "word": "shot"
+        },
+        {
+          "conf": 0.816705,
+          "end": 344.07,
+          "start": 343.65,
+          "word": "remain"
+        },
+        {
+          "conf": 1.0,
+          "end": 344.61,
+          "start": 344.075508,
+          "word": "disputed"
+        },
+        {
+          "conf": 0.630389,
+          "end": 344.962061,
+          "start": 344.79,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 345.03,
+          "start": 344.962061,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 345.33,
+          "start": 345.03,
+          "word": "larger"
+        },
+        {
+          "conf": 0.615133,
+          "end": 345.75,
+          "start": 345.33,
+          "word": "changes"
+        },
+        {
+          "conf": 1.0,
+          "end": 346.11,
+          "start": 345.75,
+          "word": "clear"
+        },
+        {
+          "conf": 1.0,
+          "end": 346.53,
+          "start": 346.41,
+          "word": "the"
+        },
+        {
+          "conf": 0.727694,
+          "end": 346.8,
+          "start": 346.53,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 346.95,
+          "start": 346.8,
+          "word": "who"
+        },
+        {
+          "conf": 1.0,
+          "end": 347.13,
+          "start": 346.95,
+          "word": "had"
+        },
+        {
+          "conf": 1.0,
+          "end": 347.85,
+          "start": 347.13,
+          "word": "negotiated"
+        },
+        {
+          "conf": 1.0,
+          "end": 347.94,
+          "start": 347.85,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 348.42,
+          "start": 347.94,
+          "word": "terms"
+        },
+        {
+          "conf": 1.0,
+          "end": 348.54,
+          "start": 348.42,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 348.66,
+          "start": 348.54,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 348.9,
+          "start": 348.66,
+          "word": "own"
+        },
+        {
+          "conf": 1.0,
+          "end": 349.53,
+          "start": 348.9,
+          "word": "imprisonment"
+        },
+        {
+          "conf": 1.0,
+          "end": 349.95,
+          "start": 349.77,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 350.13,
+          "start": 349.95,
+          "word": "no"
+        },
+        {
+          "conf": 1.0,
+          "end": 350.49,
+          "start": 350.13,
+          "word": "longer"
+        },
+        {
+          "conf": 1.0,
+          "end": 350.88,
+          "start": 350.49,
+          "word": "protect"
+        },
+        {
+          "conf": 1.0,
+          "end": 351.39,
+          "start": 350.88,
+          "word": "himself"
+        },
+        {
+          "conf": 1.0,
+          "end": 351.72,
+          "start": 351.54,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 351.78,
+          "start": 351.72,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 352.23,
+          "start": 351.78,
+          "word": "forces"
+        },
+        {
+          "conf": 1.0,
+          "end": 352.65,
+          "start": 352.23,
+          "word": "closing"
+        },
+        {
+          "conf": 1.0,
+          "end": 352.95,
+          "start": 352.65,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 353.61,
+          "start": 353.34,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 353.97,
+          "start": 353.61,
+          "word": "death"
+        },
+        {
+          "conf": 0.709703,
+          "end": 354.17165,
+          "start": 353.97,
+          "word": "did"
+        },
+        {
+          "conf": 1.0,
+          "end": 354.39,
+          "start": 354.17165,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 354.63,
+          "start": 354.39,
+          "word": "leave"
+        },
+        {
+          "conf": 0.66731,
+          "end": 354.9,
+          "start": 354.63,
+          "word": "every"
+        },
+        {
+          "conf": 0.66731,
+          "end": 355.14,
+          "start": 354.9,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 355.278721,
+          "start": 355.14,
+          "word": "with"
+        },
+        {
+          "conf": 0.623784,
+          "end": 355.44,
+          "start": 355.29,
+          "word": "us"
+        }
+      ],
+      "text": "eighty ninety three columbia forces located escobar he met again he died during a rooftop shootout claims about who fired the fatal shot remain disputed but the larger changes clear the man who had negotiated the terms of his own imprisonment could no longer protect himself from the forces closing in his death did not leave every one with us"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 355.65,
+          "start": 355.44,
+          "word": "same"
+        },
+        {
+          "conf": 1.0,
+          "end": 356.13,
+          "start": 355.65,
+          "word": "memory"
+        },
+        {
+          "conf": 1.0,
+          "end": 356.7,
+          "start": 356.4,
+          "word": "some"
+        },
+        {
+          "conf": 1.0,
+          "end": 357.09,
+          "start": 356.7,
+          "word": "residents"
+        },
+        {
+          "conf": 1.0,
+          "end": 357.57,
+          "start": 357.09,
+          "word": "continue"
+        },
+        {
+          "conf": 1.0,
+          "end": 357.69,
+          "start": 357.57,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 358.14,
+          "start": 357.69,
+          "word": "remember"
+        },
+        {
+          "conf": 1.0,
+          "end": 358.23,
+          "start": 358.14,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 358.77,
+          "start": 358.23,
+          "word": "housing"
+        },
+        {
+          "conf": 1.0,
+          "end": 359.1,
+          "start": 358.98,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 359.16,
+          "start": 359.1,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 359.52,
+          "start": 359.16,
+          "word": "help"
+        },
+        {
+          "conf": 1.0,
+          "end": 360.0,
+          "start": 359.79,
+          "word": "other"
+        },
+        {
+          "conf": 1.0,
+          "end": 360.42,
+          "start": 360.0,
+          "word": "colombians"
+        },
+        {
+          "conf": 1.0,
+          "end": 360.9,
+          "start": 360.42,
+          "word": "remembered"
+        },
+        {
+          "conf": 1.0,
+          "end": 361.5,
+          "start": 361.11,
+          "word": "murdered"
+        },
+        {
+          "conf": 1.0,
+          "end": 362.04,
+          "start": 361.5,
+          "word": "relatives"
+        },
+        {
+          "conf": 1.0,
+          "end": 362.82,
+          "start": 362.25,
+          "word": "bombings"
+        },
+        {
+          "conf": 1.0,
+          "end": 363.3,
+          "start": 363.12,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 363.602695,
+          "start": 363.3,
+          "word": "years"
+        },
+        {
+          "conf": 0.597926,
+          "end": 363.687539,
+          "start": 363.602695,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 364.02,
+          "start": 363.687539,
+          "word": "fear"
+        },
+        {
+          "conf": 1.0,
+          "end": 364.56,
+          "start": 364.26,
+          "word": "those"
+        },
+        {
+          "conf": 1.0,
+          "end": 365.07,
+          "start": 364.56,
+          "word": "memories"
+        },
+        {
+          "conf": 1.0,
+          "end": 365.67,
+          "start": 365.34,
+          "word": "don't"
+        },
+        {
+          "conf": 1.0,
+          "end": 366.12,
+          "start": 365.73,
+          "word": "cancel"
+        },
+        {
+          "conf": 1.0,
+          "end": 366.27,
+          "start": 366.12,
+          "word": "each"
+        },
+        {
+          "conf": 1.0,
+          "end": 366.45,
+          "start": 366.27,
+          "word": "other"
+        },
+        {
+          "conf": 1.0,
+          "end": 366.72,
+          "start": 366.45,
+          "word": "out"
+        },
+        {
+          "conf": 0.750054,
+          "end": 366.96,
+          "start": 366.84,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 367.32,
+          "start": 366.96,
+          "word": "family"
+        },
+        {
+          "conf": 1.0,
+          "end": 367.74,
+          "start": 367.32,
+          "word": "receiving"
+        },
+        {
+          "conf": 1.0,
+          "end": 367.8,
+          "start": 367.74,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 368.01,
+          "start": 367.8,
+          "word": "real"
+        },
+        {
+          "conf": 1.0,
+          "end": 368.34,
+          "start": 368.01,
+          "word": "home"
+        },
+        {
+          "conf": 1.0,
+          "end": 368.82,
+          "start": 368.61,
+          "word": "does"
+        },
+        {
+          "conf": 1.0,
+          "end": 369.06,
+          "start": 368.82,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 369.27,
+          "start": 369.06,
+          "word": "make"
+        },
+        {
+          "conf": 1.0,
+          "end": 369.39,
+          "start": 369.27,
+          "word": "the"
+        },
+        {
+          "conf": 0.690977,
+          "end": 369.96,
+          "start": 369.39,
+          "word": "victims"
+        },
+        {
+          "conf": 1.0,
+          "end": 370.2,
+          "start": 369.96,
+          "word": "any"
+        },
+        {
+          "conf": 1.0,
+          "end": 370.5,
+          "start": 370.2,
+          "word": "less"
+        },
+        {
+          "conf": 1.0,
+          "end": 370.98,
+          "start": 370.5,
+          "word": "real"
+        },
+        {
+          "conf": 1.0,
+          "end": 371.37,
+          "start": 371.22,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 371.76,
+          "start": 371.37,
+          "word": "condemning"
+        },
+        {
+          "conf": 1.0,
+          "end": 371.85,
+          "start": 371.76,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 372.33,
+          "start": 371.85,
+          "word": "violence"
+        },
+        {
+          "conf": 1.0,
+          "end": 372.63,
+          "start": 372.48,
+          "word": "does"
+        },
+        {
+          "conf": 1.0,
+          "end": 372.81,
+          "start": 372.63,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 373.14,
+          "start": 372.81,
+          "word": "require"
+        },
+        {
+          "conf": 1.0,
+          "end": 373.59,
+          "start": 373.14,
+          "word": "pretending"
+        },
+        {
+          "conf": 1.0,
+          "end": 373.71,
+          "start": 373.59,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 374.19,
+          "start": 373.71,
+          "word": "poverty"
+        },
+        {
+          "conf": 1.0,
+          "end": 374.85,
+          "start": 374.37,
+          "word": "neglect"
+        },
+        {
+          "conf": 1.0,
+          "end": 375.09,
+          "start": 374.97,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 375.6,
+          "start": 375.09,
+          "word": "gratitude"
+        },
+        {
+          "conf": 0.526659,
+          "end": 375.75,
+          "start": 375.6,
+          "word": "were"
+        },
+        {
+          "conf": 0.393876,
+          "end": 375.84,
+          "start": 375.75,
+          "word": "it"
+        }
+      ],
+      "text": "same memory some residents continue to remember the housing and the help other colombians remembered murdered relatives bombings and years of fear those memories don't cancel each other out the family receiving a real home does not make the victims any less real and condemning the violence does not require pretending that poverty neglect and gratitude were it"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 376.35,
+          "start": 375.84,
+          "word": "imaginary"
+        },
+        {
+          "conf": 1.0,
+          "end": 376.83,
+          "start": 376.59,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 376.95,
+          "start": 376.83,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 377.07,
+          "start": 376.95,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 377.55,
+          "start": 377.07,
+          "word": "answer"
+        },
+        {
+          "conf": 1.0,
+          "end": 377.79,
+          "start": 377.67,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 377.85,
+          "start": 377.79,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 378.57,
+          "start": 377.85,
+          "word": "contradiction"
+        },
+        {
+          "conf": 1.0,
+          "end": 378.81,
+          "start": 378.69,
+          "word": "we"
+        },
+        {
+          "conf": 1.0,
+          "end": 379.14,
+          "start": 378.81,
+          "word": "started"
+        },
+        {
+          "conf": 1.0,
+          "end": 379.41,
+          "start": 379.14,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 380.1,
+          "start": 379.68,
+          "word": "escobar"
+        },
+        {
+          "conf": 0.548959,
+          "end": 380.306426,
+          "start": 380.1,
+          "word": "build"
+        },
+        {
+          "conf": 1.0,
+          "end": 380.7,
+          "start": 380.306426,
+          "word": "power"
+        },
+        {
+          "conf": 1.0,
+          "end": 380.91041,
+          "start": 380.7,
+          "word": "through"
+        },
+        {
+          "conf": 0.892291,
+          "end": 380.94,
+          "start": 380.91041,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 381.45,
+          "start": 380.94,
+          "word": "profitable"
+        },
+        {
+          "conf": 1.0,
+          "end": 381.75,
+          "start": 381.45,
+          "word": "criminal"
+        },
+        {
+          "conf": 1.0,
+          "end": 382.23,
+          "start": 381.75,
+          "word": "network"
+        },
+        {
+          "conf": 1.0,
+          "end": 383.07,
+          "start": 382.5,
+          "word": "corruption"
+        },
+        {
+          "conf": 1.0,
+          "end": 383.7,
+          "start": 383.1,
+          "word": "coercion"
+        },
+        {
+          "conf": 1.0,
+          "end": 383.85,
+          "start": 383.73,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 384.12,
+          "start": 383.85,
+          "word": "public"
+        },
+        {
+          "conf": 1.0,
+          "end": 384.51,
+          "start": 384.12,
+          "word": "support"
+        },
+        {
+          "conf": 1.0,
+          "end": 385.11,
+          "start": 384.75,
+          "word": "different"
+        },
+        {
+          "conf": 1.0,
+          "end": 385.5,
+          "start": 385.14,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 386.19,
+          "start": 385.5,
+          "word": "experience"
+        },
+        {
+          "conf": 1.0,
+          "end": 386.49,
+          "start": 386.19,
+          "word": "different"
+        },
+        {
+          "conf": 1.0,
+          "end": 386.82,
+          "start": 386.49,
+          "word": "parts"
+        },
+        {
+          "conf": 1.0,
+          "end": 386.97,
+          "start": 386.82,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 387.18,
+          "start": 386.97,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 387.96,
+          "start": 387.45,
+          "word": "removing"
+        },
+        {
+          "conf": 1.0,
+          "end": 388.2,
+          "start": 387.96,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 388.5,
+          "start": 388.2,
+          "word": "broke"
+        },
+        {
+          "conf": 1.0,
+          "end": 388.65,
+          "start": 388.5,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 389.07,
+          "start": 388.65,
+          "word": "personal"
+        },
+        {
+          "conf": 1.0,
+          "end": 389.61,
+          "start": 389.07,
+          "word": "empire"
+        },
+        {
+          "conf": 0.709993,
+          "end": 389.935225,
+          "start": 389.82,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 390.03,
+          "start": 389.935225,
+          "word": "did"
+        },
+        {
+          "conf": 1.0,
+          "end": 390.27,
+          "start": 390.03,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 390.63,
+          "start": 390.27,
+          "word": "remove"
+        },
+        {
+          "conf": 1.0,
+          "end": 390.72,
+          "start": 390.63,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 391.08,
+          "start": 390.72,
+          "word": "demand"
+        },
+        {
+          "conf": 1.0,
+          "end": 391.2,
+          "start": 391.08,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 391.77,
+          "start": 391.2,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 392.13,
+          "start": 392.01,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 392.22,
+          "start": 392.13,
+          "word": "the"
+        },
+        {
+          "conf": 0.805517,
+          "end": 392.64,
+          "start": 392.22,
+          "word": "profits"
+        },
+        {
+          "conf": 1.0,
+          "end": 393.06,
+          "start": 392.64,
+          "word": "available"
+        },
+        {
+          "conf": 1.0,
+          "end": 393.21,
+          "start": 393.06,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 393.39,
+          "start": 393.21,
+          "word": "other"
+        },
+        {
+          "conf": 1.0,
+          "end": 394.08,
+          "start": 393.39,
+          "word": "traffickers"
+        },
+        {
+          "conf": 1.0,
+          "end": 394.56,
+          "start": 394.41,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 394.83,
+          "start": 394.56,
+          "word": "didn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 395.28,
+          "start": 394.83,
+          "word": "change"
+        },
+        {
+          "conf": 1.0,
+          "end": 395.4,
+          "start": 395.28,
+          "word": "the"
+        },
+        {
+          "conf": 0.764068,
+          "end": 395.91,
+          "start": 395.4,
+          "word": "patient"
+        }
+      ],
+      "text": "imaginary that is the answer to the contradiction we started with escobar build power through a profitable criminal network corruption coercion and public support different people experience different parts of it removing him broke his personal empire it did not remove the demand for cocaine or the profits available to other traffickers it didn't change the patient"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 396.570879,
+          "start": 396.0,
+          "word": "trafficking"
+        },
+        {
+          "conf": 0.485561,
+          "end": 396.689414,
+          "start": 396.570879,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 396.9,
+          "start": 396.689414,
+          "word": "didn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 397.32,
+          "start": 396.9,
+          "word": "raise"
+        },
+        {
+          "conf": 1.0,
+          "end": 397.44,
+          "start": 397.32,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 397.74,
+          "start": 397.44,
+          "word": "lower"
+        },
+        {
+          "conf": 1.0,
+          "end": 397.83,
+          "start": 397.74,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 398.22,
+          "start": 397.83,
+          "word": "price"
+        },
+        {
+          "conf": 1.0,
+          "end": 398.34,
+          "start": 398.22,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 398.94,
+          "start": 398.34,
+          "word": "cocaine"
+        },
+        {
+          "conf": 1.0,
+          "end": 399.33,
+          "start": 399.15,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 399.84,
+          "start": 399.33,
+          "word": "empire"
+        },
+        {
+          "conf": 0.749257,
+          "end": 400.35,
+          "start": 399.99,
+          "word": "ended"
+        },
+        {
+          "conf": 1.0,
+          "end": 400.83,
+          "start": 400.65,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 401.49,
+          "start": 400.83,
+          "word": "incentives"
+        },
+        {
+          "conf": 1.0,
+          "end": 401.85,
+          "start": 401.49,
+          "word": "behind"
+        },
+        {
+          "conf": 1.0,
+          "end": 401.91,
+          "start": 401.85,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 402.33,
+          "start": 401.91,
+          "word": "business"
+        },
+        {
+          "conf": 1.0,
+          "end": 403.08,
+          "start": 402.48,
+          "word": "survived"
+        },
+        {
+          "conf": 1.0,
+          "end": 403.479375,
+          "start": 403.32,
+          "word": "and"
+        },
+        {
+          "conf": 0.555584,
+          "end": 403.74,
+          "start": 403.479375,
+          "word": "that's"
+        },
+        {
+          "conf": 1.0,
+          "end": 403.83,
+          "start": 403.74,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 404.182002,
+          "start": 403.83,
+          "word": "party"
+        },
+        {
+          "conf": 1.0,
+          "end": 404.7,
+          "start": 404.22,
+          "word": "miss"
+        },
+        {
+          "conf": 1.0,
+          "end": 404.91,
+          "start": 404.73,
+          "word": "when"
+        },
+        {
+          "conf": 1.0,
+          "end": 405.09,
+          "start": 404.91,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 405.57,
+          "start": 405.09,
+          "word": "becomes"
+        },
+        {
+          "conf": 1.0,
+          "end": 405.87,
+          "start": 405.57,
+          "word": "just"
+        },
+        {
+          "conf": 1.0,
+          "end": 405.9,
+          "start": 405.87,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 406.38,
+          "start": 405.9,
+          "word": "story"
+        },
+        {
+          "conf": 1.0,
+          "end": 406.59,
+          "start": 406.38,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 406.86,
+          "start": 406.62,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 407.16,
+          "start": 406.86,
+          "word": "rich"
+        },
+        {
+          "conf": 1.0,
+          "end": 407.55,
+          "start": 407.16,
+          "word": "guy"
+        },
+        {
+          "conf": 1.0,
+          "end": 407.94,
+          "start": 407.73,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 408.0,
+          "start": 407.94,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 408.45,
+          "start": 408.0,
+          "word": "private"
+        },
+        {
+          "conf": 1.0,
+          "end": 408.93,
+          "start": 408.45,
+          "word": "zoo"
+        }
+      ],
+      "text": "trafficking it didn't raise or lower the price of cocaine his empire ended the incentives behind the business survived and that's the party miss when this becomes just a story about one rich guy with a private zoo"
+    }
+  ]
+}

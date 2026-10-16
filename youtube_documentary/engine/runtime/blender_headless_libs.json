@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-15",
+  "destination": "/home/user/build/blender_libs",
+  "purpose": "Optional headless bpy 4.2.23 Cycles rendering, NOT installed as system libraries",
+  "sources": {
+    "webosose/chromium53": "src/build/linux/debian_wheezy_amd64-sysroot/usr/lib/x86_64-linux-gnu",
+    "eXtern-OS/eXternOS-Base": "squashfs-root/usr/lib/x86_64-linux-gnu (libxkbcommon.so.0, libSM.so.6, libICE.so.6)"
+  },
+  "sha256": {
+    "libXrender.so.1": "b53df82c5dec7cdfb4f093c7426ec95a8b911b319f3194a1d400d34fd7bd07a3",
+    "libXxf86vm.so.1": "809e575a0e7c8472bf376fd0d282bcf9045cc3f82b563dee704ef79bdd8fbf8b",
+    "libXfixes.so.3": "3dd33ab48cf1cce852915670f5691db90f62d40277de0ac73889b493de987073",
+    "libXi.so.6": "743ade0781e20ef1c3bde6f56eefaa5e8f04b42b2691973df6ec33aad0ab35e0",
+    "libGL.so.1": "cb72f0e09c95e3101a971647b36cff83e9f9f6032e95fd0371693b28ba536387",
+    "libxkbcommon.so.0": "9bc7b4d7c398c0ff85568e146eb26c1581686a4569e196b31c3e41b3da1a67ba",
+    "libSM.so.6": "5d5045a70d2150dd59711ce63f3063bbfb46255488aa2b28ba285ebda7f3739f",
+    "libICE.so.6": "c06648502add0e968228fcd8906da1a8793efc00a3ca07bc3aac158452e742e9",
+    "libglapi.so.0": "541f7c21900c9652312d777f79dc1befc1dcd9a9af3c4c3ac47fb1df6df9ce97",
+    "libXdamage.so.1": "aa2b19a493becff0c8b483c9253aff0e4cd79ff4382160bc8a3763246935f16e",
+    "libX11-xcb.so.1": "372917995f1339ea34f19a854a74c34157926518b61b484239d1b70a4d9c5aaf",
+    "libxcb-glx.so.0": "56819074e547fe596d71059304dc32ee31a375e11c8009e06c84cbe6525fe494",
+    "libdrm.so.2": "4876f651ab5bffec26958418e1158e62988ea268492d8e5314aa5072b971f2b9"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "schema": 1,
+  "release": "studio-2026-10-16-v1",
+  "updated": "2026-10-16",
+  "scope": "Detached transport/publication receipt, NOT another creative-policy/current-state authority. Excluded from package self-reference. Source kit is Git 8994726; this later receipt does not change its verified payload.",
+  "source_commit": "8994726e55a9a0a40a29aacc0d55347cb0c1540c",
+  "source_branch": "arena/b2ef2032-g",
+  "entry_url": "https://github.com/jfjdjdieifne/g/blob/arena/b2ef2032-g/START_HERE.md",
+  "main_integration": {
+    "pull_request": 1,
+    "url": "https://github.com/jfjdjdieifne/g/pull/1",
+    "status_authority": "Read live PR merged/open state; receipt does not predict a merge.",
+    "reason": "Default main audit found only two trading ZIPs; integrating this PR makes ordinary default clones discover the studio."
+  },
+  "drive_home_id": "1wyEvNfgln5bvlquVQwKmhl2N0xEQepNp",
+  "drive_guide": {
+    "id": "1HFC_tNs_0hc_2mxrO_bJD_DWOvFvtS45q7zNJcHz_w8",
+    "url": "https://docs.google.com/document/d/1HFC_tNs_0hc_2mxrO_bJD_DWOvFvtS45q7zNJcHz_w8/edit",
+    "verified": "Updated native Doc exported to plain text and read; entry/kit URLs remain explicit for agent text extraction."
+  },
+  "drive_media_directory_id": "1e1BZQ-UcqVrVShy4pgkDWS9mc7-FvMFZUqbNONp35EI",
+  "drive_registry_mirror": {
+    "id": "1QxjhogiKXIOgedWoz6iteERaeG0GAaRK",
+    "bytes": 12246,
+    "md5": "d79fbc9bbc36dcc1b9d4a68dfd47922f",
+    "verified": "Independent folder listing matched uploaded size/MD5; navigation mirror only."
+  },
+  "source_kit": {
+    "bytes": 41036713,
+    "md5": "e8cd3c7d705710f7e62a13d3ece4a65b",
+    "sha256": "f3e621da5799da0718f6870fe1f18afde91c6a64eb4abf63184d2e7cda349274",
+    "cold_source_integrity": "PASS",
+    "scope": "Source/onboarding kit; NOT all original media, final Titan recovery, a render or an artistic/listening test.",
+    "drive_id": "1LrPU-rfCg0ZcQodID0BnAwb8b2c0Q7Ao",
+    "verification": "Fresh local separate extraction/complete source hashes PASS. Fresh upload then independent Drive get_file and folder listing matched size/MD5. Not a fresh download/extraction from Drive, film rebuild or listening test."
+  },
+  "historical_audio_recovery": {
+    "bytes": 35430439,
+    "md5": "5563c9aeecb35c00e3719be0c5c6c548",
+    "sha256": "39f2a195b32695d57077be1e32b5a48229f286c810c10fcb24df462a74bda4d2",
+    "files": 15,
+    "fresh_extraction_hash_check": "PASS",
+    "scope": "Historical local audio moved out of current Git/source-kit payload into verified external recovery. Working files kept untouched. Approved voice03 reference remains in Git. The final Titan V2 editable recovery is NOT provided by this audio pack.",
+    "drive_id": "1IWpd4T-ZGmuwO2XoR-RRljbdGMKxQ3uw",
+    "verification": "Fresh local separate extraction checked15 hashes. Upload followed by independent Drive get_file size/MD5 match. No new synthesis/processing/listening."
+  },
+  "voice_reference": {
+    "drive_id": "1sSt3k0OcJNvGgW7a12nvXt_IMbA1AwW1",
+    "bytes": 1839182,
+    "md5": "2361d357f00d3254b4c8ad4b7ed60f64",
+    "sha256": "3b1d19016ec5387f0b7c85147237a74c1e15fc3e2fbbf10a3c6974921a5c60e1",
+    "verification": "Exact Git-restored bytes hash checked; independent get_file after upload matched size/MD5. Exact executable provider binding NOT restored."
+  },
+  "validation": {
+    "new_offline_tests": 17,
+    "existing_style_tests": 16,
+    "existing_material_tests": 8,
+    "total_local_tests": 41,
+    "source_kit_catalog_entries": 494,
+    "ci_success_run_at_source_commit": 38890275846,
+    "limitations": [
+      "No new video render/playback or ear-listening",
+      "No matching final Titan V2 editable recovery verified",
+      "Declaration gates are not art certification or universal voice portability guarantees"
+    ]
+  },
+  "preservation": {
+    "original_Drive_media_moved_or_deleted": false,
+    "public_sharing_changes": false,
+    "unrelated_root_ZIPs_or_demo_altered": false,
+    "raw_audio_working_files_deleted": false,
+    "history_rewritten": false
+  },
+  "film_shortcut_targets_relisted": {
+    "1tdU_aa0zQ5s2atAEBojwu8RRT10aOg3x": "1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw",
+    "1ix5iB5cvhdYCnMzUjgz2_BHm0pZxs8Rm": "1RDoxZ7wIg_qboUKjvUnc2IYYe6mlmLj7",
+    "1aWMeoRlkeiVrOS5b2RrETDZaro-zejgB": "14Iew5HQ8gxORHRgA3pviQj1dFvBEpbNx",
+    "1FCBjVqkm3IdxyeM6ct6KG8AntUhlNOOa": "1qzcn1eHS0z8dVK1tbltClRklZb8G24Bd",
+    "15P43GfeWd6L2OgPCIahIaTlL_91jbiN0": "1oQuS3Up0RcGEDkQYxa-jN7qKj9YxG61i"
+  }
+}

@@ -1,0 +1,53 @@
+name: Public press-page visual research
+on:
+  push:
+    branches: [arena/b2ef2032-g]
+    paths: [.github/workflows/intro-materials.yml]
+permissions:
+  contents: write
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 7
+    steps:
+      - name: Acquire published historical source images, no authentication bypass
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/press-research
+          python3 - <<'PYIMAGE'
+          import urllib.request,json
+          from pathlib import Path
+          root=Path('/tmp/press-research');rows=[]
+          sources=[('forbes_cover.png','https://blogs-images.forbes.com/halahtouryalai/files/2015/09/cover3.png'),('forbes_entry.png','https://blogs-images.forbes.com/halahtouryalai/files/2015/09/escobar-write-up1.png'),('moravia.jpg','https://ars.els-cdn.com/content/image/1-s2.0-S0962629825001763-gr3.jpg'),('semana.jpg','https://ars.els-cdn.com/content/image/1-s2.0-S0962629825001763-gr4.jpg')]
+          for name,url in sources:
+            row={'file':name,'url':url}
+            try:
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0'})
+              with urllib.request.urlopen(req,timeout=30) as r:
+                data=r.read();row['content_type']=r.headers.get('Content-Type');row['resolved_url']=r.url
+              if not row['content_type'].startswith('image/'):raise ValueError('Not an image')
+              (root/name).write_bytes(data);row['bytes']=len(data)
+            except Exception as e:row['error']=str(e)
+            rows.append(row)
+          (root/'provenance.json').write_text(json.dumps(rows,indent=2))
+          PYIMAGE
+          cd /tmp/press-research
+          tar -czf /tmp/press-research.tar.gz -- *.png *.jpg provenance.json
+      - name: Store bounded research object without a branch media commit
+        id: stash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json,base64,subprocess,os
+          from pathlib import Path
+          data=Path('/tmp/press-research.tar.gz').read_bytes()
+          assert len(data)<25_000_000
+          payload=json.dumps({'content':base64.b64encode(data).decode(),'encoding':'base64'})
+          result=json.loads(subprocess.check_output(['gh','api','--method','POST','repos/'+os.environ['REPO']+'/git/blobs','--input','-'],input=payload.encode()))
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('sha='+result['sha']+'\n')
+          PY
+      - name: Research object ${{ steps.stash.outputs.sha }}
+        run: echo 'Research screenshots only, not a rights grant or a delivery.'

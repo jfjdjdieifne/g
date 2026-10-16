@@ -1,0 +1,117 @@
+{
+  "schema": "production-policy/1",
+  "updated": "2026-10-16",
+  "language": {
+    "conversation": "ar-SY",
+    "on_screen": "en",
+    "voiceover": "en",
+    "allow_non_latin_on_screen": false,
+    "note": "English-only video content. Arabic is allowed in internal notes and conversation, never automatically promoted into captions. This overrides prior Arabic-primary demo instructions."
+  },
+  "art_direction": {
+    "unit_of_design": "scene",
+    "default_annotation": "none",
+    "generic_popup_boxes": "disallowed_by_default",
+    "exception_requires": [
+      "narrative_reason",
+      "reference_evidence"
+    ],
+    "continuity": "Persistent world-space anchors across camera/scene beats; avoid reset at every sentence.",
+    "quality": "A technical pass, texture, grain, drop shadow or spring animation is not evidence of professional art direction.",
+    "reference": "WW2 P2 @2:04–2:15; v3 user-approved design direction, not blanket certification of all engines.",
+    "on_screen_text": {
+      "default": "off",
+      "allowed_only_when": "Necessary for understanding/source context, or a deliberately motivated word-motion scene. No decorative sentence-summary captions.",
+      "rejected_examples": [
+        "HIS DESIGN",
+        "HIS GUARDS",
+        "STILL IN BUSINESS"
+      ],
+      "legal_source_notes": "Necessary factual dates, source credits and illustrative-model notices remain allowed; do not turn them into permanent narrative captions.",
+      "explainer_keywords": "Selective spoken script keywords may label, connect or reveal a relationship, with cue purpose, actual audio timing and phone readability. Not permanent subtitles or decoration."
+    },
+    "meaningful_motion": "Across every style: meaningful camera/action/causal transformations dominate; readable motivated holds allowed. No slideshow or isolated model-on-PowerPoint; show informative side/cut faces and connected scenes."
+  },
+  "depth": {
+    "mode": "narrative_choice",
+    "required_when_claiming_3d": [
+      "perspective_camera",
+      "world_space_xyz",
+      "height_dependent_projection",
+      "occlusion_or_depth_ordering"
+    ],
+    "anti": [
+      "Do not call a flat image with a shadow 3D.",
+      "Do not tilt labels into unreadability.",
+      "Do not add depth unrelated to the narrative."
+    ]
+  },
+  "gates": [
+    "English-only display manifest",
+    "spatial anchor invariance",
+    "no text collisions",
+    "no offshore city/convoy markers",
+    "reference evidence",
+    "visual review separate from technical QA",
+    "No default decorative word captions",
+    "Archive-dependent edit blocked until original clips are acquired, viewed and heard",
+    "No narrator-free slide filler disguised as archive-led storytelling",
+    "Source/idea material plan for each documentary beat before new director render readiness",
+    "Generated/reference-derived imagery never masquerades as authentic archive",
+    "Explicit named-style contract and actual on-screen material consistency before new production"
+  ],
+  "narration": {
+    "language": "en",
+    "style": "conversational_documentary_youtuber",
+    "applies_to": "Every duration: short hooks and 10–30 minute documentaries, not only the opening.",
+    "delivery": "Use natural contractions, varied sentence length, and meaningful pauses. Interested person explaining a story; not a memorized ceremonial speech.",
+    "writing": [
+      "Concrete people, events, mechanisms and consequences before abstract claims.",
+      "Explain and react naturally; use a question only where it advances the story.",
+      "Vary factual exposition, context, short reactions, archive-only beats and narrator returns.",
+      "Read aloud and rewrite anything that sounds performed or mechanically repeated.",
+      "Keep English video content separate from Arabic internal notes."
+    ],
+    "avoid": [
+      "Continuous purple prose, aphorisms, metaphors and grand declarations.",
+      "Repeated rhetorical questions or identical dramatic sentence patterns.",
+      "Formulaic Look / Here is the thing / Imagine openings on every beat.",
+      "Fake hesitations or filler words sprinkled onto an otherwise stiff script.",
+      "Invented archive quotations or synthetic anchor speech presented as authentic news."
+    ],
+    "archive_handoff": "Where an edit promises actual news/presenter footage, use acquired, viewed AND heard authentic clips with their own original audio. A narrator pause must carry real audiovisual storytelling; typeset quotation slides are NOT an acceptable substitute. If missing, block production and secure the clips first.",
+    "voice_status": "Permanently approved voice03 identity AND native clean extended performance for ALL new films. See DEFAULT_VOICE.json / approved_voice03 profile. Local ID is not portable; restore exact identity or disclose blocker, never silently re-audition/substitute. Historical films unchanged.",
+    "archive_selection_order": "Select and actually view/hear a real, relevant news soundbite FIRST. Its specific spoken sentence must establish the premise/question; the narrator enters by continuing, explaining or reframing that exact meaning. Do not insert generic news images or fill preallocated narrator silences. Archive and narrator exchange narrative responsibility; not a rigid template."
+  },
+  "editorial_self_review": {
+    "applies_to": "Every film, every scene and duration, not only Escobar",
+    "protocol": "engine/EDITORIAL_REVIEW_PROTOCOL.md",
+    "before_build": "Understand the narrative function and verify exact source relevance before choosing assets or motion. Anticipate why this specific scene might fail.",
+    "before_delivery": "Inspect actual encoded scenes and transitions, source-audio meaning, image selection, staging, rhythm and small-screen readability. Fix foundational errors before user review.",
+    "not_a_certificate": "Tests, 3D and checkboxes do not certify professional editing. Record actual observations and uncertainties; do not claim viewing/listening that did not occur."
+  },
+  "documentary_materials": {
+    "protocol": "engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md",
+    "applies_to": "Every film and subject, not just Escobar or an opening.",
+    "selection_order": "Narrative premise and real source discovery inform each other before final script/timing; never fill a locked script with whichever model is easiest to render.",
+    "real_first": "Prefer exact-place/person/event photographs and footage where they can show the subject. Use models for mechanisms, spatial explanations and meaningful transitions, not to replace obtainable documentary material wholesale.",
+    "derived_imagery": "If a required view is unavailable, inspect a real visual reference first; preserve evidenced features, log invented/unknown areas, disclose generation/reconstruction, and choose layered2.5D/projection or true3D as justified. Never fabricate historical scans, quotes or evidence. Never erase watermarks or replace marked footage by generative watermark removal.",
+    "quantity": "No arbitrary creative asset-count ceiling:100 or1000 generated assets are acceptable if necessary. Not a quota or authorization to generate blindly; review every asset/shot and keep large media out of Git.",
+    "variety": "Mix actual reports, press, interviews, real-site visuals, narrator reactions, motivated typography and explanatory depth according to meaning. No obligatory media count, order or one-template montage.",
+    "press_word_match": "A user-suggested option, not a newly studied reference card or mandatory ending: align an actually present name/word across genuine inspected scans; preserve original text/context, provenance and readability; connect to the next spoken idea.",
+    "duration": "Develop the premise and source exchange before fixing opening length.30seconds is no longer an artistic ceiling for planning, but no new runtime, new VO performance or full documentary is automatically approved.",
+    "style_scope": "Resolve STYLE_REGISTRY.json first. Prefer authentic material for archive-led work; pure_explainer deliberately has no archive on screen. Its factual research and inspected real references where representing real subjects remain mandatory. No global archive percentage or3D quota."
+  },
+  "style_system": {
+    "registry": "engine/STYLE_REGISTRY.json",
+    "guide": "engine/STYLE_GUIDE.md",
+    "onboarding": "START_HERE.md",
+    "contract": "per-project style_contract.json",
+    "gate": "tools/style_contract.py",
+    "default_style": null,
+    "scope": "Named film styles determine on-screen material ownership. Authentic-first is not a requirement to put archive into pure_explainer. Facts/reference integrity and final encoded review always apply.",
+    "quality_limit": "Declaration gates do not certify exceptional art or guarantee no errors."
+  },
+  "authority": "../../studio/USER_RULES.md",
+  "current_state": "../../studio/CURRENT_STATE.json"
+}

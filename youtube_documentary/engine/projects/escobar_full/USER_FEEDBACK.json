@@ -1,0 +1,45 @@
+{
+  "status": "full_film_in_production",
+  "approved_intro": {
+    "project": "escobar_intro5",
+    "user_approved": true,
+    "sha256": "1a05ed7c029b7f910cd1d62be1bd911745fefc23b96652292b1bea9ceec0894d",
+    "reconstructed_byte_identically": true
+  },
+  "full_scope": "4-9 minutes total, naturally suited to story; English only; conversational explanatory YouTuber voice; motivated footage, sound, camera and 3D.",
+  "latest_feedback": [
+    "Full-body raw narration is much too slow.",
+    "Faster baseline speech, occasional slow two/three-word emphasis and short meaningful pauses only.",
+    "User rejected the first new raw pace example as still a little slow."
+  ],
+  "current_demo": "pace_test/Escobar_Pace_Faster_V3.mp3",
+  "demo_method": "New voice-02 take shaped clause by clause with pitch-preserving tempo factors 1.13-1.43. Important three-word phrase stays at original rate. This is processed, NOT a claim of naturally faster raw acting.",
+  "demo_seconds": 15.855,
+  "previous_raw_seconds": 20.19,
+  "pace_approved": true,
+  "whole_film_work_paused_for_pace_review": false,
+  "seven_slow_full_body_takes": "Original slow pacing rejected. Raw recordings preserved untouched; derived clause-paced FLACs now used under the user instruction to proceed, slightly slower than V3. Not a claim of faster raw acting.",
+  "no_change_to_approved_intro": true,
+  "pace_demo_drive": "1da--B-ytj1ErASq9SUb-zFS6XCnNnk2O",
+  "rejected_raw_archive_drive": "1NxeTyKABBS35oTOBq__oOyfCjy4wWL5J",
+  "rejected_raw_archive_md5": "52cb09a7d232cb8f5fe1599fd4df79e5",
+  "handoff_drive": "1K9b-rYAfh4BzZSjTAq7eIqBL3dm_IeBL",
+  "pace_adjustment": {
+    "user_request": "خليه ابطء بنتفه صغيره وباشر شغل",
+    "implementation": "3.5 percent slower than V3 baseline. Emphasis remains deliberately slower. Raw identity stays voice-02; processing disclosed.",
+    "baseline_rate_vs_v3": 0.965
+  },
+  "latest_user_authorization": "Proceed with full film, slightly slower than V3 test.",
+  "pace_actual_body_recognized_wpm_range": [
+    168.2,
+    175.96
+  ],
+  "full_body_user_approved": true,
+  "full_film_approval": {
+    "date": "2026-10-16",
+    "evidence": "ممتاز احفاظ هالستايل باسم وثائقي بحت",
+    "scope": "Completed film praised; authentic-material style named as one reusable family, not an instruction for every future film.",
+    "style_id": "pure_documentary",
+    "film_sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14"
+  }
+}

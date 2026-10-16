@@ -1,0 +1,49 @@
+{
+  "version": "revision2",
+  "status": "delivered_positive_3d_feedback_script_and_material_revision_requested",
+  "date": "2026-10-15",
+  "scope_seconds": 30,
+  "filename": "Escobar_First30_English_Revision2.mp4",
+  "bytes": 21748335,
+  "sha256": "fdee46267fa2e8aeebd6b6988ab6bd86230c41c75955806d348fdf3dd83c3a14",
+  "drive_id": "1Wd71BUBgJlAdhXZtcg3f8oI6XbP6uthD",
+  "drive_url": "https://drive.google.com/file/d/1Wd71BUBgJlAdhXZtcg3f8oI6XbP6uthD/view",
+  "drive_md5_verified_against_local": "d7f5b8750dcde1aa081218a86127c8c8",
+  "sharing_changed": false,
+  "width": 1920,
+  "height": 1080,
+  "fps": 24,
+  "frames": 720,
+  "video_codec": "H264/yuv420p",
+  "audio_codec": "AAC",
+  "model_sampling": {
+    "default_resolution": [
+      960,
+      540
+    ],
+    "office_resolution": [
+      1280,
+      720
+    ],
+    "fps": 8,
+    "cycles_samples_per_pixel": 4,
+    "interpolation": "Per-shot MCI to24fps; enlarged at composition"
+  },
+  "voice_id": "voice-02",
+  "approved_performance_preserved": true,
+  "user_approved_visuals": false,
+  "publication_license_obtained": false,
+  "manual_listening_claimed": false,
+  "review_record": "evidence/encoded_review.json",
+  "source_and_rights": "SOURCES_AND_RIGHTS.md",
+  "legacy_v1_still_rejected_and_blocked": true,
+  "review_notes_drive_id": "1UI0miW9oYsDvPfZrPuspX8tYVjxN-gXG",
+  "handoff_drive_id": "1eOJM4SSeG6Fu0vKyg64XHRVyX3WGMvco",
+  "implementation_commit": "49f61e4",
+  "final_regression": {
+    "passed": 26,
+    "duration_seconds": 5.56,
+    "art_approval": false
+  },
+  "user_feedback": "USER_FEEDBACK_2026-10-15.json"
+}

@@ -1,0 +1,7 @@
+# Linux system font also required: /usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf
+Pillow>=10,<13
+numpy>=1.26,<3
+imageio-ffmpeg>=0.5,<0.7
+arabic-reshaper>=3,<4
+python-bidi>=0.6,<0.7
+fonttools>=4,<5

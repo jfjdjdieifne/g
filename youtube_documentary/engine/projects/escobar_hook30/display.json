@@ -1,0 +1,45 @@
+{
+  "language": "en",
+  "texts": {
+    "archive": "PBS FRONTLINE / 1997 / TRANSCRIPT",
+    "excerpt": "TYPESET EXCERPT",
+    "press_title": "THE GODFATHER OF COCAINE",
+    "quote1": "Escobar was to cocaine",
+    "quote2": "what Ford was to automobiles.",
+    "attribution": "THOMAS CASH / FRONTLINE INTERVIEW",
+    "prison": "LA CATEDRAL",
+    "site_date": "FORMER PRISON SITE / 2019 PHOTO",
+    "photo_credit": "Stefanomione / Wikimedia Commons / CC BY-SA 4.0",
+    "model": "ILLUSTRATIVE CUTAWAY / NOT TO SCALE",
+    "design": "HIS DESIGN",
+    "guards": "HIS GUARDS",
+    "business": "STILL IN BUSINESS",
+    "comfort1": "not maximum security,",
+    "comfort2": "but maximum comfort.",
+    "comfort_credit": "ARTICLE DESCRIPTION / AMUSING PLANET",
+    "year1": "JUNE 1991",
+    "year2": "JULY 1992",
+    "title": "PABLO ESCOBAR",
+    "subtitle": "THE PRISON DEAL",
+    "front_header": "FRONTLINE",
+    "article_header": "AMUSING PLANET",
+    "article_date": "JULY 2023 / ARTICLE EXCERPT",
+    "press_title1": "THE GODFATHER",
+    "press_title2": "OF COCAINE",
+    "pbs_footer": "The Godfather of Cocaine / Original air date: March 25, 1997",
+    "article_footer": "La Catedral: Pablo Escobar's Personal Prison / July 2023",
+    "pbs_url": "pbs.org / FRONTLINE / archive / drug wars",
+    "article_url": "amusingplanet.com / 2023 / 07 / la-catedral-pablo-escobars-personal.html"
+  },
+  "design": {
+    "unit_of_design": "scene",
+    "generic_popups": [],
+    "claims_3d": true,
+    "depth_features": [
+      "perspective_camera",
+      "world_space_xyz",
+      "height_dependent_projection",
+      "occlusion_or_depth_ordering"
+    ]
+  }
+}

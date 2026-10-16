@@ -1,0 +1,28 @@
+{
+  "schema": "approved-voice/1",
+  "approved_on": "2026-10-16",
+  "display_name": "Approved Conversational English — voice-03",
+  "provider_name": null,
+  "name_limit": "The Arena tools expose voice_id, not the underlying commercial voice/model name. Do not invent a provider name.",
+  "voice_id": "voice-03",
+  "audition_battle": "03",
+  "registration_language": "en",
+  "gender_requested": "masculine",
+  "use_case": "conversational",
+  "approval_scope": "Default for ALL future videos, explicitly approved identity AND clean extended performance. Supersedes voice-02 for NEW production; historical approved films unchanged.",
+  "evidence_verbatim": "اي موافق واعتمدها بشكل دايم بكل لفيديوهات هلصوت وعطيني خصايصو واسمو ازا فيك ليحسن ايجنت غيرك يقدر يختاره بلمستقبل",
+  "desired_and_approved_character": [
+    "Masculine English conversational narration",
+    "Clear, close, unforced delivery rather than announcer/theatrical recital",
+    "Natural connected phrasing and varied sentence lengths",
+    "Native pace of approved reference; no artificial speedup, pitch change, fake breaths or music masking"
+  ],
+  "accent": "Generic English registration; no region/accent requested or independently certified",
+  "reference_wav": "engine/voices/approved_voice03/approved_reference.wav",
+  "reference_mp3": "engine/voices/approved_voice03/approved_reference.mp3",
+  "reference_sha256": "3b1d19016ec5387f0b7c85147237a74c1e15fc3e2fbbf10a3c6974921a5c60e1",
+  "reference_duration_seconds": 20.851519274376418,
+  "reference_format": "Mono PCM16 WAV,44100Hz",
+  "portability_limit": "voice-03 is the identifier in this conversation voice registry, not a universal provider preset. In a new session, first ask the platform to restore/resolve this approved registration and compare its identity to the preserved reference. Never assume an unrelated voice-03 in a different registry is the same voice. These tools do not expose a portable model ID or voice-cloning endpoint; WAV alone is not an executable voice model. If exact restoration is unavailable, say so, preserve reference, and obtain approval before a substitute.",
+  "manual_listening_claimed": false
+}

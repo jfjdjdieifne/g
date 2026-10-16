@@ -1,0 +1,16 @@
+{
+  "output": "/home/user/build/escobar_film/Escobar_Full_Film_Review.mp4",
+  "sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14",
+  "bytes": 96129645,
+  "approved_input_sha256": "1a05ed7c029b7f910cd1d62be1bd911745fefc23b96652292b1bea9ceec0894d",
+  "approved_prefix_seconds": 33.125,
+  "prefix_video_decoded_frames_identical": 795,
+  "prefix_audio_compared_seconds": 33.125,
+  "prefix_audio_max_difference": 0.0,
+  "prefix_audio_channels": 2,
+  "prefix_audio_compared_samples_per_channel": 1590000,
+  "codec": "H264/AAC packet-copy join; no speech/video speed change",
+  "aac_priming_compensation_samples": 1024,
+  "aac_boundary_note": "All 1590000 approved-prefix samples in EACH of two audio channels and every approved picture frame checked. Packet boundary after the prefix may contain sub-frame AAC padding; no speech is stretched.",
+  "manual_listening_claimed": false
+}

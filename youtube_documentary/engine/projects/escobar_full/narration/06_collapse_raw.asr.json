@@ -1,0 +1,960 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/escobar_film/voice/06_collapse_raw.wav",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 0.3,
+          "start": 0.12,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.54,
+          "start": 0.3,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.84,
+          "start": 0.54,
+          "word": "back"
+        },
+        {
+          "conf": 0.844145,
+          "end": 0.96,
+          "start": 0.84,
+          "word": "our"
+        },
+        {
+          "conf": 0.844145,
+          "end": 1.5,
+          "start": 0.96,
+          "word": "side"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.16,
+          "start": 1.89,
+          "word": "didn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.43,
+          "start": 2.16,
+          "word": "mean"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.67,
+          "start": 2.43,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.97,
+          "start": 2.67,
+          "word": "back"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.09,
+          "start": 2.97,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.6,
+          "start": 3.09,
+          "word": "top"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.86,
+          "start": 4.26,
+          "word": "escobar"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.04,
+          "start": 4.86,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.28,
+          "start": 5.04,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.82,
+          "start": 5.28,
+          "word": "hunted"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.0,
+          "start": 5.85,
+          "word": "by"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.09,
+          "start": 6.0,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.57,
+          "start": 6.09,
+          "word": "colombian"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.17,
+          "start": 6.57,
+          "word": "police"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.74,
+          "start": 7.53,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.22,
+          "start": 7.74,
+          "word": "american"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.97,
+          "start": 8.22,
+          "word": "assistance"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.05,
+          "start": 9.33,
+          "word": "rivals"
+        },
+        {
+          "conf": 0.796045,
+          "end": 10.23,
+          "start": 10.05,
+          "word": "were"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.59,
+          "start": 10.23,
+          "word": "also"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.98,
+          "start": 10.59,
+          "word": "turning"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.4,
+          "start": 10.98,
+          "word": "against"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.64,
+          "start": 11.4,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.24,
+          "start": 11.64,
+          "word": "network"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.78,
+          "start": 12.66,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.41,
+          "start": 12.78,
+          "word": "vigilante"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.77,
+          "start": 13.41,
+          "word": "group"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.16,
+          "start": 13.77,
+          "word": "called"
+        },
+        {
+          "conf": 0.521141,
+          "end": 14.637969,
+          "start": 14.37,
+          "word": "last"
+        },
+        {
+          "conf": 0.369576,
+          "end": 15.39,
+          "start": 14.637969,
+          "word": "pappas"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.11,
+          "start": 15.63,
+          "word": "attacked"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.56,
+          "start": 16.11,
+          "word": "people"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.07,
+          "start": 16.89,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.55,
+          "start": 17.07,
+          "word": "property"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.21,
+          "start": 17.55,
+          "word": "associated"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.36,
+          "start": 18.21,
+          "word": "with"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.66,
+          "start": 18.36,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.59,
+          "start": 18.96,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.112631,
+          "start": 19.83,
+          "word": "was"
+        }
+      ],
+      "text": "but being back our side didn't mean being back on top escobar was being hunted by the colombian police with american assistance rivals were also turning against his network a vigilante group called last pappas attacked people and property associated with him that was"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 20.31,
+          "start": 20.16,
+          "word": "more"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.09,
+          "start": 20.31,
+          "word": "violence"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.81,
+          "start": 21.48,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.84,
+          "start": 21.81,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.44,
+          "start": 21.84,
+          "word": "clean"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.74,
+          "start": 22.53,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.22,
+          "start": 22.74,
+          "word": "lawful"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.85,
+          "start": 23.22,
+          "word": "solution"
+        }
+      ],
+      "text": "more violence not a clean or lawful solution"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 24.87,
+          "start": 24.72,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.32,
+          "start": 24.87,
+          "word": "pressure"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.5,
+          "start": 25.32,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.86,
+          "start": 25.5,
+          "word": "coming"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.04,
+          "start": 25.86,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.37,
+          "start": 26.04,
+          "word": "different"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.12,
+          "start": 26.37,
+          "word": "directions"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.72,
+          "start": 27.57,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.78,
+          "start": 27.72,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.47,
+          "start": 27.78,
+          "word": "network"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.71,
+          "start": 28.56,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.83,
+          "start": 28.71,
+          "word": "had"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.43,
+          "start": 28.83,
+          "word": "protected"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.73,
+          "start": 29.43,
+          "word": "him"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.33,
+          "start": 30.09,
+          "word": "was"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.6,
+          "start": 30.33,
+          "word": "being"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.9,
+          "start": 30.6,
+          "word": "torn"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.38,
+          "start": 30.9,
+          "word": "apart"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.07,
+          "start": 31.86,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.19,
+          "start": 32.07,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.34,
+          "start": 32.19,
+          "word": "where"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.46,
+          "start": 32.34,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.91,
+          "start": 32.46,
+          "word": "size"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.97,
+          "start": 32.91,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.06,
+          "start": 32.97,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.72,
+          "start": 33.06,
+          "word": "fortune"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.2,
+          "start": 34.02,
+          "word": "can"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.29,
+          "start": 34.2,
+          "word": "be"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.01,
+          "start": 34.29,
+          "word": "misleading"
+        }
+      ],
+      "text": "the pressure was coming from different directions and the network that had protected him was being torn apart this is where the size of the fortune can be misleading"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 36.42,
+          "start": 35.82,
+          "word": "money"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.9,
+          "start": 36.69,
+          "word": "can"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.14,
+          "start": 36.9,
+          "word": "pay"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.29,
+          "start": 37.14,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.92,
+          "start": 37.29,
+          "word": "support"
+        },
+        {
+          "conf": 0.532128,
+          "end": 38.445165,
+          "start": 38.31,
+          "word": "it"
+        },
+        {
+          "conf": 0.357046,
+          "end": 38.510248,
+          "start": 38.445165,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.91,
+          "start": 38.510248,
+          "word": "cannot"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.51,
+          "start": 38.91,
+          "word": "guarantee"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.72,
+          "start": 39.51,
+          "word": "that"
+        },
+        {
+          "conf": 0.800126,
+          "end": 40.23,
+          "start": 39.72,
+          "word": "supports"
+        },
+        {
+          "conf": 0.865531,
+          "end": 40.5,
+          "start": 40.23,
+          "word": "stayed"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.16,
+          "start": 40.56,
+          "word": "loyal"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.52,
+          "start": 41.34,
+          "word": "when"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.61,
+          "start": 41.52,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.15,
+          "start": 41.61,
+          "word": "risks"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.87,
+          "start": 42.15,
+          "word": "change"
+        }
+      ],
+      "text": "money can pay for support it it cannot guarantee that supports stayed loyal when the risks change"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 43.83,
+          "start": 43.68,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.31,
+          "start": 43.83,
+          "word": "december"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.97,
+          "start": 44.31,
+          "word": "second"
+        },
+        {
+          "conf": 0.516282,
+          "end": 45.8214,
+          "start": 45.36,
+          "word": "nineteen"
+        },
+        {
+          "conf": 1.0,
+          "end": 46.08,
+          "start": 45.8214,
+          "word": "ninety"
+        },
+        {
+          "conf": 1.0,
+          "end": 46.62,
+          "start": 46.08,
+          "word": "three"
+        },
+        {
+          "conf": 0.698892,
+          "end": 47.64,
+          "start": 47.04,
+          "word": "columbia"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.27,
+          "start": 47.64,
+          "word": "forces"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.81,
+          "start": 48.3,
+          "word": "located"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.56,
+          "start": 48.84,
+          "word": "escobar"
+        },
+        {
+          "conf": 0.768685,
+          "end": 49.74,
+          "start": 49.62,
+          "word": "he"
+        },
+        {
+          "conf": 0.590571,
+          "end": 49.98,
+          "start": 49.74,
+          "word": "met"
+        },
+        {
+          "conf": 0.926073,
+          "end": 50.04,
+          "start": 49.98,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.4,
+          "start": 50.04,
+          "word": "yin"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.33,
+          "start": 51.18,
+          "word": "he"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.75,
+          "start": 51.33,
+          "word": "died"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.08,
+          "start": 51.75,
+          "word": "during"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.2,
+          "start": 52.11,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.83,
+          "start": 52.2,
+          "word": "rooftop"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.49,
+          "start": 52.83,
+          "word": "shootout"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.27,
+          "start": 53.85,
+          "word": "claims"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.6,
+          "start": 54.27,
+          "word": "about"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.78,
+          "start": 54.6,
+          "word": "who"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.23,
+          "start": 54.78,
+          "word": "fired"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.35,
+          "start": 55.23,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.71,
+          "start": 55.35,
+          "word": "fatal"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.22,
+          "start": 55.71,
+          "word": "shot"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.0,
+          "start": 56.43,
+          "word": "remain"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.72,
+          "start": 57.0,
+          "word": "disputed"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.2,
+          "start": 58.02,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.29,
+          "start": 58.2,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.68,
+          "start": 58.29,
+          "word": "larger"
+        },
+        {
+          "conf": 0.725844,
+          "end": 59.13,
+          "start": 58.68,
+          "word": "change"
+        },
+        {
+          "conf": 0.725844,
+          "end": 59.25,
+          "start": 59.13,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.79,
+          "start": 59.25,
+          "word": "clear"
+        }
+      ],
+      "text": "on december second nineteen ninety three columbia forces located escobar he met a yin he died during a rooftop shootout claims about who fired the fatal shot remain disputed but the larger change is clear"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 60.78,
+          "start": 60.63,
+          "word": "the"
+        },
+        {
+          "conf": 0.820626,
+          "end": 61.05,
+          "start": 60.78,
+          "word": "man"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.23,
+          "start": 61.05,
+          "word": "who"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.41,
+          "start": 61.23,
+          "word": "had"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.22,
+          "start": 61.41,
+          "word": "negotiated"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.31,
+          "start": 62.22,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.85,
+          "start": 62.31,
+          "word": "terms"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.97,
+          "start": 62.85,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.12,
+          "start": 62.97,
+          "word": "his"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.36,
+          "start": 63.12,
+          "word": "own"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.05,
+          "start": 63.36,
+          "word": "imprisonment"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.53,
+          "start": 64.32,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.74,
+          "start": 64.53,
+          "word": "no"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.13,
+          "start": 64.74,
+          "word": "longer"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.52,
+          "start": 65.13,
+          "word": "protect"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.09,
+          "start": 65.52,
+          "word": "himself"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.45,
+          "start": 66.27,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.54,
+          "start": 66.45,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.02,
+          "start": 66.54,
+          "word": "forces"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.47,
+          "start": 67.02,
+          "word": "closing"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.83,
+          "start": 67.47,
+          "word": "in"
+        }
+      ],
+      "text": "the man who had negotiated the terms of his own imprisonment could no longer protect himself from the forces closing in"
+    }
+  ]
+}

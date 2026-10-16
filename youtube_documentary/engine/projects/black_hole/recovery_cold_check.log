@@ -1,0 +1,17 @@
+Fresh independent extraction. Every included file hash checked. No render/ear-listening/art-approval claim.
+
+$ /home/user/build/explainer_runtime/venv/bin/python /tmp/film-cold-check-i3xz_wlg/youtube_documentary/tools/style_contract.py check --project /tmp/film-cold-check-i3xz_wlg/youtube_documentary/engine/projects/black_hole
+PASS: declared style/material consistency ONLY. Actual encoded visual/audio review remains required.
+
+$ /home/user/build/explainer_runtime/venv/bin/python /tmp/film-cold-check-i3xz_wlg/youtube_documentary/tools/production_policy.py /tmp/film-cold-check-i3xz_wlg/youtube_documentary/engine/projects/black_hole/display_manifest.json
+PASS: display / declared design policy. Art direction still requires visual review.
+
+$ node /tmp/film-cold-check-i3xz_wlg/youtube_documentary/tools/tests/test_traffic_motion.mjs
+{"result":"PASS: source invariants only","minimumCenterGap":5.729440443660906,"minimumForwardSpeed":0.4600045733600666,"minimumBufferBumperGap":4.8270899908406255}
+
+$ node --check /tmp/film-cold-check-i3xz_wlg/youtube_documentary/tools/render_webgl_profile.mjs
+
+$ node /tmp/film-cold-check-i3xz_wlg/youtube_documentary/tools/tests/test_horizon_motion.mjs
+PASS: nonrotating radial null velocity, exterior escape, horizon tangent, inside inward-only paths, finite integration, tidal mass ratio. Source consistency, not a ray trace or artistic certificate.
+
+$ node --check /tmp/film-cold-check-i3xz_wlg/youtube_documentary/engine/projects/black_hole/scene.mjs

@@ -1,0 +1,45 @@
+{
+  "schema": "voice-pacing-recipe/1",
+  "voice_identity": "voice-02 previously user-approved; reused without re-audition",
+  "raw_takes": "Untouched WAV files in raw_voice/ of the recovery capsule; ASR references in narration/.",
+  "common_function": "engine/runtime/speech_pacing.py::shape",
+  "target_clause_wpm": 188.2,
+  "pause_seconds": 0.16,
+  "emphasis_word_ranges_0based_end_exclusive": {
+    "01": [
+      [
+        33,
+        35
+      ]
+    ],
+    "02": [
+      [
+        13,
+        15
+      ],
+      [
+        36,
+        38
+      ]
+    ],
+    "03": [
+      [
+        12,
+        14
+      ],
+      [
+        67,
+        69
+      ]
+    ]
+  },
+  "film_first_start": 0.18,
+  "gap_after_takes": {
+    "01": 0.8,
+    "02": 1.0
+  },
+  "final_hold_seconds": 2.3,
+  "round_duration_to_fps": 24,
+  "cue_mapping": "Region output_in + (word.start-source_in)/(source_out-source_in)*(output_out-output_in) + film_start; approximate ASR alignment, not ear verification.",
+  "restoration": "Use supplied paced FLACs directly; no need to resynthesize or process again. Exact raw/processed hashes in narration_pacing.json and source_manifest.json."
+}

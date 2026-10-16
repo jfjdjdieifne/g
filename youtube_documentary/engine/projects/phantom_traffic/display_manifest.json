@@ -1,0 +1,34 @@
+{
+  "language": "en",
+  "texts": {
+    "display_01": "NO CRASH.\nNO ROADWORKS.",
+    "display_02": "NO BLOCKAGE.",
+    "display_03": "A WAVE.",
+    "display_04": "ONE SMALL BRAKE.",
+    "display_05": "A LITTLE LATER.",
+    "display_06": "THE WAVE\nMOVES BACK.",
+    "display_07": "NOT THE SAME CARS.\nTHE SAME PATTERN.",
+    "display_08": "SPACE IS A BUFFER.",
+    "display_09": "NOT A CURE-ALL.",
+    "display_10": "YOU DROVE\nTHROUGH A WAVE.",
+    "display_11": "ROOM TO REACT",
+    "display_12": "CARS",
+    "display_13": "WAVE",
+    "display_14": "JOIN",
+    "display_15": "LEAVE",
+    "display_16": "EXPLANATORY ANIMATION"
+  },
+  "captions": "OFF; selective mechanism words only",
+  "design": {
+    "unit_of_design": "scene",
+    "generic_popups": [],
+    "claims_3d": true,
+    "depth_features": [
+      "perspective_camera",
+      "world_space_xyz",
+      "height_dependent_projection",
+      "occlusion_or_depth_ordering"
+    ]
+  },
+  "validation_scope": "Manually reconciled with literal headings/labels in scene.mjs and disclosure in shared HTML. Writing-system gate is not proof of English semantics or actual encoded legibility."
+}

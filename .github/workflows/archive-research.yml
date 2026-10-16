@@ -1,0 +1,62 @@
+name: Inspect candidate documentary archive
+on:
+  push:
+    branches: [arena/b2ef2032-g]
+    paths: [.github/workflows/archive-research.yml]
+concurrency:
+  group: archive-research-session
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect the original broadcaster's matching interview
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p /tmp/archive-research
+          cd /tmp/archive-research
+          trap 'echo "::error::Research command failed at line $LINENO"' ERR
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y ffmpeg)
+          python3 -m pip -q install yt-dlp
+          yt-dlp --no-playlist --socket-timeout 20 --retries 1 --download-sections '*0-120' --force-keyframes-at-cuts -f 'best[height<=720]/best' --write-info-json -o 'official.%(ext)s' 'https://charlierose.com/videos/15564'
+          input=$(find . -maxdepth 1 -type f \( -name 'official.mp4' -o -name 'official.webm' -o -name 'official.mkv' \) | head -1)
+          test -n "$input"
+          ffprobe -v error -show_format -show_streams -of json "$input" > probe.json
+          sha256sum "$input" > source.sha256
+          ffmpeg -y -v error -i "$input" -t 120 -vf "scale='min(854,iw)':-2" -c:v libx264 -preset fast -crf 24 -maxrate 900k -bufsize 1800k -c:a aac -b:a 128k original_opening.mp4
+          printf '%s\n' 'RESEARCH ONLY. Official program page https://charlierose.com/videos/15564. Program catalog date November 12, 1992 independently matches Reelin ID58597. Public playback does not grant a publication license. No watermark removal. Not a delivery.' > NOTICE.txt
+          tar -czf research.tar.gz original_opening.mp4 official.info.json probe.json source.sha256 NOTICE.txt
+      - name: Unreferenced research retrieval (no media commit or release)
+        id: stash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import base64,json,os,urllib.request,urllib.error
+          from pathlib import Path
+          p=Path('/tmp/archive-research/research.tar.gz')
+          print('::notice title=Research bundle size::'+str(p.stat().st_size))
+          if p.stat().st_size>25_000_000:print('::error::Research size cap exceeded');raise SystemExit(1)
+          payload=json.dumps({'content':base64.b64encode(p.read_bytes()).decode(),'encoding':'base64'}).encode()
+          request=urllib.request.Request('https://api.github.com/repos/'+os.environ['REPO']+'/git/blobs',data=payload,headers={'Authorization':'Bearer '+os.environ['GH_TOKEN'],'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+          try:
+              with urllib.request.urlopen(request) as response:result=json.load(response)
+          except urllib.error.HTTPError as error:
+              print('::error::Research retrieval API: '+str(error)+' '+error.read().decode()[:1000]);raise
+          with open(os.environ['GITHUB_OUTPUT'],'a') as output:output.write('sha='+result['sha']+'\n')
+          PY
+      - name: Research object ${{ steps.stash.outputs.sha }}
+        run: echo 'Temporary research object, not private and not rights-cleared. No branch media commit.'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: archive-research-only
+          path: /tmp/archive-research/research.tar.gz
+          retention-days: 1

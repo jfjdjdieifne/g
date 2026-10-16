@@ -1,0 +1,2200 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/black_hole/What_If_You_Fell_Into_a_Black_Hole_1080p.mp4",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 0.33,
+          "start": 0.21,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.48,
+          "start": 0.33,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.9,
+          "start": 0.48,
+          "word": "cross"
+        },
+        {
+          "conf": 1.0,
+          "end": 0.96,
+          "start": 0.9,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.29,
+          "start": 0.96,
+          "word": "black"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.47,
+          "start": 1.29,
+          "word": "holes"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.89,
+          "start": 1.47,
+          "word": "point"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.04,
+          "start": 1.89,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.28,
+          "start": 2.04,
+          "word": "no"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.88,
+          "start": 2.28,
+          "word": "return"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.3,
+          "start": 3.18,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.54,
+          "start": 3.3,
+          "word": "feel"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.14,
+          "start": 3.54,
+          "word": "absolutely"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.56,
+          "start": 4.14,
+          "word": "nothing"
+        },
+        {
+          "conf": 0.719483,
+          "end": 4.983418,
+          "start": 4.77,
+          "word": "no"
+        },
+        {
+          "conf": 0.929527,
+          "end": 5.28,
+          "start": 4.983418,
+          "word": "wall"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.76,
+          "start": 5.58,
+          "word": "no"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.18,
+          "start": 5.76,
+          "word": "impact"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.69,
+          "start": 6.39,
+          "word": "just"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.93,
+          "start": 6.69,
+          "word": "another"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.38,
+          "start": 6.93,
+          "word": "second"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.74,
+          "start": 7.62,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 7.83,
+          "start": 7.74,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.25,
+          "start": 7.83,
+          "word": "watch"
+        },
+        {
+          "conf": 0.628059,
+          "end": 8.668087,
+          "start": 8.52,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.91,
+          "start": 8.668087,
+          "word": "try"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.36,
+          "start": 8.91,
+          "word": "sending"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.6,
+          "start": 9.36,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.9,
+          "start": 9.6,
+          "word": "last"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.26,
+          "start": 9.9,
+          "word": "message"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.62,
+          "start": 10.26,
+          "word": "home"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.04,
+          "start": 10.89,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.1,
+          "start": 11.04,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.22,
+          "start": 11.1,
+          "word": "will"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.67,
+          "start": 11.22,
+          "word": "never"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.18,
+          "start": 11.67,
+          "word": "arrive"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.75,
+          "start": 12.45,
+          "word": "here's"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.81,
+          "start": 12.75,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.32,
+          "start": 12.81,
+          "word": "trick"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.8,
+          "start": 13.62,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.98,
+          "start": 13.8,
+          "word": "edge"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.07,
+          "start": 13.98,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.13,
+          "start": 14.07,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.43,
+          "start": 14.13,
+          "word": "black"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.67,
+          "start": 14.43,
+          "word": "hole"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.94,
+          "start": 14.67,
+          "word": "isn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.0,
+          "start": 14.94,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.78,
+          "start": 15.0,
+          "word": "surface"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.2,
+          "start": 16.05,
+          "word": "it's"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.26,
+          "start": 16.2,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.77,
+          "start": 16.26,
+          "word": "boundary"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.07,
+          "start": 16.77,
+          "word": "between"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.52,
+          "start": 17.07,
+          "word": "places"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.79,
+          "start": 17.52,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.33,
+          "start": 17.79,
+          "word": "can"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.63,
+          "start": 18.33,
+          "word": "still"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.87,
+          "start": 18.63,
+          "word": "send"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.11,
+          "start": 18.87,
+          "word": "light"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.44,
+          "start": 19.11,
+          "word": "out"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.83,
+          "start": 19.71,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.16,
+          "start": 19.83,
+          "word": "places"
+        }
+      ],
+      "text": "you could cross a black holes point of no return and feel absolutely nothing no wall no impact just another second on your watch but try sending one last message home and it will never arrive here's the trick the edge of a black hole isn't a surface it's a boundary between places that can still send light out and places"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.465449,
+          "end": 20.28,
+          "start": 20.16,
+          "word": "is"
+        },
+        {
+          "conf": 0.620505,
+          "end": 20.58,
+          "start": 20.43,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.0,
+          "start": 20.58,
+          "word": "can't"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.66,
+          "start": 21.24,
+          "word": "so"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.93,
+          "start": 21.72,
+          "word": "let's"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.23,
+          "start": 21.93,
+          "word": "follow"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.44,
+          "start": 22.23,
+          "word": "one"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.83,
+          "start": 22.44,
+          "word": "astronaut"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.07,
+          "start": 22.83,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.49,
+          "start": 23.31,
+          "word": "while"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.55,
+          "start": 23.49,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.91,
+          "start": 23.55,
+          "word": "friend"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.27,
+          "start": 23.945856,
+          "word": "watches"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.420797,
+          "start": 24.27,
+          "word": "from"
+        },
+        {
+          "conf": 0.905822,
+          "end": 24.479496,
+          "start": 24.420797,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.75,
+          "start": 24.479496,
+          "word": "ship"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.96,
+          "start": 24.75,
+          "word": "far"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.29,
+          "start": 24.96,
+          "word": "away"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.65,
+          "start": 25.5,
+          "word": "for"
+        },
+        {
+          "conf": 1.0,
+          "end": 25.8,
+          "start": 25.65,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.13,
+          "start": 25.8,
+          "word": "trip"
+        },
+        {
+          "conf": 0.618198,
+          "end": 26.49,
+          "start": 26.31,
+          "word": "were"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.91,
+          "start": 26.49,
+          "word": "choosing"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.97,
+          "start": 26.91,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.54,
+          "start": 26.97,
+          "word": "quiet"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.59,
+          "start": 27.66,
+          "word": "supermassive"
+        },
+        {
+          "conf": 1.0,
+          "end": 28.95,
+          "start": 28.59,
+          "word": "black"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.28,
+          "start": 28.95,
+          "word": "hole"
+        },
+        {
+          "conf": 0.529101,
+          "end": 29.82,
+          "start": 29.55,
+          "word": "know"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.18,
+          "start": 29.82,
+          "word": "blazing"
+        },
+        {
+          "conf": 0.484719,
+          "end": 30.51,
+          "start": 30.18,
+          "word": "disc"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.6,
+          "start": 30.51,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.08,
+          "start": 30.6,
+          "word": "gas"
+        }
+      ],
+      "text": "is the can't so let's follow one astronaut in while a friend watches from a ship far away for this trip were choosing a quiet supermassive black hole know blazing disc of gas"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 32.1,
+          "start": 31.71,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.67,
+          "start": 32.16,
+          "word": "choice"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.27,
+          "start": 32.73,
+          "word": "matters"
+        }
+      ],
+      "text": "that choice matters"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 33.87,
+          "start": 33.84,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.17,
+          "start": 33.87,
+          "word": "small"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.44,
+          "start": 34.17,
+          "word": "black"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.68,
+          "start": 34.44,
+          "word": "hole"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.83,
+          "start": 34.68,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.07,
+          "start": 34.83,
+          "word": "tear"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.16,
+          "start": 35.07,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.49,
+          "start": 35.16,
+          "word": "apart"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.67,
+          "start": 35.49,
+          "word": "before"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.79,
+          "start": 35.67,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.0,
+          "start": 35.79,
+          "word": "even"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.36,
+          "start": 36.0,
+          "word": "reaches"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.72,
+          "start": 36.36,
+          "word": "edge"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.44,
+          "start": 37.02,
+          "word": "gravity"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.77,
+          "start": 37.44,
+          "word": "pulls"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.07,
+          "start": 37.77,
+          "word": "harder"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.19,
+          "start": 38.07,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.28,
+          "start": 38.19,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.581498,
+          "start": 38.28,
+          "word": "feet"
+        },
+        {
+          "conf": 0.822984,
+          "end": 38.7,
+          "start": 38.581498,
+          "word": "than"
+        },
+        {
+          "conf": 1.0,
+          "end": 38.79,
+          "start": 38.7,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.18,
+          "start": 38.79,
+          "word": "head"
+        },
+        {
+          "conf": 0.924378,
+          "end": 39.87,
+          "start": 39.39,
+          "word": "stretching"
+        },
+        {
+          "conf": 1.0,
+          "end": 39.99,
+          "start": 39.87,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 40.71,
+          "start": 39.99,
+          "word": "lengthwise"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.31,
+          "start": 40.98,
+          "word": "around"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.34,
+          "start": 41.31,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 41.94,
+          "start": 41.34,
+          "word": "supermassive"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.18,
+          "start": 41.94,
+          "word": "black"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.51,
+          "start": 42.18,
+          "word": "hole"
+        },
+        {
+          "conf": 1.0,
+          "end": 42.99,
+          "start": 42.75,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.53,
+          "start": 42.99,
+          "word": "difference"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.89,
+          "start": 43.71,
+          "word": "can"
+        },
+        {
+          "conf": 1.0,
+          "end": 43.95,
+          "start": 43.89,
+          "word": "be"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.25,
+          "start": 43.95,
+          "word": "much"
+        },
+        {
+          "conf": 1.0,
+          "end": 44.73,
+          "start": 44.25,
+          "word": "gentler"
+        },
+        {
+          "conf": 0.880623,
+          "end": 44.909323,
+          "start": 44.79,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.42,
+          "start": 44.909323,
+          "word": "horizon"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.78,
+          "start": 45.66,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 45.93,
+          "start": 45.78,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 46.38,
+          "start": 45.93,
+          "word": "cross"
+        },
+        {
+          "conf": 1.0,
+          "end": 46.5,
+          "start": 46.38,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.04,
+          "start": 46.5,
+          "word": "alive"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.55,
+          "start": 47.34,
+          "word": "now"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.85,
+          "start": 47.55,
+          "word": "watch"
+        },
+        {
+          "conf": 1.0,
+          "end": 47.97,
+          "start": 47.85,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 48.42,
+          "start": 47.97,
+          "word": "astronauts"
+        },
+        {
+          "conf": 0.838876,
+          "end": 48.78,
+          "start": 48.42,
+          "word": "flashing"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.2,
+          "start": 48.78,
+          "word": "beacon"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.59,
+          "start": 49.44,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.68,
+          "start": 49.59,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 49.95,
+          "start": 49.68,
+          "word": "friend"
+        },
+        {
+          "conf": 1.0,
+          "end": 50.61,
+          "start": 49.95,
+          "word": "outside"
+        },
+        {
+          "conf": 1.0,
+          "end": 51.0,
+          "start": 50.91,
+          "word": "the"
+        },
+        {
+          "conf": 0.530301,
+          "end": 51.45,
+          "start": 51.0,
+          "word": "flashes"
+        },
+        {
+          "conf": 0.538898,
+          "end": 51.681119,
+          "start": 51.45,
+          "word": "arrive"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.17,
+          "start": 51.681119,
+          "word": "farther"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.32,
+          "start": 52.2,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 52.62,
+          "start": 52.32,
+          "word": "farther"
+        },
+        {
+          "conf": 1.0,
+          "end": 53.04,
+          "start": 52.62,
+          "word": "apart"
+        },
+        {
+          "conf": 0.712854,
+          "end": 53.46,
+          "start": 53.31,
+          "word": "they're"
+        },
+        {
+          "conf": 0.543358,
+          "end": 53.72428,
+          "start": 53.46,
+          "word": "light"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.0,
+          "start": 53.72428,
+          "word": "shift"
+        }
+      ],
+      "text": "a small black hole could tear you apart before you even reaches edge gravity pulls harder on your feet than your head stretching you lengthwise around a supermassive black hole that difference can be much gentler the horizon you could cross it alive now watch the astronauts flashing beacon to the friend outside the flashes arrive farther and farther apart they're light shift"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.470444,
+          "end": 54.48,
+          "start": 54.09,
+          "word": "redder"
+        },
+        {
+          "conf": 1.0,
+          "end": 54.9,
+          "start": 54.75,
+          "word": "and"
+        },
+        {
+          "conf": 0.866343,
+          "end": 55.17,
+          "start": 54.9,
+          "word": "gross"
+        },
+        {
+          "conf": 1.0,
+          "end": 55.62,
+          "start": 55.17,
+          "word": "fainter"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.07,
+          "start": 55.95,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.25,
+          "start": 56.07,
+          "word": "don't"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.58,
+          "start": 56.25,
+          "word": "remain"
+        },
+        {
+          "conf": 1.0,
+          "end": 56.61,
+          "start": 56.58,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.09,
+          "start": 56.61,
+          "word": "clear"
+        },
+        {
+          "conf": 1.0,
+          "end": 57.45,
+          "start": 57.09,
+          "word": "frozen"
+        },
+        {
+          "conf": 0.875178,
+          "end": 57.96,
+          "start": 57.45,
+          "word": "statue"
+        },
+        {
+          "conf": 0.608836,
+          "end": 58.05,
+          "start": 57.96,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.14,
+          "start": 58.05,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.53,
+          "start": 58.14,
+          "word": "edge"
+        },
+        {
+          "conf": 1.0,
+          "end": 58.95,
+          "start": 58.74,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.31,
+          "start": 58.95,
+          "word": "image"
+        },
+        {
+          "conf": 1.0,
+          "end": 59.67,
+          "start": 59.31,
+          "word": "fades"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.06,
+          "start": 59.67,
+          "word": "out"
+        },
+        {
+          "conf": 1.0,
+          "end": 60.93,
+          "start": 60.69,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.14,
+          "start": 60.93,
+          "word": "you're"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.35,
+          "start": 61.14,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 61.89,
+          "start": 61.35,
+          "word": "frozen"
+        },
+        {
+          "conf": 0.831194,
+          "end": 62.34,
+          "start": 62.13,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.64,
+          "start": 62.34,
+          "word": "watch"
+        },
+        {
+          "conf": 1.0,
+          "end": 62.94,
+          "start": 62.64,
+          "word": "keeps"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.3,
+          "start": 62.94,
+          "word": "ticking"
+        },
+        {
+          "conf": 1.0,
+          "end": 63.63,
+          "start": 63.3,
+          "word": "normally"
+        },
+        {
+          "conf": 0.729702,
+          "end": 64.05,
+          "start": 63.63,
+          "word": "beside"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.29,
+          "start": 64.058108,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 64.71,
+          "start": 64.59,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.16,
+          "start": 64.71,
+          "word": "cross"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.28,
+          "start": 65.16,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 65.88,
+          "start": 65.28,
+          "word": "horizon"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.0,
+          "start": 65.88,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.06,
+          "start": 66.0,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 66.6,
+          "start": 66.06,
+          "word": "finite"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.05,
+          "start": 66.6,
+          "word": "amount"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.2,
+          "start": 67.05,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.32,
+          "start": 67.2,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 67.56,
+          "start": 67.32,
+          "word": "own"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.1,
+          "start": 67.56,
+          "word": "time"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.55,
+          "start": 68.34,
+          "word": "so"
+        },
+        {
+          "conf": 1.0,
+          "end": 68.76,
+          "start": 68.55,
+          "word": "why"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.06,
+          "start": 68.76,
+          "word": "can't"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.18,
+          "start": 69.06,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.42,
+          "start": 69.18,
+          "word": "turn"
+        },
+        {
+          "conf": 1.0,
+          "end": 69.93,
+          "start": 69.42,
+          "word": "around"
+        },
+        {
+          "conf": 0.772229,
+          "end": 70.44,
+          "start": 70.08,
+          "word": "forget"
+        },
+        {
+          "conf": 1.0,
+          "end": 70.53,
+          "start": 70.44,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 71.19,
+          "start": 70.53,
+          "word": "idea"
+        },
+        {
+          "conf": 0.766519,
+          "end": 71.43,
+          "start": 71.31,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 71.52,
+          "start": 71.43,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 71.76,
+          "start": 71.52,
+          "word": "just"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.0,
+          "start": 71.76,
+          "word": "need"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.03,
+          "start": 72.0,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.36,
+          "start": 72.03,
+          "word": "bigger"
+        },
+        {
+          "conf": 1.0,
+          "end": 72.87,
+          "start": 72.36,
+          "word": "engine"
+        },
+        {
+          "conf": 1.0,
+          "end": 73.32,
+          "start": 73.14,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 73.56,
+          "start": 73.32,
+          "word": "this"
+        },
+        {
+          "conf": 1.0,
+          "end": 74.16,
+          "start": 73.56,
+          "word": "simplify"
+        }
+      ],
+      "text": "redder and gross fainter you don't remain a clear frozen statue of the edge your image fades out but you're not frozen your watch keeps ticking normally beside you you cross the horizon in a finite amount of your own time so why can't you turn around forget the idea that you just need a bigger engine in this simplify"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.924218,
+          "end": 74.31,
+          "start": 74.16,
+          "word": "i'd"
+        },
+        {
+          "conf": 0.628385,
+          "end": 74.88,
+          "start": 74.58,
+          "word": "non"
+        },
+        {
+          "conf": 1.0,
+          "end": 75.3,
+          "start": 74.88,
+          "word": "rotating"
+        },
+        {
+          "conf": 0.800385,
+          "end": 75.54,
+          "start": 75.3,
+          "word": "black"
+        },
+        {
+          "conf": 0.800385,
+          "end": 75.81,
+          "start": 75.54,
+          "word": "hole"
+        },
+        {
+          "conf": 1.0,
+          "end": 76.38,
+          "start": 76.05,
+          "word": "every"
+        },
+        {
+          "conf": 1.0,
+          "end": 76.8,
+          "start": 76.38,
+          "word": "possible"
+        },
+        {
+          "conf": 1.0,
+          "end": 77.1,
+          "start": 76.8,
+          "word": "path"
+        },
+        {
+          "conf": 1.0,
+          "end": 77.25,
+          "start": 77.1,
+          "word": "into"
+        },
+        {
+          "conf": 1.0,
+          "end": 77.37,
+          "start": 77.25,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 77.79,
+          "start": 77.37,
+          "word": "future"
+        },
+        {
+          "conf": 0.510044,
+          "end": 78.27,
+          "start": 77.91,
+          "word": "leads"
+        },
+        {
+          "conf": 1.0,
+          "end": 78.81,
+          "start": 78.273018,
+          "word": "deeper"
+        },
+        {
+          "conf": 0.545803,
+          "end": 79.44,
+          "start": 78.81,
+          "word": "inward"
+        },
+        {
+          "conf": 1.0,
+          "end": 80.04,
+          "start": 79.74,
+          "word": "even"
+        },
+        {
+          "conf": 1.0,
+          "end": 80.1,
+          "start": 80.04,
+          "word": "have"
+        },
+        {
+          "conf": 1.0,
+          "end": 80.34,
+          "start": 80.1,
+          "word": "been"
+        },
+        {
+          "conf": 1.0,
+          "end": 80.58,
+          "start": 80.37,
+          "word": "aimed"
+        },
+        {
+          "conf": 1.0,
+          "end": 81.06,
+          "start": 80.58,
+          "word": "directly"
+        },
+        {
+          "conf": 1.0,
+          "end": 81.51,
+          "start": 81.06,
+          "word": "outward"
+        },
+        {
+          "conf": 1.0,
+          "end": 82.08,
+          "start": 81.72,
+          "word": "can't"
+        },
+        {
+          "conf": 1.0,
+          "end": 82.32,
+          "start": 82.08,
+          "word": "reach"
+        },
+        {
+          "conf": 0.881204,
+          "end": 82.68,
+          "start": 82.32,
+          "word": "larger"
+        },
+        {
+          "conf": 1.0,
+          "end": 83.22,
+          "start": 82.683567,
+          "word": "distances"
+        },
+        {
+          "conf": 1.0,
+          "end": 83.37,
+          "start": 83.22,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 83.46,
+          "start": 83.37,
+          "word": "the"
+        },
+        {
+          "conf": 0.663259,
+          "end": 83.85,
+          "start": 83.46,
+          "word": "center"
+        },
+        {
+          "conf": 0.796156,
+          "end": 84.12,
+          "start": 83.85,
+          "word": "once"
+        },
+        {
+          "conf": 0.449038,
+          "end": 84.258025,
+          "start": 84.12,
+          "word": "it's"
+        },
+        {
+          "conf": 1.0,
+          "end": 84.72,
+          "start": 84.258025,
+          "word": "inside"
+        },
+        {
+          "conf": 1.0,
+          "end": 85.11,
+          "start": 84.99,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 85.62,
+          "start": 85.11,
+          "word": "horizon"
+        },
+        {
+          "conf": 1.0,
+          "end": 86.01,
+          "start": 85.68,
+          "word": "isn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 86.1,
+          "start": 86.01,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 86.46,
+          "start": 86.1,
+          "word": "wall"
+        },
+        {
+          "conf": 1.0,
+          "end": 86.88,
+          "start": 86.49,
+          "word": "blocking"
+        },
+        {
+          "conf": 1.0,
+          "end": 87.0,
+          "start": 86.88,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 87.39,
+          "start": 87.0,
+          "word": "exit"
+        },
+        {
+          "conf": 1.0,
+          "end": 87.93,
+          "start": 87.57,
+          "word": "beyond"
+        },
+        {
+          "conf": 1.0,
+          "end": 88.11,
+          "start": 87.93,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 88.56,
+          "start": 88.38,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 89.07,
+          "start": 88.56,
+          "word": "exit"
+        },
+        {
+          "conf": 1.0,
+          "end": 89.37,
+          "start": 89.19,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 89.58,
+          "start": 89.37,
+          "word": "no"
+        },
+        {
+          "conf": 1.0,
+          "end": 89.94,
+          "start": 89.58,
+          "word": "longer"
+        },
+        {
+          "conf": 1.0,
+          "end": 90.09,
+          "start": 89.94,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 90.21,
+          "start": 90.09,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 90.69,
+          "start": 90.21,
+          "word": "future"
+        }
+      ],
+      "text": "i'd non rotating black hole every possible path into your future leads deeper inward even have been aimed directly outward can't reach larger distances from the center once it's inside the horizon isn't a wall blocking the exit beyond it the exit is no longer in your future"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 91.53,
+          "start": 91.38,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 91.95,
+          "start": 91.53,
+          "word": "crossing"
+        },
+        {
+          "conf": 1.0,
+          "end": 92.52,
+          "start": 91.95,
+          "word": "alive"
+        },
+        {
+          "conf": 1.0,
+          "end": 93.03,
+          "start": 92.73,
+          "word": "doesn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 93.21,
+          "start": 93.03,
+          "word": "mean"
+        },
+        {
+          "conf": 1.0,
+          "end": 93.66,
+          "start": 93.21,
+          "word": "surviving"
+        },
+        {
+          "conf": 1.0,
+          "end": 93.75,
+          "start": 93.66,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 94.11,
+          "start": 93.75,
+          "word": "journey"
+        },
+        {
+          "conf": 1.0,
+          "end": 94.71,
+          "start": 94.41,
+          "word": "deeper"
+        },
+        {
+          "conf": 1.0,
+          "end": 95.07,
+          "start": 94.71,
+          "word": "in"
+        },
+        {
+          "conf": 1.0,
+          "end": 95.43,
+          "start": 95.31,
+          "word": "the"
+        },
+        {
+          "conf": 0.849414,
+          "end": 95.7,
+          "start": 95.43,
+          "word": "tidal"
+        },
+        {
+          "conf": 1.0,
+          "end": 96.03,
+          "start": 95.7,
+          "word": "forces"
+        },
+        {
+          "conf": 1.0,
+          "end": 96.39,
+          "start": 96.03,
+          "word": "grow"
+        },
+        {
+          "conf": 1.0,
+          "end": 96.72,
+          "start": 96.63,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 97.05,
+          "start": 96.72,
+          "word": "difference"
+        },
+        {
+          "conf": 1.0,
+          "end": 97.32,
+          "start": 97.05,
+          "word": "between"
+        },
+        {
+          "conf": 0.910191,
+          "end": 97.38,
+          "start": 97.32,
+          "word": "the"
+        },
+        {
+          "conf": 0.716451,
+          "end": 97.65,
+          "start": 97.38,
+          "word": "pull"
+        },
+        {
+          "conf": 1.0,
+          "end": 97.77,
+          "start": 97.65,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 97.86,
+          "start": 97.77,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 98.22,
+          "start": 97.86,
+          "word": "head"
+        },
+        {
+          "conf": 1.0,
+          "end": 98.34,
+          "start": 98.22,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 98.43,
+          "start": 98.34,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 98.7,
+          "start": 98.43,
+          "word": "feet"
+        },
+        {
+          "conf": 1.0,
+          "end": 99.09,
+          "start": 98.73,
+          "word": "becomes"
+        },
+        {
+          "conf": 1.0,
+          "end": 99.72,
+          "start": 99.09,
+          "word": "destructive"
+        },
+        {
+          "conf": 1.0,
+          "end": 100.41,
+          "start": 99.9,
+          "word": "classical"
+        },
+        {
+          "conf": 1.0,
+          "end": 101.1,
+          "start": 100.41,
+          "word": "relativity"
+        },
+        {
+          "conf": 1.0,
+          "end": 101.61,
+          "start": 101.25,
+          "word": "takes"
+        },
+        {
+          "conf": 1.0,
+          "end": 101.79,
+          "start": 101.61,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 102.15,
+          "start": 101.79,
+          "word": "fall"
+        },
+        {
+          "conf": 0.643431,
+          "end": 102.48,
+          "start": 102.15,
+          "word": "towards"
+        },
+        {
+          "conf": 0.552286,
+          "end": 102.51,
+          "start": 102.48,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 103.2,
+          "start": 102.51,
+          "word": "singularity"
+        },
+        {
+          "conf": 1.0,
+          "end": 103.71,
+          "start": 103.44,
+          "word": "but"
+        },
+        {
+          "conf": 1.0,
+          "end": 104.04,
+          "start": 103.8,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 104.274888,
+          "start": 104.04,
+          "word": "isn't"
+        },
+        {
+          "conf": 0.829537,
+          "end": 104.31,
+          "start": 104.28,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 104.82,
+          "start": 104.31,
+          "word": "confirmed"
+        },
+        {
+          "conf": 1.0,
+          "end": 105.3,
+          "start": 104.85,
+          "word": "portal"
+        },
+        {
+          "conf": 1.0,
+          "end": 105.72,
+          "start": 105.51,
+          "word": "or"
+        },
+        {
+          "conf": 1.0,
+          "end": 106.05,
+          "start": 105.72,
+          "word": "place"
+        },
+        {
+          "conf": 1.0,
+          "end": 106.17,
+          "start": 106.05,
+          "word": "we"
+        },
+        {
+          "conf": 1.0,
+          "end": 106.74,
+          "start": 106.17,
+          "word": "photographed"
+        },
+        {
+          "conf": 1.0,
+          "end": 107.13,
+          "start": 106.95,
+          "word": "it's"
+        },
+        {
+          "conf": 1.0,
+          "end": 107.19,
+          "start": 107.13,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 107.73,
+          "start": 107.19,
+          "word": "sign"
+        },
+        {
+          "conf": 1.0,
+          "end": 108.2648,
+          "start": 108.09,
+          "word": "that"
+        },
+        {
+          "conf": 0.474137,
+          "end": 108.36,
+          "start": 108.27,
+          "word": "are"
+        },
+        {
+          "conf": 1.0,
+          "end": 108.87,
+          "start": 108.36,
+          "word": "theory"
+        },
+        {
+          "conf": 1.0,
+          "end": 109.02,
+          "start": 108.87,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 109.74,
+          "start": 109.02,
+          "word": "incomplete"
+        },
+        {
+          "conf": 1.0,
+          "end": 110.25,
+          "start": 110.01,
+          "word": "these"
+        },
+        {
+          "conf": 0.81631,
+          "end": 110.34,
+          "start": 110.25,
+          "word": "are"
+        },
+        {
+          "conf": 1.0,
+          "end": 110.97,
+          "start": 110.34,
+          "word": "explanatory"
+        },
+        {
+          "conf": 0.855711,
+          "end": 111.36,
+          "start": 110.97,
+          "word": "diagram"
+        }
+      ],
+      "text": "and crossing alive doesn't mean surviving the journey deeper in the tidal forces grow the difference between the pull on your head and your feet becomes destructive classical relativity takes that fall towards a singularity but that isn't a confirmed portal or place we photographed it's a sign that are theory is incomplete these are explanatory diagram"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 111.48,
+          "start": 111.36,
+          "word": "it's"
+        },
+        {
+          "conf": 1.0,
+          "end": 111.84,
+          "start": 111.66,
+          "word": "not"
+        },
+        {
+          "conf": 1.0,
+          "end": 111.87,
+          "start": 111.84,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 112.17,
+          "start": 111.87,
+          "word": "camera"
+        },
+        {
+          "conf": 1.0,
+          "end": 112.53,
+          "start": 112.17,
+          "word": "recording"
+        },
+        {
+          "conf": 1.0,
+          "end": 112.68,
+          "start": 112.53,
+          "word": "from"
+        },
+        {
+          "conf": 1.0,
+          "end": 113.1,
+          "start": 112.68,
+          "word": "inside"
+        },
+        {
+          "conf": 1.0,
+          "end": 113.46,
+          "start": 113.31,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 113.97,
+          "start": 113.46,
+          "word": "unsettling"
+        },
+        {
+          "conf": 1.0,
+          "end": 114.3,
+          "start": 113.97,
+          "word": "part"
+        },
+        {
+          "conf": 1.0,
+          "end": 114.72,
+          "start": 114.54,
+          "word": "is"
+        },
+        {
+          "conf": 1.0,
+          "end": 114.87,
+          "start": 114.72,
+          "word": "what"
+        },
+        {
+          "conf": 1.0,
+          "end": 115.02,
+          "start": 114.87,
+          "word": "we"
+        },
+        {
+          "conf": 1.0,
+          "end": 115.29,
+          "start": 115.02,
+          "word": "do"
+        },
+        {
+          "conf": 0.864098,
+          "end": 115.68,
+          "start": 115.29,
+          "word": "know"
+        },
+        {
+          "conf": 1.0,
+          "end": 116.1,
+          "start": 115.95,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 116.28,
+          "start": 116.1,
+          "word": "could"
+        },
+        {
+          "conf": 0.760102,
+          "end": 116.64,
+          "start": 116.28,
+          "word": "pass"
+        },
+        {
+          "conf": 1.0,
+          "end": 116.73,
+          "start": 116.6472,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 117.03,
+          "start": 116.73,
+          "word": "point"
+        },
+        {
+          "conf": 1.0,
+          "end": 117.12,
+          "start": 117.03,
+          "word": "of"
+        },
+        {
+          "conf": 1.0,
+          "end": 117.33,
+          "start": 117.12,
+          "word": "no"
+        },
+        {
+          "conf": 1.0,
+          "end": 117.96,
+          "start": 117.33,
+          "word": "return"
+        },
+        {
+          "conf": 1.0,
+          "end": 118.68,
+          "start": 118.29,
+          "word": "without"
+        },
+        {
+          "conf": 1.0,
+          "end": 118.74,
+          "start": 118.68,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 119.31,
+          "start": 118.77,
+          "word": "dramatic"
+        },
+        {
+          "conf": 1.0,
+          "end": 119.88,
+          "start": 119.31,
+          "word": "warning"
+        },
+        {
+          "conf": 1.0,
+          "end": 120.3,
+          "start": 120.18,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 120.84,
+          "start": 120.3,
+          "word": "universe"
+        },
+        {
+          "conf": 1.0,
+          "end": 121.2,
+          "start": 120.9,
+          "word": "doesn't"
+        },
+        {
+          "conf": 1.0,
+          "end": 121.41,
+          "start": 121.23,
+          "word": "owe"
+        },
+        {
+          "conf": 1.0,
+          "end": 121.71,
+          "start": 121.41,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 122.1,
+          "start": 121.95,
+          "word": "an"
+        },
+        {
+          "conf": 1.0,
+          "end": 122.52,
+          "start": 122.1,
+          "word": "alarm"
+        }
+      ],
+      "text": "it's not a camera recording from inside the unsettling part is what we do know you could pass the point of no return without a dramatic warning the universe doesn't owe you an alarm"
+    }
+  ]
+}
