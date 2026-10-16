@@ -81,6 +81,11 @@ def verify(root: Path):
         for asset in assets:
             if not asset.get('drive_id') or not asset.get('scope') or not asset.get('verification'):
                 errors.append(f'Asset missing identity/scope/verification: {asset.get("id")}')
+        asset_keys = {a['id'] for a in assets}
+        for dependency in load(root, 'studio/EXTERNAL_DEPENDENCIES.json')['files']:
+            safe_path(root, dependency['path'])
+            if dependency['external_asset_key'] not in asset_keys:
+                errors.append(f'External dependency has no recovery asset: {dependency["path"]}')
         # Catalog is a complete snapshot of release files, not a guarantee of external media.
         catalog = load(root, 'studio/FILE_CATALOG.json')
         for entry in catalog['files']:
@@ -197,6 +202,24 @@ def gate(root: Path, slug: str, stage='planning'):
     return 0
 
 
+def media_check(root: Path, directory: Path):
+    """Verify the specific historical audio archive; not all external films/media."""
+    errors = []
+    files = load(root, 'studio/EXTERNAL_DEPENDENCIES.json')['files']
+    for item in files:
+        path = safe_path(directory, item['path'])
+        if not path.is_file():
+            errors.append(f'Missing external audio: {item["path"]}')
+        elif path.stat().st_size != item['bytes'] or digest(path) != item['sha256']:
+            errors.append(f'External audio differs: {item["path"]}')
+    for error in errors:
+        print('ERROR:', error)
+    if errors:
+        return 1
+    print(f'PASS: {len(files)} historical audio files match exact size/SHA256. Not voice-backend recovery, final Titan V2 source or listening certification.')
+    return 0
+
+
 def package(root: Path, output: Path):
     errors = verify(root)
     if errors:
@@ -241,6 +264,8 @@ def main():
     check = sub.add_parser('gate')
     check.add_argument('--job', required=True)
     check.add_argument('--stage', choices=['planning', 'synthesis'], default='planning')
+    media = sub.add_parser('media-check')
+    media.add_argument('--directory', type=Path, required=True)
     pack = sub.add_parser('package')
     pack.add_argument('--output', type=Path, required=True)
     args = parser.parse_args()
@@ -249,6 +274,7 @@ def main():
         if args.command == 'brief': return brief(ROOT)
         if args.command == 'init': return init_job(ROOT, args.job, args.style, args.task)
         if args.command == 'gate': return gate(ROOT, args.job, args.stage)
+        if args.command == 'media-check': return media_check(ROOT, args.directory)
         if args.command == 'package': return package(ROOT, args.output)
     except (OSError, ValueError, KeyError, TypeError) as exc:
         print('ERROR:', exc, file=sys.stderr)

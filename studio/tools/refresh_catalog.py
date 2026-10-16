@@ -38,12 +38,13 @@ def main():
     candidates = [ROOT / n for n in ENTRYPOINTS]
     for base in ('studio', 'youtube_documentary'):
         candidates.extend((ROOT / base).rglob('*'))
+    external = {e['path'] for e in ctl.load(ROOT, 'studio/EXTERNAL_DEPENDENCIES.json')['files']}
     files = []
     seen = set()
     for path in sorted(candidates):
         relative = path.relative_to(ROOT)
         name = relative.as_posix()
-        if name in seen or name in EXCLUDED_FILES or any(p in EXCLUDED_PARTS for p in relative.parts):
+        if name in seen or name in EXCLUDED_FILES or name in external or any(p in EXCLUDED_PARTS for p in relative.parts):
             continue
         if name.startswith('studio/jobs/') or path.suffix in {'.pyc', '.pyo'}:
             continue

@@ -19,8 +19,8 @@
     {
       "path": ".gitignore",
       "category": "entrypoint_or_current_pointer",
-      "bytes": 320,
-      "sha256": "fb7fb5c0b6a4bb8618355c047122dff6a9fb70b9f5263a3ba37fc2d8f8d70066"
+      "bytes": 595,
+      "sha256": "a78c35ced63fa988e1a70f3d52f500d97ab95adcd79534b40ce67a62ce2e4a8c"
     },
     {
       "path": "AGENTS.md",
@@ -37,26 +37,32 @@
     {
       "path": "START_HERE.md",
       "category": "entrypoint_or_current_pointer",
-      "bytes": 4428,
-      "sha256": "2a21bd55af94dd8239afb5d3ba4bc784ca08340b9a866fbabab97e108cf5706b"
+      "bytes": 4561,
+      "sha256": "74900ef1636e2db09fd8a6712a6837c6acbadc356f7bd6d1977dfaad8e174dbd"
     },
     {
       "path": "studio/ASSET_REGISTRY.json",
       "category": "current_authority_or_audit",
-      "bytes": 11349,
-      "sha256": "7d003aef21acc2b5a516d495161525565432cda0cb1474412d90a9b2134bab4c"
+      "bytes": 12246,
+      "sha256": "fe7f11b72e47dfef38efe699e0a20448ddd6f4527ce1f36a88786d92e30adc73"
     },
     {
       "path": "studio/AUDIT_2026-10-16.md",
       "category": "current_authority_or_audit",
-      "bytes": 4919,
-      "sha256": "4001c536aa49d1181682ba23363992790e217f7333d966c3bc893c587ea4ddf1"
+      "bytes": 5306,
+      "sha256": "7d4981a299206518d31857685e827d91ccf1ffd8c0807ff35cbab700e2c71f8c"
     },
     {
       "path": "studio/CURRENT_STATE.json",
       "category": "current_authority_or_audit",
       "bytes": 2623,
       "sha256": "537ac8151ee69e6e4bf02c360cfbb2d749a978b012937dc229b96e7bc571ad0d"
+    },
+    {
+      "path": "studio/EXTERNAL_DEPENDENCIES.json",
+      "category": "current_authority_or_audit",
+      "bytes": 6141,
+      "sha256": "be7283854edc101cab5460e48a76ae590353bb536ad75ccef3fb316f3e8da80c"
     },
     {
       "path": "studio/NEW_AGENT_PROMPT_AR.md",
@@ -67,14 +73,14 @@
     {
       "path": "studio/OPERATIONS.md",
       "category": "current_authority_or_audit",
-      "bytes": 9224,
-      "sha256": "b7982b95b56d3fa2844b2e81fd7dc874c023f141b9d27dc2f99c81352bf2d212"
+      "bytes": 9690,
+      "sha256": "5385e6b4c4af66308aa795a2770230a6153c775f9622b75a2ac271ce1e9e9027"
     },
     {
       "path": "studio/PROJECT.json",
       "category": "current_authority_or_audit",
-      "bytes": 2588,
-      "sha256": "834f5b1842c25c3f57fa8ae78107f56ec7c663c9e09021ad6af817e336b48f83"
+      "bytes": 2661,
+      "sha256": "cb4dfa324cf283e00ce24373147f1899da52710e9881dab7d16963901b92fecc"
     },
     {
       "path": "studio/REFERENCE_INDEX.json",
@@ -211,20 +217,20 @@
     {
       "path": "studio/tests/test_onboarding.py",
       "category": "onboarding_tool_or_test",
-      "bytes": 8754,
-      "sha256": "1c56f8bc61e940c308fcb88b2a22addd5054e54f9f0fba5c95089470ef4dc67f"
+      "bytes": 9327,
+      "sha256": "e95059deda7c04dd46e99227440698b0ce7697ec321a9e969dfcc4c7304b78ec"
     },
     {
       "path": "studio/tools/projectctl.py",
       "category": "onboarding_tool_or_test",
-      "bytes": 13795,
-      "sha256": "04c83b4428b5b6c2596d04b0917b63e6264a5bc8cdace91c8e7138d59954dca8"
+      "bytes": 15134,
+      "sha256": "126fa3d44172dd3575b8e1d0b3fb80cbd8e63461b1d2314afcdb903ea761207a"
     },
     {
       "path": "studio/tools/refresh_catalog.py",
       "category": "onboarding_tool_or_test",
-      "bytes": 4186,
-      "sha256": "b5362c9fc350dcae3b6a16bbccdf07908f46a7b7310d5ee833987aca9e3e5f26"
+      "bytes": 4303,
+      "sha256": "1db289bb830f4b099b1dd827a4cd07766f2cd18421f1514873be9808886dc1c5"
     },
     {
       "path": "youtube_documentary/.gitignore",
@@ -845,22 +851,10 @@
       "sha256": "d6af79a84a3bc5964c1d61d675c2f1a5d79bff8e9371b8860f72f74a548bea8d"
     },
     {
-      "path": "youtube_documentary/engine/projects/black_hole/narration/01.flac",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 1326807,
-      "sha256": "f90427a699a247e789dd2f8e0036176c683a23751654b7ec31bf4b3843c28412"
-    },
-    {
       "path": "youtube_documentary/engine/projects/black_hole/narration/01_raw.asr.json",
       "category": "film_specific_profile_or_historical_evidence_see_reference_index",
       "bytes": 11920,
       "sha256": "f1b5da966c625127e5014d923b680b25977b0b49216dc7b0141094bdee6df1e4"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/black_hole/narration/02.flac",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 1232089,
-      "sha256": "fcd7fe882bd52bbeff9358555a35efc703b9819cd6f13430059a16ea38dbb38f"
     },
     {
       "path": "youtube_documentary/engine/projects/black_hole/narration/02_raw.asr.json",
@@ -869,22 +863,10 @@
       "sha256": "93a679350f2cf2b9d1ce7f2bef115635a4ae297466333586092f81ba9ea7ad59"
     },
     {
-      "path": "youtube_documentary/engine/projects/black_hole/narration/03.flac",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 1294938,
-      "sha256": "523fe5ef8987c39a503c29b4da519b3af64a5fae428cd2d4d3178cf651d3b47b"
-    },
-    {
       "path": "youtube_documentary/engine/projects/black_hole/narration/03_raw.asr.json",
       "category": "film_specific_profile_or_historical_evidence_see_reference_index",
       "bytes": 11495,
       "sha256": "c1e4ebd8e8821d4e6d07eb41bf1f70b46446b0140edda630f7c7ac0511d5250a"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/black_hole/narration/04.flac",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 1313601,
-      "sha256": "9fb0716d561b4914259f9fb219a152704657894c934639ffc4ccdc02b3832ed5"
     },
     {
       "path": "youtube_documentary/engine/projects/black_hole/narration/04_raw.asr.json",
@@ -909,30 +891,6 @@
       "category": "film_specific_profile_or_historical_evidence_see_reference_index",
       "bytes": 8115,
       "sha256": "6f89bc3e4c02e31a9e4d34733f7cbdce27011535a57733f04fc195a61d69473c"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/01_raw.wav",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 3585730,
-      "sha256": "37d6978add782be33a32c341f6927ee9295b211b6232f0bec90f69631b6f6b65"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/02_raw.wav",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 3293494,
-      "sha256": "ba0142fa39e728cca9be619826bbb657f8618a48ee48fe26b4178535ee90d7fd"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/03_raw.wav",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 3262146,
-      "sha256": "1b3d01bb74d9ac3c7293cba9e5a5a747b5617307055eb9edec51b532abf64255"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/04_raw.wav",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 3610702,
-      "sha256": "42dca6af0b50e72d3829e79650d8d026913a26ff750c68df5456b154daa6d9f8"
     },
     {
       "path": "youtube_documentary/engine/projects/black_hole/recovery_cold_check.log",
@@ -2057,34 +2015,16 @@
       "sha256": "bad9d3d9147cfe8b1cc652309ce58191503d7440e0b36f54a4ea9daf388caa00"
     },
     {
-      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/01.flac",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 947057,
-      "sha256": "7fa2594368914e39b177afa3374adbb28013bbcbcb21030193e401566f0f211c"
-    },
-    {
       "path": "youtube_documentary/engine/projects/phantom_traffic/narration/01_raw.asr.json",
       "category": "film_specific_profile_or_historical_evidence_see_reference_index",
       "bytes": 9181,
       "sha256": "0b0b750c4ba8a5469683e05fe1fb6eb6df84044ea0784c880e6f8611fe76b5af"
     },
     {
-      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/02.flac",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 792794,
-      "sha256": "b01c782753e110bf8f7093a151adaa93e3bc698dabad1937f65af8a0fda986ec"
-    },
-    {
       "path": "youtube_documentary/engine/projects/phantom_traffic/narration/02_raw.asr.json",
       "category": "film_specific_profile_or_historical_evidence_see_reference_index",
       "bytes": 6992,
       "sha256": "3e2e26cff7fe2f4d9b5d12e2a55f42cca5f608e3703fb85b542ecdd97c3d5f5a"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/03.flac",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 1021141,
-      "sha256": "ae49c874b4306cc2cddd51e2f7dbf82be70f39f352f2d92dd57b93e52df7ede1"
     },
     {
       "path": "youtube_documentary/engine/projects/phantom_traffic/narration/03_raw.asr.json",
@@ -2181,30 +2121,6 @@
       "category": "film_specific_profile_or_historical_evidence_see_reference_index",
       "bytes": 18245,
       "sha256": "051c74b8be7104d1795829d0aa19c127a80e3cb882d74ff4394d75c4f35f344f"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/01_raw.wav",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 4895030,
-      "sha256": "ddfc327573c1086dbc86d84b525a8632eaaf02bf30c59acc9cc40bc1bb4bf3d4"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/02_raw.wav",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 5030594,
-      "sha256": "c7fb55ab2977debd4e0add150e2afec46bac002edc56fbf2fe6ca401023fe90d"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/03_raw.wav",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 5387342,
-      "sha256": "fdfa7207a00a6cf735fc8fe9666d78b958f2bb234009922e9e4007564a9a8fd2"
-    },
-    {
-      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/04_raw.wav",
-      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
-      "bytes": 5891778,
-      "sha256": "ebde3917c906dadac48b3ed4bbcea44d96e3244b8b638d416d4cc1cefe596e83"
     },
     {
       "path": "youtube_documentary/engine/projects/titan_warning/script.json",

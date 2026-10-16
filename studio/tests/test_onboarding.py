@@ -181,6 +181,16 @@ class OnboardingTests(unittest.TestCase):
         self.assertFalse(any('trading_bot' in name or '/node_modules/' in name or name.startswith('.git/') for name in names))
         self.assertTrue(any(e['category'] == 'historical_snapshot_not_current_instructions' for e in entries))
 
+    def test_external_audio_is_indexed_not_claimed_in_source_kit(self):
+        files = ctl.load(ROOT, 'studio/EXTERNAL_DEPENDENCIES.json')['files']
+        self.assertEqual(len(files), 15)
+        catalog = {f['path'] for f in ctl.load(ROOT, 'studio/FILE_CATALOG.json')['files']}
+        self.assertFalse(any(f['path'] in catalog for f in files))
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            code = ctl.media_check(self.fixture, self.fixture)
+        self.assertEqual(code, 1)
+        self.assertIn('Missing external audio', out.getvalue())
+
     def test_package_refuses_tracked_tree_output(self):
         with self.assertRaises(ValueError):
             ctl.package(self.fixture, self.fixture / 'kit.zip')

@@ -34,6 +34,8 @@ Use ASSET_REGISTRY, not an old absolute build path. Fetch metadata through the a
 - **Voice:** approved WAV is in Git and its guide is in Drive. Validate its SHA256; preserve raw takes. `voice-03` only identifies a registration within its original session. Resolve that actual identity using available platform support. If the tool cannot restore it, state the limitation and stop replacement synthesis; no re-audition, assumed numeric mapping or speed/music concealment. Planning/research can continue when authorized, but not false claims of recovered voice synthesis.
 - **Escobar:** use its profile README/source_retrieval and the source/review/recovery packages in ASSET_REGISTRY if genuinely needed. Approved historical film/opening and voice remain untouched. A source kit alone does not include all the original research clips.
 
+Fifteen existing historical raw/derived audio files are additionally preserved in the newly verified `local_audio_recovery_2026_10_16` package. EXTERNAL_DEPENDENCIES.json records their exact paths, byte sizes and SHA256 hashes; they are intentionally not in the source/onboarding kit. Run `projectctl.py media-check --directory /path/to/separate/extraction` after restoring that package. Do not claim this audio archive supplies the missing Titan V2 final project.
+
 Large files belong in Drive/external storage, not Git. Do not fetch every historical package for a new topic. An unavailable connector/tool is a specific blocker; never substitute fabricated material.
 
 ## 4. Produce scene-first using the existing common engine

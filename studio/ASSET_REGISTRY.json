@@ -215,6 +215,18 @@
       "scope": "Exact native approved voice reference; also present in Git. Does not itself restore an executable synthesis identity.",
       "verification": "SHA256 checked on Git-restored original. Fresh upload followed by independent Drive get_file: 1,839,182 bytes and MD5 2361d357f00d3254b4c8ad4b7ed60f64 matched local bytes.",
       "url": "https://drive.google.com/file/d/1sSt3k0OcJNvGgW7a12nvXt_IMbA1AwW1/view"
+    },
+    {
+      "id": "local_audio_recovery_2026_10_16",
+      "drive_id": "1IWpd4T-ZGmuwO2XoR-RRljbdGMKxQ3uw",
+      "name": "Studio historical audio recovery —15 unchanged files—NOT Titan V2 final source.zip",
+      "kind": "historical_audio_recovery",
+      "bytes": 35430439,
+      "md5": "5563c9aeecb35c00e3719be0c5c6c548",
+      "sha256": "39f2a195b32695d57077be1e32b5a48229f286c810c10fcb24df462a74bda4d2",
+      "scope": "15 untouched historical raw/derived WAV/FLAC files moved out of current source-kit/Git payload; restore using EXTERNAL_DEPENDENCIES paths. NOT matching final Titan V2 source.",
+      "verification": "Fresh separate extraction checked all15 SHA256 files; fresh upload then independent Drive get_file matched 35,430,439 bytes and MD5. No new generation/processing/listening.",
+      "url": "https://drive.google.com/file/d/1IWpd4T-ZGmuwO2XoR-RRljbdGMKxQ3uw/view"
     }
   ]
 }

@@ -11,7 +11,8 @@
     "approvals": "studio/REFERENCE_INDEX.json",
     "external_assets": "studio/ASSET_REGISTRY.json",
     "file_catalog": "studio/FILE_CATALOG.json",
-    "operator_guide": "studio/OPERATIONS.md"
+    "operator_guide": "studio/OPERATIONS.md",
+    "external_dependency_manifest": "studio/EXTERNAL_DEPENDENCIES.json"
   },
   "precedence": [
     "platform/system safety and workspace restrictions",

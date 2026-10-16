@@ -19,7 +19,7 @@ A reusable production system for English documentary/explainer videos, with seve
 5. [OPERATIONS](studio/OPERATIONS.md) — onboarding, recovery, scene review and durable handoff.
 6. Only then: the relevant film profile, applicable reference studies and shared renderer documentation.
 
-[PROJECT.json](studio/PROJECT.json) defines authority/precedence and storage ownership. [FILE_CATALOG](studio/FILE_CATALOG.json) classifies the source tree; [ASSET_REGISTRY](studio/ASSET_REGISTRY.json) locates large external media. Files in `studio/history/`, old numbered guides and old handoffs are **history**, not competing current instructions.
+[PROJECT.json](studio/PROJECT.json) defines authority/precedence and storage ownership. [FILE_CATALOG](studio/FILE_CATALOG.json) classifies the source tree; [ASSET_REGISTRY](studio/ASSET_REGISTRY.json) locates large external media. [EXTERNAL_DEPENDENCIES](studio/EXTERNAL_DEPENDENCIES.json) maps separately preserved historical audio to exact restore paths/hashes. Files in `studio/history/`, old numbered guides and old handoffs are **history**, not competing current instructions.
 
 ## Before producing anything
 
