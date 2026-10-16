@@ -20,12 +20,15 @@ jobs:
           p=Path('/tmp/titan');rows=[]
           items=[('ntsb_report.pdf','https://www.ntsb.gov/investigations/AccidentReports/Reports/MIR2536.pdf'),('titan_descending.jpg','https://www.ntsb.gov/investigations/PublishingImages/DCA23FM036-img.jpg'),('rov_original.webm','https://upload.wikimedia.org/wikipedia/commons/5/5c/OceanGate_Titan_submersible_ocean_floor_footage.webm')]
           for name,url in items:
-            req=urllib.request.Request(url,headers={'User-Agent':'DocumentaryResearch/1.0 (public source review)'})
-            with urllib.request.urlopen(req,timeout=60) as r:data=r.read(55000000)
-            (p/name).write_bytes(data);rows.append({'file':name,'url':url,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'viewed':False,'heard':False,'rights':'Unreviewed; provenance and third-party rights require inspection. No access bypass.'})
-          subprocess.run(['ffmpeg','-v','error','-y','-i',str(p/'rov_original.webm'),'-vf','scale=1280:-2','-an','-c:v','libx264','-preset','fast','-crf','20',str(p/'rov_tail.mp4')],check=True)
+            try:
+              req=urllib.request.Request(url,headers={'User-Agent':'Mozilla/5.0 (compatible; DocumentaryResearch/1.0)'})
+              with urllib.request.urlopen(req,timeout=60) as r:data=r.read(55000000)
+              (p/name).write_bytes(data);rows.append({'file':name,'url':url,'bytes':len(data),'sha256':hashlib.sha256(data).hexdigest(),'viewed':False,'heard':False,'rights':'Unreviewed; provenance and third-party rights require inspection. No access bypass.'})
+            except Exception as e:
+              rows.append({'file':name,'url':url,'error':str(e)});print('::warning::'+name+' '+str(e))
+          if (p/'rov_original.webm').exists():subprocess.run(['ffmpeg','-v','error','-y','-i',str(p/'rov_original.webm'),'-vf','scale=1280:-2','-an','-c:v','libx264','-preset','fast','-crf','20',str(p/'rov_tail.mp4')],check=True)
           # Retain source hash/URL, compact original-pixel transcode. No alteration of marks.
-          (p/'rov_original.webm').unlink()
+          (p/'rov_original.webm').unlink(missing_ok=True)
           (p/'retrieval_sources.json').write_text(json.dumps(rows,indent=2))
           print(json.dumps(rows,indent=2))
           PY
