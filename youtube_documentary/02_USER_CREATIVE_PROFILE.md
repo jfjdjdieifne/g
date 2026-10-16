@@ -1,3 +1,5 @@
+> **HISTORICAL / SUPPORTING GUIDE — NOT CURRENT POLICY OR TASK.** Start at [root START_HERE](../START_HERE.md). Current rules/approval/status override this older document. Original bytes are preserved under `studio/history/pre_organization/`. Old Arabic-display, voice02, fixed no-music/no-cuts/asset-count instructions must not override the current user rules.
+
 # 02 · الملف الإبداعي للمستخدم — v2 (قابل للتعديل)
 
 > تحديث 2026-10-13. هذا ملف **تفضيلات افتراضية**، لا أوامر جامدة. إذا طلب المستخدم شيئاً مختلفاً في مشروع محدد، اتبع الطلب الأحدث.

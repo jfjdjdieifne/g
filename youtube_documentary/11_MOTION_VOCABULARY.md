@@ -1,3 +1,5 @@
+> **HISTORICAL / SUPPORTING GUIDE — NOT CURRENT POLICY OR TASK.** Start at [root START_HERE](../START_HERE.md). Current rules/approval/status override this older document. Original bytes are preserved under `studio/history/pre_organization/`. Old Arabic-display, voice02, fixed no-music/no-cuts/asset-count instructions must not override the current user rules.
+
 # 11 · معجم الحركات — واجهة الاستدعاء
 
 هذه الصفحة هي الفهرس السريع. المرجع الموسع: `12_PRO_MOTION_ENCYCLOPEDIA.md` (عائلات الحركة، الاستخدام، الوصفات، أمثلة التركيبات وQA).

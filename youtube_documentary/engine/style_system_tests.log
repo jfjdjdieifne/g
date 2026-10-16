@@ -1,0 +1,22 @@
+2026-10-16 —33 declaration/onboarding regression tests; no new media generated/reviewed. Historical final-film31test log is separate.
+
+test_style_contract.py
+................
+----------------------------------------------------------------------
+Ran 16 tests in 0.009s
+
+OK
+
+test_documentary_materials.py
+........
+----------------------------------------------------------------------
+Ran 8 tests in 0.007s
+
+OK
+
+test_escobar_full_profile.py
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.002s
+
+OK

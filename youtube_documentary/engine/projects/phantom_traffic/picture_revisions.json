@@ -1,0 +1,39 @@
+{
+  "notes": "Two silent-picture authoring corrections before user delivery; final audio muxed once per revised complete picture. No approved Escobar frames touched. Re-encoding means no outside-pixel identity claim. Current scene.mjs renders the corrected whole film directly.",
+  "revisions": [
+    {
+      "base": "/home/user/build/phantom_traffic/picture.mp4",
+      "patch": "/home/user/build/phantom_traffic/attention_cut.mp4",
+      "output": "/home/user/build/phantom_traffic/revised_picture.mp4",
+      "absolute_frames": [
+        285,
+        307
+      ],
+      "frame_spec": [
+        1659,
+        24.0,
+        1920,
+        1080
+      ],
+      "note": "Silent-picture revision, fully re-encoded. No claim of unchanged outside pixels. Not applied to approved Escobar or approved prefix.",
+      "sha256": "3bfe2205121b0fca1eda66162f126eed260e41db810350fc333d9a91ee9efd8f"
+    },
+    {
+      "base": "/home/user/build/phantom_traffic/picture.mp4",
+      "patch": "/home/user/build/phantom_traffic/label_fix.mp4",
+      "output": "/home/user/build/phantom_traffic/label_revised_picture.mp4",
+      "absolute_frames": [
+        876,
+        916
+      ],
+      "frame_spec": [
+        1659,
+        24.0,
+        1920,
+        1080
+      ],
+      "note": "Silent-picture revision, fully re-encoded. No claim of unchanged outside pixels. Not applied to approved Escobar or approved prefix.",
+      "sha256": "ab2299d675738ad7ce0f02163805d412def9ff517c6dc0c66eaf24331e9432d3"
+    }
+  ]
+}

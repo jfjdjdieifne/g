@@ -1,3 +1,7 @@
+> **Supporting technical/reference document.** [Current entry](../../START_HERE.md); current user rules and approval/state registries in `../../studio/` take precedence. This document is not the current assignment or a new approval.
+
+> **تحديث أولوية — 2026-10-16:** ابدأ بـ`../START_HERE.md` ثم `engine/STYLE_GUIDE.md` و`engine/STYLE_REGISTRY.json` (المسارات من جذر youtube_documentary). «وثائقي بحت» ستايل مسمّى معتمد من مثال إسكوبار، **مو قاعدة لكل فيديو**. الستايلات الشرحية لا تُجبر على الأرشيف؛ البحث والصدق والمراجعة إلزامية دائماً. التعليمات التاريخية المخالفة تُقرأ ضمن سياقها القديم.
+
 # Documentary substance before rendering polish
 
 Standing user direction,15October2026, after Escobar revision2. Applies to **every subject and duration**. The user strongly liked the progress,3D and shots; the opening's writing, ideas, diversity and substitution of a schematic for real prison imagery need improvement. This is not blanket approval of the delivered script or an instruction to add random effects.

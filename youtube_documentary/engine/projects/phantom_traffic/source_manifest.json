@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-16",
+  "purpose": "Final reproducible corrected source set. Base-capture source hashes preserved separately; two camera/annotation corrections described in picture_revisions.json. This is source integrity, not user approval.",
+  "files": [
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/scene.mjs",
+      "sha256": "77265d4cd28bb97d5f3e35532efdeb2c8619c7bddfba1bbc4c589086df89a1e4",
+      "bytes": 12424
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/render.json",
+      "sha256": "fd17a3b2677f700b6910cbbffb9a76ba4e1b512204f2b6ada2c82c87a0bdaf9b",
+      "bytes": 3668
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/style_contract.json",
+      "sha256": "6836e8ebed28f6a2f9b538afeaff48bc2c0c4438a417f63196be010df9f7858a",
+      "bytes": 426
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/MATERIALS.json",
+      "sha256": "2d9c1458ea5969dd9a06081db47f959f3820c204b10f4f19292adabbabe46958",
+      "bytes": 7307
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/display_manifest.json",
+      "sha256": "482ea3e1bd80f77b5bc2a6a5d1213d8589b3748ecc465d98de87815a9ac3804d",
+      "bytes": 1143
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/webgl_stage.mjs",
+      "sha256": "e2ac5ec6b0e27d4d557f42c5374261d7d1676dc7c3d714f2b28f6bbcfaf635d5",
+      "bytes": 5472
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/traffic_motion.mjs",
+      "sha256": "61aff25f4093ce6f4bf9ed79d1b53b0b558c331a448b1dccf6bdcdbb32f74750",
+      "bytes": 1944
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/blender_xyz.py",
+      "sha256": "3a0619dbf787e8f886ccf43f8add7793889396fd663ad94fa39a7c8260baa374",
+      "bytes": 8017
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/encoded_review.py",
+      "sha256": "e69a8102c9e4283cdf58a0779d039b88de77ed4854ba643e2df048938326f4dc",
+      "bytes": 2913
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/film_runtime.py",
+      "sha256": "4402f16cf40751b03fa1954fe3ca7ff0a939df48404f906c77d9681b16318f4b",
+      "bytes": 3197
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/geo_route.py",
+      "sha256": "23aaa093d0419ccecb16797ff9d4dbe1437d286dd61d5b858d2005897657f710",
+      "bytes": 3626
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/long_score.py",
+      "sha256": "5d359a5f36bc7ad5bc939358a4673a14de285617f7490b081251afc3f7547085",
+      "bytes": 4088
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/photo_depth.py",
+      "sha256": "6cedee2c9e4d90964883137f72c957fb5214b6a2411d0a4b2c3a57cb0c05d6aa",
+      "bytes": 4360
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/score_runtime.py",
+      "sha256": "2d8a60c042eb86cfe14d405a7f3ed171f990ad2b4aa700e428ec7f38121124bc",
+      "bytes": 4038
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/sequence_runtime.py",
+      "sha256": "32d7faf713915e2a9bcc8686eae171adb3f22d8c030966ca10404a2311a96c6f",
+      "bytes": 6115
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/sequence_segments.py",
+      "sha256": "27bfc52a1a30880fa1d8893c1435e39811bc97aee8d51f0fd68c3c1365ee8413",
+      "bytes": 4368
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/speech_edit.py",
+      "sha256": "408cc287aaef095a04874f46d5adc212af3e66d64ff73d941ff3b35199d7636c",
+      "bytes": 2896
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/speech_pacing.py",
+      "sha256": "64e59d6bdd3fad3f366f4d6f77a895fad2cbd3878ab621ad2b22198bac1df2eb",
+      "bytes": 3573
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/xyz_scene.py",
+      "sha256": "72c81db5696e4c4a76b917fb4fb83fa9e994087f9072c87a77191d0627ea4d22",
+      "bytes": 4602
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/webgl_dependencies.json",
+      "sha256": "64104d839da152073813f7e1fdfb31fd8470e6ef010815e518807c58fffa19f0",
+      "bytes": 472
+    },
+    {
+      "path": "youtube_documentary/tools/render_webgl_profile.mjs",
+      "sha256": "5f72b52e11109471a5ff71646298e9c40a6cd79603a45d812b19101df37db90c",
+      "bytes": 7915
+    },
+    {
+      "path": "youtube_documentary/tools/mix_webgl_profile.py",
+      "sha256": "b0d4fba298532659def7fce34a28a44b03f349dac115cd09a5808ce854009969",
+      "bytes": 2264
+    },
+    {
+      "path": "youtube_documentary/tools/review_webgl_profile.py",
+      "sha256": "9bbfd012e1e49f548bf4a14008b2ddaa51c8d25b876cadecaad759a054c69937",
+      "bytes": 1226
+    },
+    {
+      "path": "youtube_documentary/tools/replace_picture_frames.py",
+      "sha256": "d6af4bd05ea6e33b759ebbe671541d45a171dbf6bc769ad463f4b6a304c1af56",
+      "bytes": 1676
+    },
+    {
+      "path": "youtube_documentary/tools/package_webgl_profile.py",
+      "sha256": "de3123a7129d77548600efa4905eaa7c2754330129bd4537f404624fd7df8a79",
+      "bytes": 4308
+    },
+    {
+      "path": "youtube_documentary/tools/install_webgl_runtime.py",
+      "sha256": "31694414b7c6e396e6decc484898332e0576ee61d869b750928f4d2840dbc458",
+      "bytes": 1023
+    },
+    {
+      "path": "youtube_documentary/tools/production_policy.py",
+      "sha256": "61e5a318284b1f364536db055e9ff2a4bd1b5432362121ad8d40a4650221dea0",
+      "bytes": 3807
+    },
+    {
+      "path": "youtube_documentary/tools/style_contract.py",
+      "sha256": "23a227b26bff5bf844179183fa9d3d33b1658073335c362ceae5ac4ef05950ea",
+      "bytes": 9182
+    },
+    {
+      "path": "youtube_documentary/tools/documentary_materials.py",
+      "sha256": "4db9ceae0c15fd0ae03ffabb50326c0335dd006f68a60cad2b72df321f1d4516",
+      "bytes": 5303
+    },
+    {
+      "external_path": "/home/user/build/phantom_traffic/voice/01_raw.wav",
+      "capsule_path": "raw_voice/01_raw.wav",
+      "sha256": "59207c0ac23b3e9ce79e321e9cc1c3c9df04c38d0f3e4962aad50c8b60de566c",
+      "bytes": 2780866
+    },
+    {
+      "external_path": "/home/user/build/phantom_traffic/voice/02_raw.wav",
+      "capsule_path": "raw_voice/02_raw.wav",
+      "sha256": "3d0134ef87d01d4b8c19daa5792b04904d7ba2192a1f9498be0a67d9089e26cb",
+      "bytes": 2066114
+    },
+    {
+      "external_path": "/home/user/build/phantom_traffic/voice/03_raw.wav",
+      "capsule_path": "raw_voice/03_raw.wav",
+      "sha256": "de45b5e0977050e8821d45d0669f0c1f548edd03d3735ac4977cced92ccc5185",
+      "bytes": 2547394
+    }
+  ]
+}

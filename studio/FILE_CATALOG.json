@@ -1,0 +1,3056 @@
+{
+  "schema": 1,
+  "release": "studio-2026-10-16-v1",
+  "scope": "Source/onboarding snapshot. Original media and final renders may be external. Root trading-bot ZIPs/demo and unrelated workflows are preserved but outside this documentary source kit.",
+  "jobs": "Active job records evolve separately; not a claim that future job files were reviewed by this release.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 197,
+      "sha256": "8d5ac9789c424c62d15534c885caf683a9bd0ba66c45e309981f33c9e0200abb"
+    },
+    {
+      "path": ".github/workflows/studio-checks.yml",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 659,
+      "sha256": "7c96589c7145fc0950ecaaaeb9c57ba1851d0f13a461c0c6da1c5e80d64ba2a6"
+    },
+    {
+      "path": ".gitignore",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 320,
+      "sha256": "fb7fb5c0b6a4bb8618355c047122dff6a9fb70b9f5263a3ba37fc2d8f8d70066"
+    },
+    {
+      "path": "AGENTS.md",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 902,
+      "sha256": "1d8956dd7f280b97bcf06f0525fdf382042d164ddaa939ac0aa3d9e948384bfd"
+    },
+    {
+      "path": "README.md",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 769,
+      "sha256": "78cccfb93ce8220bf21cc998a242a36b5048a8baa81be55dfe49f9cbb178a7c3"
+    },
+    {
+      "path": "START_HERE.md",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 4428,
+      "sha256": "2a21bd55af94dd8239afb5d3ba4bc784ca08340b9a866fbabab97e108cf5706b"
+    },
+    {
+      "path": "studio/ASSET_REGISTRY.json",
+      "category": "current_authority_or_audit",
+      "bytes": 11349,
+      "sha256": "7d003aef21acc2b5a516d495161525565432cda0cb1474412d90a9b2134bab4c"
+    },
+    {
+      "path": "studio/AUDIT_2026-10-16.md",
+      "category": "current_authority_or_audit",
+      "bytes": 4919,
+      "sha256": "4001c536aa49d1181682ba23363992790e217f7333d966c3bc893c587ea4ddf1"
+    },
+    {
+      "path": "studio/CURRENT_STATE.json",
+      "category": "current_authority_or_audit",
+      "bytes": 2623,
+      "sha256": "537ac8151ee69e6e4bf02c360cfbb2d749a978b012937dc229b96e7bc571ad0d"
+    },
+    {
+      "path": "studio/NEW_AGENT_PROMPT_AR.md",
+      "category": "current_authority_or_audit",
+      "bytes": 3322,
+      "sha256": "9e49d33aa9fe9bc8a2d9a062de302a98a76ffe434829f551b2de1f9ecb7db101"
+    },
+    {
+      "path": "studio/OPERATIONS.md",
+      "category": "current_authority_or_audit",
+      "bytes": 9224,
+      "sha256": "b7982b95b56d3fa2844b2e81fd7dc874c023f141b9d27dc2f99c81352bf2d212"
+    },
+    {
+      "path": "studio/PROJECT.json",
+      "category": "current_authority_or_audit",
+      "bytes": 2588,
+      "sha256": "834f5b1842c25c3f57fa8ae78107f56ec7c663c9e09021ad6af817e336b48f83"
+    },
+    {
+      "path": "studio/REFERENCE_INDEX.json",
+      "category": "current_authority_or_audit",
+      "bytes": 3095,
+      "sha256": "dae61adbaaa93db37a096b5da31090fb2f06f4c241e48c124d67f6ee99d96981"
+    },
+    {
+      "path": "studio/STYLE_PLAYBOOK.md",
+      "category": "current_authority_or_audit",
+      "bytes": 3254,
+      "sha256": "ef4342bb315a7dfd17ef703b060fd34ecf17bd0d31cde069d234752f22d5a0ab"
+    },
+    {
+      "path": "studio/USER_RULES.md",
+      "category": "current_authority_or_audit",
+      "bytes": 9376,
+      "sha256": "0eabe355024e0867e7bbf3b4de5397c8f60c3970ccf8f450f3398eeea743d5b1"
+    },
+    {
+      "path": "studio/history/pre_organization/AGENTS.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 2074,
+      "sha256": "1b23567852128988e82186ea4137b62d101827cfaa5ea3ffeb7f8bbbaaddd7f3"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/00_PROJECT_UNDERSTANDING.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 26507,
+      "sha256": "c4f4a33e55bdb1d13b976a9d0e44d2fbf05bf84ff41f565ed4f997272c776215"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/02_USER_CREATIVE_PROFILE.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 8467,
+      "sha256": "0654b1f53bb0f6e43f3ca3a61dd414d61abc041419146151d418bfff3ba2dd4f"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/04_NEW_VIDEO_BRIEF_TEMPLATE.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 4084,
+      "sha256": "3a774eb410f170bf2276a96756a9060e8f8cd67ea55361a010f5f5b772d7655e"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/06_QA_CHECKLIST.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 4942,
+      "sha256": "a2a26b262f22c5b85633e245949924a8ba7a9c9e4e9bb14305fb8abee7ba6d59"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/07_MONTAGE_STYLE_AND_ENGINES_v0.1.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 19140,
+      "sha256": "f5f8a3aa1c8cb87aad5a92fcfed78fbfd688b00470258487a9b0fec81c3eaef4"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/09_GENERAL_ENGINE_AND_RULES.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 4478,
+      "sha256": "393c6e135fa1932e591c44b1039ec8194f8e654b7fb11b651768be9d02ccaadc"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/10_CHANNEL_SYSTEM_v5.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 3884,
+      "sha256": "4023856817b24ee9cd40bbbe181d8be17556ed4263f192d3d9b4fb52fa075924"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/10_CHANNEL_SYSTEM_v7.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 7057,
+      "sha256": "1001f50ee24c0b8265070db9fb2d7693e4cc9f19c49158b7f0ff608091cd45be"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/11_MOTION_VOCABULARY.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 2356,
+      "sha256": "7769ba9ecb178b3f6ca2b0151a0ced8b91f0edf650347098416b7167466f59e1"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/12_PRO_MOTION_ENCYCLOPEDIA.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 18951,
+      "sha256": "1639a42c3a7beab1a4684086490ffd949611ff3ce06ea25fc849c6b2741560a9"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/AGENTS.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 1585,
+      "sha256": "14de739c5537a3191fec99e3fb17ad78e7182503b9c77e8bc3e800df9417d5f0"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/HANDOFF.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 26556,
+      "sha256": "79b1becd38f512753deb0014420d1a8260a64cb89838f2f4089b3081ef817617"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/HANDOFF_WORKFLOW_AND_STYLE.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 11787,
+      "sha256": "2300f71e03000abcd02675e7fe029f7188507924a5b54ef46a3bb03edb1cb945"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/README.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 4158,
+      "sha256": "6fea5abec389afff661304cf34ba9e767aa1c7217ee82e5f4f21d0869d437839"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/START_HERE.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 5349,
+      "sha256": "14fb10b0c6f0276f1dbe61b3083ba2d38fc7f4b6d08282b5ab4980070bbc16bc"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/USER_VIDEO_PROFILE.yaml",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 5142,
+      "sha256": "582b282426b05fe9c8b5c5ac9779662511eb88afcb7e407168fc834d408967ba"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/engine/AGENT_BRIEF.md",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 19503,
+      "sha256": "e6322642510e2bc7adfaab7868a1c239fe7faf5cd98b17679b25c9b524aa0390"
+    },
+    {
+      "path": "studio/history/pre_organization/youtube_documentary/engine/HANDOFF_STATE.json",
+      "category": "historical_snapshot_not_current_instructions",
+      "bytes": 44567,
+      "sha256": "98337bc95470e4a517f736b35c59aefa862291d85c23e427dbcb4804a34a8b9c"
+    },
+    {
+      "path": "studio/tests/test_onboarding.py",
+      "category": "onboarding_tool_or_test",
+      "bytes": 8754,
+      "sha256": "1c56f8bc61e940c308fcb88b2a22addd5054e54f9f0fba5c95089470ef4dc67f"
+    },
+    {
+      "path": "studio/tools/projectctl.py",
+      "category": "onboarding_tool_or_test",
+      "bytes": 13795,
+      "sha256": "04c83b4428b5b6c2596d04b0917b63e6264a5bc8cdace91c8e7138d59954dca8"
+    },
+    {
+      "path": "studio/tools/refresh_catalog.py",
+      "category": "onboarding_tool_or_test",
+      "bytes": 4186,
+      "sha256": "b5362c9fc350dcae3b6a16bbccdf07908f46a7b7310d5ee833987aca9e3e5f26"
+    },
+    {
+      "path": "youtube_documentary/.gitignore",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 230,
+      "sha256": "b55a548ca3a705cf3a931b87c8081c343fc645ba422a0a379e79fe0332216c75"
+    },
+    {
+      "path": "youtube_documentary/00_PROJECT_UNDERSTANDING.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 26872,
+      "sha256": "fda6f255d8d3de7a962d5c80bf8b1308a5c0381a748de2f3ba38c1ecd7d5622c"
+    },
+    {
+      "path": "youtube_documentary/02_USER_CREATIVE_PROFILE.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 8832,
+      "sha256": "afd30d499e286fa003f6d1720cd4fe045f082e7c234710f6a442f69eef3b2b54"
+    },
+    {
+      "path": "youtube_documentary/04_NEW_VIDEO_BRIEF_TEMPLATE.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 4449,
+      "sha256": "ad268e794604bfa06388cdbeb65d3144fb36c03829ce294df2d4cd37ca35731d"
+    },
+    {
+      "path": "youtube_documentary/05_ASSET_RIGHTS_REGISTER_TEMPLATE.csv",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 864,
+      "sha256": "986214e004cdbe36d70e1ee3d5826a9da2f5385fd41e5221a3085033b4c4c292"
+    },
+    {
+      "path": "youtube_documentary/06_QA_CHECKLIST.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 5307,
+      "sha256": "c88aefb5a8d76cb26a73e5167896b85dbed5f22fb180e71649aaf985350426cc"
+    },
+    {
+      "path": "youtube_documentary/07_MONTAGE_STYLE_AND_ENGINES_v0.1.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 19505,
+      "sha256": "c3e176e8728dced140e6ca5e7ffb74bb0eab040636d581973c1b19cd4ca69cbd"
+    },
+    {
+      "path": "youtube_documentary/08_SHOT_SPEC_TEMPLATE.csv",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 1507,
+      "sha256": "3914ca7bae2f82c38bdb680bdfb60a38fa252dc11aee7a06a90ca1bcffc52123"
+    },
+    {
+      "path": "youtube_documentary/09_GENERAL_ENGINE_AND_RULES.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 4843,
+      "sha256": "96e168a6e186199ba49d169388f619cbff908c9d4ca72e16dda7360565a2b6de"
+    },
+    {
+      "path": "youtube_documentary/10_CHANNEL_SYSTEM_v5.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 4249,
+      "sha256": "763ce9d2c9c12800e425b1eee67a9743bf1619d95b0820e7c44485b6cfc0e0a9"
+    },
+    {
+      "path": "youtube_documentary/10_CHANNEL_SYSTEM_v7.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 7422,
+      "sha256": "d11923f1546ed34bef2881cf01531e57fceb913a464f9e82bb5f864b919ad293"
+    },
+    {
+      "path": "youtube_documentary/11_MOTION_VOCABULARY.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 2721,
+      "sha256": "1da50b5c9931c54a9be262b821c241673e0c6d0104541d04c46ec8fad9293c98"
+    },
+    {
+      "path": "youtube_documentary/12_PRO_MOTION_ENCYCLOPEDIA.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 19316,
+      "sha256": "743d2168a57596f6f9299b185d185645ffca1b0f981545a28a547b607f6299d5"
+    },
+    {
+      "path": "youtube_documentary/AGENTS.md",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 718,
+      "sha256": "a45c8f1bbc9368d9bbf08aa71d943b035e36a4d8a64cca89fbf33f547142a4e1"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/README_demo1_v0.1.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 3774,
+      "sha256": "b863e121d8db65e48666c1cd2954aef4700f88f6e802fbcf840914d0a0151145"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/README_demo1_v0.2.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 4818,
+      "sha256": "c48035787cc7616c5b2f06b416a6ff2ba9cc5c3fa2a93278d90212d7a0e67337"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/README_demo1_v0.3.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 6518,
+      "sha256": "44bcc9b42fc6769c5785fd4107311050e583c39cc30bb26c8b20c9710be709b8"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/candidate_portrait.jpg",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 30373,
+      "sha256": "6287d9263ca2369310cd32ac0c63fae108bcdd493ff06bfc6c40cbace5384c95"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/death_b.jpg",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 329625,
+      "sha256": "9068e8eeedd886d03646783affd2a0ba25707446be8e39ceed2568c6ec0c6a8b"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/death_of_escobar_pd.jpg",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 299295,
+      "sha256": "0018a1ba6753af25b3b1883c8b238bf8f160c500316cd6335bcbf4b896e43d28"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/escobar_mug_1976_pd.jpg",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 220506,
+      "sha256": "2d2f7a4b9dcaf8287567d64c4687b05b05b901576617c31daca745c4e2c144b8"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/escobar_signature.png",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 36425,
+      "sha256": "d29f860651961511fe88e92a791163c0a55f72537ee95b8bf88dad4457dcce5b"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/escobar_solo_crop_pd.jpg",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 106480,
+      "sha256": "85744944483a6df9c515308f8b3b6a86ea8d73ceacfebc18001d2651aac399a5"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/fonts/Caveat.ttf",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 403648,
+      "sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/fonts/PlayfairDisplay.ttf",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 300724,
+      "sha256": "c40f2293766a503bc70cce9e512ef844a4ccb7cbcde792fe2ea31d191917d8d6"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/hero_rim.png",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 57068,
+      "sha256": "0ed0bf8cb0aecc95aaa9d5b9456ee8c0dd938bd5e36ea9b6a2e8a8173c7c39f0"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/hero_silhouette.png",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 45227,
+      "sha256": "5080115bc2246047db46ab59e0a59c34924325c46f7b4acef916d96588e76a1d"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/hero_silhouette_dark.png",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 61883,
+      "sha256": "8eda190da8e880578473808209944418edbbec29ee28bab0ffeb32d9023ca323"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/hero_solo_cc0.jpg",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 80445,
+      "sha256": "4a08949742954c5819e2dc29da9739869570336bfaeeec530f634c12567347fb"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/assets/sig_preview.png",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 34133,
+      "sha256": "8f87f083966983b615cb42a86ecf36fb9a37a8fde37f1571b4f135ae2f000c2e"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/prototypes/board_motion_proto_v1.html",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 20787,
+      "sha256": "04f0e7351156c63b5ad4724ed4c31198f125f5ac66f28153f448c4a3fe9bf0b4"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/prototypes/board_motion_proto_v2_cinematic.html",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 20846,
+      "sha256": "5560608879e525cce58612947e9504ce79b5678da2c8e486de85909f180fb281"
+    },
+    {
+      "path": "youtube_documentary/DEMO1_ESCOBAR/prototypes/board_motion_proto_v3.html",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 17979,
+      "sha256": "ba11d599c8d7c00cd05910b8d5a56ed5405af2784c0f8255c9285f4733c7cb5b"
+    },
+    {
+      "path": "youtube_documentary/HANDOFF.md",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 720,
+      "sha256": "ec08cdc82c069dd3159615d487d9dd3dc9468f891d4a6bb507b78434448e3828"
+    },
+    {
+      "path": "youtube_documentary/HANDOFF_WORKFLOW_AND_STYLE.md",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 12152,
+      "sha256": "a18dbd3ddcaaf05792c277efae427efbb615d666bb919782ba7eb39861231d25"
+    },
+    {
+      "path": "youtube_documentary/README.md",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 718,
+      "sha256": "4bd21ef182167d84fc8ec38e92cca0eba5ac8d8fceecdd035e532ed29e0b1785"
+    },
+    {
+      "path": "youtube_documentary/SHA256SUMS.txt",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 5968,
+      "sha256": "2a0fd38a17dcfd6d9be3893a326fd28a7596ad65d9e970dbc2088be93017280b"
+    },
+    {
+      "path": "youtube_documentary/START_HERE.md",
+      "category": "entrypoint_or_current_pointer",
+      "bytes": 726,
+      "sha256": "8eab8c4d16ce7b22e2f6695008282e01204f4fc5fa726b1a4e026879506f0472"
+    },
+    {
+      "path": "youtube_documentary/USER_VIDEO_PROFILE.yaml",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 530,
+      "sha256": "9e90cfd9f30986f433f9b11ccdba691c119f150d3ab30d19e61339d489afdcfc"
+    },
+    {
+      "path": "youtube_documentary/assets_global/bank/bank_facade_day.jpg",
+      "category": "shared_asset",
+      "bytes": 312167,
+      "sha256": "da5dc76b9cf1af039c6542d0d267076678af0ae0590a2055dcadf29f54894d04"
+    },
+    {
+      "path": "youtube_documentary/assets_global/bank/bank_hall_dark.jpg",
+      "category": "shared_asset",
+      "bytes": 160622,
+      "sha256": "1cb2ef5f88dffe86d111608fe780cd67aed8ec14ebad9eb6e95a09bf9c5d65e2"
+    },
+    {
+      "path": "youtube_documentary/assets_global/bank/walk_front.png",
+      "category": "shared_asset",
+      "bytes": 22302,
+      "sha256": "b2a50096c02af0731753a854792a3c0f4d3e5bc7078603c418d135ab0ce91470"
+    },
+    {
+      "path": "youtube_documentary/assets_global/bank/walk_side.png",
+      "category": "shared_asset",
+      "bytes": 24630,
+      "sha256": "9754217d637aa95e17f611a06cc63956328db41136d06b6d2a00e5071c4f2686"
+    },
+    {
+      "path": "youtube_documentary/assets_global/bank/walker_back.png",
+      "category": "shared_asset",
+      "bytes": 561137,
+      "sha256": "0ea0408d6243c882c009b5e45a55be520a3a4a0436fc8e0a4c1d62bc5de56560"
+    },
+    {
+      "path": "youtube_documentary/assets_global/bank/walker_side.png",
+      "category": "shared_asset",
+      "bytes": 601387,
+      "sha256": "3788bf34fdb0b4132a60bfffa67025db36d9b6c572698abad04a5ed5ee130739"
+    },
+    {
+      "path": "youtube_documentary/assets_global/earth/earth_2048.jpg",
+      "category": "shared_asset",
+      "bytes": 238676,
+      "sha256": "5b54cc586c6cbf2b28762ef4d4011f6cf4227a8b93a637b818a0c54090ce6c2c"
+    },
+    {
+      "path": "youtube_documentary/assets_global/earth/earth_4096.jpg",
+      "category": "shared_asset",
+      "bytes": 1271128,
+      "sha256": "ad12dc2c0cd80a9f81872d62fd140f1937f3662a0ff405750bd30db81c88059e"
+    },
+    {
+      "path": "youtube_documentary/assets_global/fonts/DejaVuSans-Bold.ttf",
+      "category": "shared_asset",
+      "bytes": 708920,
+      "sha256": "0d977336a6d5fba34eab8e3199eb218327161b5143749f802982c2bc34df0c96"
+    },
+    {
+      "path": "youtube_documentary/assets_global/fonts/DejaVuSans.ttf",
+      "category": "shared_asset",
+      "bytes": 759720,
+      "sha256": "abdc775b21b1bc470d50c97e790d276f2054b7504e56e5bd3e64f48d68582322"
+    },
+    {
+      "path": "youtube_documentary/assets_global/fonts/DejaVu_LICENSE.txt",
+      "category": "shared_asset",
+      "bytes": 3859,
+      "sha256": "63d3ba759d12804c5b31a9d5940d855c1820d1f5999e6b0872eb1c7ff045fbc9"
+    },
+    {
+      "path": "youtube_documentary/assets_global/fonts/NotoNaskhArabic-Bold.ttf",
+      "category": "shared_asset",
+      "bytes": 184164,
+      "sha256": "7432f2350487d9f784b47a24526d9fc48f2712bb6c2ff602898b104b0c26ee80"
+    },
+    {
+      "path": "youtube_documentary/assets_global/fonts/NotoNaskhArabic-Regular.ttf",
+      "category": "shared_asset",
+      "bytes": 178388,
+      "sha256": "2f4b88e6ee50fa82c617e2d1d4ba18281cb1c6cd71c3af3ec64970c23995db4b"
+    },
+    {
+      "path": "youtube_documentary/assets_global/geo/latam_10m.json",
+      "category": "shared_asset",
+      "bytes": 2983427,
+      "sha256": "c13a386fc5e4b6f644460f7890c2a1f19a457c105c11fbb9df57abdfd7be2ffd"
+    },
+    {
+      "path": "youtube_documentary/assets_global/geo/supply_route_supplement_110m.json",
+      "category": "shared_asset",
+      "bytes": 2224,
+      "sha256": "c1d6c77210f996f9ca1b7d0178b80109a88f377244d62cb42a4d3f1b086daff7"
+    },
+    {
+      "path": "youtube_documentary/config/bank_scene01.json",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 3913,
+      "sha256": "b0b3fb37bc19f8ddb6e6d95dda2415a6dc820676e682ec33520282699ba8abe9"
+    },
+    {
+      "path": "youtube_documentary/config/escobar_scene01.json",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 3329,
+      "sha256": "f3ab88d29e57b9a9e708dd7d009aae513abb9b6eac43f80298f0ba21ba646a6e"
+    },
+    {
+      "path": "youtube_documentary/config/geo_scene01.json",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 2061,
+      "sha256": "484e8d36096e47d31a18f5b6e954655a65b99a928bc4d15ea1187220b080218d"
+    },
+    {
+      "path": "youtube_documentary/engine/AGENT_BRIEF.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 510,
+      "sha256": "b4d87d2213eb9dd835e810a17a3615df86598432c86f8758ea65ba5913d1bb52"
+    },
+    {
+      "path": "youtube_documentary/engine/CONTINUITY_MODEL.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 7799,
+      "sha256": "1c98816a5228146124cddad060c224ff7c19703c5f0abfe9dd070f0db1ea2f1f"
+    },
+    {
+      "path": "youtube_documentary/engine/DEFAULT_VOICE.json",
+      "category": "approved_voice_reference_not_executable_model",
+      "bytes": 1104,
+      "sha256": "74ec1ed74001e1dd056c2cffd7c7a40b22e9f9d46a6e58ca371ce1ca35348dec"
+    },
+    {
+      "path": "youtube_documentary/engine/DOCUMENTARY_MATERIALS_AND_IDEAS.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 6662,
+      "sha256": "dc01bfc8ac138da97e716def34846912ee08b71021e93ca0298b3c2f57f5203d"
+    },
+    {
+      "path": "youtube_documentary/engine/EDITORIAL_REVIEW_PROTOCOL.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 8724,
+      "sha256": "f3a589f137d1e2eafab11eb0bdc2ffaae9e377b07a67be192a00df92ced17a5d"
+    },
+    {
+      "path": "youtube_documentary/engine/ENGINES.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 13482,
+      "sha256": "493bfa2215c23922c291f4f0d9853b0199355129ef7d16103ecd05098416693a"
+    },
+    {
+      "path": "youtube_documentary/engine/EXPLAINER_SCENE_BLUEPRINT.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 5475,
+      "sha256": "ca00407399509fc524c04b3fda6fda9c97022599979bb1f1f6d3b1c7a3fed0e7"
+    },
+    {
+      "path": "youtube_documentary/engine/HANDOFF_STATE.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 12577,
+      "sha256": "2558ccad0587ab9dabb44b5e81810f502a0339a0018133eaf9ea1dab9a0cf2c5"
+    },
+    {
+      "path": "youtube_documentary/engine/MONTAGE_THEORY.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 15044,
+      "sha256": "89e29b9fb593a2fac8eb996125b8f7b2518ff726631940cfd6731210b026ff1f"
+    },
+    {
+      "path": "youtube_documentary/engine/PRODUCTION_POLICY.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 8959,
+      "sha256": "03362354b9d8e62f2c34f9330a484effbd16635244fda45f3985f660d96f9350"
+    },
+    {
+      "path": "youtube_documentary/engine/README.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 2576,
+      "sha256": "e6fc794afccec889269c91e50c6ce7bdfd3b2991c364773c202fc30f371c3d07"
+    },
+    {
+      "path": "youtube_documentary/engine/RHYTHM_AND_REAL_MEDIA.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 4639,
+      "sha256": "9cc48369c38b79b62e58914a92a15fbd43f2fb031a941144cbb1062e7adda554"
+    },
+    {
+      "path": "youtube_documentary/engine/STYLE_DELIVERY.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 840,
+      "sha256": "5e69cd8378e3919c407c261f5e64762ac398f173feb4654b8ee64028a5e3f27c"
+    },
+    {
+      "path": "youtube_documentary/engine/STYLE_GUIDE.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 14996,
+      "sha256": "ba887b121305514b0a9143ecf2c10a67f0016a1b56e72c2762cd162e80709e17"
+    },
+    {
+      "path": "youtube_documentary/engine/STYLE_REGISTRY.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 7216,
+      "sha256": "7be5a828795655eb533edcda6b675aea8c0464763f5c13768eaed92fd8933f19"
+    },
+    {
+      "path": "youtube_documentary/engine/STYLE_USER_DIRECTION_2026-10-16.md",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 3412,
+      "sha256": "717dac42770fb2781b6543db56c033237a9ac3e150e96cf206c584d4f87128bf"
+    },
+    {
+      "path": "youtube_documentary/engine/cli/storyboard.mjs",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 3589,
+      "sha256": "d7eceafa94f303f71ef45d516db306743725971fc6164220ab0c56b3993b59e1"
+    },
+    {
+      "path": "youtube_documentary/engine/database/recipes/escobar_intro.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 2216,
+      "sha256": "d21f0ed8098343f56caddb908908506a731c8fe1bff894a3d200dd4c350478f9"
+    },
+    {
+      "path": "youtube_documentary/engine/database/recipes/ww2drive_demo.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 2113,
+      "sha256": "c6332f1576daf4f4cffb935a3bf31f85c9e8e69ad3f5336882d18e046cb82295"
+    },
+    {
+      "path": "youtube_documentary/engine/database/scripts/escobar_intro_demo.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 2655,
+      "sha256": "95623305496f1c61fe561416ffc72d65293aab63ec336018ebe087e7fb78a33f"
+    },
+    {
+      "path": "youtube_documentary/engine/database/scripts/escobar_ww2drive_demo.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 1671,
+      "sha256": "5de875564b5276482242751fabddf8383e5d4dab084bb7b1e2d85ae573ff0e70"
+    },
+    {
+      "path": "youtube_documentary/engine/database/sound_bank.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 5524,
+      "sha256": "934260e2035431a702c7a7b02b87f0360fa630411e2edd8e2f48bf92384ea515"
+    },
+    {
+      "path": "youtube_documentary/engine/database/technique_db.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 125728,
+      "sha256": "b4827022bffa2de398282ca316842864e82ef5babf995632f863ce7789f33343"
+    },
+    {
+      "path": "youtube_documentary/engine/database/techniques.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 10535,
+      "sha256": "3ba0386260cb5d22c03610df108168137fb993445b607b05a5cde131cd341f9f"
+    },
+    {
+      "path": "youtube_documentary/engine/export_geo.mjs",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 1228,
+      "sha256": "ab76c159a3d0b4b105d7e9aec34e157f45bb1b30a75fe387417de77fdb85cb91"
+    },
+    {
+      "path": "youtube_documentary/engine/package-lock.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 38001,
+      "sha256": "6ec25b8c80c3991590c9d9d40860238f59b51481bd13714e21893f9549799edc"
+    },
+    {
+      "path": "youtube_documentary/engine/package.json",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 363,
+      "sha256": "6597f660d52bcf9e21f3b2551cacdabed2437416ad21398df8ede577c00591ef"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/CREATIVE_BRIEF.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2300,
+      "sha256": "3a4e05a0c68ab68e18dcf168ae94938eb4da0602578e22d3c8bf381219b65822"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/FACT_CHECK.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6329,
+      "sha256": "e67fc60d748fe86ed476f3f4e338331a06015cd05253381b1d62d52cbb8934ad"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/MATERIALS.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 11946,
+      "sha256": "41cb38fd1ad41a608cf2f2905becfecfa92df5b740f08641855eb16550162417"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2964,
+      "sha256": "a84b66ebbf09b5aeda04e43434a9500a6d293d2ee87d8305e2ac355d33d5647e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/RECOVERY.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5233,
+      "sha256": "ddf72ccb1c567552afc796b1008144f2422e9c3b7d0b3c83683a1a18ddceef7a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/SCRIPT.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2227,
+      "sha256": "eca48a67e5f68e4fabe83e84f818f629aff5f9f30191a272ec11c04784e7ed88"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/base_capture_source_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1972,
+      "sha256": "6a978da6a43527c18ba6f23ff7807cf9665503dedfe34cf58318ee41ec70f343"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/delivery.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2341,
+      "sha256": "79738eb4c91540b50bc4d30be9aa937ae05ca3cc2f6b4383b9fb7593a7ef2e51"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/display_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2145,
+      "sha256": "927a17039daf8bd78b9eaec4f728cd147e8951f1b9d0391b621aff18eeab6ac6"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/encoded_loudness.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 263,
+      "sha256": "03bdca4206a1fc5525c169824c57d64b10b72b563b859970b3d85f9ae9ed8d3f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/encoded_review_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6819,
+      "sha256": "08e7273fc9d56c7f03a754ec2f2be1356e8f5d96d0da6a952fd325b94381d0cc"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/final.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 45948,
+      "sha256": "5e5d721083aaed8d438d63571635699b585890bea45cfa162e83df64ac68ca45"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/history/scene_base_capture.mjs",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 21527,
+      "sha256": "2f3ea00f1d1c95251c840e4dbbe08faf72b220902fb7554b16a25fe4b7f96fc9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/history/scene_spatial_capture.mjs",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 21696,
+      "sha256": "510a8d99b951df9fca02627f3903fb26eec89bd035733304273049f4784315f8"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/legibility_capture_encode.log",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 322,
+      "sha256": "91d3d3612c5b47993480615a649b38eb984e667136f601ca683f9d5d9e3b9929"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/legibility_patch_receipt.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 533,
+      "sha256": "cbb5570da56b3268b62f11ec10c0a262c8db582b77b989e77c185be867b509d6"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/legibility_revision.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1087,
+      "sha256": "ef6fcadfd96af724b00590ba531b903ff7ba4a1cd852d60c4bbce4662c490278"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/mix_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4200,
+      "sha256": "ee55cb3c5c9cf820bc7e7764baa4306161c331881d8445beb236e4af936028e6"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/motion_math_review.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1771,
+      "sha256": "d6af79a84a3bc5964c1d61d675c2f1a5d79bff8e9371b8860f72f74a548bea8d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/01.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1326807,
+      "sha256": "f90427a699a247e789dd2f8e0036176c683a23751654b7ec31bf4b3843c28412"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/01_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 11920,
+      "sha256": "f1b5da966c625127e5014d923b680b25977b0b49216dc7b0141094bdee6df1e4"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/02.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1232089,
+      "sha256": "fcd7fe882bd52bbeff9358555a35efc703b9819cd6f13430059a16ea38dbb38f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/02_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 10962,
+      "sha256": "93a679350f2cf2b9d1ce7f2bef115635a4ae297466333586092f81ba9ea7ad59"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/03.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1294938,
+      "sha256": "523fe5ef8987c39a503c29b4da519b3af64a5fae428cd2d4d3178cf651d3b47b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/03_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 11495,
+      "sha256": "c1e4ebd8e8821d4e6d07eb41bf1f70b46446b0140edda630f7c7ac0511d5250a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/04.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1313601,
+      "sha256": "9fb0716d561b4914259f9fb219a152704657894c934639ffc4ccdc02b3832ed5"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration/04_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 11973,
+      "sha256": "f96b09da1929ae128982f7c2eccdfc540c337a6625dffa0c5d090c1560e74e0d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration_pacing.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 19513,
+      "sha256": "1663299681b26b644cad0c576a6c56f8345648a7c352e7c744545080780c7a7b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/narration_recipe.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 425,
+      "sha256": "5c9aa7f2a648fc23f3dc3725552d40a8c2ec98655b4b13d68ea79c004e0e875e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/prepare_narration.py",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 8115,
+      "sha256": "6f89bc3e4c02e31a9e4d34733f7cbdce27011535a57733f04fc195a61d69473c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/01_raw.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3585730,
+      "sha256": "37d6978add782be33a32c341f6927ee9295b211b6232f0bec90f69631b6f6b65"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/02_raw.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3293494,
+      "sha256": "ba0142fa39e728cca9be619826bbb657f8618a48ee48fe26b4178535ee90d7fd"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/03_raw.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3262146,
+      "sha256": "1b3d01bb74d9ac3c7293cba9e5a5a747b5617307055eb9edec51b532abf64255"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/raw_voice/04_raw.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3610702,
+      "sha256": "42dca6af0b50e72d3829e79650d8d026913a26ff750c68df5456b154daa6d9f8"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/recovery_cold_check.log",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1495,
+      "sha256": "f0e44bb596ae29aa5c6b266fa5cf966c542fa31abe3cf8a4856440f7e7cc8686"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/recovery_local_receipt.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 471,
+      "sha256": "30e721960ae903c04e5b6ddcaa202d42f474a4bd513068e1832c704dbd7e2c73"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/render.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5501,
+      "sha256": "307af8e7669e4bc3760cb95aa2a1c9080511dd77a61d3e23e532f9b78af83e5c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/review_inspection.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4362,
+      "sha256": "0d1b0d591386c8f5d13a462e57af3258d634b9dde3750f0469e321bd7f9e9499"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/scene.mjs",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 21708,
+      "sha256": "6b13eb4bbf0ed4c8d977203d76584fe3a8b2ec0f1045f738fbb6e6421910735a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/source_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 12126,
+      "sha256": "fdd738233abb538cd380b262577bd4a021bb3c854c94ec257146dc8affb5ef43"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/spatial_clarity_revision.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2489,
+      "sha256": "a3fe5c291a026b76b5da1ef14f5bed45b9e03f6a2bc532929f70159b9c5e1abf"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/style_contract.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 674,
+      "sha256": "81d06f7314d56b26cfa7b89f108fd171272fb7f10d6cf0e7e8c2b0c688a7723e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar/assets.manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2204,
+      "sha256": "4b9d35e13966baf9ca2be26019b1d7280732776e4ec69753342221ce8d662090"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar/project.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 489,
+      "sha256": "76049587a9e96a64120feb4c93065651fe0d63dfd0529935ca5f98d7846182e5"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar/scenes/scene001.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4153,
+      "sha256": "c97d4f6aec69c413bfae824ccba95351183e3607e90de7782ab4993d9a0c5d02"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar/slates/scene001/SLATE_REPORT.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1178,
+      "sha256": "151bcaefc489177cd3ab6dcdee57e9d8535ba61d19711e522ac2ef91c219cada"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar/slates/scene001/qc_report.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 7455,
+      "sha256": "3938c5adc5fd69048657855d5db1d763d4e2e13a8a774083a662a02226250f24"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar/slates/scene001/sb_t0_27.png",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1512417,
+      "sha256": "47b1eeee75d8265fbb0ec78a8ec6241d7cac9a20cf86bde996f751d09b6167df"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar/slates/scene001/sb_t2_37.png",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1799089,
+      "sha256": "edc1b3d9af17326340d44e7bb72c81de29245bf7364961ecbdf01de4761978b9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar/slates/scene001/sb_t6_70.png",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1673609,
+      "sha256": "406cc77bdca948cab2c022bfaa3706675b0cafcfac1af560236223c679b7a4c8"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/FACT_CHECK.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3586,
+      "sha256": "14fc7dc84b29df6bd904d6eb6e8a7edcfabe1d2fdbb1632eefcdd12dc656d275"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/FINAL_QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5020,
+      "sha256": "9476b5c8f52b18cd2722ff78fe1a94742d8b90c603b856ea9729b220c71f1c43"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/MATERIALS.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 48205,
+      "sha256": "ff4c922c6600d1d06e06ded7509a70679e00e969e2fcf38ea64a97a522866857"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/README.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6785,
+      "sha256": "3188bdf87e6835035ed6a4002320c82b3e05390f07cc5f2366284dfc73870c0d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/SCRIPT_EN.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 7560,
+      "sha256": "1390180c850fccd98071012da4e1b5251260fbf8862fb7ad81e48a4ff4e3028a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/USER_FEEDBACK.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2506,
+      "sha256": "3bd520ae134cef10fe4e11e4c441033dc67562b82ed24edf54c23d06024e8ea3"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/archive_1200_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 288020,
+      "sha256": "74fe2c66f5e566b0653d698ab73a45a3c97f2e1cc8266dbffa2676dccb621e9f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/archive_2160_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 258028,
+      "sha256": "b89d8d3e94ad8aee95f35425b49c4661a7b8d5f4de2cc5bdf982d8b9a923e6b3"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/archive_3120_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 267683,
+      "sha256": "b1d73c913b3d93c18a8631a90f12d54f9fffe024a37a385227f9bc9488c03948"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/archive_4080_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 265254,
+      "sha256": "fe4e5df2343ca6ec76dd2c51f9da3af92b556dc369570d007d2f00af1733831d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/delivery.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3391,
+      "sha256": "68a38d0fd44f10004d08ca3d869961ca6e01a747d3cc3cacb8bb8db73a0a3347"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/display_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5371,
+      "sha256": "e17e853a672f1b3ac59697b4c9b138969c61f76c6cef0e59bdf547a4bf5d10a9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/editorial_review.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3341,
+      "sha256": "46f0e3719d320a252c86494ae2881baaa7f7115e5f6680fe6cae72f521401c85"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/encoded_qc/asr_on_identical_audio.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 150989,
+      "sha256": "5d681c74e53ac14b9300102f8c8068ef08ed64c6f74a9332a619c504a7eb01db"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/encoded_qc/audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 19433,
+      "sha256": "2011e3f563ced2e1e2ac31965c64f6da2be442dc2454e071e1b2e48dfb368f36"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/encoded_qc/environment.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 641,
+      "sha256": "95a4c3832d85c060f575c45afbb77aea628193b6248366c974542487cf198ebc"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/encoded_qc/final_audio_identity.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 402,
+      "sha256": "04fbc38ab76b82184e0a7d64e8759cebd7d5a78b77137bb79701a3a76b1425b0"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/encoded_qc/final_visual_identity_comparison.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 265564,
+      "sha256": "cefe408bff9ef24ae6bd3550d28668b64e4d720dd8fb1b0afbd0a0d7cde6958f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/encoded_qc/loudness.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 263,
+      "sha256": "6268d8bd1dcaa406309beed1b0469dcad308979a547fafc23c61b8548025df5b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/encoded_qc/portrait_context_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 9187,
+      "sha256": "2aed2abd8e7edf341052c7ab1cf07872c572f3f931ef193b01a9dbfe2c9aa597"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/encoded_qc/review_spec.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2765,
+      "sha256": "0198ac19304653afe0dea4ee4c25e67093b7481689b2fa986ef2b6003ea89b4b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/encoded_qc/targeted_tests.log",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 532,
+      "sha256": "48bc5dd5c8b6c08df9835cf19fa26d92d96d3cd9ec8496fe7a60646775f76a7c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/01_business.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2102262,
+      "sha256": "bc934184cf3ab01afab86389ff67c8c5a484e35152a4f3551bf03a150e2cab5c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/01_business_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 18602,
+      "sha256": "e4c99d3ef46be6c32a24e4939e63720efc7a13a7561ae2bbd86576833e1c61be"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/02_support.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2095132,
+      "sha256": "be4801c84cbde71c7f1b9a939835ded3d2d09abee4e4a59feaa45246ec360911"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/02_support_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 18709,
+      "sha256": "1cf1a275bc48e33c19eabd5035c03f106a53c19595a7ac830159e3fcfe55e1c7"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/03_politics.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2321718,
+      "sha256": "092400a1c6865bac6711cc08a58147c7d9763216732f2c1e95c732d38cd25ee6"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/03_politics_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 20026,
+      "sha256": "03a1c8b9d5681fdb09aebc4de0415afd4ecfbeefe4644fe085420bef68df32df"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/04_extradition.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2416705,
+      "sha256": "e0fba89be3484ecd6f0871193f52bee140f6331d4d5fb3a7f84ed5789645725d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/04_extradition_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 20298,
+      "sha256": "dc7eb2379e4384013faebca956f4d6f831d8bb50bea7bf4df2b726a1595e1df8"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/05_prison.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2284756,
+      "sha256": "17d3dcdc134416737e4d18ddaccb5f219248ff204651cae16f6230535f77f01a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/05_prison_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 19925,
+      "sha256": "e9a7b309353d813779b31780ac9cf254dfa5cc088ce875c8fae57429b7359a81"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/06_collapse.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2269995,
+      "sha256": "7c5472148a366bb854fe2bce8a0c12e1b3a2ced06f9d233d4fb10a6efc776d47"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/06_collapse_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 19932,
+      "sha256": "ba4464b7160695ff81de485c9f5c1dcb8c361f2f152f67b92fde328439ba3806"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/07_legacy.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2198773,
+      "sha256": "5b109edda046267fb1f4d4e48329f52648f0a52282e9ceb8016150c49e671480"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration/07_legacy_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 19149,
+      "sha256": "ffd97051d747ac5a989027aaa1447c9ef67a4f1f4b2cd48035620c934ed612d5"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/narration_pacing.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 52263,
+      "sha256": "73785782f7bcef0910fd2337020470e6467725eafda97732efa2a62ca211fdb3"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/pace_test/Escobar_Pace_Eased_Reference.mp3",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 395756,
+      "sha256": "1d01afc599e24650bac7cb277a29a69f6d8c5f3e8bd99b5a9b3322e3e44b71c0"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/pace_test/Escobar_Pace_Faster_V3.mp3",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 381932,
+      "sha256": "b95ee6761269e784b7fd9e1051f931c4a0dd5f0869e138d4a89a50e705dab2f5"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/pace_test/pace_eased_recipe.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1936,
+      "sha256": "2b72e78ec61ebc0e3b1f5a4501717aaa0e7b252d690d73876a68387a3452b678"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/pace_test/pace_fast_v3_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6413,
+      "sha256": "c412f6006f078553837e5dbcaaab38f97038fb73a4757e1a9907b321c2beb856"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/pace_test/pace_fast_v3_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1640,
+      "sha256": "5e5b264ef84be0cfa66a848a31adb3cf941cce56aba5b02d24773349a40d686b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/pace_test/pace_take2_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6437,
+      "sha256": "8bf7fd0bca01d1e388651e51f20e70b2f40b91acc4926b8b741437c3a9b3b42f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/pace_test/pace_take2_raw.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1782862,
+      "sha256": "ffb7c2e3c6458ea3bb0e5ecdb310c7a99ef4d018ed77cebf5c8995c07b240a3a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/prefix_preservation.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 902,
+      "sha256": "0adb778a8171bac1f720f843fc07b7015e896cc4f8e617c5df432a6207f87119"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/prepare_metadata.py",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 8006,
+      "sha256": "2c542bd4a4c7a43b8a4973d3ffc776ea91cd28bba0204cfa1a2da62644b4925d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/profile.py",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 17293,
+      "sha256": "301d46c508c858437ab1131319a6fd2d587b17a279dbdf286e038b5d051a0f91"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/source_retrieval.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1816,
+      "sha256": "d38e3c3785ca84c0cb591a26ba96707de0dc82af8c11e69770990ee110d82319"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_full/timeline.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 60435,
+      "sha256": "117fb7186e482cabe22721daec1ddfa9c46bf0ff37fa3c942d88a1446b637754"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/ARCHIVE_PREFLIGHT.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2947,
+      "sha256": "04e2aa5a75ff1941ed9cad15711f21b39c86743e5de6d2a339b57d19655a0807"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/PLAN.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4638,
+      "sha256": "082528cdabdec3c0b004bf0f76549df5b554a118ea4a07c653ad40e77da37e77"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4501,
+      "sha256": "d8a2fe8d53f2b3ec36550938c83745cb27bb6aa77eb962b4d957c9a82c4fe201"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/README.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4495,
+      "sha256": "1ebad1922f5bd84208861ac69805f1be5cc356f0a18efff48b4d7be3d72d8f24"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/SCRIPT_EN.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1958,
+      "sha256": "96c08c9a49dc14bb5697dd77ab03d50cce4c2fc77c2f3adaa8d91a00b821d808"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/SOURCES_AND_RIGHTS.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5050,
+      "sha256": "ebacf5bed41e04128d29dee0dd145b0ebb21d457bece38156e92a522a4394e0d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/archive_research/SOURCE_REVIEW_2026-10-15.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 7438,
+      "sha256": "0de30011da3ecf464ab7f0204e28d6ffe62c4b5b0b91ecc963fd36e097550fbb"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/archive_research/official_source_evidence.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6568,
+      "sha256": "652e4d29d03257a3b848d283a7cfb19483552cc918a0bd18e1159c86f57ea4c7"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/archive_research/primary_caption_excerpt.vtt",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 627,
+      "sha256": "139f1d5b1ced04abae28245bdd62fc5a5c67c8b962385b8f223785b59d78a28c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/archive_research/vosk_model_download_provenance.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2253,
+      "sha256": "69d809f770ae6985c752d5406674c22c8bef90c0044a647eda32d4d3c6bd5967"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/assets/la_catedral_site_2019.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 369246,
+      "sha256": "18830c66853af41b67b3282d295509dc9ab4d90c407aa279e2f64c91665fba66"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/assets/narrator_approved.mp3",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 174933,
+      "sha256": "523220dab1465d8958a24345978de76982953396e05b9bcf7ed012da44c7485d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/assets.manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1351,
+      "sha256": "ff3e128f23a2d1ee880a9503ec4ad6806e23734289c1537aa39d8bd0e4753f54"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/delivery.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2535,
+      "sha256": "959d76e6b59b2882cb14aa2df76bce667c5e1da97c6f1dd4ed9840e3219cbed9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/display.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1642,
+      "sha256": "dc0be8ee2e4e5773d3a3ed23bb24980c988bcf8a24624f9cbf7b0c2391ced581"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/editorial_review.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1165,
+      "sha256": "7243891308bcb56a26bf04169b9f18c040092bed93490353c8cc374f0bcc6aea"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/next_intro/DIRECTION.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6297,
+      "sha256": "5c4296cf81d506b1959ad6e2f1b39337489c585b1b64be87bdf65f256d01c474"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3265,
+      "sha256": "58b58c95b2dc05211362c2922d16670bd4717525ae84b561c1594eab661f705f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/README.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6799,
+      "sha256": "3cf41a51b2690ffe364b978c7073af8bef71e8bc123b00526caedc90748c4976"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/SOURCES_AND_RIGHTS.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3298,
+      "sha256": "2d3a8dacf266903fa09a6c5fd9ed959f3bcc570917dba7d9559a05d092aebc63"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/USER_FEEDBACK_2026-10-15.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1091,
+      "sha256": "3e75bdbfff8803b4d123d763de948acd26226124f13d806119167064e0c922fb"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/delivery.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1581,
+      "sha256": "11a282275ba9c65063dd094e333df6e8cdfebd2516f6a2d179d645c1d738be39"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/editorial_review.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5799,
+      "sha256": "af0945a1c1804e7706054583ee74ac2e6500af5206f544441880a5dc91537bce"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/evidence/audio_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1574,
+      "sha256": "0c707ef7a7618c59e626a4c7418e606e79318707e11ac4959b132e0d7329096e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/evidence/encoded_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 9565,
+      "sha256": "24adaa10e0cbc1bcd95bc893a1a083ff50ab60a7994e64028c03e4a1235244b9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/evidence/encoded_review.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2553,
+      "sha256": "2389c2f5a075029d2179ba8869f2c207934e5fd9f257d4d86b79711e6e2a405e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/evidence/image_pipeline.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 935,
+      "sha256": "ca01a8687241b17b111702b37f62e8f06fa209479ffd5f762cc0f56d346de371"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/evidence/samples_complete.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3151,
+      "sha256": "3805942d0b2e480d28f94d2be6fd0c7632245a6fcac89ccb33fe00d35cb23334"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/revision2/scene.py",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 11810,
+      "sha256": "09e3b9db58a9cece2da17806df41b644be92e90cffd05abbf8808baf76ed4b76"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_hook30/voice_preview.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1268,
+      "sha256": "6d1e3eba19781adf7e87e103fc28b5333b49f4cd7f80749202159dd1b9a5a5ca"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/BRIEF.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4382,
+      "sha256": "919541d22c9304ff82ced3399c3ebe31accc8f81c5419e80e0a59f8aab3e545c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/MATERIALS.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 12513,
+      "sha256": "95c48d04b314e404b0519b5a1245f4ba70e7706a09b4cd6e92a64297fefed8ea"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6080,
+      "sha256": "24d3334001040e3bbdabe7fe58bba6ef98b0ffdab9f9fc0e0e2e5421dc1c891e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/city.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 125827,
+      "sha256": "84d91428c19b11a42c1780e2a4e079959fdf90b252e440d3f2d70cd0aa090f4e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/congress.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 44112,
+      "sha256": "5f28148cd06670274a68d165dd681f36ae1b07953737bfda976e8261e01d584d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/daily_page7.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 136674,
+      "sha256": "5999fb846a101c69bf92d5dda5bdfa449f98ae58539777390f7fcc35bc7c319e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/football.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 35178,
+      "sha256": "5b24e412196fc01b29291ae1f2aee5e9895df2ca89af6cec265f581eabeba958"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/forbes_cover.png",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 850171,
+      "sha256": "ef998932f1fc8b5516432838d907808a693d4ec2b3d4c7d86f65cdc6d4cbcb20"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/forbes_entry.png",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1123356,
+      "sha256": "c21aa708fda0f496642e18c22054c0e44aaf2e4843f67688a152027948b71778"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/moravia.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 69111,
+      "sha256": "00c54b8949b8c05383fec77f9c999fb72ba66c3163b2794ced57de815cbbb538"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/assets/semana.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 178243,
+      "sha256": "f3cbd870b1067ffaebe85a45eb0ee040f4b0d4a1c7ccf139abb1bd6f02eef652"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/delivery.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1244,
+      "sha256": "4874aa89772ae90db75618e4e58e4f72d82e56ac2dbfbb95dab4c096aaa86a8c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/depth_masks.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2926,
+      "sha256": "10a8a1dd984f4437e31d2e3caa95e3dc6b12bf22cb2d900af6717b4d4fcacb90"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/display_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1242,
+      "sha256": "da41eb0f46c4bc91145b8e039d7a9a3cc4714462916e5f389c0ace3e41322d7a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/profile.py",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1756,
+      "sha256": "627a230e5e7ff3d638c70c1e42ec212e337b17c2dcfa1fa1422e9242e064bd64"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/SOURCES.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4807,
+      "sha256": "2b230aca33d57ae25b26ea72b14b471578e29cc046303e38d0483d40e7b48ad6"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/audio_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1414,
+      "sha256": "e42d2756edfce0de981a1eef43eed7843fc104dd1dc3ac0c4bcff17b7b002f4c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/broad_close_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1413,
+      "sha256": "2b707742a30ad093048c72820dbcfe6d8caf794caf543bebef596f553d091eab"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/broad_questions_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3047,
+      "sha256": "694b7f7612d40b53c7509ca592ce63c6d129a62525c197e7b9922ea6357c6a24"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/broad_social_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3613,
+      "sha256": "995b1589b8a1c12071577598b1586c21135ea1582faf8484b4eb2b542f84d451"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/broad_wealth_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2471,
+      "sha256": "0c4b372216774c14a1dca8cba730bc9ef933e79b890346c63cd0f20c0b21ce10"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/encoded_loudness.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 263,
+      "sha256": "1ca649a3725bc00fd180cdff75d6a4a29259f9e05239f1489022e4ca4c903790"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/encoded_mix_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 14979,
+      "sha256": "aea8e60d7093ba9439248ced3e20ad13ddc0b54983427013f5c6530ed04c5407"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/input_hashes.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1624,
+      "sha256": "d57e7b54490390d5043a6da56fb0c44a5f180d98d261bec486beacf71fb89f3f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/primary_image_downloads.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1111,
+      "sha256": "a501ba89f4cf44f9a579794ed25f89e74e0dc12d107299e5a9bbffaae765a458"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/research/render.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 733,
+      "sha256": "0d385c3ac8bf1c318d2a0058f3b9daec467869b7e53454aaa9ebecdff6c14127"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/voice/broad_close.mp3",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 34708,
+      "sha256": "f58f1c248f0f51c6310014d98ed06939fb73cbe31a530923091ef987a7865113"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/voice/broad_questions.mp3",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 89252,
+      "sha256": "bb4e8246034076b3cbcd6f4dfbe5f02630696bfec37a9c16e9bbd5bdcff9dc3a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/voice/broad_social.mp3",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 133973,
+      "sha256": "ef869ccda0f15bda39d36e462d9bdb7b5b0de32e5489c91d584f57e6b4768ada"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro3/voice/broad_wealth.mp3",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 124360,
+      "sha256": "4720279ee7b0646c530720b53cc616d5d4d3c5d973ee358f1639aa7cd1f5ea23"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/BRIEF.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2885,
+      "sha256": "ffb318479e480b3c744e58d5db4f793a0c03e6d3418c6330a3b385f6f0068dee"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/MATERIALS.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 20913,
+      "sha256": "9c154d08cd289e11f0e93d7328576ffd1ad4b211c27a23f6c50541920d0e4088"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6894,
+      "sha256": "7d1f98c96fdc6f621307fbffd3b6b78a76680da4599405f08893a521e30ee11d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/assets/elpais_page.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 397057,
+      "sha256": "34086ab370987e38029a2e2f21c986f10d9bd270b9e2a69d7510d96d0b864727"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/assets/elpais_word.png",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6518,
+      "sha256": "95ecffbe1e2398fd44345775305376aaf6f14584b12f64badb97c5411da6821a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/assets/guardian_word.png",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 8381,
+      "sha256": "e960c692de4562d80e181e78efa45f1ff6a33b5b41730f644913b3b49753de96"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/assets/housing1983.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 282850,
+      "sha256": "02cd1e752ed6ba6f509214f758184ed12df033dd7aecfa28fd865322884490a3"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/delivery.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1404,
+      "sha256": "3cbdefd8d462604c06f044485073a04bb8147762a26759f039056d40e54cef8b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/display_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1791,
+      "sha256": "011baae71e4bfc9c5ed92653eb40ed5cdcd37601f2326b8de47a8df0df94b5bb"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/profile.py",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1460,
+      "sha256": "3e4ade24ae07a0c640b9c006235f31e0e77710914b7e9e56a9a3e6e01c850868"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/abc_metadata.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 485,
+      "sha256": "03e48644e2beb13f8fdda4c573f43b0cd88696be5d474b67ff3d260eab46443c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/audio_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2073,
+      "sha256": "9bada8a8a7defff3e293ef1a3794665298d610496ce1c0fa98fa45188a506964"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/campaign1982_rejected.jpg",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 181105,
+      "sha256": "d9dbe0cbfd5804fa147d7703d43a7e38cf93a19f7437b70bf2b8194cb5d10f2b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/encoded_review_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3253,
+      "sha256": "48adca683138deebd6dadfc333299b9971967276a14ddd4f302a9efc40efa551"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/final_aac_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 17246,
+      "sha256": "b55b617397bc16ca7030d41dae63d3dcbeee0270308095d5fc1e4af9383d7ba9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/final_encoded_loudness.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 262,
+      "sha256": "3a16c53d15a38ea3f654bf21c51fd82fcaf755a30189defc9973357e395c1d5a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/press_metadata.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 902,
+      "sha256": "d764efe426943f12ed66f401f5f0f0bdd33d1996a9dc2735fd17ab12f6ad5489"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/press_metadata_accepted.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 540,
+      "sha256": "5409b25ff7fbbb6d9a7eb11d9a8aa6a145cf06b7e9d2deead7917058c212885a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/provenance.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 869,
+      "sha256": "4dd9aff9a85c4b1fd337d895fc3820702ed5e8766983db1422ef63630965978d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/render.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 716,
+      "sha256": "3ffa0b7d2162e01b53667d13be11aa5e979ced29f8c094c24f9a5ad093eabc14"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/retrieval.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 147,
+      "sha256": "3ce49a2fa293544830eaa7153f90ade5b8869385ce0407c7f7493aab3ee8c296"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/shots.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2869,
+      "sha256": "28f5690fe100ff0e5ad3a26531f975fdec068f56dd1b5d599b176d4dee2048f7"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/tests.log",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 7043,
+      "sha256": "779f41ea6a94d5c2179aa636ea33d59b34d1b80636bad0313ae786dad95cd206"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/timeline.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1055,
+      "sha256": "d37115add2b6385c7f6e391d7fcdfe565e3367c3aeb349ac9df599bf580c52c0"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/verified_asset_hashes.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1761,
+      "sha256": "512f5d0c0d9eeeb972e332dd9bee0a60665d1a022cc4e2b6d7ba73952486f891"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro4/research/voice_edits.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 22583,
+      "sha256": "2892194cda7aa6b49dffc2341a6f19709921cac88047e9b4d9ed8f3a1045a04f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/BRIEF.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5679,
+      "sha256": "8898e81fc1c485f5efec3bccb41a333bf35a7d188fe5258523fe81328da06a95"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/MATERIALS.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 24305,
+      "sha256": "758690f74cd02b3bf1f18cf8f17ebbbc2fc4489e46d1eca036bd1ee2d75ba3d0"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3184,
+      "sha256": "0f1eff9e496fdcccfcf4a0feffd40fc3416a3742cc0ed6dae5c4b2e283ca357f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/SCRIPT_EN.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 443,
+      "sha256": "cb83c562b635eb2a5799f3c5c82b796db17183f3a58444478294b03400ac95d9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/USER_FEEDBACK.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1521,
+      "sha256": "5e5af4a12b04c3b9b59b362ed09814a0508a6b972ba3ead5376a1ef9221422f1"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/delivery.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1777,
+      "sha256": "a7ab411ac988c24cfe0b3e0d201911d8216da6a7a40079ab95effd2fb0aff750"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/display_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2185,
+      "sha256": "611c02e7fab3fff4fd42405c0cf73ffe91209668ec938fe7bc1209ac5f344774"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/edit_plan.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 9590,
+      "sha256": "ecefabf4772bfe55f4ef33fdd7576e58f43b0d8be18549171c93be33c7cc1d85"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/encoded_review.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3107,
+      "sha256": "c699410160460f543948c6fc01c0b4ddb286d2d8478b5eee1b7e230a13e8ac57"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/final_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 11993,
+      "sha256": "ae3ac1d2e5adebac2e4189221ff559b44cb3149994c2629898b54d5bab763f03"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/mix_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2377,
+      "sha256": "8b5987aa23e65bf5d381b48b07352cc8dc47e9e8033b5d6764ec508c2535cdcd"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/profile.py",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 8018,
+      "sha256": "04eb59173b855e53344b0332367d6cc581c95cc490c8c77a16492b318f9deddc"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/source_retrieval.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3894,
+      "sha256": "ff10c9a695bcff053f03d746472bf407e5fc950d1dd8bad4079f0d869906998e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/timeline.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 9590,
+      "sha256": "ecefabf4772bfe55f4ef33fdd7576e58f43b0d8be18549171c93be33c7cc1d85"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/voice/close_take1.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 631886,
+      "sha256": "52509d0be7c6ac7915206f9cd4acc26383c0038d76fd534653c6b1521b5e68b3"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/voice/close_take1_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2630,
+      "sha256": "a550530e712f21d1671503b4c5b88e61f373c2f7d47f163b09d0598809d55281"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/voice/hook_take1.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1215566,
+      "sha256": "53427f661055014a5b3fed4da0dab2c695339a091f7aa564e890ae7bf739f8fc"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/voice/hook_take1_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4700,
+      "sha256": "c9ba9f6d3887f9940440f957d219137f0b822e808b53d91f9e0094ba845b3119"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/voice/industry_take1.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1357902,
+      "sha256": "a07913169da34b210354b665d985acf109bf87466267147b6386e6833ecd092d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/voice/industry_take1_asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4615,
+      "sha256": "85599107220ad714780f19f1082eb79857208bcd47183badf489810265ae2c5f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/voice_edit_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 16606,
+      "sha256": "13b9ce92ea9c9e25415ee07a3dbc67738ff8cb18d9756fcbf9559c407a207b88"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/escobar_intro5/voice_edits.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 16606,
+      "sha256": "13b9ce92ea9c9e25415ee07a3dbc67738ff8cb18d9756fcbf9559c407a207b88"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/FACT_CHECK.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2297,
+      "sha256": "8e9ffae11274309a1e48159a7bd3eab325a8086119cbb7184563995ddb0b273e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/MATERIALS.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 7307,
+      "sha256": "2d9c1458ea5969dd9a06081db47f959f3820c204b10f4f19292adabbabe46958"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3735,
+      "sha256": "7271bbdd093b05127a045cde58517f1e8d80aaed57230c7a249e35af72a8b75d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/RECOVERY.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4039,
+      "sha256": "39cb11215a838e8b54986a6a0e42448fecb2065c89b30053b84fd6d4316b4955"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/RESEARCH_flow_examples.rst",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4800,
+      "sha256": "2271e97042bbf6b4b263318e2ae86b00dad8a3d99d3f44937c24362e0a4d214b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/SCRIPT.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1510,
+      "sha256": "23a21dc8180ead29e7924c396e2b2ee84c1d416588b9cdce368801643db361a8"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/base_capture_source_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3878,
+      "sha256": "7dcf7c9be3aac0372b73ddb92a4a90216d1e69857603ec392629af957982ce5e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/delivery.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2173,
+      "sha256": "826d46242164a59c6b637d36df34a768925ccda0d8335096fe80a9f4aab6e5de"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/display_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1143,
+      "sha256": "482ea3e1bd80f77b5bc2a6a5d1213d8589b3748ecc465d98de87815a9ac3804d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/encoded_loudness.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 262,
+      "sha256": "2d358c6f3a756b7b0353b25135f7827adfc90699407fff6ff55240d0c9109d16"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/encoded_review_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5158,
+      "sha256": "55bb13d485d388368cb4b8e671afea62ef9f2cb7db9d5e3e30b9e91e0dddeeb1"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/final.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 24468,
+      "sha256": "417ab87b35f2e9880699e6aca136d15351601fe8d19aeebd2adb6a5f098962ea"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/mix_audit.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3062,
+      "sha256": "4729b9179902df14e93ed483f1b8379653699d2994a7ffdda69ffe58296938de"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/motion_math_review.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 431,
+      "sha256": "bad9d3d9147cfe8b1cc652309ce58191503d7440e0b36f54a4ea9daf388caa00"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/01.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 947057,
+      "sha256": "7fa2594368914e39b177afa3374adbb28013bbcbcb21030193e401566f0f211c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/01_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 9181,
+      "sha256": "0b0b750c4ba8a5469683e05fe1fb6eb6df84044ea0784c880e6f8611fe76b5af"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/02.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 792794,
+      "sha256": "b01c782753e110bf8f7093a151adaa93e3bc698dabad1937f65af8a0fda986ec"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/02_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6992,
+      "sha256": "3e2e26cff7fe2f4d9b5d12e2a55f42cca5f608e3703fb85b542ecdd97c3d5f5a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/03.flac",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1021141,
+      "sha256": "ae49c874b4306cc2cddd51e2f7dbf82be70f39f352f2d92dd57b93e52df7ede1"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration/03_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 8937,
+      "sha256": "cdc2c2dea020ebc6b7f42139818528272c390877dc884461d711f76a74576ce6"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration_pacing.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 17571,
+      "sha256": "f84b4bebfac8663087b8295c5f3c0bc253a12b10ec864320f79f294830f1bbbf"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration_prepare_record.txt",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 2765,
+      "sha256": "a03d47c43bf1c84c12dfc13bbbb90f0812afabc69907c2a7330d7c85b4f776ce"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/narration_recipe.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1147,
+      "sha256": "208eb3830ff923eddf3f34962f28c07c7ec88b5eb773c01a62c5142a404c6a91"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/picture_revisions.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1495,
+      "sha256": "b5273f2b89d409f6cdf074fcfe6c070374805c0ee24d59411246246c3d1d25ec"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/recovery_cold_check.log",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1063,
+      "sha256": "fbbb06b2c3fe47eba4628ab8d7f6e11328e18b59cf311de382ca0b54ce170ffb"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/recovery_local_receipt.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 481,
+      "sha256": "2de336684019ee9dd262d8712fe6262bec27b02f5be5d4df4361647376697129"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/render.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3668,
+      "sha256": "fd17a3b2677f700b6910cbbffb9a76ba4e1b512204f2b6ada2c82c87a0bdaf9b"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/review_inspection.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6066,
+      "sha256": "8c0ab56d126c258f445463185e4120322b28a9c228dc85d90d9d0a837a568353"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/scene.mjs",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 12424,
+      "sha256": "77265d4cd28bb97d5f3e35532efdeb2c8619c7bddfba1bbc4c589086df89a1e4"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/source_manifest.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 6437,
+      "sha256": "312bb542bec27d00bb7c9832f55618eae76ea1709a458d79fc895881edc6351d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/style_contract.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 426,
+      "sha256": "6836e8ebed28f6a2f9b538afeaff48bc2c0c4438a417f63196be010df9f7858a"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/narration/01_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 16527,
+      "sha256": "38da1f8e59ea9582b4036b23c79545c283bdcf7a2badcaccceb6c2ce530e1af0"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/narration/02_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 16741,
+      "sha256": "042f46bf55b6f1f9d1877a1930925d7d1d0b7ebdefdec51d5bbccbd8956158bb"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/narration/03_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 18314,
+      "sha256": "ddf5f97dcd9b0f7678b305ef920be68309cbab5da38cee1a3ca890aeef6cb409"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/narration/04_raw.asr.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 18245,
+      "sha256": "051c74b8be7104d1795829d0aa19c127a80e3cb882d74ff4394d75c4f35f344f"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/01_raw.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 4895030,
+      "sha256": "ddfc327573c1086dbc86d84b525a8632eaaf02bf30c59acc9cc40bc1bb4bf3d4"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/02_raw.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5030594,
+      "sha256": "c7fb55ab2977debd4e0add150e2afec46bac002edc56fbf2fe6ca401023fe90d"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/03_raw.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5387342,
+      "sha256": "fdfa7207a00a6cf735fc8fe9666d78b958f2bb234009922e9e4007564a9a8fd2"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/raw_voice/04_raw.wav",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5891778,
+      "sha256": "ebde3917c906dadac48b3ed4bbcea44d96e3244b8b638d416d4cc1cefe596e83"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/titan_warning/script.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3372,
+      "sha256": "084cffe95ca25a0205147dfbe453906783bdb0e9caa076364de90673dc543712"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/PLAN.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 19667,
+      "sha256": "266153719d3bace30eb0f5983d1a2370411453e80cba670ef868dabb3f700d5c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/cocktail/PLAN.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 9874,
+      "sha256": "f7cc9723b19eaee009bc9be2481f45acddc7c15c91e7e17e845ab33d2d9e9d24"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/cocktail/plan.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 8626,
+      "sha256": "57d09e6f41f696481bd25c0a0f7e6702a3816dab047013a9a16f7b518070be59"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/engine_tasks.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1235,
+      "sha256": "1c6e4800d18295615f4de3ae44a3a9b34a16c717df918cc2302ba3546a8830df"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/plan.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 25030,
+      "sha256": "0cff96d7c8eb58ea3da5adb77038e9e1cedcaa5463c3c8ef288b39329f0d96ec"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/v3_design/PLAN.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 5493,
+      "sha256": "21b44e05bdaec043330e9574300b54aa175df4f29870a60c7bcf1e451fdebbd2"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/v3_design/QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1716,
+      "sha256": "8cf248bbcb9f154723a3e3aa66adc2987ff85640a3b3831c4243200503b2ef09"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/v4_depth/PLAN.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 3577,
+      "sha256": "cfb013a3081140d24410a54e2854999d5cac46b00f447f7669d781b8fd9fb7c9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/v4_depth/QC.md",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1743,
+      "sha256": "c741bac27da3acc6f2d3d4c1e9c1864be743d0bd0444f25f33cf2f4573b3e630"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/ww2_demo/v4_depth/display.json",
+      "category": "film_specific_profile_or_historical_evidence_see_reference_index",
+      "bytes": 1034,
+      "sha256": "2e0e8a8b4fe896ae030646762af0101abf62b21fec8f5b68a4d44a874749a6d5"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/00_HOW_IT_WORKS_AR.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 6124,
+      "sha256": "25527b7899b240d230db35a6ca0829d5db40ec693f1a817074d9aa078b8f61b0"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/BREAKDOWN_OVERSIMPLIFIED_WW2.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 5212,
+      "sha256": "06f43649e1b716df96751558e41a05aecafe43924e9e0b2c7975f35903e304e0"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/BREAKDOWN_WW2P1.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 57687,
+      "sha256": "42b5032ad1178c5ac7274db72c45b159d2c80c8230238954b9c6c05b337688f0"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/BREAKDOWN_WW2P2.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 44981,
+      "sha256": "6d0edc4ac7dd2ced39971a09d22b43468e5af03b52a5ab033c2642e1b1a13ccb"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/COCKTAIL_METHOD_AR.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 5998,
+      "sha256": "7aa5d8e14c647753596ff8c0ccd77310d3f82a201d551e2a2928a59d32d49333"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/DIRECTING_RULEBOOK_v1.2.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 30765,
+      "sha256": "e628b79243fd19b9b9bf53201d82fd2817239815c252d870433728443892977f"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/DIRECTING_RULEBOOK_v1.3.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 40509,
+      "sha256": "5456abe01a7bde74511bc5d11f5d769aee6b8e4a4b6a2c9a5635c97893e638b4"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/GRAMMAR.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 6869,
+      "sha256": "23c122656e2008d57802cd1177f15d377ed731111f4084c008efc7abd4244934"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/MOTION_LAB.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 12759,
+      "sha256": "e0f1cb582da1a7c402b7d0ecb65f0776498a11409d929f692cacbb3141f8c4aa"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/PAYPAL_STUDY_PLAN.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 8441,
+      "sha256": "fd4e717bce11cf59b11ce6ce6d76474dc5cb1ad5502be46ca363b67a38e41288"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/REFERENCE_ACCESS_REPORT.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 5238,
+      "sha256": "acf1739ff68ba5668236cea6c1c9f0f4136588032c285676af5a03d77a62b643"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/REFERENCE_CLIP_MANIFEST.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 3295,
+      "sha256": "d52fb9209e7b5a7bf9bf236c19f60e6c4b1a00bf964eedee91e352093839c462"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/TECHNIQUES.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 12097,
+      "sha256": "0fe41b8828e3c81530510cb69504e374e2b65d052707355e665b3df4243220a7"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/TRANSITION_ATLAS.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 7645,
+      "sha256": "06cea92d7b09d933e5211f05923511e66ec58cbce5e3c5a1863fcc6b6756bc5e"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/VERDICT_escobar_intro_v2.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 6566,
+      "sha256": "f49caee535fff21fcfe4bf1a50ae898bfdc099d3d5574480bd1ea7ae2ded0b90"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/Vaping_BREAKDOWN_2fps_full_v2.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 66295,
+      "sha256": "c5ab1b5b55642284314b1145a2a5bf6cd5b6ebb5cd4aba24ed52bf8d582ae179"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/Vaping_COVERAGE.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 5166,
+      "sha256": "69919675e3d994cdbf496d45eb86e294099f9b768ec0ebc072af2f45f9ef90f7"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/Vaping_GAPFILL_2026-10-14.md",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 13281,
+      "sha256": "5548619f704f0005de341d7d3ef7e1489eb4d118582872848f9f8fde4869dfa6"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/oversimplified_ww2/evidence_strip.png",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 126852,
+      "sha256": "a128c47d37f4bee272004f984a89779e9a8a4de9706d3e70fcf1ee9e71c98fb5"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/oversimplified_ww2/opening_sheet_54_71s.png",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 321424,
+      "sha256": "13efa599acc7d76a17a3c530e17ac9f909d8bce3d7326f6775022fd1f44f701c"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/oversimplified_ww2/p1_black_intervals.txt",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 179,
+      "sha256": "69ef089a48b378afbe289800060af608d1f69b99b46357f0fd9570cfa4880a6a"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/oversimplified_ww2/p1_cuts_density.txt",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 506,
+      "sha256": "1776d2ad91187e4dceb97a9ec9f24c381571c6e2492602a110c78c69adebb3af"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/oversimplified_ww2/p2_black_intervals.txt",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 455,
+      "sha256": "8f563c66eecdf97e5671b113977dc7b44243614472529cc04b1b5b760d08befd"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/oversimplified_ww2/p2_cuts_density.txt",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 501,
+      "sha256": "a95f0561d3374d96c1b06d2260a714b231d893bdd8614092443703f3c263ebfa"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/oversimplified_ww2/ww2p1_cuts.csv",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 2569,
+      "sha256": "64672b23eb08a357734465426260258edf56fbee347218c5acdd4835ba150455"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/oversimplified_ww2/ww2p2_cuts.csv",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 2103,
+      "sha256": "41dd1d24f33331d4d4e538337838037eb73d424717d4d272112f1889abc501f4"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/selftest/escobar_full_v1_cuts.csv",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 98,
+      "sha256": "b60b34efb183b3067f121f10217809ec28abe8bd274e71084c2675b12e967c69"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/selftest/escobar_full_v1_sheet_00.png",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 786451,
+      "sha256": "6095ee53d8dcebcb5257d6038d100f562fb704374ffafa353fcb298987f7e63b"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/selftest/escobar_full_v1_sheet_01.png",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 135682,
+      "sha256": "194b02509f6d9ed1fa9511b6de187da58003c67fcdbb1f3af6be7e20dad9c496"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/stills/kurzgesagt_ai_line_official_thumb.jpg",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 200469,
+      "sha256": "84870c217e3c57488458f4937dd88f48911c99eae55276f87f09ba4efa311eb1"
+    },
+    {
+      "path": "youtube_documentary/engine/reference_lab/transition_atlas.json",
+      "category": "historical_reference_observation_not_new_agent_viewing",
+      "bytes": 44191,
+      "sha256": "ee23f42d0c7d34098c95100a5d9217707d57ac3b3b30e3baf93b13ae7f724f04"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/blender_headless_libs.json",
+      "category": "shared_engine_or_tool",
+      "bytes": 1587,
+      "sha256": "5de1a6cecb470c5a2275c973a7957ff2fb5869e57c8599bc2b8a289bbd5763ab"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/blender_xyz.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 8017,
+      "sha256": "3a0619dbf787e8f886ccf43f8add7793889396fd663ad94fa39a7c8260baa374"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/encoded_review.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2913,
+      "sha256": "e69a8102c9e4283cdf58a0779d039b88de77ed4854ba643e2df048938326f4dc"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/film_runtime.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3197,
+      "sha256": "4402f16cf40751b03fa1954fe3ca7ff0a939df48404f906c77d9681b16318f4b"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/geo_route.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3626,
+      "sha256": "23aaa093d0419ccecb16797ff9d4dbe1437d286dd61d5b858d2005897657f710"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/horizon_motion.mjs",
+      "category": "shared_engine_or_tool",
+      "bytes": 1533,
+      "sha256": "c263e54aec7c1ce4b7f13031c2dcbe0bf38ff3c3cc7fe0a35b5c507d7f515301"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/long_score.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4088,
+      "sha256": "5d359a5f36bc7ad5bc939358a4673a14de285617f7490b081251afc3f7547085"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/photo_depth.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4360,
+      "sha256": "6cedee2c9e4d90964883137f72c957fb5214b6a2411d0a4b2c3a57cb0c05d6aa"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/scene.html",
+      "category": "shared_engine_or_tool",
+      "bytes": 9747,
+      "sha256": "1666c1fbd130fc0c619e80011dfe47de67c0769477709a2b9f5de676702cd421"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/score_runtime.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4038,
+      "sha256": "2d8a60c042eb86cfe14d405a7f3ed171f990ad2b4aa700e428ec7f38121124bc"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/sequence_runtime.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 6115,
+      "sha256": "32d7faf713915e2a9bcc8686eae171adb3f22d8c030966ca10404a2311a96c6f"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/sequence_segments.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4368,
+      "sha256": "27bfc52a1a30880fa1d8893c1435e39811bc97aee8d51f0fd68c3c1365ee8413"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/speech_edit.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2896,
+      "sha256": "408cc287aaef095a04874f46d5adc212af3e66d64ff73d941ff3b35199d7636c"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/speech_pacing.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3573,
+      "sha256": "64e59d6bdd3fad3f366f4d6f77a895fad2cbd3878ab621ad2b22198bac1df2eb"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/traffic_motion.mjs",
+      "category": "shared_engine_or_tool",
+      "bytes": 1944,
+      "sha256": "61aff25f4093ce6f4bf9ed79d1b53b0b558c331a448b1dccf6bdcdbb32f74750"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/webgl_dependencies.json",
+      "category": "shared_engine_or_tool",
+      "bytes": 472,
+      "sha256": "64104d839da152073813f7e1fdfb31fd8470e6ef010815e518807c58fffa19f0"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/webgl_stage.mjs",
+      "category": "shared_engine_or_tool",
+      "bytes": 5472,
+      "sha256": "e2ac5ec6b0e27d4d557f42c5374261d7d1676dc7c3d714f2b28f6bbcfaf635d5"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/xyz_scene.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4602,
+      "sha256": "72c81db5696e4c4a76b917fb4fb83fa9e994087f9072c87a77191d0627ea4d22"
+    },
+    {
+      "path": "youtube_documentary/engine/src/camera.mjs",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 1518,
+      "sha256": "e10a847974f2e4774bef09458cf677c8120c70bba43f15e84a6f11d8718114a6"
+    },
+    {
+      "path": "youtube_documentary/engine/src/qc.mjs",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 2673,
+      "sha256": "8c5c51a6bb8dbd0c617d37e03c891aadaec00794dd0f91a86ab96759675958db"
+    },
+    {
+      "path": "youtube_documentary/engine/src/scene-model.mjs",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 1792,
+      "sha256": "1f7ea37e4903206c619e69aac95783d707553fdaf49996e1fa6c5c2f3d36af66"
+    },
+    {
+      "path": "youtube_documentary/engine/src/typography.mjs",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 2442,
+      "sha256": "c1fbed79d1315bdfb3797e478f001f5785b02623a3c935db268379282d6cede1"
+    },
+    {
+      "path": "youtube_documentary/engine/style_system_cold_start_tests.log",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 412,
+      "sha256": "f7b594ae92aa23d3633862be5db35c989f5f785c421a754ac36935553ed681b3"
+    },
+    {
+      "path": "youtube_documentary/engine/style_system_tests.log",
+      "category": "supporting_engine_contract_or_reference_current_rules_take_precedence",
+      "bytes": 549,
+      "sha256": "624510dc18a7541cc67eeff6f0f65986439b998ffc8d911426450fe698b9a23d"
+    },
+    {
+      "path": "youtube_documentary/engine/voices/approved_voice03/README_AR.md",
+      "category": "approved_voice_reference_not_executable_model",
+      "bytes": 2038,
+      "sha256": "fecfa76a6f945b49b4f39b52a2b62e1993398d54861f9d7a249923c3baa99a90"
+    },
+    {
+      "path": "youtube_documentary/engine/voices/approved_voice03/VOICE_PROFILE.json",
+      "category": "approved_voice_reference_not_executable_model",
+      "bytes": 2253,
+      "sha256": "f61612ca9b5314c62a1da66f68f53434e8968990dc4bce0134f5d007937d1eb4"
+    },
+    {
+      "path": "youtube_documentary/engine/voices/approved_voice03/approved_reference.mp3",
+      "category": "approved_voice_reference_not_executable_model",
+      "bytes": 501740,
+      "sha256": "267bfaef4db50c6144ca4ed69cb9d320148d8574e7ca57d05c364d4fcfff9f0e"
+    },
+    {
+      "path": "youtube_documentary/engine/voices/approved_voice03/approved_reference.wav",
+      "category": "approved_voice_reference_not_executable_model",
+      "bytes": 1839182,
+      "sha256": "3b1d19016ec5387f0b7c85147237a74c1e15fc3e2fbbf10a3c6974921a5c60e1"
+    },
+    {
+      "path": "youtube_documentary/engine/voices/approved_voice03/delivery.json",
+      "category": "approved_voice_reference_not_executable_model",
+      "bytes": 485,
+      "sha256": "1a8217994e3aa22cb6a21b11be6c6044937d542a7ff10e261a233d689cf7b7ec"
+    },
+    {
+      "path": "youtube_documentary/storyboard_board_camera_v1.svg",
+      "category": "historical_guide_or_supporting_project_file_not_current_policy",
+      "bytes": 9322,
+      "sha256": "96ed3848439a94291aec91d906b1d358463e450a989f47f67b4e6bbda382c4e3"
+    },
+    {
+      "path": "youtube_documentary/tools/archive_research_fetch.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2628,
+      "sha256": "60d1397c08430d94c077c0817de78383a049187f10cd68d00585bc0ba3528629"
+    },
+    {
+      "path": "youtube_documentary/tools/bootstrap_bpy_headless.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1839,
+      "sha256": "daccb17a4452fea4c69e7d04564054b1101f56dbdb29d27027d712d3d959b129"
+    },
+    {
+      "path": "youtube_documentary/tools/build_scene.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 7630,
+      "sha256": "134df201fe54e526b52ded6375771cbc42f12174e933839909603181dd97f4ab"
+    },
+    {
+      "path": "youtube_documentary/tools/cocktail.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 13266,
+      "sha256": "398d22990b88ba1e44c36215075a6662a2ef30968f816b68595e174b3f26079a"
+    },
+    {
+      "path": "youtube_documentary/tools/director.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 44454,
+      "sha256": "8b16802eaabb739273b55dc05bd768b5d4232cba7a6b7f30951463309dc8f132"
+    },
+    {
+      "path": "youtube_documentary/tools/documentary_materials.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 5303,
+      "sha256": "4db9ceae0c15fd0ae03ffabb50326c0335dd006f68a60cad2b72df321f1d4516"
+    },
+    {
+      "path": "youtube_documentary/tools/engines/board_engine.html",
+      "category": "shared_engine_or_tool",
+      "bytes": 23432,
+      "sha256": "7dba908cc5ca0fc2e854f0431c6aa4bcf5d288bd4d9e27372460a7fdd0835cb5"
+    },
+    {
+      "path": "youtube_documentary/tools/engines/geo_engine.html",
+      "category": "shared_engine_or_tool",
+      "bytes": 13321,
+      "sha256": "43e2a1a362a0a62281c64b97cc87ed70ce52b03adc3632fb08d22e503cfb75cd"
+    },
+    {
+      "path": "youtube_documentary/tools/engines/story_engine.html",
+      "category": "shared_engine_or_tool",
+      "bytes": 9545,
+      "sha256": "a2fe8ea2ede9ec4dbbcc06eb613be9ede42ce896301ccbc32b91bbd499e3cec6"
+    },
+    {
+      "path": "youtube_documentary/tools/escobar_hook30.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 19045,
+      "sha256": "19645525a2dc4b9b2d0cc437f67568965fe0287634f9b8409ad0973d7e394dfc"
+    },
+    {
+      "path": "youtube_documentary/tools/escobar_hook30_finish.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3304,
+      "sha256": "6338bc230dba85c9b2d61032d7297f66b5b5a4304a5fa0dd576bc36947e1648c"
+    },
+    {
+      "path": "youtube_documentary/tools/escobar_hook30_models.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1134,
+      "sha256": "5e7711056986a0d73b784190ab93704424ddca25616a8a34182549ba212df067"
+    },
+    {
+      "path": "youtube_documentary/tools/escobar_hook30_qa.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2198,
+      "sha256": "f1183c7eb104fa482d4849ded43e8419eb2f39d8adf0a77926365af94cb1be18"
+    },
+    {
+      "path": "youtube_documentary/tools/escobar_hook30_revision2.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4381,
+      "sha256": "d74badec68ed27680cd55088ce9b5c3a4f0dbe2af11cd087f1e95136fd3d9149"
+    },
+    {
+      "path": "youtube_documentary/tools/escobar_hook30_revision2_finish.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 11104,
+      "sha256": "434a15c2b3c930fa16598a6b092445fb372a2262cca7dacfdb483ed87b184a70"
+    },
+    {
+      "path": "youtube_documentary/tools/escobar_hook30_revision2_qa.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3758,
+      "sha256": "8301e4407464259170b478254587579da690b577fa9c932290fd1435ef6bf7f0"
+    },
+    {
+      "path": "youtube_documentary/tools/escobar_intro3.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 13214,
+      "sha256": "969caf765e61c0488f67bfa11a38e8712156e6c50c895233d6a5b1632b0b3df8"
+    },
+    {
+      "path": "youtube_documentary/tools/escobar_intro4.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 16859,
+      "sha256": "711694eb07263ca74c3d9db8e462eed9650bd2a6b014a55901740b5f9d2af04a"
+    },
+    {
+      "path": "youtube_documentary/tools/handoff.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 10351,
+      "sha256": "2f0c7ca9d228fbddec34f28a72f61a27f86da06424a9540be2f33ac0386bc620"
+    },
+    {
+      "path": "youtube_documentary/tools/install_webgl_runtime.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1023,
+      "sha256": "31694414b7c6e396e6decc484898332e0576ee61d869b750928f4d2840dbc458"
+    },
+    {
+      "path": "youtube_documentary/tools/join_locked_prefix.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3828,
+      "sha256": "6910f273b72622ec5ead20a97a9f122a79a2f2066c546c99b15e7390f36ea494"
+    },
+    {
+      "path": "youtube_documentary/tools/mix_webgl_profile.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2264,
+      "sha256": "b0d4fba298532659def7fce34a28a44b03f349dac115cd09a5808ce854009969"
+    },
+    {
+      "path": "youtube_documentary/tools/package_webgl_profile.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4707,
+      "sha256": "55d705f54ba890034fbd1c056ce4b40882e7e07f957b1301bfb68a8b05cc4c57"
+    },
+    {
+      "path": "youtube_documentary/tools/part_study.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 13463,
+      "sha256": "22c85a55ec52cbcec8ec5812f80b257197da85d58d2516531f6435f01eb660ee"
+    },
+    {
+      "path": "youtube_documentary/tools/prep_hero_asset.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2999,
+      "sha256": "b59e67e70432bf22da81329dad9fc31a60364c9896aa932af85c30b75c16d6f0"
+    },
+    {
+      "path": "youtube_documentary/tools/production_policy.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3807,
+      "sha256": "61e5a318284b1f364536db055e9ff2a4bd1b5432362121ad8d40a4650221dea0"
+    },
+    {
+      "path": "youtube_documentary/tools/qa_frame.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4478,
+      "sha256": "78f1cc2775b3641bc8bdcf3181d662356eae02ead923178daec153bc9be9606c"
+    },
+    {
+      "path": "youtube_documentary/tools/reference_ingest.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 5482,
+      "sha256": "c22a66f358483faacaa083405b71b1d650b2d990665e77df965e674faff4f6b0"
+    },
+    {
+      "path": "youtube_documentary/tools/reference_motion.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 44236,
+      "sha256": "f6884d394854631ddd64a704f4a31f63a8e733ca3ae0ceb21df5a9100d267929"
+    },
+    {
+      "path": "youtube_documentary/tools/render_check.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 726,
+      "sha256": "aa1bed3fc31b91a2a7d08c9300e33cce2c5cc04c0fa7b2b1121cb19eef83e028"
+    },
+    {
+      "path": "youtube_documentary/tools/render_engine.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3065,
+      "sha256": "a60e4a233bce54c1939becdbc12b89f4c37f113dcdcc740e63e18fa1114324e4"
+    },
+    {
+      "path": "youtube_documentary/tools/render_film_profile.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3094,
+      "sha256": "42eca96f1f94cf39ab351e68e52a37af7818fba34a0b6633e8d83a92532cbe77"
+    },
+    {
+      "path": "youtube_documentary/tools/render_proto.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1540,
+      "sha256": "26234ff6f351495f610c4835668190c3b70e7f0484e9679c07986834f3fb35a5"
+    },
+    {
+      "path": "youtube_documentary/tools/render_webgl_profile.mjs",
+      "category": "shared_engine_or_tool",
+      "bytes": 7915,
+      "sha256": "5f72b52e11109471a5ff71646298e9c40a6cd79603a45d812b19101df37db90c"
+    },
+    {
+      "path": "youtube_documentary/tools/replace_picture_frames.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1676,
+      "sha256": "d6af4bd05ea6e33b759ebbe671541d45a171dbf6bc769ad463f4b6a304c1af56"
+    },
+    {
+      "path": "youtube_documentary/tools/requirements_ww2_v3.txt",
+      "category": "shared_engine_or_tool",
+      "bytes": 203,
+      "sha256": "1741c99e0026385c9ebb454ec5d8830bd79f96d43ad71033adfd38d17b901f02"
+    },
+    {
+      "path": "youtube_documentary/tools/review_escobar_intro3.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2480,
+      "sha256": "dac8caf0dee4404bc8c10f723f3f1c0bb59484b4b0edf7e906ec7f2c4ad3f42c"
+    },
+    {
+      "path": "youtube_documentary/tools/review_escobar_intro4.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 748,
+      "sha256": "00981c5b357d64cc66ba9cb657c68a782b08e56168c5b2d35b7b9ba6cd8f1599"
+    },
+    {
+      "path": "youtube_documentary/tools/review_film_profile.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2618,
+      "sha256": "b0a126465182870bea81999551a4d903daaa1ea750f266afe32739bd9c96bdda"
+    },
+    {
+      "path": "youtube_documentary/tools/review_webgl_profile.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1226,
+      "sha256": "9bbfd012e1e49f548bf4a14008b2ddaa51c8d25b876cadecaad759a054c69937"
+    },
+    {
+      "path": "youtube_documentary/tools/setup_env.sh",
+      "category": "shared_engine_or_tool",
+      "bytes": 523,
+      "sha256": "4292c42128b68b466c968cfaed37e8ba2f68901d38dae5dc788aed3d33586c01"
+    },
+    {
+      "path": "youtube_documentary/tools/shape_narration.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1509,
+      "sha256": "3715179ef29af64a13d4b76162312c4942816dd8427e4908b5a56f02e7bf6adf"
+    },
+    {
+      "path": "youtube_documentary/tools/sheet_combo.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4689,
+      "sha256": "c0437d282b92718300349c7110a9ede00c1a532407cc895b9f4966c1f31d675f"
+    },
+    {
+      "path": "youtube_documentary/tools/sheet_slice.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4433,
+      "sha256": "cb4b4d3a3634f5134eeaca259d2483b6b55842000dcbd9e36374d14c297bbc34"
+    },
+    {
+      "path": "youtube_documentary/tools/spot_check.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 784,
+      "sha256": "0d0632218b361b5a6759a4931b7c1491dae149b364ad17597e64301c83787432"
+    },
+    {
+      "path": "youtube_documentary/tools/study_audit.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 26785,
+      "sha256": "f320a47aac5b1467e35c88d3a988201e67c3aa4a958d9a8c7f40e2efffbb6b7c"
+    },
+    {
+      "path": "youtube_documentary/tools/style_contract.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 9182,
+      "sha256": "23a227b26bff5bf844179183fa9d3d33b1658073335c362ceae5ac4ef05950ea"
+    },
+    {
+      "path": "youtube_documentary/tools/synth_sfx.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4653,
+      "sha256": "f7ea556cfca24e4f78edbefd0eb3cbc02138971936a8404e222b4464f750d6e9"
+    },
+    {
+      "path": "youtube_documentary/tools/synth_sfx_cine.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 10511,
+      "sha256": "de29d8aac656dbd18ae49f43c15d0731feb59a22038be343c91f0a5405f4efcb"
+    },
+    {
+      "path": "youtube_documentary/tools/synth_sfx_demo2.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4310,
+      "sha256": "6dd17577d70e875d83a37d6a519abcc0b1e9d72566569485b6c3a2bfadb7c10f"
+    },
+    {
+      "path": "youtube_documentary/tools/synth_sfx_v3.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 7557,
+      "sha256": "9625749b494772e227ab8a1e061a997cab15500b25c7ba0d3017d5ef40447151"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_documentary_materials.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 5302,
+      "sha256": "8f58865804bb1726ab330746f32a98145582dc4d84227d40df4daf8979f71ad4"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_escobar_full_profile.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4250,
+      "sha256": "ed73e5e60720a53eb0998114055286d410de34bdc8c251e04c680a42f272deb2"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_escobar_hook30.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3894,
+      "sha256": "de877f5063821adab39dca87b5572f10aa1b638495fff1a23d5c96fd5af88985"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_escobar_revision2.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2547,
+      "sha256": "443de6b393ad52818205e657b511e2c92dada09a18e7d7ea24b8a87fc424a7fc"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_horizon_motion.mjs",
+      "category": "shared_engine_or_tool",
+      "bytes": 948,
+      "sha256": "bc2b08b74f4191d2a92f41e9294df5deb646ed1acd3a053fa1ec8748a63bb8b4"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_photo_depth_intro3.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 2934,
+      "sha256": "eef6954e53d9e42da86079f2093dcd3f57381fbbe504b54d9d6b6ed146bdd949"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_sequence_intro5.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3822,
+      "sha256": "498247e622438c6c1391a8f4f1add4fe4da6180fe37c45eafe26265780882f27"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_speech_edit_intro4.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 4378,
+      "sha256": "77ded20d217916f5d0b05f146b530f1a355e1a7338ebbc8f304784ad65c6d5d6"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_speech_pacing.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1839,
+      "sha256": "059d27acdd1193d3de9bcfdf37090a5e740745faaf4b0f093599ed85d9331b52"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_style_contract.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 9497,
+      "sha256": "27adec5306fd31f43207b253dc694e6a3672adc2d9fcf4c0b3ec6b972f49d2d1"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_traffic_motion.mjs",
+      "category": "shared_engine_or_tool",
+      "bytes": 1350,
+      "sha256": "41c62f7d4eeab3faae2813378415690b998f58d487104816aa25912ac8852e42"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_ww2demo_v3.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1830,
+      "sha256": "bbeba8afbcf889084049c81df5ebc00b45f8117f4a11975c82f6e3b84b8b3f60"
+    },
+    {
+      "path": "youtube_documentary/tools/tests/test_ww2demo_v4_depth.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 3689,
+      "sha256": "bad0b3790c5ac0a6869d489e4b68871fb746e433067aa3d7ef43ac4161921e88"
+    },
+    {
+      "path": "youtube_documentary/tools/transcribe_archive_vosk.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 1470,
+      "sha256": "1e4f3c152d8a063eec92d418bab309061e1acd8701f0bf5b709b7fd12648e725"
+    },
+    {
+      "path": "youtube_documentary/tools/transition_atlas.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 11899,
+      "sha256": "98ec180c8729b91b3a0f33f084437784817227dffe8c2b0a4f9a38a3b7a2aa61"
+    },
+    {
+      "path": "youtube_documentary/tools/ww2demo.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 36211,
+      "sha256": "1aef68057a22becebf404f600c3fc9548687d516e591836670630c4e25bd3163"
+    },
+    {
+      "path": "youtube_documentary/tools/ww2demo_v3.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 14498,
+      "sha256": "38bd9cb5c3b4a6b8a4e410b06d57d34d7c7a7fd8950e0ea6e17141508d17d115"
+    },
+    {
+      "path": "youtube_documentary/tools/ww2demo_v4_depth.py",
+      "category": "shared_engine_or_tool",
+      "bytes": 11455,
+      "sha256": "097a81b77d976f4f98aa88a8bbd169c86970307f0cfe0cc28af66b64190b90bc"
+    }
+  ]
+}

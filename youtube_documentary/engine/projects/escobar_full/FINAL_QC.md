@@ -1,3 +1,5 @@
+> **Later approval,2026-10-16:** The user praised the full film and named its style «وثائقي بحت». Pending-approval entries below describe the original encoding-review moment, not current approval status. No new listening/review or rights clearance is implied.
+
 # Final encoded review — Escobar
 
 **Artifact:** `Escobar_Full_Film_Review.mp4` · 96,129,645bytes · SHA256 `7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14`.

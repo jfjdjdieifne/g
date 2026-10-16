@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-16",
+  "video_sha256": "959ebb08c76d0c0003742c537413411a472568f8462f6f86f3bc8e07404693ae",
+  "visual_inspection_status": "inspected",
+  "method": "Assistant actually opened and interpreted every named final-encode contact sheet via image tools, plus eight native key frames. Not a real-time playback or every-frame visual inspection.",
+  "opened_sheets": [
+    "half_sheet_1.jpg",
+    "half_sheet_2.jpg",
+    "half_sheet_3.jpg",
+    "half_sheet_4.jpg",
+    "half_sheet_5.jpg",
+    "half_sheet_6.jpg",
+    "half_sheet_7.jpg",
+    "half_sheet_8.jpg",
+    "half_sheet_9.jpg",
+    "half_sheet_10.jpg",
+    "half_sheet_11.jpg",
+    "half_sheet_12.jpg",
+    "half_sheet_13.jpg",
+    "join_sheet_1.jpg",
+    "join_sheet_2.jpg",
+    "join_sheet_3.jpg",
+    "join_sheet_4.jpg",
+    "motion_sheet_1.jpg",
+    "motion_sheet_2.jpg",
+    "motion_sheet_3.jpg",
+    "motion_sheet_4.jpg",
+    "motion_sheet_5.jpg",
+    "motion_sheet_6.jpg",
+    "motion_sheet_7.jpg",
+    "motion_sheet_8.jpg",
+    "motion_sheet_9.jpg",
+    "motion_sheet_10.jpg",
+    "motion_sheet_11.jpg",
+    "motion_sheet_12.jpg"
+  ],
+  "sheet_count": 29,
+  "opened_native_frames": [
+    "native_0000.png",
+    "native_0864.png",
+    "native_1512.png",
+    "native_1560.png",
+    "native_1572.png",
+    "native_1992.png",
+    "native_2376.png",
+    "native_2832.png"
+  ],
+  "automatic_sample_counts": {
+    "half": 250,
+    "join": 57,
+    "motion": 237
+  },
+  "additional_patch_boundary_frames": [
+    1549,
+    1550,
+    1551,
+    1659,
+    1660,
+    1661
+  ],
+  "all_half_second_samples_inspected": true,
+  "finer_join_and_motion_samples_inspected": true,
+  "observations": [
+    {
+      "seconds": [
+        0,
+        14.7
+      ],
+      "finding": "Opening astronaut crosses a quiet dark visual boundary without impact; outward message does not reach ship. Optical image changes to explicitly labelled schematic at frame353; intentional explanatory cut, not a solid physical shell."
+    },
+    {
+      "seconds": [
+        14.7,
+        33.8
+      ],
+      "finding": "Boundary, distant friend, quiet supermassive setup remain spatially connected; approach and selective words remain visible."
+    },
+    {
+      "seconds": [
+        33.8,
+        47.4
+      ],
+      "finding": "Small-hole astronaut remains wholly outside the small horizon while stretching; large-hole comparison shows gentler horizon crossing. Native864 plus continuous half/motion samples checked."
+    },
+    {
+      "seconds": [
+        47.4,
+        62.2
+      ],
+      "finding": "Illustrative received flashes separate, image reddens and fades instead of remaining a clear frozen statue; qualitative arrival model, not calibrated timing."
+    },
+    {
+      "seconds": [
+        62.2,
+        73.2
+      ],
+      "finding": "Local watch hands advance. Corrected YOU KEEP MOVING stays on dark right throughout close-to-wide move, including native1560/1572 and motion_sheet6. Both title-patch boundary triplets checked in additional join_sheet4; no inserted-frame discontinuity found."
+    },
+    {
+      "seconds": [
+        73.2,
+        91.5
+      ],
+      "finding": "Animated radial light paths and inward future fans distinguish outside/inside; native1992 labels readable. This is an explanatory nonrotating coordinate model, not a universal rotating-hole result."
+    },
+    {
+      "seconds": [
+        91.5,
+        113.3
+      ],
+      "finding": "Cutaway keeps whole body inside boundary, increases deformation, anchors opposite tidal vectors to feet/head. Native2376 inspected. Theory-limit text and fading explanatory actor do not show a fabricated portal or filmed interior."
+    },
+    {
+      "seconds": [
+        113.3,
+        124.5833333333
+      ],
+      "finding": "Returns to no-warning horizon motif; final selective words readable, camera pulls back, deliberate dark-navy fade completes after narration."
+    }
+  ],
+  "manual_listening_claimed": false,
+  "audio_evidence": "Full decode, actual encoded loudness, original mix audit and fallible final ASR; no ear-listening claim.",
+  "user_approval": false,
+  "state": "awaiting_user_review",
+  "limits": [
+    "Stylized authored geometry, seeded starfield, illustrative lensing/scale/timing; not archival imagery.",
+    "Inspection is an internal creative/legibility check, not user approval or predicted audience performance."
+  ]
+}

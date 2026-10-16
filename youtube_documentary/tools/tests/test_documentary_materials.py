@@ -80,6 +80,9 @@ class MaterialDeclarations(unittest.TestCase):
         args=(director.load_json(director.TECH_DB)['cards'],director.load_json(director.SOUND_DB),director.vocab_names())
         self.assertFalse(director.plan(script,*args)['render_ready'])
         script['documentary_material_plan']=plan()
+        self.assertFalse(director.plan(script,*args)['render_ready'])  # A style selection is required too.
+        script['style_contract']={'schema':'film-style-contract/1','style_id':'pure_documentary','selection_evidence':'Test fixture instruction only'}
+        script['documentary_material_plan']['beats'][0]['visual_driver']='archive'
         report=director.plan(script,*args)
         self.assertTrue(report['render_ready'])
         self.assertIn('not actual viewing',report['readiness_scope'])

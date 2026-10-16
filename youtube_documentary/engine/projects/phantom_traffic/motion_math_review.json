@@ -1,0 +1,10 @@
+{
+  "method": "Authored source math at120Hz 0–100sec, NOT empirical validation.",
+  "minimumCenterGap": 5.729440443660906,
+  "minimumBumperGap": 1.3294404436609053,
+  "minimumCarSpeed": 0.46000457336091927,
+  "maxAbsoluteAcceleration": 4.041448769108769,
+  "bufferMinimumBumperGap": 4.897089990840632,
+  "backwardWaveSpeed": -5.140000000000001,
+  "modelWarning": "Illustrative geometry/timing, not a calibrated traffic solver."
+}

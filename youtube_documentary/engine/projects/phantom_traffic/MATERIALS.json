@@ -1,0 +1,145 @@
+{
+  "schema": "documentary-materials/1",
+  "assets": [
+    {
+      "id": "road_world",
+      "kind": "original_model",
+      "description": "Original procedurally authored PBR ring/open-road studio world and detailed generic cars. No footage, no photographed event, no brand assets.",
+      "source": "scene.mjs and shared runtime/traffic_motion.mjs",
+      "disclosure": "EXPLANATORY ANIMATION; spoken simplified-animation/not-prediction notice.",
+      "rights_status": "Original geometry, materials, analytic motion and score. DejaVu font license included in recovery."
+    },
+    {
+      "id": "causal_marks",
+      "kind": "graphic",
+      "description": "Ground-projected wash and opposite-direction 3D arrows distinguish moving cars from moving pattern; available following space bracket."
+    },
+    {
+      "id": "words",
+      "kind": "typography",
+      "description": "Selective English mechanism words, no running transcript; no more than 10% text push (text held fixed)."
+    }
+  ],
+  "beats": [
+    {
+      "id": "01_hook",
+      "in": 0,
+      "out": 11.836018965517244,
+      "function": "The absence of a fixed obstruction does not mean the jam was imaginary.",
+      "material_ids": [
+        "road_world",
+        "causal_marks",
+        "words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The mechanism requires authored spatial/temporal inspection rather than unrelated traffic footage.",
+      "why_not_real": "Pure-explainer explicitly selected. Not a documentary record or reconstructed specific experiment.",
+      "scene_design": {
+        "viewer_learns": "The absence of a fixed obstruction does not mean the jam was imaginary.",
+        "spatial_relationship": "Close at car level, retreat to reveal the same circuit; no collision or roadworks.",
+        "camera_motivation": "Camera backs away to answer where the obstruction is.",
+        "state_change": "Traffic moves through the slow sector.",
+        "handoff": "Shift to gold car as causal example.",
+        "text_policy": "Selective fixed-position English concept text only; captions OFF. No text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "02_delay",
+      "in": 11.836018965517244,
+      "out": 24.343377113929687,
+      "function": "A small brake can be amplified by later responses.",
+      "material_ids": [
+        "road_world",
+        "causal_marks",
+        "words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The mechanism requires authored spatial/temporal inspection rather than unrelated traffic footage.",
+      "why_not_real": "Pure-explainer explicitly selected. Not a documentary record or reconstructed specific experiment.",
+      "scene_design": {
+        "viewer_learns": "A small brake can be amplified by later responses.",
+        "spatial_relationship": "Three consecutive cars on one continuous road, distinguishable brake lamps.",
+        "camera_motivation": "Close tracking first gold, then the actual follower, then next follower.",
+        "state_change": "Staggered braking of increasing magnitude, then evolving wave.",
+        "handoff": "Pull out when one reaction becomes a collective queue.",
+        "text_policy": "Selective fixed-position English concept text only; captions OFF. No text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "03_wave",
+      "in": 24.343377113929687,
+      "out": 44.09617216981132,
+      "function": "The pattern propagates backward while individual cars go forward.",
+      "material_ids": [
+        "road_world",
+        "causal_marks",
+        "words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The mechanism requires authored spatial/temporal inspection rather than unrelated traffic footage.",
+      "why_not_real": "Pure-explainer explicitly selected. Not a documentary record or reconstructed specific experiment.",
+      "scene_design": {
+        "viewer_learns": "The pattern propagates backward while individual cars go forward.",
+        "spatial_relationship": "Persistent circular road and gold identity; outer traffic arrow versus inner wave arrow.",
+        "camera_motivation": "Wide camera required to distinguish whole pattern from its individual members.",
+        "state_change": "New cars enter low-speed region while former members leave.",
+        "handoff": "Spoken disclosure; cut to an open-road version of the same mechanism.",
+        "text_policy": "Selective fixed-position English concept text only; captions OFF. No text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "04_buffer",
+      "in": 44.09617216981132,
+      "out": 60.44431598706984,
+      "function": "Following room can absorb a small speed change; it is not a cure for all congestion.",
+      "material_ids": [
+        "road_world",
+        "causal_marks",
+        "words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The mechanism requires authored spatial/temporal inspection rather than unrelated traffic footage.",
+      "why_not_real": "Pure-explainer explicitly selected. Not a documentary record or reconstructed specific experiment.",
+      "scene_design": {
+        "viewer_learns": "Following room can absorb a small speed change; it is not a cure for all congestion.",
+        "spatial_relationship": "Actual room between gold car and leader grows on the same styled road; bracket spans actual available space.",
+        "camera_motivation": "Track gold and its leader together so the room and gentler reaction are visible.",
+        "state_change": "Leader slows, gold responds more gently, follower avoids the sharp cascade.",
+        "handoff": "Caveat preserves other causes; return to original pattern for conclusion.",
+        "text_policy": "Selective fixed-position English concept text only; captions OFF. No text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "05_return",
+      "in": 60.44431598706984,
+      "out": 69.125,
+      "function": "You may have passed through a pattern, not missed an accident.",
+      "material_ids": [
+        "road_world",
+        "causal_marks",
+        "words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The mechanism requires authored spatial/temporal inspection rather than unrelated traffic footage.",
+      "why_not_real": "Pure-explainer explicitly selected. Not a documentary record or reconstructed specific experiment.",
+      "scene_design": {
+        "viewer_learns": "You may have passed through a pattern, not missed an accident.",
+        "spatial_relationship": "Return to identical ring world and gold identity.",
+        "camera_motivation": "Move from an escaping car back to the pattern it has passed through.",
+        "state_change": "Gold moves ahead while slow patch continues backward.",
+        "handoff": "Concluding words and short fade, no subscription slate.",
+        "text_policy": "Selective fixed-position English concept text only; captions OFF. No text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    }
+  ]
+}

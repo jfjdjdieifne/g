@@ -1,3 +1,5 @@
+> **Supporting technical/reference document.** [Current entry](../../START_HERE.md); current user rules and approval/state registries in `../../studio/` take precedence. This document is not the current assignment or a new approval.
+
 # نموذج الترابط — مشاهد **مو** منفصلة + «لقطة وحدة تغطي عدة مشاهد»
 
 > القاعدة الذهبية: المشهد ما بيعيش لحاله. كل مشهد إله **خيط** بيمدّ للّي قبلو واللّي بعدو،

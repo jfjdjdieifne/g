@@ -1,0 +1,530 @@
+{
+  "method": "Automatic Vosk small-en ASR; fallible, NOT independently verified quotations or listening",
+  "source": "/home/user/build/black_hole/voice/02_raw.wav",
+  "segments": [
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 0.6,
+          "start": 0.15,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 1.38,
+          "start": 0.75,
+          "word": "choice"
+        },
+        {
+          "conf": 1.0,
+          "end": 2.16,
+          "start": 1.5,
+          "word": "matters"
+        }
+      ],
+      "text": "that choice matters"
+    },
+    {
+      "result": [
+        {
+          "conf": 1.0,
+          "end": 3.0,
+          "start": 2.94,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.39,
+          "start": 3.0,
+          "word": "small"
+        },
+        {
+          "conf": 1.0,
+          "end": 3.72,
+          "start": 3.39,
+          "word": "black"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.08,
+          "start": 3.72,
+          "word": "hole"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.26,
+          "start": 4.08,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.59,
+          "start": 4.26,
+          "word": "tear"
+        },
+        {
+          "conf": 1.0,
+          "end": 4.71,
+          "start": 4.59,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.1,
+          "start": 4.71,
+          "word": "apart"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.4,
+          "start": 5.1,
+          "word": "before"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.52,
+          "start": 5.4,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 5.79,
+          "start": 5.52,
+          "word": "even"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.3,
+          "start": 5.79,
+          "word": "reaches"
+        },
+        {
+          "conf": 1.0,
+          "end": 6.78,
+          "start": 6.3,
+          "word": "edge"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.01,
+          "start": 7.53,
+          "word": "gravity"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.4,
+          "start": 8.01,
+          "word": "pulls"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.76,
+          "start": 8.4,
+          "word": "harder"
+        },
+        {
+          "conf": 1.0,
+          "end": 8.88,
+          "start": 8.76,
+          "word": "on"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.0,
+          "start": 8.88,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.36114,
+          "start": 9.0,
+          "word": "feet"
+        },
+        {
+          "conf": 0.846585,
+          "end": 9.48,
+          "start": 9.36114,
+          "word": "than"
+        },
+        {
+          "conf": 1.0,
+          "end": 9.6,
+          "start": 9.48,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.02,
+          "start": 9.6,
+          "word": "head"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.83,
+          "start": 10.32,
+          "word": "stretching"
+        },
+        {
+          "conf": 1.0,
+          "end": 10.98,
+          "start": 10.83,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 11.82,
+          "start": 10.98,
+          "word": "lengthwise"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.69,
+          "start": 12.27,
+          "word": "around"
+        },
+        {
+          "conf": 1.0,
+          "end": 12.72,
+          "start": 12.69,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.5,
+          "start": 12.72,
+          "word": "supermassive"
+        },
+        {
+          "conf": 1.0,
+          "end": 13.8,
+          "start": 13.5,
+          "word": "black"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.22,
+          "start": 13.8,
+          "word": "hole"
+        },
+        {
+          "conf": 1.0,
+          "end": 14.88,
+          "start": 14.61,
+          "word": "that"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.51,
+          "start": 14.88,
+          "word": "difference"
+        },
+        {
+          "conf": 1.0,
+          "end": 15.93,
+          "start": 15.75,
+          "word": "can"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.05,
+          "start": 15.93,
+          "word": "be"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.38,
+          "start": 16.05,
+          "word": "much"
+        },
+        {
+          "conf": 1.0,
+          "end": 16.95,
+          "start": 16.38,
+          "word": "gentler"
+        },
+        {
+          "conf": 0.963212,
+          "end": 17.159828,
+          "start": 17.043159,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 17.79,
+          "start": 17.159828,
+          "word": "horizon"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.21,
+          "start": 18.06,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.36,
+          "start": 18.21,
+          "word": "could"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.81,
+          "start": 18.36,
+          "word": "cross"
+        },
+        {
+          "conf": 1.0,
+          "end": 18.9,
+          "start": 18.81,
+          "word": "it"
+        },
+        {
+          "conf": 1.0,
+          "end": 19.47,
+          "start": 18.9,
+          "word": "alive"
+        }
+      ],
+      "text": "a small black hole could tear you apart before you even reaches edge gravity pulls harder on your feet than your head stretching you lengthwise around a supermassive black hole that difference can be much gentler the horizon you could cross it alive"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.592455,
+          "end": 20.37,
+          "start": 20.16,
+          "word": "now"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.76,
+          "start": 20.382226,
+          "word": "watch"
+        },
+        {
+          "conf": 1.0,
+          "end": 20.91,
+          "start": 20.76,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.51,
+          "start": 20.91,
+          "word": "astronauts"
+        },
+        {
+          "conf": 1.0,
+          "end": 21.99,
+          "start": 21.51,
+          "word": "flashing"
+        },
+        {
+          "conf": 1.0,
+          "end": 22.5,
+          "start": 21.99,
+          "word": "beacon"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.07,
+          "start": 22.92,
+          "word": "to"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.16,
+          "start": 23.07,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 23.46,
+          "start": 23.16,
+          "word": "friend"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.21,
+          "start": 23.46,
+          "word": "outside"
+        },
+        {
+          "conf": 1.0,
+          "end": 24.96,
+          "start": 24.81,
+          "word": "the"
+        },
+        {
+          "conf": 0.530421,
+          "end": 25.56,
+          "start": 24.96,
+          "word": "flashes"
+        },
+        {
+          "conf": 0.877218,
+          "end": 25.95,
+          "start": 25.56,
+          "word": "arrive"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.61,
+          "start": 25.95,
+          "word": "farther"
+        },
+        {
+          "conf": 1.0,
+          "end": 26.88,
+          "start": 26.7,
+          "word": "and"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.3,
+          "start": 26.88,
+          "word": "farther"
+        },
+        {
+          "conf": 1.0,
+          "end": 27.9,
+          "start": 27.3,
+          "word": "apart"
+        }
+      ],
+      "text": "now watch the astronauts flashing beacon to the friend outside the flashes arrive farther and farther apart"
+    },
+    {
+      "result": [
+        {
+          "conf": 0.422131,
+          "end": 28.83,
+          "start": 28.62,
+          "word": "they're"
+        },
+        {
+          "conf": 0.737961,
+          "end": 29.16,
+          "start": 28.83,
+          "word": "light"
+        },
+        {
+          "conf": 1.0,
+          "end": 29.64,
+          "start": 29.161302,
+          "word": "shifts"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.18,
+          "start": 29.64,
+          "word": "redder"
+        },
+        {
+          "conf": 1.0,
+          "end": 30.69,
+          "start": 30.54,
+          "word": "and"
+        },
+        {
+          "conf": 0.700656,
+          "end": 31.05,
+          "start": 30.69,
+          "word": "gross"
+        },
+        {
+          "conf": 1.0,
+          "end": 31.59,
+          "start": 31.05,
+          "word": "fainter"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.19,
+          "start": 32.04,
+          "word": "you"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.4,
+          "start": 32.19,
+          "word": "don't"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.79,
+          "start": 32.4,
+          "word": "remain"
+        },
+        {
+          "conf": 1.0,
+          "end": 32.85,
+          "start": 32.79,
+          "word": "a"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.42,
+          "start": 32.85,
+          "word": "clear"
+        },
+        {
+          "conf": 1.0,
+          "end": 33.9,
+          "start": 33.42,
+          "word": "frozen"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.53,
+          "start": 33.9,
+          "word": "statue"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.65,
+          "start": 34.53,
+          "word": "at"
+        },
+        {
+          "conf": 1.0,
+          "end": 34.74,
+          "start": 34.65,
+          "word": "the"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.22,
+          "start": 34.74,
+          "word": "edge"
+        },
+        {
+          "conf": 1.0,
+          "end": 35.73,
+          "start": 35.52,
+          "word": "your"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.18,
+          "start": 35.73,
+          "word": "image"
+        },
+        {
+          "conf": 1.0,
+          "end": 36.63,
+          "start": 36.18,
+          "word": "fades"
+        },
+        {
+          "conf": 1.0,
+          "end": 37.14,
+          "start": 36.63,
+          "word": "out"
+        }
+      ],
+      "text": "they're light shifts redder and gross fainter you don't remain a clear frozen statue at the edge your image fades out"
+    }
+  ]
+}

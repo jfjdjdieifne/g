@@ -29,8 +29,8 @@ class FullFilmTests(unittest.TestCase):
             picture_source=shot['original_source_in']+a['start']-shot['first']/24
             self.assertAlmostEqual(picture_source,original,delta=1/48+.001)
         self.assertFalse(self.plan['archive_witnesses_retimed'])
-    def test_pacing_approval_is_not_film_approval(self):
-        j=json.loads((P/'USER_FEEDBACK.json').read_text());self.assertTrue(j['pace_approved']);self.assertFalse(j['whole_film_work_paused_for_pace_review']);self.assertFalse(j['full_body_user_approved'])
+    def test_later_film_approval_has_explicit_user_evidence(self):
+        j=json.loads((P/'USER_FEEDBACK.json').read_text());self.assertTrue(j['pace_approved']);self.assertFalse(j['whole_film_work_paused_for_pace_review']);self.assertTrue(j['full_body_user_approved']);self.assertEqual(j['full_film_approval']['date'],'2026-10-16');self.assertEqual(j['full_film_approval']['style_id'],'pure_documentary')
     def test_word_partition_keeps_all_detected_words(self):
         for a in json.loads((P/'narration_pacing.json').read_text()).values():
             self.assertEqual([i for r in a['regions']for i in range(r['word_first'],r['word_last_exclusive'])],list(range(a['recognized_words'])))

@@ -1,6 +1,6 @@
 {
   "date_local": "2026-10-15",
-  "status": "delivered_full_film_review_cut_pending_user_feedback",
+  "status": "delivered_user_approved_style_reference",
   "folder_id": "1hYHn40_IawAQkBO1u0zoFPU1h4-6KXYC",
   "film": {
     "name": "Escobar_Full_Film_Review.mp4",
@@ -53,12 +53,14 @@
   "raw_narration_drive_zip": "1NxeTyKABBS35oTOBq__oOyfCjy4wWL5J",
   "sharing_changes_performed": false,
   "manual_listening_claimed": false,
-  "full_body_user_approved": false,
+  "full_body_user_approved": true,
   "publication_rights_cleared": false,
   "handoff": {
     "drive_id": "1j9dmLjqJ7g-Df_vsqsArA3WfDnv6uL4_",
     "bytes": 19341,
     "md5": "98fa9ed6f4f7789590c09b2e3e23ff9e",
     "drive_md5_verified": true
-  }
+  },
+  "approval_date": "2026-10-16",
+  "approval_scope": "Film/style reference approval only; no publication-rights clearance or new automatic viewing/listening."
 }

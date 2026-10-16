@@ -1,0 +1,30 @@
+# EXECUTION RECORD ONLY. Do not run this over the completed render.json.
+# Current render.json and preserved paced FLAC bytes are authoritative.
+from pathlib import Path
+import sys,json,math,hashlib,shutil
+sys.path.insert(0,'youtube_documentary/engine/runtime')
+from speech_pacing import shape
+from film_runtime import FF,decode,wav
+import subprocess,numpy as np
+P=Path('youtube_documentary/engine/projects/phantom_traffic');B=Path('/home/user/build/phantom_traffic');audits={};parts=[];at=.18
+emphasis={'01':[(33,35)],'02':[(13,15),(36,38)],'03':[(12,14),(67,69)]}
+for name in ['01','02','03']:
+ raw=B/'voice'/(name+'_raw.wav');a=json.loads((B/'voice'/(name+'_raw.asr.json')).read_text());words=[w for s in a['segments']for w in s.get('result',[])]
+ out=B/'voice'/(name+'_paced.wav');j=shape(raw,words,out,target_wpm=188.2,emphasis=emphasis[name],pause=.16)
+ subprocess.run([FF,'-v','error','-y','-i',str(out),'-c:a','flac',str(P/'narration'/(name+'.flac'))],check=True)
+ shutil.copy2(B/'voice'/(name+'_raw.asr.json'),P/'narration'/(name+'_raw.asr.json'))
+ j['film_start']=at;audits[name]=j;parts.append({'id':'narration_'+name,'kind':'narration','file':str((P/'narration'/(name+'.flac')).resolve()),'start':at,'end':at+j['output_seconds'],'duration':j['output_seconds']});at+=j['output_seconds']+(.8 if name=='01' else 1.0)
+ def mapword(i):
+  w=words[i]
+  r=next(r for r in j['regions']if r['word_first']<=i<r['word_last_exclusive'])
+  return j['film_start']+r['output_in']+(w['start']-r['source_in'])/(r['source_out']-r['source_in'])*(r['output_out']-r['output_in'])
+ j['word_starts_film']=[mapword(i)for i in range(len(words))]
+ print(name,j['output_seconds'],j['overall_recognized_wpm'])
+D=math.ceil((parts[-1]['end']+2.3)*24)/24
+cues={name:audits[part]['word_starts_film'][word]for name,part,word in [
+ ('wave','01',33),('gold','01',35),('ease','01',39),('behind','01',45),('next','01',55),('queue','01',61),
+ ('strange','02',0),('forward','02',4),('backwards','02',10),('join','02',15),('pattern','02',35),('disclosure','02',41),
+ ('room','03',0),('space','03',8),('buffer','03',12),('cure','03',26),('caveat','03',32),('closing','03',41),('final','03',61)]}
+cfg={'build':str(B),'width':1920,'height':1080,'fps':24,'duration':D,'background':'#101e28','exposure':1.12,'silent_output':'picture.mp4','cues':cues,'audio_parts':parts,'title':'The Jam With No Blockage','model_notice':'Authored explanatory animation, not recorded traffic or a calibrated road prediction.','movie_output':'Phantom_Traffic_Pure_Explainer_Review.mp4'}
+(P/'render.json').write_text(json.dumps(cfg,indent=2));(P/'narration_pacing.json').write_text(json.dumps(audits,indent=2));(B/'render.json').write_text(json.dumps(cfg,indent=2))
+print('DURATION',D,'CUES',json.dumps(cues,indent=2))

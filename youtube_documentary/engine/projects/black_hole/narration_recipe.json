@@ -1,0 +1,8 @@
+{
+  "voice_identity": "Previously user-approved voice-02, reused without re-audition",
+  "target_clause_wpm": 188.2,
+  "pause_seconds": 0.16,
+  "source": "Raw WAVs retained untouched in external recovery capsule; processed FLACs directly renderable in profile.",
+  "cue_method": "Fallible ASR word positions mapped through actual shared clause processing; not ear-certified alignment.",
+  "manual_listening_claimed": false
+}

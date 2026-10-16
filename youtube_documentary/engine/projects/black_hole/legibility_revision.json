@@ -1,0 +1,16 @@
+{
+  "status": "110 frames captured, assembled, mixed and final encode actually inspected; resolved.",
+  "found_in_actual_encode_sha256": "da485d5bd3719c317485d43c748c11b2a786125407961686939e17d5a148bd97",
+  "observation": "Half-second final-encode sheet7, frame1560 /65.0s: YOU KEEP MOVING crossed the white suit during the watch-to-wide camera move. Keep this heading on the dark right side throughout its phrase.",
+  "absolute_frames_end_exclusive": [
+    1550,
+    1660
+  ],
+  "previous_source_copy": "history/scene_spatial_capture.mjs",
+  "previous_source_sha256": "510a8d99b951df9fca02627f3903fb26eec89bd035733304273049f4784315f8",
+  "corrected_source_sha256": "6b13eb4bbf0ed4c8d977203d76584fe3a8b2ec0f1045f738fbb6e6421910735a",
+  "scope": "Heading position only in cross-to-turn phase, camera/physics/VO unchanged. Whole-picture re-encode, not preservation of outside decoded pixels.",
+  "delivered_video_sha256": "959ebb08c76d0c0003742c537413411a472568f8462f6f86f3bc8e07404693ae",
+  "patch_receipt": "legibility_patch_receipt.json",
+  "final_evidence": "review_inspection.json"
+}

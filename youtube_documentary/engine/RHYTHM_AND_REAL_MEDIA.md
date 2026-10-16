@@ -1,3 +1,5 @@
+> **Supporting technical/reference document.** [Current entry](../../START_HERE.md); current user rules and approval/state registries in `../../studio/` take precedence. This document is not the current assignment or a new approval.
+
 # Rhythm and truthful media — reusable editorial lessons
 
 These are judgement aids, not a mandatory montage/template or an artistic certificate.

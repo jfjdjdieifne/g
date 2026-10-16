@@ -1,0 +1,3 @@
+# Verbatim historical snapshots/source excerpts retain original whitespace.
+studio/history/** -whitespace
+youtube_documentary/engine/projects/phantom_traffic/RESEARCH_flow_examples.rst -whitespace

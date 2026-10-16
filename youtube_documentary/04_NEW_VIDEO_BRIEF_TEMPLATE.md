@@ -1,3 +1,5 @@
+> **HISTORICAL / SUPPORTING GUIDE — NOT CURRENT POLICY OR TASK.** Start at [root START_HERE](../START_HERE.md). Current rules/approval/status override this older document. Original bytes are preserved under `studio/history/pre_organization/`. Old Arabic-display, voice02, fixed no-music/no-cuts/asset-count instructions must not override the current user rules.
+
 # 04 · موجز مشروع فيديو جديد — انسخ واملأ (v2)
 
 > اكتب «غير محسوم» عند أي بند ما تعرفه؛ لا تخمّن. الافتراضات في `02_USER_CREATIVE_PROFILE.md`، والتفاصيل التقنية في `07_MONTAGE_STYLE_AND_ENGINES_v0.1.md`.

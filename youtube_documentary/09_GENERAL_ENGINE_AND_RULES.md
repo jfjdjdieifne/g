@@ -1,3 +1,5 @@
+> **HISTORICAL / SUPPORTING GUIDE — NOT CURRENT POLICY OR TASK.** Start at [root START_HERE](../START_HERE.md). Current rules/approval/status override this older document. Original bytes are preserved under `studio/history/pre_organization/`. Old Arabic-display, voice02, fixed no-music/no-cuts/asset-count instructions must not override the current user rules.
+
 # 09 · محرك المونتاج العام (board_engine v4) — لأي فيديو، أي موضوع
 
 > هذا الملف يشرح النظام الجديد: **المشهد يُوصَف في ملف إعداد (JSON)، والمحرك يبني الفيديو.**

@@ -1,0 +1,64 @@
+{
+  "scope": "Source-only geometric/causal consistency, sampled at120Hz where applicable. Not a calibration, perceived-motion review, actual-human survival calculation or art certificate.",
+  "small_example": {
+    "whole_figure_min_radial_x_from_center": 2.8550000000000004,
+    "schematic_horizon_radius": 2.2,
+    "fully_outside_before_destructive_stretch": true
+  },
+  "interior": {
+    "conservative_min_radial_x": 0.22049999999999992,
+    "conservative_max_radius": 7.7430407317083345,
+    "schematic_horizon_radius": 8,
+    "whole_figure_inside_and_not_across_center": true
+  },
+  "radial_light": [
+    {
+      "start_r": 1.28,
+      "direction": 1,
+      "last_r": 1.5035635856727778,
+      "last_coordinate_time": 1.5,
+      "samples": 751
+    },
+    {
+      "start_r": 0.86,
+      "direction": 1,
+      "last_r": 0.6524242746177614,
+      "last_coordinate_time": 1.5,
+      "samples": 751
+    },
+    {
+      "start_r": 0.86,
+      "direction": -1,
+      "last_r": 0.033549828068010074,
+      "last_coordinate_time": 0.3140000000000002,
+      "samples": 158
+    }
+  ],
+  "inside_outward_dr_dT": -0.07832773203438426,
+  "signal_timing": {
+    "qualitative_only": true,
+    "arrival_times": [
+      1.2,
+      2.8,
+      4.9,
+      7.5,
+      11,
+      15.4
+    ],
+    "arrival_intervals": [
+      1.5999999999999999,
+      2.1000000000000005,
+      2.5999999999999996,
+      3.5,
+      4.4
+    ],
+    "emission_interval": 1.3,
+    "not_a_calibrated_clock_prediction": true
+  },
+  "geometry_bound_method": {
+    "local_head_y_max": 2.16,
+    "local_foot_y_min": -2.23,
+    "transverse_radius_bound": 1.7,
+    "description": "Conservative authored suit bounds include helmet scale, extruded bevels, gloves/watch and backpack. Not a physical human dimension."
+  }
+}

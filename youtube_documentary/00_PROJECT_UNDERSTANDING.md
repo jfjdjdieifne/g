@@ -1,3 +1,7 @@
+> **HISTORICAL / SUPPORTING GUIDE — NOT CURRENT POLICY OR TASK.** Start at [root START_HERE](../START_HERE.md). Current rules/approval/status override this older document. Original bytes are preserved under `studio/history/pre_organization/`. Old Arabic-display, voice02, fixed no-music/no-cuts/asset-count instructions must not override the current user rules.
+
+> **تحديث أولوية — 2026-10-16:** ابدأ بـ`START_HERE.md` ثم `engine/STYLE_GUIDE.md` و`engine/STYLE_REGISTRY.json` (المسارات من جذر youtube_documentary). «وثائقي بحت» ستايل مسمّى معتمد من مثال إسكوبار، **مو قاعدة لكل فيديو**. الستايلات الشرحية لا تُجبر على الأرشيف؛ البحث والصدق والمراجعة إلزامية دائماً. التعليمات التاريخية المخالفة تُقرأ ضمن سياقها القديم.
+
 > **تحديث ملزم 2026-10-15:** الفيديو كله إنكليزي (نصوص + VO)، والمحادثة شامي. سياسة التصميم العامة: `engine/PRODUCTION_POLICY.json`. v3 وافق المستخدم على اتجاه المشهد المتصل؛ الإكسسوارات وحدها لا تعني احتراف. التفاصيل القديمة المخالفة للغة تاريخية وملغاة.
 
 # 00 · فهم المشروع — لقطة كاملة (2026-10-14)

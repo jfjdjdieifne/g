@@ -1,6 +1,6 @@
 {
   "production_blocked": false,
-  "status": "full_film_review_cut_ready_not_user_approved",
+  "status": "user_approved_film_reference_style_named_pure_documentary",
   "approved_opening_locked": true,
   "pace_user_authorized": "V3 slightly slower; proceed",
   "video_sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14",
@@ -16,7 +16,7 @@
     "motion": 271
   },
   "manual_listening_claimed": false,
-  "full_body_user_approved": false,
+  "full_body_user_approved": true,
   "publication_rights_cleared": false,
   "observations": [
     "Half-second grid covered through exact-image provenance: initial821 viewed,194 corrected samples viewed, then27 further changed samples viewed; final794 half-samples exactly match the preceding inspected encode.",
@@ -25,7 +25,7 @@
     "Corrected source-native leaks: aftermath begins at3949.5, targeted-property clip at4369.3. Actual final joins now show rubble and property, not the preceding plane/interview.",
     "Murphy picture exits before the native party-photo cut. Unchanged quote tail continues over the genuine La Catedral office; no frozen talking face or retimed witness.",
     "Final ending shows the dated later city context and fade, not a museum interview. No unrelated-speaker leak observed in the inspected final samples.",
-    "Young Escobar portrait at source610 supported by source600\u2013625 context ASR explicitly discussing conversations with Pablo and early criminal activity; ASR is corroborating context, not listening or biometric proof."
+    "Young Escobar portrait at source610 supported by source600–625 context ASR explicitly discussing conversations with Pablo and early criminal activity; ASR is corroborating context, not listening or biometric proof."
   ],
   "audio_review": "Fallible Vosk transcript read and loudness measured. ASR ran on previous picture encode ba39427...ec823; decoded stereo PCM is exactly identical to final encode, hash and both video SHAs in encoded_qc/final_audio_identity.json. No manual listening.",
   "targeted_tests": {
@@ -38,5 +38,12 @@
     ],
     "all_repository_tests_claimed": false
   },
-  "review_is_not_artistic_or_user_approval": true
+  "review_is_not_artistic_or_user_approval": true,
+  "user_approval": {
+    "date": "2026-10-16",
+    "evidence": "ممتاز احفاظ هالستايل باسم وثائقي بحت",
+    "scope": "Completed film praised; authentic-material style named as one reusable family, not an instruction for every future film.",
+    "style_id": "pure_documentary",
+    "film_sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14"
+  }
 }

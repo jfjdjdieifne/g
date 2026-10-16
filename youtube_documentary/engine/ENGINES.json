@@ -1,11 +1,13 @@
 {
  "meta": {
   "schema": "engines-registry/1",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "note": "فهرس المحركات والأدوات — يقرأه الأيجنت قبل أي شغل: شو موجود، شو بيعمل، شو مدخلاته/مخرجاته، وحالته الحقيقية. ما في محرك هون إلا إذا موجود فعليًا بالمستودع.",
   "rule": "الأيجنت لازم يعتمد على `status`: live = جاهز للتشغيل، partial = بيشتغل بس ناقصه شي (بيّن بالنوت)، concept = تصميم مو منفّذ (ممنوع يوعد فيه كمنفَّذ).",
   "production_policy": "engine/PRODUCTION_POLICY.json",
-  "display_gate": "tools/production_policy.py — mandatory for future renders; older renderers are not all wired automatically."
+  "display_gate": "tools/production_policy.py — mandatory for future renders; older renderers are not all wired automatically.",
+  "style_registry": "engine/STYLE_REGISTRY.json",
+  "style_gate": "tools/style_contract.py; connected to director planning and shared film-profile rendering. Declaration validation only, not automatic creative quality."
  },
  "renderers": [
   {
@@ -104,6 +106,25 @@
     "tools/escobar_hook30_models.py"
    ],
    "dependencies": "bpy==4.2.23, pillow, numpy, imageio-ffmpeg; tools/bootstrap_bpy_headless.py"
+  },
+  {
+   "id": "shared_webgl_profile",
+   "kind": "shared-scene-runtime-and-capture",
+   "status": "live",
+   "entry": "tools/render_webgl_profile.mjs",
+   "runtime": "Three.js PBR + diffuse scene / real Z-buffer, perspective camera and dynamic contact shadows; headless Chromium; deterministic per-frame capture; film-specific scene.mjs/render.json profiles.",
+   "shared_stage": "engine/runtime/webgl_stage.mjs",
+   "shared_motion_example": "engine/runtime/traffic_motion.mjs — authored illustrative wave, NOT a calibrated traffic solver",
+   "gates": "style_contract.py + production_policy.py; declared policies, never artistic approval",
+   "mix": "tools/mix_webgl_profile.py, existing long_score.py/speech_pacing.py; parameters reside in profile",
+   "review": "tools/review_webgl_profile.py + encoded_review.py; actual MP4 half-second/subsecond evidence; inspection is separate",
+   "install": "tools/install_webgl_runtime.py EXTERNAL_CACHE; versions in engine/runtime/webgl_dependencies.json",
+   "implemented_profile": "engine/projects/phantom_traffic",
+   "limitations": [
+    "Tested on actual1659-frame,69.125s native1080p movie, including two frame-range authoring revisions, full audio mux and actual encoded review. This is one executed profile, NOT automatic exceptional-art or user approval.",
+    "Software headless rendering is not live playback; browser stage is an internal capture service.",
+    "No automatic natural-voice, traffic accuracy, exceptional-art or user-approval certification."
+   ]
   }
  ],
  "scene_engines": [

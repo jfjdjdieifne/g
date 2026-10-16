@@ -6,3 +6,10 @@ build_scratch/
 
 # Research image downloads; only vetted selected assets are vendored.
 /image-search/
+
+# Disposable production dependencies/renders/recovery downloads (keep in Drive).
+/build/
+/.venv/
+/studio/jobs/*/scratch/
+/studio/jobs/*/downloads/
+/studio/jobs/*/renders/

@@ -1,0 +1,7 @@
+{
+  "schema": "webgl-toolchain/1",
+  "node": {"three": "0.180.0", "puppeteer-core": "24.20.0", "@sparticuz/chromium": "141.0.0"},
+  "python": {"numpy": "2.4.6", "Pillow": "12.3.0", "imageio-ffmpeg": "0.6.0", "opencv-python-headless": "5.0.0.93", "vosk": "0.3.45"},
+  "source_assets": "Procedural originals, no remote CDN at render time.",
+  "scope": "One shared WebGL capture/stage and audio/mix runtime; per-film scenes are declarative profiles, not separate engines."
+}

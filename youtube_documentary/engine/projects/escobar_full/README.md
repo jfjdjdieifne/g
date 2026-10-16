@@ -1,3 +1,5 @@
+> **2026-10-16 update:** User praised this completed film and named its authentic-material approach **«وثائقي بحت»**. Full-film approval is now recorded in USER_FEEDBACK.json. Prior pending-approval review logs/capsules remain historical. Read ../../STYLE_GUIDE.md; other style families are not automatically approved. Rights and listening limits are unchanged.
+
 # Escobar — full documentary review cut
 
 **Delivered cut:** 6:50.4167, 1920×1080, 24fps, 9,850frames, H.264/AAC.
@@ -8,7 +10,7 @@
 - SHA256: `7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14`.
 - MD5: `7ef7af1ca8d833c938265ee75c797468` (also returned by Drive).
 
-This is the completed **review cut**, not user approval of the full film or publication-rights clearance. Conversation is Arabic; narration, quoted speech and authored graphics are English. Genuine historical images retain their original incidental signage.
+This is the completed **review cut**, now a user-approved style reference, but not publication-rights clearance. Conversation is Arabic; narration, quoted speech and authored graphics are English. Genuine historical images retain their original incidental signage.
 
 ## Direction and structure
 
@@ -44,7 +46,7 @@ python youtube_documentary/tools/shape_narration.py escobar_full \
   --output-dir /home/user/build/escobar_film/rebuilt_voice
 
 # Rebuild body with the shared renderer and current profile:
-python youtube_documentary/tools/render_film_profile.py escobar_full --render
+python youtube_documentary/tools/render_film_profile.py escobar_full --render --historical-rebuild
 python youtube_documentary/tools/join_locked_prefix.py escobar_full
 
 # Re-extract actual encoded evidence (does NOT mark it visually reviewed):

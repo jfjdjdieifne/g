@@ -1,0 +1,160 @@
+{
+  "dialogue": [
+    {
+      "id": "narration_01",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/black_hole/narration/01.flac",
+      "start": 0.14,
+      "end": 31.122291666666666,
+      "duration": 30.982291666666665,
+      "gain": 0.7288663624633805,
+      "input_rms": 0.1465929734417704
+    },
+    {
+      "id": "narration_02",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/black_hole/narration/02.flac",
+      "start": 31.672291666666666,
+      "end": 60.12783333333333,
+      "duration": 28.455541666666665,
+      "gain": 0.7380337513421253,
+      "input_rms": 0.1471994833022191
+    },
+    {
+      "id": "narration_03",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/black_hole/narration/03.flac",
+      "start": 60.67783333333333,
+      "end": 90.76091666666667,
+      "duration": 30.083083333333335,
+      "gain": 0.7780683265960587,
+      "input_rms": 0.1540926576679359
+    },
+    {
+      "id": "narration_04",
+      "kind": "narration",
+      "file": "/home/user/g/youtube_documentary/engine/projects/black_hole/narration/04.flac",
+      "start": 91.31091666666667,
+      "end": 122.56714583333334,
+      "duration": 31.256229166666667,
+      "gain": 0.7579672329408221,
+      "input_rms": 0.1419835002272486
+    }
+  ],
+  "score_sections": [
+    {
+      "start": 0,
+      "end": 14.685650668835867,
+      "bpm": 112,
+      "mode": "pressure",
+      "root": 65.406,
+      "density": 0.75
+    },
+    {
+      "start": 14.685650668835867,
+      "end": 33.82843121156211,
+      "bpm": 106,
+      "mode": "sparse",
+      "root": 73.416,
+      "density": 0.6
+    },
+    {
+      "start": 33.82843121156211,
+      "end": 47.36911070590209,
+      "bpm": 116,
+      "mode": "pressure",
+      "root": 65.406,
+      "density": 0.75
+    },
+    {
+      "start": 47.36911070590209,
+      "end": 60.67783333333333,
+      "bpm": 102,
+      "mode": "sparse",
+      "root": 87.307,
+      "density": 0.65
+    },
+    {
+      "start": 60.67783333333333,
+      "end": 76.05090636895052,
+      "bpm": 110,
+      "mode": "pulse",
+      "root": 73.416,
+      "density": 0.65
+    },
+    {
+      "start": 76.05090636895052,
+      "end": 91.53692534474561,
+      "bpm": 116,
+      "mode": "pressure",
+      "root": 65.406,
+      "density": 0.8
+    },
+    {
+      "start": 91.53692534474561,
+      "end": 108.35480577363495,
+      "bpm": 118,
+      "mode": "pressure",
+      "root": 58.27,
+      "density": 0.75
+    },
+    {
+      "start": 108.35480577363495,
+      "end": 124.58333333333333,
+      "bpm": 100,
+      "mode": "sparse",
+      "root": 65.406,
+      "density": 0.5
+    }
+  ],
+  "per_event_effects": [
+    {
+      "at": 8.648964015151515,
+      "relative_to_local_music_db": -8.404328067663796
+    },
+    {
+      "at": 33.82843121156211,
+      "relative_to_local_music_db": -8.404328067663796
+    },
+    {
+      "at": 47.36911070590209,
+      "relative_to_local_music_db": -8.404328067663796
+    },
+    {
+      "at": 64.57558350157021,
+      "relative_to_local_music_db": -8.404328067663798
+    },
+    {
+      "at": 76.05090636895052,
+      "relative_to_local_music_db": -8.404328067663796
+    },
+    {
+      "at": 94.39642042580101,
+      "relative_to_local_music_db": -8.404328067663796
+    },
+    {
+      "at": 113.32187847496706,
+      "relative_to_local_music_db": -8.404328067663796
+    }
+  ],
+  "music_rms": 0.030862386000545205,
+  "effects_rms": 0.002151790304933178,
+  "music_type": "Original section-specific synthesized documentary score. Not source sound.",
+  "global_speedup": false,
+  "native_archive_audio_retimed": false,
+  "normalization_first_pass": {
+    "input_i": "-15.76",
+    "input_tp": "-0.72",
+    "input_lra": "5.10",
+    "input_thresh": "-26.43",
+    "output_i": "-16.20",
+    "output_tp": "-1.50",
+    "output_lra": "4.80",
+    "output_thresh": "-26.81",
+    "normalization_type": "dynamic",
+    "target_offset": "0.20"
+  },
+  "encoded_file": "/home/user/build/black_hole/What_If_You_Fell_Into_a_Black_Hole_1080p.mp4",
+  "encoded_sha256": "959ebb08c76d0c0003742c537413411a472568f8462f6f86f3bc8e07404693ae",
+  "manual_listening_claim": false
+}

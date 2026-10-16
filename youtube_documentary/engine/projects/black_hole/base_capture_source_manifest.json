@@ -1,0 +1,50 @@
+{
+  "scope": "Inputs of first full capture; created while capture running, after authoring corrections and before final encode review. No source modifications during active capture. Not an approval or completion receipt.",
+  "files": [
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/scene.mjs",
+      "bytes": 21527,
+      "sha256": "2f3ea00f1d1c95251c840e4dbbe08faf72b220902fb7554b16a25fe4b7f96fc9"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/render.json",
+      "bytes": 5501,
+      "sha256": "307af8e7669e4bc3760cb95aa2a1c9080511dd77a61d3e23e532f9b78af83e5c"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/style_contract.json",
+      "bytes": 674,
+      "sha256": "81d06f7314d56b26cfa7b89f108fd171272fb7f10d6cf0e7e8c2b0c688a7723e"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/MATERIALS.json",
+      "bytes": 11946,
+      "sha256": "41cb38fd1ad41a608cf2f2905becfecfa92df5b740f08641855eb16550162417"
+    },
+    {
+      "path": "youtube_documentary/engine/projects/black_hole/display_manifest.json",
+      "bytes": 2145,
+      "sha256": "927a17039daf8bd78b9eaec4f728cd147e8951f1b9d0391b621aff18eeab6ac6"
+    },
+    {
+      "path": "youtube_documentary/tools/render_webgl_profile.mjs",
+      "bytes": 7915,
+      "sha256": "5f72b52e11109471a5ff71646298e9c40a6cd79603a45d812b19101df37db90c"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/traffic_motion.mjs",
+      "bytes": 1944,
+      "sha256": "61aff25f4093ce6f4bf9ed79d1b53b0b558c331a448b1dccf6bdcdbb32f74750"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/webgl_stage.mjs",
+      "bytes": 5472,
+      "sha256": "e2ac5ec6b0e27d4d557f42c5374261d7d1676dc7c3d714f2b28f6bbcfaf635d5"
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/horizon_motion.mjs",
+      "bytes": 1533,
+      "sha256": "c263e54aec7c1ce4b7f13031c2dcbe0bf38ff3c3cc7fe0a35b5c507d7f515301"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "date": "2026-10-16",
+  "purpose": "Actual sources locked before full encoded review; no claim of artistic approval.",
+  "files": [
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/scene.mjs",
+      "sha256": "035226be9444098b11ed7cb61a31bae05edbfd5b464c295bd51704b6237f3ceb",
+      "bytes": 12395
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/render.json",
+      "sha256": "fd17a3b2677f700b6910cbbffb9a76ba4e1b512204f2b6ada2c82c87a0bdaf9b",
+      "bytes": 3668
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/style_contract.json",
+      "sha256": "6836e8ebed28f6a2f9b538afeaff48bc2c0c4438a417f63196be010df9f7858a",
+      "bytes": 426
+    },
+    {
+      "path": "youtube_documentary/engine/projects/phantom_traffic/MATERIALS.json",
+      "sha256": "2d9c1458ea5969dd9a06081db47f959f3820c204b10f4f19292adabbabe46958",
+      "bytes": 7307
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/webgl_stage.mjs",
+      "sha256": "e2ac5ec6b0e27d4d557f42c5374261d7d1676dc7c3d714f2b28f6bbcfaf635d5",
+      "bytes": 5472
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/traffic_motion.mjs",
+      "sha256": "61aff25f4093ce6f4bf9ed79d1b53b0b558c331a448b1dccf6bdcdbb32f74750",
+      "bytes": 1944
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/speech_pacing.py",
+      "sha256": "64e59d6bdd3fad3f366f4d6f77a895fad2cbd3878ab621ad2b22198bac1df2eb",
+      "bytes": 3573
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/film_runtime.py",
+      "sha256": "4402f16cf40751b03fa1954fe3ca7ff0a939df48404f906c77d9681b16318f4b",
+      "bytes": 3197
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/photo_depth.py",
+      "sha256": "6cedee2c9e4d90964883137f72c957fb5214b6a2411d0a4b2c3a57cb0c05d6aa",
+      "bytes": 4360
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/long_score.py",
+      "sha256": "5d359a5f36bc7ad5bc939358a4673a14de285617f7490b081251afc3f7547085",
+      "bytes": 4088
+    },
+    {
+      "path": "youtube_documentary/engine/runtime/encoded_review.py",
+      "sha256": "e69a8102c9e4283cdf58a0779d039b88de77ed4854ba643e2df048938326f4dc",
+      "bytes": 2913
+    },
+    {
+      "path": "youtube_documentary/tools/render_webgl_profile.mjs",
+      "sha256": "170f7ac17e0da4ad34a0ac8d83edf63ab930ac0f43fa784fc91a7ac5171afdf9",
+      "bytes": 7341
+    },
+    {
+      "path": "youtube_documentary/tools/mix_webgl_profile.py",
+      "sha256": "55bf1763302b6a5cbc8a97a430d2933ab5981c4bf15f67c2a93d0c62e598b5ec",
+      "bytes": 2248
+    },
+    {
+      "path": "youtube_documentary/tools/review_webgl_profile.py",
+      "sha256": "9bbfd012e1e49f548bf4a14008b2ddaa51c8d25b876cadecaad759a054c69937",
+      "bytes": 1226
+    },
+    {
+      "path": "youtube_documentary/tools/style_contract.py",
+      "sha256": "23a227b26bff5bf844179183fa9d3d33b1658073335c362ceae5ac4ef05950ea",
+      "bytes": 9182
+    },
+    {
+      "path": "youtube_documentary/tools/documentary_materials.py",
+      "sha256": "4db9ceae0c15fd0ae03ffabb50326c0335dd006f68a60cad2b72df321f1d4516",
+      "bytes": 5303
+    },
+    {
+      "external_path": "/home/user/build/phantom_traffic/voice/01_raw.wav",
+      "capsule_path": "raw_voice/01_raw.wav",
+      "sha256": "59207c0ac23b3e9ce79e321e9cc1c3c9df04c38d0f3e4962aad50c8b60de566c",
+      "bytes": 2780866
+    },
+    {
+      "external_path": "/home/user/build/phantom_traffic/voice/02_raw.wav",
+      "capsule_path": "raw_voice/02_raw.wav",
+      "sha256": "3d0134ef87d01d4b8c19daa5792b04904d7ba2192a1f9498be0a67d9089e26cb",
+      "bytes": 2066114
+    },
+    {
+      "external_path": "/home/user/build/phantom_traffic/voice/03_raw.wav",
+      "capsule_path": "raw_voice/03_raw.wav",
+      "sha256": "de45b5e0977050e8821d45d0669f0c1f548edd03d3735ac4977cced92ccc5185",
+      "bytes": 2547394
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "schema": "documentary-materials/1",
+  "assets": [
+    {
+      "id": "space_world",
+      "kind": "original_model",
+      "description": "Original brandless pressure-suit astronaut, analog wristwatch, receiver ship, seeded painted star sphere, conceptual horizon and separate apparent silhouette. No archival imagery. Quiet destination: no accretion disk.",
+      "source": "scene.mjs",
+      "rights_status": "Original authored geometry, painted texture and composition. Toolchain libraries separately licensed; fonts bundled with DejaVu license.",
+      "disclosure": "Illustrative lensing / explanatory animation / not to scale; interior is explicitly a conceptual cutaway, never recorded footage."
+    },
+    {
+      "id": "causal_paths",
+      "kind": "graphic",
+      "description": "Radial null paths and causal fans use shared nonrotating Painleve-Gullstrand velocity dr/dT = \u00b11 - sqrt(1/r), c=rs=1. Optical framing, timing, crew deformation and scale are conceptual, not a calibrated GR/biomechanical simulation.",
+      "source": "engine/runtime/horizon_motion.mjs and scene.mjs"
+    },
+    {
+      "id": "selective_words",
+      "kind": "typography",
+      "description": "Selective English causal labels/headings only. No running transcript; fixed screen size, no text push."
+    }
+  ],
+  "beats": [
+    {
+      "id": "01",
+      "in": 0,
+      "out": 14.685650668835867,
+      "function": "A calm crossing can be irreversible without a collision.",
+      "material_ids": [
+        "space_world",
+        "causal_paths",
+        "selective_words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The user requests a stronger pure-explainer film; causal relationships need authored spatial/temporal inspection, not unrelated archival images.",
+      "why_not_real": "Hypothetical observer journey, explicitly authored diagrams, no documented human mission.",
+      "scene_design": {
+        "viewer_learns": "A calm crossing can be irreversible without a collision.",
+        "spatial_relationship": "Close moving astronaut, then pull back to reveal an apparent black-hole silhouette; message cue remains inward.",
+        "camera_motivation": "Camera backs out to reveal the scale of the danger, not merely a new title.",
+        "state_change": "An outbound message cannot get outside.",
+        "handoff": "Switch from illustrative optics to a smaller schematic horizon.",
+        "text_policy": "English selective mechanism words; captions OFF; no text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "02",
+      "in": 14.685650668835867,
+      "out": 33.82843121156211,
+      "function": "The horizon is a causal boundary, not a solid shell.",
+      "material_ids": [
+        "space_world",
+        "causal_paths",
+        "selective_words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The user requests a stronger pure-explainer film; causal relationships need authored spatial/temporal inspection, not unrelated archival images.",
+      "why_not_real": "Hypothetical observer journey, explicitly authored diagrams, no documented human mission.",
+      "scene_design": {
+        "viewer_learns": "The horizon is a causal boundary, not a solid shell.",
+        "spatial_relationship": "Same astronaut, horizon and distant ship; schematic wire horizon distinguished from apparent shadow.",
+        "camera_motivation": "Orbit reveals the relation of person, boundary and receiver.",
+        "state_change": "Optical silhouette gives way to explicitly labeled diagram.",
+        "handoff": "Mass changes the danger encountered at that boundary.",
+        "text_policy": "English selective mechanism words; captions OFF; no text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "03",
+      "in": 33.82843121156211,
+      "out": 47.36911070590209,
+      "function": "Tidal DIFFERENCE across an object, not simply total gravity, drives stretching.",
+      "material_ids": [
+        "space_world",
+        "causal_paths",
+        "selective_words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The user requests a stronger pure-explainer film; causal relationships need authored spatial/temporal inspection, not unrelated archival images.",
+      "why_not_real": "Hypothetical observer journey, explicitly authored diagrams, no documented human mission.",
+      "scene_design": {
+        "viewer_learns": "Tidal DIFFERENCE across an object, not simply total gravity, drives stretching.",
+        "spatial_relationship": "Identical suit identity in two hypothetical size examples; closer end stretched more. Not literal comparative scale.",
+        "camera_motivation": "Move from small-hole gradient to gentler supermassive crossing.",
+        "state_change": "One example deforms strongly; the other stays intact.",
+        "handoff": "Return to the original destination and the actual receiver.",
+        "text_policy": "English selective mechanism words; captions OFF; no text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "04",
+      "in": 47.36911070590209,
+      "out": 62.16609995954692,
+      "function": "Distant pulses spread and redden/fade; no permanently visible frozen statue.",
+      "material_ids": [
+        "space_world",
+        "causal_paths",
+        "selective_words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The user requests a stronger pure-explainer film; causal relationships need authored spatial/temporal inspection, not unrelated archival images.",
+      "why_not_real": "Hypothetical observer journey, explicitly authored diagrams, no documented human mission.",
+      "scene_design": {
+        "viewer_learns": "Distant pulses spread and redden/fade; no permanently visible frozen statue.",
+        "spatial_relationship": "One beacon and one distant receiving ship connected across a persistent gap.",
+        "camera_motivation": "Move to the ship observer framing while retaining both endpoints.",
+        "state_change": "Signal arrival intervals increase; astronaut image reddens and vanishes.",
+        "handoff": "Enter the astronaut frame instead of confusing apparent fading with destruction.",
+        "text_policy": "English selective mechanism words; captions OFF; no text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "05",
+      "in": 62.16609995954692,
+      "out": 73.14367310436832,
+      "function": "The astronaut clock remains locally normal and the crossing takes finite proper time.",
+      "material_ids": [
+        "space_world",
+        "causal_paths",
+        "selective_words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The user requests a stronger pure-explainer film; causal relationships need authored spatial/temporal inspection, not unrelated archival images.",
+      "why_not_real": "Hypothetical observer journey, explicitly authored diagrams, no documented human mission.",
+      "scene_design": {
+        "viewer_learns": "The astronaut clock remains locally normal and the crossing takes finite proper time.",
+        "spatial_relationship": "Close insert of the same wristwatch, then widen through the same horizon.",
+        "camera_motivation": "The watch needs readable proximity; widen only to reveal the crossing.",
+        "state_change": "Clock ticks and astronaut crosses an explicitly nonmaterial boundary without impact.",
+        "handoff": "A larger engine cannot change the causal structure.",
+        "text_policy": "English selective mechanism words; captions OFF; no text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "06",
+      "in": 73.14367310436832,
+      "out": 91.53692534474561,
+      "function": "Even outward-directed radial light inside moves to smaller areal radius.",
+      "material_ids": [
+        "space_world",
+        "causal_paths",
+        "selective_words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The user requests a stronger pure-explainer film; causal relationships need authored spatial/temporal inspection, not unrelated archival images.",
+      "why_not_real": "Hypothetical observer journey, explicitly authored diagrams, no documented human mission.",
+      "scene_design": {
+        "viewer_learns": "Even outward-directed radial light inside moves to smaller areal radius.",
+        "spatial_relationship": "Radius horizontally, future coordinate time vertically, dashed horizon at rs; outside path escapes, two inside paths remain inward.",
+        "camera_motivation": "Spoken simplified model motivates a spatial diagram rather than fake documentary camera footage.",
+        "state_change": "Paths and future-direction fan expose inward-only radial motion inside.",
+        "handoff": "Return to the person: crossing alive is not survival.",
+        "text_policy": "English selective mechanism words; captions OFF; no text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "07",
+      "in": 91.53692534474561,
+      "out": 113.32187847496706,
+      "function": "Tides grow deeper in; a classical singularity is not a confirmed portal or photograph.",
+      "material_ids": [
+        "space_world",
+        "causal_paths",
+        "selective_words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The user requests a stronger pure-explainer film; causal relationships need authored spatial/temporal inspection, not unrelated archival images.",
+      "why_not_real": "Hypothetical observer journey, explicitly authored diagrams, no documented human mission.",
+      "scene_design": {
+        "viewer_learns": "Tides grow deeper in; a classical singularity is not a confirmed portal or photograph.",
+        "spatial_relationship": "Same suit deforms radially inside the explicitly schematic horizon, then fades as the explanation reaches the theory limit.",
+        "camera_motivation": "Widen away from the illustrative person at the limit of physical certainty.",
+        "state_change": "Increasing deformation; visible diagrams become less concrete instead of inventing an interior view.",
+        "handoff": "Repeat the opening crossing with its meaning now understood.",
+        "text_policy": "English selective mechanism words; captions OFF; no text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    },
+    {
+      "id": "08",
+      "in": 113.32187847496706,
+      "out": 124.58333333333333,
+      "function": "The absence of an impact does not mean there is still an escape route.",
+      "material_ids": [
+        "space_world",
+        "causal_paths",
+        "selective_words"
+      ],
+      "visual_driver": "explanation",
+      "narrative_owner": "narrator",
+      "choice_reason": "The user requests a stronger pure-explainer film; causal relationships need authored spatial/temporal inspection, not unrelated archival images.",
+      "why_not_real": "Hypothetical observer journey, explicitly authored diagrams, no documented human mission.",
+      "scene_design": {
+        "viewer_learns": "The absence of an impact does not mean there is still an escape route.",
+        "spatial_relationship": "Same astronaut, watch and horizon; known continuous fall, no new invented world.",
+        "camera_motivation": "Hold nearby for the crossing; retreat only for final implication.",
+        "state_change": "The person passes the boundary without spectacle.",
+        "handoff": "Short fade, no subscription slate.",
+        "text_policy": "English selective mechanism words; captions OFF; no text zoom.",
+        "rendering_method": "xyz_3d"
+      }
+    }
+  ]
+}

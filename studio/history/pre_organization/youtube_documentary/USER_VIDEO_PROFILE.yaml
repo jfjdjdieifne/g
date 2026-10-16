@@ -1,0 +1,101 @@
+# USER_VIDEO_PROFILE.yaml — v2
+# ملف تفضيلات افتراضية قابل للتعديل. أي تعليم أحدث من المستخدم يتقدّم على أي سطر هنا.
+# v2 (2026-10-13): تحديث بعد نقاش أسلوب المونتاج: لا سلايدات، لا موسيقى، محركات داخلية، نمط اللوح.
+
+profile_version: 2
+supersedes: 1
+changed_in_v2:
+  - "منع السلايدات والبطاقات والقوالب الجاهزة نهائياً (أي إحساس PowerPoint = مرفوض)"
+  - "قاعدة طبقة نص واحدة لكل جملة: لا كابشن محروق فوق كلمات معمولها موشن"
+  - "كلمة-كلمة (نص يتحرك مع النطق) في مشاهد مختارة فقط: خطاف / رقم / اقتباس / لحظة تحوّل"
+  - "سكتات مقصودة بين المقاطع + بورست صور عند لحظات التصعيد (ثم لقطة تريّح)"
+  - "صفر موسيقى خلفية. الصوت = تعليق + سكتات + SFX قليلة مربوطة بالسياق"
+  - "فيديو متحرك (أرشيف أو ستوك مرخّص) مسموح بجرعات محسوبة ومربوط بالجملة — ممنوع حشو كليب كل بضع ثوانٍ"
+  - "حركة كاميرا حيّة داخل المشهد + انتقالات بلا كت بين المشاهد (غوص/مورف/واب-بان)"
+  - "نمط شرح بصري متحرك (مدرسة Vox / الموشن إنفوجرافيك): خرائط، أرقام تتعدّ من صفر، مشاهد 3D"
+  - "خلفية المشاهد السردية = سطح مرتبط بالمحتوى (لوح/ورق/خريطة/جدار) يحمل صوراً حقيقية — ليست رسماً كرتونياً ولا قلم رصاص"
+  - "كل التنفيذ عبر محركات تُبنى داخلياً وتُعاد استخدامها (راجع 07_MONTAGE_STYLE_AND_ENGINES_v0.1.md)"
+
+workflow:
+  free_tools_only: true
+  everything_rendered_by_own_engines: true
+  local_offline_no_watermark_required: true
+  spec_before_build: true          # نوتة مشهد-بمشهد تُعتمد قبل أي رندر
+  progress_updates_for_long_tasks: true
+  preserve_approved_work_unless_change_is_requested: true
+  keep_previous_versions: true
+  ask_only_for_decisions_that_materially_change_the_result: true
+
+montage:
+  slides_templates_powerpoint_look: forbidden
+  single_text_layer_per_sentence: true
+  text_never_lingers_after_spoken: true
+  word_by_word_scope: selected_scenes_only
+  burst_pacing: true               # 3–6 صور سريعة عند التصعيد ثم لقطة أطول تريّح
+  intentional_silence_beats: true  # 0.3–0.7 ثانية بين المقاطع، والكاميرا تبقى حيّة
+  camera_motion_always_alive: true
+  no_cut_within_a_single_space_scene: true
+  transitions:
+    vocabulary: [zoom_through_object, morph, whip_pan, match_cut, light_flash]
+    preset_transition_libraries: forbidden
+  zoom_on_static_photo_as_asset_substitute: forbidden
+  repeat_same_asset: forbidden
+
+visual_modes_used_as_a_mix:
+  board_scene: true                # لوح/سطح + صور حقيقية + أسهم + كاميرا متحركة
+  archive_fullframe: true
+  licensed_footage_clips: true
+  data_graphics: true
+  geo_map_and_globe_3d: true
+  object_3d_blender: true
+  designed_text_scene: true
+
+audio:
+  background_music: none
+  sfx: few_and_contextual          # pin click / ورق / whoosh / ختم / riser
+  silence_is_a_tool: true
+  voiceover_preserve_approved: true
+  voiceover_language_current_series: English
+  captions:
+    burned_captions_on_real_footage_shots: pending_user_decision
+    deliver_standalone_srt: true
+    no_duplicate_with_motion_text: true   # محسوم: أي جملة إلها طبقة نص واحدة
+
+rights_and_sources:                # كما في v1 — تبقى سارية
+  verify_license_before_use: true
+  track_source_author_license_date_usage: true
+  label_archive_vs_present_vs_document_vs_ai: true
+  rejected_asset:
+    filename: "Mug-shot-Colombia-control-agency-Medellin.jpg"
+    reason: "ترخيص متنازع عليه — ممنوع بلا تحقق جديد وموافقة صريحة."
+  no_unverified_historical_claims: true
+  data_graphics_must_show_source_and_type: true
+
+output_defaults:
+  platform: YouTube
+  aspect_ratio: "16:9"
+  resolution: "1920x1080"
+  frame_rate_fps: 30
+  output_format: MP4
+  video_codec_preference: H.264
+  audio_codec_preference: AAC
+  target_duration_minutes: 4
+
+per_video_recheck:
+  - language
+  - platform
+  - audience
+  - duration
+  - narration_style
+  - aspect_ratio
+  - burned_captions
+  - tone
+
+# Latest explicit correction, 2026-10-16; overrides weak-topic selection, not film language.
+topic_selection_current:
+  user_feedback_verbatim: "حلو بس الفكره سخيفه بدي افكار اقوى ومشوقه وبتجيب مشاهدات عملي فيديو هيك"
+  require_strong_curiosity_and_stakes: true
+  require_satisfying_explanatory_payoff: true
+  attractive_execution_cannot_rescue_a_weak_topic: true
+  view_counts_are_not_guaranteed: true
+  traffic_demo_fully_approved: false

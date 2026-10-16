@@ -1,6 +1,6 @@
 {
   "schema": "production-policy/1",
-  "updated": "2026-10-15",
+  "updated": "2026-10-16",
   "language": {
     "conversation": "ar-SY",
     "on_screen": "en",
@@ -27,8 +27,10 @@
         "HIS GUARDS",
         "STILL IN BUSINESS"
       ],
-      "legal_source_notes": "Necessary factual dates, source credits and illustrative-model notices remain allowed; do not turn them into permanent narrative captions."
-    }
+      "legal_source_notes": "Necessary factual dates, source credits and illustrative-model notices remain allowed; do not turn them into permanent narrative captions.",
+      "explainer_keywords": "Selective spoken script keywords may label, connect or reveal a relationship, with cue purpose, actual audio timing and phone readability. Not permanent subtitles or decoration."
+    },
+    "meaningful_motion": "Across every style: meaningful camera/action/causal transformations dominate; readable motivated holds allowed. No slideshow or isolated model-on-PowerPoint; show informative side/cut faces and connected scenes."
   },
   "depth": {
     "mode": "narrative_choice",
@@ -55,7 +57,8 @@
     "Archive-dependent edit blocked until original clips are acquired, viewed and heard",
     "No narrator-free slide filler disguised as archive-led storytelling",
     "Source/idea material plan for each documentary beat before new director render readiness",
-    "Generated/reference-derived imagery never masquerades as authentic archive"
+    "Generated/reference-derived imagery never masquerades as authentic archive",
+    "Explicit named-style contract and actual on-screen material consistency before new production"
   ],
   "narration": {
     "language": "en",
@@ -77,7 +80,7 @@
       "Invented archive quotations or synthetic anchor speech presented as authentic news."
     ],
     "archive_handoff": "Where an edit promises actual news/presenter footage, use acquired, viewed AND heard authentic clips with their own original audio. A narrator pause must carry real audiovisual storytelling; typeset quotation slides are NOT an acceptable substitute. If missing, block production and secure the clips first.",
-    "voice_status": "voice-02 and the conversational script-preview performance approved by user 2026-10-15. Preserve this delivery; do not re-audition without need. voice-00 rejected.",
+    "voice_status": "Permanently approved voice03 identity AND native clean extended performance for ALL new films. See DEFAULT_VOICE.json / approved_voice03 profile. Local ID is not portable; restore exact identity or disclose blocker, never silently re-audition/substitute. Historical films unchanged.",
     "archive_selection_order": "Select and actually view/hear a real, relevant news soundbite FIRST. Its specific spoken sentence must establish the premise/question; the narrator enters by continuing, explaining or reframing that exact meaning. Do not insert generic news images or fill preallocated narrator silences. Archive and narrator exchange narrative responsibility; not a rigid template."
   },
   "editorial_self_review": {
@@ -96,6 +99,19 @@
     "quantity": "No arbitrary creative asset-count ceiling:100 or1000 generated assets are acceptable if necessary. Not a quota or authorization to generate blindly; review every asset/shot and keep large media out of Git.",
     "variety": "Mix actual reports, press, interviews, real-site visuals, narrator reactions, motivated typography and explanatory depth according to meaning. No obligatory media count, order or one-template montage.",
     "press_word_match": "A user-suggested option, not a newly studied reference card or mandatory ending: align an actually present name/word across genuine inspected scans; preserve original text/context, provenance and readability; connect to the next spoken idea.",
-    "duration": "Develop the premise and source exchange before fixing opening length.30seconds is no longer an artistic ceiling for planning, but no new runtime, new VO performance or full documentary is automatically approved."
-  }
+    "duration": "Develop the premise and source exchange before fixing opening length.30seconds is no longer an artistic ceiling for planning, but no new runtime, new VO performance or full documentary is automatically approved.",
+    "style_scope": "Resolve STYLE_REGISTRY.json first. Prefer authentic material for archive-led work; pure_explainer deliberately has no archive on screen. Its factual research and inspected real references where representing real subjects remain mandatory. No global archive percentage or3D quota."
+  },
+  "style_system": {
+    "registry": "engine/STYLE_REGISTRY.json",
+    "guide": "engine/STYLE_GUIDE.md",
+    "onboarding": "START_HERE.md",
+    "contract": "per-project style_contract.json",
+    "gate": "tools/style_contract.py",
+    "default_style": null,
+    "scope": "Named film styles determine on-screen material ownership. Authentic-first is not a requirement to put archive into pure_explainer. Facts/reference integrity and final encoded review always apply.",
+    "quality_limit": "Declaration gates do not certify exceptional art or guarantee no errors."
+  },
+  "authority": "../../studio/USER_RULES.md",
+  "current_state": "../../studio/CURRENT_STATE.json"
 }

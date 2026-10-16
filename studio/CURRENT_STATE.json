@@ -1,0 +1,36 @@
+{
+  "schema": 1,
+  "release": "studio-2026-10-16-v1",
+  "updated": "2026-10-16",
+  "active_task": "Project organization and cold-agent onboarding BEFORE any further video edits",
+  "production_paused": true,
+  "next_video_context": "titan_warning_v2",
+  "next_action": "Read START_HERE, verify this release, summarize understanding. Do not render, rewrite or change a voice merely because a film exists. Await the specific requested video edits.",
+  "titan_v2": {
+    "film_status": "Existing uploaded movie freshly located on Drive; not locally played or artistically re-reviewed in organization audit.",
+    "film_drive_id": "1RDoxZ7wIg_qboUKjvUnc2IYYe6mlmLj7",
+    "film_bytes": 95887992,
+    "film_md5": "b88f065891130e9ef4a9374ab03ef783",
+    "film_parent_id": "1tfo6kEDDQRa6K6oThEwoXLb3g8LbUevD",
+    "local_profile_present_at_audit": false,
+    "final_editable_recovery_verified": false,
+    "available_recovery": "titan_v2_wip in ASSET_REGISTRY; early WIP, NOT a verified source match for the uploaded full film.",
+    "historical_progress": "Earlier session reported 18/19 reviewed units. Those encodes/receipts are not available in this checkout; never portray that report as live, recovered review evidence.",
+    "feedback": "User said «ممتاز بدو شويه تعديلات ولكن قبل التعديلات». Exact encode/hash covered by this comment is not established; not blanket approval of the whole style or every scene.",
+    "resume_gate": [
+      "Recover WIP source into a separate inspected directory, verify its hash, preserve original ZIP.",
+      "Compare recovered source/script/audio/timings against the existing full film; do not replace the film with an older WIP rebuild.",
+      "Obtain the concrete requested changes; preserve old film and voice.",
+      "Record actual local availability and new review evidence before resuming."
+    ]
+  },
+  "recovered_now": {
+    "approved_voice_reference": "Restored from already-published Git commit 31ce645; SHA256 must match DEFAULT_VOICE/profile.",
+    "git_history": "Session branch advanced to its previously published 31ce645 ancestor chain without overwriting the working tree. Existing local changes preserved."
+  },
+  "known_gaps": [
+    "Latest Titan V2 editable final-source/review package has not been located/verified. The named Full Film and Recovery Drive folder contained only the MP4 at this audit.",
+    "Old build paths are not durable assets and are not automatically restored.",
+    "Exact voice registration is session-specific; the approved reference is recoverable but the synthesis backend binding may not be."
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "base": "/home/user/build/black_hole/picture_before_contrast.mp4",
+  "patch": "/home/user/build/black_hole/legibility_patch/contrast.mp4",
+  "output": "/home/user/build/black_hole/picture.mp4",
+  "absolute_frames": [
+    1550,
+    1660
+  ],
+  "frame_spec": [
+    2990,
+    24.0,
+    1920,
+    1080
+  ],
+  "note": "Silent-picture revision, fully re-encoded. No claim of unchanged outside pixels. Not applied to approved Escobar or approved prefix.",
+  "sha256": "48c387d1e9689763d56cee6aba3247cb650ccb67314eef55cbecb79f25e305e4"
+}

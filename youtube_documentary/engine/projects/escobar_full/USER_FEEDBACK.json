@@ -34,5 +34,12 @@
     168.2,
     175.96
   ],
-  "full_body_user_approved": false
+  "full_body_user_approved": true,
+  "full_film_approval": {
+    "date": "2026-10-16",
+    "evidence": "ممتاز احفاظ هالستايل باسم وثائقي بحت",
+    "scope": "Completed film praised; authentic-material style named as one reusable family, not an instruction for every future film.",
+    "style_id": "pure_documentary",
+    "film_sha256": "7c10862acc22982b2db0ba1df4f97ee15b32c2924778ee14cbb7edb9cb15ee14"
+  }
 }

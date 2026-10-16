@@ -127,6 +127,13 @@ def render(state, stats, head):
         path = f"`{a['path']}`" if a.get("path") else ""
         L.append(f"| {a.get('name')} | {path} {link} |")
     L.append("")
+    styles = state.get("style_system")
+    if styles:
+        L.append("## ستايلات الفيديو — التوجيه الأحدث")
+        L.append("")
+        for key, value in styles.items():
+            L.append(f"- **{key}:** {value}")
+        L.append("")
     active = state.get("active_hook")
     if active:
         L.append("## المشروع النشط — الهوك الحالي")
@@ -171,6 +178,12 @@ def render(state, stats, head):
 
 
 def main():
+    # Current studio authority supersedes legacy generated status. Never regenerate a
+    # misleading old current-film/voice handoff over the current navigation pointer.
+    studio_cli = ROOT.parent / "studio" / "tools" / "projectctl.py"
+    if studio_cli.exists():
+        print("Current handoff: repository-root START_HERE.md and studio/CURRENT_STATE.json.")
+        return subprocess.run([sys.executable, str(studio_cli), "doctor"], cwd=ROOT.parent).returncode
     ap = argparse.ArgumentParser(description="الهاند-أوف الحي")
     ap.add_argument("--check", action="store_true", help="فحص فقط بدون كتابة")
     a = ap.parse_args()

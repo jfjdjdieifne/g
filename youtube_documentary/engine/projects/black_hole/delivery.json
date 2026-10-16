@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-16",
+  "state": "awaiting_user_review",
+  "user_approval": false,
+  "title": "What If You Fell Into a Black Hole?",
+  "duration_seconds": 124.58333333333333,
+  "frames": 2990,
+  "fps": 24,
+  "width": 1920,
+  "height": 1080,
+  "language": "English",
+  "voice": "previously approved voice-02",
+  "video": {
+    "local_path": "/home/user/build/black_hole/What_If_You_Fell_Into_a_Black_Hole_1080p.mp4",
+    "bytes": 21803252,
+    "sha256": "959ebb08c76d0c0003742c537413411a472568f8462f6f86f3bc8e07404693ae",
+    "md5": "01f51d981c0318f2a436b1b03f2f533a",
+    "drive_id": "14Iew5HQ8gxORHRgA3pviQj1dFvBEpbNx",
+    "url": "https://drive.google.com/file/d/14Iew5HQ8gxORHRgA3pviQj1dFvBEpbNx/view",
+    "verification": "Independent Drive get_file size21,803,252B and MD5 01f51d981c0318f2a436b1b03f2f533a matched local bytes."
+  },
+  "recovery": {
+    "path": "/home/user/build/black_hole/Black_Hole_Source_Voice_Review_Recovery.zip",
+    "bytes": 28335234,
+    "sha256": "cb927e432edbb9358793213fb576735b428f33fef99e3543144c83fe8b0644f1",
+    "md5": "e3f16a52b43f946dfb0860c1be85a7d6",
+    "included_files": 123,
+    "cold_checks": "Every extracted file hash, style/material declarations, English/display declaration, authored motion invariants and shared capture syntax PASS. Not a fresh film render or artistic certificate.",
+    "drive_id": "1PCgBVHa5889QViRkPY9X1F-CTX-LIXpx",
+    "url": "https://drive.google.com/file/d/1PCgBVHa5889QViRkPY9X1F-CTX-LIXpx/view",
+    "verification": "Independent Drive get_file matched local28,335,234B and MD5 e3f16a52b43f946dfb0860c1be85a7d6.",
+    "scope": "Film-specific source/raw-voice/review recovery, shared runtime included. Final movie separate. The archive has a pre-upload delivery snapshot; this current receipt supersedes that snapshot."
+  },
+  "manual_listening_claimed": false,
+  "permissions_changed": false,
+  "handoff": {
+    "drive_id": "1W6dANaI46XbWbiBz-p7jnIDDZxhKXZtH",
+    "url": "https://drive.google.com/file/d/1W6dANaI46XbWbiBz-p7jnIDDZxhKXZtH/view",
+    "bytes": 26556,
+    "md5": "6fe82f8540c17cebfe223d1fbd276295",
+    "sha256": "79b1becd38f512753deb0014420d1a8260a64cb89838f2f4089b3081ef817617",
+    "verification": "Independent Drive get_file size and MD5 match."
+  },
+  "presentation": "Final MP4 opened through present_file; awaiting actual user response."
+}

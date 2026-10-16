@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "release": "studio-2026-10-16-v1",
+  "approval_is_not": [
+    "technical_PASS",
+    "agent_self_review",
+    "finished_encode",
+    "planning_approval",
+    "publication_rights"
+  ],
+  "references": [
+    {
+      "id": "escobar_full",
+      "title": "Escobar — completed film",
+      "style": "pure_documentary",
+      "status": "approved_preserve",
+      "drive_id": "1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw",
+      "scope": "User praised completed film and named the style «وثائقي بحت». Preserve this film and revision5 opening; not a universal template or rights clearance.",
+      "url": "https://drive.google.com/file/d/1xCd3MbgY00MhV57FQIzL3_0Ydj28-zNw/view"
+    },
+    {
+      "id": "phantom_traffic",
+      "title": "The Jam With No Blockage",
+      "style": "pure_explainer",
+      "status": "execution_liked_topic_rejected",
+      "drive_id": "1qzcn1eHS0z8dVK1tbltClRklZb8G24Bd",
+      "scope": "User liked execution but explicitly rejected the weak topic. Not full-film/subject/benchmark approval.",
+      "url": "https://drive.google.com/file/d/1qzcn1eHS0z8dVK1tbltClRklZb8G24Bd/view"
+    },
+    {
+      "id": "black_hole",
+      "title": "What If You Fell Into a Black Hole?",
+      "style": "pure_explainer",
+      "status": "delivered_unapproved",
+      "drive_id": "14Iew5HQ8gxORHRgA3pviQj1dFvBEpbNx",
+      "scope": "Delivered; no verified user film approval. Not the current assignment.",
+      "url": "https://drive.google.com/file/d/14Iew5HQ8gxORHRgA3pviQj1dFvBEpbNx/view"
+    },
+    {
+      "id": "titan_warning",
+      "title": "Titan V1",
+      "style": "documentary_explainer",
+      "status": "visual_foundation_rejected_voice_sync_liked",
+      "drive_id": "1oQuS3Up0RcGEDkQYxa-jN7qKj9YxG61i",
+      "scope": "Voice/sync praised; visuals rejected for slideshow/report pages/uninformative model shots. Never use as an approved visual benchmark.",
+      "url": "https://drive.google.com/file/d/1oQuS3Up0RcGEDkQYxa-jN7qKj9YxG61i/view"
+    },
+    {
+      "id": "titan_warning_v2",
+      "title": "Titan V2 — full uploaded movie",
+      "style": "documentary_explainer",
+      "status": "film_exists_feedback_scope_unconfirmed_edits_pending",
+      "drive_id": "1RDoxZ7wIg_qboUKjvUnc2IYYe6mlmLj7",
+      "scope": "Existing full movie verified by Drive metadata only in this audit. Positive latest feedback is not hash-bound; specific edits pending. Final editable recovery not verified.",
+      "url": "https://drive.google.com/file/d/1RDoxZ7wIg_qboUKjvUnc2IYYe6mlmLj7/view"
+    }
+  ],
+  "voice": {
+    "default": "voice03",
+    "status": "identity_and_native_extended_performance_permanently_user_approved",
+    "profile": "youtube_documentary/engine/voices/approved_voice03/VOICE_PROFILE.json",
+    "reference": "youtube_documentary/engine/voices/approved_voice03/approved_reference.wav",
+    "sha256": "3b1d19016ec5387f0b7c85147237a74c1e15fc3e2fbbf10a3c6974921a5c60e1",
+    "warning": "Local voice-03 is not a portable provider/model ID. No re-audition or unapproved replacement. Never change historical films to apply the new default."
+  }
+}

@@ -1,3 +1,5 @@
+> **Supporting technical/reference document.** [Current entry](../../START_HERE.md); current user rules and approval/state registries in `../../studio/` take precedence. This document is not the current assignment or a new approval.
+
 # docengine — reusable premium documentary motion engine
 
 Software documentary studio: script + VO + timeline in → art-directed,

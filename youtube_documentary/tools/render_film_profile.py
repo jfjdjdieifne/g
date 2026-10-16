@@ -6,13 +6,16 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'engine/runt
 from sequence_runtime import SequenceFilm
 from score_runtime import mix
 from film_runtime import FF
-p=argparse.ArgumentParser();p.add_argument('profile');p.add_argument('--render',action='store_true');a=p.parse_args()
+p=argparse.ArgumentParser();p.add_argument('profile');p.add_argument('--render',action='store_true');p.add_argument('--historical-rebuild',action='store_true',help='Explicit reconstruction of a delivered legacy film, never new production approval');a=p.parse_args()
 f=ROOT/'engine/projects'/a.profile/'profile.py';s=importlib.util.spec_from_file_location('film_profile',f);P=importlib.util.module_from_spec(s);s.loader.exec_module(P)
 from production_policy import enforce_display,enforce_design,enforce_editorial_review
 from documentary_materials import material_errors
-enforce_editorial_review(P.PROJECT)
+enforce_editorial_review(P.PROJECT, historical_rebuild=a.historical_rebuild)
 display=json.loads((P.PROJECT/'display_manifest.json').read_text());enforce_display(display);enforce_design(display['design'])
-errors=material_errors(json.loads((P.PROJECT/'MATERIALS.json').read_text()))
+from style_contract import enforce_project_style
+materials=json.loads((P.PROJECT/'MATERIALS.json').read_text())
+enforce_project_style(P.PROJECT,materials,historical_rebuild=a.historical_rebuild)
+errors=material_errors(materials)
 if errors:raise ValueError('; '.join(errors))
 plan=P.prepare();
 # Check actual rendered credits too, not only an independently typed manifest.

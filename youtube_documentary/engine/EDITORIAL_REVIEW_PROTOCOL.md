@@ -1,3 +1,5 @@
+> **Supporting technical/reference document.** [Current entry](../../START_HERE.md); current user rules and approval/state registries in `../../studio/` take precedence. This document is not the current assignment or a new approval.
+
 # Mandatory scene-by-scene editorial review — all future films
 
 User instruction, 2026-10-15: do not hand over basic creative mistakes for the user to fix. Inspect and understand every proposed scene and the delivered montage before presenting it. Applies to every topic and duration, not only Escobar.
@@ -51,3 +53,7 @@ Follow `DOCUMENTARY_MATERIALS_AND_IDEAS.md` for every film. Ask whether attracti
 - Rounded source clocks are candidates, not cut-safe bounds. Check both ends with fine frames; an unwanted two-frame interview tail can survive a sparse source overview.
 - After a visual-only correction, evidence may be reused ONLY at identical global decoded frame indices with exact image hashes and an actually inspected predecessor. Inspect every changed/new sample; persist the chain, observations and old/new video hashes. A hash match does not itself make an earlier missed defect acceptable.
 - ASR from a prior picture encode is applicable to a revised encode only with explicit provenance and exact decoded-audio identity; keep both video hashes. This remains automatic recognition, not ear-listening.
+
+
+## Named styles —2026-10-16
+Read STYLE_GUIDE.md and STYLE_REGISTRY.json before choosing material. Pure-documentary and pure-explainer are different valid treatments, not a universal archive-first recipe. New projects need a style contract; the actual rendered scene must still match it. For an explanatory board, inspect persistent anchors, motivated attention/camera travel, causal state changes, selective word/audio timing and the return to the same world.2D is acceptable when meaningful; shadows/tilt do not establish3D. A liked concept is not a finished approved benchmark. Inspect the actual final encode, not just a fulfilled JSON contract; no test guarantees exceptional editing or zero errors. Historical review/ASR logs keep their original scope and dates after later user approval.
